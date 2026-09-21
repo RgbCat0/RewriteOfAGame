@@ -810,15 +810,6 @@ screen questboxpreview:
         action Jump("viewquests")
 
 
-screen store_Ashley:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        idle "Sprites/ashley no BG.png"
-        hover "Sprites/ashley no BG Hover.png"
-
-        action Jump("talktoAshley")
-
 screen backbuttonROOM:
     zorder 1
     imagebutton:
@@ -1260,60 +1251,7 @@ screen gym_machine:
 
         action Jump("machinePivot")
 
-screen store_camera:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        xalign 0.5 yalign 0.135
-        idle "ITEMS/M_camera.png"
-        hover "ITEMS/M_camerahover.png"
 
-        action Jump("checkcamera")
-screen store_watch:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        xalign 1.0 yalign 1.0
-        idle "ITEMS/item_watch.png"
-        hover "ITEMS/item_watchhover.png"
-
-        action Jump("checkwatch")
-screen store_paint:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        xalign 1.0 yalign 1.0
-        idle "ITEMS/item_paint.png"
-        hover "ITEMS/item_painthover.png"
-
-        action Jump("checkpaint")
-screen store_candy:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        xalign 1.0 yalign 1.0
-        idle "ITEMS/item_candy.png"
-        hover "ITEMS/item_candyhover.png"
-
-        action Jump("checkcandy")
-screen store_movie:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        xalign 1.0 yalign 1.0
-        idle "ITEMS/item_movie.png"
-        hover "ITEMS/item_moviehover.png"
-
-        action Jump("checkmovie")
-screen store_videogame:
-    zorder 1
-    imagebutton:
-        focus_mask True
-        xalign 1.0 yalign 1.0
-        idle "ITEMS/item_videogame.png"
-        hover "ITEMS/item_videogamehover.png"
-
-        action Jump("checkvideogame")
 
 
 

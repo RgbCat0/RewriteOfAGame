@@ -248,5 +248,3 @@ label definevariables:
     $ failedoliviatest = 0
 
     default tutorials_adjustment = ui.adjustment()
-
-    jump gameIntro

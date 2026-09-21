@@ -1418,9 +1418,6 @@ label park:
         jump avaphase1interaction2part1
     elif timeofday == "Night" and avaphase1interaction2 == 2:
         jump avaphase1interaction2part3B
-
-    if timeofday == "Night" and avaphase1interaction2 == 7:
-        jump avaphase1interaction2part5
     
     if timeofday == "Night" and avaphase3interaction1 == 1:
         jump avaphase3interaction1part2
@@ -1777,21 +1774,7 @@ label gotophonefromcontacts:
     hide screen phonecontacts
     call screen contacts
 
-label talktoAshley:
-    jump ashleyconversation
 
-label checkwatch:
-    jump conversationwatch
-label checkcandy:
-    jump conversationcandy
-label checkvideogame:
-    jump conversationvideogame
-label checkmovie:
-    jump conversationmovie
-label checkpaint:
-    jump conversationpaint
-label checkcamera:
-    jump conversationcamera
 
 label gotopicturesfromphone:
     hide contacts
