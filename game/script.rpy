@@ -2876,7 +2876,6 @@ label miaPivot:
             elif miaphase1interaction1 == 2:
                 jump textmiafornudes
             elif miaphase1interaction1 == 3:
-                if todayis != dayName:
                     jump textmiatocomeover
 
             if miaphase1interaction2 == 2:
