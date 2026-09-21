@@ -1,0 +1,147 @@
+# ============================================================
+# Ren'Py
+# ============================================================
+
+# Compiled Ren'Py scripts
+*.rpyc
+*.rpymc
+
+# Ren'Py cache
+game/cache/
+cache/
+
+# Saves / persistent data
+game/saves/
+saves/
+
+# Ren'Py logs / crash reports
+log.txt
+traceback.txt
+errors.txt
+
+# Ren'Py temporary/generated files
+*.rpyb
+*.rpymb
+
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+
+# ============================================================
+# UnRen / extraction tools
+# ============================================================
+
+UnRen*.bat
+UnRen*.py
+unren*.bat
+unren*.py
+unrpyc/
+unrpa/
+
+# Common extraction/decompilation leftovers
+*.rpa.bak
+*.rpyc.bak
+
+
+# ============================================================
+# IDEs / Editors
+# ============================================================
+
+# JetBrains / PyCharm / Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Sublime Text
+*.sublime-workspace
+
+
+# ============================================================
+# Operating system garbage
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+
+# ============================================================
+# Temporary / backup files
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# Build / distribution output
+# ============================================================
+
+dist/
+build/
+builds/
+
+# Ren'Py SDK distribution output if generated inside project
+*-dists/
+
+
+# ============================================================
+# Local development/debug junk
+# ============================================================
+
+debug.log
+*.log
+
+# Our own temporary conversion folders, if created
+temp/
+tmp/
+
+
+# ============================================================
+# IMPORTANT: intentionally NOT ignored
+# ============================================================
+
+# *.rpy
+game/images/
+# game/audio/
+# *.png
+# *.jpg
+# *.jpeg
+# *.webp
+# *.webm
+# *.ogg
+# *.mp3
+# *.wav
+#
+# These are intentionally tracked because we want the complete
+# runnable project. Large binary assets should use Git LFS.
