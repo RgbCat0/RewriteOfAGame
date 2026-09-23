@@ -1,4 +1,7 @@
 # Correctly chronological. Probaly...
+#chapter 1
+# interaction 1
+# part 1
 
 label miaphase1interaction1part1:
     hide screen mia_atschool

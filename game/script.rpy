@@ -906,7 +906,7 @@ label sophiahouse:
 
     $ whereami = "sophiahouse"
     scene fs sophiahouseoutside
-    if sophiaphase1interaction1 == 1:
+    if sophiaphase1interaction1 == 1: # should be time mattered but isnt great dev once again
         jump sophiaphase1interaction1part2
 
     show screen uppergui
@@ -1248,7 +1248,7 @@ label classroom1:
         player "Hmm, Mia's class is still going on. I'll just visit her house during the day to give her phone back."
         call screen classroom1
 
-    if sophiaphase1interaction1 == 2 and timeofday != "Night":
+    if sophiaphase1interaction1 == 2 and timeofday != "Night": # should be morning tho bro wat
         jump sophiaphase1interaction1part3
 
     scene fs classroomextras
@@ -2231,7 +2231,7 @@ label avaPivot:
             elif avaphase1interaction1 == 4:
                 jump avaphase1interaction2part1
 
-            if avaphase1interaction2 == 2:
+            if avaphase1interaction2 == 2: # unreachable look at start of label
                 jump avaphase1interaction2part2
             elif avaphase1interaction2 == 4:
                 jump avaseemsfocused
@@ -3584,7 +3584,7 @@ label sophiaPivot:
         jump sophiaphase1interaction1part1
     elif sophiaphase1interaction1 == 1 and whereami == "classroom1":
         jump sophianottalkingtome
-    elif sophiaphase1interaction1 == 2 and whereami == "classroom1":
+    elif sophiaphase1interaction1 == 2 and whereami == "classroom1": # unreachable i think
         jump sophiaphase1interaction1part4
     elif sophiaphase1interaction1 == 4:
         hide screen sophia_atschool
@@ -3602,6 +3602,10 @@ label sophiaPivot:
             jump insidecafe
         elif (whereami == "livingRoom" or whereami == "playerRoom") and timeofday == "Night":
             jump sophiaphase2interaction3part1
+    
+    
+    "Nothing left in chapter"
+    jump returnwhereyouare
 
 
 
