@@ -1554,10 +1554,10 @@ label gotosleep:
         if katiebjday != dayNumber:
             jump katieblowjob
 
-    if emilyphase1interaction1 == 2:
+    if emilyphase1interaction1 == 2 and timeofday == "Night":
         $ emilyphase1interaction1 = 3
         jump thinkaboutemilybeforesleep
-    elif emilyphase1interaction1 == 4:
+    elif emilyphase1interaction1 == 4 and timeofday == "Night":
         $ emilyphase1interaction1 = 5
         jump thinkaboutemilybeforesleep2
 
