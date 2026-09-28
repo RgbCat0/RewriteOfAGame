@@ -1559,3 +1559,1359 @@ label oliviaphase1interaction2part4:
         else:
             $ oliviaquestlog = "That was pretty hot, but I should focus on other things for now."
         jump passtime
+
+# chapter 1 end
+
+# chapter 2
+# start
+
+label gohomeolivia:
+    $ charlotteSprite = 1
+    show fbcharlotte current:
+        xalign 0.3 ypos 120
+    charlotte "Yes me too."
+    $ charlotteSprite = 0
+    $ sophiaSprite = 1
+    sophia "I wanted to take a bath before bed so I should go too."
+    $ sophiaSprite = 0
+    $ emilySprite = 1
+    emily "Looks like we're splitting up here?"
+    $ emilySprite = 0
+    $ playerSprite = 1
+    player "Mia you gonna go home?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Yes I think my mom wanted my help with some stuff tonight."
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Alright girls stay safe on your way back!"
+    $ playerSprite = 0
+    $ charlotteSprite = 1
+    charlotte "Bye!"
+    $ charlotteSprite = 0
+    hide fbcharlotte current
+    with Dissolve(0.5)
+    show fbava runfliptalk:
+        xalign 0.25 ypos 120
+    ava "See yah! Thanks again for coming out everyone!"
+    hide fbava runfliptalk
+    with Dissolve(0.5)
+    $ sophiaSprite = 2
+    sophia "Wait Charlotte! Can your driver take me home??!"
+    hide fbsophia current
+    with Dissolve(0.5)
+    $ miaSprite = 1
+    mia "Bye everyone!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.3)
+    player "See you later Mia."
+    $ playerSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    $ emilySprite = 1
+    emily "Bye [povname], bye Olivia!"
+    $ emilySprite = 0
+    $ oliviaSprite = 1
+    olivia "Bye Emily."
+    $ oliviaSprite = 0
+    hide fbemily current
+    with Dissolve(0.5)
+    player "...."
+    $ playerSprite = 0
+    $ oliviaSprite = 8
+    show fbolivia current:
+        xalign 0.65 ypos 120
+    with move
+    $ playerSprite = 1
+    player "Just me an you left."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Finally."
+    $ oliviaSprite = 8
+    $ playerSprite = 11
+    player "Huh?"
+    $ playerSprite = 0
+    $ oliviaSprite = 14
+    olivia "Hehe just a joke."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Haha you got me, well what about you?"
+    player "Any plans?"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "No not really."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "You wanna come over?"
+    player "Maybe we can do something toge-"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Okay."
+    $ oliviaSprite = 8
+    $ playerSprite = 11
+    player "Okay?"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Okay I'll come over."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Uh alright great, let's go."
+    $ playerSprite = 0
+    scene fs blackblank
+    with Dissolve(1.0)
+    player "Hey let me see that game you always play on your Game-Man, must be good if you're always on it."
+    olivia "Sure. Just make sure you don't overwrite my save."
+    scene oliviascene couchtits1
+    with Dissolve(0.7)
+    "After you arrive home the two of you chill on the couch and turn on the console"
+    "Olivia watches you play with interest"
+    pause
+    scene oliviascene couchtits2
+    with Dissolve(0.7)
+    olivia "Okay now careful of the rocks here. They have a bullshit hitbox."
+    scene oliviascene couchtits1
+    with Dissolve(0.7)
+    player "Kay."
+    pause
+    scene oliviascene couchtits2
+    with Dissolve(0.7)
+    olivia "Don't attack the bats they just spawn two more when you kill them."
+    scene oliviascene couchtits1
+    with Dissolve(0.7)
+    player "Alright."
+    pause
+    scene oliviascene couchtits3
+    with Dissolve(0.7)
+    olivia "The boss is coming, you have to throw back the spikes he shoots at you while avoiding the bats."
+    scene oliviascene couchtits1
+    with Dissolve(0.7)
+    pause
+    scene oliviascene couchtits3
+    with Dissolve(0.7)
+    olivia "No I told you not to attack the bats!"
+    scene oliviascene couchtits3angry
+    with Dissolve(0.7)
+    player "{i}Okay I didn't mind the comments but now she's criticizing me.{/i}"
+    olivia "See you did it again! Why would you stand there it's obvious that's where his foot was gonna land!"
+    player "Obviously I didn't attack the bats on purpose, they flew in the way when I was throwing the spike back."
+    olivia "You have to throw it in the air! How didn't you see that?"
+    scene oliviascene couchtits4player
+    with Dissolve(0.3)
+    player "Oi!"
+    player "Backseat gamer! You mind not shouting in my ear about me not beating the boss the first time I play??"
+    scene oliviascene couchtits4olivia
+    with Dissolve(0.3)
+    olivia "Well maybe I wouldn't need to help you if you were competent!"
+    olivia "How can I trust you when we play team games if you can't beat this simple boss??"
+    scene oliviascene couchtits4player
+    with Dissolve(0.3)
+    player "Oh I'm sorry, I forgot that they changed the definition of 'help' to 'being an annoying loud bitch'."
+    scene oliviascene couchtits4olivia
+    with Dissolve(0.3)
+    olivia "Stop making excuses for sucking ass at games!"
+    scene oliviascene couchtits4player
+    with Dissolve(0.3)
+    player "Well if YOU think you're so..."
+    scene oliviascene couchtits4c
+    with Dissolve(0.7)
+    player "{i}I know it's kinda fucked but...angry Olivia kinda turns me on.{/i}"
+    scene oliviascene couchtits4olivia
+    with Dissolve(0.3)
+    olivia "So what?"
+    scene oliviascene couchtits4c
+    with Dissolve(0.7)
+    player "{i}I just got an idea.{/i}"
+    scene oliviascene couchtits4player
+    with Dissolve(0.3)
+    player "...so good, why don't you get on my lap and show me how it's done?"
+    scene oliviascene couchtits4olivia
+    with Dissolve(0.3)
+    olivia "With pleasure!"
+    scene oliviascene couchtits5olivia
+    with Dissolve(1.0)
+    olivia "There see? You just have to jump when he slams his foot down."
+    player "{i}She actually smells really nice.{/i}"
+    olivia "His foot stuns the bats so it's easy to get a clear shot at him with the spike."
+    player "Mhmm."
+    player "{i}Such a small waist...and huge tits.{/i}"
+    olivia "And there! See? It's so easy."
+    scene oliviascene couchtits5player
+    with Dissolve(0.7)
+    player "Yeah."
+    scene oliviascene couchtits5olivia
+    with Dissolve(1.0)
+    olivia "Now this is the second level."
+    olivia "There's ice everywhere but it's easy to get used to the sliding."
+    scene oliviascene couchtits6
+    with Dissolve(1.0)
+    olivia "Most of the snowmen are friendly but a couple of them are enemies and will attack when you're not looking."
+    player "Mmmm."
+    scene oliviascene couchtits7
+    with Dissolve(0.7)
+    olivia "And then...once you..."
+    player "*chuu*"
+    olivia "You..you're.."
+    player "Uh huh?"
+    scene oliviascene couchtits9
+    with Dissolve(0.7)
+    olivia "Y-You just wanted...to...be naughty didn't you?"
+    scene oliviascene couchtits8
+    player "Hmmm, maybe."
+
+    image olivianipple play1:
+        "CG12-9.png"
+        0.7
+        "CG12-7B.png"
+        0.7
+        repeat
+
+
+    image olivianipple play2:
+        "CG12-8.png"
+        0.7
+        "CG12-8B.png"
+        0.7
+        repeat
+
+    show olivianipple play2
+    with Dissolve(0.7)
+    olivia "ehn.."
+    olivia "But w-what about the game?"
+    show olivianipple play1
+    player "Don't care anymore."
+    show olivianipple play2
+    olivia "You tricked me!"
+    show olivianipple play1
+    player "No bra again today huh?"
+    show olivianipple play2
+    olivia "Just a c-coincidence!"
+    olivia "W-Wait!"
+    scene oliviascene toplesscouch1olivia
+    with Dissolve(0.7)
+    olivia "Wait."
+    scene oliviascene toplesscouch1player
+    player "Kay."
+    scene oliviascene toplesscouch1
+    pause
+    player "...."
+    scene oliviascene toplesscouch1olivia
+    olivia "We..."
+    olivia "Can't do that."
+    scene oliviascene toplesscouch1player
+    player "Can't do what?"
+    scene oliviascene toplesscouch1olivia
+    olivia "Can't fool around like that."
+    olivia "You're dating Mia."
+    scene oliviascene toplesscouch1
+    player "...."
+    scene oliviascene toplesscouch1olivia
+    olivia "She's my friend..."
+    scene oliviascene toplesscouch2olivia
+    with Dissolve(0.7)
+    olivia "And if we..do naughty things..."
+    scene oliviascene toplesscouch2player
+    player "Things like what?"
+    scene oliviascene toplesscouch2olivia
+    olivia "Like..."
+    window hide
+    pause
+    scene oliviascene toplesscouch3
+    with Dissolve(0.7)
+    pause
+    olivia "Mmmmm."
+    scene oliviascene toplesscouch4
+    with Dissolve(0.5)
+    player "Mhhm."
+    scene oliviascene toplesscouch2olivia
+    with Dissolve(0.7)
+    olivia "Hah...hah..."
+    scene oliviascene toplesscouch2
+    olivia "...."
+    scene oliviascene toplesscouch3
+    with Dissolve(0.7)
+    olivia "Uhhnmm..."
+    scene oliviascene toplesscouch4
+    with Dissolve(0.7)
+    olivia "{i}What am I doing?{/i}"
+    scene oliviascene toplesscouch3
+    with Dissolve(0.7)
+    pause
+    scene oliviascene toplesscouch5
+    with Dissolve(0.7)
+    pause
+    scene oliviascene toplesscouch6
+    with Dissolve(0.7)
+    pause
+    scene oliviascene toplesscouch7
+    with Dissolve(0.7)
+    pause
+    scene oliviascene toplesscouch8
+    with Dissolve(0.7)
+    pause
+    scene oliviascene toplesscouch9
+    with Dissolve(0.7)
+    player "{i}Holy shit.{/i}"
+    olivia "{i}My tits are out again and I'm making out with Mia's boyfriend!{/i}"
+    scene oliviascene toplesscouch10
+    with Dissolve(0.7)
+    olivia "{i}Why does he taste so good? I've never been this horny before!{/i}"
+    scene oliviascene toplesscouch11
+    with Dissolve(0.7)
+    olivia "{i}Is...is that his cock?{/i}"
+    olivia "{i}It's rubbing against my ass!{/i}"
+
+    menu:
+        "{color=#3eab33}Romantic{/color}":
+            jump oliviachapter1rom
+        "{color=#dd3939}Naughty{/color}":
+            jump oliviachapter1naughty
+
+
+label oliviachapter1rom:
+    scene oliviascene suckoliviatits1c
+    with Dissolve(0.7)
+    olivia "{i}He's lifting me up now..staring at my boobs.{/i}"
+    olivia "{i}What is he going to-{/i}"
+    scene oliviascene suckoliviatits1
+    with Dissolve(0.7)
+    player "I know I've said it before but your tits are amazing."
+    scene oliviascene suckoliviatits1b
+    with Dissolve(0.7)
+    olivia "T-Thanks."
+    scene oliviascene suckoliviatits2
+    with Dissolve(0.7)
+    player "Mmmm!"
+    scene oliviascene suckoliviatits3
+    with Dissolve(0.7)
+    olivia "{i}He really likes them that much?{/i}"
+    player "Ahmazheng!"
+    scene oliviascene suckoliviatits4c
+    with Dissolve(0.7)
+    player "{i}How can breasts taste so good?{/i}"
+    image oliviatittysuck1:
+        "CG14-3B.png"
+        0.2
+        "CG14-3.png"
+        0.2
+        "CG14-4C.png"
+        0.2
+        "CG14-3.png"
+        0.1
+        "CG14-3B.png"
+        0.2
+
+        repeat
+
+    show oliviatittysuck1
+    window hide
+    pause
+    olivia "{i}Oh my god oh my god! Why does this feels SO good!?{/i}"
+    olivia "{i}I've never been this turned on!{/i}"
+    image oliviatittysuck2:
+        "CG14-3B.png"
+        0.1
+        "CG14-3.png"
+        0.1
+        "CG14-4C.png"
+        0.1
+        "CG14-3.png"
+        0.05
+        "CG14-3B.png"
+        0.05
+
+        repeat
+
+    show oliviatittysuck2
+    olivia "{i}He's going faster! I think..I think I'm gonna....{/i}"
+    player "{i}This is so fucking hot, I can't hold back anymore I have to just...{/i}"
+    scene oliviascene suckoliviatits5
+    with vpunch
+    olivia "AHHHNNN!!!"
+    window hide
+    olivia "Yeeeess!!!"
+    scene oliviascene suckoliviatits6
+    with Dissolve(0.7)
+    olivia "Hah...hah...*gasp*"
+    player "Hehe did you cum from me biting your boobs?"
+    scene oliviascene suckoliviatits7
+    olivia "W-What? No!"
+    olivia "Do you think I'm an anime girl or something??"
+    scene oliviascene suckoliviatits8
+    with Dissolve(0.7)
+    olivia "Geez! That would be...really ridiculous."
+    player "Uh huh."
+    player "I do love that part about you. Among other things."
+
+    scene oliviascene suckoliviatits6
+    with Dissolve(0.7)
+    olivia "Huh?"
+    player "I like how you keep your moans inside until you can't anymore."
+    scene oliviascene suckoliviatits8
+    with Dissolve(0.7)
+    olivia "I dont't know what you're talking about."
+    player "And then it bursts out of you super loudly."
+    scene oliviascene suckoliviatits6
+    with Dissolve(0.7)
+    olivia "{size=-10}It's not super loud...{/size}"
+    player "Don't worry, I like loud."
+    olivia "....."
+    player "I wonder what kind of noises you make when you have sex."
+    scene oliviascene suckoliviatits8
+    with Dissolve(0.7)
+    pause
+    scene oliviascene toplesscouch8
+    with Dissolve(0.7)
+    window hide
+    pause
+
+    image toplessoliviamakingout:
+        "CG13-9.png"
+        0.7
+        "CG13-9B.png"
+        0.7
+        repeat
+    show toplessoliviamakingout
+    window hide
+    pause
+
+    scene fs blackblank
+    with Dissolve(1.0)
+
+    $ endchapter1_trigger = "1 olivia romantic"
+    "You make out with Olivia and her tits for the next while before she heads home"
+    "You were slightly dissapointed but still satisfied"
+    player "{i}Hmmm. We're not just fooling around anymore...{/i}"
+    player "{i}I'll have to figure out if I'm willing to take things further with her.{/i}"
+
+
+    jump startofchapter2
+
+
+label oliviachapter1naughty:
+
+    image oliviaboobjob movie = Movie(channel="oliviaboobjob", play="images/animations/ations/ANIM15-1.webm")
+    image oliviaboobjob movie2 = Movie(channel="oliviaboobjob", play="images/animations/ANIM15-2.webm")
+    image oliviaboobjob movie3 = Movie(channel="oliviaboobjob", play="images/animations/ANIM15-3.webm")
+    image oliviaboobjob movie4 = Movie(channel="oliviaboobjob", play="images/animations/ANIM15-4.webm")
+    image oliviaboobjob movie5 = Movie(channel="oliviaboobjob", play="images/animations/ANIM15-5.webm")
+    image oliviaboobjob movie6 = Movie(channel="oliviaboobjob", play="images/animations/ANIM15-6.webm")
+
+    scene oliviascene suckoliviatits6
+    with Dissolve(0.7)
+    olivia "Hah...hah.."
+    player "I want to cum all over your pretty face."
+    olivia "....okay."
+    scene fs blackblank
+    with Dissolve(0.7)
+    "After a moment of moving to the ground, Olivia takes out your rock hard cock"
+    show oliviaboobjob movie
+    window hide
+    pause
+    player "Fuck yes."
+    olivia "{i}I can't believe I'm doing this but at this point there's no way I can stop.{/i}"
+    player "Your tits feel amazing Olivia."
+    show oliviaboobjob movie2
+    window hide
+    pause
+    olivia "{i}His cock is so big!{/i}"
+    player "Yeah, just like that."
+    olivia "{i}I can barely picture Mia's pussy taking this thing.{i}"
+    show oliviaboobjob movie3
+    window hide
+    pause
+    player "That's it go faster now you {color=#b8233f}SLUT{/color}."
+    olivia "{i}I wonder what it would feel like inside me.{/i}"
+    player "You're a terrible friend."
+    olivia "What?"
+    player "I invited you over to game."
+    player "Hah...and here you are."
+    player "Rubbing your fat tits all over my dick."
+    player "You KNOW I'm Mia's boyfriend."
+    show oliviaboobjob movie4
+    window hide
+    pause
+    olivia "...."
+    player "And you're still not stopping."
+    player "You're really trying to make me cum, just cause I asked you to?"
+    player "Normally people would be pissed. Yet here you are, betraying Mia's trust."
+    olivia "...."
+    player "That's right just keep quiet."
+    player"I do have to admit though..."
+    player "Your tits feel a lot better than Mia's do."
+    show oliviaboobjob movie5
+    window hide
+    pause
+    player "Holy shit haha I guess you liked that huh?"
+    olivia "Hah...hah.."
+    player "I'm getting close, don't you fucking stop."
+    window hide
+    pause
+    show oliviaboobjob movie6
+    window hide
+    pause
+    player "Ahhh fuck yes!!"
+    scene oliviascene suckoliviatits9
+    with Dissolve(0.7)
+    pause
+    player "Hah...I'm starting to really like covering you in my cum."
+    scene fs blackblank
+    with Dissolve(1.0)
+    player "How'd it feel? Betraying Mia like that?"
+    olivia "..."
+    olivia "...."
+    olivia "It felt good."
+    window hide
+    pause
+
+    $ endchapter1_trigger = "1 olivia naughty"
+
+    jump startofchapter2
+
+# interaction 1
+# part 1
+
+label oliviaphase2interaction1part1:
+    hide screen uppergui
+    scene fs arcade
+    with Dissolve(1.0)
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.3 ypos 120
+    show fbolivia current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    $ playerSprite = 1
+    player "Olivia! Hey."
+    $ oliviaSprite = 9
+    $ playerSprite = 0
+    olivia "Hey [povname]."
+    olivia "It's...nice to see you."
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Ditto."
+    player "Um...I think..w-"
+    $ oliviaSprite = 9
+    $ playerSprite = 0
+    olivia "We should talk about our relationship?"
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Oh uh yeah. I kinda..I think-"
+    $ oliviaSprite = 9
+    $ playerSprite = 0
+    olivia "Think you're really starting to like me? Me too."
+    olivia "Like..but for you."
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Uh, yeah. Spending time with you this past week and a bit was like really really fun."
+    player "But obviously...I'm dating Mia. So mayb-"
+    $ oliviaSprite = 9
+    $ playerSprite = 0
+    olivia "Maybe we should keep things hidden from the other girls until we can be sure of our feelings and future together."
+    olivia "That way if things don't work out we can maintain the status quo so nobody has to know and nobody gets hurt?"
+    $ playerSprite = 11
+    $ oliviaSprite = 8
+    player "...."
+    player "How..."
+    $ oliviaSprite = 9
+    $ playerSprite = 0
+    olivia "I've thought about you....about US. Like A LOT."
+    olivia "Kinda went crazy inside my head."
+    $ playerSprite = 1
+    $ oliviaSprite = 9
+    show fbolivia current:
+        xalign 0.47 ypos 120
+    with move
+    olivia "E-Even now my heart's beating like crazy."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Well, if it helps everything you said was absolutely on point and for what it's worth..."
+    $ oliviaSprite = 9
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.33 ypos 120
+    with move
+    $ playerSprite = 1
+    player "You make my heart beat fast too Olivia."
+    player "I wouldn't ever consider doing something like this if I wasn't absolutely sure I really liked you."
+    $ playerSprite = 0
+    $ oliviaSprite = 13
+    olivia "Um..wow t-thanks."
+    show fbplayer current:
+        xalign 0.36 ypos 120
+    with move
+    $ playerSprite = 1
+    player "I kinda..."
+    $ playerSprite = 0
+    show fbolivia current:
+        xalign 0.44 ypos 120
+    with move
+    olivia "Wanna kiss you right now?"
+    $ playerSprite = 1
+    player "You read..."
+    $ playerSprite = 0
+    olivia "My..."
+    $ playerSprite = 1
+    player "M-"
+    $ playerSprite = 11
+    $ oliviaSprite = 8
+
+    show fbplayer current at surpriseshake:
+        xalign 0.36 ypos 120
+    show fbolivia current at surpriseshake:
+        xalign 0.44 ypos 120
+    "???" "OH MY GOOOOD."
+    "???" "SHUUUT UP!"
+    olivia "???!"
+    player "???!"
+    $ pennySprite = 1
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    show fbpenny current:
+        xalign 0.8 ypos 120
+    "???" "Is this what you've been up to while I was gone Olivia?"
+    "???" "No wonder your subscribers have plummeted and your high scores are shit."
+    $ pennySprite = 0
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "Penny???"
+    hide fbolivia angryfliptalk
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "Uh huh."
+    $ pennySprite = 0
+    olivia "*Sigh*"
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "I guess you're back from the tournament huh?"
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "That's right. Another win for Penny Arcade."
+    penny "It was easy as shit though."
+    penny "But let's talk about this guy you were about to start swaping spit with."
+    $ pennySprite = 0
+    $ playerSprite = 5
+    player "I'd introduce myself but you seem kinda like a bitch."
+    $ playerSprite = 4
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "She IS a bitch."
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "Wow, a real co-op situation we got going on here."
+    penny "So you haven't told your new boyfriend who I am Olivia?"
+    $ pennySprite = 0
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "This..is Penny. She is a...very-"
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "Extremely."
+    $ pennySprite = 0
+    olivia "...."
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "Extremely good gamer."
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "Gamer, streamer extrordinaire, content creator. I'm kinda hot right now."
+    $ pennySprite = 0
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "We're also kind of known as rivals in the community."
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "I mean BARELY. You're second to me but is it really a rivalry when the distance is so big? Heh."
+    $ pennySprite = 0
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "She's actually known for being quiet and cute on stream, too bad that's just a persona."
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "Hah! You're lucky you get to know the real me."
+    $ pennySprite = 0
+    show fbolivia angryfliptalk:
+        xalign 0.44 ypos 120
+    olivia "I almost throw up everytime I see you thank someone for a dono acting like a cat-girl."
+    show fbolivia angryflip:
+        xalign 0.44 ypos 120
+    $ pennySprite = 1
+    penny "Hey the subscribers love it and it brings in the big bucks."
+    penny "Anyways, I've been busy kicking you down to second place on all these machines, I'm about halfway done so I gotta get back to it."
+    penny "You."
+    $ pennySprite = 0
+    $ playerSprite = 1
+    player "It's [povname]."
+    $ playerSprite = 0
+    $ pennySprite = 1
+    penny "[povname], Olivia's boyfriend."
+    $ playerSPrite = 11
+    penny "Let me know when you wanna fuck someone who matters."
+    $ pennySprite = 0
+    hide fbpenny current
+    with Dissolve(0.5)
+    $ oliviaSprite = 3
+    show fbolivia current:
+        xalign 0.5 ypos 120
+    $ playerSprite = 15
+    player "Wow."
+    player "What a lovely young woman."
+    $ playerSprite = 14
+    $ oliviaSprite = 4
+    olivia "Che."
+    olivia "I feel dirty just being in her presence."
+    $ playerSprite = 15
+    $ oliviaSprite = 3
+    player "You wanna leave? Go somewhere else together?"
+    $ playerSprite = 14
+    $ oliviaSprite = 4
+    olivia "No, I'm in a bad mood and I wanna take a shower."
+    olivia "Come over to my place tonight and we'll hang out there. I'll suck you off."
+    $ oliviaSprite = 3
+    $ playerSprite = 15
+    player "Sure I can pass b-"
+    $ playerSprite = 11
+    player "Wait what?"
+    $ playerSprite = 14
+    $ oliviaSprite = 4
+    olivia "I'm angry. I wanna suck some cock."
+    $ playerSprite = 1
+    $ oliviaSprite = 3
+    player "Hey whatever helps you get over it! I'm down for tonight, where do you live?"
+    $ playerSprite = 0
+    $ oliviaSprite = 4
+    olivia "Big apartement in Sunnyside, suit 8008."
+    $ playerSprite = 1
+    $ oliviaSprite = 3
+    player "See you there."
+    $ playerSprite = 0
+    $ oliviaphase2interaction1 = 1
+    $ oliviaquestlog = "Did Olivia say she wanted to suck my dick?? I should go to her place tonight."
+    $ pennyquesticon = "gui/questboxPenny.png"
+    $ pennyquestlog = "Who does Penny think she is? Just cause she's short and cute and hot..."
+    jump overworldmap
+
+# part 2
+
+label oliviaphase2interaction1part2:
+    "BZZZZ"
+    olivia "Hello?"
+    player "Hey! It's me."
+    player "{i}I am super looking forward to Olivia's blowjob!{/i}"
+    olivia "Hey [povname], come on up I'll buzz you in."
+    player "{i}She just seems like she can suck good dick you know?{/i}"
+    player "{i}Or is it...suck a dick good?{/i}"
+    player "{i}Whatever I'm getting some head tonight that's all that matters.{/i}"
+
+    stop music
+    scene fs oliviahouse
+    with Dissolve(0.7)
+    $ oliviaSprite = 9
+    show fbolivia current:
+        xalign 0.55 ypos 120
+    olivia "Hey [povname] you can come in."
+    $ oliviaSprite = 8
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.7)
+    $ playerSprite = 1
+    player "Woah Olivia!"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Hehe you like my place?"
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "This is rad!!"
+    player "I mean like...it's perfect! It fits you perfectly!"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Well only half of it is mine."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Still, your place is really special."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "You think so?"
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "You're pretty special too you know..."
+    $ playerSprite = 0
+    $ oliviaSprite = 13
+    olivia "You're gonna make me blush [povname].."
+    $ oliviaSprite = 14
+    $ playerSprite = 1
+    player "You're cute when you blush."
+    $ playerSprite = 0
+    $ oliviaSprite = 13
+    olivia "Do I get anything for being special?"
+    $ oliviaSprite = 14
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.45 ypos 120
+    with move
+    player "I'm not sure, maybe your bedroom ca-"
+    $ oliviaSprite = 8
+    $ playerSprite = 0
+    $ pennySprite = 1
+    show fbpenny pennypjflipyawn:
+        xalign 0.45 ypos 120
+    with Dissolve(0.5)
+    $ playerSprite = 11
+    show fbplayer current:
+        xalign 0.3 ypos 120
+    with move
+    $ oliviaSprite = 10
+    show fbolivia current:
+        xalign 0.65 ypos 120
+    with move
+    penny "*YAWWWWWWN*"
+    $ playerSprite = 11
+    player "!!!!!"
+    show fbpenny pennypjfliptalk:
+        xalign 0.45 ypos 120
+    penny "Sup."
+    $ pennySprite = 2
+    show fbpenny current:
+        xalign 0.45 ypos 120
+    $ playerSprite = 17
+    player "You-"
+    $ playerSprite = 11
+    pause
+    $ playerSprite = 17
+    player "But-"
+    pause
+    show fbpenny pennypjfliptalk:
+        xalign 0.45 ypos 120
+    penny "Olivia we outta milk?"
+    show fbpenny pennypjflip:
+        xalign 0.45 ypos 120
+    $ oliviaSprite = 4
+    olivia "No it's in the back, almost done though."
+    $ oliviaSprite = 3
+    show fbpenny pennypjfliptalk:
+        xalign 0.45 ypos 120
+    penny "KK."
+    show fbpenny pennypjflip:
+        xalign 0.45 ypos 120
+    hide fbpenny pennypjflip
+    with Dissolve(0.5)
+    $ oliviaSprite = 8
+    show fbolivia current:
+        xalign 0.6 ypos 120
+    with move
+    $ oliviaSprite = 9
+    $ playerSprite = 11
+    olivia "Sorry about that."
+    $ oliviaSprite = 8
+    $ playerSprite = 5
+    player "P..Penny? Olivia!!"
+    $ playerSprite = 4
+    $ oliviaSprite = 9
+    olivia "What? What is it?"
+    $ oliviaSprite = 8
+
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with move
+    $ playerSprite = 5
+    player "You didn't tell me you LIVE with Penny!!"
+    $ playerSprite = 4
+    $ oliviaSprite = 9
+    olivia "I didn't?"
+    $ oliviaSprite = 8
+    $ playerSprite = 5
+    player "NO!"
+    $ playerSprite = 4
+    $ oliviaSprite = 9
+    olivia "Oh, yeah we're roomates."
+    $ oliviaSprite = 8
+    $ playerSprite = 5
+    player "Isn't she your rival and biggest competitor and all that??!"
+    $ playerSprite = 4
+    $ oliviaSprite = 9
+    olivia "Yeah it sucks."
+    $ oliviaSprite = 8
+    $ playerSprite = 5
+    player "I...okay."
+    player "But don't you...can't you like not get in the mood when she's around?"
+    $ playerSprite = 11
+    $ oliviaSprite = 9
+    olivia "Hmmmm, yeah now that I've seen her I kinda ain't feeling it."
+    $ oliviaSprite = 8
+    player "...."
+    $ playerSprite = 4
+    pause
+    $ playerSprite = 5
+    player "We're going to my place."
+    $ playerSprite = 4
+    $ oliviaSprite = 9
+    show fbplayer frownflip:
+        xalign 0.45 ypos 120
+    olivia "But you just got here?"
+    show fbplayer frownflip:
+        xalign 0.3 ypos 120
+    with move
+    player "You can show me around another time, we'll game at my place c'mon."
+    $ oliviaSprite = 9
+    show fbplayer frownflip:
+        xalign -1.5 ypos 120
+    with move
+    olivia "W-Woah hang on!"
+    $ oliviaSprite = 8
+    hide fbolivia current
+    scene fs blackblank
+    with Dissolve(1.0)
+    "A little while later at your place..."
+    scene oliviascene oliviablowjob1
+    with Dissolve(0.7)
+    pause
+    scene oliviascene oliviablowjob2
+    player "Yeah c'mon!"
+    player "Dodge!"
+    scene oliviascene oliviablowjob1
+    olivia "Mmmm.."
+    scene oliviascene oliviablowjob2
+    player "Dodge!"
+    player "Reflect!"
+    scene oliviascene oliviablowjob1
+    olivia "Gughk!"
+    scene oliviascene oliviablowjob2
+    player "Get fucked!"
+    player "Haha."
+    scene oliviascene oliviablowjob3
+    with Dissolve(0.7)
+    player "Yeah that's it."
+    scene oliviascene oliviablowjob3b
+    player "That's fucking it!"
+    scene oliviascene oliviablowjob3
+    player "Keep sucking that fat cock while I dunk on this ass hole."
+    scene oliviascene oliviablowjob4
+    olivia "Guhg! Gluhk!"
+    scene oliviascene oliviablowjob5
+    with Dissolve(0.7)
+    olivia "MMMMM."
+    scene oliviascene oliviablowjob6
+    olivia "MMMHFF!"
+    scene oliviascene oliviablowjob5
+    player "Oh baby that's it keep using your tongue like that!"
+    scene oliviascene oliviablowjob6
+    olivia "GGUUGGH!!"
+    player "Fuck me I'm cumming Olivia!"
+    scene oliviascene oliviablowjob7
+    with vpunch
+    player "AHHH That's so good baby!"
+    with flash
+    olivia "MMMHMM!"
+    scene oliviascene oliviablowjob8
+    with Dissolve(0.5)
+    olivia "*Gulp* *Gulp*"
+    player "You're so fucking pretty, you're so much hotter than Penny."
+    scene oliviascene oliviablowjob9
+    with Dissolve(0.5)
+    olivia "Hmm hmm!"
+    player "{i}Looks like she liked that.{/i}"
+    player "Yeah swallow it, take every drop..."
+    olivia "*Gulp* *Gulp*"
+    player "Ahh..."
+    scene fs blackblank
+    with Dissolve(0.7)
+
+    $ oliviaquestlog = "Olivia gives one hell of a blowjob. This is getting pretty serious."
+    $ oliviaphase2interaction1 = 2
+    $ pennyquestlog = "Seems like Penny also spends her time at the arcade during the day."
+    jump overworldmap
+
+# interaction 2
+# part 1
+
+label oliviaphase2interaction2part1:
+    hide screen olivia_atschool
+    scene fs classroomBlur
+    with Dissolve(0.7)
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbolivia current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+    $ playerSprite = 1
+    player "Hey there you are!"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Hey, I actually wanted to talk to you."
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Oh, yeah sure what's up?"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "There's a KeroKero duos tournament at the arcade in a couple days."
+    olivia "Wanna be my partner?"
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Oh uh just like that?"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Just like that."
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Well sure, I know of it but I've never played myself."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "It's okay we'll practice online first, wouldn't bring you in as a total noob."
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Yeah shit, should be a lot of fun!"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "So was there a reason you were looking for me?"
+    $ playerSprite = 7
+    $ oliviaSprite = 8
+    player "Ummmm."
+    $ playerSprite = 1
+    player "Oh yeah shit, I wanted to apologize for bringing you to my place so quickly."
+    player "When you wanted to show me yours."
+    player "And you know...stuffing my cock down your throat as soon as we sat down."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Oh, I wasn't bothered by it. Honestly spending time away from Penny is a good time for me."
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Ah haha, alright."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "And as for the cock down my throat.."
+    $ oliviaSprite = 13
+    olivia "Maybe you got the order wrong on who stuffed it there hehe."
+    $ oliviaSprite = 8
+    player "..."
+    $ playerSprite = 1
+    player "You are....so cool."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "I know."
+    olivia "Message me for practice alright?"
+    $ playerSprite = 1
+    $ oliviaSprite = 8
+    player "Yeah, I'll see you online!"
+    $ playerSprite = 0
+
+    $ oliviaquestlog = "I gotta get on my computer tonight to game with Olivia"
+    $ oliviaphase2interaction1 = 3
+    $ oliviaphase2interaction2 = 1
+    jump passtime
+
+# part 2
+
+label oliviaphase2interaction2part2:
+    scene fs blackblank
+    with Dissolve(0.7)
+    player "Okay...this wire goes here.."
+    player "That cord goes there...headphones on.."
+    player "Hey hello?"
+    scene fs oliviagamingsext1
+    player "Can you hear me?"
+    olivia "Yup I can hear you, am I good?"
+    player "You're good!"
+    olivia "Okay, let's get started. Lots to cover."
+    player "Let's do it!"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "Olivia went right into explaining things"
+    "It was essentially a fighting game on a 2D plane but with 3 dimensional movement"
+    scene fs oliviagamingsext1b
+    with Dissolve(0.5)
+    olivia "Okay! He's coming at you with a froggy kick you have to dodge!"
+    scene fs oliviagamingsext1
+    player "Got it."
+    scene fs oliviagamingsext1b
+    olivia "And what do you do after the dodge?"
+    scene fs oliviagamingsext1
+    player "Leaping uppercut!"
+    scene fs oliviagamingsext1d
+    olivia "Nice. This one is doing a punch combo watch out!"
+    scene fs oliviagamingsext1c
+    player "Okay punch punch....Knee! So I counter with tongue whip!"
+    scene fs oliviagamingsext1d
+    olivia "Awesome, now if it was punch punch kick what would you do?"
+    scene fs oliviagamingsext1c
+    player "Boing drop!"
+    scene fs oliviagamingsext1d
+    olivia "Exactly. Okay one more guy comming at you."
+    olivia "He's charging his lasor."
+    scene fs oliviagamingsext1c
+    player "Why would a frog have a-"
+    scene fs oliviagamingsext1d
+    olivia "Concentrate. How do you respond."
+    scene fs oliviagamingsext1
+    player "It's a timing thing, I have to wait for his cheeks to expand then..."
+    player "Poison Jab!!"
+    scene fs oliviagamingsext2
+    olivia "Yes! You did it!"
+    olivia "You cleared all the test rounds I made for you. I think we're ready."
+    player "Nice!"
+    player "Thanks for all the help you were a great teacher."
+    scene fs oliviagamingsext3
+    olivia "Hmmm."
+    olivia "The situation now demands a reward and motivation..."
+    player "Haha what?"
+    olivia "Hmmm.."
+    player "Olivia this isn't a foreign dating simulator you don't have to-"
+    scene fs oliviagamingsext4    
+    olivia "Be right back!"
+    player "...."
+    player "Cute profile."
+    scene fs oliviagamingsext5a
+    pause
+    scene fs oliviagamingsext5b
+    olivia "Hey."
+    player "I...hey."
+    scene fs oliviagamingsext5c
+    player "Are you...all the way naked?"
+    scene fs oliviagamingsext5d
+    olivia "Yeah."
+    player "..."
+    player "Should I get naked?"
+    scene fs oliviagamingsext6
+    with Dissolve(0.5)
+    pause
+    olivia "{size=20}Yes.{/size}"
+    scene fs oliviagamingsext7
+    with Dissolve(0.7)
+    pause
+    player "Fuck Olivia your pussy is s-"
+    olivia "Hurry up and take your dick out already!"
+    
+    show oliviasexting movie1
+    pause
+    player "Yes ma'am."
+    show oliviasexting movie2
+    olivia "Hah...hah.."
+    player "I've never done this online before"
+    olivia "Stop talking and stroke faster!"
+    pause
+    show oliviasexting movie3
+    olivia "Ahhhnnn."
+    olivia "Yes...you're so big."
+    pause
+    show oliviasexting movie4
+    olivia "MMMMM!"
+    player "Fuck this is so hot Olivia I'm really close!"
+    olivia "M-Me too just..."
+    olivia "JUST!"
+    pause
+    show oliviasexting movie5
+    olivia "AHHHHH!!!"
+    player "FUCK!"
+    pause
+    scene fs oliviagamingsext14b
+    with Dissolve(0.7)
+    olivia "Hah...there...reward received."
+    scene fs oliviagamingsext14a
+    player "What?..hah..oh yeah."
+    scene fs oliviagamingsext14b
+    olivia "I'll see you at the tournament in two days." 
+    scene fs oliviagamingsext14a
+    player "See you there baby."
+    scene fs oliviagamingsext14b
+    olivia "Hehe..'baby'."
+    scene fs blackblank
+    with Dissolve(0.7)
+    pause
+
+    $ oliviaquestlog = "I gotta wait for the tournament in 2 days!"
+    $ oliviatournyday = dayNumber
+    $ oliviaphase2interaction2 = 2
+    if pennyscene2 == 2:
+        $ pennyscene2 = 3
+        $ pennyscene3 = 1
+    jump playerRoom
+
+# interaction 3
+
+label oliviaphase2interaction3part1:
+    hide screen uppergui
+    stop music fadeout 5
+    scene fs oliviatournament1
+    with Dissolve(0.7)
+    "Announcer" "Welcome ladies and gentlemen to the DUO'S CHAMPION KEROKERO TOURNAMENT!"
+    "Announcer" "I'm assuming you all know the rules but just in case you don't this will be an 8 round tournament"
+    "Announcer" "If you & your partner manage to make it to the top you will be playing against THE World champion duo in an online final!"
+    "Announcer" "Good luck, have fun, and most importantly-"
+    "Everyone shouting" "Time to go FROG WILD!"
+    scene fs oliviatournament1b
+    olivia "Let's DO THIS [povname]!"
+    scene fs oliviatournament1c
+    player "You got it!"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "Already hyped from the start the first couple rounds were slam dunks"
+    scene fs oliviatournament1d
+    with Dissolve(0.5)
+    "You and Olivia easily dealt with your opponents"
+    scene fs oliviatournament2
+    with Dissolve(0.5)
+    "Rounds after 4 were way more tough, you started losing 1 or 2 lives with every win"
+    scene fs oliviatournament3
+    with Dissolve(0.5)
+    "Undetered the two of you comboed, combo-broke, and stun-locked(When needed) your way to the later rounds"
+    scene fs oliviatournament4
+    with Dissolve(0.5)
+    "As more and more people were eliminated more and more people started to crowd around you"
+    "Then it happened"
+    "Announcer" "LADIES AND GENTLEMEN I don't believe it!"
+    "Announcer" "Our very own local legend Olivia and her...boyfriend?"
+    "Announcer" "Have beaten the 9th round!"
+    "*Cheers*"
+    "Announcer" "My Froggy fighters...only one fight remains, are you ready to connect online?"
+    "Olivia and [povname]" "Yes!"
+    "Announcer" "Here we GO!"
+    "The fight starts off standard. Olivia takes one opponent while you take the other."
+    "Your opponent leaps at you with a Froggy kick, what do you do?"
+    menu:
+        "Punch":
+            jump losefrogfight
+        "{color=#008000}Dodge{/color}":
+            jump frogfightwin1
+        "Counter":
+            jump losefrogfight
+label frogfightwin1:
+    "After you dodge you find yourself right under him"
+    menu:
+        "Boing Drop":
+            jump losefrogfight
+        "{color=#008000}Leaping Uppercut{/color}":
+            jump frogfightwin2
+        "Tongue Whip":
+            jump losefrogfight
+    
+label frogfightwin2:
+    "After he takes the damage, you go on the offensive!"
+    menu:
+        "{color=#008000}Punch Punch then kick{/color}":
+            jump frogfightwin3
+        "{color=#008000}Triple Punch{/color}":
+            jump frogfightwin3
+        "{color=#008000}Kick Knee Punch{/color}":
+            jump frogfightwin3
+label frogfightwin3:
+    "Announcer" "I don't believe it Olivia has died! Leaving her partner to face two opponents!"
+    "Olivia's opponent killed her but he's low HP and attacks you with a punch punch knee combo"
+    menu:
+        "Boing Drop":
+            jump losefrogfight
+        "Leaping Uppercut":
+            jump losefrogfight
+        "{color=#008000}Tongue Whip{/color}":
+            jump frogfightwin4
+label frogfightwin4:
+    "You countered Olivia's now defeated opponent and see that yours started charging a lasor attack!"
+    menu:
+        "Look at his eyes":
+            jump losefrogfight
+        "{color=#008000}Look at his cheeks{/color}":
+            jump frogfightwin5
+        "Look at his legs":
+            jump losefrogfight
+label frogfightwin5:
+    "You got the timing right! What attack will you use to finish him off?"
+    menu:
+        "leaping uppercut!":
+            jump losefrogfight
+        "Boing drop!":
+            jump losefrogfight
+        "{color=#008000}Poison Jab!{/color}":
+            jump frogfightwin
+    
+label frogfightwin:
+    scene fs oliviatournament5
+    "Announcer" "They did it they did it they did it!!!"
+    "Announcer" "CONGRATULATIONS Olivia and [povname]!"
+    pause
+    player "Let's gooooo!"
+    olivia "YESSSS!"
+    scene fs oliviatournament6
+    "*SLAP*"
+    "Announcer" "What a spectacle!"
+    scene fs blackblank
+    with Dissolve(0.5)
+    "Announcer" "Your plaque and trophy will be delivered to you in 8 business days"
+    "Announcer" "Now tell me, how do you two plan on celebrating your remarkable win tonight?"
+    olivia "Well.."
+
+    show oliviatournysex movie2
+    olivia "AHN Hah Hah!"
+    player "YES!"
+    player "God I love watching your big fucking tits bounce!"
+    scene fs oliviatournament10a
+    with Dissolve(0.5)
+    olivia "[povname]! [povname]!"
+    olivia "YES YES!"
+    show oliviatournysex movie1
+    with Dissolve(0.7)
+    player "Let's slow down a bit huh? Savor it a bit."
+    olivia "Y-You're supposed to start slow dummy, I wasn't prepared for..."
+    player "For?"
+    olivia "Such a rough pounding."
+    player "Haha I was surprised when you moaned so loud from the get go."
+    player "So you prefer it nice and slow?"
+    olivia "I..hah...didn't say that."
+    pause
+    show oliviatournysex movie2
+    player "Then I think you CAN HANDLE SOME MORE!"
+    olivia "OH MY GOD!!"
+    pause
+    scene fs oliviatournament10a
+    with Dissolve(0.5)
+    olivia "AHN!!!"
+    scene fs oliviatournament10b
+    olivia "Harder!"   
+    penny "God damn."
+    show oliviatournysex movie2
+    olivia "I'm CUMMING!"
+    player "Fuck me too! Should I pull ou-"
+    olivia "DON'T YOU FUCKING STOP!!"
+    show oliviatournysex movie3
+    olivia "AHHHN!!"
+    player "Fucking fill you up baby!"
+    pause
+    scene fs oliviatournament7
+    with Dissolve(1.0)
+    pause
+    olivia "Hah...hah.."
+    player "Sorry, there was no way I could pull out, hope you don't mind?"
+    olivia "I love your cum."
+    olivia "I love your cum in my pussy."
+    player "God you're fucking beautiful..."
+    scene fs blackblank
+    with Dissolve(1.0)
+    olivia "T-Thanks."
+    "After some more rigorous fucking you fell asleep at Olivia's place then headed home in the morning"
+    $ oliviaquestlog = "I wonder what I can get up to with Olivia at the beach trip?"
+    if currentchapter >= 3:
+        $ oliviaquestlog = "That was some incredible sex. I should chat up Olivia at the school."
+    $ oliviaphase2interaction2 = 3
+    $ oliviaphase2interaction3 = 1
+    if pennyscene5 == 1:
+        $ pennyquestlog = "Penny is a full blown internet whore...I kinda wanna talk to her about it.Maybe at the arcade?"
+    jump passtime
+
+label losefrogfight:
+    scene fs blackblank
+    with Dissolve(0.5)
+    "Announcer" "Oh no! Looks like [povname] messed up and got mega-countered!"
+    "Your loss cost you the game, which cost you the match"
+    "At least there's always tomorrow night!"
+    jump passtime
+
+# end chapter 2
+

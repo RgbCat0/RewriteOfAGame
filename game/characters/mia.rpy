@@ -1867,3 +1867,1973 @@ label continuemiasex:
         hide fbava
         hide fbemily
         jump gotosleep
+
+# end chapter 1
+
+# chapter 2
+# start
+
+label gohomemia:
+        show fbava runfliptalk:
+            xalign 0.2 ypos 120
+        show fbcharlotte current:
+            xalign 0.3 ypos 120
+        ava "Thanks again for coming out and cheering you guys."
+        ava "Seriously it means a lot to me."
+        show fbava runflip:
+            xalign 0.2 ypos 120
+        $ emilySprite = 1
+        emily "You're more than welcome Ava!"
+        $ emilySprite = 0
+        $ miaSprite = 1
+        mia "It was no problem!"
+        $ miaSprite = 0
+        show fbava runfliptalk:
+            xalign 0.2 ypos 120
+        ava "And man Mia I didn't know you could cheer like that! Loudest I think I've ever heard you."
+        show fbava runflip:
+            xalign 0.2 ypos 120
+        $ miaSprite = 10
+        mia "O-Oh well you know...just trying to support you."
+        $ miaSprite = 12
+        $ playerSprite = 13
+        player "Hahaha!"
+        $ playerSprite = 0
+        mia "..."
+        $ avaSprite = 2
+        show fbava current:
+            xalign 0.15 ypos 120
+        "Everyone" "?"
+        $ playerSprite = 12
+        $ sophiaSprite = 0
+        player "Sorry *ahem*."
+        $ playerSprite = 0
+        player "{i}I've never seen Mia this mad before, she's so cute!{/i}"
+        $ charlotteSprite = 11
+        show fbcharlotte current:
+            xalign 0.3 ypos 120
+        show fbava runflip:
+            xalign 0.2 ypos 120
+        charlotte "Anyways I think I'm going to head out girls! Congratulations again Ava."
+        $ charlotteSprite = 0
+        hide fbcharlotte current
+        with Dissolve(0.7)
+        show fbava runfliptalk:
+            xalign 0.2 ypos 120
+        ava "Bye Charlotte!"
+        ava "Think I'm going to follow suite, I need a shower BAD! See yah!"
+        show fbava runflip:
+            xalign 0.2 ypos 120
+        $ emilySprite = 1
+        emily "Bye!"
+        $ emilySprite = 0
+        $ oliviaSprite = 1
+        olivia "Bye."
+        $ oliviaSprite = 0
+        hide fbava
+        with Dissolve(0.7)
+        $ sophiaSprite = 2
+        show fbsophia current at surpriseshake:
+            xalign 0.5 ypos 120
+        sophia "Oh shoot! Wait Charlotte can your driver take me home??!"
+        hide fbsophia current
+        with Dissolve(0.7)
+
+        $ oliviaSprite = 9
+        show fbolivia current at surpriseshake:
+            xalign 0.8 ypos 120
+        olivia "Gah! I forgot I pre-ordered that new Kerokero game! It arrives today!!"
+        olivia "Sorry I gotta go."
+        hide fbolivia current
+        with Dissolve(0.5)
+        $ playerSprite = 1
+        player "Geez one right after another, okay bye."
+        $ playerSprite = 0
+        $ emilySprite = 1
+        emily "Oh there she goes."
+        emily "Well looks like everyone's headed home then, are you two headed back together?"
+        $ emilySprite = 0
+        $ playerSprite = 1
+        player "We-"
+        $ playerSprite = 1
+        show fbmia talkflip:
+            xalign 0.7 ypos 120
+        with move
+        mia "Yes."
+        show fbmia talkflip:
+            xalign 0.7 ypos 120
+        $ emilySprite = 2
+        mia "We are."
+        show fbmia defaultflip:
+            xalign 0.7 ypos 120
+        $ emilySprite = 1
+        emily "Mind if I j-"
+        show fbmia talkflip:
+            xalign 0.75 ypos 120
+        with move
+        $ emilySprite = 2
+        mia "I'll see you back at school Emily."
+        show fbmia defaultflip:
+            xalign 0.75 ypos 120
+        $ emilySprite = 2
+        emily "Um..."
+        show fbmia talkflip:
+            xalign 0.8 ypos 120
+        with move
+        mia "Be safe!"
+        show fbmia defaultflip:
+            xalign 0.8 ypos 120
+        $ emilySprite = 1
+        emily "O-Okay I'll uh go then. See yah..."
+        $ emilySprite = 0
+        $ playerSprite = 8
+        show fbplayer current:
+            xalign 0.1 ypos 120
+        with move
+        player "Bye...."
+        hide fbemily current
+        with Dissolve(0.7)
+        $ playerSprite = 0
+        $ miaSprite = 12
+        show fbmia current:
+            xalign 0.8 ypos 120
+        window hide
+        pause
+        $ playerSprite = 14
+        show fbmia current:
+            xalign 0.65 ypos 120
+        with move
+        mia "...."
+        show fbmia current:
+            xalign 0.55 ypos 120
+        with move
+        $ playerSprite = 15
+        player "What?"
+        $ playerSprite = 14
+        show fbmia current:
+            xalign 0.4 ypos 120
+        with move
+        mia "Grrr!"
+        $ playerSprite = 15
+        player "Why are you looking at me like that what's wrong?"
+        $ playerSprite = 14
+        $ miaSprite = 13
+        mia "What's WRONG is that you made me HORNY!"
+        $ miaSprite = 12
+        $ playerSprite = 1
+        player "Haha oh well th-"
+        $ playerSprite = 0
+        $ miaSprite = 13
+        mia "And I had an orgasm in front of a bunch of people!"
+        $ miaSprite = 12
+        $ playerSprite = 8
+        player "Sorry babe I just got really worked up from you sitting on me and everytime you moved y-"
+        $ miaSprite = 11
+        $ playerSprite = 14
+        show fbmia current:
+            xalign 0.32 ypos 120
+        mia "No! No more talking. We are going to your house."
+        mia "Right now!"
+        $ miaSprite = 12
+        show fbmia current:
+            xalign 0.4 ypos 120
+        $ playerSprite = 15
+        player "Okay..."
+        $ playerSprite = 14
+        $ miaSprite = 11
+        show fbmia current:
+            xalign 0.32 ypos 120
+        mia "And you're going to fuck me until I'm satisfied."
+        $ miaSprite = 12
+        show fbmia current:
+            xalign 0.4 ypos 120
+        $ playerSprite = 13
+        player "Okay!"
+        $ playerSprite = 11
+        $ miaSprite = 13
+        mia "Don't be so happy mister, it's going to be a long night!"
+        $ miaSprite = 12
+        player "{i}Ho. Lee.{/i}"
+        $ playerSprite = 13
+        player"{i}Shit.{/i}"
+        scene fs blackblank
+        with Dissolve(1.0)
+        window hide
+        pause
+        scene fs endchaptermia4
+        with hpunch
+        mia "AHH!"
+        scene fs endchaptermia3
+        with hpunch
+        mia "OHH!"
+        scene fs endchaptermia4
+        with hpunch
+        mia "AHN!"
+        scene fs endchaptermia3
+        with hpunch
+        mia "H-Harder!"
+        $ hiden_textbox = True
+        scene fs endchaptermia6
+        mia "Hah!"
+        scene fs endchaptermia5
+        with hpunch
+        mia "AHHHNN!"
+        scene fs endchaptermia6
+        player "You like it don't you?? You like this big fucking dick!"
+        scene fs endchaptermia5
+        with hpunch
+        mia "AHHHNN!"
+        mia "YESSS!"
+        scene fs endchaptermia1
+        with Dissolve(0.7)
+        mia "[povname]..."
+        player "You're beautiful Mia."
+        scene fs endchaptermia2
+        with vpunch
+        mia "OHHH!!"
+        mia "I'm cumming!!"
+        #$ hiden_textbox = False
+        scene fs blackblank
+        window hide
+        pause
+
+        show miaendchapterfuck1 movie
+        player "Yeah...yeah just like that."
+        show miaendchapterfuck2 movie
+        player "Feels good baby?"
+        mia "Y-Yeah..."
+        show miaendchapterfuck4 movie
+        mia "AHN..S-So big..."
+        show miaendchapterfuck5 movie
+        player "God I can't get enough of this fucking pussy!"
+        mia "G-Go deeper! CUM INSIDE OF ME!"
+        show miaendchapterfuck6 movie
+        mia "AHN!!! YES YES!!!"
+        player "I'm gonna cum Mia!!"
+        window hide
+        pause
+        show miaendchapterfuck3 movie
+        mia "[povname]!!!"
+        player "AHHH YES!"
+        hide miaendchapterfuck3 movie
+        scene fs miasexlastframe
+        with Dissolve(1.0)
+        player "Fucking filling up your womb!"
+        mia "Ohhh..."
+        window hide
+        pause
+        scene fs endchaptermia8
+        with Dissolve(1.0)
+        mia "Hah...hah..."
+        player "Fuck me..."
+        mia "Wow!"
+        scene fs endchaptermia7
+        with Dissolve(0.5)
+        player "You alright baby?"
+        mia "Yes! That was...just incredible [povname]."
+        player "Hehe, so you're 'satisfied'?"
+        mia "VERY satisfied hehe."
+        player "That..phew..is good."
+        mia "Can I stay with you tonight?"
+        scene fs blackblank
+        with Dissolve(0.7)
+        player "I wouldn't have it any other way."
+
+
+        "Kyle Mercury" "Congratulations you've finished Chapter One!"
+        $ endchapter1_trigger = "1 mia neutral"
+        jump startofchapter2
+
+# interaction 1
+# part 1
+
+label miaphase2interaction1part1:
+    hide screen mia_room
+    hide screen backbuttonGFHALLWAY
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbmia current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+    $ miaSprite = 1
+    mia "[povname] hey!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Hey Mia."
+    $ miaSprite = 1
+    $ playerSprite = 0
+    mia "Are you ready to go to the mall?"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Yeah I'm good to go!"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Is anyone else gonna join us?"
+    "You can only bring one girl along with you"
+    $ CharsLeftToUnlock = ""
+    if not (charlottephase1interaction2 >= 4 and charlottephase2interaction1 >= 3):
+        $ CharsLeftToUnlock += ", Charlotte"
+    if not (oliviaphase1interaction3 >= 2 and oliviaphase2interaction1 >= 2):
+        $ CharsLeftToUnlock += ", Olivia"
+    if not (avaphase1interaction1 >= 6 and avaphase2interaction1 >= 1):
+        $ CharsLeftToUnlock += ", Ava"
+    if not (sophiaphase1interaction2 >= 2 and sophiaphase2interaction1 >= 2):
+        $ CharsLeftToUnlock += ", Sophia"
+    if not (emilyphase1interaction2 >= 5 and emilyphase2interaction1 >= 5):
+        $ CharsLeftToUnlock += ", Emily"
+    if CharsLeftToUnlock != "":
+        "Rgbcat" "Note: You haven't unlocked all the characters for this interaction yet."
+        "Rgbcat" "You're currently missing[CharsLeftToUnlock]."
+    $ miaSprite = 0
+    menu:
+        "Charlotte" if charlottephase1interaction2 >= 4 and charlottephase2interaction1 >= 3:
+            jump malltripwithcharlotte
+        "Olivia" if oliviaphase1interaction3 >= 2 and oliviaphase2interaction1 >= 2:
+            jump malltripwitholivia
+        "Ava" if avaphase1interaction1 >= 6 and avaphase2interaction1 >= 1:
+            jump malltripwithava
+        "Sophia" if sophiaphase1interaction2 >= 2 and sophiaphase2interaction1 >= 2:
+            jump malltripwithsophia
+        "Emily" if emilyphase1interaction2 >= 5 and emilyphase2interaction1 >= 5:
+            jump malltripwithemily
+        "Nobody Else":
+            jump malltripwithmia
+
+label malltripwithcharlotte:
+    $ miaSprite = 1
+    mia "Okay let's go!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    player "Woah wait up!"
+    hide fbplayer current
+    scene fs mall
+    with Dissolve(0.7)
+    "It doesn't take long for the two of you to get to the mall"
+    "Mia talked about going clubbing, the upcoming talent show and a potential sleepover at Charlotte's house and other things they've all planned to do in the upcoming weeks"
+
+    scene fs blackblank
+    with Dissolve(0.7)
+    "She took you through the mall to a section you've never been to before, mainly because it was mostly women's wear"
+    "Eventually she found the store she was looking for and went in"
+    "You knew Mia was going to take a long time so you walked around and browsed for a bit"
+
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    player "{i}Alright I should probably be good to go back now.{/i}"
+    player "{i}I wonder if Charlotte made it to the mall?{/i}"
+    hide fbplayer current
+    scene fs charlottechangeroomfeet
+    with Dissolve(0.5)
+    player "This should be the right place right?"
+    player "I didn't see anyone around the store so they must be-"
+    charlotte "Hmph!"
+    player "Ah."
+    player "I'd recognize that scoff anywhere!"
+    scene fs charlottechangeroom1
+    with Dissolve(0.7)
+    charlotte "Look at yourself Charlotte!"
+    charlotte "You're the very picture of womanly beauty!"
+    charlotte "You don't need big boobs or parential love to live your best life!"
+    scene fs charlottechangeroom2
+    player "What we doing?"
+    charlotte "Confidence training."
+    player "Confidence training?"
+    charlotte "I read about it in a self hel-"
+    scene fs charlottechangeroom3
+    with vpunch
+    charlotte "Gah!!"
+    mia "Charlotte you okay?"
+    scene fs charlottechangeroom3b
+    charlotte "Y-Yes Mia just stubbed my toe sorry!"
+    charlotte "S-Still got a lot to try on."
+    mia "Okidoke!"
+    charlotte "...."
+    scene fs charlottechangeroom4
+    player "Hehe, hey."
+    scene fs charlottechangeroom4b
+    charlotte "{size=-10}What are you doing here??{/size}"
+    scene fs charlottechangeroom4
+    player "Training confidence?"
+    scene fs charlottechangeroom4b
+    charlotte "I'm serious Mia's in the next room!"
+    charlotte "{size=-10}A-And keep your voice down!{/size}"
+    scene fs charlottechangeroom5
+    player "Listen Charlotte, it might not mean much coming from me but you are very beautiful you know."
+    player "This self-help stuff is fine but take it from a secondary observer. You got it going on."
+    charlotte "{i}He did not just say 'you got it going on'.{/i}"
+    charlotte "{i}Though the sentiment is nice..{/i}"
+    player "Let me prove it to you."
+    scene fs charlottechangeroom6
+    charlotte "W-Woah hey what are you doing??"
+    charlotte "{i}I forgot that I'm completely naked!{/i}"
+    scene fs charlottechangeroom7
+    charlotte "{size=-10}Mia might hear us!{/size}"
+    player "Mmhm."
+    charlotte "{i}F-Fuck this is kinda hot..{/i}"
+    scene fs charlottechangeroom7b
+    charlotte "Oh!!"
+    mia "Charlotte?"
+    charlotte "I-It's fine Mia."
+    scene fs charlottechangeroom7c
+    charlotte "That...ahn..damn toe again."
+    mia "Geez you're more clumsy today than me! You gotta be more aware of what's going on around you Charlotte!"
+    scene fs charlottechangeroom7d
+    charlotte "Yeah....fuck!"
+    charlotte "{i}He's so good with his tongue ugh!{/i}"
+    scene fs charlottechangeroom8
+    pause
+    player "Mmmm.."
+    charlotte "{size=-10}D-Don't look at me like that...{/size}"
+    scene fs charlottechangeroom8b
+    player "Mmmhmm."
+    charlotte "{size=-10}Ohmygod that's worse!{/size}"
+    charlotte "Fuck fuck fuck I'm going to-"
+    scene fs charlottechangeroom8c
+    with vpunch
+    charlotte "AHHN!!"
+    charlotte "{i}I'm cumming while Mia's just on the other side of this wall!{/i}"
+    scene fs charlottechangeroom7d
+    with Dissolve(0.5)
+    charlotte "{i}Her boyfriend's tongue is...is!!{/i}"
+    charlotte "{i}God this is so hot I'm gonna cum again!{/i}"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "A little while later..."
+    scene fs mall
+    with Dissolve(0.7)
+    $ charlotteSprite = 5
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbcharlotte current:
+        xalign 0.5 ypos 120
+    show fbmia current:
+        xalign 0.65 ypos 120
+    with Dissolve(0.7)
+    $ miaSprite = 1
+    mia "Well that was fun!"
+    $ miaSprite = 0
+    $ charlotteSprite = 13
+    charlotte "Y-Yeah.."
+    $ charlotteSprite = 5
+    $ playerSprite = 1
+    player "I had a good time!"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Haha waiting outside for us was a good time?"
+    $ miaSprite = 0
+    player "...."
+    $ playerSprite = 1
+    player "Yup."
+    $ playerSprite = 0
+    charlotte "..."
+    $ playerSprite = 16
+    player "Shall we go?"
+    $ playerSprite = 0
+    $ miaSprite = 5
+    mia "Yeah! I'm satisfied with my visit, how about you Charlotte?"
+    $ miaSprite = 0
+    $ charlotteSprite = 8
+    charlotte "Yeah um..."
+    $ charlotteSprite = 13
+    charlotte "V-Very satisfied."
+    $ charlotteSprite = 5
+    $ playerSprite = 13
+    player "Hehe."
+    $ playerSprite = 0
+
+    jump passtime
+
+label malltripwitholivia:
+    $ playerSprite = 1
+    player "Olivia said she could make it."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Okay let's go! We'll meet her there then!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    player "Woah wait up!"
+    hide fbplayer current
+    scene fs mall
+    with Dissolve(0.7)
+    "It doesn't take long for the two of you to get to the mall"
+    "Mia talked about going clubbing, the upcoming talent show and a potential sleepover at Charlotte's house and other things they've all planned to do in the upcoming weeks"
+
+    scene fs blackblank
+    with Dissolve(0.7)
+    "She took you through the mall to a section you've never been to before, mainly because it was mostly women's wear"
+    "Eventually she found the store she was looking for and went in"
+    "You knew Mia was going to take a long time so you walked around and browsed for a bit"
+
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    player "{i}Alright I should probably be good to go back now.{/i}"
+    player "{i}I wonder if Olivia made it to the mall?{/i}"
+    hide fbplayer current
+    scene fs oliviachangeroomfeet
+    with Dissolve(0.5)
+    player "Hmm both of these changerooms seem occupied, and I don't see the girls in the store anywhere."
+    mia "La dee da..."
+    player "Ah, Mia's in the one on the right..."
+    scene fs oliviachangeroom1
+    with Dissolve(0.7)
+    olivia "Hmm..."
+    scene fs oliviachangeroom2
+    pause
+    scene fs oliviachangeroom3
+    pause
+    scene fs oliviachangeroom2
+    pause
+    scene fs oliviachangeroom3
+    pause
+    scene fs oliviachangeroom2b
+    olivia "Have they gotten bigger?"
+    scene fs oliviachangeroom4
+    with Dissolve(0.7)
+    player "I can check if you want."
+    scene fs oliviachangeroom5
+    with Dissolve(0.7)
+    olivia "[povname]?"
+    player "Hey."
+    olivia "Why are you in here? I'm naked."
+    player "I'm quite aware."
+    scene fs oliviachangeroom6
+    player "There's no way I can miss this opportunity."
+    olivia "M-Mia is right next door."
+    scene fs oliviachangeroom6b
+    player "Then we should be extra quiet."
+    scene fs oliviachangeroom6
+    olivia "..."
+    scene fs oliviachangeroom6b
+    pause
+    scene fs oliviachangeroom7
+    "*ziiiip*"
+    olivia "{i}What is he doing?{/i}"
+    scene fs oliviachangeroom8
+    player "There's no way I can leave these amazing thighs unfucked."
+    scene fs oliviachangeroom12
+    with Dissolve(0.7)
+    olivia "{i}Oh man I thought he was gonna put it inside me..{/i}"
+    scene fs oliviachangeroom13
+    with Dissolve(0.7)
+    olivia "{i}T-This is still...pretty good..{/i}"
+    scene fs oliviachangeroom14
+    with Dissolve(0.7)
+    olivia "{i}Don't make a sound Olivia, no matter how good this feels!{/i}"
+    scene fs oliviachangeroom9
+    olivia "Ah..."
+    scene fs oliviachangeroom10
+    with hpunch
+    olivia "UHHN!!"
+    olivia "{i}So much for that.{/i}"
+    scene fs oliviachangeroom9
+    mia "Olivia?"
+    scene fs oliviachangeroom10
+    with hpunch
+    olivia "AH!"
+    olivia "Y-Yeah?"
+    scene fs oliviachangeroom9
+    mia "Are you okay?"
+    scene fs oliviachangeroom10
+    with hpunch
+    olivia "YES!"
+    olivia "Yes I'm fine, just thought of something embarrassing that happened years ago!"
+    scene fs oliviachangeroom9
+    mia "Oh I hate when that happens!"
+    mia "Alrighty then."
+    scene fs oliviachangeroom10
+    with hpunch
+    olivia "Haaaa!"
+    image thighfuckoliviachange1:
+        "changeroom olivia9.png"
+        0.7
+        "changeroom olivia10.png"
+        0.7
+        repeat
+    show thighfuckoliviachange1
+    olivia "{i}Uggggh why does he do these things to me???{/i}"
+
+    image thighfuckoliviachange2:
+        "changeroom olivia9.png"
+        0.2
+        "changeroom olivia10.png"
+        0.2
+        repeat
+    show thighfuckoliviachange2
+    olivia "Ahh fuck!"
+    mia "Wow it must've been pretty bad huh?"
+    player "{size=-10}Olivia I'm gonna cum!{/size}"
+    olivia "M-Me too!"
+    scene fs oliviachangeroom12
+    with Dissolve(0.7)
+    player "Oh shit!"
+    scene fs oliviachangeroom15
+    with hpunch
+    player "MMMM!"
+    scene fs oliviachangeroom11
+    with hpunch
+    olivia "UHN!!"
+    scene fs oliviachangeroom16
+    with Dissolve(1.0)
+    olivia "Hah...hah..."
+    player "Hah.."
+    player "{i}Hoo boy...{/i}"
+
+    scene fs mall
+    with Dissolve(1.0)
+
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbolivia current:
+        xalign 0.5 ypos 120
+    show fbmia current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+
+    image fbolivia blushflip = im.Flip("Sprites/olivia embarrassed B.png", horizontal = True)
+
+    $ oliviaSprite = 8
+    $ miaSprite = 1
+    mia "Did you get everything you needed Olivia?"
+    $ miaSprite = 0
+    $ oliviaSprite = 10
+    olivia "Um, yeah."
+    $ miaSprite = 4
+    mia "Great! Thanks for waiting for us [povname]."
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "No problem, it was my pleasure."
+    $ playerSprite = 0
+    $ miaSprite = 5
+    mia "You're gonna love Olivia's Bikini, really shows off her great body!"
+    $ miaSprite = 0
+    show fbolivia blushflip:
+        xalign 0.5 ypos 120
+    olivia "M-Mia. C'mon..."
+    $ miaSprite = 4
+    show fbolivia current:
+        xalign 0.5 ypos 120
+    mia "Haha I'm just teasing! C'mon let's go!"
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.7)
+    player "..."
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.42 ypos 120
+    with move
+    player "I never did get to see it."
+    $ playerSprite = 13
+    $ oliviaSprite = 14
+    olivia "Hehe. Shut up."
+
+    jump passtime
+
+
+label malltripwithava:
+    $ playerSprite = 1
+    player "Ava's gonna meet us there."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Awesome! Let's go!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    player "Woah wait up!"
+    hide fbplayer current
+    scene fs mall
+    with Dissolve(0.7)
+    "It doesn't take long for the two of you to get to the mall"
+    "Mia talked about going clubbing, the upcoming talent show and a potential sleepover at Charlotte's house and other things they've all planned to do in the upcoming weeks"
+
+    scene fs blackblank
+    with Dissolve(0.7)
+    "She took you through the mall to a section you've never been to before, mainly because it was mostly women's wear"
+    "Eventually she found the store she was looking for and went in"
+    "You knew Mia was going to take a long time so you walked around and browsed for a bit"
+
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    player "{i}Alright I should probably be good to go back now.{/i}"
+    player "{i}I wonder if Ava is here yet.{/i}"
+    hide fbplayer current
+    scene fs avachangeroomfeet
+    with Dissolve(0.5)
+    player "Ah, they're probably in these changerooms."
+    player "I'm gonna assume the one with the...darker feet is Ava."
+    player "I should have a little fun with her."
+    scene fs avachangeroom1
+    with Dissolve(0.7)
+    ava "Hmmm.."
+    scene fs avachangeroom1b
+    ava "Yeah there's no way I can pull off something girly like this."
+    scene fs avachangeroom2
+    ava "{i}Pink is not my color.{/i}"
+    scene fs avachangeroom2b
+    player "I think you'd look great."
+    scene fs avachangeroom3
+    ava "Huh??"
+    scene fs avachangeroom4
+    with hpunch
+    ava "What? Dude!"
+    ava "What are you doing here??"
+    scene fs avachangeroom4c
+    mia "You say something Ava?"
+    scene fs avachangeroom4d
+    ava "N-No Mia it's fine, just t-talking to myself!"
+    scene fs avachangeroom4c
+    mia "Oh alrighty! I do that all the time!"
+    scene fs avachangeroom4b
+    player "You really should be a little more confident in yourself Ava."
+    player "You have incredible feminine appeal."
+    scene fs avachangeroom4
+    ava "O-Ok thank you but Mia is right in the next room!"
+    ava "We can't be-"
+    scene fs avachangeroom5
+    with Dissolve(0.5)
+    ava "Ohh!!"
+    image fingeravachangeroom1:
+        "changeroom Ava7b.png"
+        0.7
+        "changeroom Ava7c.png"
+        0.7
+        repeat
+    show fingeravachangeroom1
+    with Dissolve(0.5)
+    player "Can't be what?"
+    ava "Ah..."
+    player "Can't be fingering your pussy while your friend, MY girlfriend, is changing right next to us?"
+    ava "{size=-10}Oh God...{/size}"
+    player "A pussy which is incredibly wet by the way. Betraying Mia must really turn you on huh?"
+    ava "{size=-10}N-No! No it d-{/size}"
+    mia "What was that Ava?"
+    scene fs avachangeroom7
+    with vpunch
+    ava "MMMMM!!!"
+    mia "You still talking to yourself? Y'okay?"
+    player "{size=-10}Wow, cumming while she's talking to you?{/size}"
+    player "{size=-10}Maybe you're just a slut?{/size}"
+    ava "Aamph f-fine Mia!"
+    ava "{i}Fuck fuck fuck!{/i}"
+    mia "Okay, if you say so!"
+    ava "{i}What is [povname] fucking doing to me?{/i}"
+    player "{size=-10}I'll step out now. Don't wanna get caught now do we?{/size}"
+    scene fs blackblank
+    with Dissolve(1.0)
+    "You sneakily exit the changeroom and meet the two girls later outside the store"
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    $ avaSprite = 12
+    $ miaSprite = 0
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbmia current:
+        xalign 0.5 ypos 120
+    show fbava current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+    $ miaSprite = 1
+    mia "Well that was a lot of fun! Wasn't it Ava?"
+    $ miaSprite = 0
+    $ avaSprite = 14
+    ava "Um...y-yeah."
+    $ avaSprite = 12
+    $ playerSprite = 1
+    player "Glad you enjoyed yourself Ava."
+    $ playerSprite = 0
+    $ avaSprite = 14
+    ava "...."
+    $ miaSprite = 5
+    $ avaSprite = 12
+    mia "I think you'll really like my bikini [povname], it's super cute!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Well with a body like yours...MIA, I really don't mind WHAT you're wearing."
+    player "Girly or not, in the end I'm gonna tear it off of you...."
+    $ playerSprite = 0
+    $ avaSprite = 11
+    ava "!!!"
+    $ miaSprite = 5
+    $ avaSprite = 12
+    mia "Hehe [povname] shhh! Ava is right heeere!"
+    $ miaSprite = 0
+    $ avaSprite = 11
+    ava "I...um..."
+    $ avaSprite = 12
+    show fbmia talkflip:
+        xalign 0.5 ypos 120
+    mia "He's just messing with you Ava!"
+    $ avaSprite = 14
+    $ miaSprite = 5
+    show fbmia current:
+        xalign 0.5 ypos 120
+    mia "Geez [povname] you're so embarrassing sometimes!"
+    $ miaSprite = 0
+    $ playerSprite = 13
+    player "Haha sorry."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Alrighty let's go! I wanna try my bathing suit on again at home and see if it looks the same!"
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    ava "...."
+    $ avaSprite = 12
+    $ playerSprite = 1
+    player "I'm looking forward to the beach. Heh."
+    $ playerSprite = 0
+    hide fbplayer current
+    with Dissolve(0.5)
+    ava "...."
+    $ avaSprite = 13
+    ava "{i}Me too.{/i}"
+
+    jump passtime
+
+label malltripwithsophia:
+    $ playerSprite = 1
+    player "Sophia told me she's coming."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Great! We'll meet her there!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    player "Woah wait up!"
+    hide fbplayer current
+    scene fs mall
+    with Dissolve(0.7)
+    "It doesn't take long for the two of you to get to the mall"
+    "Mia talked about going clubbing, the upcoming talent show and a potential sleepover at Charlotte's house and other things they've all planned to do in the upcoming weeks"
+
+    scene fs blackblank
+    with Dissolve(0.7)
+    "She took you through the mall to a section you've never been to before, mainly because it was mostly women's wear"
+    "Eventually she found the store she was looking for and went in"
+    "You knew Mia was going to take a long time so you walked around and browsed for a bit"
+
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    player "{i}Okay that should be enough wandering around.{/i}"
+    "Vvvvppp!"
+    player "Hmm?"
+    mia "{cps=25}Sophia is here, I'm in the left stall!{/cps}"
+    player "{i}Ah okay good timing, I should head back.{/i}"
+    hide fbplayer current
+    scene fs sophiachangeroomfeet
+    with Dissolve(0.5)
+    player "{i}Okay, Mia said she was in the left changeroom.{/i}"
+    player "{i}I should go in and have a little fun with her hehe.{/i}"
+
+    scene fs sophiachangeroom1
+    sophia "Hmm hm hm."
+    player "Hey Sexy-"
+    scene fs sophiachangeroom2
+    with vpunch
+    player "Huh??"
+    scene fs sophiachangeroom3
+    sophia "...."
+    player "...."
+    scene fs sophiachangeroom3b
+    sophia "Hehehe."
+    scene fs sophiachangeroom3c
+    player "Oh no no no."
+    player "{size=-10}It's not what you think!{/size}"
+    player "{size=-10}I thought Mia was in here.{/size}"
+    scene fs sophiachangeroom4
+    sophia "You're saying.."
+    player "{i}Ah shit her tits are out.{/i}"
+    sophia "That even though you've denied me so many times and said you're not interested."
+    sophia "You just waltz right in here without even checking?"
+    scene fs sophiachangeroom5
+    with Dissolve(0.7)
+    sophia "I ain't buying it."
+    player "{size=-10}Sophia could you keep your voice down??{/size}"
+    image sophiachangeroomhj1:
+        "changeroom sophia6.png"
+        0.7
+        "changeroom sophia6b.png"
+        0.7
+        repeat
+    show sophiachangeroomhj1
+    sophia "If you want to see your childhood friend naked, all you have to do is ask."
+    player "{size=-10}Please don't say shit like that.{/size}"
+    player "{size=-10}Ah fuck...{/size}"
+    sophia "So girthy..."
+    scene fs sophiachangeroom7
+    with Dissolve(0.7)
+    sophia "God I just have to taste it!"
+    scene fs sophiachangeroom8
+    mia "Soph? You say something?"
+    player "!!!"
+    sophia "Nothing Mia! I'm just excited to shove some fat cock down my throat."
+    mia "Hahaha what? Geez you're so silly sometimes!"
+    scene fs sophiachangeroom9
+    sophia "Ahn huh."
+    scene fs sophiachangeroom10
+    sophia "Mmmm."
+    mia "You normally don't make dirty jokes like that."
+    scene fs sophiachangeroom11
+    sophia "*Gulk*"
+    player "{i}Ah fuck she must've been practicing..{/i}"
+    mia "[povname] actually likes talking dirty like that while we're having sex!"
+    scene fs sophiachangeroom11b
+    player "Hah...hah."
+    player "{i}She's sucking harder!{/i}"
+    mia "He can get really rough! But I guess that's not really joking though."
+    scene fs sophiachangeroom12
+    with hpunch
+    sophia "UGGHK!"
+    player "{i}Fuck fuck fuck fuck!{/i}"
+    scene fs sophiachangeroom13
+    player "{size=-10}Sophia I'm gonna cum!!{/size}"
+    scene fs sophiachangeroom14
+    mia "I really do like it though, I mean who wouldn't?"
+    mia "Hehe I hope after he sees me in this bikini at the beach he'll give me a good time!"
+    mia "He cums a lot you know!"
+    scene fs sophiachangeroom15
+    with hpunch
+    player "UUUUGHHH!!"
+    scene fs sophiachangeroom16
+    mia "I mean like more than your average guy I think. Like loads!"
+    sophia "Ahhhh....yeah? I wouldn't know hehe."
+    scene fs blackblank
+    with Dissolve(1.0)
+    "You quickly zip yourself up and head out of the store quietly"
+    "After the girls bought their stuff and left you met up with them"
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    show fbmia current:
+        xalign 0.6 ypos 120
+    show fbsophia defaultflip:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    $ miaSprite = 1
+    mia "Sorry I was such a chatterbox in the store Sophia."
+    mia "I felt like it was just me talking the whole time, you couldn't get a word in!"
+    $ miaSprite = 0
+    show fbsophia defaultfliptalk:
+        xalign 0.5 ypos 120
+    sophia "Hehe it's okay Mia! I didn't mind you talking while I was preoccupying myself."
+    sophia "{size=-10}It was really hot.{/size}"
+    show fbsophia defaultflip:
+        xalign 0.5 ypos 120
+    mia "Hmm?"
+
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.4 ypos 120
+
+    $ sophiaSprite = 0
+    show fbsophia current:
+        xalign 0.5 ypos 120
+
+    player "Hey!"
+    $ playerSprite = 16
+    player "What a...what you girls talking about?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "[povname]! You finally showed up!"
+    mia "I was expecting to see you in the store! Geez."
+    $ miaSprite = 0
+    $ playerSprite = 16
+    player "I did! Uh, I mean.."
+    player "Your instructions were wrong?"
+    $ playerSprite = 15
+    $ miaSprite = 2
+    player "You said the left changeroom bu-"
+    $ playerSprite = 11
+    player "{i}Wait shit I can't let her know I went into Sophia's changeroom!{/i}"
+    $ playerSprite = 14
+    $ miaSprite = 3
+    mia "Huh? No I was right! I said I was in the stall to left!"
+    mia "MY left!"
+    $ miaSprite = 2
+    $ playerSprite = 15
+    player "Wait...YOUR left?"
+    $ playerSprite = 14
+    show fbsophia defaultfliptalk:
+        xalign 0.5 ypos 120
+    sophia "Hehehehe."
+    show fbsophia defaultflip:
+        xalign 0.5 ypos 120
+    $ miaSprite = 1
+    mia "What's so funny?"
+    $ miaSprite = 0
+    $ playerSprite = 16
+    show fbsophia current:
+        xalign 0.5 ypos 120
+    player "Mia why would you say it from that perspective??"
+    $ playerSprite = 8
+    $ miaSprite = 1
+    mia "I'M the one talking! Why wouldn't I say it from MY perspective huh??"
+    $ miaSprite = 4
+    $ playerSprite = 11
+    mia "Geez you two!"
+    $ miaSprite = 0
+    show fbsophia defaultfliptalk:
+        xalign 0.5 ypos 120
+    sophia "Haha what did I do?"
+    show fbsophia defaultflip:
+        xalign 0.5 ypos 120
+    $ miaSprite = 1
+    mia "I don't know I just have the feeling that you've been bad too!"
+    $ miaSprite = 0
+    show fbsophia defaultfliptalk:
+        xalign 0.5 ypos 120
+    sophia "Uh....nope!"
+    $ sophiaSprite = 1
+    show fbsophia current:
+        xalign 0.5 ypos 120
+    sophia "Isn't that right [povname]?"
+    $ sophiaSprite = 0
+    $ playerSprite = 16
+    player "L-Let's just get out of here huh?"
+    scene fs blackblank
+    with Dissolve(1.0)
+    $ miaSprite = 1
+    mia "Fine fine, I hope you appreciate the bikini I got for the beach [povname]."
+    $ miaSprite = 0
+    $ playerSprite = 16
+    player "I'm sure I will!"
+    $ playerSprite = 8
+    player "....."
+    $ playerSprite = 11
+    pause
+    jump passtime
+
+
+label malltripwithemily:
+    $ playerSprite = 1
+    player "Emily said she could come!"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Yay! This is gonna be a lot of fun!"
+    player "Ehhh.."
+    mia "Let's go!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    player "Woah wait up!"
+    hide fbplayer current
+    scene fs mall
+    with Dissolve(0.7)
+    "It doesn't take long for the two of you to get to the mall"
+    "Mia talked about going clubbing, the upcoming talent show and a potential sleepover at Charlotte's house and other things they've all planned to do in the upcoming weeks"
+
+    scene fs blackblank
+    with Dissolve(0.7)
+    "She took you through the mall to a section you've never been to before, mainly because it was mostly women's wear"
+    "Eventually she found the store she was looking for and went in"
+    "You knew Mia was going to take a long time so you walked around and browsed for a bit"
+
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    player "{i}Allllright that should be enough time for them. I wonder if Emily met Mia in the store?{/i}"
+
+    hide fbplayer current
+
+    scene fs emilychangeroomfeet
+    with Dissolve(0.7)
+    player "{i}Ah. I see two sets of beautiful feet.{/i}"
+    player "{i}....{/i}"
+    player "{i}Not that I'm a foot guy.{/i}"
+    player "{i}I'm not.{/i}"
+    player "{i}Shut up.{/i}"
+    emily "*Sigh*..."
+    player "{i}Ah! I recognize that breathy sigh.{/i}"
+    scene fs emilychangeroom1
+    with Dissolve(0.7)
+    emily "{i}Have I gained weight again?{/i}"
+    emily "{i}Hmmm, do guys like [povname] even like big butts?{/i}"
+    emily "{i}Ugh why am I even thinking about him?{/i}"
+    mia "Dum de dumm!"
+    emily "{i}Probably cause Mia's here is all.{i}"
+    scene fs emilychangeroom2
+    with Dissolve(0.7)
+    player "Hey."
+    scene fs emilychangeroom2b
+    emily "{i}I know he and I decided to...figure things out a bit but I'm still no-{/i}"
+    ""
+    scene fs emilychangeroom3
+    with vpunch
+    emily "AWHA?!"
+    scene fs emilychangeroom4
+    mia "Emily??"
+    mia "Are you okay?!"
+    emily "Y-Yeah Mia! Sorry I'm fine!"
+    scene fs emilychangeroom3
+    with Dissolve(0.5)
+    emily "{size=-10}What are you doing here??{/size}"
+    scene fs emilychangeroom5b
+    with Dissolve(0.7)
+    emily "Eh??"
+    scene fs emilychangeroom5
+    player "Well I knew you were changing in here."
+    player "So how could I resist?"
+    scene fs emilychangeroom5b
+    emily "{size=-10}K-Keep your voice down!{/size}"
+    scene fs emilychangeroom6
+    player "I think you're the one who's gonna need to keep her voice down."
+    emily "W-What do you mean?"
+    image emilyfingerchangeroom1:
+        "changeroom emily7a.png"
+        0.7
+        "changeroom emily7b.png"
+        0.7
+        repeat
+    show emilyfingerchangeroom1
+    with Dissolve(0.7)
+    emily "Oh..."
+    emily "O-Okay..."
+    player "Hehe I can feel how wet you are baby."
+    emily "{size=-10}B-Baby?{/size}"
+    player "Turns you on that Mia is right next to us huh?"
+    emily "{size=-10}No!...ehn..."
+    player "Such a dirty little slut."
+
+    image emilyfingerchangeroom2:
+        "changeroom emily8.png"
+        0.7
+        "changeroom emily8b.png"
+        0.7
+        repeat
+    hide emilyfingerchangeroom1
+    show emilyfingerchangeroom2
+
+    emily "AHHNNN!"
+    mia "Emily?"
+    player "{size=-10}Not even gonna deny it now?"
+    mia "You sure you're okay?"
+    emily "YES!"
+    player "{size=-10} Fucking CUM for me my little slut!{/size}"
+    mia "O-Okay if you say so..."
+    emily "YES...YES!!"
+    scene fs emilychangeroom9b
+    with Dissolve(0.7)
+    emily "MMMMPPHH!!"
+    player "{i}OH?{/i}"
+    player "{i}Really wasn't expecting her to kiss me!"
+    player "{i}I can feel her cumming on my hand.{/i}"
+    scene fs emilychangeroom10
+    with Dissolve(1.0)
+    emily "Hah...hah.."
+    mia "You really sound...not yourself Emily?"
+    emily "Sorry Mia it's fine I just.."
+    emily "I'm sorry..I'm so so sorry..."
+    mia "It's okay!"
+    emily "{size=-10}Oh God no it's not...{/size}"
+    scene fs blackblank
+    with Dissolve(1.0)
+    "You soon after left the changeroom and waited outside the store to meet up with the girls"
+    scene fs mall
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    $ miaSprite = 1
+    show fbmia current:
+        xalign 0.7 ypos 120
+    show fbemily upsetflip:
+        xalign 0.5 ypos 120
+    with Dissolve(0.7)
+    mia "I think that was a success don't you?"
+    $ miaSprite = 0
+    emily "Mhmm yeah.."
+    $ miaSprite = 1
+    mia "I really think [povname] is gonna like my new bikini."
+    $ miaSprite = 1
+    show fbemily upsetfliptalk:
+        xalign 0.5 ypos 120
+    emily "T-That's great Mia."
+    show fbemily upsetflip:
+        xalign 0.5 ypos 120
+    $ miaSprite = 1
+    mia "Why do you look so down? Yours looks great too!"
+    mia "You should show [povname], he'll tell you it's cute!"
+    $ miaSprite = 0
+    show fbemily blushfliptalk:
+        xalign 0.5 ypos 120
+    emily "What??"
+    $ emilySprite = 2
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    player "True, I never got to see it."
+    $ playerSprite = 0
+    show fbemily current:
+        xalign 0.5 ypos 120
+    emily "Huh??"
+    $ emilySprite = 4
+    $ playerSprite = 1
+    player "I'm sure it's super cute like Mia said."
+    $ playerSprite = 0
+    $ miaSprite = 5
+    mia "[povname]!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Get everything you needed?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Uh huh! I cannot WAIT for the beach hehe!"
+    $ miaSprite = 0
+    $ playerSprite = 13
+    player "I can't either!"
+    emily "...."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Alright well for now though I am POOPED. I gotta go home and take a shower."
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Sounds good to me!"
+    $ playerSprite = 0
+    $ miaSprite = 4
+    mia "Hehe you're not coming with!"
+    $ miaSprite = 0
+    $ playerSprite = 13
+    player "Whaaat? Awww."
+    $ playerSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    $ miaSprite = 1
+    mia "Hehehe!"
+    $ miaSprite = 1
+    emily "..."
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.42 ypos 120
+    with move
+    player "When we get to the beach."
+    $ playerSprite = 0
+    emily "?"
+    $ playerSprite = 1
+    player "I'm gonna rip your bikini off and pound your tight little cunt until you can't fucking walk."
+    $ playerSprite = 0
+    $ emilySprite = 2
+    emily "W-Wha...I....I!"
+    $ emilySprite = 4
+    mia "[povname]? Emily?"
+    $ playerSprite = 13
+    player "Coming babe!"
+    hide fbplayer current
+    with Dissolve(0.5)
+    emily "...."
+    $ emilySprite = 2
+    emily "God what have I become..."
+    jump passtime
+
+label malltripwithmia:
+    $ playerSprite = 1
+    player "Nope it's just going to be you and me babe!"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Oh okay!"
+    mia "To be honest I was kinda hoping that was going to happen haha!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    player "Oh boy, you want me all to yourself huh?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Yeah, I also want to surprise the girls with how good I look in my new swimsuit!"
+    $ playerSprite = 5
+    $ miaSprite = 0
+    player "Wait...shouldn't...I be the one who..."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Okay let's go!"
+    $ playerSprite = 1
+    $ miaSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    player "Woah wait up!"
+    hide fbplayer current
+    scene fs blackblank
+    with Dissolve(0.7)
+    "It doesn't take long for the two of you to get to the mall"
+    "Mia talked about going clubbing, the upcoming talent show and a potential sleepover at Charlotte's house and other things they've all planned to do in the upcoming weeks"
+    "You listenend intently, legitimately enjoying what she was talking about"
+    scene fs mall
+    with Dissolve(0.7)
+    "She took you through the mall to a section you've never been to before, mainly because it was mostly women's wear clothes"
+    "Once she found the store she was looking for she made you wait while she browsed the swimsuit section"
+    "So you waited."
+    "And waited...."
+    "Then finally you heard her call for you"
+    scene fs miamallalone1
+    with Dissolve(0.5)
+    mia "[povname]!!!"
+    player "I'm here I'm here!"
+    player "PLEASE tell me you're done!"
+    mia "I've narrowed it down to three."
+    player "Oh God."
+    mia "I need your help deciding though can you tell me which one you like the most?"
+    player "Oh. Well yeah okay I can do that."
+    mia "Okay I'm ready with the first one!"
+    player "I'm ready too let's see it!"
+    scene fs miamallalone2
+    with Dissolve(0.5)
+    mia "Okay first is this white one!"
+    player "Ohhh wow okay that looks great."
+    scene fs miamallalone2b
+    mia "I know you're gonna say that for all of them haha."
+    mia "But I still want to choose which one will surprise the girls the most!"
+    scene fs miamallalone2
+    mia "I've never worn one with these ribbon tassle things but it should be fine right?"
+    player "Uh yeah. It'll be fine haha."
+    scene fs miamallalone1
+    mia "Okay next one!"
+    mia "Ready?"
+    player "Yes ma'am!"
+    scene fs miamallalone4
+    mia "Bam!"
+    player "Woah! Look at you."
+    scene fs miamallalone4b
+    with Dissolve(0.5)
+    mia "I love this one's design but I don't know if the purple works.."
+    mia "What do you think? How's the back?"
+    player "I...oh wow. Babe..."
+    scene fs miamallalone4
+    with Dissolve(0.5)
+    mia "Hehe you're awful at this!"
+    player "Sorry really, you're just so sexy in swimwear!"
+    mia "Alright let's try the last one."
+    scene fs miamallalone1
+    with Dissolve(0.3)
+    mia "You ready for me?"
+    player "I literally cannot wait."
+    scene fs miamallalone3b
+    with Dissolve(0.5)
+    mia "What do yah think'o this??"
+    player "Ooooh, I like the green! And your ass!"
+    mia "It doesn't clash with my hair?"
+    player "Nope, I'm pretty sure it works."
+    scene fs miamallalone3
+    player "God does it work!"
+    mia "Hehehe alright thank you!"
+    #this is where you will make the choice between the three
+    mia "So which do you like the most?"
+    scene fs miamallalone1
+    with Dissolve(0.3)
+
+    show fbmiaswimsuit1:
+        xalign 0.1 yalign 0.9
+    show fbmiaswimsuit2:
+        xalign 0.5 yalign 0.9
+    show fbmiaswimsuit3:
+        xalign 0.9 yalign 0.9
+
+    pause
+
+    menu:
+        "The white one":
+            jump thewhiteone
+        "The purple one":
+            jump thepurpleone
+        "The green one":
+            jump thegreenone
+
+    label thewhiteone:
+        player "I love the white one."
+        $ swimsuitchoice = "white"
+        jump miachangeroomscene
+    label thepurpleone:
+        player "I really like the purple one."
+        $ swimsuitchoice = "purple"
+        jump miachangeroomscene
+    label thegreenone:
+        player "Definitely the green one, super sexy."
+        $ swimsuitchoice = "green"
+        jump miachangeroomscene
+
+label miachangeroomscene:
+    hide fbmiaswimsuit1
+    hide fbmiaswimsuit2
+    hide fbmiaswimsuit3
+    mia "Okay great! Wait there and I'll change back then go buy it!"
+    player "Sounds good."
+    mia "La dee da..."
+    player "{i}Damn. All this waiting is killing me.{/i}"
+    player "{i}And after seeing Mia in all those bikinis...{/i}"
+    mia "And off my top goes! Hello there ladies."
+    player "....."
+    player "I'm going in."
+    scene fs miamallalone5
+    with Dissolve(0.7)
+    mia "Dum de dum..."
+    scene fs miamallalone6
+    with Dissolve(0.4)
+    player "Hey..."
+    mia "Huh?"
+    scene fs miamallalone7
+    with Dissolve(0.4)
+    mia "Hello handsome."
+    mia "You...are not supposed to be here."
+    player "Then I guess we should be quick before anyone catches us."
+    mia "Hmmm."
+    mia "What ever could you mean?"
+    player "I want you to get on your knees."
+    mia "Uh huh."
+    player "And blow me till I bust all over these magnificent tits of yours."
+    mia "And what do I get?"
+    player "I just told you."
+    mia "Hehe well when you put it like that..."
+    player "Come here."
+    scene fs miamallalone8a
+    with Dissolve(0.4)
+    player "Mmphm."
+    scene fs miamallalone8b
+    with Dissolve(0.5)
+    mia "MMH!"
+    mia "Mmmmhmmm..."
+    scene fs miamallalone9
+    with Dissolve(0.7)
+    mia "Hehe let's take a looksee..."
+    scene fs miamallalone9b
+    player "Your eagerness is very appealing."
+    scene fs miamallalone9c
+    mia "Mmmm let's just say you got me in the mood hehe."
+    mia "Now gimme dat di-"
+    scene fs miamallalone9d
+    with vpunch
+    "*Bonk*"
+    player "Haha"
+    scene fs miamallalone10
+    mia "Hmph. I'm not even gonna acknowledge that."
+    player "That's...oh yeah..."
+    scene fs miamallalone11
+    player "That's fine with me."
+    scene fs miamallalone12
+    player "Haaaa..."
+    scene fs miamallalone13
+    player "That's it baby. I love it when you go deep."
+    with vpunch
+    mia "Uhhhgk!"
+    player "Fuck! You're sucking my soul straight out my dick."
+    scene fs miamallalone14
+    mia "Hah..you wanna cum all over me?"
+    scene fs miamallalone14b
+    player "Yeah baby, but you got what it takes?"
+    scene fs miamallalone14
+    mia "To make you cum?"
+    scene fs miamallalone14b
+    player "You know I'm a very particular man. You gotta meet certain criteria if you want it."
+    scene fs miamallalone14
+    mia "Haha that's right."
+    mia "[povname] only fucks girls with the biggest tits."
+    scene fs miamallalone14b
+    player "Hah..yeah that's right.."
+    scene fs miamallalone14
+    mia "You only cum for the girls with the prettiest faces."
+    player "O-Only the prettiest!"
+    mia "The most fuckable asses!"
+    scene fs miamallalone14b
+    player "OH fuck!"
+    scene fs miamallalone14
+    mia "The nicest personalities!"
+    scene fs miamallalone15
+    with hpunch
+    player "Ahhh SHIT!"
+    with flash
+    scene fs miamallalone16
+    player "That's it baby!"
+    mia "Give it to me!"
+    scene fs miamallalone17
+    with Dissolve(0.5)
+    player "Hah...hah.."
+    mia "Ahhh..."
+    player "Oh my god that was so good."
+    player "You fucking drained me. Thanks for that."
+    scene fs miamallalone18b
+    mia "...."
+    scene fs miamallalone19
+    mia "Pfffft hahahaha!"
+    player "What's so funny?"
+    scene fs miamallalone18b
+    mia "Hehe."
+    scene fs miamallalone18
+    mia "You came at 'nicest personality'. Haha."
+    scene fs miamallalone18b
+    player "Haha I guess I did."
+    scene fs miamallalone18
+    mia "Glad to know you don't just like me for my body!"
+    scene fs miamallalone18b
+    player "To secure myself against any future arguments I'm just gonna say right now I love you inside AND out."
+    scene fs miamallalone18
+    mia "Hehe. THAT is a smart choice."
+    mia "Now let's go I wanna b-"
+    "Employee" "Uh ma'am?"
+    scene fs miamallalone20
+    with vpunch
+    mia "Huh?"
+    "Employee" "Everything alright in there ma'am? I heard uh...something?"
+    mia "Yes everything's fine I'll be right out!"
+    scene fs miamallalone21
+    pause
+
+    scene fs miamallalone22
+    mia "Dum de dum."
+    "Employee" "Were you able to find everything m-"
+    scene fs miamallalone23b
+    "Employee" "...."
+    scene fs miamallalone23
+    mia "Yup! I got everything I needed!"
+    "Employee" "...."
+    scene fs miamallalone24
+    with Dissolve(0.5)
+    pause
+    "Employee" "Dude...."
+    scene fs miamallalone25
+    player "Hmm?"
+    "Employee" "Did...did you just...?"
+    scene fs miamallalone26
+    player "Heh. Yeah."
+    scene fs miamallalone27
+    "Employee" "....Nice man!"
+    player "Thanks."
+    "Employee" "She's fucking fine, keep doing whatever you're doing."
+    player "That's the plan."
+    $ miaphase2interaction1 = 2
+    $ miaphase2interaction2 = 1
+    $ miaquestlog = "Shopping with Mia was more fun then I was expecting, I should meet up with her again at her school."
+    jump passtime
+
+# holy part 1 lmao
+#interaction 2
+# part 1
+
+label miaphase2interaction2part1:
+    scene fs classroom
+    
+    show fbmia current:
+        xalign 0.6 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.7)
+    $ miaSprite = 1
+    mia "[povname]! I was just thinking about calling you!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "What a coincidence! I was just thinking about kissing YOU."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Hehehe stop! My Mom wants you to come over for dinner again tonight, is that alright?"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Yeah sure! See you tonight."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Thanks!! I gotta go class is starting soon."
+    $ miaSprite = 0
+    $ miaquestlog = "Mia wants me to come over for dinner again tonight...should be fun?"
+    $ miaphase2interaction2 = 2
+    jump overworldmap
+
+# part 2
+
+label miaphase2interaction2part2:
+    hide screen uppergui
+    stop music fadeout 5
+    stop sound fadeout 5
+    mia "Moooom! He's here!"
+    katie "C'mon in brother!"
+    player "Haha thanks"
+    scene fs miadinner1b
+    with Dissolve(1.0)
+    pause
+    player "Wow! Julia you've outdone yourself this looks amazing."
+    julia "I'm so glad you think so!"
+    scene fs miadinner2c
+    with Dissolve(0.5)
+    julia "Alright everyone, dig in!"
+    scene fs miadinner1
+    with Dissolve(0.5)
+    pause
+    mia "Wow Mom!"
+    mia "This shit straight Bussin!"
+    julia "..."
+    scene fs miadinner2c
+    julia "Mia if you ever say something like that again I will throw you out of the house okay sweetie?"
+    scene fs miadinner2b
+    player "Hahaha!"
+    scene fs miadinner1
+    mia "Haha I'm just kidding! I heard some teenagers talking like that yesterday."
+    scene fs miadinner2
+    katie "Haha oh that reminds me!."
+
+    if juliachecker >= 4:
+        jump juliatablehjchoice
+    else:
+        jump continuedinner1
+
+label juliatablehjchoice:
+    "Katie and Mia continued to talk about their day and random stuff"
+    "You just focused on the delicious meal in front of you"
+    "After some time had passed though you noticed Julia asked you a question"
+    scene fs miadinner3
+    with Dissolve(0.7)
+    player "Huh? Oh uh...sorry what?"
+    scene fs miadinner4
+    with Dissolve(0.5)
+    julia "You should really pay more attention to the ladies around you dear."
+    player "{i}Uh...Her hand is totally on my cock{/i}"
+    player "{i}And now I'm rock hard with Mia and Katie right there. Great.{/i}"
+    menu:
+        "Let Julia continue":
+            jump juliatablehj
+        "Move her hand":
+            jump continuedinner1
+    
+label juliatablehj:
+    scene fs miadinner4b
+    with Dissolve(0.5)
+    player "Yeah uh sorry Julia."
+    player "The meal is just....so delicious."
+    scene fs miadinner4
+    julia "I'm SO glad you think so [povname]."
+    julia "I really wanted you to enjoy my....skills."
+    scene fs miadinner4b
+    player "Sure hehe..."
+    mia "Mom could've been a professional if she wanted, she's always been a good cook!"
+    player "Y-You don't say!"
+    scene fs juliatablehj1
+    player "!!!"
+    player "Uhhh."
+    mia "You okay [povname]?"
+    show dinnerjuliajerkoff1
+    julia "Yes dear is something the matter?"
+    scene fs juliatablehj2b
+    player "Ah...uh nope."
+    player "Everything's g-good!"
+    show dinnerjuliajerkoff1
+    julia "Mmmm that's good dear. You should really...FINISH soon."
+    show dinnerjuliajerkoff2
+    pause
+    player "Mmhmm."
+    julia "I hope you saved room for desert. I've made some THICK, PLUMP,"
+    player "CREAM pies."
+    scene fs juliatablehj3
+    with vpunch
+    player "Uuugh fuck."
+    mia "I don't know if I'd call them 'plump' Mom."
+    scene fs juliatablehj4
+    with Dissolve(0.7)
+    julia "Potato potAto dear."
+    mia "Is that what that means?"
+    player "...."
+    jump continuedinner2
+
+label continuedinner1:
+    player "{i}I probably shouldn't let her do anything crazy, not here at least.{/i}"
+    scene fs miadinner4b
+    with Dissolve(0.5)
+    player "Thanks again for the invitation Julia."
+    scene fs miadinner5
+    with Dissolve(0.5)
+    player "I really appreciate my GIRLFRIEND'S MOM treating me."
+    scene fs miadinner6
+    with Dissolve(0.5)
+    player "To a WHOLESOME, delicious family dinner."
+    scene fs miadinner6b
+    with Dissolve(0.5)
+    julia "Oh u-uh yes of course."
+    player "I promise I'll pay more attention, the food was just so distracting."
+    scene fs miadinner7
+    with Dissolve(0.5)
+    julia "Ahem. Uh yes, very good then..."
+    player "{i}Seems I embarrassed her, but it's good she knows some boundaries.{/i}"
+    jump continuedinner2
+
+label continuedinner2:
+    scene fs miadinner1
+    with Dissolve(0.5)
+    player "Let's....let's just work on finishing this delicious steak."
+    scene fs miadinner12
+    katie "...."
+    katie "{i}Hmmmm.{/i}"
+    katie "{i}Mom's steak is always good but...{/i}"
+    scene fs miadinner13
+    katie "{i}I think I'm in the mood for some THICK sausage hehe{/i}"
+    scene fs miadinner14
+    pause
+    "*CLINK*"
+    katie "Oops! Sorry dropped m'fork."
+    julia "No problem dear."
+    scene fs miadinner15
+    with Dissolve(0.5)
+    katie "Darn, where did it go?"
+    scene fs miadinner16
+    with vpunch
+    player "Huh?"
+    katie "Hehe."
+    mia "Something wrong?"
+    player "No everything's good."
+    player "{size=25}Katie what are you doing?{/size}"
+    $ katiephase2interaction1 = 4
+    if katiephase2interaction1 >= 4:
+        menu:
+            "Don't stop her":
+                jump katiedinnerblowjob
+            "Stop her":
+                jump continuedinner3
+    else:
+        jump continuedinner3
+
+label katiedinnerblowjob:
+    scene fs miadinner20
+    katie "Hmm hm hmm..."
+    player "Katie we really shouldn't be-"
+    scene fs miadinner21
+    katie "{size=25}There we go....{/size}"
+    show katiedinnerhj1
+    pause
+    player "{i}Oh fuck. Okay...{/i}"
+    katie "{size=25}What are you doing [povname]?{/size}"
+    player "Huh?"
+    katie "{size=25}My Mom and big sister are right there...{/size}"
+    player "{size=25}But you're the one who-{/size}"
+    katie "{size=25}How could you cum all over my pretty little face?{/size}"
+    show katiedinnerhj2
+    player "{i}FUCK! This feels so good!{/i}"
+    pause
+    katie "{size=25}What if we got caught?{/size}"
+    scene fs miadinner23
+    with Dissolve(0.5)
+    katie "Ehhnnn.."
+    player "{i}I can't take much more!{/i}"
+    katie "{size=25}What if they saw me just covered in your-{/size}"
+    scene fs miadinner24
+    with hpunch
+    player "UUUGH!"
+    scene fs miadinner25
+    with Dissolve(0.7)
+    katie "Mmmmm."
+    katie "Delicious."
+    scene fs miadinner26b
+    with Dissolve(1.0)
+    katie "Man [povname] should come over more often!"
+    mia "Haha I agree!"
+    julia "I don't see why not!"
+    player "....."
+    
+    scene fs blackblank
+    with Dissolve(0.7)
+    player "This family is crazy."
+    player "And hot."
+    player "Pretty hot. Very attractive..."
+    player "What have I gotten myself into?"
+
+    $ miaquestlog = "Dinner was...great. Looking forward to some one on one time with Mia."
+    $ juliaquestlog = "No more content for Julia right now (ch2.5)"
+    if katiephase2interaction1 >= 4:
+        $ katiequestlog = "I can't stop thinking about Katie. I should contact Mia and ask for us to all hang out"
+    $ miaphase2interaction2 = 3
+    jump passtime
+
+label continuedinner3:
+    katie "Hehehe."
+    scene fs miadinner17
+    with Dissolve(0.5)
+    katie "I'm here to..."
+    scene fs miadinner18
+    with Dissolve(0.5)
+    katie "Suck..."
+    scene fs miadinner19
+    with Dissolve(0.5)
+    katie "Your..."
+    scene fs miadinner19b
+    with Dissolve(0.5)
+    katie "Cock?"
+    scene fs miadinner19c
+    with Dissolve(0.5)
+    player "Sigh..."
+    scene fs blackblank
+    with Dissolve(0.7)
+    player "This family is crazy."
+    player "And hot."
+    player "Pretty hot. Very attractive..."
+    player "What have I gotten myself into?"
+
+    $ miaquestlog = "Dinner was...great. Looking forward to some one on one time with Mia."
+    $ juliaquestlog = "No more content for Julia right now (ch2.5B)"
+    if katiephase2interaction1 >= 4:
+        $ katiequestlog = "I can't stop thinking about Katie. I should contact Mia and ask for us to all hang out"
+    $ miaphase2interaction2 = 3
+    jump passtime
+
+# part 3 (named part 4 as part 3 just doesnt exist anymore i guess)
+
+label miaphase2interaction2part4:
+    stop music fadeout 5
+    stop sound fadeout 5
+
+    hide screen uppergui
+    hide screen questboxpreview
+    hide screen backbuttonLIVINGROOM
+    hide screen backbuttonROOM
+
+    scene fs livingroomnight
+    with Dissolve(0.7)
+    pause
+    "Knock knock knock"
+    player "Hmm?"
+
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbmia current:
+        xalign 0.6 ypos 120
+    
+    $ playerSprite = 1 
+    player "Mia!"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Hey! I'm here!"
+    $ miaSprite = 0
+    $ playerSprite = 1 
+    player "I'm happy about that, but why?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    voice "audio/miagameaudio/mialaugh2.wav"
+    mia "Sex!"
+    $ miaSprite = 0
+    $ playerSprite = 1 
+    player "Huh?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "I'm here for sex! We didn't have any when you came over for dinner so...yeah!"
+    mia "Thanks again for that by the way, I know my family can get a little crazy."
+    $ miaSprite = 0
+    $ playerSprite = 1 
+    player "Oh you have no-"
+    $ playerSprite = 0
+    player "Ahem."
+    $ playerSprite = 1
+    player "Alright yeah I...let me get the lights!"
+    show fbplayer current:
+        xalign 1.4 ypos 120
+    with move
+    player "Actually no follow me!"
+    show fbmia talkflip:
+        xalign 0.6 ypos 120
+    play sound "audio/miagameaudio/miahehe.wav"
+    show fbmia talkflip:
+        xalign 1.2 ypos 120
+    with move
+    mia "Hehe."
+    $ playerSprite = 0
+
+
+    show miasex movie1
+    with Dissolve(1.0)
+    play sound "audio/miagameaudio/miamakeout.wav"
+    mia "Mmm.."
+    mia "MMPH!"
+    pause
+    scene fs miasextime1
+    with Dissolve(0.7)
+    stop sound fadeout 5
+    pause
+    mia "Haha why are you staring in awe, you see them all the time!"
+    scene fs miasextime1b
+    pause
+    scene fs miasextime2
+    play sound "audio/miagameaudio/miaah.wav" volume 0.4
+    mia "AHHH!"
+    play sound "audio/miagameaudio/mialaugh.wav" volume 0.5
+    mia "Hahaha okay okay!"
+    scene fs miasextime3
+    with Dissolve(0.5)
+    mia "My gosh sometimes you're so silly."
+    scene fs miasextime4
+    with Dissolve(0.5)
+    pause
+    mia "Are you crying?"
+    player "They're just so beautiful..."
+    mia "My Boobs??"
+    player "Mhmm."
+    show miasex movie2
+    with Dissolve(0.7)
+    play sound "audio/miagameaudio/miamoan1.wav" loop
+    mia "Ohh...Mmm."
+    mia "C-Careful...hah.."
+    pause
+    scene fs miasextime5
+    with Dissolve(0.5)
+    stop sound fadeout 3
+    mia "Phew..hah.."
+    scene fs miasextime6
+    with Dissolve(0.5)
+    mia "Oh you're.."
+    player "Yup."
+    scene fs miasextime7
+    with Dissolve(0.5)
+    play sound "audio/miagameaudio/miamoanlaugh.wav"
+    mia "Ahh!"
+    mia "[povname] haha!"
+    mia "R-Right there!"
+    mia "Okay okay stop!"
+    mia "Take me to the bed right now!"
+    scene fs blackblank
+    with Dissolve(0.5)
+    player "Yes ma'am."
+    show miasex movie3
+    play sound "audio/miagameaudio/miamoan2.wav" loop
+    mia "MMMHN!"
+    player "That feel good baby?"
+    show miasex movie4
+    stop sound
+    play sound "audio/miagameaudio/miasexmoan.wav" loop
+    mia "I'm r-really trying not to scream!"
+    player "Forget about my neighbors haha I want to hear you baby!"
+    mia "O-Oh God [povname]!"
+    mia "[povname]!"
+    mia "I'm cumming!"
+    pause
+    show miasex movie5
+    play sound "audio/miagameaudio/miaorgasm1.wav" loop
+    mia "AHHHHN!"
+    mia "I love you!"
+    mia "I love you I love you I love you!"
+    player "Fuck baby I can't stop!"
+    mia "Get me pregnant!"
+    stop sound
+    scene fs miasextime8
+    with Dissolve(0.7)
+    mia "Hah...hah...I want.."
+    mia "I want little [povname] babies.."
+    player "Hahaha!"
+    player "I love you too Mia."
+    scene fs blackblank
+    with Dissolve(0.7)
+    pause
+    $ miaquestlog = "I really can't get enough of Mia's body. All we did was fuck though!"
+    $ miaphase2interaction2 = 4
+    jump gotosleep
+
+# end of chapter 2
+

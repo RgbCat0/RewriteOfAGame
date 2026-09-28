@@ -94,7 +94,7 @@ label playerlivingroom:
     if avaphase2interaction2 == 2 and timeofday == "Night":
         jump avaphase2interaction2part2
 
-    if josyscene1 == 1 and miaphase2interaction2 == 3 and timeofday == "Day":
+    if josyscene1 == 1 and miaphase2interaction2 >= 3 and timeofday == "Day":
         jump josykatiehangout2
     
     if timeofday == "Night" and katiephase2interaction1 == 5 and miaphase2interaction2 >= 4:
@@ -127,6 +127,12 @@ label startofchapter2:
     $ avaphase1interaction3 = 10
     if charlottequestlog == "Think I should avoid Charlotte till after the track meet.":
         $ charlottequestlog = "I should explore Sunnyside some more during the morning."
+    if katieconversation == 4:
+        $ katiequestlog = "Maybe I should stop by Katie's room?"
+    if miaphase1interaction3 == 5:
+        $ miaquestlog = "I wonder if I should bring anyone else along with me to Mia's shopping trip..."
+    if avaphase1interaction2 == 4:
+        $ avaquestlog = "I feel like I'm making a real connection with Ava, I should see her at the gym again."
 
     scene fs blackblank
     pause
@@ -1365,7 +1371,7 @@ label mallstore:
     if ashleychecker == 1 and amountspent >= 350 and watchcount == 0:
         jump ashleyinteraction1part2
 
-
+    $ ashleySprite = 0
     show hbashley current
     if firsttimestore == 0:
         jump storeintro
@@ -3545,6 +3551,8 @@ label oliviaPivot:
         hide screen phonecontacts
         hide screen contacts
         jump returnwhereyouare
+    "rgbcat" "nothing happens i guess. (havent fixed this in a better way yet.)"
+    jump returnwhereyouare 
 
 
 

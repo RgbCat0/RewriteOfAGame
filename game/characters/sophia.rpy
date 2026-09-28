@@ -789,3 +789,1853 @@ label sophiaphase1interaction2part2:
     jump passtime
 
 # end chapter 1
+
+# chapter 2
+# start
+
+label gohomesophia:
+    $ charlotteSprite = 1
+    show fbcharlotte current:
+        xalign 0.3 ypos 120
+    charlotte "Yes me too. The heat was unBAREable today."
+    charlotte "Maybe I'll take a bath.."
+    $ charlotteSprite = 0
+    $ emilySprite = 1
+    emily "Looks like we're splitting up here then?"
+    $ emilySprite = 0
+    $ playerSprite = 1
+    player "Mia you gonna go home?"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Yes I think my mom wanted my help with some stuff tonight."
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Alright girls stay safe on your way back!"
+    $ playerSprite = 0
+    $ charlotteSprite = 1
+    charlotte "Bye!"
+    $ charlotteSprite = 0
+    hide fbcharlotte current
+    with Dissolve(0.5)
+    show fbava runfliptalk:
+        xalign 0.25 ypos 120
+    ava "See yah! Thanks again for coming out everyone!"
+    hide fbava runfliptalk
+    with Dissolve(0.5)
+    with Dissolve(0.5)
+    show fbsophia defaultflip:
+        xalign 0.5 ypos 120
+    $ miaSprite = 1
+    mia "Bye everyone!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.1 ypos 120
+    with move
+    player "See you later Mia."
+    $ playerSprite = 0
+    hide fbmia current
+    with Dissolve(0.5)
+    $ emilySprite = 1
+    emily "Bye [povname], bye Olivia and Sophia!"
+    $ emilySprite = 0
+    $ oliviaSprite = 1
+    olivia "Bye Emily."
+    $ oliviaSprite = 0
+    hide fbemily current
+    with Dissolve(0.5)
+    $ playerSprite = 1
+    player "You want to go back with us Olivia?"
+    $ playerSprite = 0
+    $ oliviaSprite = 1
+    olivia "Sure I don't really any anything to do ton-"
+    $ oliviaSprite = 9
+    show fbolivia current at surpriseshake:
+        xalign 0.8 ypos 120
+    olivia "Ohmygod!"
+    olivia "The new KeroKero Fight game I ordered comes in today!!"
+    olivia "I totally forgot."
+    olivia "I gotta go bye!"
+    hide fbolivia current
+    with Dissolve(0.5)
+    $ playerSprite = 10
+    sophia "Uhhh...bye Olivia?"
+    $ playerSprite = 0
+    show fbsophia current:
+        xalign 0.5 ypos 120
+    $ sophiaSprite = 1
+    sophia "Oh geez there she goes again.."
+    $ sophiaSprite = 0
+    show fbplayer current:
+        xalign 0.2 ypos 120
+    with move
+    $ playerSprite = 1
+    player "Haha damn she can run! Probably should've participated in one of the events."
+    $ sophiaSprite = 1
+    $ playerSprite = 0
+    sophia "Hahaha yeah, we'd just have to put a new graphics card at the finish line."
+    $ sophiaSprite = 0
+    $ playerSprite = 11
+    player "Wow that is...actually a pretty good joke."
+    $ sophiaSprite = 4
+    $ playerSprite = 0
+    sophia "What, you don't think I got jokes??"
+    $ sophiaSprite = 3
+    $ playerSprite = 6
+    player "Easy there sheriff I surrender."
+    sophia "...."
+    player "...."
+    $ playerSprite = 13
+    $ sophiaSprite = 1
+    "Both Of You" "Hahaha!"
+    $ playerSprite = 1
+    $ sophiaSprite = 0
+    player "C'mon Soph. Lemme drive you home."
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Thanks [povname], I'd appreciate that."
+    $ sophiaSprite = 0
+    scene fs blackblank
+    with Dissolve(1.0)
+    "So you drive yourself and Sophia back home"
+    "You talk about the events you watched that day, how things were going with Mia"
+    "And you even mentioned how happy you were that you and Sophia were getting along again, she seemed to really respond to that"
+    "You didn't say it out loud but you enjoyed being close to her again"
+    "Anyways eventually you dropped her at home, then took off all your clothes and passed out in your bed"
+    "You must've been a lot more tired than you thought"
+    "You had strange erotic dreams throughout the night, sweaty bodies and breasts went in and out of your conciousness..."
+    "Eventually morning came..."
+    "*Slurp* *Slurp*"
+    player "Huh?"
+    scene fs sophiachapterend0
+    with Dissolve(1.0)
+    player "What's going on? Why do I feel something..."
+    scene fs sophiachapterend0b
+    with Dissolve(1.0)
+    player "W-What? Mia?"
+    scene fs sophiachapterend1blur
+    with Dissolve(0.7)
+    $ hiden_textbox = True
+    "{color=#000000}[povname]{/color}""When did you get here?..."
+    mia "...."
+    scene fs sophiachapterend2
+    with Dissolve(0.7)
+    "{color=#000000}[povname]{/color}""Ohhhh that...mmmm that feels good.."
+    scene fs sophiachapterend3
+    "{color=#000000}[povname]{/color}""Yeah baby...lick the head just like that."
+    scene fs sophiachapterend2
+    "{color=#000000}[povname]{/color}""Oh fuck..."
+    scene fs sophiachapterend3
+    "{color=#000000}[povname]{/color}""Wait.."
+    scene fs sophiachapterend2
+    "{color=#000000}[povname]{/color}" "Mia wouldn't..."
+    scene fs sophiachapterend3
+    window hide
+    pause
+    scene fs sophiachapterend4
+    with Dissolve(1.0)
+
+    "{color=#000000}[povname]{/color}" "Sophia??!"
+    "{color=#000000}[povname]{/color}" "What are you-"
+    scene fs sophiachapterend6
+    play sound "audio/sophiagameaudio/sophiablowjob1.wav"
+    sophia "Uhn.."
+    "{color=#000000}[povname]{/color}" "{i}She's sucking my dick!!{/i}"
+    menu:
+        "{color=#3eab33}Romantic{/color}":
+            jump sophiachapter1rom
+        "{color=#dd3939}Naughty{/color}":
+            jump sophiachapter1naughty
+
+
+label sophiachapter1rom:
+    play sound "audio/sophiagameaudio/sophiablowjob1.wav" loop
+    sophia "{color=#a93b4c}Uhnf..{/color}"
+    scene fs sophiachapterend7
+    "{color=#000000}[povname]{/color}" "Oh my god that feels so good.."
+    sophia "{color=#a93b4c}MMMMM!{/color}"
+    scene fs sophiachapterend6
+    "{color=#000000}[povname]{/color}" "Holy shit yes! Your throat is so tight."
+    scene fs sophiachapterend7
+    sophia "{color=#a93b4c}Uh huh?{/color}"
+    "{color=#000000}[povname]{/color}" "Don't fucking stop."
+    scene fs sophiachapterend6
+    voice "audio/sophiagameaudio/sophiauhn.wav"
+    stop sound
+    sophia "{color=#a93b4c}Uhhhn!!{/color}"
+    "{color=#000000}[povname]{/color}" "Fuck baby I'm gonna cum!"
+    scene fs sophiachapterend7
+    "{i}{color=#a93b4c}He called me baby!{/color}{/i}"
+    scene fs sophiachapterend6
+    "{i}{color=#a93b4c}I can feel it twitching in my mouth.{/color}{/i}"
+    scene fs sophiachapterend8
+    with vpunch
+    #$ hiden_textbox = False
+    player "UUUGH! FUCK YES!"
+    sophia "!!!!"
+    scene fs sophiachapterend9
+    with Dissolve(0.7)
+    play sound "audio/sophiagameaudio/sophiapanting1.wav"
+    player "Oh my god.."
+    sophia "Hah...hah.."
+    player "Sophia, what the hell was that?"
+    scene fs sophiachapterend11
+    sophia "Did you like cumming on my cute little face?"
+    scene fs sophiachapterend10
+    player "Hah, best childhood friend ever."
+    scene fs sophiachapterend11
+    sophia "Haha, pervert."
+    player "I'm the pervert? You just broke into my house and blew me."
+    scene fs sophiachapterend10
+    sophia "Yeah I was...a little nervous about that. Wasn't sure how you'd react."
+    player "Risky move."
+    sophia "...."
+    player "Well now you know...now WE know how I feel about it. About you."
+    scene fs sophiachapterend11
+    sophia "Really??!"
+    player "Sophia if I knew you would and could blow me like that before I met Mia I wouldn't be dating her right now."
+    scene fs sophiachapterend12
+    sophia "I....I don't know what to say!"
+    player "Me neither. This was nice but we need to have a serious talk soon."
+    sophia "Yes I...I understand! No problem haha."
+    sophia "Sorry I'm just so happy!"
+    sophia "I-I'll get out of your hair...uh bed. Have a good day!"
+    scene fs blackblank
+    with Dissolve(1.0)
+    "As promised Sophia left your place in a hurry, she didn't even wipe your cum off her face"
+    "You felt pretty good, I mean after a morning bowjob who wouldn't? But you felt good about the future as well"
+    player "I feel like everything is gonna work out."
+
+    $ endchapter1_trigger = "1 sophia romantic"
+
+    jump startofchapter2
+
+label sophiachapter1naughty:
+
+    scene fs sophiachapterend7
+    voice "audio/sophiagameaudio/sophiauhn2.wav"
+    sophia "{color=#a93b4c}Uhhnmf!{/color}"
+    scene fs sophiachapterend6
+    sophia "{color=#a93b4c}Mmmm.{/color}"
+    scene fs sophiachapterend7
+    voice "audio/sophiagameaudio/sophiauhn.wav"
+    sophia "{color=#a93b4c}UUUHN!{/color}"
+    scene fs sophiachapterend6
+    play sound "audio/sophiagameaudio/sophiablowjob2.wav" loop
+    "{color=#000000}[povname]{/color}" "Look at you go."
+    "{color=#000000}[povname]{/color}" "Always knew you were a dirty little slut."
+    scene fs sophiachapterend7
+    sophia "{color=#a93b4c}Uhn...Uhn!{/color}"
+    scene fs sophiachapterend6
+    "{color=#000000}[povname]{/color}" "You can't stop yourself can you? You're fucking pathetic."
+    scene fs sophiachapterend7
+    sophia "{color=#a93b4c}*Slurp* *Slurp*{/color}"
+    scene fs sophiachapterend6
+    "{color=#000000}[povname]{/color}" "You're not going deep enough."
+    scene fs sophiachapterend7
+    sophia "{color=#a93b4c}Uhhnn?{/color}"
+    scene fs sophiachapterend6
+    "{color=#000000}[povname]{/color}" "If you want to make me cum.."
+    scene fs sophiachapterend13
+    "{color=#000000}[povname]{/color}" "You're going to have to.."
+    scene fs sophiachapterend14
+    voice "audio/sophiagameaudio/sophiauhn.wav"
+    with vpunch
+    "{color=#000000}[povname]{/color}" "Go DEEPER!"
+    sophia "{color=#a93b4c}EMMMMM! EMMM!{/color}"
+    "{color=#000000}[povname]{/color}" "What's wrong? Mia can take this length easily."
+    sophia "{color=#a93b4c}Uhnngg...{/color}"
+    "{color=#000000}[povname]{/color}" "I wonder what she'd say, or the rest of your friends?"
+    "{color=#000000}[povname]{/color}" "How could you do this to them huh? You must just not care about them at all."
+    voice "audio/sophiagameaudio/sophiauhn.wav"
+    sophia "{color=#a93b4c}EEUUUGH!{/color}"
+    with vpunch
+    voice "audio/sophiagameaudio/sophiauhn3.wav"
+    sophia "{color=#a93b4c}EEUUUGH!{/color}"
+    "{color=#000000}[povname]{/color}" "Getting harder to breath huh? Must be pretty difficult with my fat cock down your throat."
+    with vpunch
+    voice "audio/sophiagameaudio/sophiapwease.wav"
+    sophia "{color=#a93b4c}EHN! PWEEASE!{/color}"
+    "{color=#000000}[povname]{/color}" "The only way I'm letting you off my cock is if you make me cum."
+    scene fs sophiachapterend13
+    "{color=#000000}[povname]{/color}" "So don't..."
+    scene fs sophiachapterend14
+    with vpunch
+    "{color=#000000}[povname]{/color}" "Stop sucking!!!"
+    sophia "{color=#a93b4c}Ahhnnugh!{/color}"
+    "{color=#000000}[povname]{/color}" "You ready bitch? Here it comes!"
+    scene fs sophiachapterend15
+    with vpunch
+    sophia "{color=#a93b4c}MMMMM!{/color}"
+    with flash
+    "{color=#000000}[povname]{/color}" "Yeah that's it! That's it you stupid whore. Straight down your little throat."
+    play audio "audio/sophiagameaudio/sophiagulping.wav"
+    sophia "{color=#a93b4c}*Gulp* *Gulp*{/color}"
+    window hide
+    pause
+    #$ hiden_textbox = False
+    scene fs sophiachapterend16
+    with vpunch
+    play audio "audio/sophiagameaudio/sophiagasping.wav"
+    sophia "Hah..*cough*...hah.."
+    scene fs sophiachapterend17
+    sophia "W-What the hell??! I almost died!"
+    scene fs sophiachapterend19
+    player "Shut the fuck up, I was holding your hair the entire time and I didn't feel one pull of resistance."
+    scene fs sophiachapterend18
+    sophia "I..."
+    scene fs sophiachapterend19
+    player "You know exactly what you did. You came into my house with intentions to sexually assault me and when things got rough you got upset."
+    scene fs sophiachapterend17
+    sophia "Assault you??! You just came down my throat!!"
+    scene fs sophiachapterend19
+    player "You think that would hold up in court?? I was ASLEEP Sophia!"
+    scene fs sophiachapterend18
+    sophia "No that's not..."
+    player "...."
+    scene fs sophiachapterend19
+    player "I'm not going to sue you Sophia relax. I wouldn't do that."
+    player "But what you did was really messed up."
+    scene fs sophiachapterend17
+    sophia "But you said such mean things!"
+    scene fs sophiachapterend19
+    player "And I meant every word. Because every word was true."
+    player "You just made me cheat on Mia. My girlfriend and one of your BEST friends."
+    player "Did you even think about that?"
+    scene fs sophiachapterend18
+    sophia "No..."
+    scene fs sophiachapterend19
+    player "You didn't think about anything other than how horny you were. That's what we call a slut."
+    scene fs sophiachapterend18
+    sophia "I'm not a s-"
+    scene fs sophiachapterend19
+    player "You are Sophia. Now stop denying it and get out of my house. I have a lot to think about."
+    player "And we have a lot to talk about later. Understand?"
+    sophia "...."
+    player "I said do you UNDERSTAND?"
+    scene fs sophiachapterend18
+    sophia "Yes...I-I'll go.."
+    scene fs blackblank
+    with Dissolve(1.0)
+    player "....Okay."
+    player "That was awesome. I can't let Sophia know how much that turned me on."
+    player "Of course she's still a pathetic little slut (which is interesting to find out after all these years)."
+    player "But what guy doesn't like fucking a slut?"
+    player "I'm gonna go back to sleep. Figure things out later."
+    window hide
+    pause
+
+    $ endchapter1_trigger = "1 sophia naughty"
+
+    jump startofchapter2
+
+# interaction 1
+# part 1
+
+label sophiaphase2interaction1part1:
+    hide screen uppergui
+    hide screen tosunnyside
+    scene fs sophiahouseoutside
+    with Dissolve(0.5)
+
+    $ sophiaquestlog = "It was crazy seeing Cass again. Sophia wanted to meet up at Café Seni in Sunnyside."
+    $ cassandraquesticon = "gui/questboxCassandra.png"
+    $ cassandraquestlog = "Weird seeing Cassandra again, she's still so hot."
+
+    if endchapter1_trigger == "1 sophia romantic":
+        player "{i}I need to talk to Sophia after what happened the other day.{/i}"
+        player "{i}What she did was a surprise and...well probably wrong.{/i}"
+        player "{i}But I'd be lying to myself if I said it wasn't hot.{/i}"
+        player "{i}I did bust in her mouth. And she weighs like practically nothing I could've pushed her off anytime.{/i}"
+        player "{i}Hah...damn. I'll just talk to her and see where things go. Nothing will come from just thinking about it.{/i}"
+
+        show fbplayer current:
+            xalign 0.3 ypos 120
+        with Dissolve(0.5)
+        pause
+
+        show fbsophia defaultflip:
+            xalign 0.45 ypos 120
+        with Dissolve(0.5)
+        pause
+
+        show fbsophia current at surpriseshake
+        $ cassSprite = 0
+        player "Oh hey Sophia!"
+        sophia "Wha-Oh! Hi [povname]!"
+        player "I thought you were home I was about to knock on your door."
+        sophia "No I was out and just got here haha."
+        player "Ah cool..."
+        sophia "Yeah. So...did you want to talk?"
+        sophia "{size=-10}Or fool around again or something...{/size}"
+        player "Yeah we really should talk. Can we go inside?"
+        sophia "Haha yeah of course!"
+        sophia "You know...I can't stop thinking about last night."
+        player "{i}Shit.{/i}"
+        sophia "I mean it's not exactly how I thought it would happen."
+        show fbcassandra current behind fbsophia:
+            xalign 0.7 ypos 120
+        sophia "I almost didn't do it but after spending that time with you and talking and..."
+        show fbcassandra current:
+            xalign 0.65 ypos 120
+        with move
+        player "Ummm..."
+        sophia "Haha well, you get what I'm trying to say."
+        show fbcassandra current:
+            xalign 0.6 ypos 120
+        with move
+        player "Soph? who is-"
+        show fbcassandra current:
+            xalign 0.55 ypos 120
+        with move
+        sophia "I know I know, we gotta figure out the Mia situation bu-"
+        hide fbsophia current
+        hide fbcassandra current
+        show fbcassandra sophiahug1:
+            xalign 0.50 ypos 120
+        with vpunch
+        cassandra "AHHHHH!"
+        sophia "GAH!!!"
+        sophia "Wha-"
+        sophia "WHO ARE..."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Cass??!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Sophie!!!"
+        player "Wait. Cass? Cassandra?"
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "No WAY is that [povname]??!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "G-Get off me sis!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Well would you LOOK at you! It's been ages!"
+        player "Yeah you...you look great!"
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "Haha oh I know."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "UGH. Why are you here??"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Nice to see you too little sister."
+        cassandra "I'm visiting!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Clearly."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Oh c'mon, I come all the way back here from across the country and this is my welcome?"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "...I-It's good to see you Cass.."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Haha I'm just messing with you sis no worries!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Have mom and dad s-"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Yeah I met with them a while ago, they said you were out so I was waiting to surprise you."
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "But it looks like I got a surprise too! Little [povname] is hot now holy shit."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "OH my God."
+        player "Haha thanks Cass."
+        sophia "Uh sis we were actually talking about something important s-"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "So you two dating yet?"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Cass!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Man Soph's been wanting to jump on your dick foreeeeeever. Glad to see it's finally happened."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "OH MY GOD CASSANDRA SHUT UP!!"
+        player "Haha uh well, I'm actually dating a girl named Mia. Interesting to know that though."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Oops, sorry that must be awkward haha."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "UGH!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Wait Mia? Sophia's friend? Pink hair with a big smile and even bigger tits?"
+        $ playerSprite = 1
+        player "That's the one."
+        $ playerSprite = 0
+        cassandra "Oof, tough competition you got there lil sis."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Please god kill me."
+        sophia "Cassandra. I am....GLAD....that you are back."
+        hide fbcassandra sophiahug2
+        show fbsophia defaultfliptalk:
+            xalign 0.5 ypos 120
+        show fbcassandra current:
+            xalign 0.7 ypos 120
+        with Dissolve(0.0)
+        sophia "But would you PLEASE wait inside so I can talk to [povname] and we can catch up later?"
+        show fbsophia defaultflip:
+            xalign 0.5 ypos 120
+        cassandra "Hmmm....fine for now. I'll see you soon [povname]! We gotta catch up too."
+        $ playerSprite = 1
+        player "Sounds uh...sounds good to me!"
+        hide fbcassandra current
+        with Dissolve(0.7)
+        $ sophiaSprite = 1
+        show fbsophia current:
+            xalign 0.5 ypos 120
+        sophia "Sigh....let's go to your place."
+        $ sophiaSprite = 0
+        player "Sure."
+
+        scene fs livingroom
+        with Dissolve(1.0)
+
+        show fbsophia current:
+            xalign 0.6 ypos 120
+        show fbplayer current:
+            xalign 0.4 ypos 120
+        with Dissolve(0.7)
+
+        player "Wow."
+        sophia "I can't believe this..."
+        player "Hey it's not that bad, sure she teases you a bit but she's always fun to be with."
+        sophia "You don't understand [povname]. She's only gotten worse since we were kids."
+        sophia "She's an unquenchable whore!!"
+        player "Haha c'mon.."
+        sophia "*Sigh*"
+        sophia "Just promise me you'll stay away from her if you can help it."
+        player "I can't say I won't greet her once since she's seen me. I mean she'll probably find me first.."
+        player "But I'll try and keep my distance."
+        sophia "Hah. Okay then."
+
+        sophia "With that out of the way..."
+        player "We have a serious talk to have Sophia."
+        sophia "Yeah...we finally...got physical..."
+        sophia "Did you just want to go all in from the get go or take it slow?"
+        sophia "Oh that'd be so hot..."
+        player "No you don't understand Sophia. We can't do anything like that again."
+        sophia "W-What?"
+        player "We both fucked up. What we did was a mistake."
+        sophia "No....no! You s-said you liked it!"
+        sophia "You came in my mouth! I made you feel good!! Better than Mia!!!"
+        player "{i}Shit she's really overreacting here.{/i}"
+        player "I know, and in the moment it did feel good. I didn't stop you."
+        sophia "So then-"
+        player "That's why I'm not angry at you, I was complacent. But it was still wrong."
+        sophia "*sniff* I...I don't believe you. You're lying to yourself!"
+        player "Soph. I was asleep."
+        player "When you woke me up I was so drowzy I even thought you were Mia, I swear to God."
+        sophia "....."
+        player "Look. I'm flattered that you feel this way about me, and I'll always love you you know that."
+        sophia "You will?"
+        player "Of course don't be ridiculous."
+        sophia "Okay..."
+        player "But I'm dating Mia, we can't change that. Maybe if things were different..."
+        sophia "??"
+        player "But they aren't."
+        sophia "Hmmm..."
+        player "{i}She still doesn't look convinced. This might be harsh but I'll have to say something to really make her stop pursuing me{/i}"
+        player "Mia is a great person Sophia you know that right?"
+        sophia "Yeah."
+        player "Well she's also really really hot. And she satisfies me like no one else can."
+        player "I'm on cloud nine when we fuck, I can't get that from anyone else and I know for certain she feels the same."
+        sophia "....."
+        player "So do you understand? WE can't happen. Not like this."
+        sophia "Yes. I think I understand."
+        player "Great! You know we'll always be friends."
+        sophia "So let's say....hypothetically."
+        player "Do not say you're gonna kill Mia you little psycho."
+        sophia "What?? No she's still my friend!!"
+        sophia "I'm just saying if hypothetically we were in a situation where someone else was satisfiying you just as good you'd be with them?"
+        player "Sophia."
+        sophia "And you never knew Mia!"
+        player "....."
+        player "I suppose. In that hypothetical, if it'll give you closure..."
+        player "Sure. Yeah I would."
+        sophia "Okay!"
+        player "We good?"
+        sophia "We're good! Water under the bridge."
+        player "Fantastic. I feel a lot better now."
+        sophia "Yeah me too. I'm gonna go now, catch up with my sister."
+        player "Sure no problem, I'll see you later."
+        sophia "Bye!"
+
+        hide fbplayer current
+        scene fs sophiahouseoutside
+        with Dissolve(0.5)
+        pause
+        show fbsophia current:
+            xalign 0.5 ypos 120
+        with Dissolve(0.7)
+        sophia "{i}You really think I'm going to stop [povname]??{/i}"
+        sophia "{i}Neither my sister, nor Mia, nor anyone else is going to stop me from having you all to myself!{/i}"
+        sophia "{i}I've held onto these feelings for 15 years!{/i}"
+        sophia "{i}I'll find a way for you to fall for me AND keep being friends with everyone!{/i}"
+        sophia "Then I'll ride your fat cock till your balls are DRY!!!"
+        "Neighbour" "W-What?!"
+        sophia "Oh nothing Mrs Henderson! Sorry."
+        "Neighbour" "Okay..."
+        sophia "Ahem."
+        $ sophiaphase2interaction1 = 1
+        $ sophiaphase1interaction2 = 3
+
+        jump overworldmap
+
+
+
+
+    elif endchapter1_trigger == "1 sophia naughty":
+
+        $ playerSprite = 0
+        show fbplayer current:
+            xalign 0.3 ypos 120
+        with Dissolve(0.5)
+        pause
+
+        show fbsophia defaultflip:
+            xalign 0.45 ypos 120
+        with Dissolve(0.5)
+        pause
+
+
+        $ cassSprite = 0
+
+        player "{i}I need to talk to Sophia after what happened the other day.{/i}"
+
+        $ playerSprite = 1
+        player "Hey Sophia."
+        $ playerSprite = 0
+        $ sophiaSprite = 7
+        show fbsophia current at surpriseshake
+        sophia "Wha-Oh! Hi [povname]..."
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "I thought you were home I was about to knock on your door."
+        $ playerSprite = 0
+        $ sophiaSprite = 8
+        sophia "Oh...yeah no I-I was out. Just got home."
+        $ playerSprite = 16
+        player "Ah cool..."
+        $ playerSprite = 8
+        sophia "Yeah..."
+        $ playerSprite = 16
+        player "So....we need to talk, should we go inside?"
+        $ playerSprite = 0
+        $ sophiaSprite = 7
+        sophia "Yeah I guess I...yeah. Yup."
+        $ sophiaSprite = 9
+        sophia "{i}Oh gosh, what is he gonna say? He was so mean to me...{/i}"
+        show fbcassandra current behind fbsophia:
+            xalign 0.7 ypos 120
+        pause
+        $ playerSprite = 11
+        player "Ummm..."
+
+        show fbcassandra current:
+            xalign 0.65 ypos 120
+        with move
+        $ playerSprite = 17
+        player "First I..."
+        $ playerSprite = 11
+        show fbcassandra current:
+            xalign 0.6 ypos 120
+        with move
+        $ playerSprite = 17
+        player "Uhh...."
+        $ playerSprite = 11
+        $ sophiaSprite = 7
+        sophia "What?"
+        $ sophiaSprite = 0
+        show fbcassandra current:
+            xalign 0.55 ypos 120
+        with Dissolve(0.7)
+        $ playerSprite = 17
+        player "Who...is-"
+        $ playerSprite = 11
+        hide fbsophia current
+        hide fbcassandra current
+        show fbcassandra sophiahug1:
+            xalign 0.50 ypos 120
+        with vpunch
+        cassandra "HEHEHE!"
+        sophia "GAH!!!"
+        sophia "Wha-"
+        sophia "WHO ARE..."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Cass??!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Sophie!!!"
+        $ playerSprite = 17
+        player "Wait. Cass? Cassandra?"
+        $ playerSprite = 11
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "No WAY is that [povname]??!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "G-Get off me sis!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Well would you LOOK at you! It's been ages!"
+        $ playerSprite = 16
+        player "Yeah you...you look great!"
+        $ playerSprite = 0
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "Haha oh I know."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "UGH. Why are you here??"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Nice to see you too little sister."
+        cassandra "I'm visiting!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Clearly."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Oh c'mon, I come all the way back here from across the country and this is my welcome?"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "...I-It's good to see you Cass.."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Haha I'm just messing with you sis no worries!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Have mom and dad s-"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Yeah I met with them a while ago, they said you were out so I was waiting to surprise you."
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "But it looks like I got a surprise too! Little [povname] is hot now holy shit."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "OH my God."
+        $ playerSprite = 1
+        player "Haha thanks Cass."
+        $ playerSprite = 0
+        sophia "Uh sis we were actually talking about something important s-"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "So you two dating yet?"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Cass!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Man Soph's been wanting to jump on your dick foreeeeeever. Glad to see it's finally happened."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "OH MY GOD CASSANDRA SHUT UP!!"
+        $ playerSprite = 1
+        player "Haha uh well, I'm actually dating a girl named Mia. Interesting to know that though."
+        $ playerSprite = 0
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Oops, sorry that must be awkward haha."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "UGH!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Wait Mia? Sophia's friend? Pink hair with a big smile and even bigger tits?"
+        $ playerSprite = 1
+        player "That's the one."
+        $ playerSprite = 0
+        cassandra "Oof, tough competition you got there lil sis."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Please god kill me."
+        sophia "Cassandra. I am....GLAD....that you are back."
+        hide fbcassandra sophiahug2
+        show fbsophia defaultfliptalk:
+            xalign 0.5 ypos 120
+        show fbcassandra current:
+            xalign 0.7 ypos 120
+        with Dissolve(0.0)
+        sophia "But would you PLEASE wait inside so I can talk to [povname] and we can catch up later?"
+        show fbsophia defaultflip:
+            xalign 0.5 ypos 120
+        $ cassSprite = 1
+        cassandra "Hmmm....fine for now. I'll see you soon [povname]! We gotta catch up too."
+        $ cassSprite = 0
+        $ playerSprite = 1
+        player "Sounds uh...sounds good to me!"
+        hide fbcassandra current
+        with Dissolve(0.7)
+        $ sophiaSprite = 2
+        show fbsophia current:
+            xalign 0.5 ypos 120
+        sophia "Sigh....let's go to your place."
+        $ sophiaSprite = 10
+        player "Sure."
+
+        scene fs livingroom
+        with Dissolve(1.0)
+
+        show fbsophia current:
+            xalign 0.6 ypos 120
+        show fbplayer current:
+            xalign 0.4 ypos 120
+        with Dissolve(0.7)
+
+        $ playerSprite = 1
+        player "Wow."
+        $ playerSprite = 0
+        $ sophiaSprite = 2
+        sophia "I can't believe this..."
+        $ playerSprite = 1
+        $ sophiaSprite = 10
+        player "Hey it's not that bad, sure she teases you a bit but she's always fun to be with."
+        $ playerSprite = 0
+        $ sophiaSprite = 2
+        sophia "You don't understand [povname]. She's only gotten worse since we were kids."
+        $ sophiaSprite = 4
+        sophia "She's an unquenchable whore!!"
+        $ playerSprite = 1
+        $ sophiaSprite = 10
+        player "Haha c'mon.."
+        $ playerSprite = 0
+        $ sophiaSprite = 2
+        sophia "*Sigh*"
+        sophia "Just promise me you'll stay away from her if you can help it."
+        $ playerSprite = 1
+        $ sophiaSprite = 10
+        player "I can't say I won't greet her once since she's seen me. I mean she'll probably find me first.."
+        player "But I'll try and keep my distance."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Hah. Okay then."
+        sophia "With that out of the way..."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "We have a serious talk to have Sophia."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Oh yeah..."
+        $ sophiaSprite = 0
+        player "{i}I should probably be nice to start so she doesn't overreact.{/i}"
+        player "{i}I don't want her to tell the Mia or the other girls{/i}"
+        $ playerSprite = 1
+        player "First of off Sophia. I wanted to say sorry."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "R-Really?"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "I was really...harsh. With some of the things I said, and in hindsight I regret saying them."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Okay!"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "I was groggy and horny and in a state of confusion at the time so I didn't mean half the things I said."
+        $ playerSprite = 0
+        sophia "{i}He admits I made him horny!!{/i}"
+        $ sophiaSprite = 1
+        sophia "T-That's alright I forgive you!"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "But now, we move on. We don't mention this to anyone and we just stay friends from now on."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "What?"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "What do you mean what?"
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "I just...I thought maybe we could figure something out?"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Figure something out? Even after the way I treated you?"
+        $ playerSprite = 0
+        sophia "{i}I probably shouldn't tell him I got really turned on when he was rough with me.{/i}"
+        $ sophiaSprite = 1
+        sophia "{i}Not yet at least.{/i}"
+        $ sophiaSprite = 1
+        sophia "Yeah it's fine...w-water under the bridge."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "*Sigh* No that doesn't even matter. Sophia."
+        player "I'm dating Mia, we can't change that. Maybe if things were different..."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "??"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "But they aren't."
+        $ playerSprite = 0
+        sophia "Hmmm..."
+        player "{i}She still doesn't look convinced. This might be harsh but I'll have to say something to really make her stop pursuing me{/i}"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Mia is a great person Sophia you know that right?"
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Yeah."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Well she's also really really hot. And she satisfies me like no one else can."
+        player "I'm on cloud nine when we fuck, I can't get that from anyone else and I know for certain she feels the same."
+        $ playerSprite = 0
+        sophia "....."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "So do you understand? WE can't happen. Not like this."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Yes. I think I understand."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Great! You know we'll always be friends."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "So let's say....hypothetically."
+        $ playerSprite = 5
+        $ sophiaSprite = 0
+        player "Do not say you're gonna kill Mia you little psycho."
+        $ playerSprite = 4
+        $ sophiaSprite = 7
+        sophia "What?? No she's still my friend!!"
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "I'm just saying if hypothetically we were in a situation where someone else was satisfiying you just as good you'd be with them?"
+        $ playerSprite = 15
+        $ sophiaSprite = 0
+        player "Sophia."
+        $ playerSprite = 14
+        $ sophiaSprite = 1
+        sophia "And you never knew Mia!"
+        $ sophiaSprite = 0
+        player "....."
+        $ playerSprite = 15
+        $ sophiaSprite = 0
+        player "I suppose. In that hypothetical, if it'll give you closure..."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Sure. Yeah I would."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Okay!"
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "We good?"
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "We're good! Water under the bridge like I said."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Fantastic. I feel a lot better now."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Yeah me too. I'm gonna go now, catch up with my sister."
+        $ playerSprite = 1
+        $ sophiaSprite = 0
+        player "Sure no problem, I'll see you later."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Bye!"
+        $ sophiaSprite = 0
+
+        hide fbplayer current
+        scene fs sophiahouseoutside
+        with Dissolve(0.5)
+        pause
+        show fbsophia current:
+            xalign 0.5 ypos 120
+        with Dissolve(0.7)
+        sophia "{i}You really think I'm going to stop [povname]??{/i}"
+        sophia "{i}Neither my sister, nor Mia, nor anyone else is going to stop me from having you all to myself!{/i}"
+        sophia "{i}I've held onto these feelings for 15 years!{/i}"
+        sophia "{i}I'll find a way for you to fall for me AND keep being friends with everyone!{/i}"
+        $ sophiaSprite = 4
+        sophia "Then I'll ride your fat cock till your balls are DRY!!!"
+        "Neighbour" "W-What?!"
+        show fbsophia defaultfliptalk:
+            xalign 0.5 ypos 120
+        sophia "Oh nothing Mrs Henderson! Sorry."
+        "Neighbour" "Okay..."
+        $ sophiaSprite = 0
+        show fbsophia current:
+            xalign 0.5 ypos 120
+        sophia "Ahem."
+        $ sophiaphase2interaction1 = 1
+        $ sophiaphase1interaction2 = 3
+
+        jump overworldmap
+
+    else:
+        player "I should knock on Sophia's house, see what's she's up to."
+
+        show fbplayer current:
+            xalign 0.3 ypos 120
+        with Dissolve(0.5)
+        pause
+
+        show fbsophia defaultflip:
+            xalign 0.45 ypos 120
+        with Dissolve(0.5)
+        pause
+
+        $ cassSprite = 0
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+
+        show fbsophia current at surpriseshake
+
+
+
+        player "Oh hey Sophia."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Wha-Oh! Hi [povname]!"
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "I thought you were home I was about to knock on your door."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Nope! Just got home."
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "Ah cool."
+        $ playerSprite = 0
+        $ sophiaSprite = 1
+        sophia "Haha."
+        sophia "You wanna come inside?"
+        $ sophiaSprite = 0
+        player "{i}Heh.{/i}"
+        $ playerSprite = 1
+        player "Yeah sure I-"
+        $ playerSprite = 11
+
+        show fbcassandra current behind fbsophia:
+            xalign 0.7 ypos 120
+        pause
+        player "...."
+        sophia "?"
+        player "Ummm..."
+
+        show fbcassandra current:
+            xalign 0.65 ypos 120
+        with move
+        $ playerSprite = 17
+        player "First I..."
+        show fbcassandra current:
+            xalign 0.6 ypos 120
+        with move
+        player "Uhh...."
+        $ playerSprite = 11
+        $ sophiaSprite = 1
+        sophia "What?"
+        $ sophiaSprite = 0
+        show fbcassandra current:
+            xalign 0.55 ypos 120
+        with move
+        $ playerSprite = 17
+        player "Who...is-"
+        $ playerSprite = 11
+        hide fbsophia current
+        hide fbcassandra current
+        show fbcassandra sophiahug1:
+            xalign 0.50 ypos 120
+        with vpunch
+        cassandra "AHHHHH!"
+        sophia "GAH!!!"
+        sophia "Wha-"
+        sophia "WHO ARE..."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Cass??!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Sophie!!!"
+        $ playerSprite = 17
+        player "Wait. Cass? Cassandra?"
+        $ playerSprite = 11
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "No WAY is that [povname]??!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "G-Get off me sis!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Well would you LOOK at you! It's been ages!"
+        $ playerSprite = 1
+        player "Yeah you...you look great!"
+        $ playerSprite = 0
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "Haha oh I know."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "UGH. Why are you here??"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Nice to see you too little sister."
+        cassandra "I'm visiting!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Clearly."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Oh c'mon, I come all the way back here from across the country and this is my welcome?"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "...I-It's good to see you Cass.."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Haha I'm just messing with you sis no worries!"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Have mom and dad s-"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Yeah I met with them a while ago, they said you were out so I was waiting to surprise you."
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        cassandra "But it looks like I got a surprise too! Little [povname] is hot now holy shit."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "OH my God."
+        show fbcassandra sophiahug3:
+            xalign 0.50 ypos 120
+        $ playerSprite = 1
+        player "Haha thanks Cass."
+        $ playerSprite = 0
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Uh sis we were actually talking about something important s-"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "So you two dating yet?"
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Cass!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Man Soph's been wanting to jump on your dick foreeeeeever. Glad to see it's finally happened."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "OH MY GOD CASSANDRA SHUT UP!!"
+        player "Haha uh well, I'm actually dating a girl named Mia. Interesting to know that though."
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Oops, sorry that must be awkward haha."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "UGH!!"
+        show fbcassandra sophiahug2b:
+            xalign 0.50 ypos 120
+        cassandra "Wait Mia? Sophia's friend? Pink hair with a big smile and even bigger tits?"
+        $ playerSprite = 1
+        player "That's the one."
+        $ playerSprite = 0
+        cassandra "Oof, tough competition you got there lil sis."
+        show fbcassandra sophiahug2:
+            xalign 0.50 ypos 120
+        sophia "Please god kill me."
+        sophia "Cassandra. I am....GLAD....that you are back."
+        hide fbcassandra sophiahug2
+        show fbsophia defaultfliptalk:
+            xalign 0.5 ypos 120
+        show fbcassandra current:
+            xalign 0.7 ypos 120
+        with Dissolve(0.0)
+        $ sophiaSprite = 1
+        sophia "But would you PLEASE wait inside so I can talk to [povname] and we can catch up later?"
+        show fbsophia defaultflip:
+            xalign 0.5 ypos 120
+        cassandra "Hmmm....fine for now. I'll see you soon [povname]! We gotta catch up too."
+        $ playerSprite = 16
+        player "Sounds uh...sounds good to me!"
+        hide fbcassandra current
+        with Dissolve(0.7)
+        $ sophiaSprite = 2
+        $ playerSprite = 0
+        show fbsophia current:
+            xalign 0.5 ypos 120
+        sophia "Sigh....let's go to your place."
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "No."
+        $ sophiaSprite = 1
+        $ playerSprite = 0
+        sophia "No?"
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "Yeah go deal with your sister first. I know how you are with her. We can hang out somewhere else afterwards."
+        $ sophiaSprite = 1
+        $ playerSprite = 0
+        sophia "Oh okay um..."
+        sophia "Let's meet up at Café Seni!"
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "Seni? Oh the one where you guys go all the time."
+        $ sophiaSprite = 1
+        $ playerSprite = 0
+        sophia "Yeah I've been hanging out there during the day now since it gets so hot and I have a small break from school."
+        $ sophiaSprite = 0
+        $ playerSprite = 1
+        player "Alright sounds good Soph, see you there."
+        $ sophiaSprite = 1
+        $ playerSprite = 0
+        sophia "Great! See you later!"
+        hide fbplayer current
+        with Dissolve(0.7)
+        pause
+        $ sophiaSprite = 2
+        sophia "*Sigh*....Happy face Sophia."
+        show fbsophia defaultfliptalk:
+            xalign 0.5 ypos 120
+        sophia "Cass! Tell me about your trip!"
+        hide fbsophia defaultfliptalk
+        with Dissolve(0.7)
+
+        $ sophiaphase2interaction1 = 1
+        $ sophiaphase1interaction2 = 3
+
+        jump overworldmap
+
+# part 2
+
+
+label sophiaphase2interaction2part2:
+    hide screen exit_cafe
+    hide screen questboxpreview
+    stop music fadeout 5
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    show fbsophia current:
+        xalign 0.55 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    sophia "Hey [povname]!"
+    $ sophiaSprite = 0
+    $ playerSprite = 1
+    player "Hey Sophia."
+    player "Should we sit down?"
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Yeah let's get a booth together!"
+    $ sophiaSprite = 0
+    scene fs sophiacafescene1a
+    with Dissolve(0.7)
+    player "This place is really nice I should come by more often."
+    scene fs sophiacafescene1b
+    sophia "Yeah! I'm here all the time when I'm out and not at school!"
+    sophia "{i}Hehe it's like we're on another date!{/i}"
+    scene fs sophiacafescene1a
+    player "So Sophia, there's something I really need to talk to you about."
+    sophia "{i}He's so dreamy...{/i}"
+    player "It's really important you listen to me alright?"
+    scene fs sophiacafescene1b
+    sophia "Uh huh..."
+    scene fs sophiacafescene1a
+    player "So our relationship has been..."
+    sophia "{i}I just find myself thinking about his huge cock all the time...{/i}"
+    player "I want to keep it completely platonic..."
+    sophia "{i}I wonder if he'd wanna do it in my butt...{/i}"
+    player "I mean we'll always be friends..."
+    sophia "{i}Yeah....yeah he would.{/i}"
+    scene fs sophiacafescene2a
+    "Waitress" "Howdy folks!"
+    scene fs sophiacafescene2b
+    player "Hey."
+    sophia "Hi!"
+    "Waitress" "And what can I get the cute couple today?"
+    player "{i}I won't bother saying we're not together, too much hassle.{/i}"
+    player "I just want something light, you have a drink menu?"
+    "Waitress" "We sure do!"
+    sophia "{i}[povname] didn't correct her!!{/i}"
+
+    scene fs sophiacafescene4a
+    with Dissolve(0.7)
+    "Waitress" "Here you go!"
+    scene fs sophiacafescene4b
+    sophia "Oh we gotta get the couples' re-TREAT!"
+    scene fs sophiacafescene4a
+    player "I don't know Sophia, this is the kinda thing I was talking about..."
+    sophia "{i}Ohhh it comes with a fancy straw.{/i}"
+    scene fs sophiacafescene3a
+    sophia "If we don't order it I'm telling the waitress you were looking at her boobs."
+    scene fs sophiacafescene3b
+    player "What? I wasn't looking at her boobs."
+    scene fs sophiacafescene3a
+    sophia "Yes. Yes you were."
+    sophia "And even if you weren't imma still tell her!"
+    player "....."
+    scene fs sophiacafescene3b
+    player "Well it is 50 percent couples discount. Guess I can pretend to get the deal."
+    scene fs sophiacafescene3c
+    sophia "Yay!"
+    sophia "{i}Couples drink for the couple!{/i}"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "A little while later.."
+    scene fs sophiacafescene5
+    with Dissolve(0.5)
+    "Waitress" "Here's your drink! Enjoy!"
+    player "This looks absolutely ridiculous."
+    sophia "{i}It's...{/i}"
+    sophia "{i}Perfect.{/i}"
+    scene fs sophiacafescene6
+    with Dissolve(0.5)
+    player "*Gulp Gulp*"
+    sophia "MMMMM!"
+    scene fs sophiacafescene7
+    with Dissolve(0.7)
+    player "That's actually really not bad!"
+    sophia "Hehe I knew it was gonna be good!"
+    sophia "{i}Ahhh I'm so happy right now!{/i}"
+    scene fs blackblank
+    with Dissolve(0.5)
+    "You and Sophia continue to down the drink together"
+    "All the while you try your best to gently inform her that she's getting too clingy, and that you can't cross the line between friends and something more"
+    "She kept nodding her head in agreement but...she might not've really been paying attention at all"
+
+    scene fs livingroom
+    with Dissolve(0.7)
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbsophia current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.5)
+    $ playerSprite = 1
+    player "Well that was pretty fun."
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Hehe yeah!!"
+    $ playerSprite = 1
+    $ sophiaSprite = 0
+    player "Now you were paying attention right? You're okay with everything I said."
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Yup!"
+    $ playerSprite = 1
+    $ sophiaSprite = 0
+    player "About us?"
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Hehe uh huh!"
+    $ playerSprite = 1
+    $ sophiaSprite = 0
+    player "You're sure?"
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Relax I TOTALLY UNDERSTAND what you're saying hehe."
+    $ playerSprite = 4
+    $ sophiaSprite = 0
+    player "...."
+    $ playerSprite = 5
+    player "I don't think you've listened to a word that I said."
+    $ playerSprite = 4
+    $ sophiaSprite = 1
+    sophia "Of course I have."
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "Tell me what I want then."
+    $ playerSprite = 4
+    $ sophiaSprite = 1
+    sophia "Hehe, you WANT us to keep our dating on the down low."
+    sophia "So that no one catches on!"
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "Sophia."
+    $ playerSprite = 4
+    $ sophiaSprite = 1
+    sophia "I don't mind sharing you really I don't, as long as you save most of yourself for m-"
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "Sophia that's not what I said at all!"
+    $ playerSprite = 4
+    $ sophiaSprite = 1
+    sophia "Huh?"
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "I just want to be FRIENDS. I don't want to fuck you and I don't want to date you!!!"
+    $ playerSprite = 4
+    $ sophiaSprite = 2
+    sophia "But...n-no."
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "The fuck do you mean no?"
+    $ playerSprite = 4
+    $ sophiaSprite = 4
+    sophia "T-The night I invited you to that party! I was going to ask you out!!"
+    sophia "I've loved you for so long [povname]! SINCE WE WERE KIDS!!!"
+    $ playerSprite = 11
+    $ sophiaSprite = 3
+    player "Woah Sophia hold on..."
+    $ sophiaSprite = 4
+    sophia "You weren't supposed to...to meet Mia like that."
+    sophia "I finally got the courage to tell you how I felt and I couldn't find you!"
+    sophia "You already left."
+    $ playerSprite = 15
+    $ sophiaSprite = 3
+    player "Yeah...Mia and I left the party about halfway in."
+    $ playerSprite = 14
+    $ sophiaSprite = 4
+    sophia "It's not FAIR! It's not fair!!!!"
+    $ playerSprite = 15
+    $ sophiaSprite = 3
+    player "Soph calm down."
+    $ playerSprite = 14
+    $ sophiaSprite = 8
+    sophia "Ever since I saw you with Mia the night you stood me up I can't get you out of my head!"
+    $ playerSprite = 11
+    $ sophiaSprite = 10
+    player "Wait what do you mean?"
+    $ sophiaSprite = 8
+    sophia "I followed you home [povname]. I watched you fuck one of my best friends while I stood there in the rain."
+    $ sophiaSprite = 9
+    player "{i}That's actually pretty hot to me. But I can't let her know that.{/i}"
+    $ playerSprite = 15
+    player "Jesus Sophia."
+    $ playerSprite = 14
+    $ sophiaSprite = 8
+    sophia "I know...I know I'm pathetic!"
+    $ sophiaSprite = 4
+    sophia "I just can't let GO! My pussy is just always on FIRE!!"
+    sophia "I already liked you but now every cell of my body wants you and it's..."
+    sophia "It's tearing me apart!"
+    $ playerSprite = 7
+    $ sophiaSprite = 10
+    player "Hmmm."
+    $ sophiaSprite = 4
+    sophia "'Hmmmm'? Really that's your response? I'm baring my soul here."
+    $ playerSprite = 1
+    $ sophiaSprite = 10
+    player "You're like super horny."
+    $ playerSprite = 0
+    $ sophiaSprite = 7
+    sophia "Yes!"
+    $ playerSprite = 1
+    $ sophiaSprite = 9
+    player "No I mean like, I think that's the route of the problem rather than the symptom."
+    $ playerSprite = 0
+    $ sophiaSprite = 7
+    sophia "What do you mean?"
+    $ playerSprite = 1
+    $ sophiaSprite = 9
+    player "I think if we take care of....you. You'll be able to relax and move on."
+    player "Trust me, as a guy sometimes you just can't focus until you get your rocks off."
+    $ playerSprite = 0
+    $ sophiaSprite = 1
+    sophia "Uh....okay."
+    sophia "So what are you suggesting."
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "I need you to PROMISE never to tell anyone what we do tonight."
+    $ playerSprite = 4
+    $ sophiaSprite = 1
+    sophia "Oh...okay!"
+    $ playerSprite = 5
+    $ sophiaSprite = 0
+    player "Promise you'll move on and forget all this relationship with me stuff okay?"
+    $ playerSprite = 4
+    $ sophiaSprite = 1
+    sophia "Sure sure I promise! W-What are we gonna do?"
+    $ playerSprite = 15
+    $ sophiaSprite = 0
+    player "*Sigh*...get on my bed. I gotta take my pants off."
+    scene fs sophiathighfuck1
+    with Dissolve(0.7)
+    sophia "Oh...wow!"
+    player "{i}I can't let her know how turned on I'm getting.{/i}"
+    player "{i}Hopefully she's so horny she won't realize how hard I am.{/i}"
+    sophia "You're so hard!"
+    player "Uh....yeah."
+    player "Put your thighs on me."
+    scene fs sophiathighfuck2
+    with Dissolve(0.7)
+    player "Yeah...yeah just like that."
+    player "{i}Fuck this POV is hot.{/i}"
+    player "Now you're gonna squeeze your thighs together and...well and move."
+    scene fs sophiathighfuck3
+    with Dissolve(0.7)
+    sophia "Oh I see."
+    sophia "You want to thigh fuck me!"
+    player "Fuck....y-yeah."
+    sophia "Okay!"
+    show sophiathighfuck4 movie
+    sophia "Mmmm."
+    player "{i}Shit her skin is really soft.{/i}"
+    sophia "This feels so good [povname] I-I can feel your cock against my pussy!"
+    player "Yeah keep going Soph!"
+    show sophiathighfuck5 movie
+    sophia "I'm getting so wet!"
+    player "Fuck that's it!"
+    play sound "audio/sophiagameaudio/sophiamoaning1.wav"
+    sophia "EHHHN!!!"
+    player "I'm gonna cum!"
+    sophia "ME TOO ME TOO!!!"
+    pause
+    show sophiathighfuck6 movie
+    player "AHHH SHIT."
+    voice "audio/sophiagameaudio/sophiaturnedonlaugh.wav"
+    sophia "Hehehe."
+    sophia "Mmmmm look at all of it..."
+    scene fs sophiathighfuck6b
+    with Dissolve(0.5)
+    player "Phew..."
+    sophia "I made you feel really good didn't I?"
+    player "Yeah for sure. So..."
+    player "You good now? You ready to move on?"
+    sophia "Yeah I totally am!"
+    player "Promise?"
+    sophia "Promise!"
+    player "Alright."
+    scene fs blackblank
+    with Dissolve(1.0)
+
+    $ sophiascenedaycheck = 1
+    $ sophiaphase2interaction1 = 2
+    $ sophiaquestlog = "Sophia said she understands but I'm not so sure she got the message..."
+    $ timeofday = "Night"
+    jump gotosleep
+
+# part 3
+
+label sophiaphase2interaction2part3:
+    hide screen backbuttonROOM
+    hide screen uppergui
+    scene fs playerbedsmile
+    with Dissolve(1.0)
+    "Some time during night.."
+    player "Ahhh. I am very comfortable right now."
+    "VVVVP VVVVVP"
+    scene fs playerbedthink2
+    player "Huh? Who's texting me?"
+
+    scene fs playerroomNight
+    with Dissolve(0.7)
+    sophia "{cps=25}Heeey!{/cps}"
+    player "{cps=25}Hey Sophia. What is it?{/cps}"
+    sophia "{cps=25}I wanted to thank you for such a wonderful date the other day!{/cps}"
+    sophia "{cps=25}So I've sent you something to help you sleep ;P{/cps}"
+    $ renpy.notify("Got Sophia's Selfie!")
+
+    $ phone_pictures.append("20-0c")
+
+    show nfs sophiapussypic:
+        xalign 0.5 yalign 0.4
+
+    player "Holy shit what the fuck!"
+    player "She sent me a pussy pic!"
+    pause
+    player "{cps=25}Sophia WTF???{/cps}"
+    sophia "{cps=25}You like it? I was about to touch myself.{/cps}"
+    sophia "{cps=25}Thinking about your BIG cock sliding inbetween my thighs...{/cps}"
+    hide nfs sophiapussypic
+    player "Lord knows I find that hot as hell but I can't let her think I'm into it."
+    player "I need to stop this right now."
+    player "{cps=25}Get the fuck over here right now!{/cps}"
+    sophia "{cps=25}OMG I'll be right there!{/cps}"
+    player "I'm gonna have to teach this bitch properly."
+    player "Since the carrot didn't work, I'm gonna have to use the stick."
+    scene fs livingroomnight
+    with Dissolve(0.7)
+
+    $ playerSprite = 4
+
+    show fbsophia current:
+        xalign 0.6 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.5)
+    $ sophiaSprite = 1
+    sophia "I'm here!"
+    $ sophiaSprite = 0
+    player "...."
+
+    scene fs sophiacouchfinger1
+    with Dissolve(0.7)
+    sophia "H-Hey hehe..."
+    scene fs sophiacouchfinger1b
+    player "Sit down."
+    scene fs sophiacouchfinger2
+    sophia "Sure!"
+    sophia "So what are we gonna do on the couch? Hehe."
+    scene fs sophiacouchfinger2b
+    player "You don't listen."
+    scene fs sophiacouchfinger2
+    sophia "You know I was pretty nervous when I sent that 'Selfie' haha."
+    sophia "But I was so turned on, was the angle go-"
+    scene fs sophiacouchfinger3
+    player "Enough."
+    sophia "Oh! I-Is it time? I dunno if I'm ready haha-"
+    scene fs sophiacouchfinger3b
+    voice "audio/sophiagameaudio/sophiaguh.wav"
+    sophia "Ah!"
+    scene fs sophiacouchfinger4b
+    sophia "Uh...w-what are you doing?"
+    scene fs sophiacouchfinger4
+    player "You don't fucking LISTEN."
+    scene fs sophiacouchfinger5
+    sophia "[povname] I don't understand what you're saying. Is this some kind of role play?"
+    scene fs sophiacouchfinger6b
+    player "You're such a fucking SLUT."
+    scene fs sophiacouchfinger6
+    sophia "Why are you being mean to m-"
+    scene fs sophiacouchfinger7
+    with vpunch
+    play sound "audio/oneslap.wav"
+    voice "audio/sophiagameaudio/sophiaAhh.wav"
+    sophia "AHH!"
+    scene fs sophiacouchfinger6b
+    player "You need to be taught a fucking LESSON!"
+    scene fs sophiacouchfinger7
+    with vpunch
+    play sound "audio/oneslap.wav"
+    voice "audio/sophiagameaudio/sophiauhn3.wav"    
+    sophia "OWWW!!"
+    scene fs sophiacouchfinger6
+    sophia "[povname] that really hurts! I don't understan-"
+    scene fs sophiacouchfinger7
+    with vpunch
+    play sound "audio/oneslap.wav"
+    voice "audio/sophiagameaudio/sophiamoan2.wav"    
+    sophia "AHHN!"
+    scene fs sophiacouchfinger8
+    with Dissolve(0.5)
+    sophia "Hah....hah...oh..."
+    scene fs sophiacouchfinger9
+    with vpunch
+    play sound "audio/oneslap.wav"
+    voice "audio/sophiagameaudio/sophiamoan1.wav"  
+    player "You're NOT my girlfriend!"
+    player "SAY IT!"
+    with vpunch
+    play sound "audio/oneslap.wav"
+    sophia "I-I'm not your girlfriend!"
+    player "You're a dirty little whore."
+    sophia "Um..."
+    player "SAY IT!"
+    with vpunch
+    play sound "audio/oneslap.wav"
+    voice "audio/sophiagameaudio/sophiamoan2.wav" 
+    sophia "I'm a dirty little whore!!"
+    init python:
+        renpy.music.register_channel("secondsound", loop=True)
+
+    image fingersophiacouch1:
+        "21-10.png"
+        0.7
+        "21-10B.png"
+        0.7
+        repeat
+    show fingersophiacouch1
+    play secondsound "audio/pussyfingering.wav"
+    sophia "Oh..w-what are you-"
+    play sound "audio/sophiagameaudio/sophiafingerbanged.wav" loop
+    sophia "OH MY GOD!"
+    player "You like this you fucking bitch huh?"
+    player "Like my fingers sliding up your slutty cunt?"
+    sophia "I....I!!"
+    sophia "I'm gonna!!!"
+    scene fs sophiacouchfinger11
+    with vpunch
+    stop sound
+    stop secondsound
+    play sound "audio/sophiagameaudio/sophiaorgasm.wav"
+    sophia "AHHHN!!!"
+    with flash
+    sophia "OHHHHMYGOOOOOD!"
+    player "That's what I thought you worthless little whore!"
+    scene fs sophiacouchfinger12
+    with Dissolve(0.5)
+    sophia "Ah...ah..guh..."
+    player "Pathetic."
+
+
+    #$ contact_list.append("Sophia")
+
+    $ sophiaphase2interaction1 = 3
+    $ sophiaquestlog = "I think Sophia got the message. Unrelated, I really liked that drink from Café Seni..."
+    $ timeofday = "Night"
+    jump passtime
+
+# interaction 3
+# part 1
+
+label sophiaphase2interaction3part1:
+    hide screen uppergui
+    hide screen questboxpreview
+    hide screen exit_cafe
+    stop music fadeout 5
+    scene fs blackblank
+    with Dissolve(1.0)
+    "A little while later..."
+    scene fs waitressbang3
+    with Dissolve(0.7)
+    pause
+    sophia "Hmmm."
+    scene fs waitressbang4
+    sophia "Should I get those new seasonal biscuits?"
+    sophia "I think they have more calories though.."
+    scene fs waitressbang5
+    sophia "Where is the waitress? I've been waiting here for a while now..."
+    scene fs waitressbang6
+    "*Thump thump thump*"
+    sophia "Huh?"
+    sophia "I think I hear something from the bathroom? Is she in there?"
+    scene fs waitressbang7
+    "Waitress" "Oh yes!"
+    "Waitress" "Yes!!"
+    scene fs waitressbang8
+    "Waitress" "God you're so big!"
+    scene fs waitressbang9 with hpunch
+    "Waitress" "AHN!"
+    "Waitress" "Fuck me!"
+    player "Yeah you like taking this fat cock don't you bitch?"
+    scene fs waitressbang10
+    "Waitress" "EHNNNN!!"
+    player "That's right! Fucking cum while I'm inside you!"
+    scene fs waitressbang11
+    with Dissolve(0.5)
+    "Waitress" "Mmmm."
+    player "There's a good girl..."
+    scene fs waitressbang12 with vpunch
+    "Waitress" "UGGHK!"
+    player "Ah shit! Fucking take it all that's right."
+    scene fs waitressbang13
+    with Dissolve(0.7)
+    pause
+    scene fs waitressbang14
+    pause
+    scene fs waitressbang15
+    pause
+    pause
+    scene fs waitressbang16
+    sophia "{i}WHAT THE HELL??!!!{/i}"
+
+    $ sophiaphase2interaction3 = 1
+    $ sophiaquestlog = "That waitress was a good fuck, I need some sleep"
+    jump passtime
+
+# part 2
+
+label sophiaphase2interaction3part2:
+    hide screen uppergui
+    hide screen backbuttonLIVINGROOM
+    hide screen backbuttonROOM
+    scene fs playerbedsmile
+    with Dissolve(0.7)
+    player "{i}Ahhh this'll be a good sleep.{/i}"
+    scene fs blackblank
+    with Dissolve(0.7)
+    player "{i}That waitress was a good fuck. Not bad for an impromptu session{/i}"
+    "*tink* *Creak*"
+    player "{i}My front door just unlocked and opened.{/i}"
+    player "{i}But who would...{/i}"
+    player "{i}Sophia!{/i}"
+    scene fs sophiasneakysex1
+    with Dissolve(0.7)
+    sophia "Thinks he can just cheat on Mia with some random girl and not me?"
+    sophia "I'm totally going to hold him down an-"
+    scene fs sophiasneakysex2
+    play sound "audio/light-switch.wav"
+    pause
+    sophia "....."
+    sophia "How did you turn on the light while sitting down?"
+    scene fs sophiasneakysex2b
+    player "I'm not happy to see you Sophia."
+    scene fs sophiasneakysex2c
+    sophia "Uh..l-listen I um."
+    scene fs sophiasneakysex2b
+    player "Not happy at all."
+    scene fs sophiasneakysex2c
+    sophia "T-This isn't what it looks like!"
+    scene fs sophiasneakysex3
+    with Dissolve(0.5)
+    player "It seems like."
+    "*Taking off clothes sound*"
+    player "You just won't get it."
+    scene fs sophiasneakysex4 with hpunch
+    voice "audio/sophiagameaudio/sophiaguh.wav"
+    player "WILL YOU?!"
+    sophia "Uhn?"
+    player "You-"
+    scene fs sophiasneakysex5 with hpunch
+    player "STUPID"
+    voice "audio/sophiagameaudio/sophiasexyoh.wav"
+    sophia "AHN!"
+    scene fs sophiasneakysex6
+    pause
+    scene fs sophiasneakysex5 with hpunch
+    player "LITTLE."
+    voice "audio/sophiagameaudio/sophiaguh.wav"
+    sophia "GUH!"
+    scene fs sophiasneakysex6
+    pause
+    scene fs sophiasneakysex5 with hpunch
+    player "WHORE."
+    voice "audio/sophiagameaudio/sophiamoanlaugh.wav"
+    sophia "[povname]! Hhehehe.."
+
+    show sophiawindowsex1
+    play sound "audio/sophiagameaudio/sophiasexsounds1.wav" loop
+    play secondsound "audio/sophiagameaudio/sophiasex1.wav"
+    pause
+    sophia "Hah..hah..hah."
+    player "Finally getting what you wanted huh?"
+    sophia "Hah.."
+    player "Hope this dick was worth betraying your friends!"
+    sophia "I..hah?"
+    player "You must really hate them huh? Must really hate Mia!"
+    sophia "N-No!"
+    stop sound
+    stop secondsound
+    show sophiawindowsex2    
+    play sound "audio/sophiagameaudio/sophiasexsounds2.wav" loop
+    play secondsound "audio/sophiagameaudio/sophiasex2.wav"
+    player "I can see you smiling you liar!"
+    sophia "Ahn!"
+    sophia "I..hah...it-it's not!"
+    stop sound
+    stop secondsound
+    scene fs sophiawindowsexcum
+    with vpunch
+    voice "audio/sophiagameaudio/sophiacuming.wav"
+    sophia "AHHHH!"
+    pause
+    scene fs sophiasneakysex9
+    with vpunch
+    player "Ugh!"
+    sophia "{i}Finally! F-Finally...f..final....{/i}"
+    pause
+    
+    scene fs blackblank
+    with Dissolve(1.0)
+    pause
+    player "{i}Well that didn't solve anything!{/i}"
+    $ sophiaphase2interaction3 = 2
+    if currentchapter >= 3:
+        $ sophiaquestlog = "I have to not fuck Sophia out of anger again...is she at school?"
+    else:
+        $ sophiaquestlog = "I messed up. Rage fucking Sophia wasn't the plan...oh well."
+    jump passtime
+
+# end chapter 2
