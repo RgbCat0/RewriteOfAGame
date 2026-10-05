@@ -160,9 +160,9 @@ label emilyphase1interaction1part1:
     $ emilyphase1interaction1 = 1
     $ emilyquesticon = "gui/questboxEmily.png"
     if renpy.android:
-        $ emilyquestlog = "{size=-25}If I want to help Emily with the banner I can meet her in the hallway. If I WANT to do that.{size=-25}"
+        $ emilyquestlog = "{size=-25}Meet Emily in the school hallway during Day to help with the banner.{/size}"
     else:
-        $ emilyquestlog = "If I want to help Emily with the banner I can meet her in the hallway. If I WANT to do that."
+        $ emilyquestlog = "Meet Emily in the school hallway during Day to help with the banner."
     hide fs schoolhallwayBLUR
     hide fbemily
     hide fbplayer
@@ -300,7 +300,7 @@ label emilyphase1interaction1part2:
     player "{i}UGGGH.{/i}"
     $ playerSprite = 0
     $ emilyphase1interaction1 = 2
-    $ emilyquestlog = "What am I doing? Now I'd feel bad if I don't help her out."
+    $ emilyquestlog = "Go to sleep at Night, then meet Emily in the school hallway during Morning or Day."
     hide fs schoolhallwayBLUR
     hide fbemily
     hide fbplayer
@@ -485,7 +485,7 @@ label emilyphase1interaction1part3:
     player "{i}Man what the fuck.{/i}"
     $ playerSprite = 0
     $ emilyphase1interaction1 = 4
-    $ emilyquestlog = "What is WRONG with me??"
+    $ emilyquestlog = "Go to sleep at Night, then talk to Emily in the school hallway during Morning."
 
 
     hide fs blackblank
@@ -523,7 +523,7 @@ label thinkaboutemilybeforesleep2:
     player "First thing's first. Gotta talk to her again, smooth things out. She was really flustered when she ran away."
     player "Heh okay now I'm getting excited."
     $ emilyphase1interaction2 = 1
-    $ emilyquestlog = "I gotta get Emily to talk to me."
+    $ emilyquestlog = "Talk to Emily in the school hallway during Morning."
     jump gotosleep
 
 
@@ -957,7 +957,7 @@ label emilyphase1interaction2part2:
     else:
         $ emilyphase1interaction2 = 4
 
-    $ emilyquestlog = "After I get some paint I should call Emily from my place."
+    $ emilyquestlog = "Get paint from the mall store, then call Emily from home during Morning or Day."
     jump passtime
 
 
@@ -1230,7 +1230,7 @@ label emilyphase1interaction2part3:
     player "{i}I wonder if I can use that story Ava and Charlotte told me to my advantage, the one about the candy.{/i}"
     player "{i}She also told me to meet her at school, so I should do that too.{/i}"
     $ emilyphase1interaction2 = 5
-    $ emilyquestlog = "That was fucking hot! I knew Emily was a secret slut. I should talk to her again though at school."
+    $ emilyquestlog = "Talk to Emily in the school hallway during Morning or Day."
     jump passtime
 
 
@@ -1329,7 +1329,7 @@ label emilyphase1interaction2part4:
         player "Also...if I'm looking to really take advantage of the situation maybe it'll be worth looking for some candy too...the strawberry kind."
         $ playerSprite = 0
         $ emilyphase1interaction2 = 6
-        $ emilyquestlog = "Is Emily becoming a friend? Or do I really just want to fuck her?"
+        $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2."
         jump returnwhereyouare
     else:
         $ emilySprite = 1
@@ -1344,7 +1344,7 @@ label emilyphase1interaction2part4:
         hide fbemily current
         with Dissolve(0.7)
         $ emilyphase1interaction2 = 6
-        $ emilyquestlog = "Is Emily becoming a friend? Or do I really just want to fuck her?"
+        $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2."
         jump returnwhereyouare
 
 
@@ -3355,13 +3355,13 @@ label emilyphase2interaction1part1:
 
     $ emilyphase1interaction2 = 7
     $ emilyphase2interaction1 = 1
-    $ emilyquestlog = "Well that was dramatic. I should talk to Emily about those three bullies."
+    $ emilyquestlog = "Talk to Emily in the school hallway during Morning about the bullies."
     $ melissaquesticon = "gui/questboxMelissa.png"
     $ stephaniequesticon = "gui/questboxStephanie.png"
     $ ravenquesticon = "gui/questboxRaven.png"
-    $ melissaquestlog = "She seems to sure love bubblegum."
-    $ stephaniequestlog = "Seems like she's the leader of the group. Such a Mean Girl."
-    $ ravenquestlog = "One of Stephanie's Cronies. Goth."
+    $ melissaquestlog = "Continue Emily's story and collect her files to unlock Melissa's favor."
+    $ stephaniequestlog = "Talk to Emily at school during Morning to learn more about Stephanie."
+    $ ravenquestlog = "Continue Emily's story and collect her files to unlock Raven's favor."
     jump passtime
 
 
@@ -3497,7 +3497,7 @@ label emilyphase2interaction1part2:
     $ playerSprite = 0
 
     $ emilyphase2interaction1 = 2
-    $ emilyquestlog = "I gotta get my hands on those files! Emily will jump my dick garanteed!"
+    $ emilyquestlog = "Visit the apartment building in Sunnyside and buzz Stephanie to collect Emily's files."
     jump overworldmap
 
 
@@ -3945,10 +3945,10 @@ label emilyphase2interaction1part3:
     $ playerSprite = 0
 
     $ emilyphase2interaction1 = 3
-    $ emilyquestlog = "Man what am I getting myself into? Emily should be in the library..."
-    $ melissaquestlog = "I wonder what kind of favor I'm going to have to do for her."
-    $ ravenquestlog = "I wonder what kind of favor I'm going to have to do for her."
-    $ stephaniequestlog = "I wonder what kind of favor I'm going to have to do for her."
+    $ emilyquestlog = "Give Emily the files at the library during Day or in the school hallway during Morning."
+    $ melissaquestlog = "Meet Melissa at the club in Sunnyside at Night."
+    $ ravenquestlog = "Meet Raven at the mall during Day."
+    $ stephaniequestlog = "Continue Emily's story through her visit at home, then buzz Stephanie at the Sunnyside apartment building."
     jump passtime
 
 
@@ -3996,7 +3996,7 @@ label emilyphase2interaction1part4:
         with Dissolve(0.7)
         player "Sweet. I should call her from my room tonight like she said."
         $ emilyphase2interaction1 = 4
-        $ emilyquestlog = "I'm looking forward to this, Emily wants me to call her over tonight."
+        $ emilyquestlog = "Return to your bedroom at Night for Emily's visit."
         jump passtime
     elif whereami == "schoolhallway":
         hide screen emily_atschool
@@ -4020,7 +4020,7 @@ label emilyphase2interaction1part4:
         with Dissolve(0.7)
         player "Sweet. I should call her from my room tonight like she said."
         $ emilyphase2interaction1 = 4
-        $ emilyquestlog = "I'm looking forward to this, Emily wants me to call her over tonight."
+        $ emilyquestlog = "Return to your bedroom at Night for Emily's visit."
         jump passtime
     else:
         hide screen contacts
@@ -4351,7 +4351,7 @@ label emilyphase2interaction1part5:
     "Emily sneakily went back into the closet before Mia cleaned herself up and left."
     "After exchanging a few words and agreeing to meet up again she also left your place."
     $ emilyphase2interaction1 = 5
-    $ emilyquestlog = "We were interrupted before, so I should talk to Emily about getting together"
+    $ emilyquestlog = "Talk to Emily in the school hallway during Morning."
     jump passtime
 
 
@@ -4426,7 +4426,7 @@ label emilyphase2interaction2part1:
     $ emilySprite = 1
     emily "See you there! Sunnyside beach!"
     $ emilySprite = 0
-    $ emilyquestlog = "Gotta be honest, I'm looking forward to this evening beach date"
+    $ emilyquestlog = "Meet Emily at the beach in Sunnyside at Night."
     $ emilyphase2interaction2 = 1
     jump passtime
 
@@ -4593,7 +4593,7 @@ label emilyphase2interaction2part2:
     player "Like seriously anytime, I will suck your tits whenever you want me to."
     emily "Oh my gosh shut up haha!"
 
-    $ emilyquestlog = "We've taken things as far as they can go before fucking. One more step?"
+    $ emilyquestlog = "Call Emily from your bedroom or living room at Night."
     stop music fadeout 2
     $ emilyphase2interaction2 = 2
     jump passtime
@@ -4748,7 +4748,7 @@ label emilyphase2interaction2part3:
     with Dissolve(1.0)
     emily "Stay like that for a bit..."
 
-    $ emilyquestlog = "Wow. So fucking hot. I need to fuck her again at the beach trip"
+    $ emilyquestlog = "Continue exploring until the beach trip on day 20, then return home in chapter 3."
     $ emilyphase2interaction2 = 3
     jump passtime
 
@@ -4873,7 +4873,7 @@ label emilychoice:
         pause
         scene fs blackblank
         with Dissolve(1.0)
-        $ emilyquestlog = "I fucked her again at the beach. Seems she really wants my cock."
+        $ emilyquestlog = "Return to your bedroom after day 21 for Emily's next event."
         $ endchapter2_trigger = "2 emily romantic"
 
         jump startofchapter3
@@ -4964,7 +4964,7 @@ label emilychoice:
         with Dissolve(1.0)
         emily "{i}I...I love it.{/i}"
         $ endchapter2_trigger = "2 emily naughty"
-        $ emilyquestlog = "I fucked her again at the beach. Seems she really wants my cock."
+        $ emilyquestlog = "Return to your bedroom after day 21 for Emily's next event."
         jump startofchapter3
 
     label emilychapter2degredation:
@@ -5082,7 +5082,7 @@ label emilychoice:
         pause
         scene fs blackblank
         with Dissolve(1.0)
-        $ emilyquestlog = "I fucked her again at the beach. Seems she really wants my cock."
+        $ emilyquestlog = "Return to your bedroom after day 21 for Emily's next event."
         $ endchapter2_trigger = "2 emily degredation"
         jump startofchapter3
 
@@ -5134,7 +5134,7 @@ label emilyphase3interaction1part1:
 
     $ emilydaychecker = dayNumber
     $ emilyphase3interaction1 = 1
-    $ emilyquestlog = "I'll call Emily from my place tomorrow after I get some Candy from the store"
+    $ emilyquestlog = "Get candy from the mall store, then call Emily from home during Morning or Day on a later day."
     jump returnwhereyouare
 
 label emilyphase3interaction1part2:
@@ -5327,5 +5327,5 @@ label emilyphase3interaction1part2:
     emily "Strawberry taste."
 
     $ emilyphase3interaction1 = 2
-    $ emilyquestlog = "No more solo content for Emily this version(ch2.5)"
+    $ emilyquestlog = "No more solo content for Emily in this version."
     jump passtime

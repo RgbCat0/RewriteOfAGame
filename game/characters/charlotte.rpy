@@ -65,9 +65,9 @@ label charlottephase1interaction1part1:
     $ charlottephase1interaction1 = 1
     $ charlottequesticon = "gui/questboxCharlotte.png"
     if renpy.android:
-        $ charlottequestlog = "{size=-25}I can find Charlotte in the library during the day.{/size}"
+        $ charlottequestlog = "{size=-25}Meet Charlotte at the library during Day.{/size}"
     else:
-        $ charlottequestlog = "I can find Charlotte in the library during the day."
+        $ charlottequestlog = "Meet Charlotte at the library during Day."
     hide fs classroom3blur
     hide fbplayer
     hide fbcharlotte
@@ -182,7 +182,7 @@ label charlottephase1interaction1part2:
     player "{i}I think she's starting to warm up to me. Seems we can find some middle ground when it comes to Mia. I should visit her here again tomorrow.{/i}"
     scene fs charlottelibrarycharlotte
     $ charlottephase1interaction1 = 2
-    $ charlottequestlog = "Is she warming up to me? I should visit her again."
+    $ charlottequestlog = "Visit Charlotte at the library again during Day."
     hide fs charlottelibrarycharlotte
     jump passtime
 
@@ -365,7 +365,7 @@ label charlottephase1interaction1part3:
     player "She didn't even notice she was doing it! She's that starved for sexual....well sexual anything apparently."
     player "She was probably really embarrassed so I should see her again and show her I don't care about it and maybe she'll lay off of me about Mia every now and again."
     $ charlottephase1interaction1 = 3
-    $ charlottequestlog = "I can't believe what I just saw! I feel a bit bad though I should talk to her at school."
+    $ charlottequestlog = "Talk to Charlotte in Classroom 3 at school during Morning."
     hide fs blackblank
     jump passtime
 
@@ -537,7 +537,7 @@ label charlottephase1interaction2part1A:
     charlotte "RUDE."
     $ charlotteSprite = 0
     $ charlottephase1interaction1 = 4
-    $ charlottequestlog = "Totally got sidetracked by Mia..I should find her in the library again."
+    $ charlottequestlog = "Meet Charlotte at the library during Day."
     jump passtime
 
 
@@ -603,7 +603,7 @@ label charlottephase1interaction2part1:
     player "I'm gonna have to buy a card if I want to talk to charlotte again."
     $ charlottephase1interaction2 = 1
     $ charlottephase1interaction1 = 5
-    $ charlottequestlog = "I'm gonna need to buy a library card if I want to talk to Charlotte again."
+    $ charlottequestlog = "Bring $75 to the library during Day to buy a library card."
     jump passtime
 
 
@@ -687,7 +687,7 @@ label charlottephase1interaction2part2:
     player "Charlotte hangs out with Mia and the girls all the time so not seeing her is a problem."
     player "...wait a minute. MIA!"
     player "If I word it right...I'm sure I can get her to stop Charlotte from...well...I don't wanna think about it."
-    $ charlottequestlog = "Charlotte is PISSED. I'm gonna need Mia's help with this one..."
+    $ charlottequestlog = "Talk to Mia in Classroom 1 at school during Morning for help with Charlotte."
     $ charlottephase1interaction2 = 2
     jump passtime
 
@@ -976,7 +976,7 @@ label charlottephase1interaction2part3:
     player "{i}Or does it only work with Mia? Hmmm.{/i}"
     $ charlottephase1interaction2 = 3
     $ charlottephase1interaction3 = 1
-    $ charlottequestlog = "Mia sure knows how to handle Charlotte, I gotta visit her house tonight."
+    $ charlottequestlog = "Visit Charlotte's house at Night."
     jump passtime
 
 
@@ -1436,11 +1436,11 @@ label charlottephase1interaction3part1:
     $ charlottephase1interaction3 = 2
     $ charlottephase1interaction2 = 4
     if currentchapter >= 2:
-        $ charlottequestlog = "I should explore Sunnyside some more during the morning."
+        $ charlottequestlog = "Visit Charlotte at Cafe Seni in Sunnyside during Morning."
     else:
-        $ charlottequestlog = "Think I should avoid Charlotte till after the track meet."
+        $ charlottequestlog = "Continue exploring until the track meet on day 10."
     $ victoriaquesticon = "gui/questboxVictoria.png"
-    $ victoriaquestlog = "Victoria is quite the beautiful woman..and sucks a mean dick."
+    $ victoriaquestlog = "Continue Charlotte's story in chapter 2 to unlock more visits with Victoria at Charlotte's house."
     jump overworldmap
 
 
@@ -2509,7 +2509,7 @@ label charlottephase2interaction1part1:
     victoria "{cps=25}Understood.{/cps}"
 
     $ charlottephase2interaction1 = 1
-    $ charlottequestlog = "I've pretty much tamed Charlotte now, She's not gonna be a problem anymore."
+    $ charlottequestlog = "Go to sleep at Night for Charlotte's message."
     jump gotosunnyside
 
 
@@ -2612,7 +2612,7 @@ label charlottephase2interaction1part1NIGHT:
     player "Holy shit she's serious! Wonder why she wants the camera...to record us I guess? Kinda hot."
     player "Alright I'll work on getting all this done tomorrow!"
     $ charlottephase2interaction1 = 2
-    $ charlottequestlog = "Charlotte wants me to get a bunch of naughty things. Where can I buy stuff?"
+    $ charlottequestlog = "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night in chapter 2."
     jump gotosleep
 
 
@@ -2952,8 +2952,8 @@ label charlottephase2interaction1part2:
     $ charlottephase2interaction1 = 3
     $ charlottephase2interaction2 = 1
     $ charlotteblackmailday = dayNumber + 1
-    $ charlottequestlog = "Now that she has her 'blackmail' I wonder what Charlotte will have me do?"
-    $ victoriaquestlog = "I wonder if I should visit Victoria tonight. She's so sexy but also cool as shit."
+    $ charlottequestlog = "Get some sleep at Night, then return to your bedroom during Morning for Charlotte's message."
+    $ victoriaquestlog = "Visit Victoria at Charlotte's house at Night."
     jump gotosleep
 
 
@@ -2967,7 +2967,7 @@ label charlottephase2interaction2part1:
     player "Morning Mia."
     mia "Come to the cafe! Charlotte and I are having brunch and I wanted to invite you!"
     player "Oh sure yeah that'll be fun. See you there."
-    $ charlottequestlog = "Mia's invited me to the cafe with Charlotte this morning"
+    $ charlottequestlog = "Join Mia and Charlotte at Cafe Seni during Morning."
     $ charlottephase2interaction2 = 3
     jump returnwhereyouare
 
@@ -3093,7 +3093,7 @@ label charlottephase2interaction2part2:
     charlotte "*Siiiip*"
 
     pause
-    $ charlottequestlog = "That was a nice brunch...okay I don't remember the food, the sex with Mia was great though."
+    $ charlottequestlog = "Get some rest. Charlotte's next event starts when you go to sleep at Night on a later day."
     $ charlottephase2interaction2 = 4
     $ charlottedaychecker1 = dayNumber
     jump passtime
@@ -3226,7 +3226,7 @@ label charlottephase2interaction3part1:
     player "Sure thing Victoria, have a good night."
     $ charlottephase2interaction2 = 5
     $ charlottephase2interaction3 = 1
-    $ charlottequestlog = "Victoria was there to help but Charlotte sucked my dick voluntarily! This is getting serious..."
+    $ charlottequestlog = "Go to sleep at Night again to continue Charlotte's story."
     jump passtime
 
 
@@ -3297,7 +3297,7 @@ label charlottephase2interaction3part2:
     charlotte "DADDY!!!"
     pause
     $ charlottephase2interaction3 = 2
-    $ charlottequestlog = "Charlotte sure has changed from when I first met her. I'm not complaining though"
+    $ charlottequestlog = "Wait two days after Charlotte's last visit, then go to sleep at Night to continue her story."
     $ charlottedaychecker2 = dayNumber
     jump passtime
 
@@ -3408,9 +3408,9 @@ label charlottephase2interaction4part1:
     "You said your goodbyes to Victoria, got dressed and headed home"
     $ charlottephase2interaction3 = 3
     if currentchapter == 3:
-        $ charlottequestlog = "Started off rocky, but I really like Charlotte now. Guess sex will do that. She at school?"
+        $ charlottequestlog = "Talk to Charlotte in Classroom 3 at school during Morning."
     else:
-        $ charlottequestlog = "I don't believe it. I fucked Charlotte. Victoria watched. I gotta talk to her at the beach trip"
+        $ charlottequestlog = "Continue exploring until the beach trip on day 20. Charlotte's next event starts in chapter 3."
     jump passtime
 
 
@@ -3647,7 +3647,7 @@ label charlottebeachchapter2end:
         ava "Alright whatever, keep your mystery man a mystery."
         mia "Haha."
         charlotte "I'm telling you there's no mystery man!"
-        $ charlottequestlog = "Started off rocky, but I really like Charlotte now. Guess sex will do that. She at school?"
+        $ charlottequestlog = "Talk to Charlotte in Classroom 3 at school during Morning."
         $ endchapter2_trigger = "2 charlotte romantic"
         jump startofchapter3
 
@@ -3843,7 +3843,7 @@ label charlottebeachchapter2end:
         charlotte "I'm telling you there's no mystery man!"
         stop music fadeout 5
         $ endchapter2_trigger = "2 charlotte naughty"
-        $ charlottequestlog = "Started off rocky, but I really like Charlotte now. Guess sex will do that. She at school?"
+        $ charlottequestlog = "Talk to Charlotte in Classroom 3 at school during Morning."
         jump startofchapter3
 
 # Chapter 3
@@ -4172,7 +4172,7 @@ label continuebooboconvo:
 
     $ charlottephase2interaction3 = 4
     $ charlottephase3interaction1 = 1
-    $ charlottequestlog = "Charlotte seems pretty upset after Mia and Olivia accidently teased her. I should drive her at home"
+    $ charlottequestlog = "Visit Charlotte's house during Day or Night to take her home."
     jump passtime
 
 label charlottephase3interaction1part2:
@@ -4303,5 +4303,5 @@ label charlottephase3interaction1part2:
     victoria "I hope you two have a good time."
     charlotte "VICKY YOU'RE STILL HERE???"
     $ charlottephase3interaction1 = 2
-    $ charlottequestlog = "No more content for Charlotte this version (ch2.5)"
+    $ charlottequestlog = "No more content for Charlotte in this version."
     jump passtime

@@ -118,8 +118,8 @@ label miaphase1interaction1part1:
     $ miaphase1interaction1 = 1
     $ playerSprite = 0
 
-    $ miaquestlog = "Mia wants me to visit her family in the afternoon at her house."
-    $ sophiaquestlog = "Sophia seems upset, I should talk to her in her class."
+    $ miaquestlog = "Visit Mia's house during Day to meet her family."
+    $ sophiaquestlog = "Talk to Sophia in Classroom 1 at school during Morning."
     $ sophiaquesticon = "gui/questboxSophia.png"
 
     hide fbplayer
@@ -343,7 +343,7 @@ label miaphase1interaction1part2:
             $ playerSprite = 0
             hide fbkatie default
             with Dissolve(0.5)
-            $ katiequestlog = "I should text Katie!...Or should I?"
+            $ katiequestlog = "Text Katie using your phone. Wait until a later day between conversations."
             $ katiequesticon = "gui/questboxKatie.png"
             jump continuemeetingfam
 
@@ -427,7 +427,7 @@ label miaphase1interaction1part2:
             hide fbjulia
             hide fbkatie
             hide fs
-            $ miaquestlog = "Text Mia from your room at night."
+            $ miaquestlog = "Text Mia from your bedroom at Night."
             $ miaphase1interaction1 = 2
             jump gotosleep
 
@@ -457,7 +457,7 @@ label textmiafornudes:
     $ phone_pictures.append("mia selfienight")
     $ miaphase1interaction1 = 3
     $ miaroutecurrentday = dayNumber
-    $ miaquestlog = "I should check out Mia's selfie, then text her again at night."
+    $ miaquestlog = "Check Mia's selfie on your phone. Text her from your bedroom at Night on a later day."
     hide fs playerroomNight
     jump playerRoom
 
@@ -588,7 +588,7 @@ label textmiatocomeover:
         mia "I will!"
         "You kiss goodbye and Mia leaves your home"
         $ miaphase1interaction1 = 4
-        $ miaquestlog = "I should stop by Mia's place again during the afternoon."
+        $ miaquestlog = "Visit Mia's room at her house during Day."
         hide fs balckblank
         jump gotosleep
 
@@ -602,7 +602,7 @@ label textmiatocomeover:
         "*Kiss*"
         mia "You’re welcome, bye."
         $ miaphase1interaction1 = 4
-        $ miaquestlog = "I should stop by Mia's place again during the afternoon."
+        $ miaquestlog = "Visit Mia's room at her house during Day."
         hide fs blackblank
         jump gotosleep
 
@@ -664,7 +664,7 @@ label miaphase1interaction2part1:
     julia "You too handsome."
     $ juliaSprite = 0
     $ miaphase1interaction2 = 1
-    $ juliaquestlog = "Mia's mom is super hot, I should talk to her more often."
+    $ juliaquestlog = "Continue Mia's story through her overnight visit, then talk to Julia in the kitchen at Mia's house."
     $ juliaquesticon = "gui/questboxJulia.png"
     hide fbplayer
     hide fbmia
@@ -959,7 +959,7 @@ label charlottesmiaquiz:
 
                     $ miaphase1interaction2 = 2
                     $ charlotteSprite = 0
-                    $ miaquestlog = "Mia had to run after Charlotte. I should wait until night and text her again."
+                    $ miaquestlog = "Text Mia from your bedroom at Night."
                     hide fs gfroomblur
                     hide fbcharlotte
                     hide fbmia
@@ -1112,7 +1112,7 @@ label miaphase1interaction2part3:
     mia "Hehehe."
 
     $ miaphase1interaction2 = 4
-    $ miaquestlog = "I should find Mia and ask her why she never answered my call."
+    $ miaquestlog = "Get some sleep at Night, then meet Mia in Classroom 1 during Morning."
     scene fs blackblank
     with Dissolve(1.2)
     hide fs blackblank
@@ -1267,7 +1267,7 @@ label miaphase1interaction3part1:
     $ miaSprite = 0
     sophia "{i}Oh darn it. He really is a good boyfriend.{/i}"
     $ miaphase1interaction3 = 2
-    $ miaquestlog = "I gotta find Mia's phone! I should check out the 4 places she mentioned for it.."
+    $ miaquestlog = "Look for Mia's phone at the park, mall, arcade, and library. Ask Charlotte at the library during Day."
     hide fbplayer
     hide fbsophia
     hide fbmia
@@ -1380,7 +1380,7 @@ label looking4miaphone:
     scene fs charlottelibrary7
     charlotte "Yeah s-sure."
     $ miaphase1interaction3 = 3
-    $ miaquestlog = "Charlotte said Mia's phone might be at the end of the table in the library."
+    $ miaquestlog = "Click Mia's phone at the end of the library table."
     hide fs charlottelibrary7
     jump library
 
@@ -1411,7 +1411,7 @@ label miaphase1interaction3part3:
     player "I should make sure I've done everything I can before I return her phone. I have a feeling we'll be busy for the rest of the day hehe."
     $ foundphonevariable = 1
     $ miaphase1interaction3 = 4
-    $ miaquestlog = "I found Mia's phone! I should give it to her at her house."
+    $ miaquestlog = "Return Mia's phone at her house during Day."
     hide fbplayer
     jump overworldmap
 
@@ -1698,9 +1698,9 @@ label continuemiasex:
         $ miaphase1interaction3 = 5
 
         if currentchapter == 1:
-            $ miaquestlog = "I should wait until after the track meet."
+            $ miaquestlog = "Continue exploring until the track meet on day 10."
         else:
-            $ miaquestlog = "I wonder if I should bring anyone else along with me to Mia's shopping trip..."
+            $ miaquestlog = "Contact Mia on your phone, then visit her room during Day for the shopping trip."
         hide fs miaphase1sex9
         jump gotosleep
 
@@ -1781,9 +1781,9 @@ label continuemiasex:
         player "Yup okay sorry."
         $ miaphase1interaction3 = 5
         if currentchapter == 1:
-            $ miaquestlog = "I should wait until after the track meet."
+            $ miaquestlog = "Continue exploring until the track meet on day 10."
         else:
-            $ miaquestlog = "I wonder if I should bring anyone else along with me to Mia's shopping trip..."
+            $ miaquestlog = "Contact Mia on your phone, then visit her room during Day for the shopping trip."
 
         hide fs miaphase1sex9
 
@@ -3362,7 +3362,7 @@ label miachangeroomscene:
     player "That's the plan."
     $ miaphase2interaction1 = 2
     $ miaphase2interaction2 = 1
-    $ miaquestlog = "Shopping with Mia was more fun then I was expecting, I should meet up with her again at her school."
+    $ miaquestlog = "Meet Mia in Classroom 1 at school during Morning."
     jump passtime
 
 
@@ -3389,7 +3389,7 @@ label miaphase2interaction2part1:
     $ miaSprite = 1
     mia "Thanks!! I gotta go class is starting soon."
     $ miaSprite = 0
-    $ miaquestlog = "Mia wants me to come over for dinner again tonight...should be fun?"
+    $ miaquestlog = "Visit Mia's house at Night for dinner."
     $ miaphase2interaction2 = 2
     jump overworldmap
 
@@ -3586,10 +3586,10 @@ label katiedinnerblowjob:
     player "Pretty hot. Very attractive..."
     player "What have I gotten myself into?"
 
-    $ miaquestlog = "Dinner was...great. Looking forward to some one on one time with Mia."
-    $ juliaquestlog = "No more content for Julia right now (ch2.5)"
+    $ miaquestlog = "Return to your bedroom or living room at Night to spend time with Mia."
+    $ juliaquestlog = "No more content for Julia in this version."
     if katiephase2interaction1 >= 4:
-        $ katiequestlog = "I can't stop thinking about Katie. I should contact Mia and ask for us to all hang out"
+        $ katiequestlog = "Spend time with Mia at home after dinner, then contact her on your phone to arrange a pizza party."
     $ miaphase2interaction2 = 3
     jump passtime
 
@@ -3617,10 +3617,10 @@ label continuedinner3:
     player "Pretty hot. Very attractive..."
     player "What have I gotten myself into?"
 
-    $ miaquestlog = "Dinner was...great. Looking forward to some one on one time with Mia."
-    $ juliaquestlog = "No more content for Julia right now (ch2.5B)"
+    $ miaquestlog = "Return to your bedroom or living room at Night to spend time with Mia."
+    $ juliaquestlog = "No more content for Julia in this version."
     if katiephase2interaction1 >= 4:
-        $ katiequestlog = "I can't stop thinking about Katie. I should contact Mia and ask for us to all hang out"
+        $ katiequestlog = "Spend time with Mia at home after dinner, then contact her on your phone to arrange a pizza party."
     $ miaphase2interaction2 = 3
     jump passtime
 
@@ -3768,8 +3768,10 @@ label miaphase2interaction2part4:
     scene fs blackblank
     with Dissolve(0.7)
     pause
-    $ miaquestlog = "I really can't get enough of Mia's body. All we did was fuck though!"
+    $ miaquestlog = "Continue exploring until the beach trip on day 20. Mia's next event starts in chapter 3."
     $ miaphase2interaction2 = 4
+    if katiephase2interaction1 == 4:
+        $ katiequestlog = "Contact Mia on your phone to arrange a pizza party."
     jump gotosleep
 
 
@@ -3938,7 +3940,7 @@ label miabeachchapter2end:
         with vpunch
         sophia "Gah!"
         $ endchapter2_trigger = "2 mia neutral"
-        $ miaquestlog = "I've been patient. It's time Mia..."
+        $ miaquestlog = "Return to your bedroom during Morning after day 21 for Mia's next event."
         jump startofchapter3
 
 # Chapter 3
@@ -3955,7 +3957,7 @@ label miaphase3interaction1part1:
     player "It's time Mia."
     $ miaphase2interaction2 = 5
     $ miaphase3interaction1 = 1
-    $ miaquestlog = "Finish the fight(Find Mia in her room)"
+    $ miaquestlog = "Visit Mia in her room during Morning."
     jump playerlivingroom
 
 label miaphase3interaction1part2:
@@ -4226,7 +4228,7 @@ label miaphase3interaction1part2:
     $ phone_pictures.append("mia selfies7")
     pause
     $ miaphase3interaction1 = 2
-    $ miaquestlog = "No more solo content for Mia this version(Ch2.5)"
+    $ miaquestlog = "No more solo content for Mia in this version."
     jump passtime
 
 

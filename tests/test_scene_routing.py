@@ -95,14 +95,14 @@ class SceneRoutingTests(unittest.TestCase):
                     self.assertEqual(eval(condition, {"timeofday": time}), blocked)
                 self.assertLess(text.index("jump overworldmap"), text.index("scene "))
 
-    def test_direct_travel_guards_precede_location_changes(self):
-        for label in ("outsidegym", "gym", "school", "malllabel", "mallstore",
-                      "insidecafe", "insideclub", "apartmentlobbymenu", "apartmentlobbyolivia"):
-            with self.subTest(label=label):
-                text = body("game/script.rpy", label)
-                active = [line.strip() for line in text.splitlines() if line.strip()
-                          and not line.lstrip().startswith("#")]
-                self.assertTrue(active[0].startswith("if map_entry_block_reason("))
+    def test_day_and_night_map_buttons_use_the_shared_travel_rules(self):
+        # The owner moved restrictions to map actions in the pickup-flow commit.
+        source = (ROOT / "game/custom_screens.rpy").read_text(encoding="utf-8")
+        for destination in ("outsidegym", "school", "malllabel", "insidecafe",
+                            "insideclub", "apartmentlobbymenu"):
+            with self.subTest(destination=destination):
+                actions = re.findall(r'action map_destination_action\("' + destination + r'"\)', source)
+                self.assertEqual(len(actions), 2)
 
 
 if __name__ == "__main__":

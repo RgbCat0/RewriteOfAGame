@@ -280,7 +280,7 @@ label conversationvideogame:
                 if oliviaphase1interaction2 == 1: #edit this variable later its just a placeholder
                     player "{i}Sweet! Now I can give this to Olivia, hope she's as stoked as I am.{/i}"
                     player "{i}I wonder if she has the game console to play it.{/i}"
-                    $ oliviaquestlog = "I should give Olivia the game, I hope she'll like it."
+                    $ oliviaquestlog = "Give Olivia the video game at the arcade during Day."
                     $ oliviaphase1interaction2 = 2
 
                 jump mallstore

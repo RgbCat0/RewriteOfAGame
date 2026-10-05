@@ -68,5 +68,5 @@ label cassandraboobjob:
     scene fs blackblank
     player "Well shit."
     $ cassandrascene1 = 1
-    $ cassandraquestlog = "No more content for Cassandra in this version (Ch2.5B)"
+    $ cassandraquestlog = "No more content for Cassandra in this version."
     jump gotosleep

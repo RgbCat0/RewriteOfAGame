@@ -85,9 +85,9 @@ label conversationkatie4:
         $ phone_pictures.append("katiebathselfie")
         $ katieconversationday = -1
         if currentchapter > 1:
-            $ katiequestlog = "Maybe I should stop by Katie's room?"
+            $ katiequestlog = "Visit Katie's room at Mia's house in chapter 2 after returning Mia's phone."
         else:
-            $ katiequestlog = "Katie is a naughty girl for sure, I should keep my distance for now.."
+            $ katiequestlog = "Continue Mia's story and return her phone. Katie's next event starts in chapter 2."
 
         jump returnwhereyouare
 
@@ -296,7 +296,7 @@ label katiefootmassage:
     player "{i}Shit well that was a complete failure."
     player "{i}I wanted to take some control in whatever kind of relationship we have but I think I just gave her even more of an edge."
     player "{i}She said it's not a big deal as long as feelings aren't involved. Hmm...{/i}"
-    $ katiequestlog = "Trying to handle Katie is a tough job. I'm looking forward to some sleep."
+    $ katiequestlog = "Finish shopping with Mia, then go to sleep at Night for Katie's message."
 
     $ katiephase2interaction1 = 2
     jump miahousehallway
@@ -317,7 +317,7 @@ label katiesecondselfie:
     $ renpy.notify("New Picture Received!")
     player "Shit she seriously has the upper hand here."
     player "I gotta check my computer later to see what picture she sent me."
-    $ katiequestlog = "I can look at Katie's email on my computer."
+    $ katiequestlog = "Check Katie's email on your bedroom computer. Go to sleep at Night on a later day."
     $ katiephase2interaction1 = 3
     $ katiebjday = dayNumber
     jump playerRoom
@@ -347,7 +347,7 @@ label talkaboutpizzaparty:
     player "Love you too."
     "*Click*"
     player "...."
-    $ katiequestlog = "Mia and Katie are staying over tonight! Surely Katie won't try anything with Mia there.."
+    $ katiequestlog = "Return to your living room at Night for the pizza party with Mia and Katie."
     $ katiephase2interaction1 = 5
     jump returnwhereyouare
 
@@ -448,7 +448,7 @@ label pizzapartykatiefuck:
     player "Ah fuck.."
     pause
     $ katiephase2interaction1 = 6
-    $ katiequestlog = "Can't believe I fucked Mia's sister...well she fucked me really."
+    $ katiequestlog = "Continue Mia's story in chapter 3. After day 22, go to sleep at Night for Katie's next event."
     jump gotosleep
 
 
@@ -721,9 +721,9 @@ label katieblowjob:
     katie "I hope you know that was just an appetizer."
     player "You're killing me."
     if miaphase2interaction2 >= 4:
-        $ katiequestlog = "I can't stop thinking about Katie. I should contact Mia and ask for us to all hang out"
+        $ katiequestlog = "Spend time with Mia at home after dinner, then contact her on your phone to arrange a pizza party."
     else:
-        $ katiequestlog = "Katie's such a little slut. Will she try anything at the next dinner?"
+        $ katiequestlog = "Continue Mia's story through dinner and her next visit at home, then contact Mia on your phone."
     $ katiephase2interaction1 = 4
     jump passtime
 
@@ -798,7 +798,7 @@ label katiephase3interaction1part1:
     scene fs katiejealous8
     "*Slam*"
     $ katiephase3interaction1 = 1
-    $ katiequestlog = "Mia told me Katie heard us fucking...kinda hot."
+    $ katiequestlog = "Return to your living room during Day to continue Katie's story."
     jump passtime
 
 label katiephase3interaction1part2:
@@ -924,6 +924,6 @@ label katiephase3interaction1part2:
     show fbkatie titsoutcum2:
         xalign 0.6 ypos 120
     katie "What the fuck!?"
-    $ katiequestlog = "No more content for Katie in this version(Ch2.5)"
+    $ katiequestlog = "No more content for Katie in this version."
     $ katiephase3interaction1 = 2
     jump passtime

@@ -2,6 +2,7 @@
 # file, define a label and jump to it from another file.
 
 label definevariables:
+    $ quest_hint_version = 2
     $ miaSprite = 0
     $ avaSprite = 0
     $ sophiaSprite = 0
@@ -188,9 +189,9 @@ label definevariables:
     $ josiedaycheck = 100000
 
     if renpy.android:
-        $ miaquestlog = "{size=-25}I should head to Mia's school to meet her and her friends!{/size}"
+        $ miaquestlog = "{size=-25}Meet Mia in Classroom 1 at school during Morning.{/size}"
     else:
-        $ miaquestlog = "I should head to Mia's school to meet her and her friends!"
+        $ miaquestlog = "Meet Mia in Classroom 1 at school during Morning."
     $ avaquestlog = ""
     $ emilyquestlog = ""
     $ sophiaquestlog = ""

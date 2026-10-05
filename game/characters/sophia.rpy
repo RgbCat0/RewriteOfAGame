@@ -50,9 +50,9 @@ label sophiaphase1interaction1part1:
     $ sophiaphase1interaction1 = 1
 
     if renpy.android:
-        $ sophiaquestlog = "{size=-25}Sophia's mad at me for some reason. I should talk to her again at her place.{/size}"
+        $ sophiaquestlog = "{size=-25}Visit Sophia's house during Day.{/size}"
     else:
-        $ sophiaquestlog = "Sophia's mad at me for some reason. I should talk to her again at her place."
+        $ sophiaquestlog = "Visit Sophia's house during Day."
     hide fbplayer
     hide fbsophia
     hide fs classroomZOOM
@@ -194,7 +194,7 @@ label sophiaphase1interaction1part2:
     play sound "audio/sophiagameaudio/sophiaimnotmad.wav"
     sophia "I'm not mad."
 
-    $ sophiaquestlog = "Seems like Sophia's back to normal. I should visit her in class again!"
+    $ sophiaquestlog = "Visit Sophia in Classroom 1 at school during Morning."
     $ sophiaphase1interaction1 = 2
     hide fbsophia
     hide fbplayer
@@ -344,7 +344,7 @@ label sophiaphase1interaction1part3:
     sophia "{i}Much cuter! He think's I'm cute I knew it!{/i}"
     sophia "{i}More than Mia right? He definitely thinks I'm cuter than Mia...{/i}"
     $ sophiaphase1interaction1 = 3
-    $ sophiaquestlog = "It was a nice little moment in the park. I should get some sleep though."
+    $ sophiaquestlog = "Go to sleep at Night to continue Sophia's story."
     hide fs blackblank
     hide fbplayer
     hide fbsophia
@@ -396,7 +396,7 @@ label sophiaphase1interaction1part4:
     player "Huh? How did the blankets fall off?"
     player "Meh."
 
-    $ sophiaquestlog = "I wonder what Sophia's up to now?"
+    $ sophiaquestlog = "Talk to Sophia in Classroom 1 at school during Morning."
     $ sophiaphase1interaction1 = 4
     hide fs blackblank
     jump gotosleep
@@ -471,7 +471,7 @@ label sophiaphase1interaction2part1:
     sophia "{i}God I just can't get the image of his huge COCK out of my mind!{/i}"
     sophia "{i}Hehe Sophia you're so naughty!{/i}"
     $ sophiaphase1interaction2 = 1
-    $ sophiaquestlog = "Sophia wants me to visit for lunch at her place."
+    $ sophiaquestlog = "Visit Sophia's house during Day for lunch."
     jump returnwhereyouare
 
 
@@ -783,9 +783,9 @@ label sophiaphase1interaction2part2:
     pause
     $ sophiaphase1interaction2 = 2
     if currentchapter >= 2:
-        $ sophiaquestlog = "I feel bad about skipping out on lunch, I should see her again."
+        $ sophiaquestlog = "Visit Sophia at her house during Morning in chapter 2."
     else:
-        $ sophiaquestlog = "I should focus on other things for now.."
+        $ sophiaquestlog = "Continue exploring until the track meet on day 10. Sophia's next event starts in chapter 2."
 
 
     jump passtime
@@ -1137,9 +1137,9 @@ label sophiaphase2interaction1part1:
     scene fs sophiahouseoutside
     with Dissolve(0.5)
 
-    $ sophiaquestlog = "It was crazy seeing Cass again. Sophia wanted to meet up at Café Seni in Sunnyside."
+    $ sophiaquestlog = "Meet Sophia at Cafe Seni in Sunnyside during Day."
     $ cassandraquesticon = "gui/questboxCassandra.png"
-    $ cassandraquestlog = "Weird seeing Cassandra again, she's still so hot."
+    $ cassandraquestlog = "Continue Sophia's chapter 2 story, then go to sleep at Night for Cassandra's next event."
 
     if endchapter1_trigger == "1 sophia romantic":
         player "{i}I need to talk to Sophia after what happened the other day.{/i}"
@@ -2306,7 +2306,7 @@ label sophiaphase2interaction2part2:
 
     $ sophiascenedaycheck = 1
     $ sophiaphase2interaction1 = 2
-    $ sophiaquestlog = "Sophia said she understands but I'm not so sure she got the message..."
+    $ sophiaquestlog = "Go to sleep at Night again to continue Sophia's story."
     $ timeofday = "Night"
     jump gotosleep
 
@@ -2464,7 +2464,7 @@ label sophiaphase2interaction2part3:
 
 
     $ sophiaphase2interaction1 = 3
-    $ sophiaquestlog = "I think Sophia got the message. Unrelated, I really liked that drink from Café Seni..."
+    $ sophiaquestlog = "Visit Cafe Seni in Sunnyside during Day."
     $ timeofday = "Night"
     jump passtime
 
@@ -2521,7 +2521,7 @@ label sophiaphase2interaction3part1:
     sophia "{i}WHAT THE HELL??!!!{/i}"
 
     $ sophiaphase2interaction3 = 1
-    $ sophiaquestlog = "That waitress was a good fuck, I need some sleep"
+    $ sophiaquestlog = "Return to your bedroom at Night to continue Sophia's story."
     jump passtime
 
 
@@ -2621,9 +2621,9 @@ label sophiaphase2interaction3part2:
     player "{i}Well that didn't solve anything!{/i}"
     $ sophiaphase2interaction3 = 2
     if currentchapter >= 3:
-        $ sophiaquestlog = "I have to not fuck Sophia out of anger again...is she at school?"
+        $ sophiaquestlog = "Talk to Sophia in Classroom 1 at school during Morning."
     else:
-        $ sophiaquestlog = "I messed up. Rage fucking Sophia wasn't the plan...oh well."
+        $ sophiaquestlog = "Continue exploring until the beach trip on day 20, then talk to Sophia at school during Morning in chapter 3."
     jump passtime
 
 
@@ -2766,7 +2766,7 @@ label sophiabeachchapter2end:
         with Dissolve(1.0)
 
         $ endchapter2_trigger = "2 sophia romantic"
-        $ sophiaquestlog = "I have to not fuck Sophia out of anger again...is she at school?"
+        $ sophiaquestlog = "Talk to Sophia in Classroom 1 at school during Morning."
         jump startofchapter3
 
     label sophiachapter2naughty:
@@ -2868,7 +2868,7 @@ label sophiabeachchapter2end:
         scene fs blackblank
         with Dissolve(1.0)
         $ endchapter2_trigger = "2 sophia naughty"
-        $ sophiaquestlog = "I have to not fuck Sophia out of anger again...is she at school?"
+        $ sophiaquestlog = "Talk to Sophia in Classroom 1 at school during Morning."
 
         jump startofchapter3
 
@@ -3084,7 +3084,7 @@ label sophiaphase3interaction1part1:
     $ sophiaSprite = 0
     $ sophiaphase2interaction3 = 3
     $ sophiaphase3interaction1 = 1
-    $ sophiaquestlog = "Was nice to just talk to everyone together. Sophia seemed a little down near the end though."
+    $ sophiaquestlog = "Go to sleep at Night to continue Sophia's story."
     jump passtime
 
 label sophiaphase3interaction1part2:
@@ -3268,5 +3268,5 @@ label sophiaphase3interaction1part2:
     player "I think we need to sort our feelings out."
     sophia "I would...love that."
     $ sophiaphase3interaction1 = 2
-    $ sophiaquestlog = "No more Sophia content for this version (ch2.5)"
+    $ sophiaquestlog = "No more content for Sophia in this version."
     jump passtime

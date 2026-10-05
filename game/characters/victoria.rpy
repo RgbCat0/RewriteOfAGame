@@ -85,7 +85,7 @@ label victoriamakeout1:
     victoria "Quick go to the other room and wait for her to pass by then leave!"
     player "Alright!"
     $ victoriascene1part1 = 1
-    $ victoriaquestlog = "Making out with Victoria was so hot. Too bad we got interupted I wanted more."
+    $ victoriaquestlog = "Visit Victoria at Charlotte's house again at Night."
     jump passtime
 
 
@@ -158,7 +158,7 @@ label victoriamakeout2:
     victoria "Ohh, I just had a feeling miss."
     player "...."
     $ victoriascene1part1 = 2
-    $ victoriaquestlog = "Seemed like Victoria really enjoyed me eating her out. Looking forward to my next visit"
+    $ victoriaquestlog = "Visit Victoria at Charlotte's house again at Night."
     jump passtime
 
 
@@ -238,6 +238,6 @@ label victoriafirstsex:
     player "I'll show up next time I feel like fucking you."
     victoria "Y-Yes Master [povname]."
     $ victoriascene1part1 = 3
-    $ victoriaquestlog = "There's no more victoria content in this version(Ch2.0B)"
+    $ victoriaquestlog = "No more content for Victoria in this version."
 
     jump passtime

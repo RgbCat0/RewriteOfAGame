@@ -87,9 +87,9 @@ label oliviaphase1interaction1part1:
     $ oliviaquesticon = "gui/questboxOlivia.png"
 
     if renpy.android:
-        $ oliviaquestlog = "{size=-25}Olivia seems cool, I should meet her at the arcade.{/size}"
+        $ oliviaquestlog = "{size=-25}Meet Olivia at the arcade during Day.{/size}"
     else:
-        $ oliviaquestlog = "Olivia seems cool, I should meet her at the arcade."
+        $ oliviaquestlog = "Meet Olivia at the arcade during Day."
     hide fbolivia
     hide fbplayer
     hide fs classroomZOOM
@@ -269,7 +269,7 @@ label oliviaphase1interaction1part2:
     player "{i}And god damn those legs! Her thighs are top quality....probably shouldn't be thinking like that.{/i}"
     player "{i}I'll come to the arcade again to play with her.{/i}"
     $ oliviaphase1interaction1 = 2
-    $ oliviaquestlog = "I should hang out at the arcade again with Olivia."
+    $ oliviaquestlog = "Visit Olivia at the arcade again during Day."
     hide fbolivia
     hide fbplayer
     hide fs arcade
@@ -379,7 +379,7 @@ label oliviaphase1interaction1part3:
     player "That was a lot of fun, I wouldn't mind hanging out with Olivia as a regular thing. I should ask if she'd like that."
     $ oliviaSprite = 8
     $ oliviaphase1interaction1 = 3
-    $ oliviaquestlog = "Looks like I didn't win this time, I should chat her up at school again."
+    $ oliviaquestlog = "Talk to Olivia in Classroom 2 at school during Morning."
     hide fs arcade
     hide fbolivia
     hide fbplayer
@@ -501,11 +501,11 @@ label oliviaphase1interaction2part1:
     $ playerSprite = 7
     player "{i}I have to find that game. Olivia's story was too touching.{/i}"
     player "{i}And honestly I wouldn't mind just getting closer with her.{/i}"
-    $ oliviaquestlog = "I should keep a look out for that game Olivia mentioned!"
+    $ oliviaquestlog = "Buy Olivia's video game for $100 at the mall store during Morning or Day."
     if videogamecount == 0:
         player "{i}Wait a minute, didn't I buy the game from the mall already?{/i}"
         player "{i}How the heck did I forget about that!? I'll give it to her at the arcade.{/i}"
-        $ oliviaquestlog = "I should give Olivia the game, I hope she'll like it."
+        $ oliviaquestlog = "Give Olivia the video game at the arcade during Day."
     $ oliviaphase1interaction1 = 4
     $ oliviaphase1interaction2 = 1
     jump returnwhereyouare
@@ -666,7 +666,7 @@ label gamingpartnerolivia:
     player "{i}Alright. Now I know why she reacted like that. I should go back and meet her in the arcade.{/i}"
     player "{i}The school has too many people around and I wanna keep this personal.{i}"
     $ oliviaphase1interaction2 = 3
-    $ oliviaquestlog = "I should apologize to Olivia..."
+    $ oliviaquestlog = "Meet Olivia at the arcade during Day to apologize."
     $ item_list.remove("Video Game")
     jump playerlivingroom
 
@@ -1150,7 +1150,7 @@ label oliviaphase1interaction2part3:
     pause
     olivia "...."
     olivia "And then maybe masturbate before bed."
-    $ oliviaquestlog = "I'm looking forward to playing Mortal Street Calibur with Olivia!"
+    $ oliviaquestlog = "Call Olivia from your bedroom or living room at Night to invite her over."
     $ oliviaphase1interaction2 = 4
     $ oliviaphase1interaction3 = 1
     jump passtime
@@ -1342,7 +1342,7 @@ label oliviaphase1interaction2part4:
         player "If only I had the will to look away! I wonder what I could've done after winning."
         player "I should invite her over again another night."
         $ failedoliviatest = 1
-        $ oliviaquestlog = "I can't believe I lost to Olivia like that! I should invite her over again."
+        $ oliviaquestlog = "Call Olivia from your bedroom or living room at Night to try again."
         $ timeofday = "Night"
         jump passtime
 
@@ -1546,9 +1546,9 @@ label oliviaphase1interaction2part4:
         with Dissolve(1.0)
         $ oliviaphase1interaction3 = 2
         if currentchapter >= 2:
-            $ oliviaquestlog = "That was so hot! I should really talk to her about where to go from here though."
+            $ oliviaquestlog = "Meet Olivia at the arcade during Day in chapter 2."
         else:
-            $ oliviaquestlog = "That was pretty hot, but I should focus on other things for now."
+            $ oliviaquestlog = "Continue exploring until the track meet on day 10. Meet Olivia at the arcade during Day in chapter 2."
         jump passtime
 
 
@@ -2285,9 +2285,9 @@ label oliviaphase2interaction1part1:
     player "See you there."
     $ playerSprite = 0
     $ oliviaphase2interaction1 = 1
-    $ oliviaquestlog = "Did Olivia say she wanted to suck my dick?? I should go to her place tonight."
+    $ oliviaquestlog = "Visit the apartment building in Sunnyside at Night and buzz Olivia."
     $ pennyquesticon = "gui/questboxPenny.png"
-    $ pennyquestlog = "Who does Penny think she is? Just cause she's short and cute and hot..."
+    $ pennyquestlog = "Continue Olivia's story, then visit the arcade during Day to meet Penny."
     jump overworldmap
 
 
@@ -2514,9 +2514,9 @@ label oliviaphase2interaction1part2:
     scene fs blackblank
     with Dissolve(0.7)
 
-    $ oliviaquestlog = "Olivia gives one hell of a blowjob. This is getting pretty serious."
+    $ oliviaquestlog = "Talk to Olivia in Classroom 2 at school during Morning."
     $ oliviaphase2interaction1 = 2
-    $ pennyquestlog = "Seems like Penny also spends her time at the arcade during the day."
+    $ pennyquestlog = "Visit the arcade during Day to meet Penny."
     jump overworldmap
 
 
@@ -2590,7 +2590,7 @@ label oliviaphase2interaction2part1:
     player "Yeah, I'll see you online!"
     $ playerSprite = 0
 
-    $ oliviaquestlog = "I gotta get on my computer tonight to game with Olivia"
+    $ oliviaquestlog = "Use your bedroom computer at Night to practice with Olivia."
     $ oliviaphase2interaction1 = 3
     $ oliviaphase2interaction2 = 1
     jump passtime
@@ -2712,12 +2712,13 @@ label oliviaphase2interaction2part2:
     with Dissolve(0.7)
     pause
 
-    $ oliviaquestlog = "I gotta wait for the tournament in 2 days!"
+    $ oliviaquestlog = "Wait two nights, then visit Olivia at the arcade at Night for the tournament."
     $ oliviatournyday = dayNumber
     $ oliviaphase2interaction2 = 2
     if pennyscene2 == 2:
         $ pennyscene2 = 3
         $ pennyscene3 = 1
+        $ pennyquestlog = "Watch Penny's next stream on your bedroom computer at Night. Bring $50 if you want to donate."
     jump playerRoom
 
 
@@ -2879,13 +2880,13 @@ label frogfightwin:
     with Dissolve(1.0)
     olivia "T-Thanks."
     "After some more rigorous fucking you fell asleep at Olivia's place then headed home in the morning"
-    $ oliviaquestlog = "I wonder what I can get up to with Olivia at the beach trip?"
+    $ oliviaquestlog = "Continue exploring until the beach trip on day 20. Olivia's next event starts in chapter 3."
     if currentchapter >= 3:
-        $ oliviaquestlog = "That was some incredible sex. I should chat up Olivia at the school."
+        $ oliviaquestlog = "Talk to Olivia in Classroom 2 at school during Morning."
     $ oliviaphase2interaction2 = 3
     $ oliviaphase2interaction3 = 1
     if pennyscene5 == 1:
-        $ pennyquestlog = "Penny is a full blown internet whore...I kinda wanna talk to her about it.Maybe at the arcade?"
+        $ pennyquestlog = "Visit Penny at the arcade during Day."
     jump passtime
 
 label losefrogfight:
@@ -3423,7 +3424,7 @@ label oliviaphase3interaction1part1:
     $ oliviaSprite = 9
     olivia "Cool."
     $ oliviaSprite = 8
-    $ oliviaquestlog = "Gonna hang out with Olivia at her place tonight"
+    $ oliviaquestlog = "Visit the apartment building in Sunnyside at Night and buzz Olivia."
     $ oliviaphase2interaction3 = 2
     $ oliviaphase3interaction1 = 1
     jump classroom2
@@ -3533,5 +3534,5 @@ label oliviaphase3interaction1part2:
     pause
 
     $ oliviaphase3interaction1 = 2
-    $ oliviaquestlog = "No more Olivia content in this version (ch2.5)"
+    $ oliviaquestlog = "No more content for Olivia in this version."
     jump passtime

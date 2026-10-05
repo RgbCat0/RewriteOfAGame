@@ -89,7 +89,7 @@ label josykatiehangout1:
     scene fs josykatiestudy6
     with Dissolve(0.5)
     "But I think I'll let it go..."
-    $ josyquestlog = "Helping the girls was kind of nice, wonder if they'll need it again"
+    $ josyquestlog = "Continue Mia's story through dinner, then return to your living room during Day."
     $ josyquesticon = "gui/questboxJosy.png"
     $ josyscene1 = 1
     jump passtime
@@ -219,6 +219,6 @@ label josykatiehangout2:
     pause
 
 
-    $ josyquestlog = "Josy and Katie...what a pair."
+    $ josyquestlog = "No more solo content for Josy in this version."
     $ josyscene1 = 2
     jump passtime

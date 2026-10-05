@@ -138,5 +138,5 @@ label melissadancescene2:
 
     player "I wonder what she's gonna be like next time I talk to her..."
     $ melissascene1 = 2
-    $ melissaquestlog = "No more solo content for Melissa in this version (Ch2.5B)"
+    $ melissaquestlog = "No more solo content for Melissa in this version."
     jump passtime

@@ -163,7 +163,7 @@ label pennyarcadescene:
     player "Seriously??!"
     $ playerSprite = 0
     $ pennyscene1 = 1
-    $ pennyquestlog = "Penny is absolutely insane!"
+    $ pennyquestlog = "Return to your bedroom during Morning for Penny's next event."
 
     jump overworldmap
 
@@ -185,7 +185,7 @@ label pennywakeup:
 
     $ pennyscene1 = 2
     $ pennyscene2 = 1
-    $ pennyquestlog = "I'm curious about Penny's stream.."
+    $ pennyquestlog = "Watch Penny's stream on your bedroom computer at Night. Bring $25 if you want to donate."
     jump playerlivingroom
 
 
@@ -242,12 +242,12 @@ label pennyfirststream:
                 penny "Thanks again for watching guys. I'll see you tomorrow night."
                 pause
                 if oliviaphase2interaction2 == 1:
-                    $ pennyquestlog = "I'm not sure if I want to keep spending money on Penny's stream.."
+                    $ pennyquestlog = "Practice with Olivia on your bedroom computer at Night to unlock Penny's next stream."
                     $ pennyscene2 = 2
                 elif oliviaphase2interaction2 >= 2:
                     $ pennyscene2 = 3
                     $ pennyscene3 = 1
-                    $ pennyquestlog = "Penny seemed to really like it when I donated, I should watch her stream again"
+                    $ pennyquestlog = "Watch Penny's next stream on your bedroom computer at Night. Bring $50 if you want to donate."
                 jump gotosleep
         "Don't Donate":
             player "I uh...don't feel like spending any money on her right now."
@@ -326,7 +326,7 @@ label pennysecondstream:
                 player "Damn, it'll have to be next time..."
                 $ pennyscene3 = 2
                 $ pennyscene4 = 1
-                $ pennyquestlog = "Penny said she does private streams if you donate enough..."
+                $ pennyquestlog = "Watch Penny's next stream on your bedroom computer at Night. You can choose to donate $100."
                 jump gotosleep
         "Don't Donate":
             player "I uh...don't feel like spending any money on her right now."
@@ -434,9 +434,9 @@ label pennythirdstream:
             $ pennyscene4 = 2
             $ pennyscene5 = 1
             if oliviaphase2interaction3 >= 1:
-                $ pennyquestlog = "Penny is a full blown internet whore...I kinda wanna talk to her about it.Maybe at the arcade?"
+                $ pennyquestlog = "Visit Penny at the arcade during Day."
             else:
-                $ pennyquestlog = "Watching Penny whore herself out for internet money was really hot"
+                $ pennyquestlog = "Win Olivia's tournament, then visit Penny at the arcade during Day."
             jump gotosleep
         "Don't Donate":
             player "I uh...don't feel like spending any money on her right now."
@@ -540,7 +540,7 @@ label pennyphase2sex1:
     $ pennySprite = 1
     penny "I'll take care of Olivia."
     $ pennySprite = 0
-    $ pennyquestlog = "Penny wants me to come over tonight..."
+    $ pennyquestlog = "Visit the apartment building in Sunnyside at Night and buzz Penny."
     $ pennyscene5 = 2
     jump overworldmap
 
@@ -620,6 +620,6 @@ label pennyphase2sex2:
     penny "Okay. We're gonna have to meet up again sometime."
     player "Haha will I have to donate some more?"
     penny "You keep making me cum like that Mr. [username], you won't have to donate shit."
-    $ pennyquestlog = "No more content for Penny in this version (ch2.5B)"
+    $ pennyquestlog = "No more content for Penny in this version."
     $ pennyscene5 = 3
     jump passtime

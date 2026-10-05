@@ -281,7 +281,7 @@ label stephaniescene1part1:
     $ emilySprite = 5
     emily "Alright..."
     $ emilySprite = 4
-    $ stephaniequestlog = "That was a cute little prank...kinda hot too."
+    $ stephaniequestlog = "Visit the apartment building in Sunnyside on a later day during Morning or Day and buzz Stephanie."
     $ stephaniescene1 = 1
     $ stephaniedaychecker = dayNumber
     jump gotosunnyside
@@ -396,7 +396,7 @@ label stephaniescene1part2:
     $ playerSprite = 0
     $ emilySprite = 5
     emily "O-Okay..."
-    $ stephaniequestlog = "Stephanie's such a slut. I wanna take this further for our next one"
+    $ stephaniequestlog = "Visit the apartment building in Sunnyside on another day during Morning or Day and buzz Stephanie."
 
     $ stephaniedaychecker = dayNumber
     $ stephaniescene1 = 2
@@ -505,6 +505,6 @@ label stephaniescene1part3:
     raven "{cps=25}See yah.{/cps}"
     $ stephaniescene1 = 3
     $ stephaniescene2 = 1
-    $ stephaniequestlog = "No more solo content for stephanie in this version (ch2.5B)"
+    $ stephaniequestlog = "No more solo content for Stephanie in this version."
 
     jump passtime

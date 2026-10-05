@@ -40,42 +40,42 @@ label skiptochapter2:
     $ miaphase1interaction1 = 5
     $ miaphase1interaction2 = 5
     $ miaphase1interaction3 = 5
-    $ miaquestlog = "I wonder if I should bring anyone else along with me to Mia's shopping trip..."
+    $ miaquestlog = "Contact Mia on your phone, then visit her room during Day for the shopping trip."
     $ miaquesticon = "gui/questboxMia.png"
 
-    $ katiequestlog = "I should text Katie!...Or should I?"
+    $ katiequestlog = "Text Katie using your phone. Wait until a later day between conversations."
     $ katiequesticon = "gui/questboxKatie.png"
     $ contact_list.append("Katie")
 
     $ avaphase1interaction1 = 6
     $ avaphase1interaction2 = 4
-    $ avaquestlog = "I feel like I'm making a real connection with Ava, I should see her at the gym again."
+    $ avaquestlog = "Visit Ava at the gym during Morning."
     $ avaquesticon = "gui/questboxAva.png"
 
     $ sophiaphase1interaction1 = 5
     $ sophiaphase1interaction2 = 3
-    $ sophiaquestlog = "I feel bad about skipping out on lunch, I should see her again."
+    $ sophiaquestlog = "Visit Sophia at her house or in Classroom 1 during Morning in chapter 2."
     $ sophiaquesticon = "gui/questboxSophia.png"
 
     $ oliviaphase1interaction1 = 4
     $ oliviaphase1interaction3 = 2
-    $ oliviaquestlog = "That was so hot! I should really talk to her about where to go from here though."
+    $ oliviaquestlog = "Meet Olivia at the arcade during Day in chapter 2."
     $ oliviaquesticon = "gui/questboxOlivia.png"
 
     $ emilyphase1interaction2 = 6
     $ emilyphase1interaction1 = 5
-    $ emilyquestlog = "Is Emily becoming a friend? Or do I really just want to fuck her?"
+    $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2."
     $ contact_list.append("Emily")
     $ emilyquesticon = "gui/questboxEmily.png"
 
     $ charlottephase1interaction1 = 5
     $ charlottephase1interaction2 = 4
     $ charlottephase1interaction3 = 2
-    $ charlottequestlog = "I should explore Sunnyside some more during the morning."
+    $ charlottequestlog = "Visit Charlotte at Cafe Seni in Sunnyside during Morning."
     $ charlottequesticon = "gui/questboxCharlotte.png"
 
     $ victoriaquesticon = "gui/questboxVictoria.png"
-    $ victoriaquestlog = "Victoria is quite the beautiful woman..and sucks a mean dick."
+    $ victoriaquestlog = "Continue Charlotte's story in chapter 2 to unlock more visits with Victoria at Charlotte's house."
 
     $ firsttimestore = 1
 
@@ -779,10 +779,10 @@ label phase1ending:
     $ miaSprite = 0
 
     if sophiaphase1interaction2 == 2:
-        $ sophiaquestlog = "I feel bad about skipping out on lunch, I should see her again."
+        $ sophiaquestlog = "Visit Sophia at her house or in Classroom 1 during Morning in chapter 2."
 
     if oliviaphase1interaction3 == 2:
-        $ oliviaquestlog = "That was so hot! I should really talk to her about where to go from here though."
+        $ oliviaquestlog = "Meet Olivia at the arcade during Day in chapter 2."
 
     "The girls yell their final 'good lucks' to Ava as she walks away before heading to the bleachers."
     "The wind was howling when as they sat down, twas a breezy day"

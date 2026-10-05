@@ -69,9 +69,9 @@ label avaphase1interaction1part1:
     $ avaSprite = 1
     ava "Oh, yeah. Right. Thanks again."
     if renpy.android:
-        $ avaquestlog = "{size=-25}Ava seems cool. She invited me to go to the gym in the afternoon beside the school.{/size}"
+        $ avaquestlog = "{size=-25}Meet Ava at the gym beside the school during Day.{/size}"
     else:
-        $ avaquestlog = "Ava seems cool. She invited me to go to the gym in the afternoon beside the school."
+        $ avaquestlog = "Meet Ava at the gym beside the school during Day."
     $ avaquesticon = "gui/questboxAva.png"
     $ avaphase1interaction1 = 1
     hide fs schoolhallwayzoomblur
@@ -179,7 +179,7 @@ label avaphase1interaction1part2:
     $ playerSprite = 7
     player "Huh..."
     $ playerSprite = 0
-    $ avaquestlog = "If I want to work out at Ava's gym with her I'll need a gym pass!"
+    $ avaquestlog = "Bring $100 to the ticket machine outside the gym to buy a gym pass during Morning or Day."
     $ avaphase1interaction1 = 2
     hide fs gymarea
     hide fbava
@@ -295,7 +295,7 @@ label payforgym:
     "Machine" "...."
     $ money -= 100
     $ avaphase1interaction1 = 3
-    $ avaquestlog = "That machine was really strange, but at least now I have my gym pass."
+    $ avaquestlog = "You have a gym pass. Meet Ava inside the gym during Day."
     hide screen gym_machine
     jump outsidegym
 
@@ -506,7 +506,7 @@ label showmethatassava:
     ava "Track. Meet."
     ava "I'm going to do some leg presses."
     $ avaphase1interaction1 = 4
-    $ avaquestlog = "That was hot. I should talk to Ava again about another work out together."
+    $ avaquestlog = "Talk to Ava at school during Morning about another workout."
     hide fs blackblank
     hide fbplayer
     hide fbava
@@ -601,7 +601,7 @@ label avaatschoolinteraction1:
     ava "Fuck, we're just going for a run. Stop thinking so much girl!"
     $ avaphase1interaction1 = 5
     $ avaphase1interaction2 = 1
-    $ avaquestlog = "I agreed to meet up with Ava at the park at night."
+    $ avaquestlog = "Meet Ava at the park at Night."
     hide fs schoolhallwayzoomblur
     hide fbplayer
     hide fbava
@@ -779,7 +779,7 @@ label avaphase1interaction2part1:
     ava "Why does he have to be Mia's boyfriend god dammit!"
 
     $ avaphase1interaction2 = 2
-    $ avaquestlog = "That was pretty tiring but fun, I should go for another run with her!"
+    $ avaquestlog = "Meet Ava at the park again at Night."
     hide fs avasquats1
     hide avadoingsquats
     hide fbplayer
@@ -967,7 +967,7 @@ label avaphase1interaction2part3B:
     scene fs blackblank
     with Dissolve(1.0)
     "You chat with Ava for a little bit longer before going home"
-    $ avaquestlog = "I was not expecting the night to end like that. I should talk to Ava again about it."
+    $ avaquestlog = "Talk to Ava at school during Morning or at the gym during Day."
     $ avaphase1interaction2 = 3
     $ avaphase1interaction1 = 6
     jump gotosleep
@@ -1126,7 +1126,7 @@ label avaphase1interaction2part3C:
         hide fbava current
         $ avaSprite = 0
         $ avaphase1interaction2 = 4
-        $ avaquestlog = "I feel like I'm making a real connection with Ava, I should see her at the gym again."
+        $ avaquestlog = "Continue exploring until Ava's track meet on day 10."
 
         jump returnwhereyouare
 
@@ -1199,7 +1199,7 @@ label avaphase1interaction2part3C:
     hide fbava current
     $ avaSprite = 0
     $ avaphase1interaction2 = 4
-    $ avaquestlog = "I have a couple ideas for Ava's...reward. Can't wait for the track meet!"
+    $ avaquestlog = "Continue exploring until Ava's track meet on day 10."
 
     jump returnwhereyouare
 
@@ -1733,7 +1733,7 @@ label avachapter1rom:
     $ oliviaSprite = 0
     scene fs blackblank
     with Dissolve(1.0)
-    $ avaquestlog = "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again."
+    $ avaquestlog = "Visit Ava at the gym during Morning in chapter 2."
     $ endchapter1_trigger = "1 ava romantic"
     $ avaphase1interaction3 = 10
 
@@ -2068,7 +2068,7 @@ label avachapter1naughty:
     $ oliviaSprite = 0
     scene fs blackblank
     with Dissolve(1.0)
-    $ avaquestlog = "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again."
+    $ avaquestlog = "Visit Ava at the gym during Morning in chapter 2."
     $ endchapter1_trigger = "1 ava naughty"
     $ avaphase1interaction3 = 10
 
@@ -2364,7 +2364,7 @@ label avaphase2interaction1part1:
     ava "Um yeah...totally."
     stop sound
     $ josiedaycheck = dayNumber
-    $ avaquestlog = "Our little workout was a fun time. Man Ava is in great shape.."
+    $ avaquestlog = "Return to your bedroom during Morning on a later day for Ava's message."
     $ avaphase2interaction1 = 1
     $ avadaycheck = dayNumber
     jump gym
@@ -2384,7 +2384,7 @@ label avaphase2interaction2part1:
         ava "{cps=25}Yeah totally safe just...meet at cafe in afternoon please.{/cps}"
         $ playerSprite = 7
         player "Alright I guess I'll head over there."
-        $ avaquestlog = "Ava wanted me to stop by Cafe Seni this afternoon?"
+        $ avaquestlog = "Meet Ava at Cafe Seni in Sunnyside during Day."
         $ avaphase2interaction1 = 2
         $ avaphase2interaction2 = 1
         jump playerRoom
@@ -2689,7 +2689,7 @@ label avaquestion5:
         with Dissolve(0.7)
         "Recruiter Guy" "Miss Ava I will get back to you with the results soon."
         ava "Y-Yes of course! Thank you!"
-        $ avaquestlog = "Well with the interview finished all we can do is wait"
+        $ avaquestlog = "Go to sleep at Night to hear Ava's interview results."
         jump passtime
     label answerkind:
         scene fs avainterviewscene1b
@@ -2701,7 +2701,7 @@ label avaquestion5:
         scene fs blackblank
         with Dissolve(0.7)
         $ avajobinterview = avajobinterview + 1
-        $ avaquestlog = "Well with the interview finished all we can do is wait"
+        $ avaquestlog = "Go to sleep at Night to hear Ava's interview results."
         jump passtime
     label answerhot:
         scene fs avainterviewscene1b
@@ -2718,7 +2718,7 @@ label avaquestion5:
         scene fs blackblank
         with Dissolve(0.7)
         $ avajobinterview = avajobinterview + 1
-        $ avaquestlog = "Well with the interview finished all we can do is wait"
+        $ avaquestlog = "Go to sleep at Night to hear Ava's interview results."
         jump passtime
 
 
@@ -2742,7 +2742,7 @@ label didshemakeit:
         ava "{cps=25}Could you help me out at the cafe again?{/cps}"
         player "{cps=25}Yeah sure!{/cps}"
         $ avajobinterview = 999
-        $ avaquestlog = "The recruiter said Ava and I can try again"
+        $ avaquestlog = "Meet Ava at Cafe Seni in Sunnyside during Day to retry the interview."
         jump gotosleep
     elif avajobinterview == 0:
         ava "{cps=25}I paaaaassssed!!{/cps}"
@@ -2889,7 +2889,7 @@ label avaphase2interaction2part3:
     scene fs blackblank
     with Dissolve(1.0)
     "Ava cleaned herself up before saying her goodbyes and heading home for the night"
-    $ avaquestlog = "Ava can be really cute...plus...blowjob. I can still see her at the gym right?"
+    $ avaquestlog = "Meet Ava at the gym during Day."
     $ avaphase2interaction2 = 3
     $ avaphase2interaction3 = 1
     jump gotosleep
@@ -3173,9 +3173,9 @@ label avaphase2interaction3part1:
     ava "Fan-fucking-tastic."
 
     if currentchapter == 3:
-        $ avaquestlog = "That sex with Ava was incredible. I wonder how she's doing? I should stop by the school."
+        $ avaquestlog = "Talk to Ava at school during Morning."
     else:
-        $ avaquestlog = "We finally banged. Wonder where we go from here?"
+        $ avaquestlog = "Continue exploring until the beach trip on day 20, then talk to Ava at school during Morning in chapter 3."
     $ avaphase2interaction3 = 2
     $ timeofday = "Night"
     jump passtime
@@ -3372,7 +3372,7 @@ label avabeachchapter2end:
         olivia "Haha, okay enjoy then, we'll get out first"
         scene fs blackblank
         with Dissolve(1.0)
-        $ avaquestlog = "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again."
+        $ avaquestlog = "Talk to Ava at school during Morning."
         $ endchapter2_trigger = "2 ava romantic"
         jump startofchapter3
 
@@ -3638,7 +3638,7 @@ label avaphase3interaction1part1:
     $ avaSprite = 1
     ava "See you later!"
     $ avaSprite = 0
-    $ avaquestlog = "Another run with Ava tonight at the park!"
+    $ avaquestlog = "Meet Ava at the park at Night."
 
     $ avaphase3interaction1 = 1
     jump school
@@ -3820,5 +3820,5 @@ label avaphase3interaction1part2:
     player "Yeah."
     ava "I...yeah I-I'd like that *Ahem*."
     $ avaphase3interaction1 = 2
-    $ avaquestlog = "No more content for Ava this version (Ch2.5)"
+    $ avaquestlog = "No more content for Ava in this version."
     jump overworldmap

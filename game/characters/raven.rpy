@@ -241,7 +241,7 @@ label raventattooscene:
     "Soon after she goes home since she said she should rest her ass"
     "You chuckle at the thought and head out yourself"
     $ ravenscene1 = 1
-    $ ravenquestlog = "Well that's one favor down. Didn't think it'd involve me seeing Raven's bare ass but I ain't complaining."
+    $ ravenquestlog = "Go to sleep at Night to continue Raven's story."
     jump overworldmap
 
 
@@ -374,5 +374,5 @@ label ravenbjscene:
     player "...."
     player "I gotta get this lipstick off."
     $ ravenscene1 = 2
-    $ ravenquestlog = "No more solo content for Raven in this version (Ch2.5B)"
+    $ ravenquestlog = "No more solo content for Raven in this version."
     jump gotosleep

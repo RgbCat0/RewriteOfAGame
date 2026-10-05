@@ -169,7 +169,7 @@ label juliascene1:
     $ juliachecker = 1
     $ juliatouchday = dayNumber
     $ juliaquesticon = "gui/questboxJulia.png"
-    $ juliaquestlog = "I can't believe I felt up Mia's mom like that! I should stick around their house..."
+    $ juliaquestlog = "Visit the master bedroom upstairs at Mia's house on a later day."
     jump gfhouse
 
 # Chapter 2
@@ -217,7 +217,7 @@ label juliascene2:
     "After Julia collapses on the bed panting and exhausted, you decide to leave before you got caught"
     "In your panic though you forgot something..."
     julia "Huh? Why is the door open?"
-    $ juliaquestlog = "Watching Julia was so hot...how do I talk to her now?"
+    $ juliaquestlog = "Finish shopping with Mia, then talk to Julia in the kitchen at Mia's house."
     $ juliachecker = 3
     jump passtime
 
@@ -461,7 +461,7 @@ label juliascene3:
     scene fs blackblank
     with Dissolve(0.7)
     player "I'm going to hell..."
-    $ juliaquestlog = "I still can't believe Mia's Mom Jacked me off. Looking forward to the next dinner "
+    $ juliaquestlog = "Join Mia's next dinner at her house at Night. Arrange it with Mia at school during Morning if needed."
     $ juliachecker = 4
     jump passtime
 

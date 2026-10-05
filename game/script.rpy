@@ -14,6 +14,7 @@ label playerRoom:
     hide screen backbuttonLIVINGROOM
     hide screen questboxpreview
     $ whereami = "playerRoom"
+    call update_olivia_tournament_hint
     show screen uppergui
     show screen backbuttonROOM
 
@@ -98,15 +99,16 @@ label startofchapter1:
 label startofchapter2:
     $ currentchapter = 2
     $ dayNumber += 1
+    call update_olivia_tournament_hint
     $ avaphase1interaction3 = 10
-    if charlottequestlog == "Think I should avoid Charlotte till after the track meet.":
-        $ charlottequestlog = "I should explore Sunnyside some more during the morning."
+    if charlottephase1interaction3 == 2 and charlottephase1interaction2 == 4 and charlottephase2interaction1 == 0:
+        $ charlottequestlog = "Visit Charlotte at Cafe Seni in Sunnyside during Morning."
     if katieconversation == 4:
-        $ katiequestlog = "Maybe I should stop by Katie's room?"
+        $ katiequestlog = "Visit Katie's room at Mia's house in chapter 2 after returning Mia's phone."
     if miaphase1interaction3 == 5:
-        $ miaquestlog = "I wonder if I should bring anyone else along with me to Mia's shopping trip..."
+        $ miaquestlog = "Contact Mia on your phone, then visit her room during Day for the shopping trip."
     if avaphase1interaction2 == 4:
-        $ avaquestlog = "I feel like I'm making a real connection with Ava, I should see her at the gym again."
+        $ avaquestlog = "Visit Ava at the gym during Morning."
 
     scene fs blackblank
     pause
@@ -119,15 +121,25 @@ label startofchapter2:
 label startofchapter3:
     $ currentchapter = 3
     $ dayNumber += 1
+    call update_olivia_tournament_hint
 
     if oliviaphase2interaction3 == 1:
-        $ oliviaquestlog = "That was some incredible sex. I should chat up Olivia at the school."
+        $ oliviaquestlog = "Talk to Olivia in Classroom 2 at school during Morning."
 
     if avaphase2interaction3 == 2:
-        $ avaquestlog = "That sex with Ava was incredible. I wonder how she's doing? I should stop by the school."
+        $ avaquestlog = "Talk to Ava at school during Morning."
 
     if miaphase2interaction2 == 4:
-        $ miaquestlog = "I've been patient. It's time Mia..."
+        $ miaquestlog = "Return to your bedroom during Morning after day 21 for Mia's next event."
+
+    if sophiaphase2interaction3 == 2:
+        $ sophiaquestlog = "Talk to Sophia in Classroom 1 at school during Morning."
+
+    if charlottephase2interaction3 == 3:
+        $ charlottequestlog = "Talk to Charlotte in Classroom 3 at school during Morning."
+
+    if emilyphase2interaction2 >= 3 and emilyphase3interaction1 == 0:
+        $ emilyquestlog = "Return to your bedroom after day 21 for Emily's next event."
 
     scene fs blackblank
     pause
@@ -719,7 +731,7 @@ label juliaroom:
         player "{i}I wonder if I can peek in on her next time if I'm careful?{/i}"
         $ juliatouchday2 = dayNumber
         $ juliachecker = 2
-        $ juliaquestlog = "Did I really hear Julia moaning in her room right? I should check again soon.."
+        $ juliaquestlog = "Check the master bedroom at Mia's house on a later day in chapter 2."
 
         jump miatopsteps
     else:
@@ -944,22 +956,22 @@ label arcade:
     elif oliviaphase1interaction2 == 3 and timeofday != "Day":
         player "Olivia wouldn't be here right now, I should return during the afternoon."
         jump overworldmap
-    elif oliviaphase1interaction2 == 4 and timeofday != "Night":
+    elif oliviaphase1interaction2 == 4 and timeofday != "Night" and not oliviaphase2interaction2 == 2:
         player "I should just call Olivia from my room tonight."
         jump overworldmap
 
 
     elif timeofday == "Night":
-        if oliviaquestlog == "Olivia's tournament is tonight!" and oliviaphase2interaction2 == 2:
+        if oliviaphase2interaction2 == 2 and dayNumber >= oliviatournyday + 2:
             jump oliviaphase2interaction3part1
         else:
             player "I don't have a reason to go to the arcade at night."
             jump overworldmap
-    elif timeofday == "Morning":
+    elif timeofday == "Morning" and not oliviaphase2interaction2 == 2:
         player "Olivia wouldn't be at the arcade in the morning so there's no point in going there right now."
         jump overworldmap
 
-
+    "You look around the arcade and don't see Olivia. So you go back outside."
     jump overworldmap
 
 label charlotteshouse:
@@ -1421,12 +1433,6 @@ label gotosleep:
 
     if avajobinterview != 999 and timeofday == "Night":
         jump didshemakeit
-
-
-    if oliviaquestlog == "I gotta wait for the tournament in 2 days!":
-        $ oliviaquestlog = "I gotta wait for the tournament tomorrow!"
-    elif oliviaquestlog == "I gotta wait for the tournament tomorrow!":
-        $ oliviaquestlog = "Olivia's tournament is tonight!"
 
 
     scene fs playerroomDay
