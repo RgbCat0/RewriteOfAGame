@@ -1,4 +1,4 @@
-# ashley side content
+# Ashley scenes.
 
 label ashleyinteraction1part1:
     hide screen uppergui
@@ -22,7 +22,7 @@ label ashleyinteraction1part2:
         xalign 0.4 ypos 120
     show fbashley current:
         xalign 0.6 ypos 120
-    
+
     $ ashleySprite = 5
     ashley "[povname]! I had a feeling you might be visiting today."
     $ ashleySprite = 4
@@ -107,7 +107,7 @@ label ashleyinteraction1part2:
     player "Down there?"
     $ playerSprite = 11
     hide fbplayer current
-    
+
     scene fs ashleybj7
     with Dissolve(1.0)
     pause
@@ -116,7 +116,7 @@ label ashleyinteraction1part2:
     player "{i}Okay this should be fine, just a little customer service for a while.{/i}"
     player "{i}...I hate customer service.{/i}"
     scene fs ashleybj1
-    player "{i}Huh? Oh that's Ashley, must've brushed up against my crotch by acciden-{/i}"    
+    player "{i}Huh? Oh that's Ashley, must've brushed up against my crotch by acciden-{/i}"
     scene fs ashleybj2
     player "{i}That's not an accident!{/i}"
     "*Ding*"
@@ -134,7 +134,7 @@ label ashleyinteraction1part2:
             jump ashleybadending1
 label continueashleybj1:
     player "There's just at the back sir."
-    scene fs ashleybj4 
+    scene fs ashleybj4
     pause
     scene fs ashleybj6
     "Customer" "Ah right I see em now."
@@ -161,7 +161,7 @@ label continueashleybj2:
     "Customer" "Awesome thanks."
     show ashleyblowjob movie1
     player "No pro-AHH-blem"
-    "*Ding*"     
+    "*Ding*"
     "Customer" "Hiiii"
     player "Hello ma'am, how can I help you today?"
     "Customer" "Me and some girlfriends are getting together next weekend to complain about our husbands."
@@ -208,7 +208,7 @@ label continueashleybj3:
 
 label continueashleybj4:
     player "Sounds like fun. Unfortunately our Bonjour Aujourd'hui selection is late and will be arriving next week."
-    
+
     show ashleyblowjob movie3
     pause
     "Customer" "Oh that's okay, we can come back next week no problem."
@@ -238,18 +238,18 @@ label continueashleybj4:
     player "How do I look?"
     "Customer" "Oh I am totally using this when I break in my Cock-Rocket tonight."
     "Customer" "Here's something to rememeber us by!"
-    
+
     show ashleyblowjob movie4
     "The energetic girl turns around and flips her skirt up exposing an absolute unit of an ass which had no business being attached to someone so lean"
     player "OH FUCK!"
     "Customer" "JENNIFER I'M LITERALLY GOING TO KILL YOU."
-    
+
     scene fs ashleybj12
     with Dissolve(0.7)
     "Customer" "Hahaha!"
     "*Ding*"
     pause
-    
+
     scene fs store
     with Dissolve(0.7)
     $ playerSprite = 0
@@ -286,7 +286,7 @@ label continueashleybj4:
     $ playerSprite = 0
     $ ashleySprite = 5
     ashley "See you later."
-    $ ashleySprite = 4   
+    $ ashleySprite = 4
 
     $ ashleychecker = 2
     jump passtime

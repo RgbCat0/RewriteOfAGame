@@ -1,5 +1,5 @@
-# starting with katie's phone convos
-# convo 1
+# Katie scenes.
+
 label conversationkatie1:
     $ katieconversationday = dayNumber
     player "{cps=25}Hey.{/cps}"
@@ -9,7 +9,7 @@ label conversationkatie1:
     katie "{cps=25}Lol if you say so.{/cps}"
     jump returnwhereyouare
 
-# convo 2
+
 label conversationkatie2:
     if katieconversationday == dayNumber:
         player "I already texted her I should wait until tomorrow at least..."
@@ -38,7 +38,7 @@ label conversationkatie2:
         $ katieconversationday = dayNumber
         jump returnwhereyouare
 
-# convo 3
+
 label conversationkatie3:
     if katieconversationday == dayNumber:
         player "I already texted her I should wait until tomorrow at least..."
@@ -62,7 +62,7 @@ label conversationkatie3:
         $ katieconversationday = dayNumber
         jump returnwhereyouare
 
-#convo 4
+
 label conversationkatie4:
     if katieconversationday == dayNumber:
         player "I already texted her I should wait until tomorrow at least..."
@@ -83,7 +83,7 @@ label conversationkatie4:
         player "I should check my images to see what she sent."
         $ renpy.notify("Got Katie's Selfie!")
         $ phone_pictures.append("katiebathselfie")
-        $ katieconversationday = -1  # (jep note: certainly a way of not activating the convos anymore lmao)
+        $ katieconversationday = -1
         if currentchapter > 1:
             $ katiequestlog = "Maybe I should stop by Katie's room?"
         else:
@@ -91,15 +91,14 @@ label conversationkatie4:
 
         jump returnwhereyouare
 
-# end convo (5)
+
 label conversationkatie5:
     player "I might get in trouble if I text her anymore..."
     jump returnwhereyouare
 
-# chapter 1 end too ^
 
-# chapter 2
-# interaction 1 i guesss?
+# Chapter 2
+
 
 label katiefootmassage:
     hide screen backbuttonGFHALLWAY
@@ -253,7 +252,7 @@ label katiefootmassage:
     scene fs katiefootmassage5mc
     player "Don't you care about your sister?!"
     show katiefoot katiefootrub4
-    katie "Of course I do, but sisters sometimes borrow things from eachother. It's not a big deal if we just fool around a bit."
+    katie "Of course I do, but sisters sometimes borrow things from each other. It's not a big deal if we just fool around a bit."
     scene fs katiefootmassage5mc
     player "I don't know Katie-"
     show katiefoot katiefootrub4
@@ -302,7 +301,6 @@ label katiefootmassage:
     $ katiephase2interaction1 = 2
     jump miahousehallway
 
-# part 2
 
 label katiesecondselfie:
     hide screen backbuttonROOM
@@ -324,7 +322,6 @@ label katiesecondselfie:
     $ katiebjday = dayNumber
     jump playerRoom
 
-# part 3
 
 label talkaboutpizzaparty:
     hide screen questboxpreview
@@ -354,7 +351,6 @@ label talkaboutpizzaparty:
     $ katiephase2interaction1 = 5
     jump returnwhereyouare
 
-# part 4
 
 label pizzapartykatiefuck:
     hide screen questboxpreview
@@ -455,7 +451,6 @@ label pizzapartykatiefuck:
     $ katiequestlog = "Can't believe I fucked Mia's sister...well she fucked me really."
     jump gotosleep
 
-# extra if not blowjob at mia dinner
 
 label katieblowjob:
     hide screen backbuttonROOM
@@ -732,9 +727,8 @@ label katieblowjob:
     $ katiephase2interaction1 = 4
     jump passtime
 
-# end chapter 2
 
-# Chapter 3 and related character scenes.
+# Chapter 3
 
 label katiephase3interaction1part1:
     scene fs blackblank
@@ -933,5 +927,3 @@ label katiephase3interaction1part2:
     $ katiequestlog = "No more content for Katie in this version(Ch2.5)"
     $ katiephase3interaction1 = 2
     jump passtime
-
-#CHAPTER 3 EVENTS HERE-------------------------------------------------------------------------------------------------

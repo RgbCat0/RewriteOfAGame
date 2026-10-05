@@ -1,6 +1,7 @@
-# chapter 1
-# interaction 1
-# part 1
+# Emily scenes.
+
+# Chapter 1
+
 
 label emilyphase1interaction1part1:
     hide screen uppergui
@@ -167,7 +168,6 @@ label emilyphase1interaction1part1:
     hide fbplayer
     jump passtime
 
-# part 1 post convo (does fucking every part 1 have a post???)
 
 label emilyisbusy:
     hide screen emily_atschool
@@ -195,7 +195,6 @@ label emilyisbusy:
     hide fbplayer
     jump schoolhallway
 
-# part 2
 
 label emilyphase1interaction1part2:
 
@@ -307,34 +306,6 @@ label emilyphase1interaction1part2:
     hide fbplayer
     jump passtime
 
-# part 2 post convo 1 (not used)
-
-label whensthepaintagain:
-
-    hide screen emily_atschool
-    scene fs schoolhallwayBLUR
-    with Dissolve(0.5)
-
-    show fbplayer current:
-        xalign 0.35 ypos 120
-    with Dissolve(0.5)
-
-    show fbplayer current:
-        xalign 0.35 ypos 120
-    with Dissolve(0.5)
-
-    $ playerSprite = 1
-    player "Real quick, when's the paint coming in again?"
-    $ playerSprite = 0
-    $ emilySprite = 1
-    emily "Tomorrow right here in the afternoon!"
-    $ emilySprite = 0
-    hide fs schoolhallwayBLUR
-    hide fbemily
-    hide fbplayer
-    jump schoolhallway
-
-# part 2 post convo 2 (also unreachable but is in the code (the game sets the sleep convo to the next state so it basically skips this))
 
 label whensthepaintagain2:
     hide screen emily_atschool
@@ -354,7 +325,6 @@ label whensthepaintagain2:
     hide fbplayer
     jump schoolhallway
 
-# part 2 sleep shit
 
 label thinkaboutemilybeforesleep:
     hide screen backbuttonROOM
@@ -376,7 +346,6 @@ label thinkaboutemilybeforesleep:
     player "Hmmm no. For now I'll just see where things go."
     jump gotosleep
 
-# part 3
 
 label emilyphase1interaction1part3:
 
@@ -422,7 +391,7 @@ label emilyphase1interaction1part3:
     player "Well it's been like 4 hours so far. I'd say we're about halfway done."
     scene fs emilypainting2talkemily
     emily "Yeah I think we should stop soon after this part is finished."
-    emily "Thanks you really made this fly by, it would probably take three more days to finish if you weren't here." # grammer hard bruh?
+    emily "Thanks, you really made this fly by. It would probably take three more days to finish if you weren't here."
     scene fs emilypaintplayerfrown
     player "{i}Don't worry I'm sure with your Mary-Sue powers you wouldve found a way to finish without anyone else.{i}"
     scene fs emilypainting1
@@ -436,7 +405,7 @@ label emilyphase1interaction1part3:
     player "{i}Woah...{/i}"
     player "{i}In this lighting...{/i}"
     player "You're actually really pretty."
-    #$ hiden_textbox = False
+
     window hide
     pause
     scene fs emilypainting6b
@@ -505,26 +474,25 @@ label emilyphase1interaction1part3:
     with vpunch
     play sound "audio/emilygameaudio/emilysorry.wav"
     emily "{i}S-Sorry I can't..{/i}"
-    emily "{i}I shouldnt've done that I...I...{/i}"
+    emily "{i}I shouldn't've done that I...I...{/i}"
     play sound "audio/emilygameaudio/emilycry.wav"
     emily "{i}*sobs*{/i}"
     scene fs blackblank
     with Dissolve(1.0)
-    #$ hiden_textbox = False
+
     "Her face beet red, Emily runs away teary eyed and confused."
     player "{i}....{/i}"
     player "{i}Man what the fuck.{/i}"
     $ playerSprite = 0
     $ emilyphase1interaction1 = 4
     $ emilyquestlog = "What is WRONG with me??"
-    #$ timeofday = "Day"
+
 
     hide fs blackblank
     hide fbemily
     hide fbplayer
     jump passtime
 
-# part 3 sleep shit once again
 
 label thinkaboutemilybeforesleep2:
     hide screen backbuttonROOM
@@ -558,8 +526,6 @@ label thinkaboutemilybeforesleep2:
     $ emilyquestlog = "I gotta get Emily to talk to me."
     jump gotosleep
 
-# interaction 2
-# part 1
 
 label emilyphase1interaction2part1:
     hide screen uppergui
@@ -778,7 +744,7 @@ label emilyphase1interaction2part1:
     player "Ahhh it all makes sense now."
     $ playerSprite = 0
     $ avaSprite = 16
-    ava "It was chaos, and when it wasn't chaos it was dissapointment and wasted city money and resources."
+    ava "It was chaos, and when it wasn't chaos it was disappointment and wasted city money and resources."
     $ avaSprite = 15
     $ charlotteSprite = 1
     charlotte "Well, as Emily says with the power of friendship she was able to pull through. She's better than ever and we're all closer than ever."
@@ -823,7 +789,6 @@ label emilyphase1interaction2part1:
     $ emilyphase1interaction2 = 2
     jump passtime
 
-# part 1 post convo (man pls)
 
 label emilyrunsaway:
     hide screen emily_atschool
@@ -832,7 +797,6 @@ label emilyrunsaway:
     "Maybe you should return in the afternoon and try again"
     jump schoolhallway
 
-# part 2
 
 label emilyphase1interaction2part2:
 
@@ -847,7 +811,6 @@ label emilyphase1interaction2part2:
     show fbplayer current:
         xalign 0.35 ypos 120
     with Dissolve(0.5)
-
 
 
     player "Okay. There she is. Wow she looks really upset."
@@ -913,7 +876,7 @@ label emilyphase1interaction2part2:
     $ emilySprite = 2
     emily "Y-Yeah of course."
     $ emilySprite = 1
-    emily "Sorry for running away in embarassment. That was a new experience for me."
+    emily "Sorry for running away in embarrassment. That was a new experience for me."
     emily "*Ahem* But anyway that's not why I'm upset now!"
     $ emilySprite = 2
     emily "Jeez you can be pretty crude you know!"
@@ -997,7 +960,6 @@ label emilyphase1interaction2part2:
     $ emilyquestlog = "After I get some paint I should call Emily from my place."
     jump passtime
 
-# part 3
 
 label emilyphase1interaction2part3:
     hide screen phonecontacts
@@ -1069,7 +1031,7 @@ label emilyphase1interaction2part3:
     show fbemily painthold:
         xalign 0.64 ypos 120
     $ playerSprite = 1
-    player "I payed a lot of money for this Emily, now take it and finish the banner." # PAYED LMAOOO
+    player "I paid a lot of money for this, Emily. Now take it and finish the banner."
     player "Besides, the look on your face is giving you away."
     $ playerSprite = 0
     show fbemily paintholdtalk:
@@ -1271,7 +1233,6 @@ label emilyphase1interaction2part3:
     $ emilyquestlog = "That was fucking hot! I knew Emily was a secret slut. I should talk to her again though at school."
     jump passtime
 
-# part 4
 
 label emilyphase1interaction2part4:
     hide screen emily_atschool
@@ -1386,10 +1347,9 @@ label emilyphase1interaction2part4:
         $ emilyquestlog = "Is Emily becoming a friend? Or do I really just want to fuck her?"
         jump returnwhereyouare
 
-# end chapter 1
 
-# chapter 2
-# start
+# Chapter 2
+
 
 label gohomeemily:
     $ charlotteSprite = 1
@@ -1403,7 +1363,7 @@ label gohomeemily:
     show fbava runflip:
         xalign 0.25 ypos 120
     $ emilySprite = 1
-    emily "Ohhh i-it was nothing! And [povname] helped me alot with it too!"
+    emily "Ohhh i-it was nothing! And [povname] helped me a lot with it too!"
     $ emilySprite = 0
 
     show fbava runfliptalk:
@@ -1530,7 +1490,7 @@ label gohomeemily:
     emily "But it's really not enough."
     $ emilySprite = 0
     $ playerSprite = 1
-    player "Emily it's fine. That's what friends do right? Help eachother out?"
+    player "Emily it's fine. That's what friends do right? Help each other out?"
     $ playerSprite = 0
     $ emilySprite = 2
     emily "!!!"
@@ -1710,7 +1670,7 @@ label gohomeemily:
     scene fs emilychapter1end10
     player "Haha can you imagine going to the movie theatres for this thing?"
     emily "Oh man, all those couples going to see a scary movie?"
-    emily "They'd all end up making out and touching eachother haha!"
+    emily "They'd all end up making out and touching each other haha!"
     scene fs emilychapter1end9
     player "What?"
     player "No!"
@@ -1752,7 +1712,7 @@ label gohomeemily:
     emily "I didn't come over so we can do naughty things."
     emily "You're uh...Mia's boyfriend and she's one of my best friends."
     player "Yeah?"
-    emily "Y-Yes and even if we become good friends who are comfortable with eachother there are lines that we shouldn't cross."
+    emily "Y-Yes and even if we become good friends who are comfortable with each other there are lines that we shouldn't cross."
     scene fs emilychapter1end15
     with Dissolve(0.7)
     player "Lines like trying to seduce me?"
@@ -1832,7 +1792,7 @@ label gohomeemily:
         player "Just close your eyes and relax.."
         emily "Oh...oh!!"
         scene fs emilychapter1end24
-        emily "{i}He's inside! His finges are inside me agian!{/i}"
+        emily "{i}He's inside! His fingers are inside me again!{/i}"
         image mcfingeringemilyendch1:
             "CG8-11.png"
             0.5
@@ -1952,7 +1912,7 @@ label gohomeemily:
         emily "Ahh..."
         player "There you go, good girl..."
         scene fs emilychapter1end24
-        emily "{i}He's inside! His finges are inside me agian!{/i}"
+        emily "{i}He's inside! His fingers are inside me again!{/i}"
         image mcfingeringemilyendch1:
             "CG8-11.png"
             0.5
@@ -2088,7 +2048,7 @@ label gohomeemily:
         emily "Ahh..."
         player "There you go, good girl..."
         scene fs emilychapter1end24
-        emily "{i}He's inside! His finges are inside me agian!{/i}"
+        emily "{i}He's inside! His fingers are inside me again!{/i}"
         image mcfingeringemilyendch1:
             "CG8-11.png"
             0.5
@@ -2342,8 +2302,7 @@ label gohomeemily:
 
         jump startofchapter2
 
-# interaction 1
-# part 1
+
 label emilyphase2interaction1part1:
     hide screen emily_atschool
 
@@ -3329,7 +3288,7 @@ label emilyphase2interaction1part1:
     charlotte "Yeah no problem! I should go too."
     $ charlotteSprite = 0
     $ avaSprite = 1
-    ava "Alright this is a good time to seperate for now then huh?"
+    ava "Alright this is a good time to separate for now then huh?"
     $ avaSprite = 0
     $ miaSprite = 1
     mia "Okay!"
@@ -3405,7 +3364,6 @@ label emilyphase2interaction1part1:
     $ ravenquestlog = "One of Stephanie's Cronies. Goth."
     jump passtime
 
-# part 2
 
 label emilyphase2interaction1part2:
     hide screen emily_atschool
@@ -3542,7 +3500,6 @@ label emilyphase2interaction1part2:
     $ emilyquestlog = "I gotta get my hands on those files! Emily will jump my dick garanteed!"
     jump overworldmap
 
-# part 3
 
 label emilyphase2interaction1part3:
     stop music fadeout 5
@@ -3734,7 +3691,7 @@ label emilyphase2interaction1part3:
     melissa "Oh booo, you just wanted some papers?"
     $ melissaSprite = 0
     $ ravenSprite = 1
-    raven "Dissapointing."
+    raven "Disappointing."
     $ ravenSprite = 0
     $ playerSprite = 1
     player "I dunno why you guys were expecting something raunchy."
@@ -3994,7 +3951,6 @@ label emilyphase2interaction1part3:
     $ stephaniequestlog = "I wonder what kind of favor I'm going to have to do for her."
     jump passtime
 
-# part 4
 
 label emilyphase2interaction1part4:
     if whereami == "library":
@@ -4073,7 +4029,6 @@ label emilyphase2interaction1part4:
         player "Hey I got the papers!"
         emily "No way! Please get them to me as soon as possible!!"
 
-# part 5
 
 label emilyphase2interaction1part5:
     hide screen backbuttonROOM
@@ -4399,8 +4354,6 @@ label emilyphase2interaction1part5:
     $ emilyquestlog = "We were interrupted before, so I should talk to Emily about getting together"
     jump passtime
 
-# interaction 2
-# part 1
 
 label emilyphase2interaction2part1:
     hide screen emily_atschool
@@ -4477,7 +4430,6 @@ label emilyphase2interaction2part1:
     $ emilyphase2interaction2 = 1
     jump passtime
 
-# part 2
 
 label emilyphase2interaction2part2:
     play music "audio/justbeach.mp3" fadein 10
@@ -4607,7 +4559,7 @@ label emilyphase2interaction2part2:
     with Dissolve(0.5)
     emily "Oh Gosh!!"
     player "*Sucks*"
-    
+
     image emilybeachboobsuck:
         "emily beach13.png"
         0.7
@@ -4646,7 +4598,6 @@ label emilyphase2interaction2part2:
     $ emilyphase2interaction2 = 2
     jump passtime
 
-# part 3
 
 label emilyphase2interaction2part3:
     hide screen questboxpreview
@@ -4672,7 +4623,7 @@ label emilyphase2interaction2part3:
 
     $ emilySprite = 0
     show fbplayer current:
-        xalign 0.4 ypos 120 
+        xalign 0.4 ypos 120
     show fbemily current:
         xalign 0.6 ypos 120
     with Dissolve(0.7)
@@ -4723,20 +4674,20 @@ label emilyphase2interaction2part3:
     $ playerSprite = 0
     $ emilySprite = 1
     emily "Hmmmm. Okay..."
-    
+
     scene fs emilychapter2sex1b
     with Dissolve(1.0)
     emily "Ahnn."
-    pause    
+    pause
     player "Unbutton your shirt."
     emily "Okay.."
     scene fs emilychapter2sex2
     with Dissolve(0.5)
     emily "Oh..."
-    pause  
+    pause
     scene fs emilychapter2sex2b
     emily "Haha that tickles, but it feels really nice too..."
-    pause      
+    pause
     scene fs emilychapter2sex3
     with Dissolve(0.7)
     emily "Oh god [povname]."
@@ -4751,7 +4702,7 @@ label emilyphase2interaction2part3:
     pause
     scene fs emilychapter2sex6
     with Dissolve(0.5)
-    player "How does it feel?"      
+    player "How does it feel?"
     scene fs emilychapter2sex6b
     with vpunch
     emily "Ahn!"
@@ -4779,20 +4730,20 @@ label emilyphase2interaction2part3:
     emily "DO IT!"
     emily "Please!"
     player "But what about Mia?"
-    emily "DO IT!!!!"     
+    emily "DO IT!!!!"
 
     scene fs emilychapter2sex5
     with vpunch
     emily "AHHHN!!!"
     player "Fuck!"
     emily "Yes Yes! Just like I dreamed about!"
-    pause      
+    pause
     scene fs emilychapter2sex4
     with Dissolve(0.7)
     emily "Hah...hah."
     player "You..hah..good?"
     emily "Just...don't move.."
-    pause      
+    pause
     scene fs blackblank
     with Dissolve(1.0)
     emily "Stay like that for a bit..."
@@ -4801,8 +4752,6 @@ label emilyphase2interaction2part3:
     $ emilyphase2interaction2 = 3
     jump passtime
 
-# end chapter 2
-# end chapter 2 content
 
 label emilybeachchapter2end:
     hide screen mia_beach1
@@ -4833,7 +4782,7 @@ label emilybeachchapter2end:
     jump emilychoice
 
 label emilychoice:
-   # $ emilyphase2interaction2 = 3
+
     if emilyphase2interaction2 >= 3:
         "Would you like to end the day with Emily?"
         menu:
@@ -5137,9 +5086,8 @@ label emilychoice:
         $ endchapter2_trigger = "2 emily degredation"
         jump startofchapter3
 
-# start chapter 3
+# Chapter 3
 
-# Chapter 3 and related character scenes.
 
 label emilyphase3interaction1part1:
     hide screen uppergui

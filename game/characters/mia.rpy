@@ -1,7 +1,7 @@
-# Correctly chronological. Probaly...
-#chapter 1
-# interaction 1
-# part 1
+# Mia scenes.
+
+# Chapter 1
+
 
 label miaphase1interaction1part1:
     hide screen mia_atschool
@@ -26,7 +26,7 @@ label miaphase1interaction1part1:
     $ playerSprite = 1
     player "Course I did, I told you I’d come."
     $ playerSprite = 0
-    #kiss here
+
     $ sophiaSprite = 2
     with Dissolve(0.5)
     sophia "...."
@@ -46,11 +46,11 @@ label miaphase1interaction1part1:
     $ sophiaSprite = 2
     $ playerSprite = 0
     $ miaSprite = 4
-    #voice "audio/miagameaudio/mialaugh.wav"
+
     mia "Oh youuuu teehee."
     $ miaSprite = 0
     $ sophiaSprite = 4
-    #voice "audio/sophiagameaudio/sophiahmph.wav"
+
     sophia "Gee thanks. I’m going to go sit down and leave you two to make out or whatever."
     $ sophiaSprite = 3
     show fbsophia:
@@ -91,7 +91,7 @@ label miaphase1interaction1part1:
     player "Wha...here I am pouring my heart out-"
     $ playerSprite = 4
     $ miaSprite = 5
-    #voice "audio/miagameaudio/mialaugh2.wav"
+
     mia "Hehehe I’m kidding! I um...I had a really good time too."
     $ miaSprite = 1
     mia "Thank you. For...you know, saying that."
@@ -128,9 +128,7 @@ label miaphase1interaction1part1:
     hide fs
     jump classroom1
 
-# UNREACHABLE
-# UNREACHABLE
-# UNREACHABLE MIAPIVOT
+
 label miaphase1interaction1part1postconvo:
     hide screen mia_atschool
     hide screen sophia_atschool
@@ -150,7 +148,6 @@ label miaphase1interaction1part1postconvo:
     hide fbplayer
     jump classroom1
 
-# part 2
 
 label miaphase1interaction1part2:
     hide screen uppergui
@@ -337,7 +334,7 @@ label miaphase1interaction1part2:
             $ miaSprite = 1
             mia "Oh."
             $ miaSprite = 0
-            #add katie to phone number list
+
             $ katieSprite = 1
             katie "Suuuuuure...It’s  552-1315."
             $ katieSprite = 0
@@ -376,7 +373,7 @@ label miaphase1interaction1part2:
         player "I see...."
         $ playerSprite = 0
         "VVVVVPPP VVVVVPPPP"
-        #show fbkatie phonelook
+
         $ katieSprite = 1
         katie "Oh! Josy is calling me I gotta go to my room, call me when dinner’s ready."
         $ katieSprite = 0
@@ -407,7 +404,7 @@ label miaphase1interaction1part2:
             $ playerSprite = 1
             player "Oh you should give me her number in case I can’t reach you."
             $ playerSprite = 0
-            #add katie to phone number list
+
             $ miaSprite = 1
             mia "Oh um I guess that’s okay. It’s 552-1315."
             $ miaSprite = 0
@@ -434,7 +431,7 @@ label miaphase1interaction1part2:
             $ miaphase1interaction1 = 2
             jump gotosleep
 
-#part 2.5 i guess
+
 label textmiafornudes:
     hide screen contacts
     hide screen backbuttonROOM
@@ -464,8 +461,7 @@ label textmiafornudes:
     hide fs playerroomNight
     jump playerRoom
 
-#part 3
-#this is basically miaphase1interaction1part3 (not my comment)
+
 label textmiatocomeover:
     hide screen contacts
     hide screen backbuttonROOM
@@ -561,7 +557,7 @@ label textmiatocomeover:
     scene fs jerkoffonmia10
     with Dissolve(1.0)
     mia "{i}Oh wow this is so much! I didn't notice last time because he was inside me...{/i}"
-    player "Oh fuck that was good, your tits get me everytime."
+    player "Oh fuck that was good, your tits get me every time."
     scene fs jerkoffonmia6
     with Dissolve(1.0)
     mia "Feel better?"
@@ -610,9 +606,6 @@ label textmiatocomeover:
         hide fs blackblank
         jump gotosleep
 
-# Interaction 2 
-# part 1
-# With mia's mom, can be skipped though. This reveales favorite treat for part 2
 
 label miaphase1interaction2part1:
     hide screen julia_kitchen
@@ -700,16 +693,14 @@ label miaphase1interaction2part1postconvo:
     hide fbmia
     jump gfhouse
 
-# part 2
 
-#this is basically miaphase1interaction2part2
 label charlottesmiaquiz:
     hide screen uppergui
     scene fs gfroomblur
     with Dissolve(0.5)
     hide screen charlottemia_room
 
-    #this is so mia will stop saying to come over after her route is done
+
     $ miaphase1interaction1 = 5
 
 
@@ -789,7 +780,7 @@ label charlottesmiaquiz:
     $ playerSprite = 4
     $ charlotteSprite = 1
     charlotte "More like you barely know Mia! Making her do lewd things and filling her mind with...d-dirty filth!"
-    #You look at Mia and she shrugs
+
     charlotte "I know what’ll expose you....a quiz!"
     $ charlotteSprite = 0
     mia "Hmm?"
@@ -950,7 +941,7 @@ label charlottesmiaquiz:
                         xalign 1.5
                     with move
                     with Dissolve(0.7)
-                    # Charlotte runs out of the house crying"
+
                     $ miaSprite = 8
                     mia "..."
                     mia "Oh dear I should probably go after her."
@@ -964,8 +955,8 @@ label charlottesmiaquiz:
                     player "Later."
                     $ playerSprite = 0
                     player "{i}I should text her from my room when I'm home.{/i}"
-                    #kiss
-                    # lol doesnt happen bitchass dev
+
+
                     $ miaphase1interaction2 = 2
                     $ charlotteSprite = 0
                     $ miaquestlog = "Mia had to run after Charlotte. I should wait until night and text her again."
@@ -975,7 +966,7 @@ label charlottesmiaquiz:
                     hide fbplayer
                     jump passtime
 
-# part 3
+
 label miaphase1interaction2part3:
     hide screen questboxpreview
     hide screen contacts
@@ -996,7 +987,7 @@ label miaphase1interaction2part3:
     mia "She'll be alright, for the longest time it was just us girls."
     mia "But now that you're around and we're dating she's kinda overwhelmed. She doesn't know much about boys."
     player "Well I knew Soph forever, didn't Charlotte know that?"
-    mia "Yeah but Sophia kinda kept you seperate from us for a while so it didn't bother her too much."
+    mia "Yeah but Sophia kinda kept you separate from us for a while so it didn't bother her too much."
     mia "I wish she didn't, that way we would've met sooner!"
     player "Haha yeah same now that I'm thinking about it."
     scene fs miacouchblowjob1
@@ -1108,7 +1099,7 @@ label miaphase1interaction2part3:
     mia "*Gulp* *Gulp*"
     player "{i}She's swallowing my entire load Jesus Christ I love this girl.{/i}"
 
-    #Mia sits up with cum on her face
+
     scene fs miacouchblowjob19
     with Dissolve(0.7)
     voice "audio/miagameaudio/miapanting.wav"
@@ -1119,7 +1110,7 @@ label miaphase1interaction2part3:
     mia "Hehehe I win this time."
     player "Congratulations."
     mia "Hehehe."
-    # mia happily kisses you on the cheek while her face is still covered in cum
+
     $ miaphase1interaction2 = 4
     $ miaquestlog = "I should find Mia and ask her why she never answered my call."
     scene fs blackblank
@@ -1128,7 +1119,7 @@ label miaphase1interaction2part3:
     hide miadicksucking
     jump gotosleep
 
-#part 3.5
+
 label miaphase1interaction2part3wakeup:
     $ miaphase1interaction2 = 5
     player "I should give Mia a call, make sure she got home last night."
@@ -1138,9 +1129,6 @@ label miaphase1interaction2part3wakeup:
     $ miaphase1interaction3 = 1
     jump playerRoom
 
-# phase 1
-# interaction 3
-# part 1
 
 label miaphase1interaction3part1:
     hide screen mia_atschool
@@ -1159,7 +1147,7 @@ label miaphase1interaction3part1:
     show fbsophia current:
         xalign 0.9 ypos 120
     with Dissolve(0.5)
-    
+
     voice "audio/miagameaudio/miaooosad.wav"
     mia "Oooo.."
     show fbmia current:
@@ -1272,7 +1260,7 @@ label miaphase1interaction3part1:
     $ miaSprite = 0
     $ playerSprite = 1
     player "Oh well now I have to find it, can’t go having my girl look so sad like that!"
-    #wipes tear from face
+
     $ playerSprite = 0
     $ miaSprite = 1
     mia "Hehe s-stop it."
@@ -1285,7 +1273,6 @@ label miaphase1interaction3part1:
     hide fbmia
     jump classroom1
 
-# part 1.5
 
 label miaphase1interaction3part1postconvo:
     hide screen mia_atschool
@@ -1312,9 +1299,7 @@ label miaphase1interaction3part1postconvo:
     hide fbmia
     jump classroom1
 
-# part 2
 
-# park
 label lookingforphonepark:
     hide screen uppergui
     $ playerSprite = 11
@@ -1331,7 +1316,6 @@ label lookingforphonepark:
         jump overworldmap
 
 
-# mall
 label lookingforphonemall:
     scene fs mall
     hide screen uppergui
@@ -1351,7 +1335,7 @@ label lookingforphonemall:
     else:
         jump overworldmap
 
-# arcade
+
 label lookingforphonearcade:
     scene fs arcade
     hide screen uppergui
@@ -1374,8 +1358,6 @@ label lookingforphonearcade:
         jump overworldmap
 
 
-# libary
-#basically miaphase1interaction3part2
 label looking4miaphone:
     hide screen emily_atlibrary
     scene fs charlottelibraryjilling1
@@ -1402,7 +1384,7 @@ label looking4miaphone:
     hide fs charlottelibrary7
     jump library
 
-# libary still...
+
 label looking4miaphonepostconvo:
     hide screen charlotte_library
     hide screen mia_phone
@@ -1419,7 +1401,7 @@ label looking4miaphonepostconvo:
     hide fs charlottelibraryjilling1
     jump library
 
-# part 3
+
 label miaphase1interaction3part3:
     hide screen charlotte_library
     hide screen mia_phone
@@ -1433,37 +1415,7 @@ label miaphase1interaction3part3:
     hide fbplayer
     jump overworldmap
 
-# part 3 extra charlotte unreachable
-label foundmiaphoneconvo:
-    scene fs libraryBLUR
-    hide screen charlotte_library
-    show fbcharlotte current:
-        xalign 0.5 ypos 120
-    show fbplayer current:
-        xalign 0.1 ypos 120
-    $ playerSprite = 13
-    player "Charlotte I found her phone!"
-    $ playerSprite = 0
-    $ charlotteSprite = 11
-    charlotte "Oh that's great! Leave it to Mia to somehow lose it here."
-    $ charlotteSprite = 0
-    $ playerSprite = 1
-    player "Haha I know right? Good thing she's got friends like you."
-    $ playerSprite = 0
-    $ charlotteSprite = 5
-    charlotte "Oh I...you're the one who found it I didn't...you should just go already."
-    $ playerSprite = 1
-    player "Alright I'll see you later I guess."
-    $ charlotteSprite = 0
-    $ playerSprite = 0
-    $ foundphonevariable = 2
-    hide fs libraryBLUR
-    hide fbplayer
-    hide fbcharlotte
-    jump library
 
-# part 4
-#basically miaphase1interaction3part4
 label miaifoundyourphone:
     hide screen uppergui
     scene fs gfhouse
@@ -1511,7 +1463,7 @@ label miaifoundyourphone:
     hide fbplayer
     jump miastaysoveratmyplaceafterphone
 
-# part 4 continue 1
+
 label miastaysoveratmyplaceafterphone:
     hide screen uppergui
     scene fs playerroomNight
@@ -1569,7 +1521,7 @@ label miastaysoveratmyplaceafterphone:
     window hide
     jump continuemiasex
 
-# part 4 continue 2
+
 label continuemiasex:
     scene fs miaphase1sex2
     with Dissolve(0.8)
@@ -1631,7 +1583,7 @@ label continuemiasex:
     with flash
     window hide
     pause
-    #Mia takes a selfie with you ploughing her in the background
+
     sophia "{cps=25}Omg is that...{/cps}"
     ava "{cps=25}HAHAHAHA{/cps}"
     ava "{cps=25}Didn’t think you were so bold Mia!{/cps}"
@@ -1647,7 +1599,7 @@ label continuemiasex:
     scene fs miaphase1sex6
     player "What happened?"
     scene fs miaphase1sex6B
-    mia "I accidently took a selfie with you in it behind me and and w-we’re-"
+    mia "I accidentally took a selfie with you in it behind me and and w-we’re-"
     scene fs miaphase1sex6
     player "Wait you just sent the girls a picture of me fucking you?!"
     scene fs miaphase1sex6B
@@ -1656,7 +1608,7 @@ label continuemiasex:
     player "So they’re looking at me with my cock inside you right now?!"
     scene fs miaphase1sex6B
     mia "YES!"
-    #player pounds mia really hard and fast
+
     scene fs miaphase1sex7 at fuckleft
     voice "audio/miagameaudio/miadoggystlye2.wav"
     mia "AHNNNN W-What are you d-AH doing!?"
@@ -1665,11 +1617,11 @@ label continuemiasex:
     mia "OH GODDDD I’m cumming!"
     scene fs miaphase1sex7
     with vpunch
-    #player grabs and pulls mia back as they cum together
+
     mia "W-w-wait the phone i-is slipping!"
     scene fs miaphase1sex8
     with flash
-    # camera flashes
+
     show phoneselfie miacum:
         xalign 0.9 yalign 0.4
     with  flash
@@ -1691,7 +1643,7 @@ label continuemiasex:
     mia "It was so embarrassing!"
     player "Not for me!"
     mia "They’re not your friends! They’re your girlfriend’s friends!"
-    #they both look at the camera
+
     player "Heh."
     player "Well maybe one day they can be! I just met them."
     mia "Ooooh you know that’s not what I meant... "
@@ -1707,7 +1659,7 @@ label continuemiasex:
     $ phone_pictures.append("mia selfie 3")
     player "Annnnd she's out."
     player "Hmmmm..."
-    #$ hiden_textbox = False
+
 
     menu:
         "Take a dick pick with Mia's phone":
@@ -1744,7 +1696,7 @@ label continuemiasex:
         scene fs miasexsnuggle1mc
         player "Yup okay sorry."
         $ miaphase1interaction3 = 5
-        #$ hiden_textbox = False
+
         if currentchapter == 1:
             $ miaquestlog = "I should wait until after the track meet."
         else:
@@ -1803,7 +1755,6 @@ label continuemiasex:
         window hide
         pause
 
-        #Transition to snuggle scene
 
         scene fs miasexsnuggle1
         with Dissolve(1.2)
@@ -1833,16 +1784,10 @@ label continuemiasex:
             $ miaquestlog = "I should wait until after the track meet."
         else:
             $ miaquestlog = "I wonder if I should bring anyone else along with me to Mia's shopping trip..."
-        #$ hiden_textbox = False
+
         hide fs miaphase1sex9
 
 
-
-
-
-
-
-        # This scene then transitions to katie scene where she stumbles upon the dick pic
         scene fs gfhouse
         with Dissolve(1.0)
         show fbkatie phonelook:
@@ -1868,10 +1813,9 @@ label continuemiasex:
         hide fbemily
         jump gotosleep
 
-# end chapter 1
 
-# chapter 2
-# start
+# Chapter 2
+
 
 label gohomemia:
         show fbava runfliptalk:
@@ -2027,7 +1971,7 @@ label gohomemia:
         mia "And I had an orgasm in front of a bunch of people!"
         $ miaSprite = 12
         $ playerSprite = 8
-        player "Sorry babe I just got really worked up from you sitting on me and everytime you moved y-"
+        player "Sorry babe I just got really worked up from you sitting on me and every time you moved y-"
         $ miaSprite = 11
         $ playerSprite = 14
         show fbmia current:
@@ -2092,7 +2036,7 @@ label gohomemia:
         with vpunch
         mia "OHHH!!"
         mia "I'm cumming!!"
-        #$ hiden_textbox = False
+
         scene fs blackblank
         window hide
         pause
@@ -2144,8 +2088,6 @@ label gohomemia:
         $ endchapter1_trigger = "1 mia neutral"
         jump startofchapter2
 
-# interaction 1
-# part 1
 
 label miaphase2interaction1part1:
     hide screen mia_room
@@ -3236,7 +3178,7 @@ label malltripwithmia:
     scene fs miamallalone3
     player "God does it work!"
     mia "Hehehe alright thank you!"
-    #this is where you will make the choice between the three
+
     mia "So which do you like the most?"
     scene fs miamallalone1
     with Dissolve(0.3)
@@ -3423,13 +3365,10 @@ label miachangeroomscene:
     $ miaquestlog = "Shopping with Mia was more fun then I was expecting, I should meet up with her again at her school."
     jump passtime
 
-# holy part 1 lmao
-#interaction 2
-# part 1
 
 label miaphase2interaction2part1:
     scene fs classroom
-    
+
     show fbmia current:
         xalign 0.6 ypos 120
     show fbplayer current:
@@ -3454,7 +3393,6 @@ label miaphase2interaction2part1:
     $ miaphase2interaction2 = 2
     jump overworldmap
 
-# part 2
 
 label miaphase2interaction2part2:
     hide screen uppergui
@@ -3508,7 +3446,7 @@ label juliatablehjchoice:
             jump juliatablehj
         "Move her hand":
             jump continuedinner1
-    
+
 label juliatablehj:
     scene fs miadinner4b
     with Dissolve(0.5)
@@ -3640,7 +3578,7 @@ label katiedinnerblowjob:
     mia "Haha I agree!"
     julia "I don't see why not!"
     player "....."
-    
+
     scene fs blackblank
     with Dissolve(0.7)
     player "This family is crazy."
@@ -3686,7 +3624,6 @@ label continuedinner3:
     $ miaphase2interaction2 = 3
     jump passtime
 
-# part 3 (named part 4 as part 3 just doesnt exist anymore i guess)
 
 label miaphase2interaction2part4:
     stop music fadeout 5
@@ -3707,28 +3644,28 @@ label miaphase2interaction2part4:
         xalign 0.4 ypos 120
     show fbmia current:
         xalign 0.6 ypos 120
-    
-    $ playerSprite = 1 
+
+    $ playerSprite = 1
     player "Mia!"
     $ playerSprite = 0
     $ miaSprite = 1
     mia "Hey! I'm here!"
     $ miaSprite = 0
-    $ playerSprite = 1 
+    $ playerSprite = 1
     player "I'm happy about that, but why?"
     $ playerSprite = 0
     $ miaSprite = 1
     voice "audio/miagameaudio/mialaugh2.wav"
     mia "Sex!"
     $ miaSprite = 0
-    $ playerSprite = 1 
+    $ playerSprite = 1
     player "Huh?"
     $ playerSprite = 0
     $ miaSprite = 1
     mia "I'm here for sex! We didn't have any when you came over for dinner so...yeah!"
     mia "Thanks again for that by the way, I know my family can get a little crazy."
     $ miaSprite = 0
-    $ playerSprite = 1 
+    $ playerSprite = 1
     player "Oh you have no-"
     $ playerSprite = 0
     player "Ahem."
@@ -3835,8 +3772,6 @@ label miaphase2interaction2part4:
     $ miaphase2interaction2 = 4
     jump gotosleep
 
-# end of chapter 2
-# end of chapter 2 content
 
 label miabeachchapter2end:
     hide screen mia_beach1
@@ -3870,9 +3805,8 @@ label miabeachchapter2end:
 
     mia "I don't even wanna rest though, we're at the beeeeach."
     player "Haha okay. Let me think about it."
-    #$ miaphase2interaction2 = 6
-    #if miaphase2interaction2 >= 6:
-    #change the above back when chapter 2 is fully done------------------------------
+
+
     if miaphase2interaction2 == 4:
         "Would you like to end the day with Mia?"
         menu:
@@ -4007,9 +3941,8 @@ label miabeachchapter2end:
         $ miaquestlog = "I've been patient. It's time Mia..."
         jump startofchapter3
 
-# start chapter 3
+# Chapter 3
 
-# Chapter 3 and related character scenes.
 
 label miaphase3interaction1part1:
     hide screen uppergui
@@ -4296,7 +4229,6 @@ label miaphase3interaction1part2:
     $ miaquestlog = "No more solo content for Mia this version(Ch2.5)"
     jump passtime
 
-# chapter 3 end i guess?
 
 label sleepwithmia:
     scene fs charlotteroom

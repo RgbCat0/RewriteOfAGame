@@ -1,6 +1,7 @@
-# chapter 1
-# interaction 1
-# part 1
+# Charlotte scenes.
+
+# Chapter 1
+
 
 label charlottephase1interaction1part1:
     hide screen charlotte_library
@@ -46,8 +47,8 @@ label charlottephase1interaction1part1:
     player "So you'll be at the library huh?"
     $ playerSprite = 0
     $ charlotteSprite = 1
-    #voice "audio/charlottegameaudio/charlotteugh.wav"
-    charlotte "Ugh. I shouldnt've said that."
+
+    charlotte "Ugh. I shouldn't've said that."
     $ charlotteSprite = 0
     $ playerSprite = 1
     player "I'll see you there then."
@@ -58,7 +59,7 @@ label charlottephase1interaction1part1:
     with Dissolve(0.5)
     $ charlotteSprite = 0
     $ playerSprite = 7
-    player "Well that was interesting. It seems like she hates me but nobody is that straightforward when talking to someone they dont like for the first time, she had no tact at all."
+    player "Well that was interesting. It seems like she hates me but nobody is that straightforward when talking to someone they don't like for the first time, she had no tact at all."
     player "If I'm going to date Mia I'll need her friends to warm up to me. And I don't want to just run to Mia and complain..."
     player "I should go see her at the library in the afternoon."
     $ charlottephase1interaction1 = 1
@@ -72,7 +73,6 @@ label charlottephase1interaction1part1:
     hide fbcharlotte
     jump classroom3
 
-# part 1 post convo
 
 label charlottewonttalktome:
     hide screen charlotte_school
@@ -80,7 +80,6 @@ label charlottewonttalktome:
     player "Charlotte doesn't really want to talk to me right now, I should meet her in the library later."
     jump classroom3
 
-# part 2
 
 label charlottephase1interaction1part2:
     hide screen charlotte_library
@@ -147,16 +146,16 @@ label charlottephase1interaction1part2:
     scene fs charlottelibraryplayer
     player "Ah I see, you live with them then?"
     scene fs charlottelibraryblushtalk
-    charlotte "Well....sort of, I live at home but they're often too busy to be...i-it doesnt matter! Yes I live with them. Technically."
+    charlotte "Well....sort of, I live at home but they're often too busy to be...i-it doesn't matter! Yes I live with them. Technically."
     scene fs charlottelibraryplayer
     player "Great, so how'd you meet Mia?"
     scene fs charlottelibraryhappytalk
     charlotte "Oh I've known Mia since late grade school! I'm her earliest friend!"
-    charlotte "Some bullies stole my lunch so I was crying. She sat down beside me and gave me half of her sandwhich without saying anything."
+    charlotte "Some bullies stole my lunch so I was crying. She sat down beside me and gave me half of her sandwich without saying anything."
     scene fs charlottelibraryhappyMCtalk
     player "Cucumber?"
     scene fs charlottelibraryhappytalk
-    charlotte  "Haha yeah! Weird right? Anyways I was used to high class meals and said I didn't want her crappy sandwhiches."
+    charlotte  "Haha yeah! Weird right? Anyways I was used to high class meals and said I didn't want her crappy sandwiches."
     charlotte "But she just kept quiet and I got so hungry I ate it anyways."
     charlotte "It was the tastiest thing I've ever had, I started crying again."
     charlotte "So she gave me a hug and took me to the teacher to report the bullies. We've been best friends ever since!"
@@ -187,7 +186,6 @@ label charlottephase1interaction1part2:
     hide fs charlottelibrarycharlotte
     jump passtime
 
-# part 3
 
 label charlottephase1interaction1part3:
     hide screen charlotte_library
@@ -227,7 +225,7 @@ label charlottephase1interaction1part3:
     scene fs charlottelibraryplayer
     player "I tried to get your attention but you couldn't notice me with your eyes glued to that book so I wanted to know what it was."
     scene fs charlottelibrarycharlotte
-    charlotte "Well...You still shouldnt sneak up on people from behind. Who knows what your perverted brain was thinking about doing to me."
+    charlotte "Well...You still shouldn't sneak up on people from behind. Who knows what your perverted brain was thinking about doing to me."
     scene fs charlottelibraryplayer
     player "Funny you should call ME perverted miss sexual relations."
     scene fs charlottelibrary7
@@ -339,7 +337,7 @@ label charlottephase1interaction1part3:
     charlotte "I'm leaving!"
     scene fs charlottelibrary15
     with Dissolve(0.5)
-    #charlotte is about to leave but then realises she's wet and doesnt leave
+
     charlotte "{i}Shit! My thighs are soaked again! God dammit why'd he have to be here this time?!{/i}"
     scene fs charlottelibrary11
     with Dissolve(0.7)
@@ -358,7 +356,7 @@ label charlottephase1interaction1part3:
     player "I swear I won't say anything to anyone, not even Mia."
     charlotte "....."
     scene fs charlottelibrary9
-    #voice "audio/charlottegameaudio/charlottesorry2.wav"
+
     charlotte "I'm sorry."
     scene fs blackblank
     with Dissolve(0.8)
@@ -371,7 +369,6 @@ label charlottephase1interaction1part3:
     hide fs blackblank
     jump passtime
 
-# part 4 (according to the var its not interaction 2 yet)
 
 label charlottephase1interaction2part1A:
     scene fs blackblank
@@ -405,7 +402,7 @@ label charlottephase1interaction2part1A:
     show fbcharlotte current at surpriseshake:
         xalign 0.65 ypos 120
     with move
-    #voice "audio/charlottegameaudio/charlotteyou.wav"
+
     charlotte "You! Oh no no leave me alone! I'm about to have class!"
     $ charlotteSprite = 0
     $ playerSprite = 1
@@ -528,7 +525,7 @@ label charlottephase1interaction2part1A:
     hide fbplayer current
     with Dissolve(0.7)
     $ charlotteSprite = 1
-    #voice "audio/charlottegameaudio/charlotteangryhey.wav"
+
     charlotte "Hey don't ignore me! Hey!"
     hide fbmia current
     with Dissolve(0.7)
@@ -543,8 +540,6 @@ label charlottephase1interaction2part1A:
     $ charlottequestlog = "Totally got sidetracked by Mia..I should find her in the library again."
     jump passtime
 
-# interaction 2
-# part 1
 
 label charlottephase1interaction2part1:
     hide screen charlotte_library
@@ -611,7 +606,6 @@ label charlottephase1interaction2part1:
     $ charlottequestlog = "I'm gonna need to buy a library card if I want to talk to Charlotte again."
     jump passtime
 
-# part 2
 
 label charlottephase1interaction2part2:
     hide screen charlotte_library
@@ -697,7 +691,6 @@ label charlottephase1interaction2part2:
     $ charlottephase1interaction2 = 2
     jump passtime
 
-# part 3 pre convo or not in classroom1
 
 label charlottephaseMiaDelegation:
     hide screen mia_sophia_atschool
@@ -755,7 +748,6 @@ label charlottephaseMiaDelegation:
         mia "{cps=25}<3{/cps}"
         jump returnwhereyouare
 
-# part 3
 
 label charlottephase1interaction2part3:
     hide screen mia_atschool
@@ -825,7 +817,6 @@ label charlottephase1interaction2part3:
     with Dissolve(0.7)
 
 
-
     show fbmia current:
         xalign 0.7 ypos 120
     with Dissolve(0.5)
@@ -846,14 +837,14 @@ label charlottephase1interaction2part3:
     show fbcharlotte happytalkflip:
         xalign 0.55 ypos 120
     charlotte "Mia! My class just finished you wanna go to Moonbucks?"
-    
+
     show fbcharlotte current:
         xalign 0.5 ypos 120
     pause
     $ charlotteSprite = 3
     show fbcharlotte current:
         xalign 0.48 ypos 120
-    #voice "audio/charlottegameaudio/charlotteyou.wav"
+
     charlotte "Wait. Why are you here? I told you I don't ever want to see you again!"
     charlotte "I am gonna beat y-"
     show fbcharlotte defaultflip at surpriseshake:
@@ -988,7 +979,6 @@ label charlottephase1interaction2part3:
     $ charlottequestlog = "Mia sure knows how to handle Charlotte, I gotta visit her house tonight."
     jump passtime
 
-# part 3
 
 label charlottephase1interaction3part1:
     scene fs blackblank
@@ -1453,10 +1443,9 @@ label charlottephase1interaction3part1:
     $ victoriaquestlog = "Victoria is quite the beautiful woman..and sucks a mean dick."
     jump overworldmap
 
-# end chapter 1
 
-# chapter 2
-# start
+# Chapter 2
+
 
 label gohomecharlotte:
     $ sophiaSprite = 1
@@ -2054,7 +2043,6 @@ label gohomecharlotte:
             jump charlottechapter1naughty
 
 
-
 label charlottechapter1naughty:
     show fbplayer shirtlesstalk:
         xalign 0.4 ypos 120
@@ -2274,7 +2262,6 @@ label charlottechapter1naughty:
     jump startofchapter2
 
 
-
 label charlottechapter1romance:
 
     show fbplayer shirtlesstalk:
@@ -2422,8 +2409,6 @@ label charlottechapter1romance:
 
     jump startofchapter2
 
-# interaction 1
-# part 1
 
 label charlottephase2interaction1part1:
     hide screen exit_cafe
@@ -2527,7 +2512,6 @@ label charlottephase2interaction1part1:
     $ charlottequestlog = "I've pretty much tamed Charlotte now, She's not gonna be a problem anymore."
     jump gotosunnyside
 
-# part 1 night
 
 label charlottephase2interaction1part1NIGHT:
     hide screen backbuttonROOM
@@ -2631,7 +2615,6 @@ label charlottephase2interaction1part1NIGHT:
     $ charlottequestlog = "Charlotte wants me to get a bunch of naughty things. Where can I buy stuff?"
     jump gotosleep
 
-# part 2
 
 label charlottephase2interaction1part2:
     stop music fadeout 2
@@ -2808,7 +2791,7 @@ label charlottephase2interaction1part2:
     charlotte "*Phew*..."
     play sound "audio/camerasnap.mp3"
     with flash
-    
+
     show fbplayer nakedcumsurprise:
         xalign 0.5 ypos 120
     player "Huh? What was that flash?"
@@ -2973,13 +2956,11 @@ label charlottephase2interaction1part2:
     $ victoriaquestlog = "I wonder if I should visit Victoria tonight. She's so sexy but also cool as shit."
     jump gotosleep
 
-# interaction 2
-# part 1
 
 label charlottephase2interaction2part1:
     scene fs playerroomMorn
     with Dissolve(0.7)
-    #"MC gets a call in the morning from Mia, inviting you to join her and charlotte at the cafe"
+
     "Briiing briiing"
     player "Hello?"
     mia "[povname]! Good morning!"
@@ -2990,13 +2971,12 @@ label charlottephase2interaction2part1:
     $ charlottephase2interaction2 = 3
     jump returnwhereyouare
 
-# part 2
 
 label charlottephase2interaction2part2:
     stop music fadeout 5
     stop sound fadeout 5
     hide screen exit_cafe
-    #"MC has brunch with mia and charlotte, MC and Mia fuck in bathroom and charlotte sees"
+
     $ miaSprite = 0
     $ charlotteSprite = 0
     $ playerSprite = 1
@@ -3097,7 +3077,7 @@ label charlottephase2interaction2part2:
     player "I'm gonna fill your pretty little pussy!"
     pause
     show miabathroomsex movie4
-    voice "audio/miagameaudio/miaorgasm2.wav" 
+    voice "audio/miagameaudio/miaorgasm2.wav"
 
     mia "AHHH [povname]!"
     pause
@@ -3118,8 +3098,6 @@ label charlottephase2interaction2part2:
     $ charlottedaychecker1 = dayNumber
     jump passtime
 
-# interaction 3
-# part 1
 
 label charlottephase2interaction3part1:
     scene fs charlotteroom
@@ -3198,7 +3176,7 @@ label charlottephase2interaction3part1:
     charlotte "W-Wait Vicky I-"
     scene fs charlottebj9
     voice "audio/charlottegameaudio/charlottestuffmouth.wav"
-    charlotte "Mhn!"    
+    charlotte "Mhn!"
     scene fs charlottebj9b
     victoria "Well, maybe hands on isn't the correct way to phrase it right now."
     scene fs charlottebj10
@@ -3251,7 +3229,6 @@ label charlottephase2interaction3part1:
     $ charlottequestlog = "Victoria was there to help but Charlotte sucked my dick voluntarily! This is getting serious..."
     jump passtime
 
-# part 2
 
 label charlottephase2interaction3part2:
     scene fs charlottenosleep1
@@ -3259,7 +3236,7 @@ label charlottephase2interaction3part2:
     voice "audio/charlottegameaudio/charlottemmm.wav"
     charlotte "Ahh...time for comfy sleep."
     charlotte "No more school or...other things to worry about right now."
-    pause    
+    pause
     scene fs charlottenakedcummingtrick6
     with Dissolve(0.5)
     with vpunch
@@ -3324,7 +3301,6 @@ label charlottephase2interaction3part2:
     $ charlottedaychecker2 = dayNumber
     jump passtime
 
-# interaction 4 
 
 label charlottephase2interaction4part1:
     pause
@@ -3405,7 +3381,7 @@ label charlottephase2interaction4part1:
     player "I'm getting really close ladies!"
     victoria "Hmmm?"
     player "{i}Victoria is glancing at me...I think I know what she wants{/i}"
-    
+
     scene fs charlottechapter2sex8
     stop sound
     pause
@@ -3422,7 +3398,7 @@ label charlottephase2interaction4part1:
     with vpunch
     player "MMHHN!!"
     voice "audio/charlottegameaudio/charlotteorgasm1.wav"
-    charlotte "You can't! You can't kiss eachother while cumming inside me!!"
+    charlotte "You can't! You can't kiss each other while cumming inside me!!"
     charlotte "N-Nnooo G-God it feels so good!"
     pause
     scene fs blackblank
@@ -3437,8 +3413,6 @@ label charlottephase2interaction4part1:
         $ charlottequestlog = "I don't believe it. I fucked Charlotte. Victoria watched. I gotta talk to her at the beach trip"
     jump passtime
 
-# end chapter 2
-# end chapter 2 content
 
 label charlottebeachchapter2end:
     hide screen mia_beach1
@@ -3471,7 +3445,7 @@ label charlottebeachchapter2end:
     player "Wow Charlotte. New found respect I gotta say!"
     charlotte "Mmhmm. Now if you quiet down we might actually enjoy my rented beach."
     player "Haha sorry."
-    #$ charlottephase2interaction3 = 2
+
     if charlottephase2interaction3 >= 2:
         "Would you like to end the day with Charlotte?"
         menu:
@@ -3566,7 +3540,7 @@ label charlottebeachchapter2end:
         player "Hey."
         scene fs charlottechapter2end11c
         pause
-        charlotte "{i}Everytime I see this thing I'm surprised. How did it fit inside me?{/i}"
+        charlotte "{i}Every time I see this thing I'm surprised. How did it fit inside me?{/i}"
         player "Do you want me to-"
         scene fs charlottechapter2end12c
         charlotte "No."
@@ -3759,7 +3733,7 @@ label charlottebeachchapter2end:
         player "Hey."
         scene fs charlottechapter2end11c
         pause
-        charlotte "{i}Everytime I see this thing I'm surprised. How did it fit inside me?{/i}"
+        charlotte "{i}Every time I see this thing I'm surprised. How did it fit inside me?{/i}"
         player "Go ahead."
         scene fs charlottechapter2end12c
         charlotte "I-I don't need your permission!"
@@ -3872,9 +3846,8 @@ label charlottebeachchapter2end:
         $ charlottequestlog = "Started off rocky, but I really like Charlotte now. Guess sex will do that. She at school?"
         jump startofchapter3
 
-# start chapter 3
+# Chapter 3
 
-# Chapter 3 and related character scenes.
 
 label charlottephase3interaction1part1:
 

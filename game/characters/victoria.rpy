@@ -1,5 +1,7 @@
-# chapter 2
-# scene 1
+# Victoria scenes.
+
+# Chapter 2
+
 
 label victoriamakeout1:
     stop music fadeout 5
@@ -86,7 +88,6 @@ label victoriamakeout1:
     $ victoriaquestlog = "Making out with Victoria was so hot. Too bad we got interupted I wanted more."
     jump passtime
 
-# scene 2
 
 label victoriamakeout2:
     stop music fadeout 5
@@ -160,7 +161,6 @@ label victoriamakeout2:
     $ victoriaquestlog = "Seemed like Victoria really enjoyed me eating her out. Looking forward to my next visit"
     jump passtime
 
-# scene 3
 
 label victoriafirstsex:
     stop music fadeout 5
@@ -239,5 +239,5 @@ label victoriafirstsex:
     victoria "Y-Yes Master [povname]."
     $ victoriascene1part1 = 3
     $ victoriaquestlog = "There's no more victoria content in this version(Ch2.0B)"
-    
+
     jump passtime

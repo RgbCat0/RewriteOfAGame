@@ -1,6 +1,7 @@
-# chapter 2
-# interaction 1 i guess
-# part 1?
+# Cassandra scenes.
+
+# Chapter 2
+
 
 label cassandraboobjob:
     hide screen uppergui

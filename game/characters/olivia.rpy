@@ -1,6 +1,7 @@
-# chapter 1
-# interaction 1
-# part 1
+# Olivia scenes.
+
+# Chapter 1
+
 
 label oliviaphase1interaction1part1:
     scene fs classroomZOOM
@@ -81,7 +82,7 @@ label oliviaphase1interaction1part1:
     $ playerSprite = 7
     hide fbolivia current
     with Dissolve(0.5)
-    player "{i}She seemes nice if not quiet, didn't really get to talk much. I should meet her at the arcade later like she said."
+    player "{i}She seems nice if not quiet, didn't really get to talk much. I should meet her at the arcade later like she said."
     $ oliviaphase1interaction1 = 1
     $ oliviaquesticon = "gui/questboxOlivia.png"
 
@@ -94,7 +95,6 @@ label oliviaphase1interaction1part1:
     hide fs classroomZOOM
     jump returnwhereyouare
 
-# part 1 post convo
 
 label oliviameetmeatarcade:
     scene fs classroomZOOM
@@ -123,7 +123,6 @@ label oliviameetmeatarcade:
     hide fs classroomZOOM
     jump returnwhereyouare
 
-# part 2
 
 label oliviaphase1interaction1part2:
     hide screen uppergui
@@ -276,7 +275,6 @@ label oliviaphase1interaction1part2:
     hide fs arcade
     jump passtime
 
-# part 3
 
 label oliviaphase1interaction1part3:
     hide screen olivia_atschool
@@ -387,8 +385,6 @@ label oliviaphase1interaction1part3:
     hide fbplayer
     jump passtime
 
-# interaction 2
-# part 1
 
 label oliviaphase1interaction2part1:
     hide screen olivia_atschool
@@ -452,7 +448,7 @@ label oliviaphase1interaction2part1:
     olivia "Um...if it's games I guess it's fine...I did already say I'd play with you."
     $ oliviaSprite = 8
     $ playerSprite = 1
-    player "Thank you you're the best! This was kinda embarassing to ask."
+    player "Thank you you're the best! This was kinda embarrassing to ask."
     $ oliviaSprite = 13
     $ playerSprite = 0
     olivia "You're welcome. It's okay."
@@ -514,7 +510,6 @@ label oliviaphase1interaction2part1:
     $ oliviaphase1interaction2 = 1
     jump returnwhereyouare
 
-# part 1 post convo
 
 label oliviaisinclass:
     player "{i}Olivia's class is about to start, I should probably get out of here.{/i}"
@@ -525,7 +520,6 @@ label oliviaisinclass:
         player "{i}How the heck did I forget about that!? I'll give it to her at the arcade.{/i}"
     jump returnwhereyouare
 
-# part 2
 
 label oliviaphase1interaction2part2:
     scene fs arcade
@@ -590,14 +584,13 @@ label oliviaphase1interaction2part2:
     $ oliviaSprite = 12
     olivia "This isn't right you...you shouldn't be this nice to me. What do you want??!"
     $ oliviaSprite = 11
-    player "{i}I should be careful when I answer her. Do I want to persue some kind of relationship or stay as friends?{/i}"
+    player "{i}I should be careful when I answer her. Do I want to pursue some kind of relationship or stay as friends?{/i}"
     menu:
         "{color=#3eab33}You're my gaming partner.{/color}":
             jump gamingpartnerolivia
         "{color=#dd3939}It's just a gift for a friend.{/color}":
             jump justagiftolivia
 
-# still part 2
 
 label gamingpartnerolivia:
     $ playerSprite = 15
@@ -677,7 +670,6 @@ label gamingpartnerolivia:
     $ item_list.remove("Video Game")
     jump playerlivingroom
 
-# still part 2 but BAD
 
 label justagiftolivia:
     $ playerSprite = 10
@@ -723,7 +715,7 @@ label justagiftolivia:
 
 label oliviaphase1interaction2part3:
 
-    # PLAYER TALKS TO HER AGAIN IN ARCADE AND APOLOGIZES, BUT OLIVIA FEELS BAD AND THEN OFFERS UP HER BOOBS
+
     scene fs arcade
     hide screen uppergui
     with Dissolve(1.0)
@@ -1028,12 +1020,12 @@ label oliviaphase1interaction2part3:
     show gropingOlivia2talk:
         xalign 0.65 ypos 120
     olivia "Y...You.."
-    olivia "You dont have to talk dirty like that you know."
+    olivia "You don't have to talk dirty like that you know."
     hide gropingOlivia2talk
     show gropingOlivia2:
         xalign 0.65 ypos 120
     player "So we should sit here in silence as I fondle your tits?"
-    player "Wouldnt that be even more awkward?"
+    player "Wouldn't that be even more awkward?"
     hide gropingOlivia2
     show gropingOlivia2talk:
         xalign 0.65 ypos 120
@@ -1163,7 +1155,6 @@ label oliviaphase1interaction2part3:
     $ oliviaphase1interaction3 = 1
     jump passtime
 
-# part 4
 
 label oliviaphase1interaction2part4:
     hide screen uppergui
@@ -1221,7 +1212,7 @@ label oliviaphase1interaction2part4:
     "Olivia trashed you in the beginning but eventually you got into your zone and won some matches too"
     "After a little more time the friendly atmosphere died down and your competitive spirits began to show"
     scene oliviascene couchgaming1player
-    player "Damn....whats the score?"
+    player "Damn....what's the score?"
     scene oliviascene couchgaming1olivia
     olivia "Nine all, we're tied."
     scene oliviascene couchgaming1player
@@ -1377,14 +1368,14 @@ label oliviaphase1interaction2part4:
         olivia "I-It's fine. I know..."
         scene oliviascene couchgaming15
         with Dissolve(0.7)
-        player "{i}Man...she was really prepared to showed me her tits.{/i}" # to showed frfr ong
+        player "{i}Man...she was really prepared to showed me her tits.{/i}"
         player "{i}For a second I almost didn't look away.{/i}"
         scene oliviascene couchgaming15B
         olivia "So I guess...you'll be wanting your reward?"
         scene oliviascene couchgaming13
         player "Oh...."
         scene oliviascene couchgaming13B
-        player "{i}Why...why is she saying it so sexually she doesnt usually talk like that.{/i}"
+        player "{i}Why...why is she saying it so sexually she doesn't usually talk like that.{/i}"
         player "{i}And she doesn't look upset about losing either....that's not like her at all.{/i}"
         scene oliviascene couchgaming15
         player "{i}Maybe I should just test her first.{/i}"
@@ -1517,7 +1508,7 @@ label oliviaphase1interaction2part4:
             xalign 0.75 ypos 120
         with move
         olivia "And I LET him! I...I liked it!"
-        olivia "No no no god I'm so embarassed, that line about Mia I just...I just said exactly what I was thinking without...THINKING!"
+        olivia "No no no god I'm so embarrassed, that line about Mia I just...I just said exactly what I was thinking without...THINKING!"
         olivia "He was fucking my thighs so roughly, it was so hot."
         show fbolivia cumblush:
             xalign 0.4 ypos 120
@@ -1560,10 +1551,9 @@ label oliviaphase1interaction2part4:
             $ oliviaquestlog = "That was pretty hot, but I should focus on other things for now."
         jump passtime
 
-# chapter 1 end
 
-# chapter 2
-# start
+# Chapter 2
+
 
 label gohomeolivia:
     $ charlotteSprite = 1
@@ -1951,7 +1941,7 @@ label oliviachapter1rom:
     player "I like how you keep your moans inside until you can't anymore."
     scene oliviascene suckoliviatits8
     with Dissolve(0.7)
-    olivia "I dont't know what you're talking about."
+    olivia "I don't know what you're talking about."
     player "And then it bursts out of you super loudly."
     scene oliviascene suckoliviatits6
     with Dissolve(0.7)
@@ -1982,7 +1972,7 @@ label oliviachapter1rom:
 
     $ endchapter1_trigger = "1 olivia romantic"
     "You make out with Olivia and her tits for the next while before she heads home"
-    "You were slightly dissapointed but still satisfied"
+    "You were slightly disappointed but still satisfied"
     player "{i}Hmmm. We're not just fooling around anymore...{/i}"
     player "{i}I'll have to figure out if I'm willing to take things further with her.{/i}"
 
@@ -2070,8 +2060,6 @@ label oliviachapter1naughty:
 
     jump startofchapter2
 
-# interaction 1
-# part 1
 
 label oliviaphase2interaction1part1:
     hide screen uppergui
@@ -2243,7 +2231,7 @@ label oliviaphase2interaction1part1:
     $ pennySprite = 0
     show fbolivia angryfliptalk:
         xalign 0.44 ypos 120
-    olivia "I almost throw up everytime I see you thank someone for a dono acting like a cat-girl."
+    olivia "I almost throw up every time I see you thank someone for a dono acting like a cat-girl."
     show fbolivia angryflip:
         xalign 0.44 ypos 120
     $ pennySprite = 1
@@ -2302,7 +2290,6 @@ label oliviaphase2interaction1part1:
     $ pennyquestlog = "Who does Penny think she is? Just cause she's short and cute and hot..."
     jump overworldmap
 
-# part 2
 
 label oliviaphase2interaction1part2:
     "BZZZZ"
@@ -2532,8 +2519,6 @@ label oliviaphase2interaction1part2:
     $ pennyquestlog = "Seems like Penny also spends her time at the arcade during the day."
     jump overworldmap
 
-# interaction 2
-# part 1
 
 label oliviaphase2interaction2part1:
     hide screen olivia_atschool
@@ -2610,7 +2595,6 @@ label oliviaphase2interaction2part1:
     $ oliviaphase2interaction2 = 1
     jump passtime
 
-# part 2
 
 label oliviaphase2interaction2part2:
     scene fs blackblank
@@ -2646,7 +2630,7 @@ label oliviaphase2interaction2part2:
     scene fs oliviagamingsext1c
     player "Boing drop!"
     scene fs oliviagamingsext1d
-    olivia "Exactly. Okay one more guy comming at you."
+    olivia "Exactly. Okay one more guy coming at you."
     olivia "He's charging his lasor."
     scene fs oliviagamingsext1c
     player "Why would a frog have a-"
@@ -2666,7 +2650,7 @@ label oliviaphase2interaction2part2:
     player "Haha what?"
     olivia "Hmmm.."
     player "Olivia this isn't a foreign dating simulator you don't have to-"
-    scene fs oliviagamingsext4    
+    scene fs oliviagamingsext4
     olivia "Be right back!"
     player "...."
     player "Cute profile."
@@ -2690,7 +2674,7 @@ label oliviaphase2interaction2part2:
     pause
     player "Fuck Olivia your pussy is s-"
     olivia "Hurry up and take your dick out already!"
-    
+
     show oliviasexting movie1
     pause
     player "Yes ma'am."
@@ -2719,7 +2703,7 @@ label oliviaphase2interaction2part2:
     scene fs oliviagamingsext14a
     player "What?..hah..oh yeah."
     scene fs oliviagamingsext14b
-    olivia "I'll see you at the tournament in two days." 
+    olivia "I'll see you at the tournament in two days."
     scene fs oliviagamingsext14a
     player "See you there baby."
     scene fs oliviagamingsext14b
@@ -2736,7 +2720,6 @@ label oliviaphase2interaction2part2:
         $ pennyscene3 = 1
     jump playerRoom
 
-# interaction 3
 
 label oliviaphase2interaction3part1:
     hide screen uppergui
@@ -2793,7 +2776,7 @@ label frogfightwin1:
             jump frogfightwin2
         "Tongue Whip":
             jump losefrogfight
-    
+
 label frogfightwin2:
     "After he takes the damage, you go on the offensive!"
     menu:
@@ -2831,7 +2814,7 @@ label frogfightwin5:
             jump losefrogfight
         "{color=#008000}Poison Jab!{/color}":
             jump frogfightwin
-    
+
 label frogfightwin:
     scene fs oliviatournament5
     "Announcer" "They did it they did it they did it!!!"
@@ -2874,7 +2857,7 @@ label frogfightwin:
     with Dissolve(0.5)
     olivia "AHN!!!"
     scene fs oliviatournament10b
-    olivia "Harder!"   
+    olivia "Harder!"
     penny "God damn."
     show oliviatournysex movie2
     olivia "I'm CUMMING!"
@@ -2913,8 +2896,6 @@ label losefrogfight:
     "At least there's always tomorrow night!"
     jump passtime
 
-# end chapter 2
-# end chapter 2 content
 
 label oliviabeachchapter2end:
     hide screen mia_beach1
@@ -2948,7 +2929,7 @@ label oliviabeachchapter2end:
     $ playerSprite = 19
     player "Haha that's fair."
     $ playerSprite = 18
-    #$ oliviaphase2interaction3 = 1
+
     if oliviaphase2interaction3 >= 1:
         "Would you like to end the day with Olivia?"
         menu:
@@ -3402,9 +3383,8 @@ label oliviabeachchapter2end:
 
             jump startofchapter3
 
-# start chapter 3
+# Chapter 3
 
-# Chapter 3 and related character scenes.
 
 label oliviaphase3interaction1part1:
     hide screen olivia_atschool
@@ -3555,5 +3535,3 @@ label oliviaphase3interaction1part2:
     $ oliviaphase3interaction1 = 2
     $ oliviaquestlog = "No more Olivia content in this version (ch2.5)"
     jump passtime
-
-# -----------ALL THE NONE INDIVIDUAL GIRL SCENES FOR CHAPTER 2--------------------------------------------------------------------------------------

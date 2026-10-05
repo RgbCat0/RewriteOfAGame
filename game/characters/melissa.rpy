@@ -1,5 +1,7 @@
-# chapter 2
-# scene 1
+# Melissa scenes.
+
+# Chapter 2
+
 
 label melissadancescene:
     hide screen backbuttonCLUB
@@ -85,7 +87,6 @@ label melissadancescene:
     $ melissascene1 = 1
     jump insideclub
 
-# scene 2
 
 label melissadancescene2:
     hide screen backbuttonCLUBRESTROOM
@@ -134,7 +135,7 @@ label melissadancescene2:
     scene fs blackblank
     with Dissolve(1.0)
     "A little embarrassed at your public promiscuity, you leave the bathroom and then the club"
-    
+
     player "I wonder what she's gonna be like next time I talk to her..."
     $ melissascene1 = 2
     $ melissaquestlog = "No more solo content for Melissa in this version (Ch2.5B)"

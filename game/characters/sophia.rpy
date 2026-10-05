@@ -1,6 +1,7 @@
-# chapter 1
-# interaction 1
-# part 1
+# Sophia scenes.
+
+# Chapter 1
+
 
 label sophiaphase1interaction1part1:
     hide screen sophia_atschool
@@ -57,7 +58,6 @@ label sophiaphase1interaction1part1:
     hide fs classroomZOOM
     jump classroom1
 
-# part 1 post convo
 
 label sophianottalkingtome:
     hide screen mia_atschool
@@ -67,7 +67,6 @@ label sophianottalkingtome:
     player "I'll stop by her house in the afternoon, talk to her then."
     jump classroom1
 
-# part 2
 
 label sophiaphase1interaction1part2:
     if timeofday != "Day":
@@ -164,7 +163,7 @@ label sophiaphase1interaction1part2:
     with Dissolve(0.7)
     play sound "audio/sophiagameaudio/sophiashortlaugh.wav"
     sophia "Okay okay haha here!"
-    #sophia and MC hug
+
     player "Mmmmm better?"
     sophia "Better."
     $ sophiaSprite = 0
@@ -202,7 +201,6 @@ label sophiaphase1interaction1part2:
     hide fs sophiahouseoutside
     jump passtime
 
-# part 3
 
 label sophiaphase1interaction1part3:
     hide screen sophia_atschool
@@ -280,7 +278,7 @@ label sophiaphase1interaction1part3:
     sophia "...."
     scene fs sophiamcbenchtalkmc
     player "Trees are starting to change color, fall must be starting soon I guess."
-    #bench scene
+
     player "So any particular reason you wanted to skip today?"
     scene fs sophiamcbenchtalksophia
     sophia "Yeah."
@@ -301,9 +299,9 @@ label sophiaphase1interaction1part3:
     sophia "Mmmm..."
     player "{i}I don't understand, she was so mad at me recently and now she's being extra close.{/i}"
     player "{i}Women...{/i}"
-    #play sound "audio/sophiagameaudio/sophiacutelaugh.wav"
+
     sophia "{i}[povname]'s so warm...I bet we look like a couple teehee.{/i}"
-    #sophia rubs him arm gently
+
     scene fs sophiamcbenchcuddletalkmc
     player "Did you want to get back soon?"
     scene fs sophiamcbenchcuddletalksophia
@@ -316,7 +314,7 @@ label sophiaphase1interaction1part3:
     scene fs sophiamcbenchcuddletalkmc
     player "Wait what?"
     scene fs sophiamcbenchcuddletalksophia
-    #play sound "audio/sophiagameaudio/sophialonglaugh.wav"
+
     sophia "Big feet! Hahaha!"
     scene fs sophiamcbenchcuddletalkmc
     player "Ugh."
@@ -328,7 +326,7 @@ label sophiaphase1interaction1part3:
     sophia "Gotta say I was surprised when she told me, I remember when we were little and you let me see it..."
     scene fs sophiamcbenchcuddletalkmc
     player "Jesus Soph don't bring that up we were kids."
-    player"I've grown and you've grown, so let's not bring up embarassing shit I did when I was little."
+    player"I've grown and you've grown, so let's not bring up embarrassing shit I did when I was little."
     player "We'd be here all day."
     scene fs sophiamcbenchcuddletalksophia
     sophia "You think I've grown?"
@@ -352,7 +350,6 @@ label sophiaphase1interaction1part3:
     hide fbsophia
     jump passtime
 
-# part 4 (starts after part 3 when going to sleep)
 
 label sophiaphase1interaction1part4:
     hide screen uppergui
@@ -404,8 +401,6 @@ label sophiaphase1interaction1part4:
     hide fs blackblank
     jump gotosleep
 
-# interaction 2
-# part 1
 
 label sophiaphase1interaction2part1:
     scene fs classroom
@@ -433,7 +428,7 @@ label sophiaphase1interaction2part1:
     $ playerSprite = 0
     $ sophiaSprite = 1
     show fbsophia current at surpriseshake
-    #play sound "audio/sophiagameaudio/sophiashortlaugh.wav"
+
     sophia "Teehee yaayy."
     sophia "Oh oh!! I almost forgot! My mom started making beef stromboli last night and it should be ready by the end of the day!"
     $ sophiaSprite = 0
@@ -455,14 +450,14 @@ label sophiaphase1interaction2part1:
     player "Just no more baby voice you know I hate that."
     $ sophiaSprite = 1
     $ playerSprite = 4
-    #play sound "audio/sophiagameaudio/sophiadiis.wav"
+
     sophia "Whaaat diiiis??"
     $ sophiaSprite = 0
     $ playerSprite = 5
     player "UGH."
     $ sophiaSprite = 1
     $ playerSprite = 0
-    #play sound "audio/sophiagameaudio/sophiashortlaugh.wav"
+
     sophia "Hahaha come over tonight! It's gonna be super fun."
     $ sophiaSprite = 0
     $ playerSprite = 1
@@ -479,7 +474,6 @@ label sophiaphase1interaction2part1:
     $ sophiaquestlog = "Sophia wants me to visit for lunch at her place."
     jump returnwhereyouare
 
-# part 1 post convo
 
     label cantwaitforvisitsophia:
     scene fs classroom
@@ -514,7 +508,6 @@ label sophiaphase1interaction2part1:
     sophia "Hehe."
     jump returnwhereyouare
 
-# part 2
 
 label sophiaphase1interaction2part2:
     if timeofday != "Day":
@@ -523,7 +516,7 @@ label sophiaphase1interaction2part2:
 
     hide screen uppergui
     scene fs overworldnight
-    stop music 
+    stop music
     with Dissolve(0.7)
     play music "audio/rainstorm.wav" fadein 10
     show foreground rain
@@ -536,7 +529,7 @@ label sophiaphase1interaction2part2:
     show fbplayer current behind foreground:
         xalign 0.35 ypos 120
     with Dissolve(0.5)
-    
+
     player "Oh man it's really starting to come down."
 
     show fbsophia current behind foreground:
@@ -795,13 +788,11 @@ label sophiaphase1interaction2part2:
         $ sophiaquestlog = "I should focus on other things for now.."
 
 
-    #$ hiden_textbox = False
     jump passtime
 
-# end chapter 1
 
-# chapter 2
-# start
+# Chapter 2
+
 
 label gohomesophia:
     $ charlotteSprite = 1
@@ -980,7 +971,7 @@ label sophiachapter1rom:
     "{i}{color=#a93b4c}I can feel it twitching in my mouth.{/color}{/i}"
     scene fs sophiachapterend8
     with vpunch
-    #$ hiden_textbox = False
+
     player "UUUGH! FUCK YES!"
     sophia "!!!!"
     scene fs sophiachapterend9
@@ -1083,7 +1074,7 @@ label sophiachapter1naughty:
     sophia "*Gulp* *Gulp*"
     window hide
     pause
-    #$ hiden_textbox = False
+
     scene fs sophiachapterend16
     with vpunch
     play audio "audio/sophiagameaudio/sophiagasping.wav"
@@ -1139,8 +1130,6 @@ label sophiachapter1naughty:
 
     jump startofchapter2
 
-# interaction 1
-# part 1
 
 label sophiaphase2interaction1part1:
     hide screen uppergui
@@ -1405,8 +1394,6 @@ label sophiaphase2interaction1part1:
         $ sophiaphase1interaction2 = 3
 
         jump overworldmap
-
-
 
 
     elif endchapter1_trigger == "1 sophia naughty":
@@ -1815,7 +1802,6 @@ label sophiaphase2interaction1part1:
         show fbsophia current at surpriseshake
 
 
-
         player "Oh hey Sophia."
         $ playerSprite = 0
         $ sophiaSprite = 1
@@ -2027,8 +2013,6 @@ label sophiaphase2interaction1part1:
         $ sophiaphase1interaction2 = 3
 
         jump overworldmap
-
-# part 2
 
 
 label sophiaphase2interaction2part2:
@@ -2326,7 +2310,6 @@ label sophiaphase2interaction2part2:
     $ timeofday = "Night"
     jump gotosleep
 
-# part 3
 
 label sophiaphase2interaction2part3:
     hide screen backbuttonROOM
@@ -2419,14 +2402,14 @@ label sophiaphase2interaction2part3:
     scene fs sophiacouchfinger7
     with vpunch
     play sound "audio/oneslap.wav"
-    voice "audio/sophiagameaudio/sophiauhn3.wav"    
+    voice "audio/sophiagameaudio/sophiauhn3.wav"
     sophia "OWWW!!"
     scene fs sophiacouchfinger6
     sophia "[povname] that really hurts! I don't understan-"
     scene fs sophiacouchfinger7
     with vpunch
     play sound "audio/oneslap.wav"
-    voice "audio/sophiagameaudio/sophiamoan2.wav"    
+    voice "audio/sophiagameaudio/sophiamoan2.wav"
     sophia "AHHN!"
     scene fs sophiacouchfinger8
     with Dissolve(0.5)
@@ -2434,7 +2417,7 @@ label sophiaphase2interaction2part3:
     scene fs sophiacouchfinger9
     with vpunch
     play sound "audio/oneslap.wav"
-    voice "audio/sophiagameaudio/sophiamoan1.wav"  
+    voice "audio/sophiagameaudio/sophiamoan1.wav"
     player "You're NOT my girlfriend!"
     player "SAY IT!"
     with vpunch
@@ -2445,7 +2428,7 @@ label sophiaphase2interaction2part3:
     player "SAY IT!"
     with vpunch
     play sound "audio/oneslap.wav"
-    voice "audio/sophiagameaudio/sophiamoan2.wav" 
+    voice "audio/sophiagameaudio/sophiamoan2.wav"
     sophia "I'm a dirty little whore!!"
     init python:
         renpy.music.register_channel("secondsound", loop=True)
@@ -2480,15 +2463,11 @@ label sophiaphase2interaction2part3:
     player "Pathetic."
 
 
-    #$ contact_list.append("Sophia")
-
     $ sophiaphase2interaction1 = 3
     $ sophiaquestlog = "I think Sophia got the message. Unrelated, I really liked that drink from Café Seni..."
     $ timeofday = "Night"
     jump passtime
 
-# interaction 3
-# part 1
 
 label sophiaphase2interaction3part1:
     hide screen uppergui
@@ -2545,7 +2524,6 @@ label sophiaphase2interaction3part1:
     $ sophiaquestlog = "That waitress was a good fuck, I need some sleep"
     jump passtime
 
-# part 2
 
 label sophiaphase2interaction3part2:
     hide screen uppergui
@@ -2618,7 +2596,7 @@ label sophiaphase2interaction3part2:
     sophia "N-No!"
     stop sound
     stop secondsound
-    show sophiawindowsex2    
+    show sophiawindowsex2
     play sound "audio/sophiagameaudio/sophiasexsounds2.wav" loop
     play secondsound "audio/sophiagameaudio/sophiasex2.wav"
     player "I can see you smiling you liar!"
@@ -2636,7 +2614,7 @@ label sophiaphase2interaction3part2:
     player "Ugh!"
     sophia "{i}Finally! F-Finally...f..final....{/i}"
     pause
-    
+
     scene fs blackblank
     with Dissolve(1.0)
     pause
@@ -2648,8 +2626,6 @@ label sophiaphase2interaction3part2:
         $ sophiaquestlog = "I messed up. Rage fucking Sophia wasn't the plan...oh well."
     jump passtime
 
-# end chapter 2
-# end chapter 2 content
 
 label sophiabeachchapter2end:
     hide screen mia_beach1
@@ -2678,7 +2654,7 @@ label sophiabeachchapter2end:
     sophia "How many kids we should have..stuff like that."
     scene fs sophiawaterthensex4
     player "...."
-    #$ sophiaphase2interaction3 = 2
+
     if sophiaphase2interaction3 >= 2:
         "Would you like to end the day with Sophia?"
         menu:
@@ -2896,9 +2872,8 @@ label sophiabeachchapter2end:
 
         jump startofchapter3
 
-# start chapter 3
+# Chapter 3
 
-# Chapter 3 and related character scenes.
 
 label sophiaphase3interaction1part1:
     hide screen sophia_atschool

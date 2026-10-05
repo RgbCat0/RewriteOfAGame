@@ -1,6 +1,7 @@
-# chapter 2
-# interaction 1
-# part 1
+# Stephanie scenes.
+
+# Chapter 2
+
 
 label stephaniescene1part1:
     hide screen uppergui
@@ -10,7 +11,7 @@ label stephaniescene1part1:
     stephanie "Ah, you're here. Good timing."
     player "I just w-"
     stephanie "Just come up."
-    scene fs stephaniehouse 
+    scene fs stephaniehouse
     with Dissolve(1.0)
     show fbplayer current:
         xalign 0.4 ypos 120
@@ -45,13 +46,13 @@ label stephaniescene1part1:
     with Dissolve(0.7)
     "While you waited for Emily, Stephanie was surprisingly a good host"
     "She asked you about yourself and provided refreshments"
-    
-    scene fs stephaniehouse 
+
+    scene fs stephaniehouse
     with Dissolve(0.7)
-    
+
     $ playerSprite = 0
     $ stephanieSprite = 1
-    
+
     show fbplayer current:
         xalign 0.4 ypos 120
     show fbstephanie current:
@@ -128,7 +129,7 @@ label stephaniescene1part1:
     stephanie "C'mon mr White Knight."
     $ stephanieSprite = 0
     $ playerSprite = 1
-    player "Right..." 
+    player "Right..."
     $ playerSprite = 0
     scene fs stephaniealonescene1b
     with Dissolve(0.7)
@@ -237,7 +238,7 @@ label stephaniescene1part1:
     "You and Emily walk in silence back to the school"
     scene fs schoolhallway
     with Dissolve(0.5)
-    
+
     show fbplayer current:
         xalign 0.4 ypos 120
     show fbemily current:
@@ -285,7 +286,6 @@ label stephaniescene1part1:
     $ stephaniedaychecker = dayNumber
     jump gotosunnyside
 
-# part 2
 
 label stephaniescene1part2:
     hide screen uppergui
@@ -368,7 +368,7 @@ label stephaniescene1part2:
     scene fs blackblank
     with Dissolve(0.7)
     pause
-    
+
     scene fs stephaniehouse
     with Dissolve(0.7)
     $ emilySprite = 5
@@ -376,7 +376,7 @@ label stephaniescene1part2:
         xalign 0.4 ypos 120
     show fbemily current:
         xalign 0.5 ypos 120
-    
+
     emily "Where's?"
     $ emilySprite = 4
     $ playerSprite = 1
@@ -402,7 +402,6 @@ label stephaniescene1part2:
     $ stephaniescene1 = 2
     jump overworldmap
 
-# part 3
 
 label stephaniescene1part3:
     hide screen uppergui
@@ -489,7 +488,7 @@ label stephaniescene1part3:
     melissa "{cps=25}She only does that when something JUICY happens lol{/cps}"
     show stephanieselfie postcreampie at fit_vertical:
         xalign 0.5 ypos 0
-    
+
     with Dissolve(0.7)
     $ renpy.notify("Got Stephanie's Picture!")
     $ phone_pictures.append("bullies selfies steph color")

@@ -1,4 +1,4 @@
-# scene 1
+# Penny scenes.
 
 label pennyarcadescene:
     hide screen uppergui
@@ -167,7 +167,6 @@ label pennyarcadescene:
 
     jump overworldmap
 
-# scene after
 
 label pennywakeup:
     hide screen uppergui
@@ -189,7 +188,6 @@ label pennywakeup:
     $ pennyquestlog = "I'm curious about Penny's stream.."
     jump playerlivingroom
 
-# penny scene 2
 
 label pennyfirststream:
     scene fs blackblank
@@ -203,7 +201,7 @@ label pennyfirststream:
     penny "Hey guys, thanks for tuning into another stream."
     scene fs pennyfirststream2
     with Dissolve(0.7)
-    player "Ah, I must've just caught the end of it." 
+    player "Ah, I must've just caught the end of it."
     scene fs pennyfirststream3
     penny "Thank you to all the good boys who donated I weally appreciate it!"
     player "Haha what?"
@@ -256,7 +254,6 @@ label pennyfirststream:
             player "I could always come back another night."
             jump gotosleep
 
-# scene 3
 
 label pennysecondstream:
     scene fs blackblank
@@ -335,8 +332,7 @@ label pennysecondstream:
             player "I uh...don't feel like spending any money on her right now."
             player "I could always come back another night."
             jump gotosleep
-        
-# scene 4
+
 
 label pennythirdstream:
     scene fs pennysecondstream1
@@ -447,7 +443,6 @@ label pennythirdstream:
             player "I could always come back another night."
             jump gotosleep
 
-# scene 5
 
 label pennyphase2sex1:
     stop music fadeout 5
@@ -508,7 +503,7 @@ label pennyphase2sex1:
     $ playerSprite = 0
     penny "...."
     $ pennySprite = 1
-    
+
     show fbpenny current at surpriseshake:
         xalign 0.6 ypos 120
     penny "Are you [username]??!!"
@@ -549,7 +544,6 @@ label pennyphase2sex1:
     $ pennyscene5 = 2
     jump overworldmap
 
-# scene 6
 
 label pennyphase2sex2:
     hide screen uppergui

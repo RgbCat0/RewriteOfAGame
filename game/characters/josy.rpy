@@ -1,6 +1,7 @@
-# chapter 2
-# interaction 1 i guess
-# part 1?
+# Josy scenes.
+
+# Chapter 2
+
 
 label josykatiehangout1:
     hide screen uppergui
@@ -93,7 +94,6 @@ label josykatiehangout1:
     $ josyscene1 = 1
     jump passtime
 
-# scene 2
 
 label josykatiehangout2:
     hide screen uppergui
@@ -187,7 +187,7 @@ label josykatiehangout2:
     player "Fuck! I don't know how much I can take you double teaming me."
     scene fs josykatiestudybj13
     katie "Yeah? You gonna cum for us?"
-    josy "All over our pretty little faces?"   
+    josy "All over our pretty little faces?"
     scene fs josykatiestudybjzoom1
     player "Hah..yeah I'm pretty close haha!"
     scene fs josykatiestudybjzoom3
@@ -195,7 +195,7 @@ label josykatiehangout2:
     josy "C'mon and cum!"
     scene fs josykatiestudybjzoom2
     player "God damn it this is so wrong!"
-    
+
     image katiejosybj:
         "katie josy extras 3.png"
         0.4
@@ -217,8 +217,8 @@ label josykatiehangout2:
     player "What?"
     josy "Hahaha!"
     pause
-    
-    
+
+
     $ josyquestlog = "Josy and Katie...what a pair."
     $ josyscene1 = 2
     jump passtime

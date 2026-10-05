@@ -1,4 +1,6 @@
-#THIS IS DIALOGUE THAT ISN'T ASSOCIATED WITH ANY SINGLE CHARACTER OR QUESTLINE----------------------------------------
+# Shared story scenes and chapter events.
+
+# Startup and chapter 2 skip presets
 
 label gameIntro:
 
@@ -100,6 +102,8 @@ label skiptochapter2:
 label startchapter2Mia:
     $ endchapter1_trigger = "1 mia neutral"
     jump startofchapter2
+
+
 label startchapter2Ava:
     menu:
         "Romantic":
@@ -108,6 +112,8 @@ label startchapter2Ava:
             $ endchapter1_trigger = "1 ava naughty"
 
     jump startofchapter2
+
+
 label startchapter2Sophia:
     menu:
         "Romantic":
@@ -116,6 +122,8 @@ label startchapter2Sophia:
             $ endchapter1_trigger = "1 sophia naughty"
 
     jump startofchapter2
+
+
 label startchapter2Olivia:
     menu:
         "Romantic":
@@ -124,6 +132,8 @@ label startchapter2Olivia:
             $ endchapter1_trigger = "1 olivia naughty"
 
     jump startofchapter2
+
+
 label startchapter2Emily:
     menu:
         "Romantic":
@@ -134,6 +144,8 @@ label startchapter2Emily:
             $ endchapter1_trigger = "1 emily degredation"
 
     jump startofchapter2
+
+
 label startchapter2Charlotte:
     menu:
         "Romantic":
@@ -142,8 +154,13 @@ label startchapter2Charlotte:
             $ endchapter1_trigger = "1 charlotte naughty"
 
     jump startofchapter2
+
+
 label startchapter2Nobody:
     jump esch1_check
+
+
+# Chapter 1: introduction
 
 label startthegame:
     scene fs blackblank
@@ -185,19 +202,20 @@ label startthegame:
     player "{i}She's really close to her friends and to really know her, you have to know them too.{/i}"
     jump startofchapter1
 
+
 label continuegamechapter1:
     scene fs miamorning1
     with Dissolve(2.0)
     window hide
     pause
     scene fs miamorning2
-    #$ hiden_textbox = False
+
     mia "Good morning."
     scene fs miamorning1
     player "Haha morning."
     player "Were you watching me sleep?"
     scene fs miamorning3
-    ##voice "audio/miagameaudio/mialaugh.wav"
+
     mia "Just for a little bit hehe!"
     scene fs miamorning1
     player "Well this is quite the sight to wake up to."
@@ -215,24 +233,24 @@ label continuegamechapter1:
     scene fs miamorning4
     with Dissolve(0.7)
     mia "I should probably get ready."
-    #mia gets up
+
     scene fs miamorning5
     with Dissolve(0.7)
     mia "Are you still going to stop by the café?"
     player "Huh? Oh yeah I’ll head over after I take a shower."
-    # mia bends over
+
     scene fs miamorning6
     with Dissolve(0.7)
     player "{i}God damn I am one lucky S.O.B.{/i}"
     scene fs miamorning8
     with Dissolve(0.7)
     mia "Great! I can’t wait to introduce you to everyone!"
-    #mia pulls her panties up
+
     scene fs miamorning7
     player "Oh yeah..."
     scene fs miamorning8
     mia "You didn't forget did you?"
-    #mia turns around fully dressed
+
     scene fs miamorning7
     player "No no of course not, I'll be there."
     scene fs miamorning8
@@ -241,7 +259,7 @@ label continuegamechapter1:
     player "See you soon babe."
     scene fs miafalling1
     with Dissolve(1.0)
-    ##voice "audio/miagameaudio/miahum.wav"
+
     play music "audio/Main theme (Double Loop).mp3" fadein 5
 
     player "{i}How should I explain this to you? You know those shows that have a bunch of female characters all with different personality types but they're great friends anyways?{/i}"
@@ -254,7 +272,7 @@ label continuegamechapter1:
     player "{i}I’m not saying Mia’s a moron but she spaces out real easy and has a hard time being aware of her immediate surroundings...{/i}"
     voice "audio/miagameaudio/miaah.wav"
     scene fs miafalling2
-   # with vpunch
+
     window hide
     pause
     scene fs blackblank
@@ -368,11 +386,6 @@ label continuegamechapter1:
     hide fs grouptablechat1
     jump postIntro
 
-label specialwakeup:
-    hide screen backbuttonROOM
-    if special_wakeup_target() is not None:
-        jump expression special_wakeup_target()
-    jump returnwhereyouare
 
 label introductions:
     scene fs tablenomcEmily
@@ -384,7 +397,7 @@ label introductions:
     scene fs tablenomcAva
     ava "Aww thanks guys!"
     scene fs tablenomcMiaYawn
-   #voice "audio/miagameaudio/miayawn.wav"
+
     mia "You *Yaaaawwwnn* g-got this Ava!"
     scene fs tablenomcEmily
     emily "Mia? Why are you so tired it’s almost noon."
@@ -399,7 +412,7 @@ label introductions:
     emily "...."
     "Everyone Else Too" "...."
     scene fs tablenomcSurpriseCeptMia
-    voice "audio/everybodyhuh.wav" 
+    voice "audio/everybodyhuh.wav"
     "Everyone" "WHAT!!?? "
     scene fs tablenomcsurpriseAva
     ava "Hahahaha!"
@@ -434,9 +447,9 @@ label introductions:
     scene fs tableMia
     mia "[povname]!"
     scene fs tableMiaKiss
-    #voice "audio/miagameaudio/miamwahkiss.wav"
+
     mia "*Chuu*"
-    #they kiss here
+
     scene fs tableSophiasurprise
     sophia "W-What!?"
     scene fs tableohheysophia
@@ -448,7 +461,7 @@ label introductions:
     scene fs tableohheysophia
     player "Yeah, you didn’t know? I thought Mia would've told you."
     scene fs tableMia
-    mia "I didn’t know you knew eachother!"
+    mia "I didn’t know you knew each other!"
     scene fs tableMCYourTheBoyfriend
     sophia "So...You two had s-s-se-se-"
     scene fs tableHadSomeSecret
@@ -536,1094 +549,18 @@ label introductions:
     jump playerRoom
 
 
-label chapter3bulliesmassage:
-    hide screen uppergui
-    hide screen questboxpreview
-    scene fs blackblank
-    with Dissolve(0.7)
-    "Meanwhile..."
-    scene fbbullies massage1
-    with Dissolve(1.0)
-    pause
-    stephanie "Mmmmm.."
-    scene fbbullies massage2
-    stephanie "God these specialty late night massage places are just heavenly aren't they?"
-    scene fbbullies massage2b
-    melissa "You said it! Just takes all the day's stress right out of me!"
-    scene fbbullies massage2d
-    melissa "Thanks again for always bringing us with you."
-    scene fbbullies massage2c
-    stephanie "Oh you know, it'd be boring without you two around."
-    stephanie "Your constant bickering has become a calming white noise to me at this point."
-    "Masseuse" "Miss are you ready?"
-    stephanie "Yes we're ready!"
-    scene fbbullies massage3
-    with Dissolve(1.0)
-    pause
-    melissa "Mmmmm..."
-    scene fbbullies massage3c
-    melissa "You know you love ussss. Even like, with our bickering."
-    scene fbbullies massage3b
-    stephanie "Hehe."
-    stephanie "By the way, your skin is looking absolutely radiant."
-    scene fbbullies massage3c
-    melissa "Thank youuuu. It's cause'a that skin cream you gave me!"
-    scene fbbullies massage3b
-    stephanie "It works great right? Came from Milan."
-    scene fbbullies massage3c
-    melissa "They make creams from Melons now??"
-    scene fbbullies massage4
-    raven "Hey girls, sorry I'm late."
-    melissa "Raven!"
-    scene fbbullies massage5
-    raven "What you talking about?"
-    melissa "Melons! Haha."
-    raven "YOUR big melons or the other kind?"
-    melissa "Hey my melons ar-"
-    melissa "OHMYGOD."
-    stephanie "Wait."
-    raven "Hmm?"
-    melissa "Bitch don't hmm us, your butt!"
-    scene fbbullies massage6b
-    with Dissolve(0.7)
-    raven "Huh? Oh yeah. Told you I had a tat."
-    scene fbbullies massage6
-    melissa "Cute lil skully!"
-    scene fbbullies massage6b
-    raven "Hehe Skully's a good name I like that."
-    scene fbbullies massage6
-    stephanie "So you weren't lying to seem edgy, you've proven us wrong."
-    stephanie "My apologies."
-    melissa "Yeah me too, I really didn't believe you sorry."
-    scene fbbullies massage6b
-    raven "Bahhhh it's no big deal."
-    scene fbbullies massage6
-    melissa "Sooooo."
-    melissa "Has anyone else seen skully? Hehehe."
-    scene fbbullies massage6b
-    raven "Maybe one...white knight."
-    scene fbbullies massage6
-    stephanie "Hahaha!"
-    melissa "I remember that pic you sent! His dong didn't look all that white after you were done with it heh."
-    scene fbbullies massage6b
-    raven "Some of my best work I must say."
-    raven "I'm not alone though am I? Seems like we all had the same idea for our 'favor'."
-    scene fbbullies massage6
-    melissa "Hehehe, well at least I danced with him first!"
-    stephanie "Ah, that's how she got him."
-    stephanie "Big boobs bouncing around to some music? Gets any guy."
-    scene fbbullies massage6b
-    raven "I bet it was probably when she did the blowjob gesture and pointed to the bathroom."
-    scene fbbullies massage6
-    melissa "Hey! I'll have you know it was a very sultry whisper in his ear!"
-    scene fbbullies massage6b
-    "Everyone" "Hahaha."
-    scene fbbullies massage6
-    pause
-    scene fbbullies massage7
-    with Dissolve(1.0)
-    "Everyone" "Mmmmm..."
-    pause
-    pause
-    scene fbbullies massage7b
-    raven "That cock though amiright?"
-    scene fbbullies massage7c
-    stephanie "It's HUGE!"
-    melissa "OHMYGOD right??"
-    scene fs blackblank
-    with Dissolve(0.7)
-    melissa "Steph just HOW did you take that thing?"
-    stephanie "Honestly he took ME really, helped that I was SO fucking wet."
-    raven "He must've absolutely filled you from that pic you sent."
-    raven "Emily was really on the other side of the door?"
-    stephanie "She. Heard. EVERYTHING."
-    melissa "God that's hot."
-    stephanie "[povname] seemed to think so!"
-    melissa "Hahaha!"
-    raven "Hehehe."
+# Shared wakeup routing
 
-    $ bullieschecker = 1
-    jump passtime
-
-label chapter3event1:
-    "You drive up to Charlotte's house"
-    "It's not quite dark yet but the sun is setting"
-    "*BZZZZZZ*"
-    ava "Yo it's [povname]! [povname]'s here!"
-    player "Hi Ava."
-    ava "Charlotte how do I buzz him in??!"
-    charlotte "You're already drunk Ava just press the button!"
-    ava "No I'm not!"
-    $ playerSprite = 1
-    scene fs charlottelivingroom
-    with Dissolve(0.7)
-    show fbplayer current:
-        xalign 0.25 ypos 120
-    with Dissolve(0.3)
-    player "I'm heeeere!"
-    $ playerSprite = 0
-    $ emilySprite = 1
-    show fbemily current:
-        xalign 0.5 ypos 120
-    with Dissolve(0.3)
-    emily "He's heeeeere!"
-    $ emilySprite = 0
-    $ miaSprite = 1
-    show fbmia current:
-        xalign 0.4 ypos 120
-    with Dissolve(0.3)
-    mia "He's heeeere!"
-    $ miaSprite = 0
-    $ playerSprite = 1
-    player "Hey baby, hey everyone."
-    $ playerSprite = 0
-    $ oliviaSprite = 5
-    show fbolivia current behind fbemily:
-        xalign 0.65 ypos 120
-    with Dissolve(0.3)
-    olivia "HE'S!"
-    $ oliviaSprite = 9
-    olivia "Here, Hi [povname]."
-    $ oliviaSprite = 8
-    $ charlotteSprite = 1
-    show fbcharlotte current:
-        xalign 0.7 ypos 120
-    charlotte "Welcome."
-    $ charlotteSprite = 0
-    $ playerSprite = 1
-    player "Hey Charlotte, thanks again. I brought snacks."
-    $ playerSprite = 0
-    $ avaSprite = 1
-    show fbava current:
-        xalign 0.8 ypos 120
-    ava "He's heeeeeere!"
-    $ avaSprite = 0
-    $ emilySprite = 1
-    emily "Haha we already did that Ava."
-    $ emilySprite = 0
-    $ avaSprite = 1
-    ava "Dun care."
-    $ avaSprite = 0
-    $ charlotteSprite = 1
-    charlotte "Alright well that means almost everyone's here."
-    $ charlotteSprite = 0
-    show fbsophia current:
-        xalign 0.15 xzoom -1.0 ypos 120
-    with Dissolve(0.5)
-    $ sophiaSprite = 4
-    sophia "Ugh."
-    sophia "Finally freaking made it."
-    $ sophiaSprite = 3
-    $ miaSprite = 1
-    mia "Sophia!"
-    $ miaSprite = 0
-    $ emilySprite = 1
-    emily "Everything alright? We were wondering where you were."
-    $ emilySprite = 0
-    $ sophiaSprite = 4
-    sophia "I had, the WORSE day oh my god."
-    sophia "Idonevenwannatalkaboutit."
-    $ playerSprite = 15
-    $ sophiaSprite = 3
-    player "Oh, sorry about that Soph."
-    $ playerSprite = 14
-    $ sophiaSprite = 4
-    sophia "Thanks [povname]."
-    sophia "Charlotte, PLEASE can we get into the hot tub? I need stress relief like yesterday."
-    $ sophiaSprite = 3
-    $ charlotteSprite = 1
-    charlotte "Oh uh, yeah sure. We're all here now."
-    charlotte "Follow me everyone. Don't forget to grab a towel."
-    $ charlotteSprite = 0
-    hide fbcharlotte current
-    $ sophiaSprite = 4
-    sophia "THANK you."
-    $ sophiaSprite = 3
-    hide fbsophia current
-    hide fbemily current
-    with Dissolve(0.5)
-    pause
-    hide fbolivia current
-    hide fbava current
-    with Dissolve(0.5)
-    $ miaSprite = 3
-    mia "Oh!"
-    mia "But what about-"
-    $ miaSprite = 2
-    $ playerSprite = 1
-    player "It's okay Mia, go relax with your friends."
-    $ playerSprite = 0
-    $ miaSprite = 3
-    mia "Okay...."
-    scene fs blackblank
-    with Dissolve(0.5)
-    "A few minutes later.."
-    scene fs sleepoverpartone5
-    with Dissolve(1.0)
-    "Everyone" "Ahhhhh...."
-    sophia "Heaven..."
-    emily "So good.."
-    scene fs sleepoverpartone3
-    with Dissolve(0.5)
-    "Everyone" "Mmmmmm."
-    scene fs sleepoverpartone6
-    charlotte "I don't like to flaunt my wealth often but when it comes to this?"
-    charlotte "It's good to be rich."
-    mia "..."
-    scene fs sleepoverpartone7
-    olivia "Something wrong Mia?"
-    scene fs sleepoverpartone8
-    mia "No...it's just."
-    mia "We're relaxing and enjoying the hot tub out here."
-    mia "While [povname]'s inside."
-    mia "We already agreed to let him join us but then we leave him out of our group bonding?"
-    charlotte "Sorry Mia, in my house boys aren't allowed to see girls naked."
-    ava "Stupid rule."
-    mia "Hmmm!"
-    scene fs sleepoverpartone9
-    mia "I got an idea!!"
-    mia "I'll be right back!"
-    emily "What's she up to now?"
-    ava "Whatever it is, I know it's crazy and I'm gonna love it."
-    scene fs sleepoverpartone10
-    charlotte "Bah, it'll be fine."
-    mia "Okay now careful stepping in!"
-    player "Alright I think I got it.."
-    scene fs sleepoverpartone11
-    mia "There!"
-    mia "Guys I brought [povname]! But I used a blindfold so he can't see anything!"
-    charlotte "...."
-    player "Genius idea Mia."
-    scene fs sleepoverpartone12
-    player "Mwah! Reward kiss."
-    scene fs sleepoverpartone13
-    "Everyone" "*Gasp*"
-    emily "!!!!!!"
-    scene fs sleepoverpartone14
-    player "Wait a minute..."
-    scene fs sleepoverpartone15
-    pause
-    emily "Ehn..."
-    player "...."
-    scene fs sleepoverpartone16
-    player "YOUR NOT MIA!!!"
-    scene fs sleepoverpartone17
-    charlotte "Then fucking stop groping her you bastard!!"
-    scene fs sleepoverpartone18
-    ava "AHAHAHAHAHA!"
-    ava "Oh my God it's already the best sleepover we've done!"
-    scene fs sleepoverpartone19
-    with Dissolve(0.7)
-    ava "Okay okay guys I just got an idea for a game thanks to [povname]."
-    player "Oh?"
-    ava "Okay."
-    scene fs sleepoverpartone23
-    with Dissolve(0.5)
-    ava "Take your hand."
-    player "Kay."
-    scene fs sleepoverpartone21
-    ava "And grab this real good."
-    scene fs sleepoverpartone20
-    ava "Ahn."
-    charlotte "Wha-AVA!"
-    ava "Would you relax Charlotte?"
-    ava "Okay give it a good squeeze or two."
-    scene fs sleepoverpartone20b
-    player "Mhmm."
-    ava "Alright nice."
-    scene fs sleepoverpartone22
-    ava "So. Who's boobs are these?"
-    player "...."
-    player "They're yours."
-    scene fs blackblank
-    ava "Okay maybe it doesn't work with me since I explained it haha."
-    olivia "I get it!"
-    ava "Everyone ready to try it?"
-    mia "Okay!"
-    sophia "YES!"
-    emily "I'm not sure.."
-    ava "Oh don't be a prude bitch!"
-    emily "Wha!? I'm no-"
-    ava "Okay who's up? Let's start with you!"
-    "You hear some water sloshing towards you"
-    "You put your hands up and are greeted by some tits."
-    "They're on the smaller side, but perky and firm."
-    $ correctanswer = 0
-    $ answerguess = ""
-    "Who's boobs are they?"
-    menu:
-        "Mia's":
-            $ correctanswer += 0
-            $ answerguess = "Mia"
-        "Olivia's":
-            $ correctanswer += 0
-            $ answerguess = "Olivia"
-        "Emily's":
-            $ correctanswer += 0
-            $ answerguess = "Emily"
-        "Sophia's":
-            $ correctanswer += 0
-            $ answerguess = "Sophia"
-        "Ava's":
-            $ correctanswer += 0
-            $ answerguess = "Ava"
-        "Charlotte's":
-            $ correctanswer += 1
-            $ answerguess = "Charlotte"
-
-    scene fs sleepoverpartone24
-    with Dissolve(0.5)
-    charlotte "...."
-    charlotte "{i}Can't believe I'm doing this in front of the girls.{/i}"
-    player "Hmmm, these are [answerguess]'s. I'm sure of it."
-    scene fs sleepoverpartone25
-    ava "Interesting interesting."
-    pause
-    
-    scene fs blackblank
-    ava "Okay who's next? How about this lovely lady!?"
-    "You hear another girl approach you, you lift up your hands once again"
-    "These breasts are big for sure, they droop down ever so slightly but have a firm shape"
-    "Who's boobs are they?"
-    menu:
-        "Mia's":
-            $ correctanswer += 0
-            $ answerguess = "Mia"
-        "Olivia's":
-            $ correctanswer += 1
-            $ answerguess = "Olivia"
-        "Emily's":
-            $ correctanswer += 0
-            $ answerguess = "Emily"
-        "Sophia's":
-            $ correctanswer += 0
-            $ answerguess = "Sophia"
-        "Ava's":
-            $ correctanswer += 0
-            $ answerguess = "Ava"
-        "Charlotte's":
-            $ correctanswer += 0
-            $ answerguess = "Charlotte"
-
-    scene fs sleepoverpartone33
-    with Dissolve(0.5)
-    olivia "...."
-    olivia "{i}This is kinda nice.{/i}"
-    scene fs sleepoverpartone34
-    with hpunch
-    olivia "Ahn!"
-    ava "Hey no slapping the merchandise!"
-    scene fs sleepoverpartone33
-    olivia "No..it's okay."
-    ava "I see! nevermind then!"
-    player "I think...these are [answerguess]'s."
-    pause
-    
-    scene fs blackblank
-    ava "Step right up step right up who's next? This beautiful maiden over here!"
-    "You hear some of the girls giggling, clearly this little game has gotten them in a silly mood"
-    "These boobs feel average in size, if not slightly larger. Decent firmness, decent shape, overall some good boobs."
-    "Who's boobs are they?"
-    menu:
-        "Mia's":
-            $ correctanswer += 0
-            $ answerguess = "Mia"
-        "Olivia's":
-            $ correctanswer += 0
-            $ answerguess = "Olivia"
-        "Emily's":
-            $ correctanswer += 1
-            $ answerguess = "Emily"
-        "Sophia's":
-            $ correctanswer += 0
-            $ answerguess = "Sophia"
-        "Ava's":
-            $ correctanswer += 0
-            $ answerguess = "Ava"
-        "Charlotte's":
-            $ correctanswer += 0
-            $ answerguess = "Charlotte"
-
-    scene fs sleepoverpartone28
-    with Dissolve(0.7)
-    emily "{i}This is fine! I'm not turned on by this!{/i}"
-    player "Hmmm. Very nice."
-    player "These are [answerguess]'s boobs!"
-    scene fs sleepoverpartone29
-    emily "{i}I'm definitely not turned on by everyone watching me getting groped...{/i}"
-    emily "{i}Thank God I'm in a hot tub{/i}"
-    pause
-    scene fs blackblank
-    ava "Not too many left now! Who's next? Step right up!"
-    "These next tits had very hard nipples, maybe slightly less than average size but not tiny by any means"
-    "Who's boobs are they?"
-    menu:
-        "Mia's":
-            $ correctanswer += 0
-            $ answerguess = "Mia"
-        "Olivia's":
-            $ correctanswer += 0
-            $ answerguess = "Olivia"
-        "Emily's":
-            $ correctanswer += 0
-            $ answerguess = "Emily"
-        "Sophia's":
-            $ correctanswer += 1
-            $ answerguess = "Sophia"
-        "Ava's":
-            $ correctanswer += 0
-            $ answerguess = "Ava"
-        "Charlotte's":
-            $ correctanswer += 0
-            $ answerguess = "Charlotte"
-    
-    scene fs sleepoverpartone30
-    player "Hmmm."
-    sophia "Hehehe!"
-    scene fs sleepoverpartone31
-    sophia "!!!"
-    ava "Uh..you can keep going for a bit if you want?"
-    player "Nope"
-    player "I'm good."
-    ava "You sure? The volunteer doesn't mind."
-    player "I know it's [answerguess]."
-    scene fs sleepoverpartone32
-    sophia "What??"
-    sophia "UGH!"
-    scene fs blackblank
-    ava "Okay just one girl left!"
-    "You can feel these tits are huge, tied at least in size with the other large ones"
-    "Your hands push into them with a slight amount of give. Fantastic shape, very soft, and small perky nipples"
-    "Who's boobs are they?"
-    menu:
-        "Mia's":
-            $ correctanswer += 1
-            $ answerguess = "Mia"
-        "Olivia's":
-            $ correctanswer += 0
-            $ answerguess = "Olivia"
-        "Emily's":
-            $ correctanswer += 0
-            $ answerguess = "Emily"
-        "Sophia's":
-            $ correctanswer += 0
-            $ answerguess = "Sophia"
-        "Ava's":
-            $ correctanswer += 0
-            $ answerguess = "Ava"
-        "Charlotte's":
-            $ correctanswer += 0
-            $ answerguess = "Charlotte"
-
-    scene fs sleepoverpartone27
-    with Dissolve(0.5)
-    mia "Hehe."
-    player "Ah...very nice."
-    ava "Well?"
-    player "I'd know these anywhere Ava, these tits belong to [answerguess]."
-    scene fs sleepoverpartone26
-    mia "..."
-    ava "Okay! That's everyone thanks for playing!"
-    scene fs sleepoverpartone2
-    with Dissolve(0.5)
-    player "Haha that was actually pretty fun girls thanks for that."
-    player "And for letting me in here."
-    charlotte "You better appreciate how lucky you are."
-    charlotte "Getting to touch all our breasts like that."
-    charlotte "Rubbing and pinching them, and for free no less!"
-    charlotte "Freely taking your hands and having your fill of our bodies!"
-    scene fs sleepoverpartone35
-    player "I appreciate it don't you worry about that!"
-    if correctanswer == 5:
-        jump miahelpwithboner
-    else:
-        jump getoutoftub
-
-label getoutoftub:
-    "Everyone" "!!!"
-    charlotte "Oh my God!"
-    player "What is it?"
-    mia "You've got a boner [povname]."
-    player "Oh shit uh."
-    scene fs sleepoverpartone36
-    with Dissolve(0.5)
-    player "Sorry guys. That's cause and effect for you."
-    player "I'll get out of the tub now, you guys enjoy the rest of it I'll see you inside."
-    scene fs blackblank
-    with Dissolve(0.7)
-    "The girls relaxed for a bit longer, processing the sight of your giant hard cock"
-    "Each with their own thoughts about it.."
-    jump continuesleepover2
-    
-label miahelpwithboner:
-    player "...."
-    player "Why'd it get quiet?"
-    mia "You have a boner [povname]."
-    scene fs sleepoverpartone36
-    player "Oh shit I do. Girls I'm so sorry."
-    player "I should probably-"
-    scene fs sleepoverpartone38
-    with Dissolve(0.5)
-    mia "No! Don't worry everyone!"
-    mia "I want to make sure everyone is comfortable at Charlotte's party!"
-    scene fs sleepoverpartone37
-    charlotte "Huh?"
-    scene fs sleepoverpartone38
-    mia "I will take care of this real quick! Then we can go back to relaxing."
-    player "What do you mean Mia?"
-    show miajaccuzziboobjob movie1
-    player "Oh that's...that's what you mean."
-    charlotte "{size=25}Mia what the hell are you doing??{/size}"
-    show miajaccuzziboobjob movie2
-    mia "I know the quickest way to get rid of [povname]'s hard on!"
-    mia "Don't worry everyone!"
-    ava "Oh I am NOT worried hehe."
-    player "Oh man Mia your tits feel incredible as always."
-    charlotte "{i}Even [povname]'s huge penis can still be covered with Mia's boobs!{/i}"
-    pause
-    show miajaccuzziboobjob movie3
-    mia "Mmm!"
-    mia "*Suck*"
-    player "Oh Fuck baby that's it!"
-    olivia "{i}I can't look away.{/i}"
-    player "The other...hah...girls are gone right?"
-    emily "{i}She's so good at this! When did she get so good at this??{/i}"
-    player "Fuck baby I'm gonna cum!"
-    pause
-    show miajaccuzziboobjob movie4
-    player "AGH FUCK."
-    player "YES!"
-    "Everyone" "!!!!"
-    mia "*Gulp* *Gulp*"
-    pause
-    scene fs blackblank
-    with Dissolve(0.5)
-    player "You drained me, I gotta go clean up babe."
-    mia "Okay! See you soon :D"
-    scene fs sleepoverpartone4
-    with Dissolve(1.0)
-    mia "Ahhh there."
-    mia "Now we can all relax again."
-    emily "You said it..."
-    scene fs sleepoverpartone40
-    with vpunch
-    emily "NOT!"
-    scene fs sleepoverpartone39
-    mia "Huu?"
-    scene fs sleepoverpartone40
-    emily "Mia have you ANY idea how inappropriate that was??"
-    emily "You made your friends watch as you brought your boyfriend to climax IN CHARLOTTE'S HOT TUB."
-    emily "WHERE WE ALL CURRENTLY ARE."
-    scene fs sleepoverpartone39
-    mia "But I swallowed so none of it would get in the tub..."
-    scene fs sleepoverpartone40
-    emily "The issue is that you think it's alright to subject us to such lewd antics!"
-    emily "Did you stop to think how we would feel at all?"
-    emily "This is a sleepover not some sex party!"
-    scene fs sleepoverpartone41
-    mia "Oh..."
-    mia "Oh geez."
-    olivia "Don't worry Mia, Emily's spouting some bullshit."
-    emily "What?!"
-    olivia "I saw her fingering herself while you were giving [povname] that boobjob."
-    emily "N-No I wasn't!"
-    olivia "Oh, you totally were."
-    olivia "You were really going at it too, did you cum?"
-    scene fs sleepoverpartone42
-    emily "I WAS NOT TOUCHING MYSELF!!"
-    scene fs sleepoverpartone43
-    olivia "My mistake then, I saw the fast, short movements of your arm in and out of the water and just assumed."
-    ava "Hehehe."
-    ava "Like I said, best sleepover ever."
-    jump continuesleepover2
-
-label continuesleepover2:
-    
-    scene fs blackblank
-    with Dissolve(1.0)
-    "You got changed into your sleepwear once you got out of the hot tub"
-    "Everyone else joined you not too long after in the living room"
-
-    scene fs sleepoverparttwo1
-    pause
-    player "Well this certainly takes me back."
-    ava "Spin the bottle!"
-    ava "Pretty much truth or dare, someone spins it and whoever it lands on has to take on the spinner's truth or dare."
-    sophia "Ohhhh much fun!"
-    mia "Hehe!"
-    emily "Hmmm."
-    charlotte "Who's going first?"
-    scene fs mcbottle
-    player "This is my first time here so I'll go first!"
-    emily "Alrighty go ahead."
-    player "I don't like to cloud my judgement when I know who I'm asking."
-    player "So I'm going to dare whoever this lands on to....kiss the person opposite them."
-    scene fs spinbottle1
-    ava "Oooohh. I like it!"
-    scene fs spinbottle4 
-    emily "Okay! That's Charlotte."
-    charlotte "So that means.."
-    scene fs spinbottlesophiachar1
-    sophia "Charlooootte!!"
-    charlotte "S-Sophia?"
-    scene fs spinbottlesophiachar2
-    sophia "MMMWAH!"
-    charlotte "??"
-    scene fs spinbottlesophiachar3
-    sophia "Charlotte. My short Queen. My friend. Comrade in arms."
-    sophia "We must stick together more!"
-    scene fs spinbottlesophiachar3b
-    charlotte "Oh hehe...um what?"
-    scene fs spinbottlesophiachar4
-    sophia "Our enemies surround us. Simply look and you will see."
-    scene fs spinbottlesophiachar4b
-    charlotte "I don't know what you..."
-    scene fs spinbottlesophiachar5
-    with vpunch
-    pause
-    scene fs spinbottlesophiachar6
-    with vpunch
-    pause
-    scene fs spinbottlesophiachar7
-    with vpunch
-    pause
-    scene fs spinbottlesophiachar8
-    charlotte "I...I see."
-    scene fs spinbottlesophiachar9
-    charlotte "I see now sister!"
-    scene fs spinbottlesophiachar9b
-    sophia "We must stand up and fight back against our oppressors!"
-    sophia "Small boobs are love!"
-    scene fs spinbottlesophiachar9c
-    "Sophia & Charlotte" "Small boobs are life!"
-    player "Amen!"
-    scene fs spinbottle4
-    with Dissolve(0.7)
-    emily "Okay who's spinning next?"
-    scene fs sophiabottle
-    sophia "I will!"
-    scene fs spinbottle1
-    sophia "Okay c'mon c'mon c'mon!"
-    scene fs spinbottle2
-    emily "Ava!"
-    sophia "No!"
-    ava "Hey that's me!"
-    ava "Whut you gonna do to me Soph??"
-    sophia "Ugh. Go kiss Mia or something."
-    mia "Oh hehe!"
-    emily "You know you don't have to keep making people kiss.."
-    scene fs spinbottleavamia1
-    with Dissolve(0.5)
-    pause
-    mia "Okay!"
-    scene fs spinbottleavamia1b
-    mia "Chuuu."
-    scene fs spinbottleavamia2
-    ava "Hey babe."
-    mia "Huh?"
-    ava "Let's make your boyfriend jealous."
-    mia "??"
-    scene fs spinbottleavamia3
-    ava "Mmmm."
-    scene fs spinbottleavamia4
-    mia "Uhnn."
-    ava "Mlmmm.."
-    sophia "Oh right...Ava gets super horny when she drinks.."
-    scene fs spinbottleavamia5
-    ava "Ahn..hah.."
-    mia "Ahh.."
-    scene fs spinbottleavamia5b
-    pause
-    scene fs spinbottleavamia5c
-    player "Is...is she taunting me?"
-    sophia "Oh for sure."
-    olivia "100 percent"
-    ava "Hehehe."
-    scene fs spinbottleavamia6
-    mia "Hah.."
-    ava "You like that Mia?"
-    scene fs spinbottleavamia6b
-    mia "Yes you're a very good kisser!"
-    ava "Hehe."
-    scene fs spinbottleavamia6c
-    mia "I think I prefer [povname] though sorry."
-    ava "W-What?"
-    mia "He's just a bit better, really good with his tongue!"
-    mia "Nothing personal!"
-    ava "I..."
-    ava "T-Tongue?"
-    sophia "Ah. She broke."
-    scene fs spinbottle2
-    emily "Next!"
-    scene fs miabottle
-    mia "Oh let me!"
-    scene fs spinbottle1
-    pause
-    scene fs spinbottle3
-    emily "Ah!"
-    emily "Oh that's me."
-    mia "Okay who hasn't...Olivia kiss Emily!"
-    emily "Again with the kissing?!"
-    scene fs spinbottleemilyolivia1
-    with Dissolve(0.7)
-    pause
-    emily "H-Hey Olivia.."
-    olivia "Hey there beautiful."
-    scene fs spinbottleemilyolivia2
-    emily "Oh I don't know if I'm beautiful.."
-    scene fs spinbottleemilyolivia3
-    pause
-    scene fs spinbottleemilyolivia4
-    pause
-    olivia "Would these lips lie to you?"
-    emily "N-No.."
-    olivia "Let me prove it."
-    scene fs spinbottleemilyolivia5
-    pause
-    scene fs spinbottleemilyolivia6
-    pause
-    scene fs spinbottleemilyolivia7
-    pause
-    emily "Mmmmm."
-    olivia "Mmmmm."
-    scene fs spinbottleemilyolivia8
-    "Olivia & Emily" "MMMM!"
-    pause
-    pause
-    scene fs spinbottleemilyolivia7
-    ava "Booooo"
-    ava "Lame! No passion!"
-    scene fs spinbottleemilyolivia9
-    emily "WHAT DO YOU MEAN NO PASSION!"
-    ava "No passion! No Tongue!"
-    emily "YOU DON'T NEED TONGUE TO HAVE PASSION!"
-    ava "Booo"
-    ava "No sex! Boooo!"
-    emily "AVA!!"
-    olivia "Hehehe."
-    scene fs blackblank
-    with Dissolve(0.7)
-    pause
-    "You and the girls continue playing around and having fun"
-    "Food gets ordered and drinks are had"
-    "Overall it was a great night, you had much more fun than you were expecting"
-    "And eventually the time came to head to bed and a question you had at the back of your mind had to finally be answered"
-    "Who do you want to sleep with?"
-    $ chosenchick = ""
-
-    menu:
-        "Emily" if emilyphase3interaction1 >= 2:
-            $ chosenchick = "Emily"
-        "Mia" if miaphase3interaction1 >= 2:
-            $ chosenchick = "Mia"
-        "Sophia" if sophiaphase3interaction1 >= 2:
-            $ chosenchick = "Sophia"
-        "Ava" if avaphase3interaction1 >= 2:
-            $ chosenchick = "Ava"
-        "Olivia" if oliviaphase3interaction1 >= 2:
-            $ chosenchick = "Olivia"
-        "Charlotte" if charlottephase3interaction1 >= 2:
-            $ chosenchick = "Charlotte"
-        "Nobody":
-            $ chosenchick = "Nobody"
-
-    jump continuephase3event1bedtime
-    
-label continuephase3event1bedtime:
-
-    if chosenchick == "Charlotte":
-        jump sleepwithcharlotte
-    elif chosenchick == "Mia":
-        jump sleepwithmia
-    elif chosenchick == "Emily":
-        jump sleepwithemily
-    elif chosenchick == "Olivia":
-        jump sleepwitholivia
-    elif chosenchick == "Ava":
-        jump sleepwithava
-    elif chosenchick == "Sophia":
-        jump sleepwithsophia
-    elif chosenchick == "Nobody":
-        jump passtime
-
-label sleepwithcharlotte:
-    scene fs sleepoverbedpovcharlotte
-    with Dissolve(0.7)
-    "Unfortunately Charlotte's content for this event is not finished"
-    scene fs groupbedsexcharlotte1
-    with Dissolve(0.5)
-    "Her scene will be complete in the next update! Only Mia's is complete for now."
-    scene fs groupbedsexcharlotte2
-    pause
-    "Would you like to end the night or watch Mia's content instead?"
-    menu:
-        "Watch Mia":
-            jump sleepwithmia
-        "End the night":
-            jump passtime
-
-label sleepwithemily:
-    scene fs sleepoverbedpovemily
-    with Dissolve(0.7)
-    "Unfortunately Emily's content for this event is not finished"
-    scene fs groupbedsexemily1
-    pause
-    scene fs groupbedsexemily2
-    pause
-    "Would you like to end the night or watch Mia's content instead?"
-    menu:
-        "Watch Mia":
-            jump sleepwithmia
-        "End the night":
-            jump passtime
-
-label sleepwithsophia:
-    scene fs sleepoverbedpovsophia
-    with Dissolve(0.7)
-    "Unfortunately Sophia's content for this event is not finished"
-    scene fs groupbedsexsophia1
-    pause
-    scene fs groupbedsexsophia2
-    pause
-    "Would you like to end the night or watch Mia's content instead?"
-    menu:
-        "Watch Mia":
-            jump sleepwithmia
-        "End the night":
-            jump passtime
-
-label sleepwithava:
-    scene fs sleepoverbedpovava
-    with Dissolve(0.7)
-    "Unfortunately Ava's content for this event is not finished"
-    scene fs groupbedsexava1
-    pause
-    scene fs groupbedsexava2
-    pause
-    scene fs groupbedsexava3
-    pause
-    "Would you like to end the night or watch Mia's content instead?"
-    menu:
-        "Watch Mia":
-            jump sleepwithmia
-        "End the night":
-            jump passtime
-
-label sleepwitholivia:
-    scene fs sleepoverbedpovolivia
-    with Dissolve(0.7)
-    "Unfortunately Olivia's content for this event is not finished"
-    scene fs groupbedsexolivia1
-    pause
-    scene fs groupbedsexolivia2
-    pause
-    "Would you like to end the night or watch Mia's content instead?"
-    menu:
-        "Watch Mia":
-            jump sleepwithmia
-        "End the night":
-            jump passtime
-
-
-
-label phase2ending:
-    scene fs blackblank
-    hide screen uppergui
+label specialwakeup:
     hide screen backbuttonROOM
-    "Beach day has arrived."
-    scene fs playerroomMorn
-    with Dissolve(1.0)
-    show fbplayer current:
-        xalign 0.5 ypos 120
-
-    player "*Yawn*."
-    player "I gotta go pick up Mia now so we can head out early!"
-    scene fs blackblank
-    with Dissolve(0.7)
-    "After you arrive at Mia's place you find out everyone is already there"
-    scene fs carscene1
-    with Dissolve(1.0)
-    pause
-    scene fs carscene3
-    player "You all look great!"
-    player "I'll have to change when we get there."
-    scene fs carscene2
-    mia "Sorry I forgot to tell you!"
-    mia "But at least we're already changed and will save some time there and back."
-    scene fs carscene3
-    player "True."
-    scene fs carscene4
-    charlotte "I still am not happy with this arrangment."
-    scene fs carscene5
-    emily "Oh c'mon it's not that bad, there wasn't enough room."
-    emily "and it's kinda fun, it feels like my little sister is sitting on my lap!"
-    scene fs carscene4
-    charlotte "You're not the little sister in this situation."
-    scene fs carscene3
-    player "At least you're not in the back like Sophia."
-    scene fs carscene6
-    mia "You doing okay back there Soph?"
-    pause
-    scene fs carscene7
-    sophia "Y-Yeah!"
-    sophia "Never better!"
-    scene fs blackblank
-    with Dissolve(0.7)
-    "It didn't take too much longer before you all arrived at your destination..."
-    scene fs beach
-    "The beach!"
-    play music "audio/justbeach.mp3" fadein 5
-    $ charlotteSprite = 15
-    $ avaSprite = 22
-    $ sophiaSprite = 11
-    $ oliviaSprite = 15
-    $ emilySprite = 6
-
-    if swimsuitchoice == "white":
-        show fbmia swimsuit1happytalk:
-            xalign 0.5 ypos 120
-    elif swimsuitchoice == "purple":
-        show fbmia swimsuit2happytalk:
-            xalign 0.5 ypos 120
-    else:
-        show fbmia swimsuit3happytalk:
-            xalign 0.5 ypos 120
-
-    #voice "audio/miagameaudio/miahehe.wav"
-    mia "Woohoo!"
-    #hide fbmia
-    #show fbmia current:
-    #    xalign 0.5 ypos 120
-    #$ miaSprite = 14
-    show fbcharlotte current:
-        xalign 0.6 ypos 120
-    #voice "audio/charlottegameaudio/charlotteugh.wav"
-    charlotte "Finally."
-    $ charlotteSprite = 14
-    $ avaSprite = 23
-    show fbava current behind fbmia:
-        xalign 0.4 ypos 120
-    #voice "audio/avagameaudio/avagiggle.wav"
-    ava "Let's have some fun!"
-    $ avaSprite = 22
-    show fbsophia current:
-        xalign 0.7 ypos 120
-    sophia "UMIIII!"
-    $ sophiaSprite = 12
-    $ oliviaSprite = 17
-    show fbolivia current:
-        xalign 0.85 ypos 120
-    olivia "Yay~"
-    $ oliviaSprite = 15
-    $ emilySprite = 8
-    show fbemily current:
-        xalign 0.3 ypos 120
-    emily "I'm so excited! Let's go girls!"
-    $ emilySprite = 6
-    show fbplayer current:
-        xalign 0.2 ypos 120
-    $ playerSprite = 1
-    player "I'll get changed real quick then meet up with you guys!"
-    $ playerSprite = 0
-    $ emilySprite = 8
-    emily "Sounds great!"
-    $ emilySprite = 6
-    scene fs volleyball1
-    with Dissolve(1.0)
-    "It was early in the day but the whole group was excited and energetic"
-    scene fs volleyball2
-    with Dissolve(0.5)
-    ava "Ava made sure everyone played some volleyball first"
-
-    if swimsuitchoice == "white":
-        scene fs volleyball3a
-    elif swimsuitchoice == "purple":
-        scene fs volleyball3b
-    else:
-        scene fs volleyball3c
-    pause
-    if swimsuitchoice == "white":
-        scene fs volleyball4a
-    elif swimsuitchoice == "purple":
-        scene fs volleyball4b
-    else:
-        scene fs volleyball4c
-    voice "audio/miagameaudio/miaah2.wav"
-    mia "Ouch!"
-    ava "Sorry!"
-    scene fs volleyball5
-    with Dissolve(0.7)
-    "It was a great time"
-    "Well at least I certainly enjoyed it"
-    scene fs volleyball6
-    with Dissolve(0.5)
-    player "Hup!"
-    scene fs volleyball7
-    with Dissolve(0.7)
-    voice "audio/sophiagameaudio/sophiaAhh.wav"
-    sophia "Ahh!"
-    play sound "audio/whistleaudio.ogg"
-    charlotte "*Whistles*"
-    if swimsuitchoice == "white":
-        scene fs volleyball8a
-    elif swimsuitchoice == "purple":
-        scene fs volleyball8b
-    else:
-        scene fs volleyball8c
-    with Dissolve(1.0)
-    "After volleyball the group split up to have fun doing whatever"
-    if swimsuitchoice == "white":
-        scene fs volleyball9a
-    elif swimsuitchoice == "purple":
-        scene fs volleyball9b
-    else:
-        scene fs volleyball9c
-    "It was exactly what everyone needed after the stress of school and everything else"
-    if swimsuitchoice == "white":
-        scene fs volleyball10a
-    elif swimsuitchoice == "purple":
-        scene fs volleyball10b
-    else:
-        scene fs volleyball10c
-    pause
-    "And seeing everyone in their bikinis I mean c'mon"
-    if swimsuitchoice == "white":
-        scene fs volleyball11a
-    elif swimsuitchoice == "purple":
-        scene fs volleyball11b
-    else:
-        scene fs volleyball11c
-    with Dissolve(0.7)
-    "It was great"
-    scene fs blackblank
-    with Dissolve(1.0)
-    emily "Alright everyone! Gather for a picture!"
-    charlotte "Do I have to?"
-    olivia "Can I finish my ice cream first?"
-    sophia "No who cares? Get over here!"
-    mia "Hehe."
-    scene fs beachpicture
-    with Dissolve(1.0)
-    emily "Smile everyone!"
-    pause
-    play sound "audio/camerasnap.mp3"
-    with flash
-    pause
-    jump explorebeach
+    if special_wakeup_target() is not None:
+        jump expression special_wakeup_target()
+    jump returnwhereyouare
 
 
+# Chapter 1 ending: track meet
 
-
-
-
-
-
-
-
-
-
-
-label phase1ending: # aka chapter 2 begins
+label phase1ending:
     scene fs blackblank
     hide screen uppergui
     hide screen backbuttonROOM
@@ -1637,7 +574,7 @@ label phase1ending: # aka chapter 2 begins
     scene fs blackblank
     with Dissolve(0.7)
     "You get yourself ready and head out the door to your car"
-    "You haven't really gotten a chance to drive it yet so youre pretty excited"
+    "You haven't really gotten a chance to drive it yet so you're pretty excited"
     "However your excitement was short lived since it didn't take long before you arrived at the sports field"
     player "Alright now where are they? We're supposed to meet out front I think."
 
@@ -1913,7 +850,7 @@ label phase1ending: # aka chapter 2 begins
             xalign 0.25 ypos 120
         with Dissolve(0.5)
 
-        #$ hiden_textbox = False
+
         $ emilySprite = 1
         emily "Man what a race!"
         $ emilySprite = 0
@@ -2189,7 +1126,7 @@ label phase1ending: # aka chapter 2 begins
         $ playerSprite = 0
         $ avaSprite = 3
         $ emilySprite = 0
-        ava "Ugh I am exhausted, I gotta take a shower then head home." 
+        ava "Ugh I am exhausted, I gotta take a shower then head home."
 
     if esch1_choice == "mia":
         jump gohomemia
@@ -2207,11 +1144,12 @@ label phase1ending: # aka chapter 2 begins
         jump esch1_check
     scene fs blackblank
     "Rgbcat" "broke script ahh"
-    "Rgbcat" "If you see this, something of the mod didnt work. Please send me your save file on f95!"
+    "Rgbcat" "If you see this, something of the mod didn't work. Please send me your save file on f95!"
     "Rgbcat" "Continuing on mia's chapter 1 ending..."
     jump gohomemia
 
-label esch1_check:    
+
+label esch1_check:
     $ charlotteSprite = 1
     show fbcharlotte current:
         xalign 0.3 ypos 120
@@ -2306,507 +1244,8 @@ label esch1_check:
     $ endchapter1_trigger = "1 nobody"
     jump startofchapter2
 
-label esch1_mia: # rgbcat note: commented out section should be reworked when touching up the game
 
-    # scene fs crowdcheer1
-    # with Dissolve(0.7)
-    # "The bright sunny day was charged with energy from the spectators and participants"
-    # "You spend the first hour watching and cheering for the girl's school teams"
-    # scene fs trackrace0
-    # with Dissolve(0.7)
-    # "Finally Ava's race was announced to be next."
-    # scene fs crowdcheer1
-    # with Dissolve(0.7)
-    # player "Man your school is killing it! I'm glad Ava is up next though."
-    # scene fs miacrowd1
-    # mia "Brrrr!"
-    # scene fs miacrowd1mia
-    # mia "Y-yeah me too, it's getting kind of chilly."
-    # scene fs miacrowd1b
-    # player "Well hey I brought a blanket for this exact situation, want to cuddle up?"
-    # mia "Really?!"
-    # scene fs miacrowd1bplayer
-    # player "Yeah come sit on my lap."
-    # scene fs miacrowd2
-    # with Dissolve(0.7)
-    # mia "Ahh so much better!"
-    # sophia "Hmph."
-    # scene fs trackrace0
-    # with Dissolve(0.7)
-    # charlotte "I think I can see Ava walking out to the track!"
-    # emily "Yeah they're getting ready to run!"
-    # scene fs miacrowd3
-    # with Dissolve(0.7)
-    # "As Mia tried to get comfortable and warm she wiggled her butt directly on your crotch"
-    # "As any man will tell you this usually results in immediate blood flow to the nether regions"
-    # "And dirty thoughts to the head."
-    # "*BAM!*"
-    # scene fs trackrace1
-    # with Dissolve(0.7)
-    # sophia "Oh there they go!"
-    # charlotte "She's in the lead!"
-    # mia "Woohoo Ava!!"
-    # scene fs miacrowd3
-    # with Dissolve(0.7)
-    # player "{i}Hehe I dind't plan on it but...now might be a great time to get a little naughty.{/i}"
-    # player "{i}I don't think anyone would notice with this blanket on us.{/i}"
-    # emily "Run Ava run!"
-    # player "{i}This is your own fault Mia for wiggling your butt on my dick.{/i}"
-    # scene fs miacrowd4
-    # with Dissolve(0.7)
-    # mia "Ava let's go-OH!"
-    # player "{i}Mmmm I won't ever get tired of these boobs.{/i}"
-    # scene fs miacrowd4b
-    # mia "{size=-10} [povname] what are you d-doing??{/size}"
-    # scene fs miacrowd5
-    # player "{size=-10}I wanna touch you a little.{/size}"
-    # mia "{size=-10}Here?? Everyone's around us!{/size}"
-    # player "{size=-10}No one's paying attention just relax.{/size}"
-    # scene fs miacrowd5b
-    # mia "{size=-10}N-No you...{/size}"
-    # scene fs miacrowd5
-    # mia "Ahn.."
-    # scene fs trackrace2
-    # with Dissolve(0.5)
-    # "Ava's lead was shortening after they turned the corner"
-    # player "{size=-10}Yeah that's it, I can feel how wet you're getting.{/size}"
-    # scene fs miacrowd5b
-    # with Dissolve(0.7)
-    # mia "Ehhhnn!"
-    # image fingermia:
-    #     "ava crowd b5.png"
-    #     0.7
-    #     "ava crowd b5b.png"
-    #     0.7
-    #     repeat
-
-    # show fingermia
-    # player "{size=-10}You like it when I finger you with all your friends around us?{/size}"
-    # mia "{size=-10}[povname]!{/size}"
-    # window hide
-    # pause
-    # scene fs trackrace2
-    # with Dissolve(0.5)
-    # mia "{size=-10}You have to stop I-I'm gonna cum!{/size}"
-    # "Running down the straight lanes Ava burst ahead with incredible speed!"
-    # scene fs trackrace3
-    # with vpunch
-    # "Crowd" "WOOOOO!!"
-    # scene fs miacrowd6
-    # with Dissolve(0.7)
-    # mia "AHNNNNN!!!"
-    # "Crowd" "YEAAAHHHH!!"
-    # player "{i}Fuck she's clamping down on my fingers!{/i}"
-    # scene fs miacrowd7
-    # with Dissolve(0.7)
-    # mia "Ooohh yes!!"
-    # sophia "Huh?"
-    # scene fs blackblank
-    # with Dissolve(1.0)
-    # player "{i}Well that was a lot of fun.{/i}"
-    # player "{i}Nice to know I can get Mia to do public stuff.{/i}"
-    
-
-    
-    jump gohomemia
-
-label continuegamechapter3:
-    $ hidden_textbox = True
-    stop music
-    stop sound
-    "After a great time at the beach you have a very well earned rest back at home"
-    "The next day..."
-    with Dissolve(1.0)
-    scene fs carblowjob1
-    player "Hmm hm hmmm."
-    mia "Guhk!"
-    player "Hmhm hmm."
-    pause
-    "Car Speaker" "*Riiiiing*"
-    scene fs carblowjob3
-    pause
-    scene fs carblowjob4
-    player "Heeeello."
-    scene fs carblowjob1
-    sophia "[povname]!"
-    scene fs carblowjob1b
-    player "Hey Soph what's up? I'm uh..."
-    scene fs carblowjob1
-    player "...."
-    scene fs carblowjob1b
-    player "On the way to pick up Mia then head over, shouldn't be long now."
-    scene fs carblowjob1
-    sophia "Oh okay great! That's actually why I'm calling."
-    sophia "Me and the girls were talking at the café and we were like 'Oh my God it's so nice out!'"
-    sophia "And Ava was like well let's go for a walk and Charlotte was like but what about Mia and I was like but what about [povname]?"
-    scene fs carblowjob5
-    player "Mmhm?"
-    sophia "Right? So then Ava was all 'We can just meet them outside we don't have to be in the café every single time there's a new chapter'."
-    sophia "Then there was all this back and forth about should we go outside or shouldn't we."
-    sophia "We all knew Ava just wanted to walk outside cause she's a nut about fitness and always trying to get us to do something."
-    sophia "But then it's still not that big a deal to just meet you guys outside."
-    scene fs carblowjob5b
-    player "Oh shit that's...yup."
-    scene fs carblowjob5
-    sophia "So everyone just kept going over the same points over and over again."
-    sophia "Until Emily finally calmed everyone down and made everyone feel silly about the argument in the first place."
-    sophia "So long story short come meet us outside the office building in Sunnyside."
-    scene fs carblowjob7
-    player "F-Fuck okay that's good."
-    sophia "Uh...yeah I guess it is, you alright?"
-    player "Yeah! I'll see you there. Bye!"
-    sophia "Bye!"
-    player "Ugh..."
-    scene fs carblowjob6
-    with vpunch
-    player "Ahhhhh fuck!"
-    player "That feels so good holy shit."
-    scene fs carblowjob8
-    mia "*Gulp* Ahhh.."
-    scene fs carblowjob10
-    mia "How was that?"
-    scene fs carblowjob10b
-    player "Insane how good you've gotten baby. Please don't start charging me I'll go broke."
-    scene fs carblowjob10
-    mia "Haha you're lucky I love sucking your big dick as much you like my blowjobs!"
-    scene fs carblowjob10b
-    player "Very lucky, I'm aware."
-    scene fs carblowjob9
-    mia "By the way have you been eating like crazy fruits or something lately because you keep cumming so much and somehow it seems way tastier?"
-    sophia "Um guys..."
-    sophia "You never hung up."
-    pause
-    scene fs carblowjob11
-    "*Smack*"
-    mia "Is...is it just you?"
-    emily "She's been on speaker this whole time."
-    player "...."
-    mia "Um..."
-    mia "We'll be there soon."
-    sophia "O-Okay..."
-    $ headtooffice = 1
-    jump overworldmap
-
-label continuechapter3intro:
-    hide screen uppergui
-    $ avaSprite = 4
-    $ charlotteSprite = 5
-    $ emilySprite = 9
-    $ sophiaSprite = 9
-    $ oliviaSprite = 18
-    $ miaSprite = 2
-    $ playerSprite = 8
-    pause
-    show fbava current:
-        xalign 0.55 ypos 120
-    show fbcharlotte current:
-        xalign 0.7 ypos 120
-    show fbsophia current:
-        xalign 0.45 ypos 120
-    show fbolivia current:
-        xalign 0.3 ypos 120
-    show fbemily current:
-        xalign 0.85 ypos 120
-    with Dissolve(0.7)
-    pause
-    show fbmia current:
-        xalign 0.2 xzoom -1.0 ypos 120
-    show fbplayer current:
-        xalign 0.05 ypos 120
-    with Dissolve(0.5)
-
-    mia "..."
-    $ miaSprite = 3
-    mia "Hi girls."
-    $ miaSprite = 2
-    $ emilySprite = 3
-    emily "H-Hey Mia.."
-    $ emilySprite = 4
-    $ miaSprite = 3
-    mia "Sorry...I keep messing up huh?"
-    $ miaSprite = 2
-    $ avaSprite = 1
-    ava "Babe no one is mad at you don't worry! Just made us all blush a bit haha."
-    $ avaSprite = 0
-    $ miaSprite = 3
-    mia "Just another classic dumb Mia the pervert mistake."
-    $ miaSprite = 2
-    $ oliviaSprite = 10
-    olivia "Don't be silly, you're dating, we get it. It's fine."
-    $ charlotteSprite = 5
-    charlotte "{size=25}Kinda impossible not to get it...{/size}"
-    $ emilySprite = 5
-    emily "Mia it's fine, like Ava said it just turned us on a little bit."
-    $ emilySprite = 4
-    $ avaSprite = 15
-    show fbava current:
-        xalign 0.63 xzoom -1.0
-    pause
-    ava "{i}Dats not what I said.{/i}"
-    show fbava current:
-        xalign 0.55 xzoom 1.0
-    $ avaSprite = 0
-    $ emilySprite = 1
-    emily "We don't care, RIGHT Charlotte?"
-    $ emilySprite = 0
-    $ charlotteSprite = 6
-    show fbcharlotte current:
-        xalign 0.75 xzoom -1.0
-    charlotte "Huh? I uh..."
-    $ charlotteSprite = 13
-    show fbcharlotte current:
-        xalign 0.7 xzoom 1.0
-    charlotte "*Ahem* Yes it's fine Mia, don't worry about it."
-    $ charlotteSprite = 1
-    charlotte "I mainly blame [povname] anyways."
-    $ charlotteSprite = 0
-    $ playerSprite = 11
-    show fbmia current:
-        xzoom 1.0
-    player "...."
-    $ playerSprite = 10
-    player "As a man. Road head by law must be accepted."
-    $ playerSprite = 0
-    $ avaSprite = 1
-    ava "Pffft!"
-    $ avaSprite = 0
-    $ oliviaSprite = 14
-    olivia "Hehehe!"
-    $ oliviaSprite = 10
-    $ miaSprite = 4
-    mia "Hehe. Not helping!"
-    $ miaSprite = 0
-    $ sophiaSprite = 8
-    sophia "I'm just straight up jealous."
-    $ sophiaSprite = 9
-    $ miaSprite = 2
-    $ avaSprite = 15
-    $ emilySprite = 4
-    show fbolivia current:
-        xzoom -1.0
-    show fbmia current:
-        xzoom -1.0
-    "Everyone" "....."
-    $ sophiaSprite = 7
-    sophia "Straight up."
-    $ sophiaSprite = 9
-    pause
-    $ avaSprite = 16
-    ava "What's wrong with you?"
-    $ avaSprite = 15
-    $ oliviaSprite = 4
-    olivia "Keep that to yourself."
-    $ oliviaSprite = 3
-    $ emilySprite = 1
-    show fbemily current at surpriseshake:
-        xalign 0.85 ypos 120
-    emily "OKAY!"
-    $ avaSprite = 0
-    $ sophiaSprite = 0
-    $ oliviaSprite = 8
-    show fbava current:
-        xalign 0.63 xzoom -1.0    
-    show fbsophia current:
-        xzoom -1.0
-    show fbcharlotte current:
-        xalign 0.75 xzoom -1.0
-    emily "Well, enough of that."
-    emily "Let's get to the reason we're here!"
-    $ emilySprite = 0
-    emily "Ummmm."
-    $ emilySprite = 1
-    emily "Oh Charlotte! Plans?"
-    $ emilySprite = 0
-    $ charlotteSprite = 8
-    charlotte "Right!"
-    $ charlotteSprite = 6
-    show fbcharlotte current:
-        xalign 0.7 xzoom 1.0
-    charlotte "So everything's pretty much ready. Vicky's gonna pick up the beer today."
-    $ charlotteSprite = 0
-    $ playerSprite = 1
-    player "Oh, beer?"
-    $ playerSprite = 0
-    $ emilySprite = 1
-    emily "For the sleepover!"
-    $ emilySprite = 0
-    $ playerSprite = 1
-    player "Oh yeah!"
-    $ playerSprite = 0
-    $ miaSprite = 1
-    show fbmia current:
-        xzoom 1.0
-    mia "It's in three days."
-    $ miaSprite = 0 
-    $ sophiaSprite = 1
-    show fbsophia current:
-        xzoom 1.0
-    sophia "It's gonna be SO much fun!"
-    $ sophiaSprite = 0
-    $ oliviaSprite = 9
-    olivia "It's been a while since we last did one."
-    $ oliviaSprite = 8
-    $ charlotteSprite = 11
-    charlotte "I'm pretty excited I can't lie."
-    $ charlotteSprite = 0
-    $ miaSprite = 1
-    show fbmia current:
-        xzoom -1.0
-    mia "Oh oh! Can [povname] come?"
-    $ miaSprite = 0
-    $ sophiaSprite = 1
-    show fbsophia current:
-        xzoom -1.0
-    sophia "Ohpleaseohpleaseohplease Charlotte can [povname] join us??"
-    $ sophiaSprite = 0
-    $ charlotteSprite = 8
-    charlotte "Huh? B-But..."
-    $ avaSprite = 1
-    ava "He's pretty much part of the group now."
-    $ avaSprite = 0
-    charlotte "But he's a guy..."
-    $ sophiaSprite = 4
-    sophia "That's racial discrimination!!"
-    $ sophiaSprite = 3
-    $ charlotteSprite = 1
-    charlotte "No it's not Sophia."
-    $ charlotteSprite = 0
-    $ playerSprite = 1
-    player "Haha, Charlotte ignore all of them."
-    $ charlotteSprite = 6
-    player "I'd love to join, only if YOU are cool with it."
-    $ playerSprite = 0
-    $ charlotteSprite = 5
-    charlotte "Uggggh."
-    "Everyone" "....."
-    $ charlotteSprite = 8
-    charlotte "Well I have to let you after that.."
-    $ charlotteSprite = 0
-    $ miaSprite = 9
-    mia "Yay!!"
-    $ sophiaSprite = 1
-    sophia "Wooooo!"
-    $ sophiaSprite = 0
-    $ avaSprite = 1
-    show fbava current at surpriseshake:
-        xalign 0.55 xzoom 1.0 ypos 120
-    ava "We got some SAUSAGE at dis parteehhh."
-    $ avaSprite = 0
-    $ playerSprite = 1
-    player "Heh."
-    $ playerSprite = 0
-    $ emilySprite = 1
-    emily "Hahaha okay Ava take it easy!"
-    show fbcharlotte current:
-        xzoom -1.0 xalign 0.75
-    emily "Thank you Charlotte that's very kind of you to let him join us at your house."
-    $ emilySprite = 0
-    $ charlotteSprite = 3
-    show fbcharlotte current:
-        xzoom 1.0 xalign 0.7
-    charlotte "There'll be some rules though!"
-    $ charlotteSprite = 2
-    $ playerSprite = 10
-    player "No problem."
-    $ charlotteSprite = 0
-    $ playerSprite = 1
-    player "I'll be the perfect gentleman."
-    $ playerSprite = 0
-    $ miaSprite = 0
-    $ oliviaSprite = 0
-    show fbava current:
-        xzoom -1.0 xalign 0.63
-    "Charlotte continues to explain when everyone should get there, the plans, the food, etc."
-    $ charlotteSprite = 1
-    charlotte "Yeah and then four on the bed, two-oh wait, three on the floor."
-    $ charlotteSprite = 0
-    $ miaSprite = 1
-    mia "Sounds good!"
-    $ miaSprite = 0
-    $ emilySprite = 1
-    emily "Alright everyone got it? Three days from now?"
-    $ emilySprite = 0
-    $ avaSprite = 1
-    ava "Yup."
-    $ avaSprite = 0
-    $ oliviaSprite = 1
-    olivia "Got it."
-    $ oliviaSprite = 0
-    $ sophiaSprite = 1
-    show fbsophia current:
-        xzoom 1.0 xalign 0.45
-    sophia "Soooo excited! [povname] I'm so excited!"
-    $ sophiaSprite = 0
-    $ playerSprite = 1
-    player "I can tell."
-    $ playerSprite = 0
-    $ emilySprite = 1
-    show fbsophia current:
-        xzoom -1.0
-    emily "Alright then I gotta get back to school, see you guys later."
-    $ emilySprite = 0
-    hide fbemily current
-    with Dissolve(0.5)
-    $ charlotteSprite = 1
-    charlotte "Yeah I gotta get home, Vicky should be getting back now."
-    $ charlotteSprite = 0
-    $ playerSprite = 1
-    player "I'm driving Mia home, we can drop you off on the way if you want."
-    $ playerSprite = 0
-    $ charlotteSprite = 1
-    charlotte "Sure thanks."
-    $ charlotteSprite = 0
-    $ miaSprite = 1
-    mia "Let's get something to eat on the way!"
-    $ miaSprite = 0
-    hide fbplayer current
-    hide fbmia current
-    hide fbcharlotte current
-    with Dissolve(0.5)
-    $ sophiaSprite = 1
-    $ oliviaSprite = 8
-    show fbava current:
-        xzoom 1.0
-    sophia "Alright guess I'll head out too."
-
-    show fbsophia current:
-        xalign 0.2 xzoom -1.0
-    show fbolivia current:
-        xalign 0.45 xzoom 1.0
-    with move
-    sophia "Bye girls!"
-    $ sophiaSprite = 0
-    $ avaSprite = 1
-    ava "Bye Soph."
-    $ avaSprite = 0
-    $ oliviaSprite = 9
-    olivia "Bye."
-    $ oliviaSprite = 8
-    hide fbsophia current    
-    pause 
-    show fbolivia current:
-        xalign 0.45 xzoom -1.0
-    ava "...."
-    olivia "...."
-    $ avaSprite = 1
-    ava "She was right I was totally jealous too."
-    $ avaSprite = 0
-    $ oliviaSprite = 9
-    olivia "It was SO hot."
-    $ oliviaSprite = 8
-    ava "...."
-    olivia "...."
-    $ oliviaSprite = 14
-    $ avaSprite = 1
-    "Olivia & Ava" "Hahahaha"
-    $ oliviaSprite = 8
-    ava "See yah girl. Love yah."
-    $ avaSprite = 0
-    $ oliviaSprite = 9
-    olivia "Heh love you too. Bye."
-    $ oliviaSprite = 8
-    $ headtooffice = 2
-    jump overworldmap
+# Chapter 2: introduction and office pickup
 
 label continuegamechapter2:
     $ hiden_textbox = True
@@ -2842,7 +1281,7 @@ label continuegamechapter2:
     hide miagroupchatfuck5 movie
     show miagroupchatfuck1 movie
     with Dissolve(0.5)
-    stop sound 
+    stop sound
     play sound "audio/miagameaudio/miapanting.wav"
     player "We’re not leaving until I fill your pretty little pussy."
     play sound "audio/miagameaudio/miammm.wav"
@@ -2883,7 +1322,7 @@ label continuegamechapter2:
     window hide
     pause
     hide miagroupchatfuck3 movie
-#    with Dissolve(0.5)
+
     scene fs livingroom
     with Dissolve(1.0)
     $ playerSprite = 0
@@ -3037,7 +1476,7 @@ label continuegamechapter2:
     scene fs tableCharlottecoffeetalk
     charlotte "I feel like going for a run, Ava you wanna race?"
     scene fs tablemclookleftcharlottecoffee
-    player "Whats going on?"
+    player "What's going on?"
     scene fs tableMiacharlottecoffee
     mia "We're all going to the beach!"
     scene fs tableMCcharlottecoffee
@@ -3056,7 +1495,7 @@ label continuegamechapter2:
     sophia "Oh you gotta go!"
     scene fs tableMCcharlottecoffee
     player "Beach day with my girlfriend and her friends?"
-    player "Uh yeah I think I can make some room in my schedule for that. Now are we all wearing bikinis cause I dont want to show up with the same outfit as one of you guys. SO embarrassing."
+    player "Uh yeah I think I can make some room in my schedule for that. Now are we all wearing bikinis cause I don't want to show up with the same outfit as one of you guys. SO embarrassing."
     scene fs tableMiacharlottecoffee
     mia "Omg stop it haha!"
     mia "Speaking of bikinis, I need to go shopping!"
@@ -3135,7 +1574,7 @@ label continuegamechapter2:
     $ headtosunnyside = 1
     jump overworldmap
 
-# continue phase 1 end
+
 label meetMiaAndKatieAtOffice:
     hide screen uppergui
     "You make the quick drive back towards the café and quickly spot the big office building"
@@ -3476,11 +1915,1498 @@ label meetMiaAndKatieAtOffice:
     $ katiephase2interaction1 = 1
     $ juliaphase2interaction1 = 1
     $ headtosunnyside = 2
-    
+
 
     if endchapter1_trigger != "1 mia neutral":
         jump overworldmap
     else:
         jump gfhouse
 
-# end file frfr
+
+# Chapter 2 ending: beach trip
+
+label phase2ending:
+    scene fs blackblank
+    hide screen uppergui
+    hide screen backbuttonROOM
+    "Beach day has arrived."
+    scene fs playerroomMorn
+    with Dissolve(1.0)
+    show fbplayer current:
+        xalign 0.5 ypos 120
+
+    player "*Yawn*."
+    player "I gotta go pick up Mia now so we can head out early!"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "After you arrive at Mia's place you find out everyone is already there"
+    scene fs carscene1
+    with Dissolve(1.0)
+    pause
+    scene fs carscene3
+    player "You all look great!"
+    player "I'll have to change when we get there."
+    scene fs carscene2
+    mia "Sorry I forgot to tell you!"
+    mia "But at least we're already changed and will save some time there and back."
+    scene fs carscene3
+    player "True."
+    scene fs carscene4
+    charlotte "I still am not happy with this arrangment."
+    scene fs carscene5
+    emily "Oh c'mon it's not that bad, there wasn't enough room."
+    emily "and it's kinda fun, it feels like my little sister is sitting on my lap!"
+    scene fs carscene4
+    charlotte "You're not the little sister in this situation."
+    scene fs carscene3
+    player "At least you're not in the back like Sophia."
+    scene fs carscene6
+    mia "You doing okay back there Soph?"
+    pause
+    scene fs carscene7
+    sophia "Y-Yeah!"
+    sophia "Never better!"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "It didn't take too much longer before you all arrived at your destination..."
+    scene fs beach
+    "The beach!"
+    play music "audio/justbeach.mp3" fadein 5
+    $ charlotteSprite = 15
+    $ avaSprite = 22
+    $ sophiaSprite = 11
+    $ oliviaSprite = 15
+    $ emilySprite = 6
+
+    if swimsuitchoice == "white":
+        show fbmia swimsuit1happytalk:
+            xalign 0.5 ypos 120
+    elif swimsuitchoice == "purple":
+        show fbmia swimsuit2happytalk:
+            xalign 0.5 ypos 120
+    else:
+        show fbmia swimsuit3happytalk:
+            xalign 0.5 ypos 120
+
+
+    mia "Woohoo!"
+
+
+    show fbcharlotte current:
+        xalign 0.6 ypos 120
+
+    charlotte "Finally."
+    $ charlotteSprite = 14
+    $ avaSprite = 23
+    show fbava current behind fbmia:
+        xalign 0.4 ypos 120
+
+    ava "Let's have some fun!"
+    $ avaSprite = 22
+    show fbsophia current:
+        xalign 0.7 ypos 120
+    sophia "UMIIII!"
+    $ sophiaSprite = 12
+    $ oliviaSprite = 17
+    show fbolivia current:
+        xalign 0.85 ypos 120
+    olivia "Yay~"
+    $ oliviaSprite = 15
+    $ emilySprite = 8
+    show fbemily current:
+        xalign 0.3 ypos 120
+    emily "I'm so excited! Let's go girls!"
+    $ emilySprite = 6
+    show fbplayer current:
+        xalign 0.2 ypos 120
+    $ playerSprite = 1
+    player "I'll get changed real quick then meet up with you guys!"
+    $ playerSprite = 0
+    $ emilySprite = 8
+    emily "Sounds great!"
+    $ emilySprite = 6
+    scene fs volleyball1
+    with Dissolve(1.0)
+    "It was early in the day but the whole group was excited and energetic"
+    scene fs volleyball2
+    with Dissolve(0.5)
+    ava "Ava made sure everyone played some volleyball first"
+
+    if swimsuitchoice == "white":
+        scene fs volleyball3a
+    elif swimsuitchoice == "purple":
+        scene fs volleyball3b
+    else:
+        scene fs volleyball3c
+    pause
+    if swimsuitchoice == "white":
+        scene fs volleyball4a
+    elif swimsuitchoice == "purple":
+        scene fs volleyball4b
+    else:
+        scene fs volleyball4c
+    voice "audio/miagameaudio/miaah2.wav"
+    mia "Ouch!"
+    ava "Sorry!"
+    scene fs volleyball5
+    with Dissolve(0.7)
+    "It was a great time"
+    "Well at least I certainly enjoyed it"
+    scene fs volleyball6
+    with Dissolve(0.5)
+    player "Hup!"
+    scene fs volleyball7
+    with Dissolve(0.7)
+    voice "audio/sophiagameaudio/sophiaAhh.wav"
+    sophia "Ahh!"
+    play sound "audio/whistleaudio.ogg"
+    charlotte "*Whistles*"
+    if swimsuitchoice == "white":
+        scene fs volleyball8a
+    elif swimsuitchoice == "purple":
+        scene fs volleyball8b
+    else:
+        scene fs volleyball8c
+    with Dissolve(1.0)
+    "After volleyball the group split up to have fun doing whatever"
+    if swimsuitchoice == "white":
+        scene fs volleyball9a
+    elif swimsuitchoice == "purple":
+        scene fs volleyball9b
+    else:
+        scene fs volleyball9c
+    "It was exactly what everyone needed after the stress of school and everything else"
+    if swimsuitchoice == "white":
+        scene fs volleyball10a
+    elif swimsuitchoice == "purple":
+        scene fs volleyball10b
+    else:
+        scene fs volleyball10c
+    pause
+    "And seeing everyone in their bikinis I mean c'mon"
+    if swimsuitchoice == "white":
+        scene fs volleyball11a
+    elif swimsuitchoice == "purple":
+        scene fs volleyball11b
+    else:
+        scene fs volleyball11c
+    with Dissolve(0.7)
+    "It was great"
+    scene fs blackblank
+    with Dissolve(1.0)
+    emily "Alright everyone! Gather for a picture!"
+    charlotte "Do I have to?"
+    olivia "Can I finish my ice cream first?"
+    sophia "No who cares? Get over here!"
+    mia "Hehe."
+    scene fs beachpicture
+    with Dissolve(1.0)
+    emily "Smile everyone!"
+    pause
+    play sound "audio/camerasnap.mp3"
+    with flash
+    pause
+    jump explorebeach
+
+
+# Chapter 3: introduction
+
+label continuegamechapter3:
+    $ hidden_textbox = True
+    stop music
+    stop sound
+    "After a great time at the beach you have a very well earned rest back at home"
+    "The next day..."
+    with Dissolve(1.0)
+    scene fs carblowjob1
+    player "Hmm hm hmmm."
+    mia "Guhk!"
+    player "Hmhm hmm."
+    pause
+    "Car Speaker" "*Riiiiing*"
+    scene fs carblowjob3
+    pause
+    scene fs carblowjob4
+    player "Heeeello."
+    scene fs carblowjob1
+    sophia "[povname]!"
+    scene fs carblowjob1b
+    player "Hey Soph what's up? I'm uh..."
+    scene fs carblowjob1
+    player "...."
+    scene fs carblowjob1b
+    player "On the way to pick up Mia then head over, shouldn't be long now."
+    scene fs carblowjob1
+    sophia "Oh okay great! That's actually why I'm calling."
+    sophia "Me and the girls were talking at the café and we were like 'Oh my God it's so nice out!'"
+    sophia "And Ava was like well let's go for a walk and Charlotte was like but what about Mia and I was like but what about [povname]?"
+    scene fs carblowjob5
+    player "Mmhm?"
+    sophia "Right? So then Ava was all 'We can just meet them outside we don't have to be in the café every single time there's a new chapter'."
+    sophia "Then there was all this back and forth about should we go outside or shouldn't we."
+    sophia "We all knew Ava just wanted to walk outside cause she's a nut about fitness and always trying to get us to do something."
+    sophia "But then it's still not that big a deal to just meet you guys outside."
+    scene fs carblowjob5b
+    player "Oh shit that's...yup."
+    scene fs carblowjob5
+    sophia "So everyone just kept going over the same points over and over again."
+    sophia "Until Emily finally calmed everyone down and made everyone feel silly about the argument in the first place."
+    sophia "So long story short come meet us outside the office building in Sunnyside."
+    scene fs carblowjob7
+    player "F-Fuck okay that's good."
+    sophia "Uh...yeah I guess it is, you alright?"
+    player "Yeah! I'll see you there. Bye!"
+    sophia "Bye!"
+    player "Ugh..."
+    scene fs carblowjob6
+    with vpunch
+    player "Ahhhhh fuck!"
+    player "That feels so good holy shit."
+    scene fs carblowjob8
+    mia "*Gulp* Ahhh.."
+    scene fs carblowjob10
+    mia "How was that?"
+    scene fs carblowjob10b
+    player "Insane how good you've gotten baby. Please don't start charging me I'll go broke."
+    scene fs carblowjob10
+    mia "Haha you're lucky I love sucking your big dick as much you like my blowjobs!"
+    scene fs carblowjob10b
+    player "Very lucky, I'm aware."
+    scene fs carblowjob9
+    mia "By the way have you been eating like crazy fruits or something lately because you keep cumming so much and somehow it seems way tastier?"
+    sophia "Um guys..."
+    sophia "You never hung up."
+    pause
+    scene fs carblowjob11
+    "*Smack*"
+    mia "Is...is it just you?"
+    emily "She's been on speaker this whole time."
+    player "...."
+    mia "Um..."
+    mia "We'll be there soon."
+    sophia "O-Okay..."
+    $ headtooffice = 1
+    jump overworldmap
+
+
+label continuechapter3intro:
+    hide screen uppergui
+    $ avaSprite = 4
+    $ charlotteSprite = 5
+    $ emilySprite = 9
+    $ sophiaSprite = 9
+    $ oliviaSprite = 18
+    $ miaSprite = 2
+    $ playerSprite = 8
+    pause
+    show fbava current:
+        xalign 0.55 ypos 120
+    show fbcharlotte current:
+        xalign 0.7 ypos 120
+    show fbsophia current:
+        xalign 0.45 ypos 120
+    show fbolivia current:
+        xalign 0.3 ypos 120
+    show fbemily current:
+        xalign 0.85 ypos 120
+    with Dissolve(0.7)
+    pause
+    show fbmia current:
+        xalign 0.2 xzoom -1.0 ypos 120
+    show fbplayer current:
+        xalign 0.05 ypos 120
+    with Dissolve(0.5)
+
+    mia "..."
+    $ miaSprite = 3
+    mia "Hi girls."
+    $ miaSprite = 2
+    $ emilySprite = 3
+    emily "H-Hey Mia.."
+    $ emilySprite = 4
+    $ miaSprite = 3
+    mia "Sorry...I keep messing up huh?"
+    $ miaSprite = 2
+    $ avaSprite = 1
+    ava "Babe no one is mad at you don't worry! Just made us all blush a bit haha."
+    $ avaSprite = 0
+    $ miaSprite = 3
+    mia "Just another classic dumb Mia the pervert mistake."
+    $ miaSprite = 2
+    $ oliviaSprite = 10
+    olivia "Don't be silly, you're dating, we get it. It's fine."
+    $ charlotteSprite = 5
+    charlotte "{size=25}Kinda impossible not to get it...{/size}"
+    $ emilySprite = 5
+    emily "Mia it's fine, like Ava said it just turned us on a little bit."
+    $ emilySprite = 4
+    $ avaSprite = 15
+    show fbava current:
+        xalign 0.63 xzoom -1.0
+    pause
+    ava "{i}Dats not what I said.{/i}"
+    show fbava current:
+        xalign 0.55 xzoom 1.0
+    $ avaSprite = 0
+    $ emilySprite = 1
+    emily "We don't care, RIGHT Charlotte?"
+    $ emilySprite = 0
+    $ charlotteSprite = 6
+    show fbcharlotte current:
+        xalign 0.75 xzoom -1.0
+    charlotte "Huh? I uh..."
+    $ charlotteSprite = 13
+    show fbcharlotte current:
+        xalign 0.7 xzoom 1.0
+    charlotte "*Ahem* Yes it's fine Mia, don't worry about it."
+    $ charlotteSprite = 1
+    charlotte "I mainly blame [povname] anyways."
+    $ charlotteSprite = 0
+    $ playerSprite = 11
+    show fbmia current:
+        xzoom 1.0
+    player "...."
+    $ playerSprite = 10
+    player "As a man. Road head by law must be accepted."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Pffft!"
+    $ avaSprite = 0
+    $ oliviaSprite = 14
+    olivia "Hehehe!"
+    $ oliviaSprite = 10
+    $ miaSprite = 4
+    mia "Hehe. Not helping!"
+    $ miaSprite = 0
+    $ sophiaSprite = 8
+    sophia "I'm just straight up jealous."
+    $ sophiaSprite = 9
+    $ miaSprite = 2
+    $ avaSprite = 15
+    $ emilySprite = 4
+    show fbolivia current:
+        xzoom -1.0
+    show fbmia current:
+        xzoom -1.0
+    "Everyone" "....."
+    $ sophiaSprite = 7
+    sophia "Straight up."
+    $ sophiaSprite = 9
+    pause
+    $ avaSprite = 16
+    ava "What's wrong with you?"
+    $ avaSprite = 15
+    $ oliviaSprite = 4
+    olivia "Keep that to yourself."
+    $ oliviaSprite = 3
+    $ emilySprite = 1
+    show fbemily current at surpriseshake:
+        xalign 0.85 ypos 120
+    emily "OKAY!"
+    $ avaSprite = 0
+    $ sophiaSprite = 0
+    $ oliviaSprite = 8
+    show fbava current:
+        xalign 0.63 xzoom -1.0
+    show fbsophia current:
+        xzoom -1.0
+    show fbcharlotte current:
+        xalign 0.75 xzoom -1.0
+    emily "Well, enough of that."
+    emily "Let's get to the reason we're here!"
+    $ emilySprite = 0
+    emily "Ummmm."
+    $ emilySprite = 1
+    emily "Oh Charlotte! Plans?"
+    $ emilySprite = 0
+    $ charlotteSprite = 8
+    charlotte "Right!"
+    $ charlotteSprite = 6
+    show fbcharlotte current:
+        xalign 0.7 xzoom 1.0
+    charlotte "So everything's pretty much ready. Vicky's gonna pick up the beer today."
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "Oh, beer?"
+    $ playerSprite = 0
+    $ emilySprite = 1
+    emily "For the sleepover!"
+    $ emilySprite = 0
+    $ playerSprite = 1
+    player "Oh yeah!"
+    $ playerSprite = 0
+    $ miaSprite = 1
+    show fbmia current:
+        xzoom 1.0
+    mia "It's in three days."
+    $ miaSprite = 0
+    $ sophiaSprite = 1
+    show fbsophia current:
+        xzoom 1.0
+    sophia "It's gonna be SO much fun!"
+    $ sophiaSprite = 0
+    $ oliviaSprite = 9
+    olivia "It's been a while since we last did one."
+    $ oliviaSprite = 8
+    $ charlotteSprite = 11
+    charlotte "I'm pretty excited I can't lie."
+    $ charlotteSprite = 0
+    $ miaSprite = 1
+    show fbmia current:
+        xzoom -1.0
+    mia "Oh oh! Can [povname] come?"
+    $ miaSprite = 0
+    $ sophiaSprite = 1
+    show fbsophia current:
+        xzoom -1.0
+    sophia "Ohpleaseohpleaseohplease Charlotte can [povname] join us??"
+    $ sophiaSprite = 0
+    $ charlotteSprite = 8
+    charlotte "Huh? B-But..."
+    $ avaSprite = 1
+    ava "He's pretty much part of the group now."
+    $ avaSprite = 0
+    charlotte "But he's a guy..."
+    $ sophiaSprite = 4
+    sophia "That's racial discrimination!!"
+    $ sophiaSprite = 3
+    $ charlotteSprite = 1
+    charlotte "No it's not Sophia."
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "Haha, Charlotte ignore all of them."
+    $ charlotteSprite = 6
+    player "I'd love to join, only if YOU are cool with it."
+    $ playerSprite = 0
+    $ charlotteSprite = 5
+    charlotte "Uggggh."
+    "Everyone" "....."
+    $ charlotteSprite = 8
+    charlotte "Well I have to let you after that.."
+    $ charlotteSprite = 0
+    $ miaSprite = 9
+    mia "Yay!!"
+    $ sophiaSprite = 1
+    sophia "Wooooo!"
+    $ sophiaSprite = 0
+    $ avaSprite = 1
+    show fbava current at surpriseshake:
+        xalign 0.55 xzoom 1.0 ypos 120
+    ava "We got some SAUSAGE at dis parteehhh."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Heh."
+    $ playerSprite = 0
+    $ emilySprite = 1
+    emily "Hahaha okay Ava take it easy!"
+    show fbcharlotte current:
+        xzoom -1.0 xalign 0.75
+    emily "Thank you Charlotte that's very kind of you to let him join us at your house."
+    $ emilySprite = 0
+    $ charlotteSprite = 3
+    show fbcharlotte current:
+        xzoom 1.0 xalign 0.7
+    charlotte "There'll be some rules though!"
+    $ charlotteSprite = 2
+    $ playerSprite = 10
+    player "No problem."
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "I'll be the perfect gentleman."
+    $ playerSprite = 0
+    $ miaSprite = 0
+    $ oliviaSprite = 0
+    show fbava current:
+        xzoom -1.0 xalign 0.63
+    "Charlotte continues to explain when everyone should get there, the plans, the food, etc."
+    $ charlotteSprite = 1
+    charlotte "Yeah and then four on the bed, two-oh wait, three on the floor."
+    $ charlotteSprite = 0
+    $ miaSprite = 1
+    mia "Sounds good!"
+    $ miaSprite = 0
+    $ emilySprite = 1
+    emily "Alright everyone got it? Three days from now?"
+    $ emilySprite = 0
+    $ avaSprite = 1
+    ava "Yup."
+    $ avaSprite = 0
+    $ oliviaSprite = 1
+    olivia "Got it."
+    $ oliviaSprite = 0
+    $ sophiaSprite = 1
+    show fbsophia current:
+        xzoom 1.0 xalign 0.45
+    sophia "Soooo excited! [povname] I'm so excited!"
+    $ sophiaSprite = 0
+    $ playerSprite = 1
+    player "I can tell."
+    $ playerSprite = 0
+    $ emilySprite = 1
+    show fbsophia current:
+        xzoom -1.0
+    emily "Alright then I gotta get back to school, see you guys later."
+    $ emilySprite = 0
+    hide fbemily current
+    with Dissolve(0.5)
+    $ charlotteSprite = 1
+    charlotte "Yeah I gotta get home, Vicky should be getting back now."
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "I'm driving Mia home, we can drop you off on the way if you want."
+    $ playerSprite = 0
+    $ charlotteSprite = 1
+    charlotte "Sure thanks."
+    $ charlotteSprite = 0
+    $ miaSprite = 1
+    mia "Let's get something to eat on the way!"
+    $ miaSprite = 0
+    hide fbplayer current
+    hide fbmia current
+    hide fbcharlotte current
+    with Dissolve(0.5)
+    $ sophiaSprite = 1
+    $ oliviaSprite = 8
+    show fbava current:
+        xzoom 1.0
+    sophia "Alright guess I'll head out too."
+
+    show fbsophia current:
+        xalign 0.2 xzoom -1.0
+    show fbolivia current:
+        xalign 0.45 xzoom 1.0
+    with move
+    sophia "Bye girls!"
+    $ sophiaSprite = 0
+    $ avaSprite = 1
+    ava "Bye Soph."
+    $ avaSprite = 0
+    $ oliviaSprite = 9
+    olivia "Bye."
+    $ oliviaSprite = 8
+    hide fbsophia current
+    pause
+    show fbolivia current:
+        xalign 0.45 xzoom -1.0
+    ava "...."
+    olivia "...."
+    $ avaSprite = 1
+    ava "She was right I was totally jealous too."
+    $ avaSprite = 0
+    $ oliviaSprite = 9
+    olivia "It was SO hot."
+    $ oliviaSprite = 8
+    ava "...."
+    olivia "...."
+    $ oliviaSprite = 14
+    $ avaSprite = 1
+    "Olivia & Ava" "Hahahaha"
+    $ oliviaSprite = 8
+    ava "See yah girl. Love yah."
+    $ avaSprite = 0
+    $ oliviaSprite = 9
+    olivia "Heh love you too. Bye."
+    $ oliviaSprite = 8
+    $ headtooffice = 2
+    jump overworldmap
+
+
+# Chapter 3: shared events
+
+label chapter3bulliesmassage:
+    hide screen uppergui
+    hide screen questboxpreview
+    scene fs blackblank
+    with Dissolve(0.7)
+    "Meanwhile..."
+    scene fbbullies massage1
+    with Dissolve(1.0)
+    pause
+    stephanie "Mmmmm.."
+    scene fbbullies massage2
+    stephanie "God these specialty late night massage places are just heavenly aren't they?"
+    scene fbbullies massage2b
+    melissa "You said it! Just takes all the day's stress right out of me!"
+    scene fbbullies massage2d
+    melissa "Thanks again for always bringing us with you."
+    scene fbbullies massage2c
+    stephanie "Oh you know, it'd be boring without you two around."
+    stephanie "Your constant bickering has become a calming white noise to me at this point."
+    "Masseuse" "Miss are you ready?"
+    stephanie "Yes we're ready!"
+    scene fbbullies massage3
+    with Dissolve(1.0)
+    pause
+    melissa "Mmmmm..."
+    scene fbbullies massage3c
+    melissa "You know you love ussss. Even like, with our bickering."
+    scene fbbullies massage3b
+    stephanie "Hehe."
+    stephanie "By the way, your skin is looking absolutely radiant."
+    scene fbbullies massage3c
+    melissa "Thank youuuu. It's cause'a that skin cream you gave me!"
+    scene fbbullies massage3b
+    stephanie "It works great right? Came from Milan."
+    scene fbbullies massage3c
+    melissa "They make creams from Melons now??"
+    scene fbbullies massage4
+    raven "Hey girls, sorry I'm late."
+    melissa "Raven!"
+    scene fbbullies massage5
+    raven "What you talking about?"
+    melissa "Melons! Haha."
+    raven "YOUR big melons or the other kind?"
+    melissa "Hey my melons ar-"
+    melissa "OHMYGOD."
+    stephanie "Wait."
+    raven "Hmm?"
+    melissa "Bitch don't hmm us, your butt!"
+    scene fbbullies massage6b
+    with Dissolve(0.7)
+    raven "Huh? Oh yeah. Told you I had a tat."
+    scene fbbullies massage6
+    melissa "Cute lil skully!"
+    scene fbbullies massage6b
+    raven "Hehe Skully's a good name I like that."
+    scene fbbullies massage6
+    stephanie "So you weren't lying to seem edgy, you've proven us wrong."
+    stephanie "My apologies."
+    melissa "Yeah me too, I really didn't believe you sorry."
+    scene fbbullies massage6b
+    raven "Bahhhh it's no big deal."
+    scene fbbullies massage6
+    melissa "Sooooo."
+    melissa "Has anyone else seen skully? Hehehe."
+    scene fbbullies massage6b
+    raven "Maybe one...white knight."
+    scene fbbullies massage6
+    stephanie "Hahaha!"
+    melissa "I remember that pic you sent! His dong didn't look all that white after you were done with it heh."
+    scene fbbullies massage6b
+    raven "Some of my best work I must say."
+    raven "I'm not alone though am I? Seems like we all had the same idea for our 'favor'."
+    scene fbbullies massage6
+    melissa "Hehehe, well at least I danced with him first!"
+    stephanie "Ah, that's how she got him."
+    stephanie "Big boobs bouncing around to some music? Gets any guy."
+    scene fbbullies massage6b
+    raven "I bet it was probably when she did the blowjob gesture and pointed to the bathroom."
+    scene fbbullies massage6
+    melissa "Hey! I'll have you know it was a very sultry whisper in his ear!"
+    scene fbbullies massage6b
+    "Everyone" "Hahaha."
+    scene fbbullies massage6
+    pause
+    scene fbbullies massage7
+    with Dissolve(1.0)
+    "Everyone" "Mmmmm..."
+    pause
+    pause
+    scene fbbullies massage7b
+    raven "That cock though amiright?"
+    scene fbbullies massage7c
+    stephanie "It's HUGE!"
+    melissa "OHMYGOD right??"
+    scene fs blackblank
+    with Dissolve(0.7)
+    melissa "Steph just HOW did you take that thing?"
+    stephanie "Honestly he took ME really, helped that I was SO fucking wet."
+    raven "He must've absolutely filled you from that pic you sent."
+    raven "Emily was really on the other side of the door?"
+    stephanie "She. Heard. EVERYTHING."
+    melissa "God that's hot."
+    stephanie "[povname] seemed to think so!"
+    melissa "Hahaha!"
+    raven "Hehehe."
+
+    $ bullieschecker = 1
+    jump passtime
+
+
+label chapter3event1:
+    "You drive up to Charlotte's house"
+    "It's not quite dark yet but the sun is setting"
+    "*BZZZZZZ*"
+    ava "Yo it's [povname]! [povname]'s here!"
+    player "Hi Ava."
+    ava "Charlotte how do I buzz him in??!"
+    charlotte "You're already drunk Ava just press the button!"
+    ava "No I'm not!"
+    $ playerSprite = 1
+    scene fs charlottelivingroom
+    with Dissolve(0.7)
+    show fbplayer current:
+        xalign 0.25 ypos 120
+    with Dissolve(0.3)
+    player "I'm heeeere!"
+    $ playerSprite = 0
+    $ emilySprite = 1
+    show fbemily current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.3)
+    emily "He's heeeeere!"
+    $ emilySprite = 0
+    $ miaSprite = 1
+    show fbmia current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.3)
+    mia "He's heeeere!"
+    $ miaSprite = 0
+    $ playerSprite = 1
+    player "Hey baby, hey everyone."
+    $ playerSprite = 0
+    $ oliviaSprite = 5
+    show fbolivia current behind fbemily:
+        xalign 0.65 ypos 120
+    with Dissolve(0.3)
+    olivia "HE'S!"
+    $ oliviaSprite = 9
+    olivia "Here, Hi [povname]."
+    $ oliviaSprite = 8
+    $ charlotteSprite = 1
+    show fbcharlotte current:
+        xalign 0.7 ypos 120
+    charlotte "Welcome."
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "Hey Charlotte, thanks again. I brought snacks."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    show fbava current:
+        xalign 0.8 ypos 120
+    ava "He's heeeeeere!"
+    $ avaSprite = 0
+    $ emilySprite = 1
+    emily "Haha we already did that Ava."
+    $ emilySprite = 0
+    $ avaSprite = 1
+    ava "Dun care."
+    $ avaSprite = 0
+    $ charlotteSprite = 1
+    charlotte "Alright well that means almost everyone's here."
+    $ charlotteSprite = 0
+    show fbsophia current:
+        xalign 0.15 xzoom -1.0 ypos 120
+    with Dissolve(0.5)
+    $ sophiaSprite = 4
+    sophia "Ugh."
+    sophia "Finally freaking made it."
+    $ sophiaSprite = 3
+    $ miaSprite = 1
+    mia "Sophia!"
+    $ miaSprite = 0
+    $ emilySprite = 1
+    emily "Everything alright? We were wondering where you were."
+    $ emilySprite = 0
+    $ sophiaSprite = 4
+    sophia "I had, the WORSE day oh my god."
+    sophia "Idonevenwannatalkaboutit."
+    $ playerSprite = 15
+    $ sophiaSprite = 3
+    player "Oh, sorry about that Soph."
+    $ playerSprite = 14
+    $ sophiaSprite = 4
+    sophia "Thanks [povname]."
+    sophia "Charlotte, PLEASE can we get into the hot tub? I need stress relief like yesterday."
+    $ sophiaSprite = 3
+    $ charlotteSprite = 1
+    charlotte "Oh uh, yeah sure. We're all here now."
+    charlotte "Follow me everyone. Don't forget to grab a towel."
+    $ charlotteSprite = 0
+    hide fbcharlotte current
+    $ sophiaSprite = 4
+    sophia "THANK you."
+    $ sophiaSprite = 3
+    hide fbsophia current
+    hide fbemily current
+    with Dissolve(0.5)
+    pause
+    hide fbolivia current
+    hide fbava current
+    with Dissolve(0.5)
+    $ miaSprite = 3
+    mia "Oh!"
+    mia "But what about-"
+    $ miaSprite = 2
+    $ playerSprite = 1
+    player "It's okay Mia, go relax with your friends."
+    $ playerSprite = 0
+    $ miaSprite = 3
+    mia "Okay...."
+    scene fs blackblank
+    with Dissolve(0.5)
+    "A few minutes later.."
+    scene fs sleepoverpartone5
+    with Dissolve(1.0)
+    "Everyone" "Ahhhhh...."
+    sophia "Heaven..."
+    emily "So good.."
+    scene fs sleepoverpartone3
+    with Dissolve(0.5)
+    "Everyone" "Mmmmmm."
+    scene fs sleepoverpartone6
+    charlotte "I don't like to flaunt my wealth often but when it comes to this?"
+    charlotte "It's good to be rich."
+    mia "..."
+    scene fs sleepoverpartone7
+    olivia "Something wrong Mia?"
+    scene fs sleepoverpartone8
+    mia "No...it's just."
+    mia "We're relaxing and enjoying the hot tub out here."
+    mia "While [povname]'s inside."
+    mia "We already agreed to let him join us but then we leave him out of our group bonding?"
+    charlotte "Sorry Mia, in my house boys aren't allowed to see girls naked."
+    ava "Stupid rule."
+    mia "Hmmm!"
+    scene fs sleepoverpartone9
+    mia "I got an idea!!"
+    mia "I'll be right back!"
+    emily "What's she up to now?"
+    ava "Whatever it is, I know it's crazy and I'm gonna love it."
+    scene fs sleepoverpartone10
+    charlotte "Bah, it'll be fine."
+    mia "Okay now careful stepping in!"
+    player "Alright I think I got it.."
+    scene fs sleepoverpartone11
+    mia "There!"
+    mia "Guys I brought [povname]! But I used a blindfold so he can't see anything!"
+    charlotte "...."
+    player "Genius idea Mia."
+    scene fs sleepoverpartone12
+    player "Mwah! Reward kiss."
+    scene fs sleepoverpartone13
+    "Everyone" "*Gasp*"
+    emily "!!!!!!"
+    scene fs sleepoverpartone14
+    player "Wait a minute..."
+    scene fs sleepoverpartone15
+    pause
+    emily "Ehn..."
+    player "...."
+    scene fs sleepoverpartone16
+    player "YOU'RE NOT MIA!!!"
+    scene fs sleepoverpartone17
+    charlotte "Then fucking stop groping her you bastard!!"
+    scene fs sleepoverpartone18
+    ava "AHAHAHAHAHA!"
+    ava "Oh my God it's already the best sleepover we've done!"
+    scene fs sleepoverpartone19
+    with Dissolve(0.7)
+    ava "Okay okay guys I just got an idea for a game thanks to [povname]."
+    player "Oh?"
+    ava "Okay."
+    scene fs sleepoverpartone23
+    with Dissolve(0.5)
+    ava "Take your hand."
+    player "Kay."
+    scene fs sleepoverpartone21
+    ava "And grab this real good."
+    scene fs sleepoverpartone20
+    ava "Ahn."
+    charlotte "Wha-AVA!"
+    ava "Would you relax Charlotte?"
+    ava "Okay give it a good squeeze or two."
+    scene fs sleepoverpartone20b
+    player "Mhmm."
+    ava "Alright nice."
+    scene fs sleepoverpartone22
+    ava "So. Who's boobs are these?"
+    player "...."
+    player "They're yours."
+    scene fs blackblank
+    ava "Okay maybe it doesn't work with me since I explained it haha."
+    olivia "I get it!"
+    ava "Everyone ready to try it?"
+    mia "Okay!"
+    sophia "YES!"
+    emily "I'm not sure.."
+    ava "Oh don't be a prude bitch!"
+    emily "Wha!? I'm no-"
+    ava "Okay who's up? Let's start with you!"
+    "You hear some water sloshing towards you"
+    "You put your hands up and are greeted by some tits."
+    "They're on the smaller side, but perky and firm."
+    $ correctanswer = 0
+    $ answerguess = ""
+    "Who's boobs are they?"
+    menu:
+        "Mia's":
+            $ correctanswer += 0
+            $ answerguess = "Mia"
+        "Olivia's":
+            $ correctanswer += 0
+            $ answerguess = "Olivia"
+        "Emily's":
+            $ correctanswer += 0
+            $ answerguess = "Emily"
+        "Sophia's":
+            $ correctanswer += 0
+            $ answerguess = "Sophia"
+        "Ava's":
+            $ correctanswer += 0
+            $ answerguess = "Ava"
+        "Charlotte's":
+            $ correctanswer += 1
+            $ answerguess = "Charlotte"
+
+    scene fs sleepoverpartone24
+    with Dissolve(0.5)
+    charlotte "...."
+    charlotte "{i}Can't believe I'm doing this in front of the girls.{/i}"
+    player "Hmmm, these are [answerguess]'s. I'm sure of it."
+    scene fs sleepoverpartone25
+    ava "Interesting interesting."
+    pause
+
+    scene fs blackblank
+    ava "Okay who's next? How about this lovely lady!?"
+    "You hear another girl approach you, you lift up your hands once again"
+    "These breasts are big for sure, they droop down ever so slightly but have a firm shape"
+    "Who's boobs are they?"
+    menu:
+        "Mia's":
+            $ correctanswer += 0
+            $ answerguess = "Mia"
+        "Olivia's":
+            $ correctanswer += 1
+            $ answerguess = "Olivia"
+        "Emily's":
+            $ correctanswer += 0
+            $ answerguess = "Emily"
+        "Sophia's":
+            $ correctanswer += 0
+            $ answerguess = "Sophia"
+        "Ava's":
+            $ correctanswer += 0
+            $ answerguess = "Ava"
+        "Charlotte's":
+            $ correctanswer += 0
+            $ answerguess = "Charlotte"
+
+    scene fs sleepoverpartone33
+    with Dissolve(0.5)
+    olivia "...."
+    olivia "{i}This is kinda nice.{/i}"
+    scene fs sleepoverpartone34
+    with hpunch
+    olivia "Ahn!"
+    ava "Hey no slapping the merchandise!"
+    scene fs sleepoverpartone33
+    olivia "No..it's okay."
+    ava "I see! nevermind then!"
+    player "I think...these are [answerguess]'s."
+    pause
+
+    scene fs blackblank
+    ava "Step right up step right up who's next? This beautiful maiden over here!"
+    "You hear some of the girls giggling, clearly this little game has gotten them in a silly mood"
+    "These boobs feel average in size, if not slightly larger. Decent firmness, decent shape, overall some good boobs."
+    "Who's boobs are they?"
+    menu:
+        "Mia's":
+            $ correctanswer += 0
+            $ answerguess = "Mia"
+        "Olivia's":
+            $ correctanswer += 0
+            $ answerguess = "Olivia"
+        "Emily's":
+            $ correctanswer += 1
+            $ answerguess = "Emily"
+        "Sophia's":
+            $ correctanswer += 0
+            $ answerguess = "Sophia"
+        "Ava's":
+            $ correctanswer += 0
+            $ answerguess = "Ava"
+        "Charlotte's":
+            $ correctanswer += 0
+            $ answerguess = "Charlotte"
+
+    scene fs sleepoverpartone28
+    with Dissolve(0.7)
+    emily "{i}This is fine! I'm not turned on by this!{/i}"
+    player "Hmmm. Very nice."
+    player "These are [answerguess]'s boobs!"
+    scene fs sleepoverpartone29
+    emily "{i}I'm definitely not turned on by everyone watching me getting groped...{/i}"
+    emily "{i}Thank God I'm in a hot tub{/i}"
+    pause
+    scene fs blackblank
+    ava "Not too many left now! Who's next? Step right up!"
+    "These next tits had very hard nipples, maybe slightly less than average size but not tiny by any means"
+    "Who's boobs are they?"
+    menu:
+        "Mia's":
+            $ correctanswer += 0
+            $ answerguess = "Mia"
+        "Olivia's":
+            $ correctanswer += 0
+            $ answerguess = "Olivia"
+        "Emily's":
+            $ correctanswer += 0
+            $ answerguess = "Emily"
+        "Sophia's":
+            $ correctanswer += 1
+            $ answerguess = "Sophia"
+        "Ava's":
+            $ correctanswer += 0
+            $ answerguess = "Ava"
+        "Charlotte's":
+            $ correctanswer += 0
+            $ answerguess = "Charlotte"
+
+    scene fs sleepoverpartone30
+    player "Hmmm."
+    sophia "Hehehe!"
+    scene fs sleepoverpartone31
+    sophia "!!!"
+    ava "Uh..you can keep going for a bit if you want?"
+    player "Nope"
+    player "I'm good."
+    ava "You sure? The volunteer doesn't mind."
+    player "I know it's [answerguess]."
+    scene fs sleepoverpartone32
+    sophia "What??"
+    sophia "UGH!"
+    scene fs blackblank
+    ava "Okay just one girl left!"
+    "You can feel these tits are huge, tied at least in size with the other large ones"
+    "Your hands push into them with a slight amount of give. Fantastic shape, very soft, and small perky nipples"
+    "Who's boobs are they?"
+    menu:
+        "Mia's":
+            $ correctanswer += 1
+            $ answerguess = "Mia"
+        "Olivia's":
+            $ correctanswer += 0
+            $ answerguess = "Olivia"
+        "Emily's":
+            $ correctanswer += 0
+            $ answerguess = "Emily"
+        "Sophia's":
+            $ correctanswer += 0
+            $ answerguess = "Sophia"
+        "Ava's":
+            $ correctanswer += 0
+            $ answerguess = "Ava"
+        "Charlotte's":
+            $ correctanswer += 0
+            $ answerguess = "Charlotte"
+
+    scene fs sleepoverpartone27
+    with Dissolve(0.5)
+    mia "Hehe."
+    player "Ah...very nice."
+    ava "Well?"
+    player "I'd know these anywhere Ava, these tits belong to [answerguess]."
+    scene fs sleepoverpartone26
+    mia "..."
+    ava "Okay! That's everyone thanks for playing!"
+    scene fs sleepoverpartone2
+    with Dissolve(0.5)
+    player "Haha that was actually pretty fun girls thanks for that."
+    player "And for letting me in here."
+    charlotte "You better appreciate how lucky you are."
+    charlotte "Getting to touch all our breasts like that."
+    charlotte "Rubbing and pinching them, and for free no less!"
+    charlotte "Freely taking your hands and having your fill of our bodies!"
+    scene fs sleepoverpartone35
+    player "I appreciate it don't you worry about that!"
+    if correctanswer == 5:
+        jump miahelpwithboner
+    else:
+        jump getoutoftub
+
+
+label getoutoftub:
+    "Everyone" "!!!"
+    charlotte "Oh my God!"
+    player "What is it?"
+    mia "You've got a boner [povname]."
+    player "Oh shit uh."
+    scene fs sleepoverpartone36
+    with Dissolve(0.5)
+    player "Sorry guys. That's cause and effect for you."
+    player "I'll get out of the tub now, you guys enjoy the rest of it I'll see you inside."
+    scene fs blackblank
+    with Dissolve(0.7)
+    "The girls relaxed for a bit longer, processing the sight of your giant hard cock"
+    "Each with their own thoughts about it.."
+    jump continuesleepover2
+
+
+label miahelpwithboner:
+    player "...."
+    player "Why'd it get quiet?"
+    mia "You have a boner [povname]."
+    scene fs sleepoverpartone36
+    player "Oh shit I do. Girls I'm so sorry."
+    player "I should probably-"
+    scene fs sleepoverpartone38
+    with Dissolve(0.5)
+    mia "No! Don't worry everyone!"
+    mia "I want to make sure everyone is comfortable at Charlotte's party!"
+    scene fs sleepoverpartone37
+    charlotte "Huh?"
+    scene fs sleepoverpartone38
+    mia "I will take care of this real quick! Then we can go back to relaxing."
+    player "What do you mean Mia?"
+    show miajaccuzziboobjob movie1
+    player "Oh that's...that's what you mean."
+    charlotte "{size=25}Mia what the hell are you doing??{/size}"
+    show miajaccuzziboobjob movie2
+    mia "I know the quickest way to get rid of [povname]'s hard on!"
+    mia "Don't worry everyone!"
+    ava "Oh I am NOT worried hehe."
+    player "Oh man Mia your tits feel incredible as always."
+    charlotte "{i}Even [povname]'s huge penis can still be covered with Mia's boobs!{/i}"
+    pause
+    show miajaccuzziboobjob movie3
+    mia "Mmm!"
+    mia "*Suck*"
+    player "Oh Fuck baby that's it!"
+    olivia "{i}I can't look away.{/i}"
+    player "The other...hah...girls are gone right?"
+    emily "{i}She's so good at this! When did she get so good at this??{/i}"
+    player "Fuck baby I'm gonna cum!"
+    pause
+    show miajaccuzziboobjob movie4
+    player "AGH FUCK."
+    player "YES!"
+    "Everyone" "!!!!"
+    mia "*Gulp* *Gulp*"
+    pause
+    scene fs blackblank
+    with Dissolve(0.5)
+    player "You drained me, I gotta go clean up babe."
+    mia "Okay! See you soon :D"
+    scene fs sleepoverpartone4
+    with Dissolve(1.0)
+    mia "Ahhh there."
+    mia "Now we can all relax again."
+    emily "You said it..."
+    scene fs sleepoverpartone40
+    with vpunch
+    emily "NOT!"
+    scene fs sleepoverpartone39
+    mia "Huu?"
+    scene fs sleepoverpartone40
+    emily "Mia have you ANY idea how inappropriate that was??"
+    emily "You made your friends watch as you brought your boyfriend to climax IN CHARLOTTE'S HOT TUB."
+    emily "WHERE WE ALL CURRENTLY ARE."
+    scene fs sleepoverpartone39
+    mia "But I swallowed so none of it would get in the tub..."
+    scene fs sleepoverpartone40
+    emily "The issue is that you think it's alright to subject us to such lewd antics!"
+    emily "Did you stop to think how we would feel at all?"
+    emily "This is a sleepover not some sex party!"
+    scene fs sleepoverpartone41
+    mia "Oh..."
+    mia "Oh geez."
+    olivia "Don't worry Mia, Emily's spouting some bullshit."
+    emily "What?!"
+    olivia "I saw her fingering herself while you were giving [povname] that boobjob."
+    emily "N-No I wasn't!"
+    olivia "Oh, you totally were."
+    olivia "You were really going at it too, did you cum?"
+    scene fs sleepoverpartone42
+    emily "I WAS NOT TOUCHING MYSELF!!"
+    scene fs sleepoverpartone43
+    olivia "My mistake then, I saw the fast, short movements of your arm in and out of the water and just assumed."
+    ava "Hehehe."
+    ava "Like I said, best sleepover ever."
+    jump continuesleepover2
+
+
+label continuesleepover2:
+
+    scene fs blackblank
+    with Dissolve(1.0)
+    "You got changed into your sleepwear once you got out of the hot tub"
+    "Everyone else joined you not too long after in the living room"
+
+    scene fs sleepoverparttwo1
+    pause
+    player "Well this certainly takes me back."
+    ava "Spin the bottle!"
+    ava "Pretty much truth or dare, someone spins it and whoever it lands on has to take on the spinner's truth or dare."
+    sophia "Ohhhh much fun!"
+    mia "Hehe!"
+    emily "Hmmm."
+    charlotte "Who's going first?"
+    scene fs mcbottle
+    player "This is my first time here so I'll go first!"
+    emily "Alrighty go ahead."
+    player "I don't like to cloud my judgement when I know who I'm asking."
+    player "So I'm going to dare whoever this lands on to....kiss the person opposite them."
+    scene fs spinbottle1
+    ava "Oooohh. I like it!"
+    scene fs spinbottle4
+    emily "Okay! That's Charlotte."
+    charlotte "So that means.."
+    scene fs spinbottlesophiachar1
+    sophia "Charlooootte!!"
+    charlotte "S-Sophia?"
+    scene fs spinbottlesophiachar2
+    sophia "MMMWAH!"
+    charlotte "??"
+    scene fs spinbottlesophiachar3
+    sophia "Charlotte. My short Queen. My friend. Comrade in arms."
+    sophia "We must stick together more!"
+    scene fs spinbottlesophiachar3b
+    charlotte "Oh hehe...um what?"
+    scene fs spinbottlesophiachar4
+    sophia "Our enemies surround us. Simply look and you will see."
+    scene fs spinbottlesophiachar4b
+    charlotte "I don't know what you..."
+    scene fs spinbottlesophiachar5
+    with vpunch
+    pause
+    scene fs spinbottlesophiachar6
+    with vpunch
+    pause
+    scene fs spinbottlesophiachar7
+    with vpunch
+    pause
+    scene fs spinbottlesophiachar8
+    charlotte "I...I see."
+    scene fs spinbottlesophiachar9
+    charlotte "I see now sister!"
+    scene fs spinbottlesophiachar9b
+    sophia "We must stand up and fight back against our oppressors!"
+    sophia "Small boobs are love!"
+    scene fs spinbottlesophiachar9c
+    "Sophia & Charlotte" "Small boobs are life!"
+    player "Amen!"
+    scene fs spinbottle4
+    with Dissolve(0.7)
+    emily "Okay who's spinning next?"
+    scene fs sophiabottle
+    sophia "I will!"
+    scene fs spinbottle1
+    sophia "Okay c'mon c'mon c'mon!"
+    scene fs spinbottle2
+    emily "Ava!"
+    sophia "No!"
+    ava "Hey that's me!"
+    ava "Whut you gonna do to me Soph??"
+    sophia "Ugh. Go kiss Mia or something."
+    mia "Oh hehe!"
+    emily "You know you don't have to keep making people kiss.."
+    scene fs spinbottleavamia1
+    with Dissolve(0.5)
+    pause
+    mia "Okay!"
+    scene fs spinbottleavamia1b
+    mia "Chuuu."
+    scene fs spinbottleavamia2
+    ava "Hey babe."
+    mia "Huh?"
+    ava "Let's make your boyfriend jealous."
+    mia "??"
+    scene fs spinbottleavamia3
+    ava "Mmmm."
+    scene fs spinbottleavamia4
+    mia "Uhnn."
+    ava "Mlmmm.."
+    sophia "Oh right...Ava gets super horny when she drinks.."
+    scene fs spinbottleavamia5
+    ava "Ahn..hah.."
+    mia "Ahh.."
+    scene fs spinbottleavamia5b
+    pause
+    scene fs spinbottleavamia5c
+    player "Is...is she taunting me?"
+    sophia "Oh for sure."
+    olivia "100 percent"
+    ava "Hehehe."
+    scene fs spinbottleavamia6
+    mia "Hah.."
+    ava "You like that Mia?"
+    scene fs spinbottleavamia6b
+    mia "Yes you're a very good kisser!"
+    ava "Hehe."
+    scene fs spinbottleavamia6c
+    mia "I think I prefer [povname] though sorry."
+    ava "W-What?"
+    mia "He's just a bit better, really good with his tongue!"
+    mia "Nothing personal!"
+    ava "I..."
+    ava "T-Tongue?"
+    sophia "Ah. She broke."
+    scene fs spinbottle2
+    emily "Next!"
+    scene fs miabottle
+    mia "Oh let me!"
+    scene fs spinbottle1
+    pause
+    scene fs spinbottle3
+    emily "Ah!"
+    emily "Oh that's me."
+    mia "Okay who hasn't...Olivia kiss Emily!"
+    emily "Again with the kissing?!"
+    scene fs spinbottleemilyolivia1
+    with Dissolve(0.7)
+    pause
+    emily "H-Hey Olivia.."
+    olivia "Hey there beautiful."
+    scene fs spinbottleemilyolivia2
+    emily "Oh I don't know if I'm beautiful.."
+    scene fs spinbottleemilyolivia3
+    pause
+    scene fs spinbottleemilyolivia4
+    pause
+    olivia "Would these lips lie to you?"
+    emily "N-No.."
+    olivia "Let me prove it."
+    scene fs spinbottleemilyolivia5
+    pause
+    scene fs spinbottleemilyolivia6
+    pause
+    scene fs spinbottleemilyolivia7
+    pause
+    emily "Mmmmm."
+    olivia "Mmmmm."
+    scene fs spinbottleemilyolivia8
+    "Olivia & Emily" "MMMM!"
+    pause
+    pause
+    scene fs spinbottleemilyolivia7
+    ava "Booooo"
+    ava "Lame! No passion!"
+    scene fs spinbottleemilyolivia9
+    emily "WHAT DO YOU MEAN NO PASSION!"
+    ava "No passion! No Tongue!"
+    emily "YOU DON'T NEED TONGUE TO HAVE PASSION!"
+    ava "Booo"
+    ava "No sex! Boooo!"
+    emily "AVA!!"
+    olivia "Hehehe."
+    scene fs blackblank
+    with Dissolve(0.7)
+    pause
+    "You and the girls continue playing around and having fun"
+    "Food gets ordered and drinks are had"
+    "Overall it was a great night, you had much more fun than you were expecting"
+    "And eventually the time came to head to bed and a question you had at the back of your mind had to finally be answered"
+    "Who do you want to sleep with?"
+    $ chosenchick = ""
+
+    menu:
+        "Emily" if emilyphase3interaction1 >= 2:
+            $ chosenchick = "Emily"
+        "Mia" if miaphase3interaction1 >= 2:
+            $ chosenchick = "Mia"
+        "Sophia" if sophiaphase3interaction1 >= 2:
+            $ chosenchick = "Sophia"
+        "Ava" if avaphase3interaction1 >= 2:
+            $ chosenchick = "Ava"
+        "Olivia" if oliviaphase3interaction1 >= 2:
+            $ chosenchick = "Olivia"
+        "Charlotte" if charlottephase3interaction1 >= 2:
+            $ chosenchick = "Charlotte"
+        "Nobody":
+            $ chosenchick = "Nobody"
+
+    jump continuephase3event1bedtime
+
+
+label continuephase3event1bedtime:
+
+    if chosenchick == "Charlotte":
+        jump sleepwithcharlotte
+    elif chosenchick == "Mia":
+        jump sleepwithmia
+    elif chosenchick == "Emily":
+        jump sleepwithemily
+    elif chosenchick == "Olivia":
+        jump sleepwitholivia
+    elif chosenchick == "Ava":
+        jump sleepwithava
+    elif chosenchick == "Sophia":
+        jump sleepwithsophia
+    elif chosenchick == "Nobody":
+        jump passtime
+
+
+label sleepwithcharlotte:
+    scene fs sleepoverbedpovcharlotte
+    with Dissolve(0.7)
+    "Unfortunately Charlotte's content for this event is not finished"
+    scene fs groupbedsexcharlotte1
+    with Dissolve(0.5)
+    "Her scene will be complete in the next update! Only Mia's is complete for now."
+    scene fs groupbedsexcharlotte2
+    pause
+    "Would you like to end the night or watch Mia's content instead?"
+    menu:
+        "Watch Mia":
+            jump sleepwithmia
+        "End the night":
+            jump passtime
+
+
+label sleepwithemily:
+    scene fs sleepoverbedpovemily
+    with Dissolve(0.7)
+    "Unfortunately Emily's content for this event is not finished"
+    scene fs groupbedsexemily1
+    pause
+    scene fs groupbedsexemily2
+    pause
+    "Would you like to end the night or watch Mia's content instead?"
+    menu:
+        "Watch Mia":
+            jump sleepwithmia
+        "End the night":
+            jump passtime
+
+
+label sleepwithsophia:
+    scene fs sleepoverbedpovsophia
+    with Dissolve(0.7)
+    "Unfortunately Sophia's content for this event is not finished"
+    scene fs groupbedsexsophia1
+    pause
+    scene fs groupbedsexsophia2
+    pause
+    "Would you like to end the night or watch Mia's content instead?"
+    menu:
+        "Watch Mia":
+            jump sleepwithmia
+        "End the night":
+            jump passtime
+
+
+label sleepwithava:
+    scene fs sleepoverbedpovava
+    with Dissolve(0.7)
+    "Unfortunately Ava's content for this event is not finished"
+    scene fs groupbedsexava1
+    pause
+    scene fs groupbedsexava2
+    pause
+    scene fs groupbedsexava3
+    pause
+    "Would you like to end the night or watch Mia's content instead?"
+    menu:
+        "Watch Mia":
+            jump sleepwithmia
+        "End the night":
+            jump passtime
+
+
+label sleepwitholivia:
+    scene fs sleepoverbedpovolivia
+    with Dissolve(0.7)
+    "Unfortunately Olivia's content for this event is not finished"
+    scene fs groupbedsexolivia1
+    pause
+    scene fs groupbedsexolivia2
+    pause
+    "Would you like to end the night or watch Mia's content instead?"
+    menu:
+        "Watch Mia":
+            jump sleepwithmia
+        "End the night":
+            jump passtime

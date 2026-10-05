@@ -1,4 +1,4 @@
-# scene 1
+# Julia scenes.
 
 label juliascene1:
     hide screen julia_kitchen
@@ -160,7 +160,7 @@ label juliascene1:
     player "Julia."
     $ playerSprite = 0
     $ juliaSprite = 2
-    julia "I'm SO glad we got to know...more about eachother."
+    julia "I'm SO glad we got to know...more about each other."
     $ juliaSprite = 0
     $ playerSprite = 1
     player "Uh me too Julia."
@@ -172,8 +172,8 @@ label juliascene1:
     $ juliaquestlog = "I can't believe I felt up Mia's mom like that! I should stick around their house..."
     jump gfhouse
 
-# chapter 2
-# scene 2
+# Chapter 2
+
 
 label juliascene2:
     julia "Mmmmm yeah..."
@@ -221,7 +221,6 @@ label juliascene2:
     $ juliachecker = 3
     jump passtime
 
-# scene 3
 
 label juliascene3:
     hide screen julia_kitchen
@@ -466,7 +465,6 @@ label juliascene3:
     $ juliachecker = 4
     jump passtime
 
-# scene 4
 
 label officejulia1:
     hide screen questboxpreview
@@ -518,7 +516,8 @@ label officejulia1:
     $ playerSprite = 0
     jump gotosunnyside
 
-# Chapter 3 and related character scenes.
+
+# Household conversation helpers
 
 label miaisnthome:
     hide screen julia_kitchen

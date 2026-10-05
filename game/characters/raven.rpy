@@ -1,4 +1,4 @@
-# scene 1
+# Raven scenes.
 
 label raventattooscene:
     hide screen raven_mall
@@ -244,7 +244,6 @@ label raventattooscene:
     $ ravenquestlog = "Well that's one favor down. Didn't think it'd involve me seeing Raven's bare ass but I ain't complaining."
     jump overworldmap
 
-# scene 2
 
 label ravenbjscene:
     scene fs playerbedneutral

@@ -1,9 +1,4 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-# The game starts here.
+# World navigation and character interaction routing.
 
 label start:
 
@@ -12,7 +7,7 @@ label start:
 label postIntro:
     jump introductions
 
-#locations-----------------------------------------------------------------------------------------------------------
+# Locations
 
 label playerRoom:
     hide screen locationname
@@ -85,7 +80,7 @@ label playerlivingroom:
 
     if josyscene1 == 1 and miaphase2interaction2 >= 3 and timeofday == "Day":
         jump josykatiehangout2
-    
+
     if timeofday == "Night" and katiephase2interaction1 == 5 and miaphase2interaction2 >= 4:
         jump pizzapartykatiefuck
 
@@ -134,7 +129,7 @@ label startofchapter2:
 label startofchapter3:
     $ currentchapter = 3
     $ dayNumber += 1
-    
+
     if oliviaphase2interaction3 == 1:
         $ oliviaquestlog = "That was some incredible sex. I should chat up Olivia at the school."
 
@@ -142,7 +137,7 @@ label startofchapter3:
         $ avaquestlog = "That sex with Ava was incredible. I wonder how she's doing? I should stop by the school."
 
     if miaphase2interaction2 == 4:
-        $ miaquestlog = "I've been patient. It's time Mia..." 
+        $ miaquestlog = "I've been patient. It's time Mia..."
 
     scene fs blackblank
     pause
@@ -151,7 +146,6 @@ label startofchapter3:
     pause
     hide chapter chapter1
     jump continuegamechapter3
-
 
 
 label overworldmap:
@@ -302,14 +296,12 @@ label gotosunnyside:
     hide screen store_videogame
 
 
-
-
     show screen uppergui
     show screen questboxpreview
 
     if headtosunnyside == 1:
         hide screen questboxpreview
-    
+
     if headtooffice == 1:
         hide screen questboxpreview
 
@@ -325,8 +317,6 @@ label gotosunnyside:
         call screen screen_sunnysidenight
 
 
-
-
 label displaycalender:
     hide screen uppergui
     hide screen backbuttonROOM
@@ -339,7 +329,7 @@ label displaycalender:
     pause
     jump playerRoom
 
-#--------------------SUNNYSIDE BGs----------------------------------
+# Sunnyside locations
 
 label office:
     hide screen uppergui
@@ -396,7 +386,7 @@ label insidecafe:
     hide screen locationname
     hide screen questboxpreview
 
-    
+
     if headtooffice == 1:
         hide screen uppergui
         hide screen tosunnyside
@@ -413,7 +403,7 @@ label insidecafe:
         if timeofday == "Day" and sophiaphase2interaction1 > 0 and sophiaphase2interaction1 != 3:
 
             call screen sophia_atcafe
-                                                                #we're skipping interaction2
+
         if timeofday == "Day" and sophiaphase2interaction1 == 3 and sophiaphase2interaction3 == 0:
             jump sophiaphase2interaction3part1
 
@@ -425,7 +415,6 @@ label insidecafe:
             call screen charlotte_atcafe
 
     call screen inside_cafe
-
 
 
 label insideclub:
@@ -532,8 +521,6 @@ label beach:
     else:
         call screen beach_screen
 
-#---------------------------END OF SUNNYSIDE BG---------------------------------------
-
 
 label outsidegym:
     if map_entry_block_reason("outsidegym") is not None:
@@ -579,7 +566,7 @@ label gym:
     elif timeofday == "Day":
         scene fs gymareaafternoon
 
-    # $ avaphase1interaction3 = 10
+
     if currentchapter == 2 and avaphase1interaction3 == 10 and timeofday == "Morning" and avaphase2interaction1 == 0:
         show screen ava_atgym
 
@@ -676,9 +663,6 @@ label library:
                 jump overworldmap
 
 
-
-
-
     show screen uppergui
     if timeofday == "Morning" and miaphase1interaction3 == 2:
 
@@ -719,15 +703,9 @@ label gfhouse:
     $ whereami = "gfhouse"
     hide screen charlottemia_room
 
-#---------TO BE UNCOMMENTED WHEN chapter 2 is fully done--------------------
-  #  if timeofday == "Morning" and miaphase2interaction2 == 4:
-      #  "MC talks with Mia and they're gonna have a pizza party"
-       # $ miaphase2interaction2 = 4
-      #  jump overworldmap
-#----------------------------------------------------------------------------
 
     if timeofday == "Night" and miaphase2interaction2 == 2:
-        jump miaphase2interaction2part2 # Dinner with mia family scene
+        jump miaphase2interaction2part2
 
     if timeofday == "Night" and miaphase1interaction3 != 4:
         scene fs overworldnight
@@ -942,14 +920,14 @@ label apartmentlobbyolivia:
     hide screen uppergui
     hide screen tonormalmap
     hide screen questboxpreview
-    #######################################you can fix/change these withif statements to make them better
-    
+
+
     if headtooffice == 1:
         hide screen uppergui
         hide screen tosunnyside
         player "I should head to the office building in Sunnyside."
         jump gotosunnyside
-    
+
     if oliviaphase2interaction1 == 0 and emilyphase2interaction1 < 2:
         player "That's a pretty big apartment building. Wonder if I know anyone who lives in there."
         jump gotosunnyside
@@ -967,7 +945,7 @@ label apartmentlobbyolivia:
                 jump gotosunnyside
 
 label visitstephaniebuilding:
-    #"[emilyphase2interaction1], [stephaniescene1]"
+
     if emilyphase2interaction1 == 2:
         jump emilyphase2interaction1part3
     elif emilyphase2interaction1 == 3:
@@ -993,27 +971,24 @@ label visitstephaniebuilding:
         jump gotosunnyside
 
 
-
-
 label visitoliviabuilding:
-    #"[oliviaphase3interaction1], [timeofday]"
+
     if oliviaphase2interaction1 == 1:
         if timeofday != "Night":
             player "Olivia told me to visit her at night, so I should come back then!"
             jump gotosunnyside
         else:
             jump oliviaphase2interaction1part2
-    
+
     if oliviaphase3interaction1 == 1 and timeofday == "Night":
         jump oliviaphase3interaction1part2
-
 
 
 label arcade:
     hide screen questboxpreview
     hide screen locationname
     hide screen tosunnyside
-    
+
     if headtosunnyside == 1:
         hide screen uppergui
         hide screen tosunnyside
@@ -1029,7 +1004,6 @@ label arcade:
     stop music fadeout 5
     if miaphase1interaction3 == 2:
         jump lookingforphonearcade
-
 
 
     if pennyscene5 == 1 and timeofday != "Night" and oliviaphase2interaction3 >= 1:
@@ -1096,7 +1070,6 @@ label arcade:
     elif oliviaphase1interaction2 == 4 and timeofday != "Night":
         player "I should just call Olivia from my room tonight."
         jump overworldmap
-
 
 
     elif timeofday == "Night":
@@ -1208,7 +1181,6 @@ label school:
     hide screen backbuttonCLASSROOM
     show screen uppergui
 
-    
 
     if timeofday == "Morning" and avaphase1interaction2 != 4:
         show screen ava_atschool
@@ -1226,13 +1198,12 @@ label schoolhallway:
     hide screen locationname
     hide screen olivia_atschool
     scene fs schoolhallway2extras
-    #"[emilyphase1interaction1],[emilyphase1interaction2],[emilyphase2interaction1],[emilyphase2interaction2]"
+
 
     if timeofday == "Morning" and emilyphase1interaction1 != 4 and (emilyphase2interaction1 <=4 and emilyphase2interaction1 != 1) :
         show screen emily_atschool
-    #elif emilyphase1interaction2 == 6:
-        #hide screen emily_atschool
-    
+
+
     if timeofday == "Morning":
         if currentchapter == 2 and avaphase1interaction2 == 10:
             show screen ava_atschoolhallway
@@ -1242,8 +1213,6 @@ label schoolhallway:
     if timeofday == "Day" and emilyphase1interaction1 >=1 and emilyphase1interaction1 != 4 and emilyphase1interaction2 < 6 :
         show screen emily_atschool
 
-   
-
 
     call screen schoolhallway
 
@@ -1251,8 +1220,7 @@ label classroom1:
     $ whereami = "classroom1"
     hide screen questboxpreview
     hide screen ava_atschool
-    #"[sophiaphase2interaction3], [currentchapter],[timeofday]"
-    
+
 
     if miaphase1interaction1 >= 1 and timeofday == "Morning" and sophiaphase2interaction1 == 0:
         show screen sophia_atschool
@@ -1265,14 +1233,14 @@ label classroom1:
         hide screen sophia_atschool
     if sophiaphase1interaction1 == 5 and sophiaphase1interaction2 == 3 and sophiaphase2interaction1 == 2:
         hide screen sophia_atschool
-        
+
     if miaphase1interaction3 == 4:
         hide screen sophia_atschool
         scene fs classroom
         player "Hmm, Mia's class is still going on. I'll just visit her house during the day to give her phone back."
         call screen classroom1
 
-    if sophiaphase1interaction1 == 2 and timeofday != "Night": # should be morning tho bro wat
+    if sophiaphase1interaction1 == 2 and timeofday != "Night":
         jump sophiaphase1interaction1part3
 
     scene fs classroomextras
@@ -1301,8 +1269,7 @@ label classroom2:
     $ whereami = "classroom2"
     hide screen emily_atschool
     scene fs classroom
-    #if currentchapter == 2 and timeofday == "Day":
-        #show screen ava_atschool
+
 
     if timeofday == "Morning" and oliviaphase1interaction3 != 2 and oliviaphase2interaction1 != 1:
         show screen olivia_atschool
@@ -1325,7 +1292,7 @@ label classroom3:
     show screen backbuttonCLASSROOM
     if timeofday == "Morning" and charlottephase1interaction2 != 4:
         show screen charlotte_school
-    
+
     if timeofday == "Morning" and charlottephase2interaction3 == 3 and currentchapter == 3:
         show screen charlotte_school
 
@@ -1362,7 +1329,6 @@ label malllabel:
         jump overworldmap
 
 
-    #"[whereami]"
     if whereami != "mallstore":
         play music "audio/mallaudio.wav" fadein 10
     $ whereami = "mall"
@@ -1450,7 +1416,7 @@ label park:
         jump avaphase1interaction2part1
     elif timeofday == "Night" and avaphase1interaction2 == 2:
         jump avaphase1interaction2part3B
-    
+
     if timeofday == "Night" and avaphase3interaction1 == 1:
         jump avaphase3interaction1part2
     jump overworldmap
@@ -1460,7 +1426,7 @@ label gotooverworldfromgfhouse:
     hide screen julia_kitchen
     jump overworldmap
 
-# functions------------------------------------------------------------------------------------------------
+# Time, navigation, and shared helpers
 
 label changetextbox:
     if hiden_textbox == False:
@@ -1480,7 +1446,7 @@ label viewquests:
         scene fs playerroomNight
         hide screen backbuttonROOM
     elif whereami == "livingRoom":
-        if timeofday == "Night":#------------------------------this will be the updated whereami code!!-------------
+        if timeofday == "Night":
             scene fs livingroomnight
         else:
             scene fs livingroom
@@ -1521,7 +1487,7 @@ label viewquests:
     call screen questbox
 
 label useinventory:
-    #hide screen uppergui
+
 
     if whereami == "playerRoom" and timeofday == "Morning":
         scene fs playerroomMorn
@@ -1533,7 +1499,7 @@ label useinventory:
         scene fs playerroomNight
         hide screen backbuttonROOM
     elif whereami == "livingRoom":
-        if timeofday == "Night":#------------------------------this will be the updated whereami code!!-------------
+        if timeofday == "Night":
             scene fs livingroomnight
         else:
             scene fs livingroom
@@ -1576,7 +1542,7 @@ label useinventory:
 label gotosleep:
     hide screen uppergui
     hide screen backbuttonROOM
-    #$ katiephase3interaction1 = 0 #delete this liiiiiinnne afterrrr you test the katie scene---------------------------------
+
 
     if dayNumber == 24 and timeofday == "Night":
         player "It's the sleepover night!"
@@ -1609,7 +1575,7 @@ label gotosleep:
             jump sophiaphase2interaction2part3
     elif sophiaphase2interaction1 == 3 and timeofday == "Night" and cassandrascene1 == 0:
         jump cassandraboobjob
-    
+
     if sophiaphase3interaction1 == 1 and timeofday == "Night" and currentchapter == 3:
         jump sophiaphase3interaction1part2
 
@@ -1618,13 +1584,13 @@ label gotosleep:
 
     if charlottephase2interaction2 == 1 and timeofday == "Night":
         $ charlottephase2interaction2 = 2
-    
+
 
     if charlottephase2interaction2 == 4 and charlottedaychecker1 < dayNumber and timeofday == "Night":
         jump charlottephase2interaction3part1
     elif charlottephase2interaction3 == 1 and timeofday == "Night":
         jump charlottephase2interaction3part2
-    
+
     if charlottephase2interaction3 == 2 and charlottedaychecker2 < (dayNumber - 1) and timeofday == "Night":
         jump charlottephase2interaction4part1
 
@@ -1634,7 +1600,7 @@ label gotosleep:
 
     if avajobinterview != 999 and timeofday == "Night":
         jump didshemakeit
-        
+
 
     if oliviaquestlog == "I gotta wait for the tournament in 2 days!":
         $ oliviaquestlog = "I gotta wait for the tournament tomorrow!"
@@ -1668,8 +1634,6 @@ label gotosleep:
         elif dayName == "Sunday":
             $ dayName = "Monday"
 
-        #"Day Number [dayNumber]"
-
 
     scene fs blackblank
     with Dissolve(0.3)
@@ -1681,7 +1645,7 @@ label gotosleep:
     jump playerRoom
 
 label explorebeach:
-    #scene fs beachwithgirls
+
 
     with Dissolve(0.7)
     show screen charlotte_beach
@@ -1701,7 +1665,7 @@ label explorebeach:
     scene fs beach
     with Dissolve(0.5)
     "You can now explore the beach and talk to whomever you like"
-    
+
     call screen beach_screen
 
 label endofchapter2:
@@ -1723,7 +1687,7 @@ label howmuchmoneydoihave:
         scene fs playerroomNight
         hide screen backbuttonROOM
     elif whereami == "livingRoom":
-        if timeofday == "Night":#------------------------------this will be the updated whereami code!!-------------
+        if timeofday == "Night":
             scene fs livingroomnight
         else:
             scene fs livingroom
@@ -1764,7 +1728,7 @@ label passtime:
 
     if dayNumber == 24 and timeofday == "Night":
         $ dayNumber += 1
-         
+
     if timeofday == "Morning":
         scene fs playerroomMorn
         $ timeofday = "Day"
@@ -1788,8 +1752,7 @@ label passtime:
             $ dayName = "Sunday"
         elif dayName == "Sunday":
             $ dayName = "Monday"
-    
-    
+
 
     scene fs blackblank
     with Dissolve(0.3)
@@ -1811,7 +1774,6 @@ label gotophonefromcontacts:
     hide screen gameGallery
     hide screen phonecontacts
     call screen contacts
-
 
 
 label gotopicturesfromphone:
@@ -1885,10 +1847,7 @@ label gotowork:
                 jump returnwhereyouare
             "Patrons":
                 jump creditlist
-            #"Test":
-                #jump test4
-                #jump test2
-                #jump sophiaphase1interaction2part2
+
 
     elif timeofday == "Day":
         hide screen uppergui
@@ -1901,8 +1860,7 @@ label gotowork:
                 jump workoneshift
             "Nevermind":
                 jump returnwhereyouare
-            #"Tester":
-                #"[miaphase2interaction1],[miaphase2interaction2]"
+
 
     elif timeofday == "Night":
         if oliviaphase2interaction2 == 1 or pennyscene2 >= 1:
@@ -1950,22 +1908,11 @@ label test4:
     pause
 
 label testpuzzles:
-    #show screen puzzle_paper2
-    #show screen puzzle_paper3
-    #show screen puzzle_paper4
-    #show screen puzzle_paper5
-    #show screen puzzle_paper6
-    #show paperpuzzle2
-    #show paperpuzzle3
-    #show paperpuzzle4
-    #show paperpuzzle5
-    #show paperpuzzle6
-    #show screen puzzle_paper1
-    #pause
+
+
     call screen secondpuzzlegame
 
     "Alright lets test this"
-
 
 
 label rotatepaper2:
@@ -2106,7 +2053,7 @@ transform slowfingerfuck3:
     linear 0.2 yoffset 0
     repeat
 
-# ---------------------------MALL AND STORES AND ITEM DESCRIPTIONS--------------------------------------------------------
+# Stores and item descriptions
 
 label buysomething:
     scene fs mall
@@ -2144,7 +2091,6 @@ label buyfitbit:
         else:
             player "Don't have enough money. Should do some work and come back."
             jump buysomething
-
 
 
 label itspaint:
@@ -2186,12 +2132,7 @@ label itshandcuffs:
     call screen inventory(item_list, adj=tutorials_adjustment)
 
 
-
-
-
-
-
-# CHARACTER PIVOTS-----------------------------------------------------------------------------------
+# Character interaction routing
 label machinePivot:
     hide screen uppergui
     hide screen ava_atgym
@@ -2211,7 +2152,7 @@ label avaPivot:
     hide screen ava_atschoolhallway
     hide screen ava_atgym
 
-    #location matters
+
     if whereami != "Park" and timeofday != "Night" and avaphase1interaction2 == 2:
         scene fs schoolhallway
         player "I'm meeting Ava at the park at night, I should leave her alone for now."
@@ -2275,10 +2216,9 @@ label avaPivot:
                     jump avaphase1interaction2part3C
 
 
-
     elif whereami == "park":
 
-        #location doesn't matter
+
         if whereami != "Park" and avaphase1interaction2 == 5:
             jump letsmeetatthepark
 
@@ -2287,10 +2227,8 @@ label avaPivot:
 
 
 label emilyPivot:
-   # "[emilyphase1interaction1][emilyphase1interaction2][emilyphase1interaction3]"
-    #"[emilyphase2interaction1][emilyphase2interaction2][emilyphase2interaction3]"
-    #location doesn't matter
-    #"[emilyphase3interaction1], [whereami], [currentchapter]"
+
+
     if emilyphase3interaction1 == 1 and currentchapter == 3:
         if (whereami == "playerRoom" or whereami == "livingRoom"):
             if emilydaychecker < dayNumber:
@@ -2329,10 +2267,8 @@ label emilyPivot:
             hide screen phonecontacts
             player "{i}I'll call her from home when I have snacks.{/i}"
             jump returnwhereyouare
-            
 
 
-            
     if emilyphase2interaction1 == 2:
         hide screen contacts
         hide screen phonecontacts
@@ -2357,7 +2293,7 @@ label emilyPivot:
         player "I should call Emily over tonight, I want to take the next step."
         jump returnwhereyouare
 
-    #location is negative
+
     if whereami != "schoolhallway":
         if emilyphase1interaction2 == 3:
             hide screen phonecontacts
@@ -2384,7 +2320,6 @@ label emilyPivot:
             hide screen phonecontacts
             player "I should check in with Emily in person at school again."
             jump returnwhereyouare
-
 
 
     if whereami != "livingRoom" and whereami != "playerRoom":
@@ -2427,7 +2362,6 @@ label emilyPivot:
     if whereami == "schoolhallway":
 
 
-        #timeofday doesnt matter
         if emilyphase1interaction2 == 1:
             jump emilyphase1interaction2part1
         elif emilyphase1interaction2 == 3:
@@ -2444,7 +2378,7 @@ label emilyPivot:
                     player "She probably wants to make the finishing touches on the banner, I'll see her at the track meet."
                     jump returnwhereyouare
 
-        #timeofday matters
+
         if timeofday == "Morning":
             if emilyphase1interaction1 == 0:
                 jump emilyphase1interaction1part1
@@ -2483,149 +2417,8 @@ label emilyPivot:
                 jump emilyphase2interaction1part4
 
 
-
-
-
-
-
-
-    # if emilyphase1interaction2 == 6 and emilyphase2interaction1 == 0 and currentchapter == 2 and whereami == "schoolhallway":
-    #     jump emilyphase2interaction1part1
-    # elif emilyphase2interaction1 == 1 and timeofday == "Morning" and whereami == "schoolhallway" and emilyphase2interaction1 != 2:
-    #     jump emilyphase2interaction1part2
-    # elif emilyphase2interaction1 == 3 and timeofday != "Night" and (whereami == "schoolhallway" or whereami == "library"):
-    #     jump emilyphase2interaction1part4
-    # elif emilyphase2interaction1 == 2:
-    #     hide screen contacts
-    #     hide screen phonecontacts
-    #     emily "Sorry I can't talk right now!"
-    #     jump returnwhereyouare
-    # elif emilyphase2interaction1 == 3:
-    #     hide screen contacts
-    #     hide screen phonecontacts
-    #     emily "Hello?"
-    #     player "Hey I got the papers!"
-    #     emily "No way! Please get them to me as soon as possible!!"
-    #     jump returnwhereyouare
-    # elif emilyphase2interaction1 == 4 and whereami != "playerRoom":
-    #     hide screen contacts
-    #     hide screen phonecontacts
-    #     player "I should call Emily from my room."
-    #     jump returnwhereyouare
-    #
-    #
-    #
-    # if emilyphase1interaction1 == 0 and whereami == "schoolhallway" and timeofday == "Morning":
-    #     hide screen uppergui
-    #     jump emilyphase1interaction1part1
-    # elif emilyphase1interaction1 == 1 and whereami == "schoolhallway" and timeofday == "Morning":
-    #     jump emilyisbusy
-    # elif emilyphase1interaction1 == 1 and whereami == "schoolhallway" and timeofday == "Day":
-    #     jump emilyphase1interaction1part2
-    # elif emilyphase1interaction1 == 2 and whereami == "schoolhallway" and timeofday == "Morning":
-    #     jump whensthepaintagain2
-    # elif emilyphase1interaction1 == 3 and whereami == "schoolhallway" and timeofday != "Night":
-    #     jump emilyphase1interaction1part3
-    #
-    # if emilyphase1interaction2 == 1 and whereami == "schoolhallway":
-    #     hide screen uppergui
-    #     jump emilyphase1interaction2part1
-    # elif emilyphase1interaction2 == 2 and whereami == "schoolhallway":
-    #     hide screen uppergui
-    #     if timeofday == "Day":
-    #         jump emilyphase1interaction2part2
-    #     else:
-    #         jump emilyrunsaway
-    # elif emilyphase1interaction2 == 3 and whereami != "schoolhallway":
-    #     player "No reason to call her until I have the paint."
-    #     jump returnwhereyouare
-    # elif emilyphase1interaction2 == 3 and whereami == "schoolhallway":
-    #     scene fs schoolhallway2extras
-    #     hide screen emily_atschool
-    #     player "No point in talking to her right now, I should find some paint first."
-    #     jump returnwhereyouare
-    # elif emilyphase1interaction2 == 4 and whereami != "livingRoom" and whereami != "playerRoom":
-    #
-    #
-    #     if whereami == "playerRoom" and timeofday == "Morning":
-    #         scene fs playerroomMorn
-    #     elif whereami == "playerRoom" and timeofday == "Day":
-    #         scene fs playerroomDay
-    #     elif whereami == "playerRoom" and timeofday == "Night":
-    #         scene fs playerroomNight
-    #     elif whereami == "livingRoom":
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "overworldmap" and timeofday == "Night":
-    #         scene fs overworldnight
-    #     elif whereami == "overworldmap":
-    #         scene fs overworld
-    #     elif whereami == "gym":
-    #         scene fs gym
-    #     elif whereami == "library":
-    #         hide screen charlotte_library
-    #         scene fs library
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "gfroom":
-    #         scene fs gfroom
-    #     elif whereami == "sophiahouse":
-    #         scene fs sophiahouse
-    #     elif whereami == "school":
-    #         hide screen ava_atschool
-    #         scene fs schoolhallway
-    #     elif whereami == "schoolhallway":
-    #         hide screen emily_atschool
-    #         scene fs schoolhallway2
-    #     elif whereami == "classroom1":
-    #         hide screen mia_atschool
-    #         hide screen sophia_atschool
-    #         hide screen mia_sophia_atschool
-    #         scene fs classroom
-    #     elif whereami == "classroom2":
-    #         hide screen olivia_atschool
-    #         scene fs classroom
-    #     elif whereami == "classroom3":
-    #         hide screen charlotte_school
-    #         hide screen backbuttonCLASSROOM
-    #         scene fs classroom3
-    #     elif whereami == "mall":
-    #         scene fs malllabel
-    #     player "I'll call her from my place. I want her to get used to being there."
-    #     jump returnwhereyouare
-    # elif emilyphase1interaction2 == 4 and (whereami == "livingRoom" or whereami == "playerRoom") and timeofday != "Night":
-    #     jump emilyphase1interaction2part3
-    #
-    # elif emilyphase1interaction2 == 4 and (whereami == "livingRoom" or whereami == "playerRoom") and timeofday == "Night":
-    #     hide screen phonecontacts
-    #     hide screen contacts
-    #     hide screen backbuttonROOM
-    #     hide screen backbuttonLIVINGROOM
-    #     player "I think I'll call her during the day, atmosphere might be better."
-    #     player "Don't want her getting any hints about my intentions just yet."
-    #     jump returnwhereyouare
-    # elif emilyphase1interaction2 == 5 and whereami == "schoolhallway" and timeofday != "Night":
-    #     jump emilyphase1interaction2part4
-    # elif emilyphase1interaction2 == 5:
-    #     hide screen uppergui
-    #     hide screen contacts
-    #     hide screen phonecontacts
-    #     player "I don't want to text Emily just yet, I'll talk to her at the school in person."
-    #     jump returnwhereyouare
-    # elif emilyphase1interaction2 == 6:
-    #     if whereami == "schoolhallway":
-    #         scene fs schoolhallway2
-    #     player "She probably wants to make the finishing touches on the banner, I'll see her at the track meet."
-    #     jump returnwhereyouare
-
 label stephaniePivot:
-    
+
     if currentchapter >= 2 and timeofday != "Night" and whereami == "sunnysidemap" and stephaniedaychecker != dayNumber and stephaniescene1 == 2:
         jump stephaniescene1part3
     elif currentchapter >= 2 and timeofday != "Night" and whereami == "sunnysidemap" and stephaniedaychecker != dayNumber:
@@ -2649,15 +2442,15 @@ label ravenPivot:
 
 
 label miaPivot:
-    #"[miaphase1interaction1],[miaphase1interaction2],[miaphase1interaction3],[miaphase2interaction1]"
-    #"[charlottephase1interaction1], [charlottephase1interaction2],[charlottephase1interaction3]"
+
+
     hide screen uppergui
     hide screen phonecontacts
     hide screen contacts
     hide screen mia_atschool
     hide screen sophia_atschool
     hide screen mia_sophia_atschool
-    #location doesn't matter nor does timeofday-------
+
     if charlottephase1interaction2 == 2:
         if whereami == "classroom1" and timeofday == "Morning":
             jump charlottephaseMiaDelegation
@@ -2696,7 +2489,7 @@ label miaPivot:
         player "No need to text her, I'll just meet her in her room when I'm ready to go."
         jump returnwhereyouare
 
-    
+
     if miaphase2interaction2 >= 4 and katiephase2interaction1 == 4:
         hide screen uppergui
         hide screen questboxpreview
@@ -2727,7 +2520,6 @@ label miaPivot:
 
         jump talkaboutpizzaparty
 
-    
 
     if whereami != "classroom1" and miaphase2interaction1 == 2:
         mia "Hey! I'm busy come talk to me at my school!"
@@ -2737,10 +2529,7 @@ label miaPivot:
         player "I should call her from my livingroom at night."
         jump returnwhereyouare
 
-#-------------------------------------------------------------------------------
 
-
-    #Location matters---------------------------------
     if whereami == "classroom1":
         if timeofday == "Morning":
             if charlottephase1interaction2 == 2:
@@ -2787,7 +2576,7 @@ label miaPivot:
 
     elif whereami == "playerRoom":
         hide screen backbuttonROOM
-        #Time of day doesn't matter--------------------
+
         if miaphase1interaction1 == 4:
             hide screen phonecontacts
             hide screen contacts
@@ -2800,13 +2589,11 @@ label miaPivot:
             player "Huh, no answer."
             jump returnwhereyouare
         elif miaphase1interaction3 == 2 or miaphase1interaction3 == 3:
-            #"here?"
+
             player "{cps=25}Hey I know your class is starting soon sorry, but where did you visit again?{/cps}"
             mia "{cps=25}It was...the park for a walk, the mall for some shopping, stopped by the arcade to see Olivia. And the library to give charlotte her book back.{/cps}"
             jump returnwhereyouare
 
-
-        #Time of day Matters--------------------
 
         if timeofday == "Morning":
             if miaphase1interaction1 == 0:
@@ -2846,10 +2633,9 @@ label miaPivot:
                 jump returnwhereyouare
 
 
-
     elif whereami == "livingRoom":
-        #"dowe get here? [miaphase1interaction1]"
-        #Timeofday Doesn't matter----------------------
+
+
         if miaphase1interaction1 == 0:
             hide screen phone
             hide screen phonecontacts
@@ -2882,15 +2668,12 @@ label miaPivot:
             player "Huh, no answer."
             jump returnwhereyouare
         elif miaphase1interaction3 == 2 or miaphase1interaction3 == 3:
-            #"here2?"
+
             player "{cps=25}Hey I know your class is starting soon sorry, but where did you visit again?{/cps}"
             mia "{cps=25}It was...the park for a walk, the mall for some shopping, stopped by the arcade to see Olivia. And the library to give charlotte her book back.{/cps}"
             jump returnwhereyouare
 
 
-
-
-        #Timeofday matters-----------------------------
         if timeofday == "Night":
             if miaphase1interaction2 == 2:
                 jump miaphase1interaction2part3
@@ -2906,12 +2689,11 @@ label miaPivot:
                 jump returnwhereyouare
 
 
-
     elif whereami == "gfroom" and currentchapter > 1 and miaphase2interaction1 == 1:
         jump miaphase2interaction1part1
 
 
-    else: #if you're NOT in the Classroom or your Bedroom or Livingroom
+    else:
         if miaphase1interaction1 == 0:
             player "Hey babe!"
             mia "Come visit me at school during the morning when you have time XD."
@@ -2954,500 +2736,11 @@ label miaPivot:
             jump returnwhereyouare
 
 
-
-
-
-
-
-
-
-
     if miaphase1interaction1 == 2 and timeofday != "Night":
         player "I should text Mia at night in my room so I can uh...be alone."
     else:
         player "{i}I have no reason to call her right now.{/i}"
     jump returnwhereyouare
-
-    # if charlottephase1interaction2 == 2:
-    #     jump charlottephaseMiaDelegation
-    #
-    # if miaphase2interaction1 == 1 and currentchapter == 2 and whereami == "gfroom":
-    #     jump miaphase2interaction1part1
-    #
-    # if whereami == "playerRoom" and timeofday == "Morning":
-    #     scene fs playerroomMorn
-    # elif whereami == "playerRoom" and timeofday == "Day":
-    #     scene fs playerroomDay
-    # elif whereami == "playerRoom" and timeofday == "Night":
-    #     scene fs playerroomNight
-    # elif whereami == "livingRoom":
-    #     if timeofday == "Night":
-    #         scene fs livingroomnight
-    #     else:
-    #         scene fs livingroom
-    # elif whereami == "overworldmap" and timeofday == "Night":
-    #     scene fs overworldnight
-    # elif whereami == "overworldmap":
-    #     scene fs overworld
-    # elif whereami == "gym":
-    #     scene fs gym
-    # elif whereami == "library":
-    #     scene fs library
-    # elif whereami == "arcade":
-    #     scene fs arcade
-    # elif whereami == "gfhouse":
-    #     scene fs gfhouse
-    # elif whereami == "miashallway":
-    #     scene fs gfhousehallway
-    # elif whereami == "sophiahouse":
-    #     scene fs sophiahouse
-    # elif whereami == "school":
-    #     scene fs schoolhallway
-    # elif whereami == "schoolhallway":
-    #     scene fs schoolhallway2
-    # elif whereami == "classroom1":
-    #     hide screen mia_atschool
-    #     hide screen sophia_atschool
-    #     hide screen mia_sophia_atschool
-    #     scene fs classroom
-    # elif whereami == "mall":
-    #     scene fs malllabel
-    #
-    # if miaphase1interaction3 == 1 and whereami != "classroom1":
-    #
-    #     if whereami == "playerRoom" and timeofday == "Morning":
-    #         scene fs playerroomMorn
-    #     elif whereami == "playerRoom" and timeofday == "Day":
-    #         scene fs playerroomDay
-    #     elif whereami == "playerRoom" and timeofday == "Night":
-    #         scene fs playerroomNight
-    #     elif whereami == "livingRoom":
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "overworldmap" and timeofday == "Night":
-    #         scene fs overworldnight
-    #     elif whereami == "overworldmap":
-    #         scene fs overworld
-    #     elif whereami == "gym":
-    #         scene fs gym
-    #     elif whereami == "library":
-    #         scene fs library
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "sophiahouse":
-    #         scene fs sophiahouse
-    #     elif whereami == "school":
-    #         hide screen ava_atschool
-    #         scene fs schoolhallway
-    #     elif whereami == "schoolhallway":
-    #         hide screen emily_atschool
-    #         scene fs schoolhallway2
-    #     elif whereami == "classroom1":
-    #         hide screen mia_atschool
-    #         hide screen sophia_atschool
-    #         hide screen mia_sophia_atschool
-    #         scene fs classroom
-    #     elif whereami == "mall":
-    #         scene fs malllabel
-    #
-    #     "*Ring Ring*"
-    #     player "Huh, no answer."
-    #     jump returnwhereyouare
-    #
-    # elif miaphase1interaction3 == 1 and whereami == "classroom1":
-    #
-    #     scene fs classroomZOOM
-    #     with Dissolve(0.5)
-    #     jump miaphase1interaction3part1
-    #
-    # elif miaphase1interaction3 == 2 and whereami == "classroom1":
-    #     hide screen mia_atschool
-    #     scene fs classroomZOOM
-    #     with Dissolve(0.5)
-    #     jump miaphase1interaction3part1postconvo
-    # elif miaphase1interaction3 == 2:
-    #     if whereami == "playerRoom" and timeofday == "Morning":
-    #         scene fs playerroomMorn
-    #     elif whereami == "playerRoom" and timeofday == "Day":
-    #         scene fs playerroomDay
-    #     elif whereami == "playerRoom" and timeofday == "Night":
-    #         scene fs playerroomNight
-    #     elif whereami == "livingRoom":
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "overworldmap" and timeofday == "Night":
-    #         scene fs overworldnight
-    #     elif whereami == "overworldmap":
-    #         scene fs overworld
-    #     elif whereami == "gym":
-    #         scene fs gym
-    #     elif whereami == "library":
-    #         hide screen charlotte_library
-    #         scene fs library
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "gfroom":
-    #         scene fs gfroom
-    #     elif whereami == "sophiahouse":
-    #         scene fs sophiahouse
-    #     elif whereami == "school":
-    #         hide screen ava_atschool
-    #         scene fs schoolhallway
-    #     elif whereami == "schoolhallway":
-    #         hide screen emily_atschool
-    #         scene fs schoolhallway2
-    #     elif whereami == "classroom1":
-    #         hide screen mia_atschool
-    #         hide screen sophia_atschool
-    #         hide screen mia_sophia_atschool
-    #         scene fs classroom
-    #     elif whereami == "classroom2":
-    #         hide screen olivia_atschool
-    #         scene fs classroom
-    #     elif whereami == "classroom3":
-    #         hide screen charlotte_school
-    #         hide screen backbuttonCLASSROOM
-    #         scene fs classroom3
-    #     elif whereami == "mall":
-    #         scene fs malllabel
-    #
-    #     player "{cps=25}Hey I know your class is starting soon sorry, but where did you visit again?{/cps}"
-    #     mia "{cps=25}It was...the park for a walk, the mall for some shopping, stopped by the arcade to see Olivia. And the library to give charlotte her book back.{/cps}"
-    #     jump returnwhereyouare
-    #
-    #
-    # elif miaphase1interaction3 == 4:
-    #     if whereami == "playerRoom" and timeofday == "Morning":
-    #         hide screen backbuttonROOM
-    #         scene fs playerroomMorn
-    #     elif whereami == "playerRoom" and timeofday == "Day":
-    #         hide screen backbuttonROOM
-    #         scene fs playerroomDay
-    #     elif whereami == "playerRoom" and timeofday == "Night":
-    #         hide screen backbuttonROOM
-    #         scene fs playerroomNight
-    #     elif whereami == "livingRoom":
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "overworldmap" and timeofday == "Night":
-    #         scene fs overworldnight
-    #     elif whereami == "overworldmap":
-    #         scene fs overworld
-    #     elif whereami == "gym":
-    #         hide screen backbuttonGYM
-    #         scene fs gymarea
-    #     elif whereami == "library":
-    #         scene fs library
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "gfroom":
-    #         scene fs gfroom
-    #     elif whereami == "sophiahouse":
-    #         scene fs sophiahouse
-    #     elif whereami == "school":
-    #         hide screen ava_atschool
-    #         scene fs schoolhallway
-    #     elif whereami == "schoolhallway":
-    #         hide screen emily_atschool
-    #         scene fs schoolhallway2
-    #     elif whereami == "classroom1":
-    #         scene fs classroom
-    #     elif whereami == "mall":
-    #         hide screen backbuttonMALL
-    #         scene fs malllabel
-    #     elif whereami == "park" and timeofday == "Night":
-    #         scene fs parknight
-    #     elif whereami == "park":
-    #         scene fs park
-    #
-    #     player "Can't wait to call Mia and tell her I found her phone."
-    #     player "....."
-    #     player "Huh? Why is my pocket vibra-oh my god I’m so stupid."
-    #     jump returnwhereyouare
-    #
-    # if miaphase1interaction2 == 2:
-    #     if timeofday == "Night" and (whereami == "livingRoom" or whereami == "playerRoom"):
-    #         hide screen contacts
-    #         jump miaphase1interaction2part3
-    #     else:
-    #         player "I should text Mia to come over from my room tonight."
-    #         jump returnwhereyouare
-    #
-    # if miaphase1interaction1 == 0 and whereami == "classroom1":
-    #     hide screen mia_atschool
-    #     scene fs classroomZOOM
-    #     with Dissolve(0.5)
-    #     jump miaphase1interaction1part1
-    #
-    # elif miaphase1interaction1 == 0:
-    #     hide screen contacts
-    #     if whereami == "mall":
-    #         hide screen backbuttonMALL
-    #         scene fs malllabel
-    #     elif whereami == "classroom1":
-    #         scene fs classroom
-    #     elif whereami == "classroom2":
-    #         hide screen olivia_atschool
-    #         scene fs classroom
-    #     elif whereami == "classroom3":
-    #         hide screen charlotte_school
-    #         hide screen backbuttonCLASSROOM
-    #         scene fs classroom3
-    #     elif whereami == "schoolhallway":
-    #         hide screen emily_atschool
-    #         scene fs schoolhallway2
-    #     elif whereami == "school":
-    #         scene fs schoolhallway
-    #         hide screen ava_atschool
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "sophiahouse":
-    #         hide screen backbuttonSOPHIAOUTSIDE
-    #         scene fs sophiahouseoutside
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "gfroom":
-    #         scene fs gfroom
-    #     elif whereami == "library":
-    #         scene fs library
-    #     elif whereami == "gym":
-    #         scene fs gymarea
-    #     elif whereami == "outsidegym":
-    #         scene fs outsidegym
-    #     elif whereami == "overworldmap":
-    #         if timeofday != "Night":
-    #             scene fs overworld
-    #         else:
-    #             scene fs overworldnight
-    #     elif whereami == "livingRoom":
-    #         hide screen backbuttonLIVINGROOM
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "playerRoom":
-    #         hide screen backbuttonROOM
-    #         if timeofday == "Night":
-    #             scene fs playerroomNight
-    #         else:
-    #             scene fs playerroomDay
-    #     player "Hey babe!"
-    #     mia "Come visit me at school during the morning when you have time XD."
-    #     jump deactivatephone
-    #
-    # elif miaphase1interaction1 == 1 and whereami != "classroom1":
-    #     hide screen contacts
-    #     if whereami == "mall":
-    #         scene fs malllabel
-    #     elif whereami == "classroom1":
-    #         scene fs classroom
-    #     elif whereami == "classroom2":
-    #         hide screen olivia_atschool
-    #         scene fs classroom
-    #     elif whereami == "classroom3":
-    #         hide screen charlotte_school
-    #         hide screen backbuttonCLASSROOM
-    #         scene fs classroom3
-    #     elif whereami == "schoolhallway":
-    #         hide screen emily_atschool
-    #         scene fs schoolhallway2
-    #     elif whereami == "school":
-    #         scene fs schoolhallway
-    #         hide screen ava_atschool
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "sophiahouse":
-    #         scene fs sophiahouse
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "gfroom":
-    #         scene fs gfroom
-    #     elif whereami == "library":
-    #         scene fs library
-    #     elif whereami == "gym":
-    #         scene fs gymarea
-    #     elif whereami == "outsidegym":
-    #         scene fs outsidegym
-    #     elif whereami == "overworldmap":
-    #         if timeofday != "Night":
-    #             scene fs overworld
-    #         else:
-    #             scene fs overworldnight
-    #     elif whereami == "livingRoom":
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "playerRoom":
-    #         if timeofday == "Morning":
-    #             scene fs playerroomMorn
-    #         elif timeofday == "Day":
-    #             scene fs playerroomDay
-    #         elif timeofday == "Night":
-    #             scene fs playerroomNight
-    #
-    #     player "Huh no answer, maybe she's preparing for my visit in the afternoon."
-    #
-    #     jump deactivatephone
-    #
-    # elif miaphase1interaction1 == 1 and timeofday == "Night":
-    #     player "Huh no answer, she must be sleeping."
-    #
-    #     jump deactivatephone
-    #
-    # elif miaphase1interaction1 == 1:
-    #     hide screen mia_atschool
-    #     scene fs classroomZOOM
-    #     with Dissolve(0.5)
-    #     jump miaphase1interaction1part1postconvo
-    #
-    # elif miaphase1interaction1 == 2:
-    #     if whereami == "mall":
-    #         scene fs malllabel
-    #     elif whereami == "classroom1":
-    #         scene fs classroom
-    #     elif whereami == "classroom2":
-    #         scene fs classroom3
-    #     elif whereami == "schoolhallway":
-    #         scene fs schoolhallway2
-    #     elif whereami == "school":
-    #         scene fs schoolhallway
-    #     elif whereami == "arcade":
-    #         scene fs arcade
-    #     elif whereami == "sophiahouse":
-    #         scene fs sophiahouse
-    #     elif whereami == "gfhouse":
-    #         scene fs gfhouse
-    #     elif whereami == "miashallway":
-    #         scene fs gfhousehallway
-    #     elif whereami == "gfroom":
-    #         scene fs gfroom
-    #     elif whereami == "library":
-    #         scene fs library
-    #     elif whereami == "gym":
-    #         scene fs gymarea
-    #     elif whereami == "outsidegym":
-    #         scene fs outsidegym
-    #     elif whereami == "overworldmap":
-    #         if timeofday != "Night":
-    #             scene fs overworld
-    #         else:
-    #             scene fs overworldnight
-    #     elif whereami == "livingRoom":
-    #         if timeofday == "Night":
-    #             scene fs livingroomnight
-    #         else:
-    #             scene fs livingroom
-    #     elif whereami == "playerRoom":
-    #         scene fs playerRoom
-    #
-    #     if whereami == "playerRoom" and timeofday == "Night":
-    #         $ todayis = dayName
-    #         hide screen contacts
-    #         jump textmiafornudes
-    #     else:
-    #         player "I should text Mia at night in my room so I can uh...be alone."
-    #         jump returnwhereyouare
-    #
-    # elif miaphase1interaction1 == 3:
-    #     if todayis != dayName and whereami == "playerRoom" and timeofday == "Night":
-    #         hide screen contacts
-    #         jump textmiatocomeover
-    #     else:
-    #
-    #         hide screen contacts
-    #         if whereami == "mall":
-    #             scene fs mall
-    #         elif whereami == "classroom1":
-    #             scene fs classroom
-    #         elif whereami == "classroom2":
-    #             hide screen olivia_atschool
-    #             scene fs classroom
-    #         elif whereami == "classroom3":
-    #             hide screen charlotte_school
-    #             hide screen backbuttonCLASSROOM
-    #             scene fs classroom3
-    #         elif whereami == "schoolhallway":
-    #             hide screen emily_atschool
-    #             scene fs schoolhallway2
-    #         elif whereami == "school":
-    #             scene fs schoolhallway
-    #             hide screen ava_atschool
-    #         elif whereami == "arcade":
-    #             scene fs arcade
-    #         elif whereami == "sophiahouse":
-    #             scene fs sophiahouse
-    #         elif whereami == "gfhouse":
-    #             scene fs gfhouse
-    #         elif whereami == "miashallway":
-    #             scene fs gfhousehallway
-    #         elif whereami == "gfroom":
-    #             scene fs gfroom
-    #         elif whereami == "library":
-    #             scene fs library
-    #         elif whereami == "gym":
-    #             scene fs gymarea
-    #         elif whereami == "outsidegym":
-    #             scene fs outsidegym
-    #         elif whereami == "overworldmap":
-    #             if timeofday != "Night":
-    #                 scene fs overworld
-    #             else:
-    #                 scene fs overworldnight
-    #         elif whereami == "livingRoom":
-    #             if timeofday == "Night":
-    #                 hide screen backbuttonLIVINGROOM
-    #                 scene fs livingroomnight
-    #             else:
-    #                 hide screen backbuttonLIVINGROOM
-    #                 scene fs livingroom
-    #         elif whereami == "playerRoom":
-    #             hide screen backbuttonROOM
-    #             if timeofday == "Night":
-    #                 scene fs playerroomNight
-    #             else:
-    #                 scene fs playerroomDay
-    #
-    #         if timeofday == "Night":
-    #             player "{i}I should text her to come over in my room.{/i}"
-    #         else:
-    #             player "{i}She's getting ready for class I should text her to come over during the night in my room.{/i}"
-    #         jump returnwhereyouare
-    #
-    # elif miaphase1interaction1 == 4:
-    #     hide screen phonecontacts
-    #     hide screen contacts
-    #     mia "Busy right now sorry! Come over again during the afternoon."
-    #     player "Okay no problem."
-    #     jump returnwhereyouare
-    #
-    # elif miaphase1interaction3 == 5:
-    #     hide screen phonecontacts
-    #     hide screen contacts
-    #     "Mia isn't picking up her phone, she must be busy."
-    #     jump returnwhereyouare
 
 
 label oliviaPivot:
@@ -3457,7 +2750,7 @@ label oliviaPivot:
         jump returnwhereyouare
     if timeofday == "Morning" and oliviaphase2interaction3 == 1 and currentchapter >=3 and whereami == "classroom2":
         jump oliviaphase3interaction1part1
-        
+
     elif oliviaphase2interaction3 == 1 and currentchapter >=3 and whereami != "classroom2":
         hide screen contacts
         hide screen phonecontacts
@@ -3516,8 +2809,7 @@ label oliviaPivot:
         hide screen contacts
         jump returnwhereyouare
     "rgbcat" "nothing happens i guess. (havent fixed this in a better way yet.)"
-    jump returnwhereyouare 
-
+    jump returnwhereyouare
 
 
 label juliaPivot:
@@ -3550,7 +2842,7 @@ label sophiaPivot:
     hide screen mia_atschool
     hide screen sophia_atschool
     hide screen mia_sophia_atschool
-    #"[sophiaphase1interaction1],[sophiaphase1interaction2],[sophiaphase2interaction1]"
+
 
     if timeofday == "Morning" and sophiaphase2interaction3 == 2 and currentchapter >= 3:
         jump sophiaphase3interaction1part1
@@ -3559,7 +2851,7 @@ label sophiaPivot:
         jump sophiaphase1interaction1part1
     elif sophiaphase1interaction1 == 1 and whereami == "classroom1":
         jump sophianottalkingtome
-    elif sophiaphase1interaction1 == 2 and whereami == "classroom1": # unreachable i think
+    elif sophiaphase1interaction1 == 2 and whereami == "classroom1":
         jump sophiaphase1interaction1part4
     elif sophiaphase1interaction1 == 4:
         hide screen sophia_atschool
@@ -3577,13 +2869,10 @@ label sophiaPivot:
             jump insidecafe
         elif (whereami == "livingRoom" or whereami == "playerRoom") and timeofday == "Night":
             jump sophiaphase2interaction3part1
-    
-    
+
+
     "Nothing left in chapter"
     jump returnwhereyouare
-
-
-
 
 
 label katiePivot:
@@ -3657,12 +2946,11 @@ label katiePivot:
         jump conversationkatie5
 
 
-
 label charlottePivot:
-    #"[charlottephase1interaction1],[charlottephase1interaction2]"
+
 
     hide screen uppergui
-    #Not part of Charlotte's route
+
     if miaphase1interaction3 == 2 and whereami != "classroom3":
         jump looking4miaphone
 
@@ -3670,8 +2958,6 @@ label charlottePivot:
         jump looking4miaphonepostconvo
 
 
-
-    #location matters
     if whereami == "classroom3":
         if timeofday == "Morning":
             hide screen charlotte_school
@@ -3727,13 +3013,6 @@ label charlottePivot:
                     jump charlottephase2interaction2part2
 
 
-
-
-
-
-    #location doens't matter
-
-
     if charlottephase1interaction2 == 1:
         hide screen charlotte_school
         hide screen backbuttonCLASSROOM
@@ -3742,66 +3021,7 @@ label charlottePivot:
         jump returnwhereyouare
 
 
-
-
-
-
-
-
-
-
-     # hide screen uppergui
-     # if miaphase1interaction3 == 2 and whereami != "classroom3":
-     #     jump looking4miaphone
-     #
-     # if miaphase1interaction3 == 3:
-     #     jump looking4miaphonepostconvo
-     #
-     # if miaphase1interaction3 == 4 and whereami == "library" and foundphonevariable == 1:
-     #     jump foundmiaphoneconvo
-     #
-     #
-     #
-     #
-     # if charlottephase2interaction1 == 0 and currentchapter > 1 and whereami == "cafe" and timeofday != "Night":
-     #     jump charlottephase2interaction1part1
-     #
-     #
-     # if charlottephase1interaction1 == 0:
-     #     jump charlottephase1interaction1part1
-     # elif charlottephase1interaction1 == 1 and whereami == "classroom3" and timeofday == "Morning":
-     #     jump charlottewonttalktome
-     # elif charlottephase1interaction1 == 1 and whereami == "library" and timeofday == "Day":
-     #     jump charlottephase1interaction1part2
-     # elif charlottephase1interaction1 == 2 and whereami == "classroom3" and timeofday == "Morning":
-     #     jump charlottewonttalktome
-     # elif charlottephase1interaction1 == 2 and whereami == "library" and timeofday == "Day":
-     #     jump charlottephase1interaction1part3
-     # elif charlottephase1interaction1 == 3 and whereami == "classroom3" and timeofday == "Morning":
-     #     hide screen backbuttonCLASSROOM
-     #     hide screen charlotte_school
-     #     jump charlottephase1interaction2part1A
-     # elif charlottephase1interaction1 == 3 and whereami != "classroom3":
-     #     hide screen charlotte_school
-     #     hide screen backbuttonCLASSROOM
-     #     player "Charlotte's pissed. I should talk to her in the morning in class so there's...witnesses."
-     #     jump returnwhereyouare
-     # elif charlottephase1interaction1 == 4 and whereami != "library":
-     #     hide screen charlotte_school
-     #     hide screen backbuttonCLASSROOM
-     #     player "I don't think I can talk to her easily here, should meet her back at the library."
-     #     jump returnwhereyouare
-     # elif charlottephase1interaction1 == 4 and whereami == "library" and timeofday == "Day":
-     #     jump charlottephase1interaction2part1
-     # elif charlottephase1interaction2 == 1:
-     #     player "Charlotte won't talk to me at school and the librarian won't let me near her in the library."
-     #     player "I gotta visit the library with  {color=#3eab33}75{/color} dollars ready."
-     #     jump returnwhereyouare
-     # elif charlottephase1interaction2 == 2:
-     #     "There's no more content for Charlotte currently sorry"
-     #     jump returnwhereyouare
     jump returnwhereyouare
-
 
 
 label victoriaPivot:
@@ -3815,7 +3035,6 @@ label victoriaPivot:
         jump overworldmap
 
 
-#Defaults are here
 default lightbox_image = ""
 
 label patroncredits:
@@ -3976,6 +3195,5 @@ label patroncredits:
 
 label endgame:
 
-# This ends the game.
 
 return

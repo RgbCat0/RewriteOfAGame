@@ -1,6 +1,7 @@
-#chapter 1
-# interaction 1
-# part 1
+# Ava scenes.
+
+# Chapter 1
+
 
 label avaphase1interaction1part1:
     scene fs schoolhallwayzoomblur
@@ -11,13 +12,10 @@ label avaphase1interaction1part1:
         xalign 0.3 ypos 120
     with Dissolve(0.5)
 
-    #show fbava current:
-    #    xalign 0.7 ypos 120
-    #with Dissolve(0.5)
+
     $ avaSprite = 0
     show fbava current:
         xalign 0.5 ypos 120
-    #with Dissolve(0.5)
 
 
     player "Hey, Ava right?"
@@ -52,12 +50,12 @@ label avaphase1interaction1part1:
     player "I-I mean look as good as you sorry."
     $ playerSprite = 0
     $ avaSprite = 4
-    #play sound "audio/avagameaudio/avaohuh.wav"
+
     ava "Oh haha no problem, for a second there I thought..."
     $ avaSprite = 1
     ava "Well nevermind. You should visit me in the afternoon, come check out the gym see if you like it."
     $ avaSprite = 4
-    ava "I mean you dont look like you need to get in shape....b-but there's never anything wrong with gaining a few muscles and staying healthy!"
+    ava "I mean you don't look like you need to get in shape....b-but there's never anything wrong with gaining a few muscles and staying healthy!"
     $ avaSprite = 0
     $ playerSprite = 1
     player "Can't argue with that, maybe I will stop by!"
@@ -81,7 +79,6 @@ label avaphase1interaction1part1:
     hide fbplayer
     jump returnwhereyouare
 
-# part 1 post convo
 
 label avaphase1interaction1part1postconvo:
     scene fs schoolhallwayzoomblur
@@ -109,7 +106,6 @@ label avaphase1interaction1part1postconvo:
     hide fbava
     jump returnwhereyouare
 
-# part 2
 
 label avaphase1interaction1part2:
     scene fs gymarea
@@ -152,7 +148,7 @@ label avaphase1interaction1part2:
     player "You.....stretch in those clothes?"
     $ playerSprite = 0
     $ avaSprite = 3
-    ava "Yeah these are my gym clothes. Shows a bit of skin but I dont get too hot and super easy to move in. I can even do one of those human pretzel things!"
+    ava "Yeah these are my gym clothes. They show a bit of skin, but I don't get too hot and they're super easy to move in. I can even do one of those human pretzel things!"
     $ avaSprite = 2
     $ playerSprite = 11
     player "{i}Yup I need join this gym ASAP.{/i}"
@@ -190,7 +186,6 @@ label avaphase1interaction1part2:
     hide fbplayer
     jump returnwhereyouare
 
-# part 2 post convo
 
 label avayoushouldbuygympass:
     hide screen ava_atgym
@@ -218,7 +213,6 @@ label avayoushouldbuygympass:
     hide fbplayer
     jump returnwhereyouare
 
-# part 3
 
 label avaphase1interaction1part3:
     scene fs outsidegym
@@ -273,7 +267,6 @@ label avaphase1interaction1part3:
 
         jump outsidegym
 
-# part 3 still
 
 label payforgym:
     $ playerSprite = 5
@@ -306,7 +299,6 @@ label payforgym:
     hide screen gym_machine
     jump outsidegym
 
-# part 3.5 after pass (only happens when not at gym i guess)
 
 label igotthepassava:
     scene fs schoolhallwayzoomblur
@@ -337,7 +329,6 @@ label igotthepassava:
     hide fbava
     jump returnwhereyouare
 
-# part 4
 
 label avaphase1interaction1part4:
     hide screen ava_atgym
@@ -430,7 +421,6 @@ label avaphase1interaction1part4:
         "Yeah I got it thanks":
             jump giveuponava
 
-# great label (part 4)
 
 label giveuponava:
     player "{i}Okay I might be crossing a few too many lines here maybe I should stop.{/i}"
@@ -440,7 +430,6 @@ label giveuponava:
         "Definitely DON'T stop objectifying Ava, look at that ass!":
             jump showmethatassava
 
-# great label 2 (part 4)
 
 label giveuponava2:
     player "Yeah I got it thanks."
@@ -452,7 +441,6 @@ label giveuponava2:
     hide fbava
     jump passtime
 
-# part 4 continue
 
 label showmethatassava:
     scene fs avasquats1b
@@ -512,7 +500,7 @@ label showmethatassava:
     ava "Sure, see you."
     scene fs blackblank
     with Dissolve(1.0)
-    ava "Oh my god I can't deal with this right now I have the track meet to focus on. How could he flirt like that so blatantly he's dating Mia!" # this should be italic
+    ava "Oh my god I can't deal with this right now I have the track meet to focus on. How could he flirt like that so blatantly he's dating Mia!"
     ava "And I just kept going too. Am I a bad friend? Did I like knowing he was looking at my ass like that?"
     ava "I mean it's always nice knowing boys find you attractive bu-stop stop it STOP Ava! Focus!"
     ava "Track. Meet."
@@ -524,7 +512,6 @@ label showmethatassava:
     hide fbava
     jump passtime
 
-# part 5
 
 label avaatschoolinteraction1:
     scene fs schoolhallwayzoomblur
@@ -620,7 +607,6 @@ label avaatschoolinteraction1:
     hide fbava
     jump returnwhereyouare
 
-# part 5 post convo
 
 label letsmeetatthepark:
     scene fs schoolhallwayzoomblur
@@ -642,8 +628,6 @@ label letsmeetatthepark:
     $ avaSprite = 0
     jump returnwhereyouare
 
-# interaction 2
-# part 1
 
 label avaphase1interaction2part1:
     hide screen uppergui
@@ -717,7 +701,7 @@ label avaphase1interaction2part1:
     show fbplayer shortsboner:
         xalign 0.4 ypos 120
     with move
-    player "{i}Doth mine eyes deceive me? Her nipples are hard...{/i}" # spelling mistake lmao
+    player "{i}Doth mine eyes deceive me? Her nipples are hard...{/i}"
     ava "{i}Why is he getting so close to me? I'm-{/i}"
     $ avaSprite = 17
     ava "{i}Oh my god my nips are freaking hard as a rock! No wonder he looks so freaking horny.{/i}"
@@ -802,7 +786,6 @@ label avaphase1interaction2part1:
     hide fbava
     jump gotosleep
 
-# part 3 (part 2 is unsed part3 (A) is also unused? nice bro)
 
 label avaphase1interaction2part3B:
     hide screen uppergui
@@ -989,7 +972,6 @@ label avaphase1interaction2part3B:
     $ avaphase1interaction1 = 6
     jump gotosleep
 
-# part 3C (part 4 i guess or 3?? man idk)
 
 label avaphase1interaction2part3C:
     if whereami == "school":
@@ -1007,9 +989,6 @@ label avaphase1interaction2part3C:
         xalign 0.3 ypos 120
     with Dissolve(0.5)
 
-    #show fbava current:
-    #    xalign 0.7 ypos 120
-    #with Dissolve(0.5)
 
     show fbava current:
         xalign 0.5 ypos 120
@@ -1160,7 +1139,7 @@ label avaphase1interaction2part3C:
     ava "The girls are expecting a lot from me. I hear Emily's even doing some big project."
     $ avaSprite = 0
     $ playerSprite = 1
-    player "I'm sure they won't be dissapointed."
+    player "I'm sure they won't be disappointed."
     player "What do you get if you win?"
     $ playerSprite = 0
     $ avaSprite = 1
@@ -1216,7 +1195,7 @@ label avaphase1interaction2part3C:
 
     ava "...."
     $ avaSprite = 14
-    ava "Damn Ava. What have you gotten yourself into?" # should be italic
+    ava "Damn Ava. What have you gotten yourself into?"
     hide fbava current
     $ avaSprite = 0
     $ avaphase1interaction2 = 4
@@ -1224,10 +1203,9 @@ label avaphase1interaction2part3C:
 
     jump returnwhereyouare
 
-# end chapter 1
 
-# chapter 2
-# start
+# Chapter 2
+
 label esch1_ava:
 
     "A little while later..."
@@ -1320,7 +1298,7 @@ label esch1_ava:
         xalign 0.55 ypos 120
     show fbava nakedshyarms:
         xalign 0.75 ypos 120
-    #voice "audio/avagameaudio/avaohuh.wav"
+
     ava "oh uh..haha...yeah.."
     show fbava naked:
         xalign 0.75 ypos 120
@@ -1377,7 +1355,7 @@ label esch1_ava:
     ava "W-What?"
     show fbava nakedshy:
         xalign 0.8 ypos 120
-    #player moves closer
+
     $ playerSprite = 1
     player "Is that pose really necessary?"
     $ playerSprite = 0
@@ -1646,7 +1624,6 @@ label avachapter1rom:
     with Dissolve(0.5)
 
 
-    #$ hiden_textbox = False
     $ emilySprite = 1
     emily "Man what a race!"
     $ emilySprite = 0
@@ -1699,7 +1676,7 @@ label avachapter1rom:
     charlotte "A-Are you talking about a boy? What do you mean 'congratulating'?"
     show fbjosy talkflip:
         xalign 0.2 ypos 120
-    josy "Oh Charlotte, still so innocent. He's eating out her pussy like a roast beef sandwhich."
+    josy "Oh Charlotte, still so innocent. He's eating out her pussy like a roast beef sandwich."
     show fbjosy defaultflip:
         xalign 0.2 ypos 120
     "Everyone" "...."
@@ -1758,7 +1735,7 @@ label avachapter1rom:
     with Dissolve(1.0)
     $ avaquestlog = "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again."
     $ endchapter1_trigger = "1 ava romantic"
-    $ avaphase1interaction3 = 10 #just made it ten so it won't be touched again and shows that her phase1 is done
+    $ avaphase1interaction3 = 10
 
 
     jump startofchapter2
@@ -1955,7 +1932,7 @@ label avachapter1naughty:
         xalign 0.9 ypos 120
     with Dissolve(0.5)
 
-    #$ hiden_textbox = False
+
     $ emilySprite = 1
     emily "Man what a race!"
     $ emilySprite = 0
@@ -1981,7 +1958,6 @@ label avachapter1naughty:
         xalign 0.33 ypos 120
     show fbsophia current:
         xalign 0.5 ypos 120
-
 
 
     josy "Hey girls! It's been a while."
@@ -2094,13 +2070,12 @@ label avachapter1naughty:
     with Dissolve(1.0)
     $ avaquestlog = "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again."
     $ endchapter1_trigger = "1 ava naughty"
-    $ avaphase1interaction3 = 10 #just made it ten so it won't be touched again and shows that her phase1 is done
+    $ avaphase1interaction3 = 10
 
 
     jump startofchapter2
 
-# interaction 1
-# part 1
+
 label avaphase2interaction1part1:
     hide screen ava_atgym
     hide screen backbuttonGYM
@@ -2177,7 +2152,7 @@ label avaphase2interaction1part1:
     $ playerSprite = 1
     player "Hey Josy, nice to...meet you formally."
     $ playerSprite = 0
-    #heres where the chapter1 event convo would happen
+
     $ josySprite = 1
     josy "Come to the gym?"
     $ josySprite = 0
@@ -2394,8 +2369,6 @@ label avaphase2interaction1part1:
     $ avadaycheck = dayNumber
     jump gym
 
-# interaction 2
-# part 1
 
 label avaphase2interaction2part1:
         hide screen uppergui
@@ -2416,7 +2389,6 @@ label avaphase2interaction2part1:
         $ avaphase2interaction2 = 1
         jump playerRoom
 
-# part 2
 
 label avaphase2interaction2part2:
     scene fs insidecafe
@@ -2472,7 +2444,7 @@ label avaphase2interaction2part2:
     "Recruiter Guy" "Yes."
     player "Follow me she's right over here."
     "Recruiter Guy" "Ah thank you."
-    
+
     scene fs avainterviewscene1
     with Dissolve(0.7)
     "Recruiter Guy" "Nice place. Hello Miss Ava."
@@ -2493,7 +2465,7 @@ label avaphase2interaction2part2:
     "Recruiter Guy" "Let's get straight to the interview then."
     $ avajobinterview = 0
     jump avaquestion1
-    
+
 label avaquestion1:
     "Recruiter Guy" "Miss Ava, where do you see yourself in 5 years?"
     menu:
@@ -2503,7 +2475,7 @@ label avaquestion1:
             jump answermathematician
         "Succesful Athelete":
             jump answerathlete
-    
+
     label answerjournalist:
         scene fs avainterviewscene1b
         player "Ava always wanted to be a journalist. Reporting on natural disasters and murders is really cool."
@@ -2542,7 +2514,7 @@ label avaquestion2:
             jump answerfeelsgood
         "The Fame":
             jump answerfame
-    
+
     label answermoney:
         scene fs avainterviewscene2
         player "Top Atheletes get paid the big bucks right? What other reason is there?"
@@ -2589,12 +2561,12 @@ label avaquestion3:
             jump answerwell
         "Not Well":
             jump answernotwell
-    
+
 
     label answerwell:
         scene fs avainterviewscene1b
         player "Ava may be currently running for herself but she is constantly in a team environment."
-        player "Her good friend Josy is the long jump star of the school, yet they encourage eachother."
+        player "Her good friend Josy is the long jump star of the school, yet they encourage each other."
         player "Even though they're in different sports."
         scene fs avainterviewscene3
         player "Hey babe, how do you feel about relays?"
@@ -2627,7 +2599,7 @@ label avaquestion4:
             jump answerpassion
         "Watch TV":
             jump answertv
-    
+
     label answereat:
         scene fs avainterviewscene1b
         player "You know nuggy bites?"
@@ -2640,8 +2612,8 @@ label avaquestion4:
         scene fs avainterviewscene2
         player "Oh man, SOOOO many of those."
         scene fs avainterviewscene1
-        "Recruiter Guy" "....." 
-        "Recruiter Guy" "Okay." 
+        "Recruiter Guy" "....."
+        "Recruiter Guy" "Okay."
         $ avajobinterview = avajobinterview + 1
         jump avaquestion5
     label answerpassion:
@@ -2670,7 +2642,7 @@ label avaquestion4:
     label answertv:
         scene fs avainterviewscene1b
         player "There's this show, about this crazy family that's made up of entirely step members."
-        player "They're constantly fucking eachother and getting stuck in washing machines."
+        player "They're constantly fucking each other and getting stuck in washing machines."
         player "I wa-"
         scene fs avainterviewscene1
         pause
@@ -2691,7 +2663,7 @@ label avaquestion5:
             jump answerkind
         "She's Hot":
             jump answerhot
-    
+
     label answergood:
         scene fs avainterviewscene1b
         player "Do you know what the world record is for the female 400 meter sir?"
@@ -2749,12 +2721,11 @@ label avaquestion5:
         $ avaquestlog = "Well with the interview finished all we can do is wait"
         jump passtime
 
-# part 3
 
 label didshemakeit:
     scene fs playerbedneutral
     with Dissolve(0.7)
-    #"[avajobinterview]"
+
     "Briiing Briiing"
     scene fs playerbedphone
     with Dissolve(0.50)
@@ -2901,7 +2872,7 @@ label avaphase2interaction2part3:
     show avainterviewbj movie5
     ava "Guhk Guhk!"
     pause
-    show avainterviewbj movie6   
+    show avainterviewbj movie6
     play sound "audio/avagameaudio/avaUDblowjobswallow.wav" loop
     player "FUCK c'mon c'mon!"
     player "UGH I'm fucking cumming!"
@@ -2917,14 +2888,12 @@ label avaphase2interaction2part3:
     ava "Tasty."
     scene fs blackblank
     with Dissolve(1.0)
-    "Ava cleaned herself up before saying her goodbyes and heading home for the night"    
+    "Ava cleaned herself up before saying her goodbyes and heading home for the night"
     $ avaquestlog = "Ava can be really cute...plus...blowjob. I can still see her at the gym right?"
     $ avaphase2interaction2 = 3
     $ avaphase2interaction3 = 1
     jump gotosleep
 
-# interaction 3
-# part 1
 
 label avaphase2interaction3part1:
     stop music fadeout 5
@@ -2984,12 +2953,12 @@ label avaphase2interaction3part1:
     $ avaSprite = 1
     ava "Don't like that."
     scene fs gymarea
-    
+
     show fbplayer current:
         xalign 0.4 ypos 120
     show fbjosy current:
         xalign 0.6 ypos 120
-    
+
     show fbava current:
         xalign 0.65 ypos 120
 
@@ -3070,7 +3039,7 @@ label avaphase2interaction3part1:
     ava "..."
     player "Ava?"
     scene fs avagymworkout7
-    #voice "audio/avagameaudio/avagrunt1.wav"
+
     ava "You got any brothers [povname]?"
     player "What?"
     scene fs avagymworkout8
@@ -3099,7 +3068,7 @@ label avaphase2interaction3part1:
     with Dissolve(1.0)
     player "Phew, that was pretty good."
     player "Your glutes are looking fine, if me spotting you keeps you in the gym I'm all for it!"
-    ava "Mmm."    
+    ava "Mmm."
     scene fs avafirstsex2
     player "What's up, you okay?"
     player "You've been a bit off today."
@@ -3211,11 +3180,9 @@ label avaphase2interaction3part1:
     $ timeofday = "Night"
     jump passtime
 
-# end chapter 2
-# end chapter 2 content
 
 label avabeachchapter2end:
-    #"test ava"
+
     hide screen mia_beach1
     hide screen mia_beach2
     hide screen mia_beach3
@@ -3286,7 +3253,7 @@ label avabeachchapter2end:
     scene fs blackblank
     with Dissolve(1.0)
     "It was a lot of fun!"
-    #"[avaphase2interaction3]"
+
     if avaphase2interaction3 >= 2:
         "Would you like to end the day with Ava?"
         menu:
@@ -3591,9 +3558,8 @@ label avabeachchapter2end:
 
         jump startofchapter3
 
-# begin chapter 3
+# Chapter 3
 
-# Chapter 3 and related character scenes.
 
 label avaphase3interaction1part1:
     show fbava current:
