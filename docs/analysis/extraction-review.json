@@ -1,0 +1,150 @@
+{
+  "reference": "HEAD (includes the owner's pre-existing uncommitted extraction and Charlotte fixes in the working-tree comparison)",
+  "top_level_labels_before": 355,
+  "top_level_labels_after": 355,
+  "removed": [],
+  "added": [],
+  "moved": [
+    {
+      "label": "avabeachchapter2end",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/ava.rpy"
+    },
+    {
+      "label": "avaphase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/ava.rpy"
+    },
+    {
+      "label": "avaphase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/ava.rpy"
+    },
+    {
+      "label": "charlottebeachchapter2end",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/charlotte.rpy"
+    },
+    {
+      "label": "charlottephase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/charlotte.rpy"
+    },
+    {
+      "label": "continuebooboconvo",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/charlotte.rpy"
+    },
+    {
+      "label": "charlottephase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/charlotte.rpy"
+    },
+    {
+      "label": "emilybeachchapter2end",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/emily.rpy"
+    },
+    {
+      "label": "emilychoice",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/emily.rpy"
+    },
+    {
+      "label": "emilyphase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/emily.rpy"
+    },
+    {
+      "label": "emilyphase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/emily.rpy"
+    },
+    {
+      "label": "miaisnthome",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/julia.rpy"
+    },
+    {
+      "label": "talkwithjulia",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/julia.rpy"
+    },
+    {
+      "label": "katiephase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/katie.rpy"
+    },
+    {
+      "label": "katiephase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/katie.rpy"
+    },
+    {
+      "label": "miabeachchapter2end",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/mia.rpy"
+    },
+    {
+      "label": "miaphase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/mia.rpy"
+    },
+    {
+      "label": "miaphase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/mia.rpy"
+    },
+    {
+      "label": "oliviabeachchapter2end",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/olivia.rpy"
+    },
+    {
+      "label": "oliviaphase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/olivia.rpy"
+    },
+    {
+      "label": "oliviaphase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/olivia.rpy"
+    },
+    {
+      "label": "sophiabeachchapter2end",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/sophia.rpy"
+    },
+    {
+      "label": "sophiaphase3interaction1part1",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/sophia.rpy"
+    },
+    {
+      "label": "sophiaphase3interaction1part2",
+      "from": "game/gameDialogues.rpy",
+      "to": "game/characters/sophia.rpy"
+    }
+  ],
+  "changed_executable_content": [
+    "gameIntro",
+    "specialwakeup",
+    "phase1ending",
+    "playerRoom",
+    "juliaroom",
+    "arcade",
+    "charlotteshouse",
+    "viewquests",
+    "useinventory",
+    "gotopicturesfromphone",
+    "gotowork",
+    "katiePivot",
+    "charlottePivot",
+    "avaphase2interaction2part1",
+    "avaphase2interaction2part2",
+    "charlottephaseMiaDelegation",
+    "gohomeemily",
+    "gamingpartnerolivia"
+  ],
+  "initial_session_review": "355 top-level labels, seven moves, zero missing/added labels, only charlotteshouse and charlottePivot changed executable content. Subsequent eight scene-group moves were verified against the entire executable-line inventory before fixes."
+}

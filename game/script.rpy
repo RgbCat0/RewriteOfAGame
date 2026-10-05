@@ -41,18 +41,7 @@ label playerRoom:
 
     if timeofday == "Morning":
         scene fs playerroomMorn
-        if miaphase2interaction2 == 4 and currentchapter == 3 and dayNumber > 21:
-            jump specialwakeup
-        if miaphase1interaction2 == 4:          #Use these lines to call specialwakeup when something
-            jump specialwakeup                  #needs to happen in the morning when player wakes up
-        if avaphase2interaction1 == 1 and avadaycheck < dayNumber:
-            jump specialwakeup
-        # if dayNumber >= charlotteblackmailday and charlottephase2interaction2 == 1:
-        #     jump specialwakeup
-        if charlottephase2interaction2 == 2:
-            jump specialwakeup
-        
-        if amountspent >= 350 and ashleychecker == 0:
+        if special_wakeup_target() is not None:
             jump specialwakeup
         call screen myRoom("playerroomMorning.png", "playerroomMorningHover.png")
 
@@ -401,6 +390,10 @@ label outsideoffice:
 
 
 label insidecafe:
+    if map_entry_block_reason("insidecafe") is not None:
+        player "[map_entry_block_reason('insidecafe')]"
+        jump gotosunnyside
+
     $ whereami = "cafe"
 
     hide screen uppergui
@@ -441,6 +434,10 @@ label insidecafe:
 
 
 label insideclub:
+    if map_entry_block_reason("insideclub") is not None:
+        player "[map_entry_block_reason('insideclub')]"
+        jump gotosunnyside
+
     hide screen uppergui
     hide screen questboxpreview
     hide screen clubrestroomstall
@@ -544,6 +541,10 @@ label beach:
 
 
 label outsidegym:
+    if map_entry_block_reason("outsidegym") is not None:
+        player "[map_entry_block_reason('outsidegym')]"
+        jump overworldmap
+
     $ whereami = "outsidegym"
     hide screen questboxpreview
     hide screen tosunnyside
@@ -560,6 +561,10 @@ label outsidegym:
     call screen outsidethegym
 
 label gym:
+    if map_entry_block_reason("gym") is not None:
+        player "[map_entry_block_reason('gym')]"
+        jump overworldmap
+
     hide screen backbuttonGYMOUTSIDE
 
     if headtosunnyside == 1:
@@ -816,9 +821,9 @@ label juliaroom:
 
     elif juliachecker >= 1 and juliatouchday < dayNumber and juliachecker < 2:
         "As you approach the door you can hear someone making noise"
-        julia "{size=-15}Ohhhh OHHHH YES!{/i}"
-        julia "{size=-15}That's it mmmmm!{/i}"
-        julia "{size=-15}God I wish I had the real thing right now!{/i}"
+        julia "{size=-15}Ohhhh OHHHH YES!{/size}"
+        julia "{size=-15}That's it mmmmm!{/size}"
+        julia "{size=-15}God I wish I had the real thing right now!{/size}"
         julia "{size=-15}AHHN yesyesyesyes!{/size}"
         with vpunch
         julia "{size=-15}I'm CUMMING!!!{/size}"
@@ -902,6 +907,9 @@ label sophiahouse:
         jump sophiaphase2interaction1part1
 
     if sophiaphase1interaction2 == 1:
+        if timeofday != "Day":
+            player "I should visit Sophia this afternoon."
+            jump overworldmap
         jump sophiaphase1interaction2part2
 
     if timeofday == "Night":
@@ -912,7 +920,10 @@ label sophiahouse:
 
     $ whereami = "sophiahouse"
     scene fs sophiahouseoutside
-    if sophiaphase1interaction1 == 1: # should be time mattered but isnt great dev once again
+    if sophiaphase1interaction1 == 1:
+        if timeofday != "Day":
+            player "I should visit Sophia this afternoon."
+            jump overworldmap
         jump sophiaphase1interaction1part2
 
     show screen uppergui
@@ -920,10 +931,18 @@ label sophiahouse:
     call screen outsidesophiahouse
 
 label apartmentlobbymenu:
+    if map_entry_block_reason("apartmentlobbymenu") is not None:
+        player "[map_entry_block_reason('apartmentlobbymenu')]"
+        jump gotosunnyside
+
     jump apartmentlobbyolivia
 
 
 label apartmentlobbyolivia:
+    if map_entry_block_reason("apartmentlobbyolivia") is not None:
+        player "[map_entry_block_reason('apartmentlobbyolivia')]"
+        jump gotosunnyside
+
     hide screen locationname
     hide screen uppergui
     hide screen tonormalmap
@@ -1096,14 +1115,14 @@ label arcade:
         jump overworldmap
 
 
-    show screen olivia_atschool
+    jump overworldmap
 
 label charlotteshouse:
     hide screen questboxpreview
     hide screen locationname
     hide screen tosunnyside
     hide screen uppergui
-    $ whereami == "charlotteshouse"
+    $ whereami = "charlotteshouse"
 
     if headtosunnyside == 1:
         hide screen uppergui
@@ -1152,6 +1171,10 @@ label charlotteshouse:
 
 
 label school:
+    if map_entry_block_reason("school") is not None:
+        player "[map_entry_block_reason('school')]"
+        jump overworldmap
+
     scene fs schoolhallwayextras
     hide screen questboxpreview
     hide screen locationname
@@ -1314,6 +1337,10 @@ label classroom3:
     call screen classroom3
 
 label malllabel:
+    if map_entry_block_reason("malllabel") is not None:
+        player "[map_entry_block_reason('malllabel')]"
+        jump overworldmap
+
     hide screen uppergui
     hide screen questboxpreview
     hide screen locationname
@@ -1355,6 +1382,10 @@ label malllabel:
     call screen mall
 
 label mallstore:
+    if map_entry_block_reason("mallstore") is not None:
+        player "[map_entry_block_reason('mallstore')]"
+        jump overworldmap
+
     hide screen questboxpreview
     hide screen backbuttonMALL
     hide screen uppergui
@@ -1463,7 +1494,10 @@ label viewquests:
     elif whereami == "overworldmap":
         scene fs overworld
     elif whereami == "gym":
-        scene fs gym
+        if timeofday == "Day":
+            scene fs gymareaafternoon
+        else:
+            scene fs gymarea
     elif whereami == "library":
         scene fs library
     elif whereami == "arcade":
@@ -1513,7 +1547,10 @@ label useinventory:
     elif whereami == "overworldmap":
         scene fs overworld
     elif whereami == "gym":
-        scene fs gym
+        if timeofday == "Day":
+            scene fs gymareaafternoon
+        else:
+            scene fs gymarea
     elif whereami == "library":
         scene fs library
     elif whereami == "arcade":
@@ -1802,7 +1839,10 @@ label gotopicturesfromphone:
     elif whereami == "overworldmap":
         scene fs overworld
     elif whereami == "gym":
-        scene fs gym
+        if timeofday == "Day":
+            scene fs gymareaafternoon
+        else:
+            scene fs gymarea
     elif whereami == "library":
         scene fs library
     elif whereami == "arcade":
@@ -1856,7 +1896,7 @@ label gotowork:
                 #jump sophiaphase1interaction2part2
 
     elif timeofday == "Day":
-        hide screen uppgui
+        hide screen uppergui
         hide screen backbuttonROOM
         hide screen locationname
         scene fs computerscreen
@@ -2703,6 +2743,9 @@ label miaPivot:
     hide screen uppergui
     hide screen phonecontacts
     hide screen contacts
+    hide screen mia_atschool
+    hide screen sophia_atschool
+    hide screen mia_sophia_atschool
     #location doesn't matter nor does timeofday-------
     if charlottephase1interaction2 == 2:
         if whereami == "classroom1" and timeofday == "Morning":
@@ -3004,6 +3047,12 @@ label miaPivot:
 
 
 
+    if miaphase1interaction1 == 2 and timeofday != "Night":
+        player "I should text Mia at night in my room so I can uh...be alone."
+    else:
+        player "{i}I have no reason to call her right now.{/i}"
+    jump returnwhereyouare
+
     # if charlottephase1interaction2 == 2:
     #     jump charlottephaseMiaDelegation
     #
@@ -3208,7 +3257,7 @@ label miaPivot:
     #         scene fs classroom
     #     elif whereami == "mall":
     #         hide screen backbuttonMALL
-    #         scene fs mall
+    #         scene fs malllabel
     #     elif whereami == "park" and timeofday == "Night":
     #         scene fs parknight
     #     elif whereami == "park":
@@ -3237,7 +3286,7 @@ label miaPivot:
     #     hide screen contacts
     #     if whereami == "mall":
     #         hide screen backbuttonMALL
-    #         scene fs mall
+    #         scene fs malllabel
     #     elif whereami == "classroom1":
     #         scene fs classroom
     #     elif whereami == "classroom2":
@@ -3294,7 +3343,7 @@ label miaPivot:
     # elif miaphase1interaction1 == 1 and whereami != "classroom1":
     #     hide screen contacts
     #     if whereami == "mall":
-    #         scene fs mall
+    #         scene fs malllabel
     #     elif whereami == "classroom1":
     #         scene fs classroom
     #     elif whereami == "classroom2":
@@ -3361,7 +3410,7 @@ label miaPivot:
     #
     # elif miaphase1interaction1 == 2:
     #     if whereami == "mall":
-    #         scene fs mall
+    #         scene fs malllabel
     #     elif whereami == "classroom1":
     #         scene fs classroom
     #     elif whereami == "classroom2":
@@ -3583,6 +3632,9 @@ label juliaPivot:
 
 
 label sophiaPivot:
+    hide screen mia_atschool
+    hide screen sophia_atschool
+    hide screen mia_sophia_atschool
     #"[sophiaphase1interaction1],[sophiaphase1interaction2],[sophiaphase2interaction1]"
 
     if timeofday == "Morning" and sophiaphase2interaction3 == 2 and currentchapter >= 3:
@@ -3641,7 +3693,10 @@ label katiePivot:
     elif whereami == "overworldmap":
         scene fs overworld
     elif whereami == "gym":
-        scene fs gym
+        if timeofday == "Day":
+            scene fs gymareaafternoon
+        else:
+            scene fs gymarea
     elif whereami == "library":
         scene fs library
     elif whereami == "arcade":
@@ -3668,7 +3723,7 @@ label katiePivot:
         hide screen charlotte_school
         scene fs classroom3
     elif whereami == "mall":
-        scene fs malllabel
+        scene fs mall
 
 
     if katieconversation == 0:
@@ -3760,6 +3815,7 @@ label charlottePivot:
 
 
 
+
     #location doens't matter
 
 
@@ -3829,7 +3885,7 @@ label charlottePivot:
      # elif charlottephase1interaction2 == 2:
      #     "There's no more content for Charlotte currently sorry"
      #     jump returnwhereyouare
-
+    jump returnwhereyouare
 
 
 

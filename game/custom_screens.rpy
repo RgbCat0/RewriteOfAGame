@@ -81,7 +81,7 @@ screen overworld:
             hovered SetScreenVariable("lastplacehovered", "library"), SetVariable("hovertext","Library")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("library")
+            action map_destination_action("library")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -92,7 +92,7 @@ screen overworld:
             hovered SetVariable("hovertext","School"), SetScreenVariable("lastplacehovered", "school")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("school")
+            action map_destination_action("school")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -103,7 +103,7 @@ screen overworld:
             hovered SetVariable("hovertext","Gym"), SetScreenVariable("lastplacehovered", "gym")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("outsidegym")
+            action map_destination_action("outsidegym")
 
 
 
@@ -116,7 +116,7 @@ screen overworld:
             hovered SetVariable("hovertext","Mia's House"), SetScreenVariable("lastplacehovered", "gfhouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("gfhouse")
+            action map_destination_action("gfhouse")
 
 
         imagebutton:
@@ -128,7 +128,7 @@ screen overworld:
             hovered SetVariable("hovertext","Park"), SetScreenVariable("lastplacehovered", "park")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("park")
+            action map_destination_action("park")
 
 
         imagebutton:
@@ -139,7 +139,7 @@ screen overworld:
             hovered SetVariable("hovertext","Home"), SetScreenVariable("lastplacehovered", "yourhouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("playerlivingroom")
+            action map_destination_action("playerlivingroom")
 
         imagebutton:
             focus_mask True
@@ -149,7 +149,7 @@ screen overworld:
             hovered SetVariable("hovertext","Sophia's House"), SetScreenVariable("lastplacehovered", "sophiahouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("sophiahouse")
+            action map_destination_action("sophiahouse")
 
         imagebutton:
 
@@ -160,7 +160,7 @@ screen overworld:
             hovered SetVariable("hovertext","Arcade"), SetScreenVariable("lastplacehovered", "arcade")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("arcade")
+            action map_destination_action("arcade")
 
         imagebutton:
 
@@ -171,7 +171,7 @@ screen overworld:
             hovered SetVariable("hovertext","Mansion"), SetScreenVariable("lastplacehovered", "charlotteshouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("charlotteshouse")
+            action map_destination_action("charlotteshouse")
 
         imagebutton:
             focus_mask True
@@ -181,7 +181,7 @@ screen overworld:
             hovered SetVariable("hovertext","The Mall"), SetScreenVariable("lastplacehovered", "mall")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("malllabel")
+            action map_destination_action("malllabel")
 
 
 screen overworldnight:
@@ -198,7 +198,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Arcade"), SetScreenVariable("lastplacehovered", "arcade")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("arcade")
+            action map_destination_action("arcade")
 
         imagebutton:
 
@@ -209,7 +209,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Mansion"), SetScreenVariable("lastplacehovered", "charlotteshouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("charlotteshouse")
+            action map_destination_action("charlotteshouse")
 
         imagebutton:
             focus_mask True
@@ -219,7 +219,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Home"), SetScreenVariable("lastplacehovered", "yourhouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("playerlivingroom")
+            action map_destination_action("playerlivingroom")
 
         imagebutton:
             focus_mask True
@@ -229,7 +229,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Gym"), SetScreenVariable("lastplacehovered", "gym")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("outsidegym")
+            action map_destination_action("outsidegym")
 
         imagebutton:
             focus_mask True
@@ -239,7 +239,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","The Mall"), SetScreenVariable("lastplacehovered", "mall")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("malllabel")
+            action map_destination_action("malllabel")
 
         imagebutton:
             focus_mask True
@@ -249,7 +249,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Mia's House"), SetScreenVariable("lastplacehovered", "gfhouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("gfhouse")
+            action map_destination_action("gfhouse")
 
 
         imagebutton:
@@ -260,7 +260,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Park"), SetScreenVariable("lastplacehovered", "park")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("park")
+            action map_destination_action("park")
 
         imagebutton:
             focus_mask True
@@ -270,7 +270,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","School"), SetScreenVariable("lastplacehovered", "school")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("school")
+            action map_destination_action("school")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -281,7 +281,7 @@ screen overworldnight:
             hovered SetVariable("hovertext","Sophia's House"), SetScreenVariable("lastplacehovered", "sophiahouse")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("sophiahouse")
+            action map_destination_action("sophiahouse")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -293,7 +293,7 @@ screen overworldnight:
             unhovered SetVariable("hovertext", "")
 
 
-            action Jump("library")
+            action map_destination_action("library")
 
 screen screen_sunnyside:
 
@@ -312,7 +312,7 @@ screen screen_sunnyside:
             hovered SetScreenVariable("lastplacehovered", "cafe"), SetVariable("hovertext","Cafe")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("insidecafe")
+            action map_destination_action("insidecafe")
 
         imagebutton:
             focus_mask True
@@ -322,7 +322,7 @@ screen screen_sunnyside:
             hovered SetVariable("hovertext","Club"), SetScreenVariable("lastplacehovered", "club")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("insideclub")
+            action map_destination_action("insideclub")
 
 
         imagebutton:
@@ -333,7 +333,7 @@ screen screen_sunnyside:
             hovered SetVariable("hovertext","Apartment"), SetScreenVariable("lastplacehovered", "apartment")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("apartmentlobbymenu")
+            action map_destination_action("apartmentlobbymenu")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -344,7 +344,7 @@ screen screen_sunnyside:
             hovered SetVariable("hovertext","Office Building"), SetScreenVariable("lastplacehovered", "office")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("outsideoffice")
+            action map_destination_action("outsideoffice")
 
 
 
@@ -357,7 +357,7 @@ screen screen_sunnyside:
             hovered SetVariable("hovertext","Beach"), SetScreenVariable("lastplacehovered", "beach")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("beach")
+            action map_destination_action("beach")
 
 
 screen screen_sunnysidenight:
@@ -377,7 +377,7 @@ screen screen_sunnysidenight:
             hovered SetScreenVariable("lastplacehovered", "cafe"), SetVariable("hovertext","Cafe")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("insidecafe")
+            action map_destination_action("insidecafe")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -388,7 +388,7 @@ screen screen_sunnysidenight:
             hovered SetVariable("hovertext","Club"), SetScreenVariable("lastplacehovered", "club")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("insideclub")
+            action map_destination_action("insideclub")
 
         imagebutton:
             focus_mask True
@@ -398,7 +398,7 @@ screen screen_sunnysidenight:
             hovered SetVariable("hovertext","Apartment"), SetScreenVariable("lastplacehovered", "apartment")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("apartmentlobbymenu")
+            action map_destination_action("apartmentlobbymenu")
 
 
         imagebutton:
@@ -410,7 +410,7 @@ screen screen_sunnysidenight:
             hovered SetVariable("hovertext","Office Building"), SetScreenVariable("lastplacehovered", "office")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("outsideoffice")
+            action map_destination_action("outsideoffice")
 
         imagebutton:
             #xalign 0.75 yalign 0.3
@@ -421,7 +421,7 @@ screen screen_sunnysidenight:
             hovered SetVariable("hovertext","Beach"), SetScreenVariable("lastplacehovered", "beach")
             unhovered SetVariable("hovertext", "")
 
-            action Jump("beach")
+            action map_destination_action("beach")
 
 
 

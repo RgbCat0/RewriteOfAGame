@@ -725,7 +725,10 @@ label charlottephaseMiaDelegation:
         elif whereami == "overworldmap":
             scene fs overworld
         elif whereami == "gym":
-            scene fs gym
+            if timeofday == "Day":
+                scene fs gymareaafternoon
+            else:
+                scene fs gymarea
         elif whereami == "library":
             scene fs library
         elif whereami == "arcade":
@@ -3435,3 +3438,897 @@ label charlottephase2interaction4part1:
     jump passtime
 
 # end chapter 2
+# end chapter 2 content
+
+label charlottebeachchapter2end:
+    hide screen mia_beach1
+    hide screen mia_beach2
+    hide screen mia_beach3
+    hide screen sophia_beach
+    hide screen charlotte_beach
+    hide screen ava_beach
+    hide screen emily_beach
+    hide screen olivia_beach
+    hide screen backbuttonBEACH
+
+    scene fs charlottechapter2end1
+    with Dissolve(0.7)
+    player "Charlotte hey!"
+    charlotte "Mmmm."
+    player "Mind if I join you?"
+    scene fs charlottechapter2end1b
+    charlotte "Sure."
+    scene fs charlottechapter2end2
+    with Dissolve(0.5)
+    player "Ahhh. Oh this is relaxing!"
+    charlotte "Yup."
+    scene fs charlottechapter2end3
+    player "Crazy how little people there are here."
+    player "Usually whenever I pass by there's tons!"
+    charlotte "S'cause I rented the place out."
+    player "Wait you did? You can RENT a beach?!"
+    charlotte "If you pay enough. I didn't want us to be bothered by other people."
+    player "Wow Charlotte. New found respect I gotta say!"
+    charlotte "Mmhmm. Now if you quiet down we might actually enjoy my rented beach."
+    player "Haha sorry."
+    #$ charlottephase2interaction3 = 2
+    if charlottephase2interaction3 >= 2:
+        "Would you like to end the day with Charlotte?"
+        menu:
+            "Romance":
+                jump charlottechapter2romance
+            "Naughty":
+                jump charlottechapter2naughty
+            "Go back to beach":
+                jump explorebeach
+    else:
+        jump explorebeach
+
+    label charlottechapter2romance:
+        scene fs charlottechapter2end2
+        player "Mmmmm."
+        charlotte "...."
+        scene fs charlottechapter2end3
+        player "It's pretty hot out, I'm gonna find something to drink, would you like anything?"
+        charlotte "A drink?"
+        player "Yeah?"
+        scene fs charlottechapter2end4
+        pause
+        "Charlotte's phone" "Beep boop boop"
+        player "Huh? What're you doing?"
+        charlotte "...."
+        player "Alright keep your secrets geez"
+        scene fs charlottechapter2end2
+        with Dissolve(0.5)
+        player "...."
+        victoria "Miss Charlotte."
+        charlotte "You're here Vicky."
+        scene fs charlottechapter2end5
+        with Dissolve(0.5)
+        player "Wait what? Victoria??"
+        victoria "Hello Master [povname]."
+        player "But how did..."
+        player "And your swimsuit!"
+        player "I..."
+        player "{i}God damn! This woman is a ninja!{/i}"
+        player "{i}A big titted...maid bikini wearing...red-headed sexy ninja..{/i}"
+        scene fs charlottechapter2end6b
+        with Dissolve(0.5)
+        victoria "And for you as well. Miss Charlotte asked me to bring you a glass."
+        scene fs charlottechapter2end6
+        player "Oh uh...thanks so much Charlotte.."
+        charlotte "Yup."
+        scene fs charlottechapter2end6b
+        player "{i}Clevage! Maid Bikini clevage!{/i}"
+        scene fs charlottechapter2end6c
+        with Dissolve(0.7)
+        victoria "Hehe, I see you're happy to see me."
+        victoria "I should go though, in case I'm needed elsewhere."
+        scene fs charlottechapter2end6c
+        player "Sure yeah no problem..."
+        scene fs charlottechapter2end7b
+        with Dissolve(0.5)
+        player "Thanks again Charlotte, this looks really good!"
+        scene fs charlottechapter2end7
+        charlotte "You're welcome, now shut up and drink it."
+        scene fs charlottechapter2end8
+        "Clink!"
+        player "Yes ma'am."
+        scene fs charlottechapter2end9
+        pause
+        charlotte "Siiiiip"
+        player "Siiiiip"
+        charlotte "{i}Is that what I think it is?{/i}"
+        scene fs charlottechapter2end10
+        with Dissolve(0.7)
+        charlotte "{i}He's got a huge hard on right now!{/i}"
+        charlotte "...."
+        pause
+        scene fs charlottechapter2end9
+        charlotte "Ahem. Um [povname]?"
+        player "Hmm?"
+        charlotte "As you can tell I'm feeling generous today."
+        player "Yeah it's great!"
+        scene fs blackblank
+        with Dissolve(1.0)
+        charlotte "....Meet me in the 2nd girls shower stall in 5 minutes."
+        player "Uh...okay sure?"
+        charlotte "Don't bother bringing your clothes."
+        player "{i}Holy shit...{/i}"
+        stop sound
+        play music "audio/showersounds.wav" fadein 5
+        scene fs charlottechapter2end11
+        with Dissolve(0.7)
+        pause
+        charlotte "{i}I'm just taking control of my lust. That's all...yeah..{/i}"
+        scene fs charlottechapter2end11b
+        with Dissolve(0.5)
+        player "Hey."
+        scene fs charlottechapter2end11c
+        pause
+        charlotte "{i}Everytime I see this thing I'm surprised. How did it fit inside me?{/i}"
+        player "Do you want me to-"
+        scene fs charlottechapter2end12c
+        charlotte "No."
+        charlotte "J-Just....don't talk."
+        scene fs charlottechapter2end12
+        pause
+        scene fs charlottechapter2end12b
+        pause
+        scene fs charlottechapter2end12c
+        charlotte "You...you're really hard."
+        player "Yeah...don't stop."
+        scene fs charlottechapter2end12
+        pause
+        scene fs charlottechapter2end12b
+        pause
+        show rs avashowersright
+        with Dissolve(0.5)
+        ava "Mmmmm..."
+        show ls miashowersleft
+        with Dissolve(0.5)
+        mia "*whistles*"
+        show fs charlottechapter2end13
+        player "Ahhh..That feels really good."
+        show fs charlottechapter2end13b
+        player "Yeah.."
+        charlotte "{i}H-His hand is around my neck! Why does that turn me on so much?{/i}"
+        charlotte '{i}And did I hear people beside us?{/i}'
+        show fs charlottechapter2end13c
+        charlotte "Uhn..."
+        scene fs charlottechapter2end14
+        with Dissolve(0.7)
+        player "Charlotte..."
+        player "You're so fucking beautiful."
+        show fs charlottechapter2end15
+        with Dissolve(0.7)
+        charlotte "I..."
+        charlotte "Thank you."
+        player "I want to touch every inch of your body."
+        scene fs charlottechapter2end16
+        with Dissolve(0.7)
+        charlotte "Ah..."
+        ava "Hmm? Did someone say something?"
+
+        scene fs charlottechapter2end17
+        with Dissolve(0.7)
+        mia "Huh? Ava?"
+        charlotte "{size=20}Mia and Ava are beside us!{/size}"
+        scene fs charlottechapter2end18
+        with Dissolve(0.7)
+        ava "I thought I heard something sorry."
+        player "{size=20}You better be quiet then.{/size}"
+        scene fs charlottechapter2end19
+        with Dissolve(0.7)
+        charlotte "Uhhh..."
+        scene fs charlottechapter2end20
+        charlotte "Oh god!"
+        scene fs charlottechapter2end21
+        charlotte "{i}Why am I doing this?{/i}"
+        charlotte "{i}Am I just desperate for any attention?{/i}"
+        charlotte "{i}Or am I....f..falling in..{/i}"
+        player "Get ready."
+        charlotte "Huh?"
+
+        show charlottebeachsex movie1
+        charlotte "Uhn uhn uhn!"
+        charlotte "{i}It's good it's so good!{/i}"
+        pause
+        show charlottebeachsex movie2
+        charlotte "AHH!!"
+        ava "Okay now I KNOW I heard something."
+        charlotte "G-God...FUUCK!!!"
+        mia "Is that...Charlotte?"
+        charlotte "YEESSS!!!"
+        ava "Are you okay?"
+        pause
+        scene fs blackblank
+        with Dissolve(0.7)
+        "A few minutes later.."
+        scene fs charlottechapter2end22
+        charlotte "Hey."
+        scene fs charlottechapter2end25
+        ava "Don't hey us, what the hell was that? You got a guy in there?"
+        scene fs charlottechapter2end22b
+        charlotte "Don't be ridiculous."
+        scene fs charlottechapter2end23
+        charlotte "I got stung by a Jellyfish, I was just pulling out the little stinger thingies."
+        scene fs charlottechapter2end26
+        mia "Really? It sounded like you were...in distress?"
+        scene fs charlottechapter2end22b
+        charlotte "I was! It freaking hurt."
+        charlotte "You guys are being silly, you really think I was having sex with some random guy I picked up from the beach?"
+        scene fs charlottechapter2end27
+        with Dissolve(0.7)
+        ava "Hmmm."
+        mia "Hmmm."
+        scene fs charlottechapter2end22
+        charlotte "Hmph."
+        scene fs charlottechapter2end22b
+        charlotte "Can we get dressed now or are we going to stand around naked all day?"
+        with Dissolve(0.5)
+
+        scene fs blackblank
+        with Dissolve(0.7)
+        ava "Alright whatever, keep your mystery man a mystery."
+        mia "Haha."
+        charlotte "I'm telling you there's no mystery man!"
+        $ charlottequestlog = "Started off rocky, but I really like Charlotte now. Guess sex will do that. She at school?"
+        $ endchapter2_trigger = "2 charlotte romantic"
+        jump startofchapter3
+
+    label charlottechapter2naughty:
+        scene fs charlottechapter2end2
+        player "Mmmmm."
+        charlotte "...."
+        scene fs charlottechapter2end3
+        player "It's pretty hot out, I'm gonna find something to drink, would you like anything?"
+        charlotte "A drink?"
+        player "Yeah?"
+        scene fs charlottechapter2end4
+        pause
+        "Charlotte's phone" "Beep boop boop"
+        player "Huh? What're you doing?"
+        charlotte "...."
+        player "Alright keep your secrets geez"
+        scene fs charlottechapter2end2
+        with Dissolve(0.5)
+        player "...."
+        victoria "Miss Charlotte."
+        charlotte "You're here Vicky."
+        scene fs charlottechapter2end5
+        with Dissolve(0.5)
+        player "Wait what? Victoria??"
+        victoria "Hello Master [povname]."
+        player "But how did..."
+        player "And your swimsuit!"
+        player "I..."
+        player "{i}Holy shit never mind where she came from, what is she wearing?!{/i}"
+        player "{i}It's some sort of sexy maid bikini{/i}"
+        scene fs charlottechapter2end6b
+        with Dissolve(0.5)
+        victoria "And for you as well. Miss Charlotte asked me to bring you a glass."
+        scene fs charlottechapter2end6
+        player "Oh uh...thanks so much Charlotte.."
+        charlotte "Yup."
+        scene fs charlottechapter2end6b
+        player "{i}Victoria's got some nice fucking tits.{/i}"
+        scene fs charlottechapter2end6c
+        with Dissolve(0.7)
+        victoria "Hehe, I see you're happy to see me."
+        victoria "I should go though, in case I'm needed elsewhere."
+        scene fs charlottechapter2end6c
+        player "Sure yeah no problem..."
+        scene fs charlottechapter2end7b
+        with Dissolve(0.5)
+        player "Thanks again Charlotte, this looks really good!"
+        scene fs charlottechapter2end7
+        charlotte "You're welcome, now shut up and drink it."
+        scene fs charlottechapter2end8
+        "Clink!"
+        player "Yes ma'am."
+        scene fs charlottechapter2end9
+        pause
+        charlotte "Siiiiip"
+        player "Siiiiip"
+        charlotte "{i}Is that what I think it is?{/i}"
+        scene fs charlottechapter2end10
+        with Dissolve(0.7)
+        charlotte "{i}He's got a huge hard on right now!{/i}"
+        charlotte "...."
+        pause
+        scene fs charlottechapter2end9
+        charlotte "Ahem. Um [povname]?"
+        player "Hmm?"
+        charlotte "As you can tell I'm feeling generous today."
+        player "Yeah?"
+        scene fs blackblank
+        with Dissolve(1.0)
+        charlotte "Maybe we should...go somewhere private."
+        player "Ah, you saw my boner and want to fuck."
+        charlotte "H-Hey! No I'm just...in the mood."
+        player "Don't worry princess, I'll give you what you want."
+        stop sound
+        play music "audio/showersounds.wav" fadein 5
+        scene fs charlottechapter2end11
+        with Dissolve(0.7)
+        pause
+        charlotte "{i}I'm just taking control of my lust. That's all...yeah..{/i}"
+        scene fs charlottechapter2end11b
+        with Dissolve(0.5)
+        player "Hey."
+        scene fs charlottechapter2end11c
+        pause
+        charlotte "{i}Everytime I see this thing I'm surprised. How did it fit inside me?{/i}"
+        player "Go ahead."
+        scene fs charlottechapter2end12c
+        charlotte "I-I don't need your permission!"
+        scene fs charlottechapter2end12
+        pause
+        scene fs charlottechapter2end12b
+        pause
+        scene fs charlottechapter2end12c
+        charlotte "You...you're really hard."
+        player "Yeah...don't stop."
+        scene fs charlottechapter2end12
+        pause
+        scene fs charlottechapter2end12b
+        pause
+        show rs avashowersright
+        with Dissolve(0.5)
+        ava "Mmmmm..."
+        show ls miashowersleft
+        with Dissolve(0.5)
+        mia "*whistles*"
+        show fs charlottechapter2end13
+        player "Ahhh..That feels really good."
+        show fs charlottechapter2end13b
+        player "Yeah.."
+        charlotte "{i}H-His hand is around my neck! Why does that turn me on so much?{/i}"
+        charlotte '{i}And did I hear people beside us?{/i}'
+        show fs charlottechapter2end13c
+        charlotte "Uhn..."
+        scene fs charlottechapter2end14
+        with Dissolve(0.7)
+        player "Let me have a good look at you."
+        show fs charlottechapter2end15
+        with Dissolve(0.7)
+        pause
+        scene fs charlottechapter2end16
+        with Dissolve(0.7)
+        charlotte "Ahn..."
+        mia "Huh?"
+        scene fs charlottechapter2end17
+        with Dissolve(0.7)
+        charlotte "{size=20}Mia and Ava are beside us!{/size}"
+        scene fs charlottechapter2end18
+        with Dissolve(0.7)
+        mia "Did you hear something Ava?"
+        ava "I thought I did, I dunno though sorry."
+        player "{size=20}You better be quiet then.{/size}"
+        scene fs charlottechapter2end19
+        with Dissolve(0.7)
+        charlotte "Uhhh..."
+        scene fs charlottechapter2end20
+        charlotte "Oh god!"
+        scene fs charlottechapter2end21
+        charlotte "{i}Why am I doing this?{/i}"
+        charlotte "{i}Am I just desperate for any attention?{/i}"
+        charlotte "{i}This is wrong! Mia's RIGHT THERE!{/i}"
+        player "Get ready."
+        charlotte "Huh?"
+
+        show charlottebeachsex movie1
+        charlotte "Uhn uhn uhn!"
+        charlotte "{i}It's good it's so good!{/i}"
+        player "{size=20}Does it feel good fucking your best friend's boyfriend right beside her?{/size}"
+        pause
+        show charlottebeachsex movie2
+        charlotte "AHH! N-No!"
+        ava "Okay now I KNOW I heard something."
+        player "{size=20}I can feel you getting tighter Charlotte, I know how much of a slut you are!{/size}"
+        charlotte "G-God...FUUCK!!!"
+        mia "Is that...Charlotte?"
+        charlotte "YEESSS!!!"
+        ava "Are you okay?"
+        mia "Let's meet outside.."
+        charlotte "I'm cumming!!"
+        pause
+        scene fs blackblank
+        with Dissolve(0.7)
+        "A few minutes later.."
+        scene fs charlottechapter2end22b
+        charlotte "Hey."
+        scene fs charlottechapter2end25
+        ava "Don't hey us, what the hell was that? You got a guy in there?"
+        scene fs charlottechapter2end22b
+        charlotte "Don't be ridiculous."
+        charlotte "I got stung by a Jellyfish, I was just pulling out the little stinger thingies."
+        scene fs charlottechapter2end26
+        mia "Really? It sounded like you were...in distress?"
+        scene fs charlottechapter2end22b
+        charlotte "I was! It freaking hurt."
+        scene fs charlottechapter2end25
+        ava "You're sure you weren't with a guy in there?"
+        scene fs charlottechapter2end24
+        charlotte "What guy would I even be with? Think about it."
+        scene fs charlottechapter2end27
+        with Dissolve(0.5)
+        mia "Hmmm."
+        ava "Hmmm."
+        scene fs charlottechapter2end28
+        with Dissolve(0.5)
+        charlotte "...."
+        scene fs charlottechapter2end22b
+        charlotte "*A-Ahem*. Are we gonna get dressed or stand around naked all day?"
+
+        scene fs blackblank
+        with Dissolve(0.7)
+        ava "Alright whatever, keep your mystery man a mystery."
+        mia "Haha."
+        charlotte "I'm telling you there's no mystery man!"
+        stop music fadeout 5
+        $ endchapter2_trigger = "2 charlotte naughty"
+        $ charlottequestlog = "Started off rocky, but I really like Charlotte now. Guess sex will do that. She at school?"
+        jump startofchapter3
+
+# start chapter 3
+
+# Chapter 3 and related character scenes.
+
+label charlottephase3interaction1part1:
+
+    "Alright class, that'll be it for today."
+    show fbcharlotte current:
+        xalign 0.6 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.5)
+    $ playerSprite = 1
+    player "Charlotte! Hey what's up?"
+    $ playerSprite = 0
+    $ charlotteSprite = 11
+    charlotte "[povname]!"
+    $ charlotteSprite = 16
+    $ playerSprite = 1
+    player "Haha I don't think I've ever seen you greet me with a smile."
+    $ charlotteSprite = 6
+    $ playerSprite = 0
+    charlotte "Oh you're right hang on."
+    $ charlotteSprite = 0
+    show fbcharlotte current:
+        xzoom -1.0 xalign 0.7
+    charlotte "*Ahem*"
+    $ charlotteSprite = 1
+    show fbcharlotte current:
+        xalign 0.6 xzoom 1.0 ypos 120
+    charlotte "What do YOU want?"
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "Ah there she is!"
+    $ playerSprite = 0
+    $ charlotteSprite = 11
+    charlotte "Hehe."
+    $ charlotteSprite = 16
+    $ playerSprite = 1
+    player "Class just finish?"
+    $ playerSprite = 0
+    $ charlotteSprite = 11
+    charlotte "Yup I was just headed out."
+    $ charlotteSprite = 16
+    $ playerSprite = 1
+    player "Let me walk with you."
+    $ playerSprite = 0
+    $ charlotteSprite = 11
+    charlotte "Thanks."
+    $ charlotteSprite = 16
+    hide fbcharlotte current
+    hide fbplayer current
+    scene fs schoolhallway
+    with Dissolve(0.8)
+    pause
+    $ oliviaSprite = 0
+
+    show fbolivia current:
+        xalign 0.6 xzoom -1.0 ypos 120
+    show fbmia current:
+        xalign 0.7 xzoom -1.0 ypos 120
+    show fbava current:
+        xalign 0.8 ypos 120
+    with Dissolve(0.5)
+    pause
+
+    $ avaSprite = 1
+    ava "No I'm telling you, they wanna smack em around!"
+    $ avaSprite = 0
+    $ miaSprite = 1
+    mia "Definitely not. I know from experience!"
+    $ miaSprite = 0
+    $ oliviaSprite = 1
+    olivia "One guy doesn't dictate the whole gender. Overall I'm definitely right."
+    $ oliviaSprite = 0
+
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    show fbcharlotte current:
+        xalign 0.4 xzoom -1.0 ypos 120
+    with Dissolve(0.5)
+    pause
+    $ charlotteSprite = 11
+    charlotte "Hey girls, what the heck are you talking about?"
+    $ charlotteSprite = 16
+    show fbolivia current:
+        xalign 0.6 xzoom 1.0 ypos 120
+    show fbmia current:
+        xalign 0.7 xzoom 1.0 ypos 120
+
+    $ oliviaSprite = 1
+    olivia "Hey Charlotte."
+    $ oliviaSprite = 0
+    $ miaSprite = 1
+    mia "[povname]! Great timing!"
+    $ miaSprite = 0
+    $ avaSprite = 1
+    ava "True [povname] can totally solve this!"
+    $ avaSprite = 0
+    player "Hmm?"
+    $ charlotteSprite = 11
+    charlotte "What can he solve?"
+    $ charlotteSprite = 16
+    $ avaSprite = 1
+    $ playerSprite = 11
+    ava "[povname]. When guys see big tits, what do they want to do most?"
+    $ avaSprite = 0
+    charlotte "...."
+    $ charlotteSprite = 1
+    charlotte "What."
+    $ charlotteSprite = 0
+    $ oliviaSprite = 9
+    olivia "And not your personal preferences, guys in general."
+    $ oliviaSprite = 8
+    $ miaSprite = 1
+    mia "Ava thinks they want to use their hands to-"
+    $ miaSprite = 0
+    $ avaSprite = 1
+    ava "Squeeze em, grope em, slap em around, even pinch a nipple or two. I mean it's obvious."
+    ava "There's literally the phrase 'You can't keep your hands to yourself'."
+    $ avaSprite = 0
+    $ oliviaSprite = 9
+    show fbolivia current:
+        xalign 0.6 xzoom -1.0 ypos 120
+    olivia "Wrong."
+    $ oliviaSprite = 8
+    $ miaSprite = 8
+    mia "Olivia thinks they want to eh...."
+    $ oliviaSprite = 9
+    show fbolivia current:
+        xalign 0.6 xzoom 1.0 ypos 120
+    olivia "Fuck them. When you're thinking with your dick obviously it's your dick you want to use right?"
+    olivia "It's just logic. Guys want boobjobs."
+    $ oliviaSprite = 8
+    $ miaSprite = 1
+    mia "Ah ah I'm afraid it's not the dick neurons that activate the most!"
+    $ miaSprite = 0
+    $ charlotteSprite = 1
+    charlotte "Dick...neurons?"
+    $ charlotteSprite = 0
+    $ miaSprite = 13
+    mia "Guys want to suck them! It's like a primal brain thing from when we're babies."
+    $ miaSprite = 1
+    mia "Right [povname]?"
+    $ miaSprite = 0
+    $ playerSprite = 11
+    menu:
+        "Squeeze em":
+            jump continuebooboconvo
+        "Fuck em":
+            jump continuebooboconvo
+        "Suck em":
+            jump continuebooboconvo
+
+label continuebooboconvo:
+    $ playerSprite = 17
+    player "Oh I dun-"
+    $ playerSprite = 15
+    $ miaSprite = 1
+    show fbmia current at surpriseshake:
+        xalign 0.7 xzoom 1.0 ypos 120
+    mia "And the bigger they are the more they want to!"
+    $ miaSprite = 0
+    $ avaSprite = 1
+    ava "Well we agree on that. They definitely prefer big tiddies, the pervs."
+    $ avaSprite = 0
+    $ oliviaSprite = 9
+    olivia "It is known."
+    $ oliviaSprite = 8
+    $ playerSprite = 6
+    player "Girls girls. You're all getting ahead of yourselves a bit I think."
+    $ playerSprite = 0
+    charlotte "...."
+    $ playerSprite = 16
+    player "I mean yeah I PERSONALLY love some big...a large bust."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Hehe."
+    $ miaSprite = 0
+    $ playerSprite = 17
+    player "But all guys love boobs in general, if they're bigger there's just more to...love."
+    $ playerSprite = 8
+    "...."
+    $ avaSprite = 16
+    ava "Yeah that's Bullshit."
+    $ avaSprite = 15
+    $ miaSprite = 3
+    mia "You never really gave me that impression.."
+    $ miaSprite = 2
+    $ oliviaSprite = 9
+    olivia "They like them bigger, I'm sure there's some science behind it."
+    $ oliviaSprite = 8
+    $ avaSprite = 1
+    $ charlotteSprite = 5
+    show fbcharlotte current:
+        xalign 0.3 ypos 120
+    with move
+    ava "If they're larger the dicks be getting harde-"
+    $ avaSprite = 16
+    ava "Oh...."
+    $ playerSprite = 14
+    show fbplayer current:
+        xalign 0.4 xzoom -1.0
+    ava "Oh Charlotte I didn't uh.."
+    $ miaSprite = 3
+    mia "Oh gosh Charlotte we don't mean you don't...I mean you do!"
+    $ miaSprite = 2
+    $ oliviaSprite = 13
+    olivia "Yours are very perky."
+    $ oliviaSprite = 10
+    $ charlotteSprite = 1
+    charlotte "Stop."
+    $ charlotteSprite = 0
+    $ miaSprite = 10
+    show fbmia current:
+        xalign 0.15 ypos 120
+    with move
+    show fbmia current:
+        xzoom -1.0
+    mia "They're beautiful Charlotte, I've seen your boobs!"
+    $ avaSprite = 1
+    ava "Honestly shape matters more than anything else."
+    $ avaSprite = 0
+    $ charlotteSprite = 1
+    charlotte "Stop talking about my breasts."
+    $ charlotteSprite = 0
+    $ oliviaSprite = 9
+    show fbolivia current:
+        xalign 0.4
+    show fbplayer current:
+        xalign 0.5
+    with move
+    olivia "You don't need to be able to wrap them around a dick in order-"
+    $ oliviaSprite = 8
+    $ charlotteSprite = 1
+    charlotte "I hate this."
+    $ charlotteSprite = 0
+    $ miaSprite = 3
+    mia "Oh Charlotte I'm so sorry!"
+    $ miaSprite = 2
+    $ oliviaSprite = 9
+    olivia "Yeah sorry. We didn't mean to upset you."
+    $ oliviaSprite = 8
+    $ miaSprite = 1
+    mia "You are a cute and amazing girl with a beautiful body!"
+    $ miaSprite = 0
+    $ charlotteSprite = 1
+    show fbcharlotte current:
+        xzoom 1.0 xalign 0.25
+    charlotte "Stop talking."
+    $ charlotteSprite = 0
+
+    hide fbmia current
+    show fbcharlotte boobhug1:
+        xalign 0.2 ypos 140
+    mia "C'mere!"
+    charlotte "...."
+    hide fbolivia current
+    show fbcharlotte boobhug2:
+        xalign 0.2 ypos 140
+    olivia "Me too!"
+    charlotte "!!!!!!"
+    pause
+    scene angrycharlotte boobhug4
+    with Dissolve(1.0)
+    pause
+    charlotte "...."
+    scene fs schoolhallway
+    show fbolivia current:
+        xalign 0.4 ypos 120
+    show fbmia current:
+        xalign 0.2 ypos 120
+    show fbcharlotte current:
+        xalign 0.3 ypos 120
+    show fbava current:
+        xalign 0.8 ypos 120
+    show fbplayer current:
+        xalign 0.5 xzoom -1.0 ypos 120
+    pause
+    show fbcharlotte current:
+        xalign 0.1 ypos 120
+    with move
+    show fbcharlotte current:
+        xzoom -1.0
+    $ charlotteSprite = 1
+    charlotte "Okay!"
+    charlotte "Thanks girls, you're right!"
+    $ charlotteSprite = 0
+    $ miaSprite = 1
+    mia "Yay?"
+    $ miaSprite = 0
+    charlotte "I don't need Giant fat bags in order to get guys to fuck me!"
+    $ avaSprite = 11
+    ava "Well we didn't exactly say it like that..."
+    $ avaSprite = 0
+    $ charlotteSprite = 1
+    charlotte "I just need a good attitude, and confidence in my body!"
+    $ charlotteSprite = 0
+    $ oliviaSprite = 9
+    olivia "Yup."
+    $ oliviaSprite = 8
+    $ charlotteSprite = 1
+    charlotte "[povname], would you be so KIND as to drive me home?"
+    charlotte "I'm a bit...too tired today to walk."
+    $ charlotteSprite = 0
+    $ playerSprite = 17
+    player "Oh uh yeah sure, no problem."
+    $ playerSprite = 1
+    player "See you guys."
+    $ oliviaSprite = 9
+    olivia "Bye."
+    $ oliviaSprite = 8
+    $ avaSprite = 1
+    ava "Drive safe!"
+    $ avaSprite = 0
+    $ miaSprite = 1
+    mia "Bye you two!"
+    $ miaSprite = 0
+    $ charlotteSprite = 1
+    show fbcharlotte current:
+        xzoom 1.0
+    hide fbcharlotte current
+    charlotte "See yaaaaah."
+    player "Woah wait up."
+
+    $ charlottephase2interaction3 = 4
+    $ charlottephase3interaction1 = 1
+    $ charlottequestlog = "Charlotte seems pretty upset after Mia and Olivia accidently teased her. I should drive her at home"
+    jump passtime
+
+label charlottephase3interaction1part2:
+    player "Okay we're here."
+    charlotte "Park and come in."
+    player "Okay.."
+    scene fs charlotteroom
+    with Dissolve(0.7)
+    pause
+    $ playerSprite = 11
+    show fbcharlotte current:
+        xalign 0.6 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.5)
+    $ charlotteSprite = 1
+    charlotte "They think just because *Grumble Grumble*"
+    charlotte "I DON'T NEED...*Grumble*"
+    $ charlotteSprite = 0
+    $ playerSprite = 1
+    player "Charlotte I don't mind hanging out bu-"
+    scene fs blackblank
+    charlotte "Sit on the bed, and take out your c-cock!"
+    player "What? Really-"
+    player "Oh there goes your panties."
+    charlotte "BED!"
+    scene fs charlottejealoussex1
+    with Dissolve(0.5)
+    charlotte "Hah...hah."
+    charlotte "I don't need...stupid big boobs!"
+    player "No you don't."
+    charlotte "We're gonna FUCK."
+    player "Yes we are."
+    charlotte "And you...you're gonna CUM inside me!"
+    charlotte "Because you're so turned on by my non big-boob-having body!"
+    scene fs charlottejealoussex2
+    charlotte "Now just...slide it in.."
+    player "Fuck you are really wet."
+    scene fs charlottejealoussex12b
+    with Dissolve(0.5)
+    charlotte "Oh God..."
+    charlotte "You fill so much of me Daddy.."
+    scene fs charlottejealoussex3
+    with Dissolve(0.5)
+    charlotte "Ahn!"
+    charlotte "You're getting bigger inside me!"
+    scene fs charlottejealoussex4
+    player "It's cause my babygirl feels so fucking good."
+    scene fs charlottejealoussex12
+    with vpunch
+    charlotte "AHN AHN AHN!"
+    player "That's right keep bouncing on my cock!"
+    charlotte "YES! YESSSS!"
+    scene fs charlottejealoussex4
+    charlotte "[povname]! [povname]!!!!"
+
+    victoria "Excuse me miss."
+    charlotte "AHN!"
+    victoria "Mistress Charlotte."
+    scene fs charlottejealoussex5
+    with Dissolve(0.5)
+    victoria "Apologies for the...interruption."
+    charlotte "V-Vicky??"
+    victoria "You have a call."
+    charlotte "Tell them I'll call them back!"
+    victoria "It's your father."
+    charlotte "!!!"
+    scene fs charlottejealoussex6
+    with Dissolve(0.5)
+    charlotte "H-Hi Daddy."
+    charlotte "No! I'm just with a friend."
+    charlotte "Yes Daddy."
+    charlotte "What do you mea-"
+    scene fs charlottejealoussex7
+    charlotte "MMph!"
+    scene fs charlottejealoussex7b
+    with Dissolve(0.5)
+    charlotte "Ahn..."
+    charlotte "Mmmm.."
+    scene fs charlottejealoussex8
+    charlotte "H-Huh?"
+    charlotte "No I- of course!"
+    scene fs charlottejealoussex12b
+    with Dissolve(0.5)
+    charlotte "Yes Daddy!"
+    scene fs charlottejealoussex12
+    charlotte "YES DADDY!"
+    charlotte "I'm CUMMING!!"
+    charlotte "I-I mean I'll go!"
+    charlotte "I love you!!"
+    scene fs charlottejealoussex9
+    with Dissolve(0.7)
+    charlotte "Hah..hah.."
+    player "You like talking to your father while I'm balls deep inside your pussy?"
+    charlotte "N-No."
+    scene fs charlottejealoussex10
+    charlotte "Y-Yes.."
+    player "I can feel it coming babygirl, you ready?"
+    scene fs charlottejealoussex10b
+    charlotte "Yes."
+    player "Fuck."
+    scene fs charlottejealoussex12b
+    with Dissolve(0.5)
+    player "Tell me what you want!"
+    charlotte "Cum inside me Daddy!"
+    charlotte "PLEASE!!"
+    scene fs charlottejealoussex13
+    with vpunch
+    charlotte "AHN!!"
+    scene fs charlottejealoussex11
+    with Dissolve(0.5)
+    player "FUCK BABY!"
+    scene fs charlottejealoussex14
+    with Dissolve(1.0)
+    charlotte "Hah...hah."
+    charlotte "T-Thank you Daddy."
+    player "That's a good girl."
+    scene fs blackblank
+    with Dissolve(0.7)
+    player "Oh yeah, what did your dad want?"
+    charlotte "He uh...wants me to go to some fancy art Gala in a few days."
+    charlotte "A bunch of stuffy assholes in suits pretending like they understand paintings."
+    charlotte "Food is good so usually I go but he said I need a plus one this time-"
+    player "I'll go."
+    charlotte "Huh?"
+    player "I'll go with you. Let's make it a date, should be a lot more fun that way."
+    charlotte "Oh uh...yeah okay great. Thanks."
+    victoria "I hope you two have a good time."
+    charlotte "VICKY YOU'RE STILL HERE???"
+    $ charlottephase3interaction1 = 2
+    $ charlottequestlog = "No more content for Charlotte this version (ch2.5)"
+    jump passtime

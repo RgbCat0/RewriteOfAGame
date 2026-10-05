@@ -248,3 +248,6 @@ label definevariables:
     $ failedoliviatest = 0
 
     default tutorials_adjustment = ui.adjustment()
+
+    # Initialization must enter the intro explicitly rather than end the game.
+    jump gameIntro

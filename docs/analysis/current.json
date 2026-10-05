@@ -1,0 +1,5746 @@
+{
+  "root": "C:\\Users\\rgbcat1\\Documents\\GitHub\\RewriteOfAGame\\game",
+  "summary": {
+    "files": 32,
+    "lines": 45629,
+    "labels": 406,
+    "screens": 130,
+    "label_references": 1017,
+    "screen_references": 986,
+    "duplicate_labels": 0,
+    "duplicate_screens": 1,
+    "unresolved_label_references": 8,
+    "unresolved_screen_references": 3,
+    "unreferenced_labels": 15,
+    "debug_test_labels": 3,
+    "possible_fallthroughs": 140,
+    "strong_fallthroughs": 6,
+    "review_fallthroughs": 26,
+    "uncertain_fallthroughs": 108,
+    "suspicious_comments": 10,
+    "commented_out_code_lines": 753,
+    "reference_kinds": {
+      "action/expression": 1,
+      "call screen": 68,
+      "hide screen": 819,
+      "jump": 909,
+      "screen action/expression": 120,
+      "show screen": 86
+    }
+  },
+  "duplicate_labels": {},
+  "duplicate_screens": {
+    "quick_menu": [
+      {
+        "file": "screens.rpy",
+        "line": 274
+      },
+      {
+        "file": "screens.rpy",
+        "line": 1459
+      }
+    ]
+  },
+  "unresolved_labels": [
+    {
+      "name": "avaphase2whereshouldwemeetagain",
+      "file": "script.rpy",
+      "line": 2262,
+      "kind": "jump",
+      "suggestions": []
+    },
+    {
+      "name": "avaphase2interaction1part3",
+      "file": "script.rpy",
+      "line": 2264,
+      "kind": "jump",
+      "suggestions": [
+        "avaphase2interaction2part3",
+        "avaphase2interaction1part1",
+        "avaphase1interaction1part3"
+      ]
+    },
+    {
+      "name": "avaphase1interaction2part2",
+      "file": "script.rpy",
+      "line": 2281,
+      "kind": "jump",
+      "suggestions": [
+        "avaphase2interaction2part2",
+        "avaphase1interaction2part1",
+        "avaphase1interaction1part2"
+      ]
+    },
+    {
+      "name": "avaseemsfocused",
+      "file": "script.rpy",
+      "line": 2283,
+      "kind": "jump",
+      "suggestions": []
+    },
+    {
+      "name": "avaphase1interaction2part3",
+      "file": "script.rpy",
+      "line": 2299,
+      "kind": "jump",
+      "suggestions": [
+        "avaphase1interaction2part3C",
+        "avaphase1interaction2part3B",
+        "avaphase2interaction2part3"
+      ]
+    },
+    {
+      "name": "avaphase2interaction1part2",
+      "file": "script.rpy",
+      "line": 2306,
+      "kind": "jump",
+      "suggestions": [
+        "avaphase3interaction1part2",
+        "avaphase2interaction2part2",
+        "avaphase2interaction1part1"
+      ]
+    },
+    {
+      "name": "avaphase2whereshouldwemeetagain2",
+      "file": "script.rpy",
+      "line": 2309,
+      "kind": "jump",
+      "suggestions": []
+    },
+    {
+      "name": "miaphase2interaction3part1",
+      "file": "script.rpy",
+      "line": 2987,
+      "kind": "jump",
+      "suggestions": [
+        "miaphase2interaction2part1",
+        "miaphase2interaction1part1",
+        "miaphase1interaction3part1"
+      ]
+    }
+  ],
+  "unresolved_screens": [
+    {
+      "name": "phone",
+      "file": "characters\\emily.rpy",
+      "line": 4001,
+      "kind": "hide screen",
+      "suggestions": [
+        "mia_phone"
+      ]
+    },
+    {
+      "name": "phone",
+      "file": "script.rpy",
+      "line": 2472,
+      "kind": "hide screen",
+      "suggestions": [
+        "mia_phone"
+      ]
+    },
+    {
+      "name": "phone",
+      "file": "script.rpy",
+      "line": 2943,
+      "kind": "hide screen",
+      "suggestions": [
+        "mia_phone"
+      ]
+    }
+  ],
+  "unreferenced_labels": [
+    {
+      "name": "ashleyinteraction1part1",
+      "file": "characters\\ashley.rpy",
+      "line": 3
+    },
+    {
+      "name": "avaphase2interaction2part1",
+      "file": "characters\\ava.rpy",
+      "line": 2400
+    },
+    {
+      "name": "charlottephase2interaction2part1",
+      "file": "characters\\charlotte.rpy",
+      "line": 2979
+    },
+    {
+      "name": "whensthepaintagain",
+      "file": "characters\\emily.rpy",
+      "line": 312
+    },
+    {
+      "name": "miaphase1interaction2part3wakeup",
+      "file": "characters\\mia.rpy",
+      "line": 1132
+    },
+    {
+      "name": "foundmiaphoneconvo",
+      "file": "characters\\mia.rpy",
+      "line": 1437
+    },
+    {
+      "name": "miaphase3interaction1part1",
+      "file": "characters\\mia.rpy",
+      "line": 4014
+    },
+    {
+      "name": "esch1_mia",
+      "file": "gameDialogues.rpy",
+      "line": 2309
+    },
+    {
+      "name": "apartmentlobbymenu",
+      "file": "script.rpy",
+      "line": 933
+    },
+    {
+      "name": "charlotteshouse",
+      "file": "script.rpy",
+      "line": 1120
+    },
+    {
+      "name": "changetextbox",
+      "file": "script.rpy",
+      "line": 1470
+    },
+    {
+      "name": "test2",
+      "file": "script.rpy",
+      "line": 1936
+    },
+    {
+      "name": "test4",
+      "file": "script.rpy",
+      "line": 1943
+    },
+    {
+      "name": "patroncredits",
+      "file": "script.rpy",
+      "line": 3906
+    },
+    {
+      "name": "endgame",
+      "file": "script.rpy",
+      "line": 4062
+    }
+  ],
+  "debug_labels": [
+    {
+      "name": "test2",
+      "file": "script.rpy",
+      "line": 1936
+    },
+    {
+      "name": "test4",
+      "file": "script.rpy",
+      "line": 1943
+    },
+    {
+      "name": "testpuzzles",
+      "file": "script.rpy",
+      "line": 1957
+    }
+  ],
+  "possible_fallthrough": [
+    {
+      "label": "office",
+      "file": "script.rpy",
+      "label_line": 349,
+      "last_statement_line": 367,
+      "last_statement": "scene fs officeExtras",
+      "falls_into": "outsideoffice",
+      "next_label_line": 370,
+      "severity": "strong",
+      "category": "plain fall-through",
+      "reason": "The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes."
+    },
+    {
+      "label": "checkphone",
+      "file": "script.rpy",
+      "label_line": 1804,
+      "last_statement_line": 1813,
+      "last_statement": "show screen contacts",
+      "falls_into": "gotophonefromcontacts",
+      "next_label_line": 1815,
+      "severity": "strong",
+      "category": "definite continuation after show screen",
+      "reason": "`show screen` does not block script execution. Unless another statement intervenes, execution continues into the next label."
+    },
+    {
+      "label": "test2",
+      "file": "script.rpy",
+      "label_line": 1936,
+      "last_statement_line": 1942,
+      "last_statement": "\"\"",
+      "falls_into": "test4",
+      "next_label_line": 1943,
+      "severity": "strong",
+      "category": "plain fall-through",
+      "reason": "The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes."
+    },
+    {
+      "label": "test4",
+      "file": "script.rpy",
+      "label_line": 1943,
+      "last_statement_line": 1955,
+      "last_statement": "pause",
+      "falls_into": "testpuzzles",
+      "next_label_line": 1957,
+      "severity": "strong",
+      "category": "plain fall-through",
+      "reason": "The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes."
+    },
+    {
+      "label": "testpuzzles",
+      "file": "script.rpy",
+      "label_line": 1957,
+      "last_statement_line": 1972,
+      "last_statement": "\"Alright lets test this\"",
+      "falls_into": "rotatepaper2",
+      "next_label_line": 1976,
+      "severity": "strong",
+      "category": "plain fall-through",
+      "reason": "The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes."
+    },
+    {
+      "label": "patroncredits",
+      "file": "script.rpy",
+      "label_line": 3906,
+      "last_statement_line": 4059,
+      "last_statement": "\"zack vitali\"",
+      "falls_into": "endgame",
+      "next_label_line": 4062,
+      "severity": "strong",
+      "category": "plain fall-through",
+      "reason": "The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes."
+    },
+    {
+      "label": "insidecafe",
+      "file": "script.rpy",
+      "label_line": 392,
+      "last_statement_line": 432,
+      "last_statement": "call screen inside_cafe",
+      "falls_into": "insideclub",
+      "next_label_line": 436,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "clubbathroom",
+      "file": "script.rpy",
+      "label_line": 478,
+      "last_statement_line": 487,
+      "last_statement": "call screen clubrestroom",
+      "falls_into": "goinsidestall",
+      "next_label_line": 489,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "outsidegym",
+      "file": "script.rpy",
+      "label_line": 543,
+      "last_statement_line": 561,
+      "last_statement": "call screen outsidethegym",
+      "falls_into": "gym",
+      "next_label_line": 563,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "library",
+      "file": "script.rpy",
+      "label_line": 615,
+      "last_statement_line": 698,
+      "last_statement": "call screen library",
+      "falls_into": "leavelibrary",
+      "next_label_line": 700,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "miahousehallway",
+      "file": "script.rpy",
+      "label_line": 796,
+      "last_statement_line": 807,
+      "last_statement": "call screen miahallway",
+      "falls_into": "juliaroom",
+      "next_label_line": 810,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "gfroom1",
+      "file": "script.rpy",
+      "label_line": 841,
+      "last_statement_line": 860,
+      "last_statement": "call screen backbuttonGFROOM",
+      "falls_into": "katiesroom",
+      "next_label_line": 862,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "gfhousehallway",
+      "file": "script.rpy",
+      "label_line": 879,
+      "last_statement_line": 885,
+      "last_statement": "call screen gfhousehallway",
+      "falls_into": "sophiahouse",
+      "next_label_line": 887,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "sophiahouse",
+      "file": "script.rpy",
+      "label_line": 887,
+      "last_statement_line": 931,
+      "last_statement": "call screen outsidesophiahouse",
+      "falls_into": "apartmentlobbymenu",
+      "next_label_line": 933,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "school",
+      "file": "script.rpy",
+      "label_line": 1173,
+      "last_statement_line": 1224,
+      "last_statement": "call screen school",
+      "falls_into": "schoolhallway",
+      "next_label_line": 1226,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "schoolhallway",
+      "file": "script.rpy",
+      "label_line": 1226,
+      "last_statement_line": 1253,
+      "last_statement": "call screen schoolhallway",
+      "falls_into": "classroom1",
+      "next_label_line": 1255,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "classroom2",
+      "file": "script.rpy",
+      "label_line": 1305,
+      "last_statement_line": 1323,
+      "last_statement": "call screen classroom2",
+      "falls_into": "classroom3",
+      "next_label_line": 1326,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "classroom3",
+      "file": "script.rpy",
+      "label_line": 1326,
+      "last_statement_line": 1337,
+      "last_statement": "call screen classroom3",
+      "falls_into": "malllabel",
+      "next_label_line": 1339,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "malllabel",
+      "file": "script.rpy",
+      "label_line": 1339,
+      "last_statement_line": 1382,
+      "last_statement": "call screen mall",
+      "falls_into": "mallstore",
+      "next_label_line": 1384,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "viewquests",
+      "file": "script.rpy",
+      "label_line": 1477,
+      "last_statement_line": 1526,
+      "last_statement": "call screen questbox",
+      "falls_into": "useinventory",
+      "next_label_line": 1528,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "useinventory",
+      "file": "script.rpy",
+      "label_line": 1528,
+      "last_statement_line": 1579,
+      "last_statement": "call screen inventory(item_list,adj=tutorials_adjustment)",
+      "falls_into": "gotosleep",
+      "next_label_line": 1581,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "explorebeach",
+      "file": "script.rpy",
+      "label_line": 1688,
+      "last_statement_line": 1710,
+      "last_statement": "call screen beach_screen",
+      "falls_into": "endofchapter2",
+      "next_label_line": 1712,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "gotophonefromcontacts",
+      "file": "script.rpy",
+      "label_line": 1815,
+      "last_statement_line": 1818,
+      "last_statement": "call screen contacts",
+      "falls_into": "gotopicturesfromphone",
+      "next_label_line": 1822,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "gotopicturesfromphone",
+      "file": "script.rpy",
+      "label_line": 1822,
+      "last_statement_line": 1868,
+      "last_statement": "call screen gameGallery",
+      "falls_into": "lookatkatieselfie",
+      "next_label_line": 1870,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itspaint",
+      "file": "script.rpy",
+      "label_line": 2155,
+      "last_statement_line": 2158,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itsmovie",
+      "next_label_line": 2159,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itsmovie",
+      "file": "script.rpy",
+      "label_line": 2159,
+      "last_statement_line": 2162,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itsvideogame",
+      "next_label_line": 2163,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itsvideogame",
+      "file": "script.rpy",
+      "label_line": 2163,
+      "last_statement_line": 2166,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itscandy",
+      "next_label_line": 2167,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itscandy",
+      "file": "script.rpy",
+      "label_line": 2167,
+      "last_statement_line": 2173,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itswatch",
+      "next_label_line": 2174,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itswatch",
+      "file": "script.rpy",
+      "label_line": 2174,
+      "last_statement_line": 2179,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itscamera",
+      "next_label_line": 2181,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itscamera",
+      "file": "script.rpy",
+      "label_line": 2181,
+      "last_statement_line": 2183,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itscondom",
+      "next_label_line": 2184,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itscondom",
+      "file": "script.rpy",
+      "label_line": 2184,
+      "last_statement_line": 2187,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "itshandcuffs",
+      "next_label_line": 2188,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "itshandcuffs",
+      "file": "script.rpy",
+      "label_line": 2188,
+      "last_statement_line": 2191,
+      "last_statement": "call screen inventory(item_list, adj=tutorials_adjustment)",
+      "falls_into": "machinePivot",
+      "next_label_line": 2200,
+      "severity": "review",
+      "category": "call-screen return path",
+      "reason": "`call screen` blocks until the screen returns, but execution then continues into the next label unless the screen always jumps away or otherwise transfers control."
+    },
+    {
+      "label": "ashleyinteraction1part2",
+      "file": "characters\\ashley.rpy",
+      "label_line": 16,
+      "last_statement_line": 128,
+      "last_statement": "menu:",
+      "falls_into": "continueashleybj1",
+      "next_label_line": 135,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continueashleybj1",
+      "file": "characters\\ashley.rpy",
+      "label_line": 135,
+      "last_statement_line": 151,
+      "last_statement": "menu:",
+      "falls_into": "continueashleybj2",
+      "next_label_line": 159,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continueashleybj2",
+      "file": "characters\\ashley.rpy",
+      "label_line": 159,
+      "last_statement_line": 171,
+      "last_statement": "menu:",
+      "falls_into": "continueashleybj3",
+      "next_label_line": 179,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continueashleybj3",
+      "file": "characters\\ashley.rpy",
+      "label_line": 179,
+      "last_statement_line": 201,
+      "last_statement": "menu:",
+      "falls_into": "continueashleybj4",
+      "next_label_line": 209,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaphase1interaction1part3",
+      "file": "characters\\ava.rpy",
+      "label_line": 223,
+      "last_statement_line": 264,
+      "last_statement": "else:",
+      "falls_into": "payforgym",
+      "next_label_line": 278,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaphase1interaction1part4",
+      "file": "characters\\ava.rpy",
+      "label_line": 342,
+      "last_statement_line": 427,
+      "last_statement": "menu:",
+      "falls_into": "giveuponava",
+      "next_label_line": 435,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "giveuponava",
+      "file": "characters\\ava.rpy",
+      "label_line": 435,
+      "last_statement_line": 437,
+      "last_statement": "menu:",
+      "falls_into": "giveuponava2",
+      "next_label_line": 445,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "esch1_ava",
+      "file": "characters\\ava.rpy",
+      "label_line": 1231,
+      "last_statement_line": 1427,
+      "last_statement": "menu:",
+      "falls_into": "avachapter1rom",
+      "next_label_line": 1434,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaquestion1",
+      "file": "characters\\ava.rpy",
+      "label_line": 2497,
+      "last_statement_line": 2499,
+      "last_statement": "menu:",
+      "falls_into": "answerjournalist",
+      "next_label_line": 2507,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaquestion2",
+      "file": "characters\\ava.rpy",
+      "label_line": 2536,
+      "last_statement_line": 2538,
+      "last_statement": "menu:",
+      "falls_into": "answermoney",
+      "next_label_line": 2546,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaquestion3",
+      "file": "characters\\ava.rpy",
+      "label_line": 2585,
+      "last_statement_line": 2587,
+      "last_statement": "menu:",
+      "falls_into": "answerwell",
+      "next_label_line": 2594,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaquestion4",
+      "file": "characters\\ava.rpy",
+      "label_line": 2621,
+      "last_statement_line": 2623,
+      "last_statement": "menu:",
+      "falls_into": "answereat",
+      "next_label_line": 2631,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaquestion5",
+      "file": "characters\\ava.rpy",
+      "label_line": 2685,
+      "last_statement_line": 2687,
+      "last_statement": "menu:",
+      "falls_into": "answergood",
+      "next_label_line": 2695,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "didshemakeit",
+      "file": "characters\\ava.rpy",
+      "label_line": 2754,
+      "last_statement_line": 2786,
+      "last_statement": "else:",
+      "falls_into": "avaphase2interaction2part3",
+      "next_label_line": 2790,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avabeachchapter2end",
+      "file": "characters\\ava.rpy",
+      "label_line": 3217,
+      "last_statement_line": 3299,
+      "last_statement": "else:",
+      "falls_into": "avachapter2romance",
+      "next_label_line": 3302,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "charlottephaseMiaDelegation",
+      "file": "characters\\charlotte.rpy",
+      "label_line": 702,
+      "last_statement_line": 706,
+      "last_statement": "else:",
+      "falls_into": "charlottephase1interaction2part3",
+      "next_label_line": 760,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gohomecharlotte",
+      "file": "characters\\charlotte.rpy",
+      "label_line": 1461,
+      "last_statement_line": 2050,
+      "last_statement": "menu:",
+      "falls_into": "charlottechapter1naughty",
+      "next_label_line": 2058,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "charlottebeachchapter2end",
+      "file": "characters\\charlotte.rpy",
+      "label_line": 3443,
+      "last_statement_line": 3484,
+      "last_statement": "else:",
+      "falls_into": "charlottechapter2romance",
+      "next_label_line": 3487,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "charlottephase3interaction1part1",
+      "file": "characters\\charlotte.rpy",
+      "label_line": 3879,
+      "last_statement_line": 4021,
+      "last_statement": "menu:",
+      "falls_into": "continuebooboconvo",
+      "next_label_line": 4029,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "emilyphase1interaction2part4",
+      "file": "characters\\emily.rpy",
+      "label_line": 1276,
+      "last_statement_line": 1373,
+      "last_statement": "else:",
+      "falls_into": "gohomeemily",
+      "next_label_line": 1394,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gohomeemily",
+      "file": "characters\\emily.rpy",
+      "label_line": 1394,
+      "last_statement_line": 1786,
+      "last_statement": "else:",
+      "falls_into": "emilyromance1",
+      "next_label_line": 1794,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "emilyphase2interaction1part4",
+      "file": "characters\\emily.rpy",
+      "label_line": 3999,
+      "last_statement_line": 4069,
+      "last_statement": "else:",
+      "falls_into": "emilyphase2interaction1part5",
+      "next_label_line": 4078,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "emilychoice",
+      "file": "characters\\emily.rpy",
+      "label_line": 4835,
+      "last_statement_line": 4848,
+      "last_statement": "else:",
+      "falls_into": "emilychapter2romance",
+      "next_label_line": 4851,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationkatie2",
+      "file": "characters\\katie.rpy",
+      "label_line": 13,
+      "last_statement_line": 17,
+      "last_statement": "else:",
+      "falls_into": "conversationkatie3",
+      "next_label_line": 42,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationkatie3",
+      "file": "characters\\katie.rpy",
+      "label_line": 42,
+      "last_statement_line": 46,
+      "last_statement": "else:",
+      "falls_into": "conversationkatie4",
+      "next_label_line": 66,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationkatie4",
+      "file": "characters\\katie.rpy",
+      "label_line": 66,
+      "last_statement_line": 70,
+      "last_statement": "else:",
+      "falls_into": "conversationkatie5",
+      "next_label_line": 95,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "miaphase1interaction1part2",
+      "file": "characters\\mia.rpy",
+      "label_line": 155,
+      "last_statement_line": 246,
+      "last_statement": "menu:",
+      "falls_into": "yupwefuckin",
+      "next_label_line": 252,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "yupwefuckin",
+      "file": "characters\\mia.rpy",
+      "label_line": 252,
+      "last_statement_line": 322,
+      "last_statement": "menu:",
+      "falls_into": "askforkatienumber",
+      "next_label_line": 328,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "wearedatingnowyes",
+      "file": "characters\\mia.rpy",
+      "label_line": 353,
+      "last_statement_line": 400,
+      "last_statement": "menu:",
+      "falls_into": "askforkatienumber2",
+      "next_label_line": 406,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "textmiatocomeover",
+      "file": "characters\\mia.rpy",
+      "label_line": 469,
+      "last_statement_line": 570,
+      "last_statement": "menu:",
+      "falls_into": "dontcleanupmia",
+      "next_label_line": 576,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "charlottesmiaquiz",
+      "file": "characters\\mia.rpy",
+      "label_line": 706,
+      "last_statement_line": 819,
+      "last_statement": "menu:",
+      "falls_into": "continuequiz1",
+      "next_label_line": 829,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continuequiz1",
+      "file": "characters\\mia.rpy",
+      "label_line": 829,
+      "last_statement_line": 837,
+      "last_statement": "menu:",
+      "falls_into": "continuequiz2",
+      "next_label_line": 847,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continuequiz2",
+      "file": "characters\\mia.rpy",
+      "label_line": 847,
+      "last_statement_line": 861,
+      "last_statement": "menu:",
+      "falls_into": "continuequiz3",
+      "next_label_line": 871,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continuequiz3",
+      "file": "characters\\mia.rpy",
+      "label_line": 871,
+      "last_statement_line": 889,
+      "last_statement": "menu:",
+      "falls_into": "wronganswer",
+      "next_label_line": 899,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "lookingforphonepark",
+      "file": "characters\\mia.rpy",
+      "label_line": 1318,
+      "last_statement_line": 1330,
+      "last_statement": "else:",
+      "falls_into": "lookingforphonemall",
+      "next_label_line": 1335,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "lookingforphonemall",
+      "file": "characters\\mia.rpy",
+      "label_line": 1335,
+      "last_statement_line": 1351,
+      "last_statement": "else:",
+      "falls_into": "lookingforphonearcade",
+      "next_label_line": 1355,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "lookingforphonearcade",
+      "file": "characters\\mia.rpy",
+      "label_line": 1355,
+      "last_statement_line": 1373,
+      "last_statement": "else:",
+      "falls_into": "looking4miaphone",
+      "next_label_line": 1379,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continuemiasex",
+      "file": "characters\\mia.rpy",
+      "label_line": 1573,
+      "last_statement_line": 1712,
+      "last_statement": "menu:",
+      "falls_into": "snugglewithmia",
+      "next_label_line": 1718,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "miaphase2interaction1part1",
+      "file": "characters\\mia.rpy",
+      "label_line": 2150,
+      "last_statement_line": 2188,
+      "last_statement": "menu:",
+      "falls_into": "malltripwithcharlotte",
+      "next_label_line": 2202,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "malltripwithmia",
+      "file": "characters\\mia.rpy",
+      "label_line": 3151,
+      "last_statement_line": 3253,
+      "last_statement": "menu:",
+      "falls_into": "thewhiteone",
+      "next_label_line": 3261,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "miaphase2interaction2part2",
+      "file": "characters\\mia.rpy",
+      "label_line": 3459,
+      "last_statement_line": 3491,
+      "last_statement": "else:",
+      "falls_into": "juliatablehjchoice",
+      "next_label_line": 3494,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "juliatablehjchoice",
+      "file": "characters\\mia.rpy",
+      "label_line": 3494,
+      "last_statement_line": 3506,
+      "last_statement": "menu:",
+      "falls_into": "juliatablehj",
+      "next_label_line": 3512,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continuedinner2",
+      "file": "characters\\mia.rpy",
+      "label_line": 3572,
+      "last_statement_line": 3604,
+      "last_statement": "else:",
+      "falls_into": "katiedinnerblowjob",
+      "next_label_line": 3607,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "miabeachchapter2end",
+      "file": "characters\\mia.rpy",
+      "label_line": 3841,
+      "last_statement_line": 3883,
+      "last_statement": "else:",
+      "falls_into": "miachapter2endsex",
+      "next_label_line": 3886,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "oliviaphase1interaction2part2",
+      "file": "characters\\olivia.rpy",
+      "label_line": 530,
+      "last_statement_line": 594,
+      "last_statement": "menu:",
+      "falls_into": "gamingpartnerolivia",
+      "next_label_line": 602,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "oliviaphase1interaction2part4",
+      "file": "characters\\olivia.rpy",
+      "label_line": 1168,
+      "last_statement_line": 1306,
+      "last_statement": "menu:",
+      "falls_into": "lookattits",
+      "next_label_line": 1312,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gohomeolivia",
+      "file": "characters\\olivia.rpy",
+      "label_line": 1568,
+      "last_statement_line": 1866,
+      "last_statement": "menu:",
+      "falls_into": "oliviachapter1rom",
+      "next_label_line": 1873,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "oliviaphase2interaction3part1",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2741,
+      "last_statement_line": 2780,
+      "last_statement": "menu:",
+      "falls_into": "frogfightwin1",
+      "next_label_line": 2787,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "frogfightwin1",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2787,
+      "last_statement_line": 2789,
+      "last_statement": "menu:",
+      "falls_into": "frogfightwin2",
+      "next_label_line": 2797,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "frogfightwin2",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2797,
+      "last_statement_line": 2799,
+      "last_statement": "menu:",
+      "falls_into": "frogfightwin3",
+      "next_label_line": 2806,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "frogfightwin3",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2806,
+      "last_statement_line": 2809,
+      "last_statement": "menu:",
+      "falls_into": "frogfightwin4",
+      "next_label_line": 2816,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "frogfightwin4",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2816,
+      "last_statement_line": 2818,
+      "last_statement": "menu:",
+      "falls_into": "frogfightwin5",
+      "next_label_line": 2825,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "frogfightwin5",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2825,
+      "last_statement_line": 2827,
+      "last_statement": "menu:",
+      "falls_into": "frogfightwin",
+      "next_label_line": 2835,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "oliviabeachchapter2end",
+      "file": "characters\\olivia.rpy",
+      "label_line": 2919,
+      "last_statement_line": 2961,
+      "last_statement": "else:",
+      "falls_into": "oliviachapter2romance",
+      "next_label_line": 2964,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "pennyfirststream",
+      "file": "characters\\penny.rpy",
+      "label_line": 194,
+      "last_statement_line": 228,
+      "last_statement": "menu:",
+      "falls_into": "pennysecondstream",
+      "next_label_line": 261,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "pennysecondstream",
+      "file": "characters\\penny.rpy",
+      "label_line": 261,
+      "last_statement_line": 309,
+      "last_statement": "menu:",
+      "falls_into": "pennythirdstream",
+      "next_label_line": 341,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "pennythirdstream",
+      "file": "characters\\penny.rpy",
+      "label_line": 341,
+      "last_statement_line": 350,
+      "last_statement": "menu:",
+      "falls_into": "pennyphase2sex1",
+      "next_label_line": 452,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gohomesophia",
+      "file": "characters\\sophia.rpy",
+      "label_line": 806,
+      "last_statement_line": 954,
+      "last_statement": "menu:",
+      "falls_into": "sophiachapter1rom",
+      "next_label_line": 961,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sophiaphase2interaction1part1",
+      "file": "characters\\sophia.rpy",
+      "label_line": 1145,
+      "last_statement_line": 1798,
+      "last_statement": "else:",
+      "falls_into": "sophiaphase2interaction2part2",
+      "next_label_line": 2034,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sophiabeachchapter2end",
+      "file": "characters\\sophia.rpy",
+      "label_line": 2654,
+      "last_statement_line": 2691,
+      "last_statement": "else:",
+      "falls_into": "sophiachapter2romance",
+      "next_label_line": 2694,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gameIntro",
+      "file": "gameDialogues.rpy",
+      "label_line": 3,
+      "last_statement_line": 27,
+      "last_statement": "menu:",
+      "falls_into": "skiptochapter2",
+      "next_label_line": 34,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "skiptochapter2",
+      "file": "gameDialogues.rpy",
+      "label_line": 34,
+      "last_statement_line": 81,
+      "last_statement": "menu:",
+      "falls_into": "startchapter2Mia",
+      "next_label_line": 100,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "chapter3event1",
+      "file": "gameDialogues.rpy",
+      "label_line": 648,
+      "last_statement_line": 1039,
+      "last_statement": "else:",
+      "falls_into": "getoutoftub",
+      "next_label_line": 1042,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "continuephase3event1bedtime",
+      "file": "gameDialogues.rpy",
+      "label_line": 1332,
+      "last_statement_line": 1346,
+      "last_statement": "elif chosenchick == \"Nobody\":",
+      "falls_into": "sleepwithcharlotte",
+      "next_label_line": 1349,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sleepwithcharlotte",
+      "file": "gameDialogues.rpy",
+      "label_line": 1349,
+      "last_statement_line": 1359,
+      "last_statement": "menu:",
+      "falls_into": "sleepwithemily",
+      "next_label_line": 1365,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sleepwithemily",
+      "file": "gameDialogues.rpy",
+      "label_line": 1365,
+      "last_statement_line": 1374,
+      "last_statement": "menu:",
+      "falls_into": "sleepwithsophia",
+      "next_label_line": 1380,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sleepwithsophia",
+      "file": "gameDialogues.rpy",
+      "label_line": 1380,
+      "last_statement_line": 1389,
+      "last_statement": "menu:",
+      "falls_into": "sleepwithava",
+      "next_label_line": 1395,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sleepwithava",
+      "file": "gameDialogues.rpy",
+      "label_line": 1395,
+      "last_statement_line": 1406,
+      "last_statement": "menu:",
+      "falls_into": "sleepwitholivia",
+      "next_label_line": 1412,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "sleepwitholivia",
+      "file": "gameDialogues.rpy",
+      "label_line": 1412,
+      "last_statement_line": 1421,
+      "last_statement": "menu:",
+      "falls_into": "phase2ending",
+      "next_label_line": 1429,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "playerRoom",
+      "file": "script.rpy",
+      "label_line": 17,
+      "last_statement_line": 51,
+      "last_statement": "elif timeofday == \"Night\":",
+      "falls_into": "playerlivingroom",
+      "next_label_line": 55,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "playerlivingroom",
+      "file": "script.rpy",
+      "label_line": 55,
+      "last_statement_line": 99,
+      "last_statement": "elif timeofday == \"Night\":",
+      "falls_into": "startofchapter1",
+      "next_label_line": 103,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "overworldmap",
+      "file": "script.rpy",
+      "label_line": 157,
+      "last_statement_line": 242,
+      "last_statement": "else:",
+      "falls_into": "gotosunnyside",
+      "next_label_line": 246,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gotosunnyside",
+      "file": "script.rpy",
+      "label_line": 246,
+      "last_statement_line": 323,
+      "last_statement": "else:",
+      "falls_into": "displaycalender",
+      "next_label_line": 330,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "outsideoffice",
+      "file": "script.rpy",
+      "label_line": 370,
+      "last_statement_line": 380,
+      "last_statement": "else:",
+      "falls_into": "insidecafe",
+      "next_label_line": 392,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "insideclub",
+      "file": "script.rpy",
+      "label_line": 436,
+      "last_statement_line": 475,
+      "last_statement": "else:",
+      "falls_into": "clubbathroom",
+      "next_label_line": 478,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "beach",
+      "file": "script.rpy",
+      "label_line": 502,
+      "last_statement_line": 537,
+      "last_statement": "else:",
+      "falls_into": "outsidegym",
+      "next_label_line": 543,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gym",
+      "file": "script.rpy",
+      "label_line": 563,
+      "last_statement_line": 612,
+      "last_statement": "elif timeofday == \"Day\":",
+      "falls_into": "library",
+      "next_label_line": 615,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gfhouse",
+      "file": "script.rpy",
+      "label_line": 705,
+      "last_statement_line": 775,
+      "last_statement": "else:",
+      "falls_into": "miatopsteps",
+      "next_label_line": 779,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "miatopsteps",
+      "file": "script.rpy",
+      "label_line": 779,
+      "last_statement_line": 788,
+      "last_statement": "menu:",
+      "falls_into": "miahousehallway",
+      "next_label_line": 796,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "apartmentlobbyolivia",
+      "file": "script.rpy",
+      "label_line": 941,
+      "last_statement_line": 961,
+      "last_statement": "else:",
+      "falls_into": "visitstephaniebuilding",
+      "next_label_line": 974,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "visitstephaniebuilding",
+      "file": "script.rpy",
+      "label_line": 974,
+      "last_statement_line": 995,
+      "last_statement": "else:",
+      "falls_into": "visitoliviabuilding",
+      "next_label_line": 1003,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "visitoliviabuilding",
+      "file": "script.rpy",
+      "label_line": 1003,
+      "last_statement_line": 1012,
+      "last_statement": "if oliviaphase3interaction1 == 1 and timeofday == \"Night\":",
+      "falls_into": "arcade",
+      "next_label_line": 1017,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "charlotteshouse",
+      "file": "script.rpy",
+      "label_line": 1120,
+      "last_statement_line": 1168,
+      "last_statement": "else:",
+      "falls_into": "school",
+      "next_label_line": 1173,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "classroom1",
+      "file": "script.rpy",
+      "label_line": 1255,
+      "last_statement_line": 1302,
+      "last_statement": "else:",
+      "falls_into": "classroom2",
+      "next_label_line": 1305,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "changetextbox",
+      "file": "script.rpy",
+      "label_line": 1470,
+      "last_statement_line": 1473,
+      "last_statement": "else:",
+      "falls_into": "viewquests",
+      "next_label_line": 1477,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "gotowork",
+      "file": "script.rpy",
+      "label_line": 1875,
+      "last_statement_line": 1912,
+      "last_statement": "elif timeofday == \"Night\":",
+      "falls_into": "test2",
+      "next_label_line": 1936,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "deactivatephone",
+      "file": "script.rpy",
+      "label_line": 1997,
+      "last_statement_line": 2035,
+      "last_statement": "elif whereami == \"cafe\":",
+      "falls_into": "returnwhereyouare",
+      "next_label_line": 2039,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "returnwhereyouare",
+      "file": "script.rpy",
+      "label_line": 2039,
+      "last_statement_line": 2086,
+      "last_statement": "elif whereami == \"outsideoffice\":",
+      "falls_into": "buysomething",
+      "next_label_line": 2116,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "buysomething",
+      "file": "script.rpy",
+      "label_line": 2116,
+      "last_statement_line": 2125,
+      "last_statement": "else:",
+      "falls_into": "buyfitbit",
+      "next_label_line": 2130,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "buyfitbit",
+      "file": "script.rpy",
+      "label_line": 2130,
+      "last_statement_line": 2133,
+      "last_statement": "menu:",
+      "falls_into": "buyfitbit2",
+      "next_label_line": 2139,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "buyfitbit2",
+      "file": "script.rpy",
+      "label_line": 2139,
+      "last_statement_line": 2149,
+      "last_statement": "else:",
+      "falls_into": "itspaint",
+      "next_label_line": 2155,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "machinePivot",
+      "file": "script.rpy",
+      "label_line": 2200,
+      "last_statement_line": 2206,
+      "last_statement": "else:",
+      "falls_into": "avaPivot",
+      "next_label_line": 2211,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "avaPivot",
+      "file": "script.rpy",
+      "label_line": 2211,
+      "last_statement_line": 2302,
+      "last_statement": "elif whereami == \"classroom2\":",
+      "falls_into": "emilyPivot",
+      "next_label_line": 2378,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "emilyPivot",
+      "file": "script.rpy",
+      "label_line": 2378,
+      "last_statement_line": 2569,
+      "last_statement": "if whereami == \"library\":",
+      "falls_into": "stephaniePivot",
+      "next_label_line": 2716,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "stephaniePivot",
+      "file": "script.rpy",
+      "label_line": 2716,
+      "last_statement_line": 2722,
+      "last_statement": "else:",
+      "falls_into": "melissaPivot",
+      "next_label_line": 2727,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "melissaPivot",
+      "file": "script.rpy",
+      "label_line": 2727,
+      "last_statement_line": 2730,
+      "last_statement": "else:",
+      "falls_into": "ravenPivot",
+      "next_label_line": 2733,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "ravenPivot",
+      "file": "script.rpy",
+      "label_line": 2733,
+      "last_statement_line": 2736,
+      "last_statement": "elif ravenscene1 == 1 and timeofday == \"Night\":",
+      "falls_into": "miaPivot",
+      "next_label_line": 2740,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "juliaPivot",
+      "file": "script.rpy",
+      "label_line": 3608,
+      "last_statement_line": 3620,
+      "last_statement": "else:",
+      "falls_into": "sophiaPivot",
+      "next_label_line": 3634,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "katiePivot",
+      "file": "script.rpy",
+      "label_line": 3674,
+      "last_statement_line": 3741,
+      "last_statement": "else:",
+      "falls_into": "charlottePivot",
+      "next_label_line": 3746,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "victoriaPivot",
+      "file": "script.rpy",
+      "label_line": 3892,
+      "last_statement_line": 3899,
+      "last_statement": "else:",
+      "falls_into": "patroncredits",
+      "next_label_line": 3906,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "ashleyconversation",
+      "file": "systems\\shop.rpy",
+      "label_line": 99,
+      "last_statement_line": 120,
+      "last_statement": "else:",
+      "falls_into": "conversationhandcuffs",
+      "next_label_line": 132,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationhandcuffs",
+      "file": "systems\\shop.rpy",
+      "label_line": 132,
+      "last_statement_line": 146,
+      "last_statement": "menu:",
+      "falls_into": "conversationcondoms",
+      "next_label_line": 168,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationcondoms",
+      "file": "systems\\shop.rpy",
+      "label_line": 168,
+      "last_statement_line": 185,
+      "last_statement": "menu:",
+      "falls_into": "conversationwatch",
+      "next_label_line": 204,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationwatch",
+      "file": "systems\\shop.rpy",
+      "label_line": 204,
+      "last_statement_line": 214,
+      "last_statement": "menu:",
+      "falls_into": "conversationvideogame",
+      "next_label_line": 243,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationvideogame",
+      "file": "systems\\shop.rpy",
+      "label_line": 243,
+      "last_statement_line": 261,
+      "last_statement": "menu:",
+      "falls_into": "conversationcandy",
+      "next_label_line": 291,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationcandy",
+      "file": "systems\\shop.rpy",
+      "label_line": 291,
+      "last_statement_line": 318,
+      "last_statement": "menu:",
+      "falls_into": "conversationmovie",
+      "next_label_line": 345,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationmovie",
+      "file": "systems\\shop.rpy",
+      "label_line": 345,
+      "last_statement_line": 366,
+      "last_statement": "menu:",
+      "falls_into": "conversationpaint",
+      "next_label_line": 393,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    },
+    {
+      "label": "conversationpaint",
+      "file": "systems\\shop.rpy",
+      "label_line": 393,
+      "last_statement_line": 417,
+      "last_statement": "menu:",
+      "falls_into": "conversationcamera",
+      "next_label_line": 444,
+      "severity": "uncertain",
+      "category": "compound control flow",
+      "reason": "The label ends in a menu/if/loop block. Static analysis cannot prove that every possible branch transfers control."
+    }
+  ],
+  "suspicious_comments": [
+    {
+      "file": "characters\\ava.rpy",
+      "line": 805,
+      "text": "part 3 (part 2 is unsed part3 (A) is also unused? nice bro)"
+    },
+    {
+      "file": "characters\\ava.rpy",
+      "line": 3218,
+      "text": "\"test ava\""
+    },
+    {
+      "file": "gui.rpy",
+      "line": 377,
+      "text": "# than this are to be show, the oldest entry will be removed."
+    },
+    {
+      "file": "options.rpy",
+      "line": 56,
+      "text": "# To allow the user to play a test sound on the sound or voice channel,"
+    },
+    {
+      "file": "options.rpy",
+      "line": 211,
+      "text": "define build.itch_project = \"renpytom/test-project\""
+    },
+    {
+      "file": "script.rpy",
+      "line": 1584,
+      "text": "$ katiephase3interaction1 = 0 #delete this liiiiiinnne afterrrr you test the katie scene---------------------------------"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1893,
+      "text": "\"Test\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1894,
+      "text": "jump test4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1895,
+      "text": "jump test2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1909,
+      "text": "\"Tester\":"
+    }
+  ],
+  "commented_code": [
+    {
+      "file": "characters\\ava.rpy",
+      "line": 14,
+      "text": "show fbava current:"
+    },
+    {
+      "file": "characters\\ava.rpy",
+      "line": 55,
+      "text": "play sound \"audio/avagameaudio/avaohuh.wav\""
+    },
+    {
+      "file": "characters\\ava.rpy",
+      "line": 1010,
+      "text": "show fbava current:"
+    },
+    {
+      "file": "characters\\ava.rpy",
+      "line": 1649,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\ava.rpy",
+      "line": 1958,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\charlotte.rpy",
+      "line": 3474,
+      "text": "$ charlottephase2interaction3 = 2"
+    },
+    {
+      "file": "characters\\emily.rpy",
+      "line": 439,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\emily.rpy",
+      "line": 513,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\emily.rpy",
+      "line": 520,
+      "text": "$ timeofday = \"Day\""
+    },
+    {
+      "file": "characters\\emily.rpy",
+      "line": 4836,
+      "text": "$ emilyphase2interaction2 = 3"
+    },
+    {
+      "file": "characters\\josy.rpy",
+      "line": 96,
+      "text": "scene 2"
+    },
+    {
+      "file": "characters\\julia.rpy",
+      "line": 1,
+      "text": "scene 1"
+    },
+    {
+      "file": "characters\\julia.rpy",
+      "line": 176,
+      "text": "scene 2"
+    },
+    {
+      "file": "characters\\julia.rpy",
+      "line": 224,
+      "text": "scene 3"
+    },
+    {
+      "file": "characters\\julia.rpy",
+      "line": 469,
+      "text": "scene 4"
+    },
+    {
+      "file": "characters\\melissa.rpy",
+      "line": 2,
+      "text": "scene 1"
+    },
+    {
+      "file": "characters\\melissa.rpy",
+      "line": 88,
+      "text": "scene 2"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 379,
+      "text": "show fbkatie phonelook"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 1710,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 1747,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 1836,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 2095,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 3873,
+      "text": "$ miaphase2interaction2 = 6"
+    },
+    {
+      "file": "characters\\mia.rpy",
+      "line": 3874,
+      "text": "if miaphase2interaction2 >= 6:"
+    },
+    {
+      "file": "characters\\olivia.rpy",
+      "line": 2951,
+      "text": "$ oliviaphase2interaction3 = 1"
+    },
+    {
+      "file": "characters\\penny.rpy",
+      "line": 1,
+      "text": "scene 1"
+    },
+    {
+      "file": "characters\\penny.rpy",
+      "line": 170,
+      "text": "scene after"
+    },
+    {
+      "file": "characters\\penny.rpy",
+      "line": 259,
+      "text": "scene 3"
+    },
+    {
+      "file": "characters\\penny.rpy",
+      "line": 339,
+      "text": "scene 4"
+    },
+    {
+      "file": "characters\\penny.rpy",
+      "line": 450,
+      "text": "scene 5"
+    },
+    {
+      "file": "characters\\penny.rpy",
+      "line": 552,
+      "text": "scene 6"
+    },
+    {
+      "file": "characters\\raven.rpy",
+      "line": 1,
+      "text": "scene 1"
+    },
+    {
+      "file": "characters\\raven.rpy",
+      "line": 247,
+      "text": "scene 2"
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 304,
+      "text": "play sound \"audio/sophiagameaudio/sophiacutelaugh.wav\""
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 319,
+      "text": "play sound \"audio/sophiagameaudio/sophialonglaugh.wav\""
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 436,
+      "text": "play sound \"audio/sophiagameaudio/sophiashortlaugh.wav\""
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 458,
+      "text": "play sound \"audio/sophiagameaudio/sophiadiis.wav\""
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 465,
+      "text": "play sound \"audio/sophiagameaudio/sophiashortlaugh.wav\""
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 798,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 983,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 1086,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 2483,
+      "text": "$ contact_list.append(\"Sophia\")"
+    },
+    {
+      "file": "characters\\sophia.rpy",
+      "line": 2681,
+      "text": "$ sophiaphase2interaction3 = 2"
+    },
+    {
+      "file": "characters\\victoria.rpy",
+      "line": 2,
+      "text": "scene 1"
+    },
+    {
+      "file": "characters\\victoria.rpy",
+      "line": 89,
+      "text": "scene 2"
+    },
+    {
+      "file": "characters\\victoria.rpy",
+      "line": 163,
+      "text": "scene 3"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 4,
+      "text": "Screen Styles"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1260,
+      "text": "screen guidisplayables(money, day):"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1697,
+      "text": "for item in item_list:"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1698,
+      "text": "if item == \"Paint\":"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1701,
+      "text": "elif item == \"Movie\":"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1704,
+      "text": "elif item == \"Video Game\":"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1707,
+      "text": "elif item == \"Candy\":"
+    },
+    {
+      "file": "custom_screens.rpy",
+      "line": 1710,
+      "text": "elif item == \"HP-CheckWatch-3000\":"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 194,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 1494,
+      "text": "hide fbmia"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 1495,
+      "text": "show fbmia current:"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 1497,
+      "text": "$ miaSprite = 14"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 1916,
+      "text": "$ hiden_textbox = False"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2311,
+      "text": "scene fs crowdcheer1"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2315,
+      "text": "scene fs trackrace0"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2318,
+      "text": "scene fs crowdcheer1"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2321,
+      "text": "scene fs miacrowd1"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2323,
+      "text": "scene fs miacrowd1mia"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2325,
+      "text": "scene fs miacrowd1b"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2328,
+      "text": "scene fs miacrowd1bplayer"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2330,
+      "text": "scene fs miacrowd2"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2334,
+      "text": "scene fs trackrace0"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2338,
+      "text": "scene fs miacrowd3"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2344,
+      "text": "scene fs trackrace1"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2349,
+      "text": "scene fs miacrowd3"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2355,
+      "text": "scene fs miacrowd4"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2359,
+      "text": "scene fs miacrowd4b"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2361,
+      "text": "scene fs miacrowd5"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2365,
+      "text": "scene fs miacrowd5b"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2367,
+      "text": "scene fs miacrowd5"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2369,
+      "text": "scene fs trackrace2"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2373,
+      "text": "scene fs miacrowd5b"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2376,
+      "text": "image fingermia:"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2383,
+      "text": "show fingermia"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2387,
+      "text": "pause"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2388,
+      "text": "scene fs trackrace2"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2392,
+      "text": "scene fs trackrace3"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2395,
+      "text": "scene fs miacrowd6"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2400,
+      "text": "scene fs miacrowd7"
+    },
+    {
+      "file": "gameDialogues.rpy",
+      "line": 2404,
+      "text": "scene fs blackblank"
+    },
+    {
+      "file": "gui.rpy",
+      "line": 209,
+      "text": "define gui.navigation_button_width = 250"
+    },
+    {
+      "file": "imagedefines.rpy",
+      "line": 1721,
+      "text": "image fs waitressbang1 = \"waitress scene 1.png\""
+    },
+    {
+      "file": "imagedefines.rpy",
+      "line": 1722,
+      "text": "image fs waitressbang2 = \"waitress scene 2.png\""
+    },
+    {
+      "file": "imagedefines.rpy",
+      "line": 2912,
+      "text": "image fbcharlotte library1 = \"Sprites/charlottelibraryreading.png\""
+    },
+    {
+      "file": "options.rpy",
+      "line": 59,
+      "text": "define config.sample_sound = \"sample-sound.ogg\""
+    },
+    {
+      "file": "options.rpy",
+      "line": 60,
+      "text": "define config.sample_voice = \"sample-voice.ogg\""
+    },
+    {
+      "file": "options.rpy",
+      "line": 67,
+      "text": "define config.main_menu_music = \"main-menu-theme.ogg\""
+    },
+    {
+      "file": "options.rpy",
+      "line": 205,
+      "text": "define build.google_play_key = \"...\""
+    },
+    {
+      "file": "options.rpy",
+      "line": 211,
+      "text": "define build.itch_project = \"renpytom/test-project\""
+    },
+    {
+      "file": "script.rpy",
+      "line": 587,
+      "text": "$ avaphase1interaction3 = 10"
+    },
+    {
+      "file": "script.rpy",
+      "line": 728,
+      "text": "if timeofday == \"Morning\" and miaphase2interaction2 == 4:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 730,
+      "text": "$ miaphase2interaction2 = 4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 731,
+      "text": "jump overworldmap"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1238,
+      "text": "elif emilyphase1interaction2 == 6:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1239,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1309,
+      "text": "if currentchapter == 2 and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1310,
+      "text": "show screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1529,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1584,
+      "text": "$ katiephase3interaction1 = 0 #delete this liiiiiinnne afterrrr you test the katie scene---------------------------------"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1689,
+      "text": "scene fs beachwithgirls"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1893,
+      "text": "\"Test\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1894,
+      "text": "jump test4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1895,
+      "text": "jump test2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1896,
+      "text": "jump sophiaphase1interaction2part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1909,
+      "text": "\"Tester\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1958,
+      "text": "show screen puzzle_paper2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1959,
+      "text": "show screen puzzle_paper3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1960,
+      "text": "show screen puzzle_paper4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1961,
+      "text": "show screen puzzle_paper5"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1962,
+      "text": "show screen puzzle_paper6"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1963,
+      "text": "show paperpuzzle2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1964,
+      "text": "show paperpuzzle3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1965,
+      "text": "show paperpuzzle4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1966,
+      "text": "show paperpuzzle5"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1967,
+      "text": "show paperpuzzle6"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1968,
+      "text": "show screen puzzle_paper1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 1969,
+      "text": "pause"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2314,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2315,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2320,
+      "text": "if whereami == \"classroom2\" and timeofday == \"Day\" and avaphase2interaction1 == 1 and currentchapter > 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2321,
+      "text": "jump avaphase2interaction1part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2322,
+      "text": "elif whereami == \"classroom2\" and timeofday == \"Day\" and avaphase2interaction1 == 2 and currentchapter > 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2323,
+      "text": "jump avaphase2whereshouldwemeetagain2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2326,
+      "text": "if whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 0:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2327,
+      "text": "jump avaphase1interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2328,
+      "text": "elif whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2329,
+      "text": "jump avaphase1interaction1part1postconvo"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2330,
+      "text": "elif whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2331,
+      "text": "jump avayoushouldbuygympass"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2332,
+      "text": "elif whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2333,
+      "text": "jump igotthepassava"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2334,
+      "text": "elif whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 4:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2335,
+      "text": "jump avaatschoolinteraction1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2336,
+      "text": "elif whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 5 and avaphase1interaction2 == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2337,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2339,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2340,
+      "text": "elif whereami == \"school\" and timeofday == \"Morning\" and avaphase1interaction1 == 6 and avaphase1interaction2 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2341,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2342,
+      "text": "jump avaphase1interaction2part3C"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2343,
+      "text": "elif whereami != \"Park\" and timeofday != \"Night\" and avaphase1interaction2 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2344,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2346,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2348,
+      "text": "if whereami == \"gym\" and timeofday == \"Morning\" and avaphase2interaction1 == 0:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2349,
+      "text": "jump avaphase2interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2350,
+      "text": "elif whereami == \"gym\" and timeofday == \"Morning\" and avaphase2interaction1 == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2351,
+      "text": "jump avaphase2whereshouldwemeetagain"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2352,
+      "text": "elif whereami == \"gym\" and timeofday == \"Morning\" and avaphase2interaction1 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2353,
+      "text": "jump avaphase2interaction1part3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2354,
+      "text": "elif whereami == \"gym\" and timeofday == \"Day\" and avaphase1interaction2 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2355,
+      "text": "jump avaphase1interaction2part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2356,
+      "text": "elif whereami == \"park\" and timeofday == \"Night\" and avaphase1interaction2 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2357,
+      "text": "jump avaphase1interaction2part3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2358,
+      "text": "elif whereami == \"gym\" and timeofday == \"Day\" and avaphase1interaction2 == 4:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2359,
+      "text": "jump avaseemsfocused"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2360,
+      "text": "elif whereami == \"gym\" and timeofday == \"Day\" and avaphase1interaction1 == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2361,
+      "text": "jump avaphase1interaction1part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2362,
+      "text": "elif whereami == \"gym\" and timeofday == \"Day\" and avaphase1interaction1 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2363,
+      "text": "jump avayoushouldbuygympass"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2364,
+      "text": "elif whereami == \"gym\" and timeofday == \"Day\" and avaphase1interaction1 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2365,
+      "text": "jump avaphase1interaction1part4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2366,
+      "text": "elif whereami == \"gym\" and timeofday == \"Day\" and avaphase1interaction1 == 4:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2367,
+      "text": "jump avaphase1interaction2part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2373,
+      "text": "if whereami != \"Park\" and avaphase1interaction2 == 5:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2374,
+      "text": "jump letsmeetatthepark"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2581,
+      "text": "if emilyphase1interaction2 == 6 and emilyphase2interaction1 == 0 and currentchapter == 2 and whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2582,
+      "text": "jump emilyphase2interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2583,
+      "text": "elif emilyphase2interaction1 == 1 and timeofday == \"Morning\" and whereami == \"schoolhallway\" and emilyphase2interaction1 != 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2584,
+      "text": "jump emilyphase2interaction1part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2585,
+      "text": "elif emilyphase2interaction1 == 3 and timeofday != \"Night\" and (whereami == \"schoolhallway\" or whereami == \"library\"):"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2586,
+      "text": "jump emilyphase2interaction1part4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2587,
+      "text": "elif emilyphase2interaction1 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2588,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2589,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2591,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2592,
+      "text": "elif emilyphase2interaction1 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2593,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2594,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2598,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2599,
+      "text": "elif emilyphase2interaction1 == 4 and whereami != \"playerRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2600,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2601,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2603,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2607,
+      "text": "if emilyphase1interaction1 == 0 and whereami == \"schoolhallway\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2608,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2609,
+      "text": "jump emilyphase1interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2610,
+      "text": "elif emilyphase1interaction1 == 1 and whereami == \"schoolhallway\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2611,
+      "text": "jump emilyisbusy"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2612,
+      "text": "elif emilyphase1interaction1 == 1 and whereami == \"schoolhallway\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2613,
+      "text": "jump emilyphase1interaction1part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2614,
+      "text": "elif emilyphase1interaction1 == 2 and whereami == \"schoolhallway\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2615,
+      "text": "jump whensthepaintagain2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2616,
+      "text": "elif emilyphase1interaction1 == 3 and whereami == \"schoolhallway\" and timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2617,
+      "text": "jump emilyphase1interaction1part3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2619,
+      "text": "if emilyphase1interaction2 == 1 and whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2620,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2621,
+      "text": "jump emilyphase1interaction2part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2622,
+      "text": "elif emilyphase1interaction2 == 2 and whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2623,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2624,
+      "text": "if timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2625,
+      "text": "jump emilyphase1interaction2part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2626,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2627,
+      "text": "jump emilyrunsaway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2628,
+      "text": "elif emilyphase1interaction2 == 3 and whereami != \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2630,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2631,
+      "text": "elif emilyphase1interaction2 == 3 and whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2632,
+      "text": "scene fs schoolhallway2extras"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2633,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2635,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2636,
+      "text": "elif emilyphase1interaction2 == 4 and whereami != \"livingRoom\" and whereami != \"playerRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2639,
+      "text": "if whereami == \"playerRoom\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2640,
+      "text": "scene fs playerroomMorn"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2641,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2642,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2643,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2644,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2645,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2646,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2647,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2648,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2649,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2650,
+      "text": "elif whereami == \"overworldmap\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2651,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2652,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2653,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2654,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2655,
+      "text": "scene fs gym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2656,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2657,
+      "text": "hide screen charlotte_library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2658,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2659,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2660,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2661,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2662,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2663,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2664,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2665,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2666,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2667,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2668,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2669,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2670,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2671,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2672,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2673,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2674,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2675,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2676,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2677,
+      "text": "hide screen sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2678,
+      "text": "hide screen mia_sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2679,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2680,
+      "text": "elif whereami == \"classroom2\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2681,
+      "text": "hide screen olivia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2682,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2683,
+      "text": "elif whereami == \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2684,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2685,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2686,
+      "text": "scene fs classroom3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2687,
+      "text": "elif whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2688,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2690,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2691,
+      "text": "elif emilyphase1interaction2 == 4 and (whereami == \"livingRoom\" or whereami == \"playerRoom\") and timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2692,
+      "text": "jump emilyphase1interaction2part3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2694,
+      "text": "elif emilyphase1interaction2 == 4 and (whereami == \"livingRoom\" or whereami == \"playerRoom\") and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2695,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2696,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2697,
+      "text": "hide screen backbuttonROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2698,
+      "text": "hide screen backbuttonLIVINGROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2701,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2702,
+      "text": "elif emilyphase1interaction2 == 5 and whereami == \"schoolhallway\" and timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2703,
+      "text": "jump emilyphase1interaction2part4"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2704,
+      "text": "elif emilyphase1interaction2 == 5:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2705,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2706,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2707,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2709,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2710,
+      "text": "elif emilyphase1interaction2 == 6:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2711,
+      "text": "if whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2712,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 2714,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3056,
+      "text": "if charlottephase1interaction2 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3057,
+      "text": "jump charlottephaseMiaDelegation"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3059,
+      "text": "if miaphase2interaction1 == 1 and currentchapter == 2 and whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3060,
+      "text": "jump miaphase2interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3062,
+      "text": "if whereami == \"playerRoom\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3063,
+      "text": "scene fs playerroomMorn"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3064,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3065,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3066,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3067,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3068,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3069,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3070,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3071,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3072,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3073,
+      "text": "elif whereami == \"overworldmap\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3074,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3075,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3076,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3077,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3078,
+      "text": "scene fs gym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3079,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3080,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3081,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3082,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3083,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3084,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3085,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3086,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3087,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3088,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3089,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3090,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3091,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3092,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3093,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3094,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3095,
+      "text": "hide screen sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3096,
+      "text": "hide screen mia_sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3097,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3098,
+      "text": "elif whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3099,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3101,
+      "text": "if miaphase1interaction3 == 1 and whereami != \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3103,
+      "text": "if whereami == \"playerRoom\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3104,
+      "text": "scene fs playerroomMorn"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3105,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3106,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3107,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3108,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3109,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3110,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3111,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3112,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3113,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3114,
+      "text": "elif whereami == \"overworldmap\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3115,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3116,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3117,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3118,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3119,
+      "text": "scene fs gym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3120,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3121,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3122,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3123,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3124,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3125,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3126,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3127,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3128,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3129,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3130,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3131,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3132,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3133,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3134,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3135,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3136,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3137,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3138,
+      "text": "hide screen sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3139,
+      "text": "hide screen mia_sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3140,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3141,
+      "text": "elif whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3142,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3146,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3148,
+      "text": "elif miaphase1interaction3 == 1 and whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3150,
+      "text": "scene fs classroomZOOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3152,
+      "text": "jump miaphase1interaction3part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3154,
+      "text": "elif miaphase1interaction3 == 2 and whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3155,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3156,
+      "text": "scene fs classroomZOOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3158,
+      "text": "jump miaphase1interaction3part1postconvo"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3159,
+      "text": "elif miaphase1interaction3 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3160,
+      "text": "if whereami == \"playerRoom\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3161,
+      "text": "scene fs playerroomMorn"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3162,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3163,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3164,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3165,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3166,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3167,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3168,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3169,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3170,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3171,
+      "text": "elif whereami == \"overworldmap\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3172,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3173,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3174,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3175,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3176,
+      "text": "scene fs gym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3177,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3178,
+      "text": "hide screen charlotte_library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3179,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3180,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3181,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3182,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3183,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3184,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3185,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3186,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3187,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3188,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3189,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3190,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3191,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3192,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3193,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3194,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3195,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3196,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3197,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3198,
+      "text": "hide screen sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3199,
+      "text": "hide screen mia_sophia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3200,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3201,
+      "text": "elif whereami == \"classroom2\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3202,
+      "text": "hide screen olivia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3203,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3204,
+      "text": "elif whereami == \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3205,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3206,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3207,
+      "text": "scene fs classroom3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3208,
+      "text": "elif whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3209,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3213,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3216,
+      "text": "elif miaphase1interaction3 == 4:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3217,
+      "text": "if whereami == \"playerRoom\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3218,
+      "text": "hide screen backbuttonROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3219,
+      "text": "scene fs playerroomMorn"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3220,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3221,
+      "text": "hide screen backbuttonROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3222,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3223,
+      "text": "elif whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3224,
+      "text": "hide screen backbuttonROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3225,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3226,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3227,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3228,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3229,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3230,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3231,
+      "text": "elif whereami == \"overworldmap\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3232,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3233,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3234,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3235,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3236,
+      "text": "hide screen backbuttonGYM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3237,
+      "text": "scene fs gymarea"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3238,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3239,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3240,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3241,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3242,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3243,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3244,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3245,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3246,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3247,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3248,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3249,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3250,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3251,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3252,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3253,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3254,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3255,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3256,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3257,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3258,
+      "text": "elif whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3259,
+      "text": "hide screen backbuttonMALL"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3260,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3261,
+      "text": "elif whereami == \"park\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3262,
+      "text": "scene fs parknight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3263,
+      "text": "elif whereami == \"park\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3264,
+      "text": "scene fs park"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3269,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3271,
+      "text": "if miaphase1interaction2 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3272,
+      "text": "if timeofday == \"Night\" and (whereami == \"livingRoom\" or whereami == \"playerRoom\"):"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3273,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3274,
+      "text": "jump miaphase1interaction2part3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3275,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3277,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3279,
+      "text": "if miaphase1interaction1 == 0 and whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3280,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3281,
+      "text": "scene fs classroomZOOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3283,
+      "text": "jump miaphase1interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3285,
+      "text": "elif miaphase1interaction1 == 0:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3286,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3287,
+      "text": "if whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3288,
+      "text": "hide screen backbuttonMALL"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3289,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3290,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3291,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3292,
+      "text": "elif whereami == \"classroom2\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3293,
+      "text": "hide screen olivia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3294,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3295,
+      "text": "elif whereami == \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3296,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3297,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3298,
+      "text": "scene fs classroom3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3299,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3300,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3301,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3302,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3303,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3304,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3305,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3306,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3307,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3308,
+      "text": "hide screen backbuttonSOPHIAOUTSIDE"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3309,
+      "text": "scene fs sophiahouseoutside"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3310,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3311,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3312,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3313,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3314,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3315,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3316,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3317,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3318,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3319,
+      "text": "scene fs gymarea"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3320,
+      "text": "elif whereami == \"outsidegym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3321,
+      "text": "scene fs outsidegym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3322,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3323,
+      "text": "if timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3324,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3325,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3326,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3327,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3328,
+      "text": "hide screen backbuttonLIVINGROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3329,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3330,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3331,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3332,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3333,
+      "text": "elif whereami == \"playerRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3334,
+      "text": "hide screen backbuttonROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3335,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3336,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3337,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3338,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3341,
+      "text": "jump deactivatephone"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3343,
+      "text": "elif miaphase1interaction1 == 1 and whereami != \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3344,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3345,
+      "text": "if whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3346,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3347,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3348,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3349,
+      "text": "elif whereami == \"classroom2\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3350,
+      "text": "hide screen olivia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3351,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3352,
+      "text": "elif whereami == \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3353,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3354,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3355,
+      "text": "scene fs classroom3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3356,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3357,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3358,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3359,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3360,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3361,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3362,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3363,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3364,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3365,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3366,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3367,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3368,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3369,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3370,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3371,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3372,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3373,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3374,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3375,
+      "text": "scene fs gymarea"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3376,
+      "text": "elif whereami == \"outsidegym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3377,
+      "text": "scene fs outsidegym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3378,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3379,
+      "text": "if timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3380,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3381,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3382,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3383,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3384,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3385,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3386,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3387,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3388,
+      "text": "elif whereami == \"playerRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3389,
+      "text": "if timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3390,
+      "text": "scene fs playerroomMorn"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3391,
+      "text": "elif timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3392,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3393,
+      "text": "elif timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3394,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3398,
+      "text": "jump deactivatephone"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3400,
+      "text": "elif miaphase1interaction1 == 1 and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3403,
+      "text": "jump deactivatephone"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3405,
+      "text": "elif miaphase1interaction1 == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3406,
+      "text": "hide screen mia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3407,
+      "text": "scene fs classroomZOOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3409,
+      "text": "jump miaphase1interaction1part1postconvo"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3411,
+      "text": "elif miaphase1interaction1 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3412,
+      "text": "if whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3413,
+      "text": "scene fs malllabel"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3414,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3415,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3416,
+      "text": "elif whereami == \"classroom2\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3417,
+      "text": "scene fs classroom3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3418,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3419,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3420,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3421,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3422,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3423,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3424,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3425,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3426,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3427,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3428,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3429,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3430,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3431,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3432,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3433,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3434,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3435,
+      "text": "scene fs gymarea"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3436,
+      "text": "elif whereami == \"outsidegym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3437,
+      "text": "scene fs outsidegym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3438,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3439,
+      "text": "if timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3440,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3441,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3442,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3443,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3444,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3445,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3446,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3447,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3448,
+      "text": "elif whereami == \"playerRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3449,
+      "text": "scene fs playerRoom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3451,
+      "text": "if whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3452,
+      "text": "$ todayis = dayName"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3453,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3454,
+      "text": "jump textmiafornudes"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3455,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3457,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3459,
+      "text": "elif miaphase1interaction1 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3460,
+      "text": "if todayis != dayName and whereami == \"playerRoom\" and timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3461,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3462,
+      "text": "jump textmiatocomeover"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3463,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3465,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3466,
+      "text": "if whereami == \"mall\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3467,
+      "text": "scene fs mall"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3468,
+      "text": "elif whereami == \"classroom1\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3469,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3470,
+      "text": "elif whereami == \"classroom2\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3471,
+      "text": "hide screen olivia_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3472,
+      "text": "scene fs classroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3473,
+      "text": "elif whereami == \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3474,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3475,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3476,
+      "text": "scene fs classroom3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3477,
+      "text": "elif whereami == \"schoolhallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3478,
+      "text": "hide screen emily_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3479,
+      "text": "scene fs schoolhallway2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3480,
+      "text": "elif whereami == \"school\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3481,
+      "text": "scene fs schoolhallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3482,
+      "text": "hide screen ava_atschool"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3483,
+      "text": "elif whereami == \"arcade\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3484,
+      "text": "scene fs arcade"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3485,
+      "text": "elif whereami == \"sophiahouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3486,
+      "text": "scene fs sophiahouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3487,
+      "text": "elif whereami == \"gfhouse\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3488,
+      "text": "scene fs gfhouse"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3489,
+      "text": "elif whereami == \"miashallway\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3490,
+      "text": "scene fs gfhousehallway"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3491,
+      "text": "elif whereami == \"gfroom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3492,
+      "text": "scene fs gfroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3493,
+      "text": "elif whereami == \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3494,
+      "text": "scene fs library"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3495,
+      "text": "elif whereami == \"gym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3496,
+      "text": "scene fs gymarea"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3497,
+      "text": "elif whereami == \"outsidegym\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3498,
+      "text": "scene fs outsidegym"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3499,
+      "text": "elif whereami == \"overworldmap\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3500,
+      "text": "if timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3501,
+      "text": "scene fs overworld"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3502,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3503,
+      "text": "scene fs overworldnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3504,
+      "text": "elif whereami == \"livingRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3505,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3506,
+      "text": "hide screen backbuttonLIVINGROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3507,
+      "text": "scene fs livingroomnight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3508,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3509,
+      "text": "hide screen backbuttonLIVINGROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3510,
+      "text": "scene fs livingroom"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3511,
+      "text": "elif whereami == \"playerRoom\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3512,
+      "text": "hide screen backbuttonROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3513,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3514,
+      "text": "scene fs playerroomNight"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3515,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3516,
+      "text": "scene fs playerroomDay"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3518,
+      "text": "if timeofday == \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3520,
+      "text": "else:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3522,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3524,
+      "text": "elif miaphase1interaction1 == 4:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3525,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3526,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3529,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3531,
+      "text": "elif miaphase1interaction3 == 5:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3532,
+      "text": "hide screen phonecontacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3533,
+      "text": "hide screen contacts"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3535,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3838,
+      "text": "hide screen uppergui"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3839,
+      "text": "if miaphase1interaction3 == 2 and whereami != \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3840,
+      "text": "jump looking4miaphone"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3842,
+      "text": "if miaphase1interaction3 == 3:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3843,
+      "text": "jump looking4miaphonepostconvo"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3845,
+      "text": "if miaphase1interaction3 == 4 and whereami == \"library\" and foundphonevariable == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3846,
+      "text": "jump foundmiaphoneconvo"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3851,
+      "text": "if charlottephase2interaction1 == 0 and currentchapter > 1 and whereami == \"cafe\" and timeofday != \"Night\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3852,
+      "text": "jump charlottephase2interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3855,
+      "text": "if charlottephase1interaction1 == 0:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3856,
+      "text": "jump charlottephase1interaction1part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3857,
+      "text": "elif charlottephase1interaction1 == 1 and whereami == \"classroom3\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3858,
+      "text": "jump charlottewonttalktome"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3859,
+      "text": "elif charlottephase1interaction1 == 1 and whereami == \"library\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3860,
+      "text": "jump charlottephase1interaction1part2"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3861,
+      "text": "elif charlottephase1interaction1 == 2 and whereami == \"classroom3\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3862,
+      "text": "jump charlottewonttalktome"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3863,
+      "text": "elif charlottephase1interaction1 == 2 and whereami == \"library\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3864,
+      "text": "jump charlottephase1interaction1part3"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3865,
+      "text": "elif charlottephase1interaction1 == 3 and whereami == \"classroom3\" and timeofday == \"Morning\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3866,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3867,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3868,
+      "text": "jump charlottephase1interaction2part1A"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3869,
+      "text": "elif charlottephase1interaction1 == 3 and whereami != \"classroom3\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3870,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3871,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3873,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3874,
+      "text": "elif charlottephase1interaction1 == 4 and whereami != \"library\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3875,
+      "text": "hide screen charlotte_school"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3876,
+      "text": "hide screen backbuttonCLASSROOM"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3878,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3879,
+      "text": "elif charlottephase1interaction1 == 4 and whereami == \"library\" and timeofday == \"Day\":"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3880,
+      "text": "jump charlottephase1interaction2part1"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3881,
+      "text": "elif charlottephase1interaction2 == 1:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3884,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3885,
+      "text": "elif charlottephase1interaction2 == 2:"
+    },
+    {
+      "file": "script.rpy",
+      "line": 3887,
+      "text": "jump returnwhereyouare"
+    },
+    {
+      "file": "variables.rpy",
+      "line": 224,
+      "text": "$ hadcharlotteconvo = 0"
+    }
+  ]
+}

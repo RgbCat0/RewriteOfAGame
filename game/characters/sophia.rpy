@@ -60,6 +60,8 @@ label sophiaphase1interaction1part1:
 # part 1 post convo
 
 label sophianottalkingtome:
+    hide screen mia_atschool
+    hide screen mia_sophia_atschool
     hide screen sophia_atschool
     player "Sophia kinda seems in a bad mood, plus her class is probably starting soon."
     player "I'll stop by her house in the afternoon, talk to her then."
@@ -68,6 +70,10 @@ label sophianottalkingtome:
 # part 2
 
 label sophiaphase1interaction1part2:
+    if timeofday != "Day":
+        player "I should visit Sophia this afternoon."
+        jump overworldmap
+
     scene fs sophiahouseoutside
     with Dissolve(0.7)
 
@@ -511,6 +517,10 @@ label sophiaphase1interaction2part1:
 # part 2
 
 label sophiaphase1interaction2part2:
+    if timeofday != "Day":
+        player "I should visit Sophia this afternoon."
+        jump overworldmap
+
     hide screen uppergui
     scene fs overworldnight
     stop music 
@@ -916,31 +926,31 @@ label gohomesophia:
     scene fs sophiachapterend1blur
     with Dissolve(0.7)
     $ hiden_textbox = True
-    "{color=#000000}[povname]{/color}""When did you get here?..."
+    player "When did you get here?..."
     mia "...."
     scene fs sophiachapterend2
     with Dissolve(0.7)
-    "{color=#000000}[povname]{/color}""Ohhhh that...mmmm that feels good.."
+    player "Ohhhh that...mmmm that feels good.."
     scene fs sophiachapterend3
-    "{color=#000000}[povname]{/color}""Yeah baby...lick the head just like that."
+    player "Yeah baby...lick the head just like that."
     scene fs sophiachapterend2
-    "{color=#000000}[povname]{/color}""Oh fuck..."
+    player "Oh fuck..."
     scene fs sophiachapterend3
-    "{color=#000000}[povname]{/color}""Wait.."
+    player "Wait.."
     scene fs sophiachapterend2
-    "{color=#000000}[povname]{/color}" "Mia wouldn't..."
+    player "Mia wouldn't..."
     scene fs sophiachapterend3
     window hide
     pause
     scene fs sophiachapterend4
     with Dissolve(1.0)
 
-    "{color=#000000}[povname]{/color}" "Sophia??!"
-    "{color=#000000}[povname]{/color}" "What are you-"
+    player "Sophia??!"
+    player "What are you-"
     scene fs sophiachapterend6
     play sound "audio/sophiagameaudio/sophiablowjob1.wav"
     sophia "Uhn.."
-    "{color=#000000}[povname]{/color}" "{i}She's sucking my dick!!{/i}"
+    player "{i}She's sucking my dick!!{/i}"
     menu:
         "{color=#3eab33}Romantic{/color}":
             jump sophiachapter1rom
@@ -950,20 +960,20 @@ label gohomesophia:
 
 label sophiachapter1rom:
     play sound "audio/sophiagameaudio/sophiablowjob1.wav" loop
-    sophia "{color=#a93b4c}Uhnf..{/color}"
+    sophia "Uhnf.."
     scene fs sophiachapterend7
-    "{color=#000000}[povname]{/color}" "Oh my god that feels so good.."
-    sophia "{color=#a93b4c}MMMMM!{/color}"
+    player "Oh my god that feels so good.."
+    sophia "MMMMM!"
     scene fs sophiachapterend6
-    "{color=#000000}[povname]{/color}" "Holy shit yes! Your throat is so tight."
+    player "Holy shit yes! Your throat is so tight."
     scene fs sophiachapterend7
-    sophia "{color=#a93b4c}Uh huh?{/color}"
-    "{color=#000000}[povname]{/color}" "Don't fucking stop."
+    sophia "Uh huh?"
+    player "Don't fucking stop."
     scene fs sophiachapterend6
     voice "audio/sophiagameaudio/sophiauhn.wav"
     stop sound
-    sophia "{color=#a93b4c}Uhhhn!!{/color}"
-    "{color=#000000}[povname]{/color}" "Fuck baby I'm gonna cum!"
+    sophia "Uhhhn!!"
+    player "Fuck baby I'm gonna cum!"
     scene fs sophiachapterend7
     "{i}{color=#a93b4c}He called me baby!{/color}{/i}"
     scene fs sophiachapterend6
@@ -1014,63 +1024,63 @@ label sophiachapter1naughty:
 
     scene fs sophiachapterend7
     voice "audio/sophiagameaudio/sophiauhn2.wav"
-    sophia "{color=#a93b4c}Uhhnmf!{/color}"
+    sophia "Uhhnmf!"
     scene fs sophiachapterend6
-    sophia "{color=#a93b4c}Mmmm.{/color}"
+    sophia "Mmmm."
     scene fs sophiachapterend7
     voice "audio/sophiagameaudio/sophiauhn.wav"
-    sophia "{color=#a93b4c}UUUHN!{/color}"
+    sophia "UUUHN!"
     scene fs sophiachapterend6
     play sound "audio/sophiagameaudio/sophiablowjob2.wav" loop
-    "{color=#000000}[povname]{/color}" "Look at you go."
-    "{color=#000000}[povname]{/color}" "Always knew you were a dirty little slut."
+    player "Look at you go."
+    player "Always knew you were a dirty little slut."
     scene fs sophiachapterend7
-    sophia "{color=#a93b4c}Uhn...Uhn!{/color}"
+    sophia "Uhn...Uhn!"
     scene fs sophiachapterend6
-    "{color=#000000}[povname]{/color}" "You can't stop yourself can you? You're fucking pathetic."
+    player "You can't stop yourself can you? You're fucking pathetic."
     scene fs sophiachapterend7
-    sophia "{color=#a93b4c}*Slurp* *Slurp*{/color}"
+    sophia "*Slurp* *Slurp*"
     scene fs sophiachapterend6
-    "{color=#000000}[povname]{/color}" "You're not going deep enough."
+    player "You're not going deep enough."
     scene fs sophiachapterend7
-    sophia "{color=#a93b4c}Uhhnn?{/color}"
+    sophia "Uhhnn?"
     scene fs sophiachapterend6
-    "{color=#000000}[povname]{/color}" "If you want to make me cum.."
+    player "If you want to make me cum.."
     scene fs sophiachapterend13
-    "{color=#000000}[povname]{/color}" "You're going to have to.."
+    player "You're going to have to.."
     scene fs sophiachapterend14
     voice "audio/sophiagameaudio/sophiauhn.wav"
     with vpunch
-    "{color=#000000}[povname]{/color}" "Go DEEPER!"
-    sophia "{color=#a93b4c}EMMMMM! EMMM!{/color}"
-    "{color=#000000}[povname]{/color}" "What's wrong? Mia can take this length easily."
-    sophia "{color=#a93b4c}Uhnngg...{/color}"
-    "{color=#000000}[povname]{/color}" "I wonder what she'd say, or the rest of your friends?"
-    "{color=#000000}[povname]{/color}" "How could you do this to them huh? You must just not care about them at all."
+    player "Go DEEPER!"
+    sophia "EMMMMM! EMMM!"
+    player "What's wrong? Mia can take this length easily."
+    sophia "Uhnngg..."
+    player "I wonder what she'd say, or the rest of your friends?"
+    player "How could you do this to them huh? You must just not care about them at all."
     voice "audio/sophiagameaudio/sophiauhn.wav"
-    sophia "{color=#a93b4c}EEUUUGH!{/color}"
+    sophia "EEUUUGH!"
     with vpunch
     voice "audio/sophiagameaudio/sophiauhn3.wav"
-    sophia "{color=#a93b4c}EEUUUGH!{/color}"
-    "{color=#000000}[povname]{/color}" "Getting harder to breath huh? Must be pretty difficult with my fat cock down your throat."
+    sophia "EEUUUGH!"
+    player "Getting harder to breath huh? Must be pretty difficult with my fat cock down your throat."
     with vpunch
     voice "audio/sophiagameaudio/sophiapwease.wav"
-    sophia "{color=#a93b4c}EHN! PWEEASE!{/color}"
-    "{color=#000000}[povname]{/color}" "The only way I'm letting you off my cock is if you make me cum."
+    sophia "EHN! PWEEASE!"
+    player "The only way I'm letting you off my cock is if you make me cum."
     scene fs sophiachapterend13
-    "{color=#000000}[povname]{/color}" "So don't..."
+    player "So don't..."
     scene fs sophiachapterend14
     with vpunch
-    "{color=#000000}[povname]{/color}" "Stop sucking!!!"
-    sophia "{color=#a93b4c}Ahhnnugh!{/color}"
-    "{color=#000000}[povname]{/color}" "You ready bitch? Here it comes!"
+    player "Stop sucking!!!"
+    sophia "Ahhnnugh!"
+    player "You ready bitch? Here it comes!"
     scene fs sophiachapterend15
     with vpunch
-    sophia "{color=#a93b4c}MMMMM!{/color}"
+    sophia "MMMMM!"
     with flash
-    "{color=#000000}[povname]{/color}" "Yeah that's it! That's it you stupid whore. Straight down your little throat."
+    player "Yeah that's it! That's it you stupid whore. Straight down your little throat."
     play audio "audio/sophiagameaudio/sophiagulping.wav"
-    sophia "{color=#a93b4c}*Gulp* *Gulp*{/color}"
+    sophia "*Gulp* *Gulp*"
     window hide
     pause
     #$ hiden_textbox = False
@@ -2639,3 +2649,649 @@ label sophiaphase2interaction3part2:
     jump passtime
 
 # end chapter 2
+# end chapter 2 content
+
+label sophiabeachchapter2end:
+    hide screen mia_beach1
+    hide screen mia_beach2
+    hide screen mia_beach3
+    hide screen sophia_beach
+    hide screen charlotte_beach
+    hide screen ava_beach
+    hide screen emily_beach
+    hide screen olivia_beach
+    hide screen backbuttonBEACH
+
+    scene fs sophiawaterthensex1
+    "Ocean" "*Water noises*"
+    sophia "Ahhh..."
+    scene fs sophiawaterthensex2
+    with Dissolve(0.7)
+    player "Soph! Enjoying yourself?"
+    scene fs sophiawaterthensex3
+    sophia "Hey [povname]!"
+    sophia "Yeah!"
+    scene fs sophiawaterthensex2
+    player "What'cha thinking about?"
+    scene fs sophiawaterthensex3
+    sophia "Oh you know, just how we're gonna break the news to Mia."
+    sophia "How many kids we should have..stuff like that."
+    scene fs sophiawaterthensex4
+    player "...."
+    #$ sophiaphase2interaction3 = 2
+    if sophiaphase2interaction3 >= 2:
+        "Would you like to end the day with Sophia?"
+        menu:
+            "Romance":
+                jump sophiachapter2romance
+            "Naughty":
+                jump sophiachapter2naughty
+            "Go back to beach":
+                jump explorebeach
+    else:
+        jump explorebeach
+
+    label sophiachapter2romance:
+        player "I...you..."
+        sophia "Hmmm?"
+        player "{i}I can't speak I'm so overcome with rage{/i}"
+        sophia "Something the matter sweetie?"
+        player "I'm going to do something Sophia. And I know you're probably gonna like it."
+        sophia "Okay..."
+        player "But I want you to know this is a punishment, I'm very angry."
+        sophia "But I don't know wh-"
+        scene fs sophiawaterthensex5
+        sophia "Oh."
+        sophia "He's gone."
+        ava "Sophiiiiaaa!"
+        scene fs sophiawaterthensex6
+        with Dissolve(0.5)
+        sophia "Hey guys!"
+        scene fs sophiawaterthensex7
+        ava "Where's [povname] I thought I saw him go into the water towards you?"
+        sophia "I dunno. He kinda just left."
+        scene fs sophiawaterthensex8
+        with Dissolve(0.5)
+        player "Hohoho Sophia."
+        player "I'm gonna hate this so much."
+        scene fs sophiawaterthensex9
+        player "I mean you're. YOU'RE gonna hate this."
+        scene fs sophiawaterthensex10
+        player "Try and talk to your friends when I'm pussy deep in your...pussy."
+        scene fs sophiawaterthensex13
+        with Dissolve(0.5)
+        sophia "{i}Wait is that him down there?{/i}"
+        sophia "{i}What is he doing? He pulled down my bikini!{/i}"
+        scene fs sophiawaterthensex10
+        player "Hehehe."
+        scene fs sophiawaterthensex11
+        player "Bitch."
+        scene fs sophiawaterthensex14
+        with Dissolve(0.5)
+        ava "You alright girl?"
+        emily "Yeah you look a little off."
+        scene fs sophiawaterthensex15
+        sophia "Hah! Y-Yeah everythings fine!"
+        scene fs sophiawaterthensex11
+        with Dissolve(0.5)
+        player"Mmmmm"
+        player "{i}Even underwater I can tell how wet she is. What a slut.{/i}"
+        scene fs sophiawaterthensex12
+        with Dissolve(0.5)
+        player "{i}Let's add a little more stimulation.{/i}"
+        scene fs sophiawaterthensex15
+        sophia "{i}Oh God he's gonna m-make me!{/i}"
+        sophia "{i}I can't cum in front of the girls! I gotta think of a plan quick!{/i}"
+        ava "You're SURE you're alright?"
+        emily "Maybe we should have a closer look at you?"
+        sophia "Nonono I'm fine!"
+        sophia "Look hey! Let's play a game, best orgasm face wins I'll go first!"
+        emily "What?"
+        scene fs sophiawaterthensex16
+        sophia "Ahhhn!!!"
+        sophia "I f-feel another one cumming! Y-You guys try!"
+        ava "No I'm good you little weirdo. We should go see how everyone else is doing."
+        emily "Um yeah Sophia, we'll see you later. Tell us if you find [povname]."
+        scene fs sophiawaterthensex17
+        with Dissolve(0.5)
+        sophia "Ahh! FFFFFuck!"
+        scene fs sophiawaterthensex12
+        with Dissolve(0.5)
+        player "Damn she's really cumming hard!"
+        player "I should go back up now though. Before I drown."
+        scene fs sophiawaterthensex2
+        with Dissolve(0.7)
+        player "There...hah..."
+        player "Learn your lesson?"
+        sophia "We....should come to the beach more often?"
+        player "....."
+        stop music
+        stop sound
+        play music "audio/showersounds.wav"
+        show sophiachapter2sex movie1
+        sophia "Ahn ahn ahn!"
+        player "WE."
+        player "ARE."
+        player "NOT."
+        player "A COUPLE!"
+        show sophiachapter2sex movie2
+        sophia "Oh my god [povname] I'm cumming I'm cumming!"
+        player "How many times do I have to fuck you to understand!?"
+        sophia "A-A lot! SO MANY TIMES!"
+        player "THEN THAT'S WHAT I'll DO!"
+        show sophiachapter2sex movie3
+        sophia "AHHHH!"
+        player "Looks like your little pussy couldn't hold all my cum."
+        sophia "Uggghhh."
+        player "{i}She's totally out of it. Oh well. {/i}"
+        player "{i}God her pussy actually feels amazing...{/i}"
+        pause
+        scene fs blackblank
+        with Dissolve(1.0)
+
+        $ endchapter2_trigger = "2 sophia romantic"
+        $ sophiaquestlog = "I have to not fuck Sophia out of anger again...is she at school?"
+        jump startofchapter3
+
+    label sophiachapter2naughty:
+        player "I...you..."
+        sophia "Hmmm?"
+        player "{i}I can't speak I'm so overcome with rage{/i}"
+        sophia "Something the matter sweetie?"
+        player "I'm going to do something Sophia. And I know you're probably gonna like it."
+        sophia "Okay..."
+        player "But I want you to know this is a punishment, I'm very angry."
+        sophia "But I don't know wh-"
+        scene fs sophiawaterthensex5
+        sophia "Oh."
+        sophia "He's gone."
+        ava "Sophiiiiaaa!"
+        scene fs sophiawaterthensex6
+        with Dissolve(0.5)
+        sophia "Hey guys!"
+        scene fs sophiawaterthensex7
+        ava "Where's [povname] I thought I saw him go into the water towards you?"
+        sophia "I dunno. He kinda just left."
+        scene fs sophiawaterthensex8
+        with Dissolve(0.5)
+        player "Hohoho Sophia."
+        player "I'm gonna hate this so much."
+        scene fs sophiawaterthensex9
+        player "I mean you're. YOU'RE gonna hate this."
+        scene fs sophiawaterthensex10
+        player "Try and talk to your friends when I'm pussy deep in your...pussy."
+        scene fs sophiawaterthensex13
+        with Dissolve(0.5)
+        sophia "{i}Wait is that him down there?{/i}"
+        sophia "{i}What is he doing? He pulled down my bikini!{/i}"
+        scene fs sophiawaterthensex10
+        player "Hehehe."
+        scene fs sophiawaterthensex11
+        player "Bitch."
+        scene fs sophiawaterthensex14
+        with Dissolve(0.5)
+        ava "You alright girl?"
+        emily "Yeah you look a little off."
+        scene fs sophiawaterthensex15
+        sophia "Hah! Y-Yeah everythings fine!"
+        scene fs sophiawaterthensex11
+        with Dissolve(0.5)
+        player"Mmmmm"
+        player "{i}Even underwater I can tell how wet she is. What a slut.{/i}"
+        scene fs sophiawaterthensex12
+        with Dissolve(0.5)
+        player "{i}Let's add a little more stimulation.{/i}"
+        scene fs sophiawaterthensex15
+        sophia "{i}Oh God he's gonna m-make me!{/i}"
+        sophia "{i}I can't cum in front of the girls! I gotta think of a plan quick!{/i}"
+        ava "You're SURE you're alright?"
+        emily "Maybe we should have a closer look at you?"
+        sophia "Nonono I'm fine!"
+        sophia "Look hey! Let's play a game, best orgasm face wins I'll go first!"
+        emily "What?"
+        scene fs sophiawaterthensex16
+        sophia "Ahhhn!!!"
+        sophia "I f-feel another one cumming! Y-You guys try!"
+        ava "No I'm good you little weirdo. We should go see how everyone else is doing."
+        emily "Um yeah Sophia, we'll see you later. Tell us if you find [povname]."
+        scene fs sophiawaterthensex17
+        with Dissolve(0.5)
+        sophia "Ahh! FFFFFuck!"
+        scene fs sophiawaterthensex12
+        with Dissolve(0.5)
+        player "Damn she's really cumming hard!"
+        player "I should go back up now though. Before I drown."
+        scene fs sophiawaterthensex2
+        with Dissolve(0.7)
+        player "There...hah..."
+        player "Learn your lesson?"
+        sophia "We....should come to the beach more often?"
+        player "....."
+        stop music
+        stop sound
+        play music "audio/showersounds.wav"
+        show sophiachapter2sex movie1
+        sophia "Ahn ahn ahn!"
+        player "TAKE IT YOU STUPID SLUT!"
+        player "We're here on a trip with my GIRLFRIEND."
+        player "And you're fantasizing about us again??"
+        sophia "AHHHH!"
+        player "I can feel you getting tighter! Jesus Christ!"
+        show sophiachapter2sex movie2
+        sophia "[povname]![povname]![povname]!"
+        player "How much of a whore are you huh? You just don't care!"
+        sophia "C-Cummming!!!"
+        show sophiachapter2sex movie3
+        sophia "AHHHN!!"
+        player "That's right cum on my fat dick!"
+        player "That's all that matters to you right??"
+        sophia "Uggghhh."
+        player "{i}She's totally out of it. Nothing will get through to her now. {/i}"
+        player "{i}I can't tell her how good her pussy actually feels..{/i}"
+        pause
+        scene fs blackblank
+        with Dissolve(1.0)
+        $ endchapter2_trigger = "2 sophia naughty"
+        $ sophiaquestlog = "I have to not fuck Sophia out of anger again...is she at school?"
+
+        jump startofchapter3
+
+# start chapter 3
+
+# Chapter 3 and related character scenes.
+
+label sophiaphase3interaction1part1:
+    hide screen sophia_atschool
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbsophia current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.5)
+    $ sophiaSprite = 1
+    $ playerSprite = 14
+    sophia "Hiiiii [povname]."
+    $ sophiaSprite = 0
+    $ playerSprite = 15
+    player "*sigh*"
+    player "Hey Soph."
+    $ playerSprite = 14
+    $ sophiaSprite = 1
+    sophia "What'chu up to loverbooooy?"
+    $ sophiaSprite = 0
+    $ playerSprite = 15
+    player "I don't know."
+    player "Hoping to run into Mia."
+    $ playerSprite = 14
+    $ sophiaSprite = 2
+    sophia "Ah."
+    $ sophiaSprite = 10
+    $ playerSprite = 15
+    player "She's not here so I'll check the hallway."
+    $ playerSprite = 14
+    hide fbplayer current
+    $ sophiaSprite = 1
+    sophia "Wait!"
+    hide fbsophia current
+    scene fs schoolhallway
+    with Dissolve(0.7)
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbsophia current:
+        xalign 0.2 xzoom -1.0 ypos 120
+    with Dissolve(0.5)
+    sophia "I'll help! I think she went to the bathroom."
+    $ sophiaSprite = 0
+    show fbava current:
+        xalign 0.7 ypos 120
+    with Dissolve(0.5)
+    $ avaSprite = 1
+    ava "Heyo."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    $ sophiaSprite = 10
+    player "Ava!"
+    player "How you doing what's up?"
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Just came back from a run around the track."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Ah, just keeping your legs warm?"
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Haha yeah!"
+    $ avaSprite = 0
+    sophia "...."
+    $ avaSprite = 1
+    ava "So what are you two doing?"
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "I'm looking for Mia, just wanted to give her a little surprise."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Aww. Cute."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Haha."
+    $ playerSprite = 0
+    sophia "...."
+    $ avaSprite = 1
+    ava "You know her birthday's coming up in a month, you know what you're gonna get her?"
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "You know I actually have the perfect idea?"
+    $ playerSprite = 0
+    scene fs sophiahallwayzoom1
+    with Dissolve(1.0)
+    player "Azhum ba loopa. Cama sa?"
+    ava "Shoooma blah cuba cuba."
+    scene fs sophiahallwayzoom2
+    with Dissolve(1.0)
+    player "Hahaha shuuuno koomba."
+    ava "Ahhh. Zimtuba dupo."
+    player "Dupo."
+    ava "Zobia?"
+    ava "ZOBIA?!"
+    ava "SOPHIA!"
+    $ sophiaSprite = 7
+    $ avaSprite = 15
+    $ playerSprite = 11
+
+    scene fs schoolhallway
+
+    show fbplayer current:
+        xalign 0.4 xzoom -1.0 ypos 120
+    show fbsophia current:
+        xalign 0.2 xzoom -1.0 ypos 120
+    show fbava current:
+        xalign 0.7 ypos 120
+    sophia "HUH?!"
+    sophia "What?"
+    $ sophiaSprite = 10
+    $ avaSprite = 16
+    ava "Dude you okay?"
+    $ avaSprite = 15
+    $ sophiaSprite = 2
+    sophia "Um yeah I'm..."
+    $ sophiaSprite = 10
+    $ miaSprite = 1
+    show fbmia current:
+        xalign 0.6 ypos 120
+    mia "Hello friends!"
+    $ avaSprite = 0
+    $ miaSprite = 0
+    $ sophiaSprite = 10
+    show fbplayer current:
+        xalign 0.4 xzoom 1.0 ypos 120
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Mia!"
+    $ avaSprite = 0
+    $ sophiaSprite = 2
+    sophia "Fine..."
+    $ sophiaSprite = 10
+    $ miaSprite = 1
+    mia "[povname]!"
+    $ miaSprite = 0
+    $ playerSprite = 10
+    player "Surprise! No gift though sorry."
+    $ playerSprite = 0
+    hide fbplayer current
+    show fbmia mcmiamakeout:
+        xalign 0.4 ypos 120
+    mia "Mmmmm!"
+    show fbmia current:
+        xalign 0.5 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.5)
+    $ miaSprite = 4
+    mia "YOU'RE my gift!"
+    $ miaSprite = 0
+    $ avaSprite = 1
+    ava "Awww. Again."
+    $ avaSprite = 0
+    $ sophiaSprite = 2
+    show fbsophia current:
+        xalign 0.1
+    with move
+    sophia "I'm...gonna go guys I got something..."
+    show fbplayer current:
+        xalign 0.35 xzoom -1.0 ypos 120
+    sophia "Something to do."
+    $ sophiaSprite = 10
+    $ avaSprite = 16
+    ava "You sure you're good?"
+    $ avaSprite = 15
+    $ sophiaSprite = 2
+    sophia "Yeah I'll see you later."
+    $ sophiaSprite = 10
+    $ miaSprite = 1
+    mia "Oh before you go Sophia."
+    $ miaSprite = 0
+    show fbmia current:
+        xalign 0.22
+    with move
+    sophia "Hmm?"
+    $ miaSprite = 4
+    mia "I just wanna say your recipe for the butterscotch cookies was AMAZING!"
+    $ miaSprite = 0
+    $ sophiaSprite = 2
+    sophia "Really?"
+    $ sophiaSprite = 10
+    $ miaSprite = 1
+    mia "Even my MOM admitted it was better than hers hehe."
+    mia "Don't tell her I said that though."
+    $ sophiaSprite = 0
+    mia "I just wanted to say thanks!"
+    $ miaSprite = 0
+    pause
+    $ sophiaSprite = 10
+    sophia "..."
+    $ sophiaSprite = 2
+    sophia "Okay. Thank you."
+    sophia "I'm...really sorry Mia."
+    $ sophiaSprite = 10
+    mia "Hmm?"
+    $ sophiaSprite = 2
+    sophia "Bye."
+    hide fbsophia current
+    with Dissolve(0.5)
+    $ avaSprite = 1
+    ava "Bye!"
+    $ avaSprite = 1
+    $ playerSprite = 1
+    player "See yah."
+    $ playerSprite = 0
+    $ miaSprite = 1
+    mia "Bye Sophia!"
+    $ miaSprite = 0
+    $ sophiaSprite = 0
+    $ sophiaphase2interaction3 = 3
+    $ sophiaphase3interaction1 = 1
+    $ sophiaquestlog = "Was nice to just talk to everyone together. Sophia seemed a little down near the end though."
+    jump passtime
+
+label sophiaphase3interaction1part2:
+    scene fs playerbedneutral
+    with Dissolve(0.7)
+    pause
+    scene fs playerbedthink1
+    player "{i}Hmmm.{/i}"
+    player "{i}Should I try out pickleball?{/i}"
+    scene fs playerbedthink2
+    pause
+    player "{i}Naw.{/i}"
+    scene fs playerbedneutral
+    player "*sniff sniff*"
+    player "{i}Man I need to take a shower or a bath or something{/i}"
+    "Briiiing Briiiiing"
+    scene fs playerbedphone
+    player "Who's video calling?"
+    scene fs sophiabathtime1
+    pause
+    scene fs sophiabathtime2
+    "*Bring*"
+    sophia "Hello!"
+    player "Sophia hey!"
+    scene fs sophiabathtime3
+    sophia "How are you?"
+    scene fs sophiabathtime3b
+    player "I'm doing good, was about to head to sleep but decided to take a bath first."
+    scene fs sophiabathtime4
+    sophia "A bath?"
+    sophia "I thought guys don't take baths."
+    scene fs sophiabathtime3b
+    player "It's rare but yeah we like a good soak every so often."
+    scene fs sophiabathtime3
+    sophia "Hehe okay."
+    scene fs sophiabathtime3b
+    player "You doing alright? Kinda left in a hurry earlier."
+    scene fs sophiabathtime3
+    sophia "Yeah I'm fine now, just needed a little offscreen contemplation."
+    scene fs sophiabathtime3b
+    player "Okay well that's good."
+    player "Not to cut us short but it's getting late and I'm gonna have that bath now."
+    scene fs sophiabathtime4
+    sophia "Hmmm."
+    scene fs sophiabathtime2
+    sophia "Yeah okay, enjoy!"
+    scene fs sophiabathtime3b
+    player "See yah."
+    scene fs sophiabathtime1
+    "*Click*"
+    scene fs blackblank
+    with Dissolve(0.5)
+    "A little while and a few less clothes later.."
+    scene fs sophiabathtime5
+    with Dissolve(1.0)
+    player "Mmmm."
+    player "{i}I gotta take these more often.{/i}"
+    pause
+    "...."
+    scene fs sophiabathtime6
+    pause
+    sophia "...."
+    scene fs sophiabathtime6b
+    player "Ugh. I can tell you're there Sophia."
+    scene fs sophiabathtime7
+    with Dissolve(0.7)
+    sophia "Um hi..."
+    scene fs sophiabathtime7b
+    player "Why are you here Soph?"
+    scene fs sophiabathtime7c
+    sophia "I'm not here to like.."
+    sophia "It's not like last time."
+    scene fs sophiabathtime7b
+    player "I have a hard time believing that when I can see your bare pussy right in front of me."
+    scene fs sophiabathtime7c
+    sophia "I'm not I swear. I've been thinking about things.."
+    sophia "I feel bad. I realized I've been stressing you out for my own...desires."
+    scene fs sophiabathtime7
+    player "...."
+    scene fs sophiabathtime7b
+    player "So why are you naked, and here?"
+    scene fs sophiabathtime7c
+    sophia "I wanted to bond, like we used to when we were little."
+    scene fs sophiabathtime7b
+    player "By taking a Bath with me? A very naked bath?"
+    scene fs sophiabathtime7c
+    sophia "I figured any other attempt, you'd brush me off."
+    sophia "But you can't walk away in here and...and I really don't want to lose you."
+    scene fs sophiabathtime7
+    player "...."
+    scene fs sophiabathtime7b
+    player "Haaa....get in here."
+    scene fs sophiabathtime8
+    with Dissolve(1.0)
+    pause
+    scene fs sophiabathtime8sophia
+    sophia "Thank you."
+    sophia "I appreciate you giving me a chance."
+    scene fs sophiabathtime8mc
+    player "Yeah well, you seemed sincere for once."
+    player "And if anyone found out I'll just say you held me down or something."
+    scene fs sophiabathtime8
+    player "{i}I can lie to her, but I can't lie to myself that everything we've been doing hasn't really turned me on{/i}"
+    scene fs sophiabathtime8sophia
+    sophia "I am, but I don't think anyone would believe you haha."
+    sophia "I don't think three of me could hold you down."
+    scene fs sophiabathtime8
+    player "{i}Admitting how I feel after how I've treated her would really just complicate things..{/i}"
+    scene fs sophiabathtime8mc
+    player "Three of you? Now there's a thought."
+    scene fs sophiabathtime8sophia
+    sophia "Heh I don't know if that's a compliment or-"
+    sophia "...I feel some-"
+    scene fs sophiabathtime9
+    with Dissolve(0.5)
+    pause
+    scene fs sophiabathtime10
+    with Dissolve(0.5)
+    pause
+    scene fs sophiabathtime10b
+    sophia "I-I swear that wasn't me, I didn't mean to-"
+    player "It's fine."
+    scene fs sophiabathtime10c
+    player "T-This time it's all uh, me sorry hehe.."
+    player "Beautiful girl. Naked. On top of me. Bound to happen, it's natural."
+    sophia "O-Okay!"
+    player "We should just try to relax again."
+    sophia "Sure!"
+    scene fs sophiabathtime10d
+    with Dissolve(0.5)
+    pause
+    sophia "{i}Don't do it Sophia. Don't do it. Don't do it.{/i}"
+    pause
+    sophia "{i}Don't you do it!!"
+    pause
+    scene fs sophiabathtime11
+    with Dissolve(1.0)
+    pause
+    player "...."
+    scene fs sophiabathtime11b
+    with Dissolve(0.7)
+    player "Mphm."
+    scene fs sophiabathtime11
+    with Dissolve(0.7)
+    pause
+    scene fs sophiabathtime12
+    with Dissolve(0.7)
+    player "Hah.."
+    sophia "Ahn."
+    scene fs sophiabathtime11
+    with Dissolve(0.7)
+    pause
+    scene fs sophiabathtime13
+    with vpunch
+    pause
+    sophia "Ahn ahn ahn!"
+    player "Agh!"
+    pause
+    scene fs sophiabathtime14
+    with vpunch
+    player "Fuck!"
+    sophia "Oh GOD!"
+    scene fs sophiabathtime15
+    with Dissolve(0.5)
+    pause
+    scene fs sophiabathtime15b
+    sophia "Hah...haha."
+    sophia "I came and then..y-you came."
+    sophia "It's all over me.."
+    scene fs sophiabathtime15c
+    sophia "Wait no, this is bad this is-"
+    sophia "[povname] doesn't want this."
+    player "No Sophia it's okay this time. My fault."
+    sophia "Oh.."
+    pause
+    scene fs blackblank
+    with Dissolve(1.0)
+    player "Soph?"
+    sophia "Yeah?"
+    player "Do you want to go on a date with me? A proper date."
+    player "I think we need to sort our feelings out."
+    sophia "I would...love that."
+    $ sophiaphase3interaction1 = 2
+    $ sophiaquestlog = "No more Sophia content for this version (ch2.5)"
+    jump passtime

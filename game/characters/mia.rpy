@@ -469,10 +469,10 @@ label textmiafornudes:
 label textmiatocomeover:
     hide screen contacts
     hide screen backbuttonROOM
-    player "Hey Mia, what’s up?"
-    mia "Hey [povname]. Not much! Need anything?"
-    player "Yeah I need YOU. Can you come over tonight?"
-    mia "Um yeah I think I can, I’ll be there soon."
+    player "{cps=25}Hey Mia, what’s up?{/cps}"
+    mia "{cps=25}Hey [povname]. Not much! Need anything?{/cps}"
+    player "{cps=25}Yeah I need YOU. Can you come over tonight?{/cps}"
+    mia "{cps=25}Um yeah I think I can, I’ll be there soon.{/cps}"
     scene fs blackblank
     "After waiting for a bit..."
     scene fs livingroomnight
@@ -3836,4 +3836,720 @@ label miaphase2interaction2part4:
     jump gotosleep
 
 # end of chapter 2
+# end of chapter 2 content
 
+label miabeachchapter2end:
+    hide screen mia_beach1
+    hide screen mia_beach2
+    hide screen mia_beach3
+    hide screen sophia_beach
+    hide screen charlotte_beach
+    hide screen ava_beach
+    hide screen emily_beach
+    hide screen olivia_beach
+    hide screen backbuttonBEACH
+
+    scene fs miabeachcute1
+    with Dissolve(0.7)
+    player "Ahhh."
+    pause
+    mia "[povname]!"
+    if swimsuitchoice == "white":
+        scene fs miabeachcute2a
+    elif swimsuitchoice == "purple":
+        scene fs miabeachcute2b
+    else:
+        scene fs miabeachcute2c
+    with Dissolve(0.7)
+    voice "audio/miagameaudio/miaugh.wav"
+    mia "Uggggh."
+    player "Hey baby."
+    mia "Ava made me play SO much volleyball..."
+    player "Haha sorry, you can rest here for a bit."
+    mia "Thanks.."
+
+    mia "I don't even wanna rest though, we're at the beeeeach."
+    player "Haha okay. Let me think about it."
+    #$ miaphase2interaction2 = 6
+    #if miaphase2interaction2 >= 6:
+    #change the above back when chapter 2 is fully done------------------------------
+    if miaphase2interaction2 == 4:
+        "Would you like to end the day with Mia?"
+        menu:
+            "Yes":
+                jump miachapter2endsex
+            "Go back to beach":
+                jump explorebeach
+    else:
+        jump explorebeach
+
+    label miachapter2endsex:
+        player "You wanna eat something?"
+        mia "No..."
+        player "Play something other than volleyball?"
+        mia "No..."
+        player "It's hard to think with your big t-"
+        player "Oh I know what to do."
+
+        if swimsuitchoice == "white":
+            scene fs miabeachcute3a
+        elif swimsuitchoice == "purple":
+            scene fs miabeachcute3b
+        else:
+            scene fs miabeachcute3c
+        mia "Yeah??"
+        player "Hehe oh yeah."
+        player "You wanna sneak off for a little secret sex?"
+
+        if swimsuitchoice == "white":
+            scene fs miabeachcute4a
+        elif swimsuitchoice == "purple":
+            scene fs miabeachcute4b
+        else:
+            scene fs miabeachcute4c
+        voice "audio/miagameaudio/miahehe.wav"
+        mia "Oh...hehe."
+        mia "I never thought about that.."
+        mia "Let's do it!"
+        scene fs blackblank
+        with Dissolve(0.7)
+        stop music fadeout 3
+        "A few minutes later..."
+        play music "audio/showersounds.wav" fadein 5
+        scene fs miabeachsex1
+        with Dissolve(0.5)
+        mia "Mmmm."
+        scene fs miabeachsex2
+        with Dissolve(0.5)
+        player "Hey there beautiful."
+        mia "[povname]! Hehe glad you made it."
+        scene fs miabeachsex3
+        with Dissolve(0.5)
+        mia "Mmmm!"
+        player "Mmph."
+        scene fs miabeachsex4
+        with Dissolve(0.5)
+        player "I ever tell you how much I love your tits?"
+        show rs charlotteshowersright
+        with Dissolve(0.7)
+        charlotte "Haaa..."
+        mia "You may have mentioned it haha."
+        show fs miabeachsex5
+        show ls emilyshowersleft
+        with Dissolve(0.7)
+        emily "Hmm hm hmmm."
+        mia "Oh? Where are those hands going?"
+        show fs miabeachsex6
+        voice "audio/miagameaudio/miaah2.wav"
+        mia "Ah! Oh my gosh!"
+        show rs charlotteshowerslook
+        charlotte "Huh? Mia?"
+        player "My hands are occupied so you're gonna have to put it in."
+        show fs miabeachsex7
+        mia "So hard..."
+        show ls emilyshowerslook
+        emily "Oh? Someone else here?"
+        charlotte "Emily? Is that you?"
+        emily "Yeah I thought I heard Mia."
+        show fs miabeachsex8
+        mia "O-Oh! Yes sorry I was-"
+        show fs miabeachsex9
+        with vpunch
+        voice "audio/miagameaudio/miaah.wav"
+        mia "AHH!"
+        player "{i}God I love this girl's pussy!{/i}"
+        charlotte "Mia! Are you okay?"
+        show miabeachsex movie1
+        play sound "audio/miagameaudio/miamoaning.wav" loop
+        mia "Ahn Ahn Ahn!"
+        mia "I-I'm Finnnne!!"
+        emily "It sounds like she's struggling Charlotte!"
+        charlotte "Mia do you need help!??"
+        mia "YESYESYESYES!!!"
+        emily "Charlotte go get Ava!"
+        scene fs blackblank
+        with Dissolve(0.5)
+        mia "N-No wait!"
+        show fs miabeachsex10
+        ava "Mia!? We're coming in to help!"
+        play sound "audio/miagameaudio/miamoanno.wav"
+        mia "N-No PLEEEASE!"
+        show fs miabeachsex11
+        with vpunch
+        ava "Who's fucking with our-"
+        scene fs miabeachsex14
+        with Dissolve(0.7)
+        ava "....friend."
+        scene fs miabeachsex12
+        mia "Nooo don't look!"
+        player "Uh babe...I'm gonna-"
+        scene fs miabeachsex13
+        with vpunch
+        play sound "audio/miagameaudio/miaorgasm2.wav"
+        mia "C-Cumming!"
+        player "Fuck!"
+        scene fs miabeachsex14
+        with Dissolve(0.5)
+        "...."
+        scene fs carscene8
+        with Dissolve(1.2)
+        stop music fadeout 3
+        "It was an awkward drive back for mostly everyone"
+        "You didn't really mind though. You fucked a pretty girl and came inside her while all her friends watched."
+        "On paper that's pretty good!"
+        pause
+        pause
+        pause
+        scene fs carscene9
+        with vpunch
+        sophia "Gah!"
+        $ endchapter2_trigger = "2 mia neutral"
+        $ miaquestlog = "I've been patient. It's time Mia..."
+        jump startofchapter3
+
+# start chapter 3
+
+# Chapter 3 and related character scenes.
+
+label miaphase3interaction1part1:
+    hide screen uppergui
+    scene fs playerroomMorn
+    with Dissolve(0.5)
+    $ playerSprite = 4
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    player "...."
+    player "It's time Mia."
+    $ miaphase2interaction2 = 5
+    $ miaphase3interaction1 = 1
+    $ miaquestlog = "Finish the fight(Find Mia in her room)"
+    jump playerlivingroom
+
+label miaphase3interaction1part2:
+    scene fs blackblank
+    with Dissolve(0.7)
+    katie "And then heeere's when we went bowling."
+    sophia "Oh my God look at Josy haha!"
+    emily "That's super cute."
+    mia "Hehe."
+    emily "Mia! Show us those 1st date pics you said you had!"
+    katie "Oh yeah I've wanted to see those forever."
+    mia "Haha okay, I haven't seen them myself since we took them."
+    scene fs miaanal1
+    with Dissolve(0.7)
+    mia "Alrighty soooo.."
+    scene fs miaanal2
+    show selfieshare 1stdateselfie1:
+        xalign 0.75 ypos 50
+    mia "Here's us at the start."
+    mia "He asked me out to a flower festival."
+    scene fs miaanal3b
+    show selfieshare 1stdateselfie1:
+        xalign 0.75 ypos 50
+    sophia "Aww!"
+    katie "Very cute."
+    emily "That's a great picture."
+    scene fs miaanal1
+    show selfieshare 1stdateselfie1:
+        xalign 0.75 ypos 50
+    mia "And then we walked around."
+    scene fs miaanal2
+    show selfieshare 1stdateselfie2:
+        xalign 0.75 ypos 50
+    pause
+    scene fs miaanal3b
+    show selfieshare 1stdateselfie2:
+        xalign 0.75 ypos 50
+    emily "Oh my gosh."
+    sophia "Ugh. You look so adorable."
+    katie "Ugh this is way too sweet for me."
+    scene fs miaanal1
+    show selfieshare 1stdateselfie2:
+        xalign 0.75 ypos 50
+    mia "I don't remember what we did after."
+    scene fs miaanal2
+    show selfieshare 1stdateselfie3:
+        xalign 0.75 ypos 50
+    pause
+    scene fs miaanal3
+    show selfieshare 1stdateselfie3:
+        xalign 0.75 ypos 50
+    pause
+    katie "I have an idea or two."
+    mia "T-That's yogurt!"
+    katie "On the first date sis? Wow."
+    emily "...."
+    mia "It's YOGURT!"
+    mia "Moving on!"
+    scene fs miaanal4
+    show selfieshare 1stdateselfie4:
+        xalign 0.75 ypos 50
+    pause
+    "Everyone" "Awww!"
+    mia "Oh yeah! We met Mr. Frog."
+    sophia "I love Mr. Frog."
+    katie "I'd die for Mr. Frog."
+    mia "And then.."
+    scene fs miaanal2
+    show selfieshare 1stdateselfie5:
+        xalign 0.75 ypos 50
+
+    pause
+    scene fs miaanal3b
+    show selfieshare 1stdateselfie5:
+        xalign 0.75 ypos 50
+    sophia "Wooooow!"
+    emily "This is a beautiful shot Mia."
+    josy "This shit belongs in a movie, holy."
+    mia "Aww thanks girls."
+    scene fs miaanal2
+    show selfieshare 1stdateselfie6:
+        xalign 0.75 ypos 50
+    pause
+    scene fs miaanal3
+    show selfieshare 1stdateselfie6:
+        xalign 0.75 ypos 50
+    "!!!!"
+    scene fs miaanal4b
+    show selfieshare 1stdateselfie6:
+        xalign 0.75 ypos 50
+
+    katie "MIA!"
+    emily "O-Oh my."
+    sophia "Holy!"
+    mia "N-No no no!"
+    scene fs miaanal3c
+    show selfieshare 1stdateselfie7:
+        xalign 0.75 ypos 50
+    pause
+    scene fs miaanal4b
+    show selfieshare 1stdateselfie7:
+        xalign 0.75 ypos 50
+    katie "MIA ON A FIRST DATE???!!!"
+    mia "...."
+    scene fs miaanal6
+    pause
+    scene fs miaanal7
+    with Dissolve(0.7)
+    pause
+    mia "It wasn't yogurt."
+    "...."
+    player "*knock knock*"
+    player "Oh, hey everyone!"
+    scene fs miaanal5
+    with vpunch
+    "Everyone" "[povname]!"
+    scene fs gfroom
+    $ playerSprite = 0
+    show fbplayer current:
+        xalign 0.3 ypos 120
+    show fbsophia current:
+        xalign 0.4 ypos 120
+    show fbkatie current:
+        xalign 0.5 ypos 120
+    show fbemily current:
+        xalign 0.6 ypos 120
+    show fbmia current:
+        xalign 0.7 ypos 120
+    with Dissolve(0.7)
+    pause
+    $ playerSprite = 1
+    player "Hey now, no need for you all to get up cause'a me."
+    emily "No it's okay, we were just about to leave anyways."
+    sophia "We were?"
+    katie "Yah, were we?"
+    emily "Yes of COURSE we were. Plus [povname] clearly came to visit Mia right?"
+    player "Uh yeah."
+    emily "So let's not bother them and let them get to it!"
+    sophia "Ohhhh.."
+    katie "Alright I was gonna meet up with Josy after this anyways, see yah everyone."
+    hide fbkatie current
+    emily "C'mon Sophia. Bye Mia!"
+    mia "Bye!"
+    hide fbemily current
+    sophia "Ugh."
+    hide fbsophia current
+    player "Everyone left in a rush huh?"
+    mia "*Ahem* Y-Yes. Seems they were busy."
+    mia "You wanted to see me?"
+    player "Ah yes. Very important."
+    mia "Important?"
+    player "Mia."
+    player "Whisper whisper Anal whisper whisper."
+    mia "W-What??!"
+    player "Whisper whisper right now whisper."
+    mia "R-Right now?"
+    player "Please. We've already talked about it."
+    mia "Why were you SAYING whisper?"
+    player "Mia I love you with all my cock. I yearn for your body!"
+    player "Let me make you feel good, in a new way."
+    mia "Ohhh well...I mean...maybe we can try?"
+    scene fs miaanal8
+    with vpunch
+    mia "Wha-How did you take off your clothes so fast?!"
+    scene fs miaanal9
+    player "Practice."
+    scene fs miaanal8
+    mia "And we don't even have lube! I'm not doing it without lu-"
+    scene fs miaanal10
+    "*Squirt*"
+    scene fs miaanal8
+    mia "Where di-Where did you get that?!"
+    scene fs miaanal9
+    player "We can go as slow as you need."
+    scene fs miaanal8
+    mia "...."
+    scene fs miaanal11
+    with Dissolve(0.5)
+    mia "I swear the things you do to me..."
+    scene fs miaanal14
+    with Dissolve(0.7)
+    player "There you go, now lift yourself up slowly."
+    scene fs miaanal13
+    with Dissolve(0.5)
+    mia "Ehhh.."
+    player "You're doing great babe keep going."
+    scene fs miaanal12
+    with Dissolve(0.5)
+    player "Perfect, now slowly put it in, I'll hold you."
+    mia "[povname] I-I don't think I'm ready for this I didn't think you'd actua-"
+    scene fs miaanal15
+    with vpunch
+    mia "OHHHHH MAH GAWD."
+    player "Fuck Fuck baby holy shit."
+    mia "I slipped!"
+    player "Yeah no kidding!"
+    player "You're so tight baby oh my god."
+    scene fs miaanal16
+    with Dissolve(0.5)
+    mia "Ohhhh!"
+    scene fs miaanal17
+    with Dissolve(0.5)
+    player "Here baby let me help you."
+    scene fs miaanal17b
+    pause
+    scene fs miaanal18
+    mia "Oh that's...that's a little better."
+    player "Let's lie down slowly."
+    scene fs miaanal19
+    with Dissolve(0.5)
+    player "Mia your ass feels incredile."
+    player "I'm so fucking hard."
+    mia "I-I can tell!"
+    show miatakingituptheass1
+    pause
+    mia "Oh..."
+    mia "OH."
+    player "Yeah baby that's it."
+    mia "Ahn..."
+    player "You're feeling good aren't you?"
+    mia "NnNNyEaHHhhHHh..."
+    player "C'mon baby."
+    show miatakingituptheass2
+    player "C'MON BABY!"
+    mia "AHHH!"
+    mia "[povname]!"
+    mia "[povname] I'm gonna CUM!"
+    scene fs miaanal21
+    pause
+    scene fs miaanal21b
+    with vpunch
+    mia "AHHHH!!!"
+    player "FUCK!"
+    scene fs blackblank
+    with Dissolve(0.3)
+    "A few moments earlier..."
+    scene fs miaanal22
+    with Dissolve(0.5)
+    pause
+    mia "AHHH!"
+    scene fs miaanal23
+    ava "Heeey girl I'm he-"
+    mia "[povname] I'm gonna CUM!"
+    scene fs miaanal24
+    with vpunch
+    mia "AHHHH!!!"
+    player "FUCK!"
+    pause
+    ava "{i}Goddamn Mia, all that in your ass?{/i}"
+    mia "Hah...hah."
+    ava "{i}I should...come back later...{/i}"
+    mia "Oh [povname]...Ahn.."
+    player "You feel so good baby."
+    mia "Feel...so full.."
+    ava "{i}It'd be the polite thing to do.{/i}"
+    scene fs miaanal22
+    pause
+    mia "Mmmm..."
+    scene fs miaanal25
+    play sound "audio/camerasnap.mp3"
+    $ renpy.notify("Got Mia's 1st date pics!")
+    $ phone_pictures.append("mia selfie1a")
+    $ phone_pictures.append("mia selfie2")
+    $ phone_pictures.append("mia selfie 3 flower")
+    $ phone_pictures.append("mia selfies4")
+    $ phone_pictures.append("mia selfies5")
+    $ phone_pictures.append("mia selfies6")
+    $ phone_pictures.append("mia selfies7")
+    pause
+    $ miaphase3interaction1 = 2
+    $ miaquestlog = "No more solo content for Mia this version(Ch2.5)"
+    jump passtime
+
+# chapter 3 end i guess?
+
+label sleepwithmia:
+    scene fs charlotteroom
+    with Dissolve(1.0)
+    show fbcharlotte pajama:
+        xalign 0.4 ypos 120
+    show fbava pajama:
+        xalign 0.3 ypos 120
+    with Dissolve(0.5)
+    pause
+    show fbmia pajama:
+        xalign 0.6 ypos 120
+    show fbsophia pajama:
+        xalign 0.7 ypos 120
+    with Dissolve(0.5)
+    pause
+    show fbolivia pajama:
+        xalign 0.9 ypos 120
+    show fbemily pajama:
+        xalign 1.0 ypos 120
+    show fbplayer pajama:
+        xalign 0.1 ypos 120
+    with Dissolve(0.5)
+    pause
+    show fbemily pajamatalk:
+        xalign 1.0 ypos 120
+    emily "Okay! *Yawn* Where's everyone sleeping?"
+    show fbemily pajama:
+        xalign 1.0 ypos 120
+    show fbplayer pajamatalk:
+        xalign 0.1 ypos 120
+    player "Well I think Charlotte should get the bed, how many can fit on it?"
+    show fbplayer pajama:
+        xalign 0.1 ypos 120
+    show fbcharlotte pajamatalk:
+        xalign 0.4 ypos 120
+    charlotte "Thank you [povname]. It can fit four."
+    show fbcharlotte pajama:
+        xalign 0.4 ypos 120
+    show fbmia pajamatalk:
+        xalign 0.6 ypos 120
+    mia "I don't care as long as I can sleep next to [povname]."
+    show fbmia pajama:
+        xalign 0.6 ypos 120
+    show fbplayer pajamatalk:
+        xalign 0.1 ypos 120
+    player "Babe I don't think any of our sleeping bags can fit both of us."
+    show fbplayer pajama:
+        xalign 0.1 ypos 120
+    show fbava pajamatalk:
+        xalign 0.3 ypos 120
+    ava "Fine, you two also get the bed. Who's last?"
+    show fbava pajama:
+        xalign 0.3 ypos 120
+    show fbolivia pajamatalk:
+        xalign 0.9 ypos 120
+    olivia "Emily should."
+    show fbolivia pajama:
+        xalign 0.9 ypos 120
+    show fbemily pajamatalk:
+        xalign 1.0 ypos 120
+    emily "Me? No it's okay Sophia how abou-"
+    show fbemily pajama:
+        xalign 1.0 ypos 120
+    show fbsophia pajamatalk:
+        xalign 0.7 ypos 120
+    sophia "It's fine Emily, I'm so tired it really doesn't matter to me right now."
+    show fbsophia pajama:
+        xalign 0.7 ypos 120
+    show fbemily pajamatalk:
+        xalign 1.0 ypos 120
+    emily "Okay then! Thanks guys."
+    show fbemily pajama:
+        xalign 1.0 ypos 120
+
+    scene fs sleepoverbedpovmia
+    with Dissolve(1.0)
+    pause
+    "Most of the girls fell asleep even with the strong moonlight bursting through the windows"
+    "But surrounded by all these beautiful girls kept your mind wandering, and your sleep restless.."
+    scene fs groupbedsex3
+    with Dissolve(0.7)
+    pause
+    scene fs groupbedsex3b
+    with Dissolve(0.5)
+    pause
+    emily "*Snore*"
+    scene fs groupbedmiasex1
+    pause
+    scene fs groupbedmiasex1b
+    pause
+    scene fs groupbedmiasex1c
+    pause
+    scene fs groupbedmiasex2
+    mia "Hmm?"
+    scene fs groupbedmiasex2b
+    mia "..."
+    player "..."
+    scene fs groupbedmiasex2c
+    mia "Hehehe."
+    scene fs groupbedmiasex3
+    pause
+    scene fs groupbedmiasex4
+    mia "!!!"
+    scene fs groupbedmiasex4b
+    player "Try not to make any noise."
+    scene fs groupbedmiasex5
+    pause
+    scene fs groupbedmiasex6
+    mia "Ah!"
+    mia "I don't know...if I can do that."
+    scene fs groupbedmiasex7
+    mia "Mmm!"
+    player "Auhn.."
+    scene fs groupbedmiasex8
+    with Dissolve(0.7)
+    pause
+    scene fs groupbedmiasex9
+    with Dissolve(0.7)
+    pause
+    scene fs groupbedmiasex10
+    player "Don't cover your mouth."
+    mia "But what if they hear me? What if they wake up?"
+    player "Good."
+    scene fs groupbedmiasex11
+    pause
+    scene fs groupbedmiasex11b
+    mia "Ehnnn!"
+    scene fs groupbedmiasex122
+    with Dissolve(0.5)
+    mia "Hah..."
+    scene fs groupbedmiasex12b
+    with vpunch
+    mia "Ahn!"
+    scene fs groupbedmiasex122
+    with Dissolve(0.3)
+    mia "Oh.."
+    scene fs groupbedmiasex12b
+    with vpunch
+    mia "AHN!"
+    scene fs groupbedmiasex13
+    mia "Hah..hah.."
+    player "You like that baby?"
+    scene fs groupbedmiasex13b
+    mia "Yes!"
+    player "You like it when I fuck you next to your friends?"
+    scene fs groupbedmiasex13b2
+    mia "I love it hehehe!"
+    scene fs groupbedmiasex122
+    with Dissolve(0.5)
+    player "Take this fat fucking cock!"
+    scene fs groupbedmiasex12b
+    with vpunch
+    mia "[povname]!"
+    scene fs groupbedmiasex14
+    with Dissolve(0.7)
+    mia "[povname] I'm gonna cum!"
+    player "Cum with me baby, let me fill you up!"
+    mia "Please! Please!"
+    pause
+    scene fs groupbedmiasex122
+    with Dissolve(0.5)
+    player "What do you want?!"
+    mia "I want you to cum inside me while everyone listens!"
+    scene fs groupbedmiasex12b
+    with vpunch
+    player "AHHHGH!"
+    mia "YES!!!"
+    pause
+    scene fs groupbedmiasex12c
+    with Dissolve(0.7)
+    pause
+    scene fs blackblank
+    with Dissolve (1.0)
+    "The night passed by quickly for you and Mia, not so much for everyone else"
+    "In the morning everyone was cordial but you noticed a lack of sleep in the girls eyes"
+    "You said your goodbyes and headed back home"
+    jump passtime
+
+    scene fs groupbedsex1
+    pause
+    scene fs groupbedsex1b
+    pause
+    scene fs groupbedsex2
+    pause
+    scene fs groupbedsex2b
+    pause
+    scene fs groupbedsex3
+    pause
+    scene fs groupbedsex3b
+    pause
+    scene fs groupbedsex4
+    pause
+    scene fs groupbedsex4b
+    pause
+    scene fs groupbedsex5
+    pause
+    scene fs groupbedsex5b
+    pause
+    scene fs groupbedsex6
+    pause
+    scene fs groupbedsex6b
+    pause
+
+    scene fs groupbedmiasex1
+    pause
+    scene fs groupbedmiasex1b
+    pause
+    scene fs groupbedmiasex1c
+    pause
+    scene fs groupbedmiasex2
+    pause
+    scene fs groupbedmiasex2b
+    pause
+    scene fs groupbedmiasex2c
+    pause
+    scene fs groupbedmiasex3
+    pause
+    scene fs groupbedmiasex4
+    pause
+    scene fs groupbedmiasex4b
+    pause
+    scene fs groupbedmiasex5
+    pause
+    scene fs groupbedmiasex6
+    pause
+    scene fs groupbedmiasex7
+    pause
+    scene fs groupbedmiasex8
+    pause
+    scene fs groupbedmiasex9
+    pause
+    scene fs groupbedmiasex10
+    pause
+    scene fs groupbedmiasex11
+    pause
+    scene fs groupbedmiasex11b
+    pause
+    scene fs groupbedmiasex12
+    pause
+    scene fs groupbedmiasex122
+    pause
+    scene fs groupbedmiasex12b
+    pause
+    scene fs groupbedmiasex12c
+    pause
+    scene fs groupbedmiasex13
+    pause
+    scene fs groupbedmiasex13b
+    pause
+    scene fs groupbedmiasex13b2
+    pause
+    scene fs groupbedmiasex14
+    pause
+
+    jump passtime

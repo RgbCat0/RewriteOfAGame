@@ -136,4 +136,4 @@ image fbpenny current = ConditionSwitch("pennySprite == 0", "pennyblink", "penny
 
 define narrarator = Character("", image = "", what_outlines=[(2,"#000000")])
 
-jump startgame
+# New games enter through label start in script.rpy.

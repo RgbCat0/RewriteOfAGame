@@ -642,7 +642,7 @@ label gamingpartnerolivia:
     $ playerSprite = 0
     player "Let's text Mia, see if she can clear anything up for me."
     $ playerSprite = 2
-    player "{cps=25}Hey Mia, you there?{/i}"
+    player "{cps=25}Hey Mia, you there?{/cps}"
     mia "{cps=25}Hello! Yes!{/cps}"
     player "{cps=25}I need some advice, I think I upset Olivia.{/cps}"
     mia "{cps=25}Oh no what happened? :({/cps}"
@@ -2914,4 +2914,646 @@ label losefrogfight:
     jump passtime
 
 # end chapter 2
+# end chapter 2 content
 
+label oliviabeachchapter2end:
+    hide screen mia_beach1
+    hide screen mia_beach2
+    hide screen mia_beach3
+    hide screen sophia_beach
+    hide screen charlotte_beach
+    hide screen ava_beach
+    hide screen emily_beach
+    hide screen olivia_beach
+    hide screen backbuttonBEACH
+    scene fs beach
+    $ playerSprite = 18
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbolivia current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+    $ playerSprite = 19
+    player "Olivia hey!"
+    $ playerSprite = 18
+    $ oliviaSprite = 17
+    olivia "[povname]. Hey."
+    $ oliviaSprite = 15
+    $ playerSprite = 19
+    player "You doing alright? Having fun."
+    $ playerSprite = 18
+    $ oliviaSprite = 17
+    olivia "Yeah sure, Ava's worn me out so I'm done with my physical activity for the day."
+    $ oliviaSprite = 15
+    $ playerSprite = 19
+    player "Haha that's fair."
+    $ playerSprite = 18
+    #$ oliviaphase2interaction3 = 1
+    if oliviaphase2interaction3 >= 1:
+        "Would you like to end the day with Olivia?"
+        menu:
+            "Romance":
+                jump oliviachapter2romance
+            "Naughty":
+                jump oliviachapter2naughty
+            "Go back to beach":
+                jump explorebeach
+    else:
+        jump explorebeach
+
+    label oliviachapter2romance:
+        $ playerSprite = 19
+        player "You wanna walk with me then?"
+        player "Very low physical levels."
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "Hehe. Yeah sure."
+        $ oliviaSprite = 15
+        scene fs beachpictureempty
+        with Dissolve(0.7)
+        pause
+
+        show fbplayer current:
+            xalign 0.4 ypos 120
+        show fbolivia current:
+            xalign 0.6 ypos 120
+        with Dissolve(0.7)
+        $ playerSprite = 19
+        player "You look nice. The bikini looks nice."
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "Um thanks.."
+        olivia "I don't often wear bikinis."
+        $ playerSprite = 19
+        $ oliviaSprite = 17
+        player "Cause it shows so much skin."
+        olivia "It shows so much skin."
+        $ oliviaSprite = 15
+        player "...I like it though."
+        $ oliviaSprite = 17
+        $ playerSprite = 18
+        olivia "Cause it shows so much skin."
+        $ oliviaSprite = 15
+        $ playerSprite = 19
+        player "It shows so much skin."
+        $ playerSprite = 18
+        olivia "..."
+        $ playerSprite = 19
+        player "Hahaha!"
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "Hahaha!"
+        olivia "I really...this is nice [povname]."
+        $ oliviaSprite = 15
+        show fbplayer current:
+            xalign 0.5 ypos 120
+        with move
+        $ playerSprite = 19
+        player "Hey so.."
+        player "I feel like we made the right decision being together to...figure things out."
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "I know I..."
+        olivia "Things are moving fast and...and I'm feeling things you know?"
+        $ oliviaSprite = 15
+        $ playerSprite = 19
+        player "Romantic feelings or naughty feelings hehe?"
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "Haha both I guess.."
+        olivia "Earlier I had an easy time agreeing with this arrangement cause I thought if it doesn't work out.."
+        olivia "We end it, it's done. I wouldn't have a problem moving on."
+        olivia "But I didn't really think about what would happen if things went the opposite direction.."
+        olivia "It's awkward and scary..."
+        show fbolivia current:
+            xalign 0.55 ypos 120
+        with move
+        olivia "Is this l-love? Is it even right?"
+        olivia "You know?"
+        $ playerSprite = 19
+        player "Olivia..."
+        player "I'm sorry I wasn't paying attention at all your bikini is so fucking distracting."
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        show fbolivia current at surpriseshake:
+            xalign 0.6 ypos 120
+        olivia "OHMYGOD [povname]!"
+        $ oliviaSprite = 15
+        $ playerSprite = 19
+        player "Hahaha I'm kidding I'm kidding."
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "Geez!"
+        $ oliviaSprite = 15
+        $ playerSprite = 19
+        player "Here, let's go by those rocks over there and I'll show you how I feel about you."
+        $ playerSprite = 18
+        $ oliviaSprite = 17
+        olivia "...Hehe okay."
+        $ oliviaSprite = 15
+        scene fs blackblank
+        with Dissolve(0.7)
+        "A little while later.."
+
+        scene fs beach
+        with Dissolve(0.7)
+
+        $ miaSprite = 14
+        $ charlotteSprite = 14
+        $ avaSprite = 22
+        $ sophiaSprite = 12
+        $ emilySprite = 6
+        show fbmia current:
+            xalign 0.25 xzoom -1.0 ypos 120
+        show fbcharlotte current:
+            xalign 0.1 xzoom -1.0 ypos 120
+        show fbava current behind fbmia:
+            xalign 0.4 xzoom -1.0 ypos 120
+        show fbsophia current:
+            xalign 0.62 ypos 120
+        show fbemily current:
+            xalign 0.52 ypos 120
+        with Dissolve(0.7)
+        $ avaSprite = 23
+        ava "Phew! That was a lot of fun."
+        $ avaSprite = 22
+        $ emilySprite = 8
+        emily "Haha yeah!"
+        $ emilySprite = 6
+        $ sophiaSprite = 11
+        sophia "Oh my gosh can we PLEASE do something relaxing now?"
+        $ sophiaSprite = 12
+        $ charlotteSprite = 15
+        charlotte "I agree, I can't do anymore physical activity."
+        $ charlotteSprite = 14
+        $ avaSprite = 23
+        ava "Okay okay geez sorry everyone for trying to have some fun!"
+        $ avaSprite = 22
+        $ emilySprite = 8
+        emily "Alright everybody let's calm down."
+        $ emilySprite = 6
+        $ miaSprite = 17
+        mia "I'm hungry, maybe we can order something?"
+        $ miaSprite = 14
+        $ emilySprite = 8
+        emily "Good Idea, where's Olivia?"
+        $ emilySprite = 6
+        $ sophiaSprite = 11
+        sophia "Hmm, I havn't seen her or [povname] for a while..."
+        $ sophiaSprite = 12
+        $ emilySprite = 8
+        show oliviabeachsex movie1
+        olivia "Hah hah hah!"
+        player "Fuck baby your pussy is so good!"
+        show oliviabeachsex movie2
+        olivia "Ahn!"
+        olivia "C-Call me baby again!"
+        pause
+        show oliviabeachsex movie3
+        player "You like it when I'm inside you baby?"
+        olivia "Yes!!"
+        player "Make me believe you!"
+        olivia "I-I love it! I love your cock!"
+        olivia "C-Cum...!"
+        player "What?"
+        olivia "CUM INSIDE ME [povname] PLEASE!!!"
+        show oliviabeachsex movie4
+        olivia "AHHHN!!!"
+        player "UGGH!!"
+        pause
+        show oliviabeachsex movie5
+        with Dissolve(0.7)
+        olivia "Hah...hah.."
+        player "You okay baby?"
+        olivia "Yes...that was really good."
+        pause
+        scene fs blackblank
+        with Dissolve(1.0)
+        player "You okay to head back?"
+        olivia "Yeah le-wait.."
+        olivia "Where's my top?"
+
+        scene fs beach
+        with Dissolve(0.7)
+
+        $ miaSprite = 14
+        $ charlotteSprite = 14
+        $ avaSprite = 22
+        $ sophiaSprite = 12
+        $ emilySprite = 6
+        show fbmia current:
+            xalign 0.25 xzoom -1.0 ypos 120
+        show fbcharlotte current:
+            xalign 0.1 xzoom -1.0 ypos 120
+        show fbava current behind fbmia:
+            xalign 0.4 xzoom -1.0 ypos 120
+        show fbsophia current:
+            xalign 0.62 ypos 120
+        show fbemily current:
+            xalign 0.52 ypos 120
+        with Dissolve(0.7)
+        pause
+        $ emilySprite = 6
+        $ oliviaSprite = 16
+        show fbplayer current:
+            xalign 0.95 xzoom -1.0 ypos 120
+        show fbolivia current:
+            xalign 0.85 ypos 120
+        with Dissolve(0.5)
+        $ playerSprite = 19
+        player "Hey sorry guys!"
+        $ playerSprite = 18
+        show fbsophia current:
+            xalign 0.68 xzoom -1.0 ypos 120
+        show fbemily current:
+            xalign 0.52 xzoom -1.0 ypos 120
+        $ charlotteSprite = 15
+        charlotte "Where were you?"
+        $ charlotteSprite = 14
+        $ emilySprite = 8
+        emily "Oh my gosh Olivia!"
+        $ emilySprite = 6
+        $ sophiaSprite = 11
+        sophia "Your boobs!"
+        $ sophiaSprite = 12
+        $ oliviaSprite = 19
+        olivia "It's fine."
+        $ oliviaSprite = 16
+        $ playerSprite = 19
+        player "Olivia lost her top. I was uh..helping her find it."
+        $ playerSprite = 18
+        $ miaSprite = 17
+        mia "Ohhhh!"
+        $ miaSprite = 14
+        $ oliviaSprite = 19
+        olivia "Yeah. [povname] really came in handy(me)."
+        $ oliviaSprite = 16
+        $ sophiaSprite = 11
+        sophia "But you never found it?"
+        $ sophiaSprite = 12
+        $ oliviaSprite = 19
+        olivia "....Nope."
+        $ oliviaSprite = 16
+        scene fs blackblank
+        with Dissolve(1.0)
+        mia "Aww well that's nice of you to help her out like that!"
+        player "Yeah of course, Olivia you can count on me anytime."
+        olivia "Hehe, of course thanks."
+
+        $ endchapter2_trigger = "2 olivia romantic"
+
+        jump startofchapter3
+
+    label oliviachapter2naughty:
+            $ playerSprite = 19
+            player "Let's spend some time together then."
+            $ playerSprite = 18
+            $ oliviaSprite = 17
+            olivia "Oh yeah uh sure, I'd like that."
+            $ oliviaSprite = 15
+            scene fs beachpictureempty
+            with Dissolve(0.7)
+            pause
+
+            show fbplayer current:
+                xalign 0.4 ypos 120
+            show fbolivia current:
+                xalign 0.6 ypos 120
+            with Dissolve(0.7)
+            $ playerSprite = 19
+            player "You look nice. The bikini looks nice."
+            $ playerSprite = 18
+            $ oliviaSprite = 17
+            olivia "Um thanks.."
+            olivia "I don't often wear bikinis."
+            $ oliviaSprite = 15
+            $ playerSprite = 19
+            player "Good, cause I wouldn't be able to take my hands off of you."
+            $ playerSprite = 18
+            $ oliviaSprite = 17
+            olivia "Oh...um yeah I...nice."
+            $ oliviaSprite = 15
+            $ playerSprite = 19
+            player "Haha cute response."
+            $ playerSprite = 18
+            $ oliviaSprite = 17
+            olivia "T-Thanks."
+            $ oliviaSprite = 15
+            $ playerSprite = 19
+            player "I'm gonna be honest, I haven't stopped thinking about the sex we had."
+            $ playerSprite = 18
+            olivia "..."
+            $ playerSprite = 19
+            show fbplayer current:
+                xalign 0.5
+            with move
+            player "I know you're the same."
+            $ playerSprite = 18
+            olivia "..."
+            $ playerSprite = 19
+            player "Tell you what, there's some rocks at the end of the beach over there."
+            player "Let's use them for some privacy."
+            $ playerSprite = 18
+            olivia "..."
+            $ oliviaSprite = 17
+            olivia "I-"
+
+            show oliviabeachsex movie1
+            olivia "Ahn Ahn Ahn!!"
+            player "Fuck baby your pussy is so good!"
+            olivia "MMMMMMM!"
+            player "You like that huh? You like my big cock inside you?"
+            pause
+            show oliviabeachsex movie2
+            olivia "Hah hah hah!"
+            olivia "Y-Yes!"
+            player "Your friends are probably wondering where we are!"
+            olivia "I-I dunno!"
+            pause
+            show oliviabeachsex movie3
+            player "Don't act innocent!"
+            olivia "AHHH!!!"
+            player "You're FUCKING one of their boyfriends aren't you!?"
+            olivia "Oh G-God!"
+            player "You're squeezing me so hard baby, that really turns you on huh?"
+            player "You like the fact that we're cheating!"
+            olivia "I-I wait [povname]!"
+            player "You're gonna fucking cum aren't you!?"
+            player "Tell me you're a slut and I'll fill your pussy to the brim!"
+            olivia "I-I'm a slut!"
+            olivia "I'm A HUGE SLUT AND I WANT YOU CUM INSIDE ME [povname]!!!"
+            olivia "I-I like that Mia's boyfriend is fucking me!"
+            olivia "It's so wrong but it feels so go-"
+            show oliviabeachsex movie4
+            olivia "AHHHN!!!"
+            player "UGGH!!"
+            pause
+            show oliviabeachsex movie5
+            with Dissolve(0.7)
+            olivia "Hah...hah.."
+            player "Good job."
+            olivia "God I'm...I'm such a-."
+            player "It's fine Olivia, I'm at fault too."
+            pause
+            scene fs blackblank
+            with Dissolve(1.0)
+            player "You okay to head back?"
+            olivia "Yeah le-wait.."
+            olivia "Where's my top?"
+
+            scene fs beach
+            with Dissolve(0.7)
+
+            $ miaSprite = 14
+            $ charlotteSprite = 14
+            $ avaSprite = 22
+            $ sophiaSprite = 12
+            $ emilySprite = 6
+            show fbmia current:
+                xalign 0.25 xzoom -1.0 ypos 120
+            show fbcharlotte current:
+                xalign 0.1 xzoom -1.0 ypos 120
+            show fbava current behind fbmia:
+                xalign 0.4 xzoom -1.0 ypos 120
+            show fbsophia current:
+                xalign 0.62 ypos 120
+            show fbemily current:
+                xalign 0.52 ypos 120
+            with Dissolve(0.7)
+            $ avaSprite = 23
+            ava "Phew! That was a lot of fun."
+            $ avaSprite = 22
+            $ emilySprite = 8
+            emily "Haha yeah!"
+            $ emilySprite = 6
+            $ sophiaSprite = 11
+            sophia "Oh my gosh can we PLEASE do something relaxing now?"
+            $ sophiaSprite = 12
+            $ charlotteSprite = 15
+            charlotte "I agree, I can't do anymore physical activity."
+            $ charlotteSprite = 14
+            $ avaSprite = 23
+            ava "Okay okay geez sorry everyone for trying to have some fun!"
+            $ avaSprite = 22
+            $ emilySprite = 8
+            emily "Alright everybody let's calm down."
+            $ emilySprite = 6
+            $ miaSprite = 17
+            mia "I'm hungry, maybe we can order something?"
+            $ miaSprite = 14
+            $ emilySprite = 8
+            emily "Good Idea, where's Olivia?"
+            $ emilySprite = 6
+            $ sophiaSprite = 11
+            sophia "Hmm, I havn't seen her or [povname] for a while..."
+            $ sophiaSprite = 12
+            $ emilySprite = 8
+            emily "I think I saw [povname] go for a walk?"
+            $ emilySprite = 6
+            $ oliviaSprite = 16
+            show fbplayer current:
+                xalign 0.95 xzoom -1.0 ypos 120
+            show fbolivia current:
+                xalign 0.85 ypos 120
+            with Dissolve(0.5)
+            $ playerSprite = 19
+            player "Hey sorry guys!"
+            $ playerSprite = 18
+            show fbsophia current:
+                xalign 0.68 xzoom -1.0 ypos 120
+            show fbemily current:
+                xalign 0.52 xzoom -1.0 ypos 120
+            $ charlotteSprite = 15
+            charlotte "Where were you?"
+            $ charlotteSprite = 14
+            $ emilySprite = 8
+            emily "Oh my gosh Olivia!"
+            $ emilySprite = 6
+            $ sophiaSprite = 11
+            sophia "Your boobs!"
+            $ sophiaSprite = 12
+            $ oliviaSprite = 19
+            olivia "It's fine."
+            $ oliviaSprite = 16
+            $ playerSprite = 19
+            player "Olivia lost her top. I was uh..helping her find it."
+            $ playerSprite = 18
+            $ miaSprite = 17
+            mia "Ohhhh!"
+            $ miaSprite = 14
+            $ oliviaSprite = 19
+            olivia "Um Yeah."
+            $ oliviaSprite = 16
+            $ miaSprite = 17
+            mia "Awww I'm sorry Olivia, I'm glad [povname] tried to help though!"
+            $ miaSprite = 14
+            $ oliviaSprite = 19
+            olivia "Like I said it's....fine."
+            $ oliviaSprite = 16
+            scene fs blackblank
+            with Dissolve(1.0)
+            mia "Let's go shopping again soon, just you and me we'll get you another one!"
+            olivia "Oh mia. N-No-"
+            mia "I insist!"
+            olivia "..."
+            olivia "Okay."
+
+            $ endchapter2_trigger = "2 olivia naughty"
+
+            jump startofchapter3
+
+# start chapter 3
+
+# Chapter 3 and related character scenes.
+
+label oliviaphase3interaction1part1:
+    hide screen olivia_atschool
+    $ oliviaSprite = 0
+    $ playerSprite = 1
+    show fbolivia current:
+        xalign 0.5 ypos 120
+    with Dissolve(0.5)
+    pause
+    show fbplayer current:
+        xalign 0.35 ypos 120
+    player "Hello World FeroFero Champion Olivia."
+    $ oliviaSprite = 9
+    olivia "Oh!"
+    $ oliviaSprite = 14
+    olivia "Hello World FeroFero Champion [povname]."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Hehe."
+    player "How you doing baby?"
+    $ playerSprite = 0
+    olivia "{i}I can feel my ovaries thump when he calls me that{/i}"
+    $ oliviaSprite = 9
+    olivia "I'm doing great, midterms are finished now so I can game all I want for a bit."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Sweet!"
+    player "Do you have time to hang out then?"
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Yeah. Actually come over later I'm just gonna grab something to eat first."
+    $ oliviaSprite = 8
+    $ playerSprite = 1
+    player "Sounds great, I'll see you this evening then."
+    $ playerSprite = 0
+    $ oliviaSprite = 9
+    olivia "Cool."
+    $ oliviaSprite = 8
+    $ oliviaquestlog = "Gonna hang out with Olivia at her place tonight"
+    $ oliviaphase2interaction3 = 2
+    $ oliviaphase3interaction1 = 1
+    jump classroom2
+
+label oliviaphase3interaction1part2:
+    stop music fadeout 5
+    scene fs oliviahouse
+    with Dissolve(0.7)
+    pause
+    scene fs oliviaboobjob1
+    with Dissolve(0.5)
+    pause
+    "GameMan" "*Plink Plink*"
+    "GameMan" "*Boom*"
+    penny "Olivia?"
+    scene fs oliviaboobjob2
+    olivia "Hey Penny. Finally done streaming?"
+    scene fs oliviaboobjob1
+    penny "Yeah I'm headed out to the convienence store."
+    penny "Anything we need?"
+    scene fs oliviaboobjob2
+    olivia "Not really no."
+    scene fs oliviaboobjob1
+    penny "Anything you want?"
+    player "Mmmph."
+    scene fs oliviaboobjob2
+    olivia "No I'm...I'm good."
+    scene fs oliviaboobjob1
+    penny "Alright."
+    pause
+    "GameMan" "*Plink Plink*"
+    scene fs oliviaboobjob3
+    olivia "...."
+    player "Mmmm."
+    scene fs oliviaboobjob4
+    with Dissolve(0.5)
+    olivia "Ah...you know she definitely could've heard you."
+    player "Mmhmm?"
+    olivia "You don't care at all."
+    scene fs oliviaboobjob5
+    with Dissolve(0.5)
+    olivia "Hah..."
+    scene fs oliviaboobjob6
+    olivia "AHN."
+    player "*Suck*"
+    scene fs oliviaboobjob7
+    olivia "That f-feels really good."
+    scene fs oliviaboobjob8
+    with Dissolve(0.7)
+    player "*Chuu*"
+    olivia "Ehnn..."
+    player "I need to fuck your fat tits."
+    olivia "Hah...okay."
+    scene fs oliviaboobjob9
+    with Dissolve(0.7)
+    "*Ziiiip*"
+    pause
+    scene fs oliviaboobjob10
+    with Dissolve(0.7)
+    player "God you're so beautiful Olivia."
+    olivia "...."
+    player "Squish those tits together!"
+    scene fs oliviaboobjob11
+    with Dissolve(0.5)
+    pause
+    show oliviaboobjob movie1
+    pause
+    player "Yeah..."
+    player "What do you think of my fat fucking cock baby?"
+    olivia "...."
+    show oliviaboobjob movie2
+    player "C'mere..."
+    pause
+    olivia "Hah...hah.."
+    show oliviaboobjob movie3
+    player "Oh yeah. That's fucking good!"
+    olivia "Ahn..."
+    player "Your tits feel so good I might cum baby, is that what you want?"
+    olivia "Yes."
+    player "tell me what do you want. Say it."
+    olivia "I want you to use my tits to cum."
+    olivia "P-Please."
+    show oliviaboobjob movie4
+    player "AGH!!"
+    olivia "Ahhh..."
+    pause
+    scene fs oliviaboobjob12
+    with Dissolve(0.7)
+    player "Hah...hah..fuck baby."
+    scene fs oliviaboobjob13
+    penny "Wow that's a lot."
+    olivia "Huh??"
+    penny "Yeah I was just getting my shoes on when I said bye. You two started tittyfucking before even listening for the door to close."
+    player "Uh...sorry?"
+    penny "Oh it's fine, got one hell of a show."
+    player "Glad you're not mad."
+    olivia "!!!!"
+    penny "Doesn't seem like you got the couch dirty so it's all good."
+    penny "You look really hot with cum all over your face Olivia."
+    olivia "...."
+    scene fs blackblank
+    with Dissolve(0.7)
+    penny "Haha, maybe next time you and I can make use of the couch [povname]?"
+    olivia "!!!"
+    penny "Don't worry Olivia, you can watch."
+    player "Oh boy..."
+    pause
+
+    $ oliviaphase3interaction1 = 2
+    $ oliviaquestlog = "No more Olivia content in this version (ch2.5)"
+    jump passtime
+
+# -----------ALL THE NONE INDIVIDUAL GIRL SCENES FOR CHAPTER 2--------------------------------------------------------------------------------------

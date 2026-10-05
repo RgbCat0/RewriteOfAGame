@@ -3013,7 +3013,7 @@ image fbmia greensuit = "mia bikini3 default.png"
 
 #Julia
 image fbjulia default = "Sprites/juliadefault.png"
-image fbjulia talk = "Sprite/juliatalk.png"
+image fbjulia talk = "Sprites/juliatalk.png"
 image fbjulia juliacum = "Sprites/juliakum.png"
 image fbjulia juliacumtalk = "Sprites/juliakumtalk.png"
 image fbjulia sexyboobgrabtalk = "Sprites/julia 1080 sexy.png"

@@ -1803,7 +1803,7 @@ label gohomeemily:
         scene fs emilychapter1end20mc
         player "I kept telling myself there's no way I could like someone like you."
         scene fs emilychapter1end19
-        player "{i}There's no denying the power of a main character I suppose.{/I}"
+        player "{i}There's no denying the power of a main character I suppose.{/i}"
         scene fs emilychapter1end18mc
         player "But I can't keep it inside anymore."
         scene fs emilychapter1end18
@@ -4799,4 +4799,585 @@ label emilyphase2interaction2part3:
 
     $ emilyquestlog = "Wow. So fucking hot. I need to fuck her again at the beach trip"
     $ emilyphase2interaction2 = 3
+    jump passtime
+
+# end chapter 2
+# end chapter 2 content
+
+label emilybeachchapter2end:
+    hide screen mia_beach1
+    hide screen mia_beach2
+    hide screen mia_beach3
+    hide screen sophia_beach
+    hide screen charlotte_beach
+    hide screen ava_beach
+    hide screen emily_beach
+    hide screen olivia_beach
+    hide screen backbuttonBEACH
+
+    scene fs emilychapter2end1
+    emily "Hmmm hmhm hmmm."
+    scene fs emilychapter2end2
+    player "Emily hey!"
+    emily "[povname]!"
+    player "Working on a sand castle?"
+    emily "Yeah! Like it?"
+    player "Didn't some little girl make this though?"
+    emily "...."
+    emily "I was thinking of adding a moat!"
+    player "Well that would certainly help protext the castle from intruders!"
+    emily "Haha yeah!"
+    emily "The gallant knights must protect the princess's castle from enemies!"
+    player "Neither sword nor dragon's breath will cross this bridge!"
+    emily "Hehehe!"
+    jump emilychoice
+
+label emilychoice:
+   # $ emilyphase2interaction2 = 3
+    if emilyphase2interaction2 >= 3:
+        "Would you like to end the day with Emily?"
+        menu:
+            "Romance":
+                jump emilychapter2romance
+            "Naughty":
+                jump emilychapter2naughty
+            "Degredation":
+                jump emilychapter2degredation
+            "Go back to beach":
+                jump explorebeach
+    else:
+        jump explorebeach
+
+    label emilychapter2romance:
+        player "But you know..."
+        emily "Hmm?"
+        player "There is one danger that moat cannot protect from!"
+        emily "Haha what is i-"
+        scene fs emilychapter2end3
+        player "THE GIANT METEOR RAINING DOWN FROM THE SKYYYY!!!!"
+        scene fs emilychapter2end4
+        emily "N-Nonono!"
+        emily "Wait!"
+        scene fs emilychapter2end5
+        emily "T-There's no meteor in this story haha..."
+        emily "..."
+        emily "..."
+        scene fs emilychapter2end6
+        player "AND THEN THE GIANT METEOR RAINS DOWN FROM THE SKYYYY!!!"
+        emily "Ahhh! No stoooop!"
+        scene fs emilychapter2end7
+        player "Woah wait Emily careful!"
+        emily "B-Balance!"
+        scene fs emilychapter2end8
+        with vpunch
+        player "Ah."
+        emily "Ouch."
+        player "..."
+        emily "..."
+        scene fs emilychapter2end9
+        emily "Hahaha!"
+        player "Hehe oh man!"
+        player "Sorry Em I was just fooling around."
+        emily "It's okay! It was my own fault and the moat would've taken too long anyways."
+        emily "Plus I like your fooling around haha!"
+        scene fs emilychapter2end10
+        player "Speaking of.."
+        player "How about you and I...get away from the others for a little bit."
+        scene fs emilychapter2end11
+        emily "Oh...you mean.."
+        emily "Right now? Here?"
+        scene fs emilychapter2end10
+        player "Your cuteness does something to me."
+        player "Plus your bikini's got me all riled up"
+        scene fs emilychapter2end11
+        emily "Oh um..."
+        scene fs emilychapter2end10
+        player "If you want...I can keep it in when I cum."
+        scene fs blackblank
+        with Dissolve(0.7)
+        emily "...."
+        emily "Okay."
+        show emilychapter2endsex movie1
+        emily "Hah...hah.."
+        player "Gotta say the showers is the perfect spot."
+        emily "Ahn...ooohhhh."
+        emily "{i}His hands! He's so good with them!{/i}"
+        emily "{i}But it's his....cock that is incredible!{/i}"
+        player "Hmmm, you seem a little quiet, maybe I should go a little harder"
+        pause
+        show emilychapter2endsex movie2
+        emily "AHN! Oh G-God!"
+        player "Does it feel good?"
+        emily "It feeels...You feel incredible!"
+        player "You're really tight Em, I'm really close."
+        emily "O-Oh man oh man! Me too!!!"
+        player "I believed I promised not to pull out!"
+        pause
+        show emilychapter2endsex movie4
+        emily "UUUUHHHN!!!"
+        player "FUCK!"
+        pause
+        show emilychapter2endsex movie3
+        with Dissolve(0.7)
+        emily "{i}He's doing it again, he's cumming inside me!{/i}"
+        emily "{i}His love is filling me to the brim!!{/i}"
+        pause
+        scene fs blackblank
+        with Dissolve(1.0)
+        $ emilyquestlog = "I fucked her again at the beach. Seems she really wants my cock."
+        $ endchapter2_trigger = "2 emily romantic"
+
+        jump startofchapter3
+
+    label emilychapter2naughty:
+        player "But you know..."
+        emily "Hmm?"
+        player "There is one danger that moat cannot protect from!"
+        emily "Haha what is i-"
+        scene fs emilychapter2end3
+        player "THE GIANT METEOR RAINING DOWN FROM THE SKYYYY!!!!"
+        scene fs emilychapter2end4
+        emily "N-Nonono!"
+        emily "Wait!"
+        scene fs emilychapter2end5
+        emily "T-There's no meteor in this story haha..."
+        emily "..."
+        emily "..."
+        scene fs emilychapter2end6
+        player "AND THEN THE GIANT METEOR RAINS DOWN FROM THE SKYYYY!!!"
+        emily "Ahhh! No stoooop!"
+        scene fs emilychapter2end7
+        player "Woah wait Emily careful!"
+        emily "B-Balance!"
+        scene fs emilychapter2end8
+        with vpunch
+        player "Ah."
+        emily "Ouch."
+        player "..."
+        emily "..."
+        scene fs emilychapter2end9
+        emily "Hahaha!"
+        player "Hehe oh man!"
+        player "Sorry Em I was just fooling around."
+        emily "It's okay! It was my own fault and the moat would've taken too long anyways."
+        emily "Plus I like your fooling around haha!"
+        scene fs emilychapter2end10
+        player "Speaking of.."
+        player "That bikini you're wearing."
+        player "The black suits you, it's really nice."
+        scene fs emilychapter2end11
+        emily "Oh, um thank you."
+        scene fs emilychapter2end10
+        player "I want it off."
+        scene fs emilychapter2end11
+        emily "What?"
+        scene fs emilychapter2end10
+        player "I want it off you. Right now."
+        scene fs blackblank
+        with Dissolve(0.7)
+        emily "Oh [povname] I don't know if-"
+        player "Come with me. We're going to the showers and I'm going to stuff your pussy with my cock."
+        emily "O-Okay."
+        show emilychapter2endsex movie1
+        emily "Hah...hah.."
+        player "Ah fuck this is just what I need."
+        emily "Ahn ahn!"
+        player "You hanging in there Em?"
+        emily "{i}He's inside me again!{/i}"
+        emily "{i}He's cheating on Mia with me again!{/i}"
+        player "Seems like my little slut has her mind elsewhere."
+        player "Let me pick up the pace."
+        pause
+        show emilychapter2endsex movie2
+        emily "AHN! Oh G-God!"
+        player "Yeah there you go."
+        emily "{i}His hand's around my neck! It's turning me on so much! {/i}"
+        player "Wonder where the others are right now. Maybe looking for you hmmm?"
+        emily "UUHN!"
+        player "Haha I just felt you get tighter! Fuck I'm getting really close now Em."
+        emily "Ahn ahn [povname]!"
+        player "Fucking take it!"
+        pause
+        show emilychapter2endsex movie3
+        emily "UUUUHHHN!!!"
+        player "FUCK!"
+        emily "{i}No!! Yes!! This feels so good I-{/i}"
+        emily "{i}I can't think! I know this is wrong but I can't help but give in!{/i}"
+        pause
+        show emilychapter2endsex movie3
+        player "I'm fucking cumming!!"
+        show emilychapter2endsex movie4
+        emily "OH MY GOD!"
+        emily "{i}He's cumming inside me! I can feel it!{/i}"
+        emily "{i}I-Is he trying breeding me?{/i}"
+        pause
+        scene fs blackblank
+        with Dissolve(1.0)
+        emily "{i}I...I love it.{/i}"
+        $ endchapter2_trigger = "2 emily naughty"
+        $ emilyquestlog = "I fucked her again at the beach. Seems she really wants my cock."
+        jump startofchapter3
+
+    label emilychapter2degredation:
+        player "But you know..."
+        emily "Hmm?"
+        player "There is one danger that moat cannot protect from!"
+        emily "Haha what is i-"
+        scene fs emilychapter2end3
+        player "THE GIANT METEOR RAINING DOWN FROM THE SKYYYY!!!!"
+        scene fs emilychapter2end4
+        emily "N-Nonono!"
+        emily "Wait!"
+        scene fs emilychapter2end5
+        emily "T-There's no meteor in this story haha..."
+        emily "..."
+        emily "..."
+        scene fs emilychapter2end6
+        player "AND THEN THE GIANT METEOR RAINS DOWN FROM THE SKYYYY!!!"
+        emily "Ahhh! No stoooop!"
+        scene fs emilychapter2end7
+        player "Woah wait Emily careful!"
+        emily "B-Balance!"
+        scene fs emilychapter2end8
+        with vpunch
+        player "Ah."
+        emily "Ouch."
+        player "..."
+        emily "..."
+        scene fs emilychapter2end9
+        emily "Hahaha!"
+        player "Hehe oh man!"
+        player "Sorry Em I was just fooling around."
+        emily "It's okay! It was my own fault and the moat would've taken too long anyways."
+        emily "Plus I like your fooling around haha!"
+        scene fs emilychapter2end10
+        player "Speaking of.."
+        player "That bikini you're wearing."
+        player "The black suits you, it's really nice."
+        scene fs emilychapter2end11
+        emily "Oh, um thank you."
+        scene fs emilychapter2end10
+        player "I want it off."
+        scene fs emilychapter2end11
+        emily "What?"
+        scene fs emilychapter2end10
+        player "I want it off you. Right now."
+        scene fs blackblank
+        with Dissolve(0.7)
+        emily "Oh [povname] I don't know if-"
+        player "Come with me. We're going to the showers and I'm going to stuff your pussy with my cock."
+        emily "O-Okay."
+        scene fs emilychapter2degrade3
+        with Dissolve(1.0)
+        emily "..."
+        emily "[povname]...I-"
+        scene fs emilychapter2degrade2
+        player "Shut up."
+        scene fs emilychapter2degrade3
+        emily "W-What?"
+        scene fs emilychapter2degrade4
+        with hpunch
+        emily "Ahn!"
+        scene fs emilychapter2degrade2
+        with Dissolve(0.3)
+        player "I said Shut up."
+        scene fs emilychapter2degrade3
+        emily "Why would you-"
+        scene fs emilychapter2degrade4
+        with hpunch
+        emily "Oww! Stop!"
+        scene fs emilychapter2degrade2
+        with Dissolve(0.3)
+        player "You're just a whore who sleeps with her best friend's boyfriend."
+        scene fs emilychapter2degrade3
+        emily "[povname] no I-"
+        scene fs emilychapter2degrade5
+        with hpunch
+        emily "AHHHN!!"
+        scene fs emilychapter2degrade7
+        emily "Ooohh.."
+        player "Are you going to be a good girl and listen?"
+        scene fs emilychapter2degrade6
+        emily "Y-Yes!"
+        emily "I-I'll do what you want."
+        scene fs emilychapter2degrade7
+        player "Good."
+        player "Now turn around and give me the only thing you're good for."
+        pause
+        show emilychapter2endsex movie1
+        emily "Hah...hah.."
+        player "Ah fuck still so tight."
+        emily "Ahn ahn!"
+        player "You like it don't you you fucking bitch."
+        emily "{i}He's inside me again!{/i}"
+        emily "{i}He's cheating on Mia with me again!{/i}"
+        player "Seems like my little slut has her mind elsewhere."
+        player "Let me pick up the pace."
+        pause
+        show emilychapter2endsex movie2
+        emily "AHN! Oh G-God!"
+        player "Yeah there you go."
+        emily "{i}His hand's around my neck! It's turning me on so much! {/i}"
+        player "Wonder where the others are right now. Maybe looking for you hmmm?"
+        emily "UUHN!"
+        player "Haha I just felt you get tighter! Fuck I'm getting really close now Em."
+        emily "Ahn ahn [povname]!"
+        player "Fucking take it!"
+        pause
+        show emilychapter2endsex movie3
+        emily "UUUUHHHN!!!"
+        player "FUCK!"
+        show emilychapter2endsex movie4
+        emily "{i}No!! Yes!! This feels so good I-{/i}"
+        emily "{i}I can't think! I know this is wrong but I can't help but give in!{/i}"
+        pause
+        scene fs blackblank
+        with Dissolve(1.0)
+        $ emilyquestlog = "I fucked her again at the beach. Seems she really wants my cock."
+        $ endchapter2_trigger = "2 emily degredation"
+        jump startofchapter3
+
+# start chapter 3
+
+# Chapter 3 and related character scenes.
+
+label emilyphase3interaction1part1:
+    hide screen uppergui
+    hide screen backbuttonROOM
+
+    "Briing briing"
+    scene fs playerroomDay
+    with Dissolve(0.5)
+    pause
+    $ playerSprite = 2
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    player "Who's calling me so early? Ah it's Emily."
+    $ playerSprite = 22
+    show fbplayer current:
+        xalign 0.58 ypos 120
+    player "Hello."
+    $ playerSprite = 21
+    emily "Hey [povname]! You busy tonight?"
+    $ playerSprite = 22
+    player "I don't have any plans no, you want to hang out?"
+    $ playerSprite = 21
+    emily "They're playing 'Hide and Sneaks 2' at the theatre! Only this week!"
+    emily "You want to join me?"
+    $ playerSprite = 22
+    player "Hide and Sneaks 2? The famously terrible sequel with god awful CGI that nobody asked for?"
+    $ playerSprite = 21
+    emily "The exact one."
+    $ playerSprite = 22
+    player "I will BE there!"
+    $ playerSprite = 21
+    emily "Haha great! I'll see you tomorrow. They only have day showings."
+    $ playerSprite = 22
+    player "Alright no problem, see you tomorrow."
+    $ playerSprite = 2
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    "*click*"
+    player "...."
+    $ playerSprite = 7
+    player "I'm going to need to bring my own snacks though."
+    player "No way I'm paying those terrible theatre prices..."
+    player "Hmmm. I'm feeling like candy. Of the strawberry variety..."
+
+    $ emilydaychecker = dayNumber
+    $ emilyphase3interaction1 = 1
+    $ emilyquestlog = "I'll call Emily from my place tomorrow after I get some Candy from the store"
+    jump returnwhereyouare
+
+label emilyphase3interaction1part2:
+    hide screen uppergui
+    hide screen backbuttonROOM
+    hide screen backbuttonROOM
+    hide screen questboxpreview
+    hide screen backbuttonLIVINGROOM
+    hide screen phonecontacts
+
+    scene fs livingroom
+    with Dissolve(0.5)
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbemily current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.5)
+    player "Alright ready to go?"
+    $ playerSprite = 0
+    $ emilySprite = 1
+    emily "Ready, let's head out!"
+    $ emilySprite = 0
+    scene fs blackblank
+    with Dissolve(0.7)
+    pause
+    scene fs emilytheatreandbj1
+    with Dissolve(0.7)
+    "There was barely anyone else in the theatre"
+    "You figured it was because it was the middle of the day"
+    "Or the fact this was a shitty 30 year old horror movie"
+    "Either way the two of you enjoyed yourselves"
+    scene fs emilytheatreandbj2
+    "Movie" "Hehehe I'll fiiiiiiinnnnd youuuuu."
+    player "Dude just look left."
+    scene fs emilytheatreandbj3
+    emily "Hehehe."
+    player "Haha."
+    "Movie" "Ahhhhhh no please ahhhhhh!."
+    scene fs emilytheatreandbj5b
+    with Dissolve(0.5)
+    player "You liking it?"
+    scene fs emilytheatreandbj5
+    emily "Yeah! It's awful haha."
+    emily "Want some popcorn?"
+    scene fs emilytheatreandbj5b
+    player "Nah I've got my candy."
+    player "There's something else I want though."
+    emily "Hmm?"
+    scene fs emilytheatreandbj6
+    with Dissolve(0.5)
+    pause
+    player "Mmmmmmwuah."
+    scene fs emilytheatreandbj5
+    with Dissolve(0.5)
+    emily "Y-You can have one of those whenever you want!"
+    scene fs emilytheatreandbj5b
+    player "Hehe great cause I don't think I'm finished yet."
+    scene fs emilytheatreandbj6
+    with Dissolve(0.5)
+    emily "Mmmmhh."
+    scene fs emilytheatreandbj7
+    with Dissolve(0.5)
+    pause
+    scene fs emilytheatreandbj8
+    pause
+    emily "Hmm?"
+    scene fs blackblank
+    with Dissolve(1.0)
+    "Eventually the movie ends and the two of you walk out into the daylight"
+    player "It's weird watching a movie in the theatre than going outside and it's still daytime."
+    emily "Yeah it really is."
+    emily "...."
+    emily "How about we go to your place?"
+    player "You got time?-"
+    emily "Yup!"
+    scene fs livingroom
+    with Dissolve(0.5)
+    pause
+    $ playerSprite = 1
+    show fbplayer current:
+        xalign 0.35 ypos 120
+    show fbemily current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.5)
+    player "Alrighty home sweet home."
+    player "You hungry?"
+    $ playerSprite = 0
+    $ emilySprite = 1
+    emily "Yes actually. I'm...craving something."
+    $ emilySprite = 0
+    $ playerSprite = 1
+    player "Okay well I can check-"
+    $ playerSprite = 0
+    $ emilySprite = 1
+    show fbemily current:
+        xalign 0.45 ypos 120
+    with move
+    emily "Um wait a sec..."
+    $ emilySprite = 0
+    scene fs emilytheatreandbj9
+    with Dissolve(0.5)
+    emily "There's something I want to check."
+    scene fs emilytheatreandbj9b
+    player "Oh uh sure, go ahead."
+    scene fs emilytheatreandbj10
+    with Dissolve(0.5)
+    player "{i}Oh she wants to make out?{/i}"
+    player "{i}I don't have any reasons to refuse!{/i}"
+    scene fs emilytheatreandbj11
+    with Dissolve(0.5)
+    pause
+    emily "Mmmh!"
+    emily "Auhn..Yesh.."
+    scene fs emilytheatreandbj12
+    emily "Hah...hah..t-this is it!"
+    player "Hah...huh?"
+    emily "Take off your pants."
+    emily "Actually I can't wait just unzip them!"
+    scene fs emilytheatreandbj13
+    with Dissolve(0.7)
+    player "Fuck Emily what's gotten into you?"
+    emily "Just..p-please hurry."
+    scene fs emilytheatreandbj14
+    emily "!!!"
+    emily "{i}This smell...the taste lingering on my tongue...{/i}"
+    scene fs emilytheatreandbj15
+    player "?"
+    scene fs emilytheatreandbj16
+    player "Fuck now that is quite the POV."
+    scene fs emilytheatreandbj17
+    pause
+    scene fs emilytheatreandbj18
+    player "Oh fuck.."
+    emily "Mmmph."
+    scene fs emilytheatreandbj19
+    pause
+    show emilymovie blowjob
+    player "Ahhh.."
+    player "{i}She's not sucking the whole thing but she doens't need to{/i}"
+    player "What is up with you today?"
+    emily "MMhn!"
+    emily "Eh Neh it!"
+    player "Did you just say you need it?"
+    emily "Cuhm foa meh!"
+    player "Fuck this is so hot Emily I'm gonna fucking cum right now!"
+    scene fs emilytheatreandbj20
+    pause
+    show emilychapter3blowjob movie1
+    pause
+    emily "Ahh."
+    player "UUUUGH!"
+    player "Love seeing that cum all over your pretty little face!"
+    scene fs emilytheatreandbj22
+    with Dissolve(0.5)
+    emily "*Gulp*"
+    scene fs emilytheatreandbj22b
+    emily "This...I don't believe it!"
+    player "What do you mean?"
+    emily "Your cum it's.."
+    player "It's what?"
+    scene fs emilytheatreandbj23
+    with vpunch
+    player "Ah shit!"
+    emily "NEEH MOA!!"
+    player "Em I just came my cock is super sensitive!"
+    scene fs emilytheatreandbj24
+    emily "GUHK!"
+    player "Fuck fuck fuck!"
+    player "How are you sucking so hard Jesus Christ!"
+    emily "CUHM!"
+    show emilychapter3blowjob movie2
+    player "You want more cum you fucking slut?!"
+    player "Here you-AHHRGH! Here you go!"
+    scene fs emilytheatreandbj25
+    pause
+    emily "*Gulp* *Gulp*"
+    scene fs emilytheatreandbj26
+    player "Haaaah."
+    player "H-Holy shit."
+    player "Emily what's gotten into you?"
+    emily "That's..hah..the taste.."
+    player "What?"
+    emily "I'd know it anywhere.."
+    scene fs blackblank
+    with Dissolve(1.0)
+    "You help Emily clean herself up and get ready to go"
+    "You offered to drive her home but she insisted on walking, albeit the whole time kind of in a daze"
+    emily "That sweet sweet..."
+    emily "Strawberry taste."
+
+    $ emilyphase3interaction1 = 2
+    $ emilyquestlog = "No more solo content for Emily this version(ch2.5)"
     jump passtime

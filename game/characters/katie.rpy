@@ -734,3 +734,204 @@ label katieblowjob:
 
 # end chapter 2
 
+# Chapter 3 and related character scenes.
+
+label katiephase3interaction1part1:
+    scene fs blackblank
+    with Dissolve(0.7)
+    "Briiing Briiing"
+    player "Hmm? Oh hey Mia."
+    mia "[povname]...I just waaatched a moooovie.."
+    player "Oh yeah? Was it another romance?"
+    mia "Maaaaybe."
+    player "I'm on my way."
+    pause
+    "Not too very long after..."
+    scene fs katiejealous1
+    with Dissolve(0.5)
+    mia "Ahn..hah.."
+    pause
+    scene fs katiejealous2
+    mia "Ah!"
+    mia "Oh [povname]! You always go so DEEP!"
+    player "Hah.."
+    scene fs katiejealous3
+    mia "Hah..hah..hah.."
+    scene fs katiejealous4
+    mia "AH! I'm gonna cum!"
+    pause
+    scene fs katiejealous3
+    player "Cum for me baby."
+    scene fs katiejealous4
+    mia "Oh GOSH [povname]!"
+    mia "I love you!"
+    mia "I LOVE YOU I LOVE YOU I LOVE YOU!"
+    player "Fuck baby I love you too UGH I'm CUMMING!"
+    mia "Cum inside me!"
+    scene fs blackblank
+    with Dissolve(0.7)
+    mia "YESSS!"
+    mia "I-I can...feel..it.."
+    "After a few minutes..."
+    scene fs katiejealous5
+    with Dissolve(0.7)
+    pause
+    katie "....."
+    katie "Wake up."
+    mia "Hmm?"
+    katie "Mia wake up."
+    scene fs katiejealous5b
+    mia "Oh...hi Katie."
+    katie "You're lucky mom's staying at her office tonight."
+    mia "Oh yeah...would've...been awkward."
+    katie "Can you guys like tone it down a notch?"
+    mia "Sorry...was I too loud?"
+    katie "No, with the lovey-dovey shit."
+    katie "So annoying hearing you scream 'I love you' as you get blasted with baby batter."
+    mia "Hehe..yeah...okay."
+    katie "Mia? I mean it I hate that."
+    scene fs katiejealous5
+    with Dissolve(0.5)
+    mia "*Snore*..."
+    katie "...."
+    scene fs katiejealous6
+    with Dissolve(0.7)
+    katie "...."
+    scene fs katiejealous7
+    katie "...."
+    scene fs katiejealous6
+    katie "{i}Whatever.{/i}"
+    scene fs katiejealous8
+    "*Slam*"
+    $ katiephase3interaction1 = 1
+    $ katiequestlog = "Mia told me Katie heard us fucking...kinda hot."
+    jump passtime
+
+label katiephase3interaction1part2:
+    hide screen uppergui
+    hide screen questboxpreview
+    scene fs livingroom
+    with Dissolve(0.7)
+    $ playerSprite = 0
+    $ katieSprite = 7
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    pause
+    "*knock knock*"
+    player "Hmm?"
+    show fbkatie current:
+        xalign 0.7 ypos 120
+    katie "Hey you."
+    $ playerSprite = 1
+    player "Katie?"
+    player "Hey, what are you doing here?"
+    $ playerSprite = 0
+    $ katieSprite = 7
+    katie "Oh you know, I was just in the area and thought I'd stop by."
+    katie "Give my favorite sister's boyfriend a hug."
+    $ katieSprite = 6
+    katie "{i}And a soul-sucking blowjob{/i}"
+    $ playerSprite = 1
+    player "Yeah sure, help yourself."
+    $ playerSprite = 0
+    $ katieSprite = 7
+    show fbkatie current:
+        xalign 0.55 ypos 120
+    with move
+    katie "Yay!"
+    $ katieSprite = 6
+    scene fs katiephonebj1
+    with Dissolve(0.7)
+    katie "MMMM!"
+    player "I like your dress."
+    katie "Oh I know."
+    pause
+    scene fs katiephonebj2
+    katie "Hehehe."
+    katie "{i}Mia I'm about to make your boyfriend cum so hard his legs'll buckle{/i}"
+    player "Alright what are you up to? I know that face."
+    katie "{i}Just show a little cleavage and he's ready to fuck me senseless{/i}"
+    scene fs katiephonebj2b
+    katie "Nothiiing."
+    scene fs katiephonebj2
+    katie "{i}No 'I love yous' needed!{/i}"
+    player "Katie."
+    scene fs katiephonebj3
+    katie "Oop! What's this?"
+    player "My phone..wait are you calling Mia?"
+    scene fs katiephonebj4
+    player "Did you call her by accident?"
+    scene fs katiephonebj5
+    "*Click*"
+    mia "Hello?"
+    scene fs katiephonebj6
+    pause
+    player "Oh fuck."
+    player "Uh hey Mia!"
+    scene fs katiephonebj7
+    katie "{i}Hehehe, he's mine now!{/i}"
+    player "Hey yeah no, I'm doing good."
+    scene fs katiephonebj8
+    with Dissolve(0.5)
+    player "Are you at school?"
+    player "No? Ah okay that's actually great."
+    scene fs katiephonebj9
+    with Dissolve(0.5)
+    player "I need your help again.."
+    katie "{i}Again?{/i}"
+    scene fs katiephonebj10
+    katie "*Kiss*"
+    scene fs katiephonebj9
+    player "Yeah I've been just stuck working a lot past few days, need to relieve some stress."
+    scene fs katiephonebj11
+    player "Oh really? Hehe."
+    scene fs katiephonebj12
+    player "OOhhh, yes baby.."
+    katie "{i}Smart of him to initiate some dirty phone talk{/i}"
+    katie "{i}Wasn't part of the plan but whatever{/i}"
+    scene fs katiephonebj12b
+    player "Fuck that's so hot."
+    show katiephoneblowjob movie1
+    player "Yes baby use it."
+    player "Haha not as big as me huh?"
+    player "Hah..."
+    player "God I want you so fucking bad right now!"
+    katie "{i}He's not...{/i}"
+    scene fs katiephonebj13
+    katie "{i}He's not into me at all!{/i}"
+    katie "{i}He's just using me to jack off with Mia{/i}"
+    show katiephoneblowjob movie2
+    player "Cum for me baby!"
+    player "Make an absolute mess!"
+    player "AGH YES FUCK!!"
+    scene fs katiephonebj14
+    with Dissolve(0.5)
+    player "Hah..."
+    player "Thanks so much baby that was so hot."
+    pause
+    $ playerSprite = 21
+    scene fs livingroom
+    show fbplayer current:
+        xalign 0.5 ypos 120
+    show fbkatie titsoutcum1:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+    pause
+    $ playerSprite = 22
+    player "Haha yeah it was a lot."
+    player "Actually no I had something to cum on so no cleanup needed."
+    show fbplayer current:
+        xalign 0.3 xzoom -1.0 ypos 120
+    player "Haha yeah."
+    player "By the way, I wanted to ask-"
+    hide fbplayer current
+    pause
+    katie "..."
+    show fbkatie titsoutcum2:
+        xalign 0.6 ypos 120
+    katie "What the fuck!?"
+    $ katiequestlog = "No more content for Katie in this version(Ch2.5)"
+    $ katiephase3interaction1 = 2
+    jump passtime
+
+#CHAPTER 3 EVENTS HERE-------------------------------------------------------------------------------------------------

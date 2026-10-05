@@ -517,3 +517,18 @@ label officejulia1:
     player "Can't wait!"
     $ playerSprite = 0
     jump gotosunnyside
+
+# Chapter 3 and related character scenes.
+
+label miaisnthome:
+    hide screen julia_kitchen
+    $ juliaSprite = 3
+    show fbjulia current:
+        xalign 0.5 ypos 120
+    julia "Sorry handsome, Mia isn't home right now. Maybe call her tonight?"
+    $ juliaSprite = 0
+    jump gfhouse
+
+label talkwithjulia:
+    "I shouldn't bother Mia's mom right now."
+    jump returnwhereyouare

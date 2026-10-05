@@ -224,7 +224,10 @@ label avaphase1interaction1part3:
     scene fs outsidegym
     hide screen backbuttonGYMOUTSIDE
     if avaphase1interaction1 != 2:
-        player "What a strange looking machine."
+        if avaphase1interaction1 >= 3:
+            player "I don't want to interact with that again. *Shudders*"
+        else:
+            player "What a strange looking machine."
         jump outsidegym
 
 
@@ -2404,7 +2407,7 @@ label avaphase2interaction2part1:
         with Dissolve(0.5)
         ava "{cps=25}Need help. Freaking out. Can't ask girls.{/cps}"
         player "{i}It's From Ava. Is she okay?{/i}"
-        player "{cps=25}Woah slow down, you safe?{/cps }"
+        player "{cps=25}Woah slow down, you safe?{/cps}"
         ava "{cps=25}Yeah totally safe just...meet at cafe in afternoon please.{/cps}"
         $ playerSprite = 7
         player "Alright I guess I'll head over there."
@@ -2478,7 +2481,7 @@ label avaphase2interaction2part2:
     player "You'll have to forgive her sir, she burnt her throat on some herbal tea."
     player "Supposed to be healthy stuff, but they don't tell you how hot to make it haha."
     scene fs avainterviewscene1c
-    ava "{size=20}Sorry...{/cps}"
+    ava "{size=20}Sorry...{/size}"
     scene fs avainterviewscene1
     "Recruiter Guy" "Ah yes, I am fond of a good tea myself. I hope you recover soon."
     scene fs avainterviewscene1b
@@ -3209,3 +3212,647 @@ label avaphase2interaction3part1:
     jump passtime
 
 # end chapter 2
+# end chapter 2 content
+
+label avabeachchapter2end:
+    #"test ava"
+    hide screen mia_beach1
+    hide screen mia_beach2
+    hide screen mia_beach3
+    hide screen sophia_beach
+    hide screen charlotte_beach
+    hide screen ava_beach
+    hide screen emily_beach
+    hide screen olivia_beach
+    hide screen backbuttonBEACH
+    scene fs beach
+    $ playerSprite = 19
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    show fbava current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+    player "Ava!"
+    $ avaSprite = 23
+    $ playerSprite = 18
+    ava "[povname]! Just the man I was looking for."
+    $ avaSprite = 22
+    $ playerSprite = 19
+    player "Haha, looking for me?"
+    $ playerSprite = 18
+    $ avaSprite = 23
+    ava "Uh huh, time for some good ol' fasion competition!"
+    $ avaSprite = 22
+    $ playerSprite = 19
+    player "What, the volleyball game wasn't enough?"
+    $ playerSprite = 18
+    $ avaSprite = 23
+    ava "Not even close!"
+    $ avaSprite = 22
+    $ playerSprite = 19
+    player "Alright then, what are we doing?"
+    $ playerSprite = 18
+    $ avaSprite = 23
+    ava "Everything!"
+    $ avaSprite = 22
+    $ playerSprite = 19
+    player "Bring it on!"
+    scene fs blackblank
+    with Dissolve(0.7)
+    "Ava and I then started to compete in every beach themed game you could think of"
+    scene fs avabeachfun1
+    with Dissolve(0.7)
+    pause
+    scene fs avabeachfun2
+    ava "21!"
+    "And some, not so beach themed"
+    scene fs avabeachfun3
+    player "Feeling tired yet?"
+    scene fs avabeachfun2
+    ava "You wish!"
+    scene fs avabeachfun4
+    sophia "C'mon guys keep going you can do it!"
+    charlotte "Why am I here?"
+    scene fs avabeachfun1
+    pause
+    scene fs avabeachfun2
+    ava "22!"
+    scene fs avabeachfun5
+    with Dissolve(1.0)
+    olivia "Grrrr!"
+    ava "Haha c'mon Olivia, show me that gamer girl strength!"
+    sophia "This...hah..doesn't even make sense!"
+    sophia "Why am I the one on the bottom??!"
+    scene fs blackblank
+    with Dissolve(1.0)
+    "It was a lot of fun!"
+    #"[avaphase2interaction3]"
+    if avaphase2interaction3 >= 2:
+        "Would you like to end the day with Ava?"
+        menu:
+            "Romance":
+                jump avachapter2romance
+            "Naughty":
+                jump avachapter2naughty
+            "Go back to beach":
+                jump explorebeach
+    else:
+        jump explorebeach
+
+    label avachapter2romance:
+        scene fs beachpictureempty
+        with Dissolve(1.0)
+        show fbplayer current:
+            xalign 0.4 ypos 120
+        show fbava current:
+            xalign 0.6 ypos 120
+        with Dissolve(0.7)
+        player "Well..hah..seems like we tied?"
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Yeah haha."
+        ava "I think I tied more though."
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "What does that even mean lol?"
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Did you just lol?"
+        $ avaSprite = 22
+        player "..."
+        $ avaSprite = 23
+        ava "Moving so much did work up a good sweat, and it's getting later in the day."
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "Yeah for sure. You...feeling dirty?"
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "I could really use a shower."
+        $ avaSprite = 22
+        $ playerSprite = 19
+        show fbplayer current:
+            xalign 0.55 ypos 120
+        with move
+        player "A dirty...tomboy shower?"
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Hahaha dude what the hell?"
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "Haha sorry."
+        $ playerSprite = 18
+        ava "...."
+        $ avaSprite = 23
+        show fbava current:
+            xzoom -1.0
+        ava "C'mon. I need your cock inside me right now."
+        $ playerSprite = 20
+        player "Oh shit...uh.."
+        player "Yes ma'am."
+        pause
+        show avabeachsex movie2
+        ava "Hah hah hah.."
+        player "Fuck you're tight!"
+        ava "And you're so FUCKING big!"
+        scene fs avabeachsex4
+        with Dissolve(0.5)
+        ava "Doing it in the shower is so HOT!"
+        show rs oliviashowerright
+        with Dissolve(0.7)
+        player "You really like this huh?"
+        show ls sophiashowerleft
+        with Dissolve(0.7)
+        ava "Feels so fucking good!"
+        show rs oliviashowerlook
+        ava "GOD dude. I want to marry your dick!"
+        olivia "Huh?"
+        ava "You better not pull out!"
+        show ls sophiashowerlook
+        sophia "Hmm?"
+        olivia "Ava?"
+        show fs avabeachsex6 behind ls
+        with vpunch
+        ava "Ah!"
+        ava "Uh yeah?"
+        show avabeachsex movie2
+        olivia "You okay?"
+        ava "Y-Yeah! Ahn!"
+        sophia "You sound kinda weird.."
+
+        scene fs avabeachsex5
+        show ls sophiashowerlook
+        show rs oliviashowerlook
+        with Dissolve(0.5)
+        ava "Oh my god! N-No I'm F-"
+        ava "FUCK!"
+        sophia "Do you need help?"
+        olivia "I think we should open the d-"
+        show avabeachsex movie2
+        ava "N-No!"
+        ava "T-The truth is there's a guy in here!"
+        olivia "Ohhhh..."
+        sophia "What?"
+        ava "There's a guy in here w-AHN! With me. We're having s-SEX!"
+        ava "God I'm gonna fucking cum!"
+        sophia "Ohmygod. Uh okay sorry."
+        show avabeachsex movie3
+        ava "FUCK YES YES AHN!!!"
+        player "UGGGH!!"
+        scene fs avabeachsex3
+        with Dissolve(1.0)
+        ava "God I feel it..I feel it spilling out..."
+        sophia "Oooookay."
+        olivia "Haha, okay enjoy then, we'll get out first"
+        scene fs blackblank
+        with Dissolve(1.0)
+        $ avaquestlog = "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again."
+        $ endchapter2_trigger = "2 ava romantic"
+        jump startofchapter3
+
+    label avachapter2naughty:
+        scene fs beachpictureempty
+        with Dissolve(1.0)
+        $ playerSprite = 19
+        show fbplayer current:
+            xalign 0.4 ypos 120
+        show fbava current:
+            xalign 0.6 ypos 120
+        with Dissolve(0.7)
+        player "Well..hah..seems like we tied?"
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Yeah haha."
+        ava "I think I tied more though."
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "What does that even mean lol?"
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Did you just lol?"
+        $ avaSprite = 22
+        player "..."
+        $ avaSprite = 23
+        ava "Moving so much did work up a good sweat, and it's getting later in the day."
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "Let's go to the shower then."
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Huh?"
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "Let's go hit the showers. Together."
+        $ playerSprite = 18
+        $ avaSprite = 23
+        ava "Oh."
+        $ avaSprite = 22
+        $ playerSprite = 19
+        player "I'm not giving you a choice."
+        $ playerSprite = 18
+        ava "...."
+        show fbplayer current:
+            xalign 0.7 ypos 120
+        with move
+        $ playerSprite = 19
+        player "{size=20}I'm gonna pound your tight fucking pussy while all your friends have no idea.{/size}"
+        $ playerSprite = 18
+        ava "Y-Yes please."
+        pause
+        scene fs blackblank
+        with Dissolve(0.5)
+        "A little later on..."
+        scene fs avabeachsex1
+        with Dissolve(1.0)
+        player "Tell me what you it."
+        ava "I-I want it!"
+        scene fs avabeachsex2
+        ava "O-Oooohhh..."
+        show avabeachsex movie1
+        player "Mmmh yeah nice and slow."
+        player "That's how you like it right?"
+        ava "Uhn...N-No.."
+        player "Soft...safe...boring.."
+        pause
+        scene fs avabeachsex4
+        with Dissolve(0.5)
+        ava "M-More.."
+        show rs oliviashowerright
+        with Dissolve(0.5)
+        olivia "*Hums*"
+        player "What was that? I can't hear you."
+        show ls sophiashowerleft
+        with Dissolve(0.5)
+        sophia "Dum de dum"
+        ava "H...HARDER!"
+        player "Beg me."
+        ava "Please! Please pound my fucking pussy!"
+        show rs oliviashowerlook
+        olivia "What the hell?"
+        show ls sophiashowerlook
+        sophia "Huh??"
+        show avabeachsex movie2
+        ava "AHN!!!"
+        olivia "Ava? Is that you?"
+        ava "Oh G-God!"
+        ava "Olivia??"
+        sophia "Ava are you okay?"
+        ava "So-AHN! Sophia?"
+        ava "What are you guys doing here?"
+        sophia "Uhhh taking a shower?"
+        player "{size=20}Don't let them know Ava.{/size}"
+        ava "F-Fuck!"
+        player "{size=20}Don't let them know you're fucking your friend's boyfriend right next to them.{/size}"
+        ava "P-Please..."
+        scene fs avabeachsex5
+        show rs oliviashowerlook
+        show ls sophiashowerlook
+        with Dissolve(0.5)
+        ava "GGGHHH!!"
+        olivia "Are you okay?"
+        ava "{i}Fuck fuck fuck what do I do??{/i}"
+        ava "Yes! Yes I'm F-Fine!"
+        sophia "You're absolutely sure?"
+        show avabeachsex movie2
+        ava "Yes Yes YES YES!!"
+        olivia "Alright, are you gonna come out soon?"
+        ava "YES!"
+        player "UUUGHH!"
+        ava "I'm CUMMING!!"
+        pause
+        show avabeachsex movie3
+        pause
+        ava "UHHHN!!!"
+        scene fs avabeachsex3
+        with Dissolve(0.7)
+        sophia "Uh okay...see you soon."
+
+        $ endchapter2_trigger = "2 ava naughty"
+
+        jump startofchapter3
+
+        scene fs avabeachsex2
+        player "What was that?"
+        ava "I WANT IT!!"
+        pause
+        show avabeachsex movie2
+        ava "Hah hah hah.."
+        player "Fuck you're tight!"
+        ava "And you're so FUCKING big!"
+        scene fs avabeachsex4
+        with Dissolve(0.5)
+        ava "Doing it in the shower is so HOT!"
+        show rs oliviashowerright
+        with Dissolve(0.7)
+        player "You really like this huh?"
+        show ls sophiashowerleft
+        with Dissolve(0.7)
+        ava "Feels so fucking good!"
+        show rs oliviashowerlook
+        ava "GOD dude. I want to marry your dick!"
+        olivia "Huh?"
+        ava "You better not pull out!"
+        show ls sophiashowerlook
+        sophia "Hmm?"
+        olivia "Ava?"
+        show fs avabeachsex6 behind ls
+        with vpunch
+        ava "Ah!"
+        ava "Uh yeah?"
+        show avabeachsex movie2
+        olivia "You okay?"
+        ava "Y-Yeah! Ahn!"
+        sophia "You sound kinda weird.."
+
+        scene fs avabeachsex5
+        show ls sophiashowerlook
+        show rs oliviashowerlook
+        with Dissolve(0.5)
+        ava "Oh my god! N-No I'm F-"
+        ava "FUCK!"
+        sophia "Do you need help?"
+        olivia "I think we should open the d-"
+        show avabeachsex movie2
+        ava "N-No!"
+        ava "T-The truth is there's a guy in here!"
+        olivia "Ohhhh..."
+        sophia "What?"
+        ava "There's a guy in here w-AHN! With me. We're having s-SEX!"
+        ava "God I'm gonna fucking cum!"
+        sophia "Ohmygod. Uh okay sorry."
+        show avabeachsex movie3
+        ava "FUCK YES YES AHN!!!"
+        player "UGGGH!!"
+        scene fs avabeachsex3
+        with Dissolve(1.0)
+        ava "God I feel it..I feel it spilling out..."
+        sophia "Oooookay."
+        scene fs blackblank
+        with Dissolve(1.0)
+
+        jump startofchapter3
+
+# begin chapter 3
+
+# Chapter 3 and related character scenes.
+
+label avaphase3interaction1part1:
+    show fbava current:
+        xalign 0.6 ypos 120
+    show fbplayer current:
+        xalign 0.4 ypos 120
+    with Dissolve(0.5)
+    $ avaSprite = 1
+    ava "[povname]! Hey man."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Sup."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "How you doing? Get a good sleep?"
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Haha sleep? Yeah it was fine."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Sleep is very important for your health! It's when your body recovers and you build bigger muscles!"
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Huh. I'll keep that in mind. Did YOU sleep well?"
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Like a LOG oh my God."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Haha great to hear. So what are you up to?"
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Well I'm usually at the track around this time but I'm skipping today, so mainly just waiting around for one of the girls."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Wait why are you skipping? That's not like you."
+    $ playerSprite = 0
+    $ avaSprite = 4
+    ava "Oh uh..well I'm *Ahem*."
+    ava "Sore."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Sore? From what?"
+    $ playerSprite = 14
+    ava "...."
+    $ avaSprite = 11
+    ava "From YOU. Thanks for letting me be subtle."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Ohhhh. Oh shit."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Yeah."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Sorry."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "But it's okay I've been resting since we...did it. And I should be good after today."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "What about tonight?"
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Tonight? Yeah I should be fine."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Another run at the park together then?"
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "Uh yeah okay. I can do that."
+    $ avaSprite = 0
+    $ playerSprite = 1
+    player "Awesome see you then."
+    $ playerSprite = 0
+    $ avaSprite = 1
+    ava "See you later!"
+    $ avaSprite = 0
+    $ avaquestlog = "Another run with Ava tonight at the park!"
+
+    $ avaphase3interaction1 = 1
+    jump school
+
+label avaphase3interaction1part2:
+    hide screen uppergui
+    $ avaSprite = 7
+    show fbava current:
+        xalign 0.7 ypos 120
+    with Dissolve(0.7)
+    pause
+    player "Hate to see you leave."
+    $ avaSprite = 6
+    show fbplayer shortsbonertalk:
+        xalign 0.3 ypos 120
+    with Dissolve(0.5)
+
+    player "But love to see you walk away."
+    show fbplayer shortsboner
+    $ avaSprite = 3
+    ava "Haha shut up you dork that's not even the situation for that."
+    $ avaSprite = 2
+    show fbplayer shortsbonertalk
+    player "Close enough."
+    player "Ready to run?"
+    $ avaSprite = 3
+    ava "Let's do it."
+    scene fs avarun1
+    with Dissolve(0.7)
+    "You run along the familiar park path with Ava once again"
+    "The cool breeze was refreshing as it hit your skin"
+    "You could hear Ava's rhythmic breath as she pulled away from you"
+    scene fs avarun4
+    with Dissolve(0.5)
+    "But this time you caught up"
+    scene fs avarun5
+    with Dissolve(0.5)
+    "And stayed there, right beside her"
+    scene fs avarun4
+    with Dissolve(0.5)
+    pause
+    scene fs parknight
+    with Dissolve(0.7)
+    show fbplayer shortstired1:
+        xalign 0.4 ypos 120
+    $ avaSprite = 5
+    show fbava current:
+        xalign 0.6 ypos 120
+    with Dissolve(0.7)
+
+    ava "Hah..dude!"
+    ava "You did it!"
+    player "I...hah."
+    show fbplayer shortstired2
+    player "Did it!"
+    show fbplayer shortstired1
+    ava "I'm so proud of you. Great job keeping up."
+    show fbplayer shortstired2
+    player "You...hah..didn't make it easy."
+    ava "Nothing good in life ever is."
+    show fbplayer shortstired1
+    player "I dunno..hah..if true..can't think."
+    ava "Haha let's go to your car, we can rest back at your place."
+    player "Good idea."
+    scene fs blackblank
+    with Dissolve(0.7)
+    "You drive you and Ava's sweaty bodies back to your place"
+    scene fs avacouchprank2b
+    player "Alright last chance if you want to shower first."
+    scene fs avacouchprank2
+    ava "I told you it's fine, I'll just shower at home."
+    scene fs avacouchprank2b
+    player "Kay. Looks like we won't be doing anything naughty then."
+    player "No way I'm touching a nasty sweaty Tomboy."
+    scene fs avacouchprank2
+    ava "Oh I'm your Tomboy now?"
+    scene fs avacouchprank2b
+    player "Yup."
+    play music "audio/showersounds.wav"
+    "*Shower noises*"
+    scene fs avacouchprank2
+    ava "Heh."
+    scene fs avacouchprank2b
+    ava "..."
+    scene fs avacouchprank3
+    ava "Wait what does he mean he wouldn't touch me if I was sweaty?"
+    ava "Is that a challenge??"
+    ava "I bet a perv like him would get even more turned on!"
+    ava "I'm gonna prove it!"
+    scene fs avacouchprank3b
+    ava "With just a little underboob and some 'innocent vulnerability'..."
+    scene fs avacouchprank4
+    ava "He won't be able to keep his hands off me!"
+    scene fs blackblank
+    with Dissolve(0.5)
+    stop music fadeout 5
+    "A little while later.."
+    scene fs avacouchprank5
+    with Dissolve(0.5)
+    player "Hey I'm back, do you-oh?"
+    player "Looks like she fell asleep."
+    player "{i}Why is her top pulled up so much?{/i}"
+    ava "*Obvious fake snoring*"
+    player "{i}Ahhhhh she's not asleep. She must've got upset at my little joke.{/i}"
+    player "{i}Let's have a little fun with her.{/i}"
+    scene fs avacouchprank5b
+    player "Damn Ava, sometimes I forget how fucking hot your body is."
+    player "I don't normally do something like this but your tits have me rock hard."
+    player "I have to jack off!"
+    scene fs avacouchprank5
+    ava "{i}Heh. I knew it!{/i}"
+    scene fs avacouchprank5b
+    player "Mmmm yeah, don't wake up baby stay just like that."
+    player "I remember just how good your pussy felt. You're such a tight little slut."
+    scene fs avacouchprank5
+    ava "{i}I'm kinda getting a little wet from this..{/i}"
+    scene fs avacouchprank5b
+    player "Fuck I can feel it coming! I'm gonna cum all over your perfect tits!"
+    scene fs avacouchprank5
+    ava "{i}Yes!{/i}"
+    scene fs avacouchprank5b
+    player "Your pretty little face!"
+    scene fs avacouchprank5
+    ava "{i}Do it!{/i}"
+    scene fs avacouchprank5b
+    player "Your beautiful hair!"
+    scene fs avacouchprank6
+    with vpunch
+    ava "NOT THE HAIR!!"
+    scene fs avacouchprank7
+    player "Hahahaha."
+    ava "Huh??"
+    player "Oh man, that reaction was perfect."
+    ava "That's not funny!"
+    scene fs avacouchprank8b
+    with Dissolve(0.7)
+    player "Aww c'mon babe."
+    scene fs avacouchprank8
+    ava "Hmph."
+    scene fs avacouchprank8b
+    player "Did my cute, tanned little tomboy get upset at my little prank?"
+    scene fs avacouchprank8c
+    ava "No."
+    scene fs avacouchprank8b
+    player "No?"
+    scene fs avacouchprank8c
+    ava "I'm not little."
+    scene fs avacouchprank9
+    player "*Kiss*"
+    player "Of course not."
+    player "I was teasing you but I really would fuck a post-workout Ava."
+    scene fs avacouchprank9b
+    ava "Y-You said I was stinky and sweaty!"
+    scene fs avacouchprank10
+    with Dissolve(0.5)
+    player "Mmmm"
+    player "Did I?"
+    show avacouchfinger movie1
+    player "Did I really?"
+    ava "Ahn..."
+    ava "No."
+    player "You want me to make you cum?"
+    ava "Yes."
+    player "You really want me to?"
+    ava "YES."
+    player "Are you my cute little tomboy?!"
+    scene fs avacouchprank11
+    with vpunch
+    ava "YESSS!!!"
+    ava "Ahhhmygod."
+    pause
+    scene fs blackblank
+    with Dissolve(0.7)
+    ava "Hah...hah.."
+    player "Ava?"
+    ava "Mmm?"
+    player "Do you want to go out on a date with me?"
+    ava "Really dude?"
+    player "Yeah."
+    ava "I...yeah I-I'd like that *Ahem*."
+    $ avaphase3interaction1 = 2
+    $ avaquestlog = "No more content for Ava this version (Ch2.5)"
+    jump overworldmap

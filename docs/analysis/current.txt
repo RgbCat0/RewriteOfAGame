@@ -1,0 +1,1173 @@
+REN'PY ARCHAEOLOGIST v3 REPORT
+========================================================================================
+Scan root: C:\Users\rgbcat1\Documents\GitHub\RewriteOfAGame\game
+
+Files scanned:                    32
+Lines scanned:                    45,629
+Labels defined:                   406
+Screens defined:                  130
+Label references:                 1,017
+Screen references:                986
+Duplicate labels:                 0
+Duplicate screens:                1
+Unresolved label refs:            8
+Unresolved screen refs:           3
+Likely unreferenced labels:       15
+Test/debug/temp labels:           3
+Possible fall-throughs total:     140
+  Strong:                         6
+  Review (`call screen`):         26
+  Uncertain compound flow:        108
+Suspicious comments:              10
+Commented-out code lines:         753
+
+========================================================================================
+PRIORITY 1 — UNRESOLVED SCREEN REFERENCES
+========================================================================================
+- phone [hide screen] characters\emily.rpy:4001  Did you mean: mia_phone
+- phone [hide screen] script.rpy:2472  Did you mean: mia_phone
+- phone [hide screen] script.rpy:2943  Did you mean: mia_phone
+
+========================================================================================
+PRIORITY 1 — UNRESOLVED LABEL REFERENCES
+========================================================================================
+- avaphase2whereshouldwemeetagain [jump] script.rpy:2262
+- avaphase2interaction1part3 [jump] script.rpy:2264  Did you mean: avaphase2interaction2part3, avaphase2interaction1part1, avaphase1interaction1part3
+- avaphase1interaction2part2 [jump] script.rpy:2281  Did you mean: avaphase2interaction2part2, avaphase1interaction2part1, avaphase1interaction1part2
+- avaseemsfocused [jump] script.rpy:2283
+- avaphase1interaction2part3 [jump] script.rpy:2299  Did you mean: avaphase1interaction2part3C, avaphase1interaction2part3B, avaphase2interaction2part3
+- avaphase2interaction1part2 [jump] script.rpy:2306  Did you mean: avaphase3interaction1part2, avaphase2interaction2part2, avaphase2interaction1part1
+- avaphase2whereshouldwemeetagain2 [jump] script.rpy:2309
+- miaphase2interaction3part1 [jump] script.rpy:2987  Did you mean: miaphase2interaction2part1, miaphase2interaction1part1, miaphase1interaction3part1
+
+========================================================================================
+PRIORITY 1 — STRONG FALL-THROUGH WARNINGS
+========================================================================================
+- office -> outsideoffice [plain fall-through]
+    script.rpy:349 (next label line 370)
+    Last statement (line 367): scene fs officeExtras
+    Why flagged: The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes.
+- checkphone -> gotophonefromcontacts [definite continuation after show screen]
+    script.rpy:1804 (next label line 1815)
+    Last statement (line 1813): show screen contacts
+    Why flagged: `show screen` does not block script execution. Unless another statement intervenes, execution continues into the next label.
+- test2 -> test4 [plain fall-through]
+    script.rpy:1936 (next label line 1943)
+    Last statement (line 1942): ""
+    Why flagged: The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes.
+- test4 -> testpuzzles [plain fall-through]
+    script.rpy:1943 (next label line 1957)
+    Last statement (line 1955): pause
+    Why flagged: The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes.
+- testpuzzles -> rotatepaper2 [plain fall-through]
+    script.rpy:1957 (next label line 1976)
+    Last statement (line 1972): "Alright lets test this"
+    Why flagged: The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes.
+- patroncredits -> endgame [plain fall-through]
+    script.rpy:3906 (next label line 4062)
+    Last statement (line 4059): "zack vitali"
+    Why flagged: The final top-level statement is not a jump/return. Ren'Py normally continues into the next label after it completes.
+
+========================================================================================
+PRIORITY 2 — `call screen` RETURN PATHS
+========================================================================================
+These are not immediate fall-throughs. `call screen` blocks until the screen returns. If it returns normally, script execution then continues into the next label.
+
+- insidecafe -> insideclub
+    script.rpy:392; last statement line 432: call screen inside_cafe
+- clubbathroom -> goinsidestall
+    script.rpy:478; last statement line 487: call screen clubrestroom
+- outsidegym -> gym
+    script.rpy:543; last statement line 561: call screen outsidethegym
+- library -> leavelibrary
+    script.rpy:615; last statement line 698: call screen library
+- miahousehallway -> juliaroom
+    script.rpy:796; last statement line 807: call screen miahallway
+- gfroom1 -> katiesroom
+    script.rpy:841; last statement line 860: call screen backbuttonGFROOM
+- gfhousehallway -> sophiahouse
+    script.rpy:879; last statement line 885: call screen gfhousehallway
+- sophiahouse -> apartmentlobbymenu
+    script.rpy:887; last statement line 931: call screen outsidesophiahouse
+- school -> schoolhallway
+    script.rpy:1173; last statement line 1224: call screen school
+- schoolhallway -> classroom1
+    script.rpy:1226; last statement line 1253: call screen schoolhallway
+- classroom2 -> classroom3
+    script.rpy:1305; last statement line 1323: call screen classroom2
+- classroom3 -> malllabel
+    script.rpy:1326; last statement line 1337: call screen classroom3
+- malllabel -> mallstore
+    script.rpy:1339; last statement line 1382: call screen mall
+- viewquests -> useinventory
+    script.rpy:1477; last statement line 1526: call screen questbox
+- useinventory -> gotosleep
+    script.rpy:1528; last statement line 1579: call screen inventory(item_list,adj=tutorials_adjustment)
+- explorebeach -> endofchapter2
+    script.rpy:1688; last statement line 1710: call screen beach_screen
+- gotophonefromcontacts -> gotopicturesfromphone
+    script.rpy:1815; last statement line 1818: call screen contacts
+- gotopicturesfromphone -> lookatkatieselfie
+    script.rpy:1822; last statement line 1868: call screen gameGallery
+- itspaint -> itsmovie
+    script.rpy:2155; last statement line 2158: call screen inventory(item_list, adj=tutorials_adjustment)
+- itsmovie -> itsvideogame
+    script.rpy:2159; last statement line 2162: call screen inventory(item_list, adj=tutorials_adjustment)
+- itsvideogame -> itscandy
+    script.rpy:2163; last statement line 2166: call screen inventory(item_list, adj=tutorials_adjustment)
+- itscandy -> itswatch
+    script.rpy:2167; last statement line 2173: call screen inventory(item_list, adj=tutorials_adjustment)
+- itswatch -> itscamera
+    script.rpy:2174; last statement line 2179: call screen inventory(item_list, adj=tutorials_adjustment)
+- itscamera -> itscondom
+    script.rpy:2181; last statement line 2183: call screen inventory(item_list, adj=tutorials_adjustment)
+- itscondom -> itshandcuffs
+    script.rpy:2184; last statement line 2187: call screen inventory(item_list, adj=tutorials_adjustment)
+- itshandcuffs -> machinePivot
+    script.rpy:2188; last statement line 2191: call screen inventory(item_list, adj=tutorials_adjustment)
+
+========================================================================================
+PRIORITY 3 — COMPOUND FLOW REQUIRES REVIEW
+========================================================================================
+These end in menu/if/loop blocks. They may be perfectly safe if every reachable branch jumps or returns.
+
+- ashleyinteraction1part2 -> continueashleybj1
+    characters\ashley.rpy:16; last top-level statement line 128: menu:
+- continueashleybj1 -> continueashleybj2
+    characters\ashley.rpy:135; last top-level statement line 151: menu:
+- continueashleybj2 -> continueashleybj3
+    characters\ashley.rpy:159; last top-level statement line 171: menu:
+- continueashleybj3 -> continueashleybj4
+    characters\ashley.rpy:179; last top-level statement line 201: menu:
+- avaphase1interaction1part3 -> payforgym
+    characters\ava.rpy:223; last top-level statement line 264: else:
+- avaphase1interaction1part4 -> giveuponava
+    characters\ava.rpy:342; last top-level statement line 427: menu:
+- giveuponava -> giveuponava2
+    characters\ava.rpy:435; last top-level statement line 437: menu:
+- esch1_ava -> avachapter1rom
+    characters\ava.rpy:1231; last top-level statement line 1427: menu:
+- avaquestion1 -> answerjournalist
+    characters\ava.rpy:2497; last top-level statement line 2499: menu:
+- avaquestion2 -> answermoney
+    characters\ava.rpy:2536; last top-level statement line 2538: menu:
+- avaquestion3 -> answerwell
+    characters\ava.rpy:2585; last top-level statement line 2587: menu:
+- avaquestion4 -> answereat
+    characters\ava.rpy:2621; last top-level statement line 2623: menu:
+- avaquestion5 -> answergood
+    characters\ava.rpy:2685; last top-level statement line 2687: menu:
+- didshemakeit -> avaphase2interaction2part3
+    characters\ava.rpy:2754; last top-level statement line 2786: else:
+- avabeachchapter2end -> avachapter2romance
+    characters\ava.rpy:3217; last top-level statement line 3299: else:
+- charlottephaseMiaDelegation -> charlottephase1interaction2part3
+    characters\charlotte.rpy:702; last top-level statement line 706: else:
+- gohomecharlotte -> charlottechapter1naughty
+    characters\charlotte.rpy:1461; last top-level statement line 2050: menu:
+- charlottebeachchapter2end -> charlottechapter2romance
+    characters\charlotte.rpy:3443; last top-level statement line 3484: else:
+- charlottephase3interaction1part1 -> continuebooboconvo
+    characters\charlotte.rpy:3879; last top-level statement line 4021: menu:
+- emilyphase1interaction2part4 -> gohomeemily
+    characters\emily.rpy:1276; last top-level statement line 1373: else:
+- gohomeemily -> emilyromance1
+    characters\emily.rpy:1394; last top-level statement line 1786: else:
+- emilyphase2interaction1part4 -> emilyphase2interaction1part5
+    characters\emily.rpy:3999; last top-level statement line 4069: else:
+- emilychoice -> emilychapter2romance
+    characters\emily.rpy:4835; last top-level statement line 4848: else:
+- conversationkatie2 -> conversationkatie3
+    characters\katie.rpy:13; last top-level statement line 17: else:
+- conversationkatie3 -> conversationkatie4
+    characters\katie.rpy:42; last top-level statement line 46: else:
+- conversationkatie4 -> conversationkatie5
+    characters\katie.rpy:66; last top-level statement line 70: else:
+- miaphase1interaction1part2 -> yupwefuckin
+    characters\mia.rpy:155; last top-level statement line 246: menu:
+- yupwefuckin -> askforkatienumber
+    characters\mia.rpy:252; last top-level statement line 322: menu:
+- wearedatingnowyes -> askforkatienumber2
+    characters\mia.rpy:353; last top-level statement line 400: menu:
+- textmiatocomeover -> dontcleanupmia
+    characters\mia.rpy:469; last top-level statement line 570: menu:
+- charlottesmiaquiz -> continuequiz1
+    characters\mia.rpy:706; last top-level statement line 819: menu:
+- continuequiz1 -> continuequiz2
+    characters\mia.rpy:829; last top-level statement line 837: menu:
+- continuequiz2 -> continuequiz3
+    characters\mia.rpy:847; last top-level statement line 861: menu:
+- continuequiz3 -> wronganswer
+    characters\mia.rpy:871; last top-level statement line 889: menu:
+- lookingforphonepark -> lookingforphonemall
+    characters\mia.rpy:1318; last top-level statement line 1330: else:
+- lookingforphonemall -> lookingforphonearcade
+    characters\mia.rpy:1335; last top-level statement line 1351: else:
+- lookingforphonearcade -> looking4miaphone
+    characters\mia.rpy:1355; last top-level statement line 1373: else:
+- continuemiasex -> snugglewithmia
+    characters\mia.rpy:1573; last top-level statement line 1712: menu:
+- miaphase2interaction1part1 -> malltripwithcharlotte
+    characters\mia.rpy:2150; last top-level statement line 2188: menu:
+- malltripwithmia -> thewhiteone
+    characters\mia.rpy:3151; last top-level statement line 3253: menu:
+- miaphase2interaction2part2 -> juliatablehjchoice
+    characters\mia.rpy:3459; last top-level statement line 3491: else:
+- juliatablehjchoice -> juliatablehj
+    characters\mia.rpy:3494; last top-level statement line 3506: menu:
+- continuedinner2 -> katiedinnerblowjob
+    characters\mia.rpy:3572; last top-level statement line 3604: else:
+- miabeachchapter2end -> miachapter2endsex
+    characters\mia.rpy:3841; last top-level statement line 3883: else:
+- oliviaphase1interaction2part2 -> gamingpartnerolivia
+    characters\olivia.rpy:530; last top-level statement line 594: menu:
+- oliviaphase1interaction2part4 -> lookattits
+    characters\olivia.rpy:1168; last top-level statement line 1306: menu:
+- gohomeolivia -> oliviachapter1rom
+    characters\olivia.rpy:1568; last top-level statement line 1866: menu:
+- oliviaphase2interaction3part1 -> frogfightwin1
+    characters\olivia.rpy:2741; last top-level statement line 2780: menu:
+- frogfightwin1 -> frogfightwin2
+    characters\olivia.rpy:2787; last top-level statement line 2789: menu:
+- frogfightwin2 -> frogfightwin3
+    characters\olivia.rpy:2797; last top-level statement line 2799: menu:
+- frogfightwin3 -> frogfightwin4
+    characters\olivia.rpy:2806; last top-level statement line 2809: menu:
+- frogfightwin4 -> frogfightwin5
+    characters\olivia.rpy:2816; last top-level statement line 2818: menu:
+- frogfightwin5 -> frogfightwin
+    characters\olivia.rpy:2825; last top-level statement line 2827: menu:
+- oliviabeachchapter2end -> oliviachapter2romance
+    characters\olivia.rpy:2919; last top-level statement line 2961: else:
+- pennyfirststream -> pennysecondstream
+    characters\penny.rpy:194; last top-level statement line 228: menu:
+- pennysecondstream -> pennythirdstream
+    characters\penny.rpy:261; last top-level statement line 309: menu:
+- pennythirdstream -> pennyphase2sex1
+    characters\penny.rpy:341; last top-level statement line 350: menu:
+- gohomesophia -> sophiachapter1rom
+    characters\sophia.rpy:806; last top-level statement line 954: menu:
+- sophiaphase2interaction1part1 -> sophiaphase2interaction2part2
+    characters\sophia.rpy:1145; last top-level statement line 1798: else:
+- sophiabeachchapter2end -> sophiachapter2romance
+    characters\sophia.rpy:2654; last top-level statement line 2691: else:
+- gameIntro -> skiptochapter2
+    gameDialogues.rpy:3; last top-level statement line 27: menu:
+- skiptochapter2 -> startchapter2Mia
+    gameDialogues.rpy:34; last top-level statement line 81: menu:
+- chapter3event1 -> getoutoftub
+    gameDialogues.rpy:648; last top-level statement line 1039: else:
+- continuephase3event1bedtime -> sleepwithcharlotte
+    gameDialogues.rpy:1332; last top-level statement line 1346: elif chosenchick == "Nobody":
+- sleepwithcharlotte -> sleepwithemily
+    gameDialogues.rpy:1349; last top-level statement line 1359: menu:
+- sleepwithemily -> sleepwithsophia
+    gameDialogues.rpy:1365; last top-level statement line 1374: menu:
+- sleepwithsophia -> sleepwithava
+    gameDialogues.rpy:1380; last top-level statement line 1389: menu:
+- sleepwithava -> sleepwitholivia
+    gameDialogues.rpy:1395; last top-level statement line 1406: menu:
+- sleepwitholivia -> phase2ending
+    gameDialogues.rpy:1412; last top-level statement line 1421: menu:
+- playerRoom -> playerlivingroom
+    script.rpy:17; last top-level statement line 51: elif timeofday == "Night":
+- playerlivingroom -> startofchapter1
+    script.rpy:55; last top-level statement line 99: elif timeofday == "Night":
+- overworldmap -> gotosunnyside
+    script.rpy:157; last top-level statement line 242: else:
+- gotosunnyside -> displaycalender
+    script.rpy:246; last top-level statement line 323: else:
+- outsideoffice -> insidecafe
+    script.rpy:370; last top-level statement line 380: else:
+- insideclub -> clubbathroom
+    script.rpy:436; last top-level statement line 475: else:
+- beach -> outsidegym
+    script.rpy:502; last top-level statement line 537: else:
+- gym -> library
+    script.rpy:563; last top-level statement line 612: elif timeofday == "Day":
+- gfhouse -> miatopsteps
+    script.rpy:705; last top-level statement line 775: else:
+- miatopsteps -> miahousehallway
+    script.rpy:779; last top-level statement line 788: menu:
+- apartmentlobbyolivia -> visitstephaniebuilding
+    script.rpy:941; last top-level statement line 961: else:
+- visitstephaniebuilding -> visitoliviabuilding
+    script.rpy:974; last top-level statement line 995: else:
+- visitoliviabuilding -> arcade
+    script.rpy:1003; last top-level statement line 1012: if oliviaphase3interaction1 == 1 and timeofday == "Night":
+- charlotteshouse -> school
+    script.rpy:1120; last top-level statement line 1168: else:
+- classroom1 -> classroom2
+    script.rpy:1255; last top-level statement line 1302: else:
+- changetextbox -> viewquests
+    script.rpy:1470; last top-level statement line 1473: else:
+- gotowork -> test2
+    script.rpy:1875; last top-level statement line 1912: elif timeofday == "Night":
+- deactivatephone -> returnwhereyouare
+    script.rpy:1997; last top-level statement line 2035: elif whereami == "cafe":
+- returnwhereyouare -> buysomething
+    script.rpy:2039; last top-level statement line 2086: elif whereami == "outsideoffice":
+- buysomething -> buyfitbit
+    script.rpy:2116; last top-level statement line 2125: else:
+- buyfitbit -> buyfitbit2
+    script.rpy:2130; last top-level statement line 2133: menu:
+- buyfitbit2 -> itspaint
+    script.rpy:2139; last top-level statement line 2149: else:
+- machinePivot -> avaPivot
+    script.rpy:2200; last top-level statement line 2206: else:
+- avaPivot -> emilyPivot
+    script.rpy:2211; last top-level statement line 2302: elif whereami == "classroom2":
+- emilyPivot -> stephaniePivot
+    script.rpy:2378; last top-level statement line 2569: if whereami == "library":
+- stephaniePivot -> melissaPivot
+    script.rpy:2716; last top-level statement line 2722: else:
+- melissaPivot -> ravenPivot
+    script.rpy:2727; last top-level statement line 2730: else:
+- ravenPivot -> miaPivot
+    script.rpy:2733; last top-level statement line 2736: elif ravenscene1 == 1 and timeofday == "Night":
+- juliaPivot -> sophiaPivot
+    script.rpy:3608; last top-level statement line 3620: else:
+- katiePivot -> charlottePivot
+    script.rpy:3674; last top-level statement line 3741: else:
+- victoriaPivot -> patroncredits
+    script.rpy:3892; last top-level statement line 3899: else:
+- ashleyconversation -> conversationhandcuffs
+    systems\shop.rpy:99; last top-level statement line 120: else:
+- conversationhandcuffs -> conversationcondoms
+    systems\shop.rpy:132; last top-level statement line 146: menu:
+- conversationcondoms -> conversationwatch
+    systems\shop.rpy:168; last top-level statement line 185: menu:
+- conversationwatch -> conversationvideogame
+    systems\shop.rpy:204; last top-level statement line 214: menu:
+- conversationvideogame -> conversationcandy
+    systems\shop.rpy:243; last top-level statement line 261: menu:
+- conversationcandy -> conversationmovie
+    systems\shop.rpy:291; last top-level statement line 318: menu:
+- conversationmovie -> conversationpaint
+    systems\shop.rpy:345; last top-level statement line 366: menu:
+- conversationpaint -> conversationcamera
+    systems\shop.rpy:393; last top-level statement line 417: menu:
+
+========================================================================================
+TEST / DEBUG / TEMP-LIKE LABELS
+========================================================================================
+- test2  script.rpy:1936
+- test4  script.rpy:1943
+- testpuzzles  script.rpy:1957
+
+========================================================================================
+LIKELY UNREFERENCED LABELS
+========================================================================================
+Treat this as a review list, NOT a delete list. Labels may be called dynamically, from Python, or by Ren'Py conventions.
+
+- ashleyinteraction1part1  characters\ashley.rpy:3
+- avaphase2interaction2part1  characters\ava.rpy:2400
+- charlottephase2interaction2part1  characters\charlotte.rpy:2979
+- whensthepaintagain  characters\emily.rpy:312
+- miaphase1interaction2part3wakeup  characters\mia.rpy:1132
+- foundmiaphoneconvo  characters\mia.rpy:1437
+- miaphase3interaction1part1  characters\mia.rpy:4014
+- esch1_mia  gameDialogues.rpy:2309
+- apartmentlobbymenu  script.rpy:933
+- charlotteshouse  script.rpy:1120
+- changetextbox  script.rpy:1470
+- test2  script.rpy:1936
+- test4  script.rpy:1943
+- patroncredits  script.rpy:3906
+- endgame  script.rpy:4062
+
+========================================================================================
+DUPLICATE LABELS
+========================================================================================
+None found.
+
+========================================================================================
+DUPLICATE SCREENS
+========================================================================================
+A duplicate screen may be intentional, version-specific, or an override. Inspect before changing it.
+
+- quick_menu
+    screens.rpy:274
+    screens.rpy:1459
+
+========================================================================================
+SUSPICIOUS COMMENTS
+========================================================================================
+- characters\ava.rpy:805  # part 3 (part 2 is unsed part3 (A) is also unused? nice bro)
+- characters\ava.rpy:3218  # "test ava"
+- gui.rpy:377  # # than this are to be show, the oldest entry will be removed.
+- options.rpy:56  # # To allow the user to play a test sound on the sound or voice channel,
+- options.rpy:211  # define build.itch_project = "renpytom/test-project"
+- script.rpy:1584  # $ katiephase3interaction1 = 0 #delete this liiiiiinnne afterrrr you test the katie scene---------------------------------
+- script.rpy:1893  # "Test":
+- script.rpy:1894  # jump test4
+- script.rpy:1895  # jump test2
+- script.rpy:1909  # "Tester":
+
+========================================================================================
+COMMENTED-OUT CODE
+========================================================================================
+- characters\ava.rpy:14  # show fbava current:
+- characters\ava.rpy:55  # play sound "audio/avagameaudio/avaohuh.wav"
+- characters\ava.rpy:1010  # show fbava current:
+- characters\ava.rpy:1649  # $ hiden_textbox = False
+- characters\ava.rpy:1958  # $ hiden_textbox = False
+- characters\charlotte.rpy:3474  # $ charlottephase2interaction3 = 2
+- characters\emily.rpy:439  # $ hiden_textbox = False
+- characters\emily.rpy:513  # $ hiden_textbox = False
+- characters\emily.rpy:520  # $ timeofday = "Day"
+- characters\emily.rpy:4836  # $ emilyphase2interaction2 = 3
+- characters\josy.rpy:96  # scene 2
+- characters\julia.rpy:1  # scene 1
+- characters\julia.rpy:176  # scene 2
+- characters\julia.rpy:224  # scene 3
+- characters\julia.rpy:469  # scene 4
+- characters\melissa.rpy:2  # scene 1
+- characters\melissa.rpy:88  # scene 2
+- characters\mia.rpy:379  # show fbkatie phonelook
+- characters\mia.rpy:1710  # $ hiden_textbox = False
+- characters\mia.rpy:1747  # $ hiden_textbox = False
+- characters\mia.rpy:1836  # $ hiden_textbox = False
+- characters\mia.rpy:2095  # $ hiden_textbox = False
+- characters\mia.rpy:3873  # $ miaphase2interaction2 = 6
+- characters\mia.rpy:3874  # if miaphase2interaction2 >= 6:
+- characters\olivia.rpy:2951  # $ oliviaphase2interaction3 = 1
+- characters\penny.rpy:1  # scene 1
+- characters\penny.rpy:170  # scene after
+- characters\penny.rpy:259  # scene 3
+- characters\penny.rpy:339  # scene 4
+- characters\penny.rpy:450  # scene 5
+- characters\penny.rpy:552  # scene 6
+- characters\raven.rpy:1  # scene 1
+- characters\raven.rpy:247  # scene 2
+- characters\sophia.rpy:304  # play sound "audio/sophiagameaudio/sophiacutelaugh.wav"
+- characters\sophia.rpy:319  # play sound "audio/sophiagameaudio/sophialonglaugh.wav"
+- characters\sophia.rpy:436  # play sound "audio/sophiagameaudio/sophiashortlaugh.wav"
+- characters\sophia.rpy:458  # play sound "audio/sophiagameaudio/sophiadiis.wav"
+- characters\sophia.rpy:465  # play sound "audio/sophiagameaudio/sophiashortlaugh.wav"
+- characters\sophia.rpy:798  # $ hiden_textbox = False
+- characters\sophia.rpy:983  # $ hiden_textbox = False
+- characters\sophia.rpy:1086  # $ hiden_textbox = False
+- characters\sophia.rpy:2483  # $ contact_list.append("Sophia")
+- characters\sophia.rpy:2681  # $ sophiaphase2interaction3 = 2
+- characters\victoria.rpy:2  # scene 1
+- characters\victoria.rpy:89  # scene 2
+- characters\victoria.rpy:163  # scene 3
+- custom_screens.rpy:4  # Screen Styles
+- custom_screens.rpy:1260  # screen guidisplayables(money, day):
+- custom_screens.rpy:1697  # for item in item_list:
+- custom_screens.rpy:1698  # if item == "Paint":
+- custom_screens.rpy:1701  # elif item == "Movie":
+- custom_screens.rpy:1704  # elif item == "Video Game":
+- custom_screens.rpy:1707  # elif item == "Candy":
+- custom_screens.rpy:1710  # elif item == "HP-CheckWatch-3000":
+- gameDialogues.rpy:194  # $ hiden_textbox = False
+- gameDialogues.rpy:1494  # hide fbmia
+- gameDialogues.rpy:1495  # show fbmia current:
+- gameDialogues.rpy:1497  # $ miaSprite = 14
+- gameDialogues.rpy:1916  # $ hiden_textbox = False
+- gameDialogues.rpy:2311  # scene fs crowdcheer1
+- gameDialogues.rpy:2315  # scene fs trackrace0
+- gameDialogues.rpy:2318  # scene fs crowdcheer1
+- gameDialogues.rpy:2321  # scene fs miacrowd1
+- gameDialogues.rpy:2323  # scene fs miacrowd1mia
+- gameDialogues.rpy:2325  # scene fs miacrowd1b
+- gameDialogues.rpy:2328  # scene fs miacrowd1bplayer
+- gameDialogues.rpy:2330  # scene fs miacrowd2
+- gameDialogues.rpy:2334  # scene fs trackrace0
+- gameDialogues.rpy:2338  # scene fs miacrowd3
+- gameDialogues.rpy:2344  # scene fs trackrace1
+- gameDialogues.rpy:2349  # scene fs miacrowd3
+- gameDialogues.rpy:2355  # scene fs miacrowd4
+- gameDialogues.rpy:2359  # scene fs miacrowd4b
+- gameDialogues.rpy:2361  # scene fs miacrowd5
+- gameDialogues.rpy:2365  # scene fs miacrowd5b
+- gameDialogues.rpy:2367  # scene fs miacrowd5
+- gameDialogues.rpy:2369  # scene fs trackrace2
+- gameDialogues.rpy:2373  # scene fs miacrowd5b
+- gameDialogues.rpy:2376  # image fingermia:
+- gameDialogues.rpy:2383  # show fingermia
+- gameDialogues.rpy:2387  # pause
+- gameDialogues.rpy:2388  # scene fs trackrace2
+- gameDialogues.rpy:2392  # scene fs trackrace3
+- gameDialogues.rpy:2395  # scene fs miacrowd6
+- gameDialogues.rpy:2400  # scene fs miacrowd7
+- gameDialogues.rpy:2404  # scene fs blackblank
+- gui.rpy:209  # define gui.navigation_button_width = 250
+- imagedefines.rpy:1721  # image fs waitressbang1 = "waitress scene 1.png"
+- imagedefines.rpy:1722  # image fs waitressbang2 = "waitress scene 2.png"
+- imagedefines.rpy:2912  # image fbcharlotte library1 = "Sprites/charlottelibraryreading.png"
+- options.rpy:59  # define config.sample_sound = "sample-sound.ogg"
+- options.rpy:60  # define config.sample_voice = "sample-voice.ogg"
+- options.rpy:67  # define config.main_menu_music = "main-menu-theme.ogg"
+- options.rpy:205  # define build.google_play_key = "..."
+- options.rpy:211  # define build.itch_project = "renpytom/test-project"
+- script.rpy:587  # $ avaphase1interaction3 = 10
+- script.rpy:728  # if timeofday == "Morning" and miaphase2interaction2 == 4:
+- script.rpy:730  # $ miaphase2interaction2 = 4
+- script.rpy:731  # jump overworldmap
+- script.rpy:1238  # elif emilyphase1interaction2 == 6:
+- script.rpy:1239  # hide screen emily_atschool
+- script.rpy:1309  # if currentchapter == 2 and timeofday == "Day":
+- script.rpy:1310  # show screen ava_atschool
+- script.rpy:1529  # hide screen uppergui
+- script.rpy:1584  # $ katiephase3interaction1 = 0 #delete this liiiiiinnne afterrrr you test the katie scene---------------------------------
+- script.rpy:1689  # scene fs beachwithgirls
+- script.rpy:1893  # "Test":
+- script.rpy:1894  # jump test4
+- script.rpy:1895  # jump test2
+- script.rpy:1896  # jump sophiaphase1interaction2part2
+- script.rpy:1909  # "Tester":
+- script.rpy:1958  # show screen puzzle_paper2
+- script.rpy:1959  # show screen puzzle_paper3
+- script.rpy:1960  # show screen puzzle_paper4
+- script.rpy:1961  # show screen puzzle_paper5
+- script.rpy:1962  # show screen puzzle_paper6
+- script.rpy:1963  # show paperpuzzle2
+- script.rpy:1964  # show paperpuzzle3
+- script.rpy:1965  # show paperpuzzle4
+- script.rpy:1966  # show paperpuzzle5
+- script.rpy:1967  # show paperpuzzle6
+- script.rpy:1968  # show screen puzzle_paper1
+- script.rpy:1969  # pause
+- script.rpy:2314  # hide screen uppergui
+- script.rpy:2315  # hide screen ava_atschool
+- script.rpy:2320  # if whereami == "classroom2" and timeofday == "Day" and avaphase2interaction1 == 1 and currentchapter > 1:
+- script.rpy:2321  # jump avaphase2interaction1part2
+- script.rpy:2322  # elif whereami == "classroom2" and timeofday == "Day" and avaphase2interaction1 == 2 and currentchapter > 1:
+- script.rpy:2323  # jump avaphase2whereshouldwemeetagain2
+- script.rpy:2326  # if whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 0:
+- script.rpy:2327  # jump avaphase1interaction1part1
+- script.rpy:2328  # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 1:
+- script.rpy:2329  # jump avaphase1interaction1part1postconvo
+- script.rpy:2330  # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 2:
+- script.rpy:2331  # jump avayoushouldbuygympass
+- script.rpy:2332  # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 3:
+- script.rpy:2333  # jump igotthepassava
+- script.rpy:2334  # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 4:
+- script.rpy:2335  # jump avaatschoolinteraction1
+- script.rpy:2336  # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 5 and avaphase1interaction2 == 1:
+- script.rpy:2337  # scene fs schoolhallway
+- script.rpy:2339  # jump returnwhereyouare
+- script.rpy:2340  # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 6 and avaphase1interaction2 == 3:
+- script.rpy:2341  # scene fs schoolhallway
+- script.rpy:2342  # jump avaphase1interaction2part3C
+- script.rpy:2343  # elif whereami != "Park" and timeofday != "Night" and avaphase1interaction2 == 2:
+- script.rpy:2344  # scene fs schoolhallway
+- script.rpy:2346  # jump returnwhereyouare
+- script.rpy:2348  # if whereami == "gym" and timeofday == "Morning" and avaphase2interaction1 == 0:
+- script.rpy:2349  # jump avaphase2interaction1part1
+- script.rpy:2350  # elif whereami == "gym" and timeofday == "Morning" and avaphase2interaction1 == 1:
+- script.rpy:2351  # jump avaphase2whereshouldwemeetagain
+- script.rpy:2352  # elif whereami == "gym" and timeofday == "Morning" and avaphase2interaction1 == 2:
+- script.rpy:2353  # jump avaphase2interaction1part3
+- script.rpy:2354  # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction2 == 2:
+- script.rpy:2355  # jump avaphase1interaction2part2
+- script.rpy:2356  # elif whereami == "park" and timeofday == "Night" and avaphase1interaction2 == 3:
+- script.rpy:2357  # jump avaphase1interaction2part3
+- script.rpy:2358  # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction2 == 4:
+- script.rpy:2359  # jump avaseemsfocused
+- script.rpy:2360  # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 1:
+- script.rpy:2361  # jump avaphase1interaction1part2
+- script.rpy:2362  # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 2:
+- script.rpy:2363  # jump avayoushouldbuygympass
+- script.rpy:2364  # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 3:
+- script.rpy:2365  # jump avaphase1interaction1part4
+- script.rpy:2366  # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 4:
+- script.rpy:2367  # jump avaphase1interaction2part1
+- script.rpy:2373  # if whereami != "Park" and avaphase1interaction2 == 5:
+- script.rpy:2374  # jump letsmeetatthepark
+- script.rpy:2581  # if emilyphase1interaction2 == 6 and emilyphase2interaction1 == 0 and currentchapter == 2 and whereami == "schoolhallway":
+- script.rpy:2582  # jump emilyphase2interaction1part1
+- script.rpy:2583  # elif emilyphase2interaction1 == 1 and timeofday == "Morning" and whereami == "schoolhallway" and emilyphase2interaction1 != 2:
+- script.rpy:2584  # jump emilyphase2interaction1part2
+- script.rpy:2585  # elif emilyphase2interaction1 == 3 and timeofday != "Night" and (whereami == "schoolhallway" or whereami == "library"):
+- script.rpy:2586  # jump emilyphase2interaction1part4
+- script.rpy:2587  # elif emilyphase2interaction1 == 2:
+- script.rpy:2588  # hide screen contacts
+- script.rpy:2589  # hide screen phonecontacts
+- script.rpy:2591  # jump returnwhereyouare
+- script.rpy:2592  # elif emilyphase2interaction1 == 3:
+- script.rpy:2593  # hide screen contacts
+- script.rpy:2594  # hide screen phonecontacts
+- script.rpy:2598  # jump returnwhereyouare
+- script.rpy:2599  # elif emilyphase2interaction1 == 4 and whereami != "playerRoom":
+- script.rpy:2600  # hide screen contacts
+- script.rpy:2601  # hide screen phonecontacts
+- script.rpy:2603  # jump returnwhereyouare
+- script.rpy:2607  # if emilyphase1interaction1 == 0 and whereami == "schoolhallway" and timeofday == "Morning":
+- script.rpy:2608  # hide screen uppergui
+- script.rpy:2609  # jump emilyphase1interaction1part1
+- script.rpy:2610  # elif emilyphase1interaction1 == 1 and whereami == "schoolhallway" and timeofday == "Morning":
+- script.rpy:2611  # jump emilyisbusy
+- script.rpy:2612  # elif emilyphase1interaction1 == 1 and whereami == "schoolhallway" and timeofday == "Day":
+- script.rpy:2613  # jump emilyphase1interaction1part2
+- script.rpy:2614  # elif emilyphase1interaction1 == 2 and whereami == "schoolhallway" and timeofday == "Morning":
+- script.rpy:2615  # jump whensthepaintagain2
+- script.rpy:2616  # elif emilyphase1interaction1 == 3 and whereami == "schoolhallway" and timeofday != "Night":
+- script.rpy:2617  # jump emilyphase1interaction1part3
+- script.rpy:2619  # if emilyphase1interaction2 == 1 and whereami == "schoolhallway":
+- script.rpy:2620  # hide screen uppergui
+- script.rpy:2621  # jump emilyphase1interaction2part1
+- script.rpy:2622  # elif emilyphase1interaction2 == 2 and whereami == "schoolhallway":
+- script.rpy:2623  # hide screen uppergui
+- script.rpy:2624  # if timeofday == "Day":
+- script.rpy:2625  # jump emilyphase1interaction2part2
+- script.rpy:2626  # else:
+- script.rpy:2627  # jump emilyrunsaway
+- script.rpy:2628  # elif emilyphase1interaction2 == 3 and whereami != "schoolhallway":
+- script.rpy:2630  # jump returnwhereyouare
+- script.rpy:2631  # elif emilyphase1interaction2 == 3 and whereami == "schoolhallway":
+- script.rpy:2632  # scene fs schoolhallway2extras
+- script.rpy:2633  # hide screen emily_atschool
+- script.rpy:2635  # jump returnwhereyouare
+- script.rpy:2636  # elif emilyphase1interaction2 == 4 and whereami != "livingRoom" and whereami != "playerRoom":
+- script.rpy:2639  # if whereami == "playerRoom" and timeofday == "Morning":
+- script.rpy:2640  # scene fs playerroomMorn
+- script.rpy:2641  # elif whereami == "playerRoom" and timeofday == "Day":
+- script.rpy:2642  # scene fs playerroomDay
+- script.rpy:2643  # elif whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:2644  # scene fs playerroomNight
+- script.rpy:2645  # elif whereami == "livingRoom":
+- script.rpy:2646  # if timeofday == "Night":
+- script.rpy:2647  # scene fs livingroomnight
+- script.rpy:2648  # else:
+- script.rpy:2649  # scene fs livingroom
+- script.rpy:2650  # elif whereami == "overworldmap" and timeofday == "Night":
+- script.rpy:2651  # scene fs overworldnight
+- script.rpy:2652  # elif whereami == "overworldmap":
+- script.rpy:2653  # scene fs overworld
+- script.rpy:2654  # elif whereami == "gym":
+- script.rpy:2655  # scene fs gym
+- script.rpy:2656  # elif whereami == "library":
+- script.rpy:2657  # hide screen charlotte_library
+- script.rpy:2658  # scene fs library
+- script.rpy:2659  # elif whereami == "arcade":
+- script.rpy:2660  # scene fs arcade
+- script.rpy:2661  # elif whereami == "gfhouse":
+- script.rpy:2662  # scene fs gfhouse
+- script.rpy:2663  # elif whereami == "miashallway":
+- script.rpy:2664  # scene fs gfhousehallway
+- script.rpy:2665  # elif whereami == "gfroom":
+- script.rpy:2666  # scene fs gfroom
+- script.rpy:2667  # elif whereami == "sophiahouse":
+- script.rpy:2668  # scene fs sophiahouse
+- script.rpy:2669  # elif whereami == "school":
+- script.rpy:2670  # hide screen ava_atschool
+- script.rpy:2671  # scene fs schoolhallway
+- script.rpy:2672  # elif whereami == "schoolhallway":
+- script.rpy:2673  # hide screen emily_atschool
+- script.rpy:2674  # scene fs schoolhallway2
+- script.rpy:2675  # elif whereami == "classroom1":
+- script.rpy:2676  # hide screen mia_atschool
+- script.rpy:2677  # hide screen sophia_atschool
+- script.rpy:2678  # hide screen mia_sophia_atschool
+- script.rpy:2679  # scene fs classroom
+- script.rpy:2680  # elif whereami == "classroom2":
+- script.rpy:2681  # hide screen olivia_atschool
+- script.rpy:2682  # scene fs classroom
+- script.rpy:2683  # elif whereami == "classroom3":
+- script.rpy:2684  # hide screen charlotte_school
+- script.rpy:2685  # hide screen backbuttonCLASSROOM
+- script.rpy:2686  # scene fs classroom3
+- script.rpy:2687  # elif whereami == "mall":
+- script.rpy:2688  # scene fs malllabel
+- script.rpy:2690  # jump returnwhereyouare
+- script.rpy:2691  # elif emilyphase1interaction2 == 4 and (whereami == "livingRoom" or whereami == "playerRoom") and timeofday != "Night":
+- script.rpy:2692  # jump emilyphase1interaction2part3
+- script.rpy:2694  # elif emilyphase1interaction2 == 4 and (whereami == "livingRoom" or whereami == "playerRoom") and timeofday == "Night":
+- script.rpy:2695  # hide screen phonecontacts
+- script.rpy:2696  # hide screen contacts
+- script.rpy:2697  # hide screen backbuttonROOM
+- script.rpy:2698  # hide screen backbuttonLIVINGROOM
+- script.rpy:2701  # jump returnwhereyouare
+- script.rpy:2702  # elif emilyphase1interaction2 == 5 and whereami == "schoolhallway" and timeofday != "Night":
+- script.rpy:2703  # jump emilyphase1interaction2part4
+- script.rpy:2704  # elif emilyphase1interaction2 == 5:
+- script.rpy:2705  # hide screen uppergui
+- script.rpy:2706  # hide screen contacts
+- script.rpy:2707  # hide screen phonecontacts
+- script.rpy:2709  # jump returnwhereyouare
+- script.rpy:2710  # elif emilyphase1interaction2 == 6:
+- script.rpy:2711  # if whereami == "schoolhallway":
+- script.rpy:2712  # scene fs schoolhallway2
+- script.rpy:2714  # jump returnwhereyouare
+- script.rpy:3056  # if charlottephase1interaction2 == 2:
+- script.rpy:3057  # jump charlottephaseMiaDelegation
+- script.rpy:3059  # if miaphase2interaction1 == 1 and currentchapter == 2 and whereami == "gfroom":
+- script.rpy:3060  # jump miaphase2interaction1part1
+- script.rpy:3062  # if whereami == "playerRoom" and timeofday == "Morning":
+- script.rpy:3063  # scene fs playerroomMorn
+- script.rpy:3064  # elif whereami == "playerRoom" and timeofday == "Day":
+- script.rpy:3065  # scene fs playerroomDay
+- script.rpy:3066  # elif whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:3067  # scene fs playerroomNight
+- script.rpy:3068  # elif whereami == "livingRoom":
+- script.rpy:3069  # if timeofday == "Night":
+- script.rpy:3070  # scene fs livingroomnight
+- script.rpy:3071  # else:
+- script.rpy:3072  # scene fs livingroom
+- script.rpy:3073  # elif whereami == "overworldmap" and timeofday == "Night":
+- script.rpy:3074  # scene fs overworldnight
+- script.rpy:3075  # elif whereami == "overworldmap":
+- script.rpy:3076  # scene fs overworld
+- script.rpy:3077  # elif whereami == "gym":
+- script.rpy:3078  # scene fs gym
+- script.rpy:3079  # elif whereami == "library":
+- script.rpy:3080  # scene fs library
+- script.rpy:3081  # elif whereami == "arcade":
+- script.rpy:3082  # scene fs arcade
+- script.rpy:3083  # elif whereami == "gfhouse":
+- script.rpy:3084  # scene fs gfhouse
+- script.rpy:3085  # elif whereami == "miashallway":
+- script.rpy:3086  # scene fs gfhousehallway
+- script.rpy:3087  # elif whereami == "sophiahouse":
+- script.rpy:3088  # scene fs sophiahouse
+- script.rpy:3089  # elif whereami == "school":
+- script.rpy:3090  # scene fs schoolhallway
+- script.rpy:3091  # elif whereami == "schoolhallway":
+- script.rpy:3092  # scene fs schoolhallway2
+- script.rpy:3093  # elif whereami == "classroom1":
+- script.rpy:3094  # hide screen mia_atschool
+- script.rpy:3095  # hide screen sophia_atschool
+- script.rpy:3096  # hide screen mia_sophia_atschool
+- script.rpy:3097  # scene fs classroom
+- script.rpy:3098  # elif whereami == "mall":
+- script.rpy:3099  # scene fs malllabel
+- script.rpy:3101  # if miaphase1interaction3 == 1 and whereami != "classroom1":
+- script.rpy:3103  # if whereami == "playerRoom" and timeofday == "Morning":
+- script.rpy:3104  # scene fs playerroomMorn
+- script.rpy:3105  # elif whereami == "playerRoom" and timeofday == "Day":
+- script.rpy:3106  # scene fs playerroomDay
+- script.rpy:3107  # elif whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:3108  # scene fs playerroomNight
+- script.rpy:3109  # elif whereami == "livingRoom":
+- script.rpy:3110  # if timeofday == "Night":
+- script.rpy:3111  # scene fs livingroomnight
+- script.rpy:3112  # else:
+- script.rpy:3113  # scene fs livingroom
+- script.rpy:3114  # elif whereami == "overworldmap" and timeofday == "Night":
+- script.rpy:3115  # scene fs overworldnight
+- script.rpy:3116  # elif whereami == "overworldmap":
+- script.rpy:3117  # scene fs overworld
+- script.rpy:3118  # elif whereami == "gym":
+- script.rpy:3119  # scene fs gym
+- script.rpy:3120  # elif whereami == "library":
+- script.rpy:3121  # scene fs library
+- script.rpy:3122  # elif whereami == "arcade":
+- script.rpy:3123  # scene fs arcade
+- script.rpy:3124  # elif whereami == "gfhouse":
+- script.rpy:3125  # scene fs gfhouse
+- script.rpy:3126  # elif whereami == "miashallway":
+- script.rpy:3127  # scene fs gfhousehallway
+- script.rpy:3128  # elif whereami == "sophiahouse":
+- script.rpy:3129  # scene fs sophiahouse
+- script.rpy:3130  # elif whereami == "school":
+- script.rpy:3131  # hide screen ava_atschool
+- script.rpy:3132  # scene fs schoolhallway
+- script.rpy:3133  # elif whereami == "schoolhallway":
+- script.rpy:3134  # hide screen emily_atschool
+- script.rpy:3135  # scene fs schoolhallway2
+- script.rpy:3136  # elif whereami == "classroom1":
+- script.rpy:3137  # hide screen mia_atschool
+- script.rpy:3138  # hide screen sophia_atschool
+- script.rpy:3139  # hide screen mia_sophia_atschool
+- script.rpy:3140  # scene fs classroom
+- script.rpy:3141  # elif whereami == "mall":
+- script.rpy:3142  # scene fs malllabel
+- script.rpy:3146  # jump returnwhereyouare
+- script.rpy:3148  # elif miaphase1interaction3 == 1 and whereami == "classroom1":
+- script.rpy:3150  # scene fs classroomZOOM
+- script.rpy:3152  # jump miaphase1interaction3part1
+- script.rpy:3154  # elif miaphase1interaction3 == 2 and whereami == "classroom1":
+- script.rpy:3155  # hide screen mia_atschool
+- script.rpy:3156  # scene fs classroomZOOM
+- script.rpy:3158  # jump miaphase1interaction3part1postconvo
+- script.rpy:3159  # elif miaphase1interaction3 == 2:
+- script.rpy:3160  # if whereami == "playerRoom" and timeofday == "Morning":
+- script.rpy:3161  # scene fs playerroomMorn
+- script.rpy:3162  # elif whereami == "playerRoom" and timeofday == "Day":
+- script.rpy:3163  # scene fs playerroomDay
+- script.rpy:3164  # elif whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:3165  # scene fs playerroomNight
+- script.rpy:3166  # elif whereami == "livingRoom":
+- script.rpy:3167  # if timeofday == "Night":
+- script.rpy:3168  # scene fs livingroomnight
+- script.rpy:3169  # else:
+- script.rpy:3170  # scene fs livingroom
+- script.rpy:3171  # elif whereami == "overworldmap" and timeofday == "Night":
+- script.rpy:3172  # scene fs overworldnight
+- script.rpy:3173  # elif whereami == "overworldmap":
+- script.rpy:3174  # scene fs overworld
+- script.rpy:3175  # elif whereami == "gym":
+- script.rpy:3176  # scene fs gym
+- script.rpy:3177  # elif whereami == "library":
+- script.rpy:3178  # hide screen charlotte_library
+- script.rpy:3179  # scene fs library
+- script.rpy:3180  # elif whereami == "arcade":
+- script.rpy:3181  # scene fs arcade
+- script.rpy:3182  # elif whereami == "gfhouse":
+- script.rpy:3183  # scene fs gfhouse
+- script.rpy:3184  # elif whereami == "miashallway":
+- script.rpy:3185  # scene fs gfhousehallway
+- script.rpy:3186  # elif whereami == "gfroom":
+- script.rpy:3187  # scene fs gfroom
+- script.rpy:3188  # elif whereami == "sophiahouse":
+- script.rpy:3189  # scene fs sophiahouse
+- script.rpy:3190  # elif whereami == "school":
+- script.rpy:3191  # hide screen ava_atschool
+- script.rpy:3192  # scene fs schoolhallway
+- script.rpy:3193  # elif whereami == "schoolhallway":
+- script.rpy:3194  # hide screen emily_atschool
+- script.rpy:3195  # scene fs schoolhallway2
+- script.rpy:3196  # elif whereami == "classroom1":
+- script.rpy:3197  # hide screen mia_atschool
+- script.rpy:3198  # hide screen sophia_atschool
+- script.rpy:3199  # hide screen mia_sophia_atschool
+- script.rpy:3200  # scene fs classroom
+- script.rpy:3201  # elif whereami == "classroom2":
+- script.rpy:3202  # hide screen olivia_atschool
+- script.rpy:3203  # scene fs classroom
+- script.rpy:3204  # elif whereami == "classroom3":
+- script.rpy:3205  # hide screen charlotte_school
+- script.rpy:3206  # hide screen backbuttonCLASSROOM
+- script.rpy:3207  # scene fs classroom3
+- script.rpy:3208  # elif whereami == "mall":
+- script.rpy:3209  # scene fs malllabel
+- script.rpy:3213  # jump returnwhereyouare
+- script.rpy:3216  # elif miaphase1interaction3 == 4:
+- script.rpy:3217  # if whereami == "playerRoom" and timeofday == "Morning":
+- script.rpy:3218  # hide screen backbuttonROOM
+- script.rpy:3219  # scene fs playerroomMorn
+- script.rpy:3220  # elif whereami == "playerRoom" and timeofday == "Day":
+- script.rpy:3221  # hide screen backbuttonROOM
+- script.rpy:3222  # scene fs playerroomDay
+- script.rpy:3223  # elif whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:3224  # hide screen backbuttonROOM
+- script.rpy:3225  # scene fs playerroomNight
+- script.rpy:3226  # elif whereami == "livingRoom":
+- script.rpy:3227  # if timeofday == "Night":
+- script.rpy:3228  # scene fs livingroomnight
+- script.rpy:3229  # else:
+- script.rpy:3230  # scene fs livingroom
+- script.rpy:3231  # elif whereami == "overworldmap" and timeofday == "Night":
+- script.rpy:3232  # scene fs overworldnight
+- script.rpy:3233  # elif whereami == "overworldmap":
+- script.rpy:3234  # scene fs overworld
+- script.rpy:3235  # elif whereami == "gym":
+- script.rpy:3236  # hide screen backbuttonGYM
+- script.rpy:3237  # scene fs gymarea
+- script.rpy:3238  # elif whereami == "library":
+- script.rpy:3239  # scene fs library
+- script.rpy:3240  # elif whereami == "arcade":
+- script.rpy:3241  # scene fs arcade
+- script.rpy:3242  # elif whereami == "gfhouse":
+- script.rpy:3243  # scene fs gfhouse
+- script.rpy:3244  # elif whereami == "miashallway":
+- script.rpy:3245  # scene fs gfhousehallway
+- script.rpy:3246  # elif whereami == "gfroom":
+- script.rpy:3247  # scene fs gfroom
+- script.rpy:3248  # elif whereami == "sophiahouse":
+- script.rpy:3249  # scene fs sophiahouse
+- script.rpy:3250  # elif whereami == "school":
+- script.rpy:3251  # hide screen ava_atschool
+- script.rpy:3252  # scene fs schoolhallway
+- script.rpy:3253  # elif whereami == "schoolhallway":
+- script.rpy:3254  # hide screen emily_atschool
+- script.rpy:3255  # scene fs schoolhallway2
+- script.rpy:3256  # elif whereami == "classroom1":
+- script.rpy:3257  # scene fs classroom
+- script.rpy:3258  # elif whereami == "mall":
+- script.rpy:3259  # hide screen backbuttonMALL
+- script.rpy:3260  # scene fs malllabel
+- script.rpy:3261  # elif whereami == "park" and timeofday == "Night":
+- script.rpy:3262  # scene fs parknight
+- script.rpy:3263  # elif whereami == "park":
+- script.rpy:3264  # scene fs park
+- script.rpy:3269  # jump returnwhereyouare
+- script.rpy:3271  # if miaphase1interaction2 == 2:
+- script.rpy:3272  # if timeofday == "Night" and (whereami == "livingRoom" or whereami == "playerRoom"):
+- script.rpy:3273  # hide screen contacts
+- script.rpy:3274  # jump miaphase1interaction2part3
+- script.rpy:3275  # else:
+- script.rpy:3277  # jump returnwhereyouare
+- script.rpy:3279  # if miaphase1interaction1 == 0 and whereami == "classroom1":
+- script.rpy:3280  # hide screen mia_atschool
+- script.rpy:3281  # scene fs classroomZOOM
+- script.rpy:3283  # jump miaphase1interaction1part1
+- script.rpy:3285  # elif miaphase1interaction1 == 0:
+- script.rpy:3286  # hide screen contacts
+- script.rpy:3287  # if whereami == "mall":
+- script.rpy:3288  # hide screen backbuttonMALL
+- script.rpy:3289  # scene fs malllabel
+- script.rpy:3290  # elif whereami == "classroom1":
+- script.rpy:3291  # scene fs classroom
+- script.rpy:3292  # elif whereami == "classroom2":
+- script.rpy:3293  # hide screen olivia_atschool
+- script.rpy:3294  # scene fs classroom
+- script.rpy:3295  # elif whereami == "classroom3":
+- script.rpy:3296  # hide screen charlotte_school
+- script.rpy:3297  # hide screen backbuttonCLASSROOM
+- script.rpy:3298  # scene fs classroom3
+- script.rpy:3299  # elif whereami == "schoolhallway":
+- script.rpy:3300  # hide screen emily_atschool
+- script.rpy:3301  # scene fs schoolhallway2
+- script.rpy:3302  # elif whereami == "school":
+- script.rpy:3303  # scene fs schoolhallway
+- script.rpy:3304  # hide screen ava_atschool
+- script.rpy:3305  # elif whereami == "arcade":
+- script.rpy:3306  # scene fs arcade
+- script.rpy:3307  # elif whereami == "sophiahouse":
+- script.rpy:3308  # hide screen backbuttonSOPHIAOUTSIDE
+- script.rpy:3309  # scene fs sophiahouseoutside
+- script.rpy:3310  # elif whereami == "gfhouse":
+- script.rpy:3311  # scene fs gfhouse
+- script.rpy:3312  # elif whereami == "miashallway":
+- script.rpy:3313  # scene fs gfhousehallway
+- script.rpy:3314  # elif whereami == "gfroom":
+- script.rpy:3315  # scene fs gfroom
+- script.rpy:3316  # elif whereami == "library":
+- script.rpy:3317  # scene fs library
+- script.rpy:3318  # elif whereami == "gym":
+- script.rpy:3319  # scene fs gymarea
+- script.rpy:3320  # elif whereami == "outsidegym":
+- script.rpy:3321  # scene fs outsidegym
+- script.rpy:3322  # elif whereami == "overworldmap":
+- script.rpy:3323  # if timeofday != "Night":
+- script.rpy:3324  # scene fs overworld
+- script.rpy:3325  # else:
+- script.rpy:3326  # scene fs overworldnight
+- script.rpy:3327  # elif whereami == "livingRoom":
+- script.rpy:3328  # hide screen backbuttonLIVINGROOM
+- script.rpy:3329  # if timeofday == "Night":
+- script.rpy:3330  # scene fs livingroomnight
+- script.rpy:3331  # else:
+- script.rpy:3332  # scene fs livingroom
+- script.rpy:3333  # elif whereami == "playerRoom":
+- script.rpy:3334  # hide screen backbuttonROOM
+- script.rpy:3335  # if timeofday == "Night":
+- script.rpy:3336  # scene fs playerroomNight
+- script.rpy:3337  # else:
+- script.rpy:3338  # scene fs playerroomDay
+- script.rpy:3341  # jump deactivatephone
+- script.rpy:3343  # elif miaphase1interaction1 == 1 and whereami != "classroom1":
+- script.rpy:3344  # hide screen contacts
+- script.rpy:3345  # if whereami == "mall":
+- script.rpy:3346  # scene fs malllabel
+- script.rpy:3347  # elif whereami == "classroom1":
+- script.rpy:3348  # scene fs classroom
+- script.rpy:3349  # elif whereami == "classroom2":
+- script.rpy:3350  # hide screen olivia_atschool
+- script.rpy:3351  # scene fs classroom
+- script.rpy:3352  # elif whereami == "classroom3":
+- script.rpy:3353  # hide screen charlotte_school
+- script.rpy:3354  # hide screen backbuttonCLASSROOM
+- script.rpy:3355  # scene fs classroom3
+- script.rpy:3356  # elif whereami == "schoolhallway":
+- script.rpy:3357  # hide screen emily_atschool
+- script.rpy:3358  # scene fs schoolhallway2
+- script.rpy:3359  # elif whereami == "school":
+- script.rpy:3360  # scene fs schoolhallway
+- script.rpy:3361  # hide screen ava_atschool
+- script.rpy:3362  # elif whereami == "arcade":
+- script.rpy:3363  # scene fs arcade
+- script.rpy:3364  # elif whereami == "sophiahouse":
+- script.rpy:3365  # scene fs sophiahouse
+- script.rpy:3366  # elif whereami == "gfhouse":
+- script.rpy:3367  # scene fs gfhouse
+- script.rpy:3368  # elif whereami == "miashallway":
+- script.rpy:3369  # scene fs gfhousehallway
+- script.rpy:3370  # elif whereami == "gfroom":
+- script.rpy:3371  # scene fs gfroom
+- script.rpy:3372  # elif whereami == "library":
+- script.rpy:3373  # scene fs library
+- script.rpy:3374  # elif whereami == "gym":
+- script.rpy:3375  # scene fs gymarea
+- script.rpy:3376  # elif whereami == "outsidegym":
+- script.rpy:3377  # scene fs outsidegym
+- script.rpy:3378  # elif whereami == "overworldmap":
+- script.rpy:3379  # if timeofday != "Night":
+- script.rpy:3380  # scene fs overworld
+- script.rpy:3381  # else:
+- script.rpy:3382  # scene fs overworldnight
+- script.rpy:3383  # elif whereami == "livingRoom":
+- script.rpy:3384  # if timeofday == "Night":
+- script.rpy:3385  # scene fs livingroomnight
+- script.rpy:3386  # else:
+- script.rpy:3387  # scene fs livingroom
+- script.rpy:3388  # elif whereami == "playerRoom":
+- script.rpy:3389  # if timeofday == "Morning":
+- script.rpy:3390  # scene fs playerroomMorn
+- script.rpy:3391  # elif timeofday == "Day":
+- script.rpy:3392  # scene fs playerroomDay
+- script.rpy:3393  # elif timeofday == "Night":
+- script.rpy:3394  # scene fs playerroomNight
+- script.rpy:3398  # jump deactivatephone
+- script.rpy:3400  # elif miaphase1interaction1 == 1 and timeofday == "Night":
+- script.rpy:3403  # jump deactivatephone
+- script.rpy:3405  # elif miaphase1interaction1 == 1:
+- script.rpy:3406  # hide screen mia_atschool
+- script.rpy:3407  # scene fs classroomZOOM
+- script.rpy:3409  # jump miaphase1interaction1part1postconvo
+- script.rpy:3411  # elif miaphase1interaction1 == 2:
+- script.rpy:3412  # if whereami == "mall":
+- script.rpy:3413  # scene fs malllabel
+- script.rpy:3414  # elif whereami == "classroom1":
+- script.rpy:3415  # scene fs classroom
+- script.rpy:3416  # elif whereami == "classroom2":
+- script.rpy:3417  # scene fs classroom3
+- script.rpy:3418  # elif whereami == "schoolhallway":
+- script.rpy:3419  # scene fs schoolhallway2
+- script.rpy:3420  # elif whereami == "school":
+- script.rpy:3421  # scene fs schoolhallway
+- script.rpy:3422  # elif whereami == "arcade":
+- script.rpy:3423  # scene fs arcade
+- script.rpy:3424  # elif whereami == "sophiahouse":
+- script.rpy:3425  # scene fs sophiahouse
+- script.rpy:3426  # elif whereami == "gfhouse":
+- script.rpy:3427  # scene fs gfhouse
+- script.rpy:3428  # elif whereami == "miashallway":
+- script.rpy:3429  # scene fs gfhousehallway
+- script.rpy:3430  # elif whereami == "gfroom":
+- script.rpy:3431  # scene fs gfroom
+- script.rpy:3432  # elif whereami == "library":
+- script.rpy:3433  # scene fs library
+- script.rpy:3434  # elif whereami == "gym":
+- script.rpy:3435  # scene fs gymarea
+- script.rpy:3436  # elif whereami == "outsidegym":
+- script.rpy:3437  # scene fs outsidegym
+- script.rpy:3438  # elif whereami == "overworldmap":
+- script.rpy:3439  # if timeofday != "Night":
+- script.rpy:3440  # scene fs overworld
+- script.rpy:3441  # else:
+- script.rpy:3442  # scene fs overworldnight
+- script.rpy:3443  # elif whereami == "livingRoom":
+- script.rpy:3444  # if timeofday == "Night":
+- script.rpy:3445  # scene fs livingroomnight
+- script.rpy:3446  # else:
+- script.rpy:3447  # scene fs livingroom
+- script.rpy:3448  # elif whereami == "playerRoom":
+- script.rpy:3449  # scene fs playerRoom
+- script.rpy:3451  # if whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:3452  # $ todayis = dayName
+- script.rpy:3453  # hide screen contacts
+- script.rpy:3454  # jump textmiafornudes
+- script.rpy:3455  # else:
+- script.rpy:3457  # jump returnwhereyouare
+- script.rpy:3459  # elif miaphase1interaction1 == 3:
+- script.rpy:3460  # if todayis != dayName and whereami == "playerRoom" and timeofday == "Night":
+- script.rpy:3461  # hide screen contacts
+- script.rpy:3462  # jump textmiatocomeover
+- script.rpy:3463  # else:
+- script.rpy:3465  # hide screen contacts
+- script.rpy:3466  # if whereami == "mall":
+- script.rpy:3467  # scene fs mall
+- script.rpy:3468  # elif whereami == "classroom1":
+- script.rpy:3469  # scene fs classroom
+- script.rpy:3470  # elif whereami == "classroom2":
+- script.rpy:3471  # hide screen olivia_atschool
+- script.rpy:3472  # scene fs classroom
+- script.rpy:3473  # elif whereami == "classroom3":
+- script.rpy:3474  # hide screen charlotte_school
+- script.rpy:3475  # hide screen backbuttonCLASSROOM
+- script.rpy:3476  # scene fs classroom3
+- script.rpy:3477  # elif whereami == "schoolhallway":
+- script.rpy:3478  # hide screen emily_atschool
+- script.rpy:3479  # scene fs schoolhallway2
+- script.rpy:3480  # elif whereami == "school":
+- script.rpy:3481  # scene fs schoolhallway
+- script.rpy:3482  # hide screen ava_atschool
+- script.rpy:3483  # elif whereami == "arcade":
+- script.rpy:3484  # scene fs arcade
+- script.rpy:3485  # elif whereami == "sophiahouse":
+- script.rpy:3486  # scene fs sophiahouse
+- script.rpy:3487  # elif whereami == "gfhouse":
+- script.rpy:3488  # scene fs gfhouse
+- script.rpy:3489  # elif whereami == "miashallway":
+- script.rpy:3490  # scene fs gfhousehallway
+- script.rpy:3491  # elif whereami == "gfroom":
+- script.rpy:3492  # scene fs gfroom
+- script.rpy:3493  # elif whereami == "library":
+- script.rpy:3494  # scene fs library
+- script.rpy:3495  # elif whereami == "gym":
+- script.rpy:3496  # scene fs gymarea
+- script.rpy:3497  # elif whereami == "outsidegym":
+- script.rpy:3498  # scene fs outsidegym
+- script.rpy:3499  # elif whereami == "overworldmap":
+- script.rpy:3500  # if timeofday != "Night":
+- script.rpy:3501  # scene fs overworld
+- script.rpy:3502  # else:
+- script.rpy:3503  # scene fs overworldnight
+- script.rpy:3504  # elif whereami == "livingRoom":
+- script.rpy:3505  # if timeofday == "Night":
+- script.rpy:3506  # hide screen backbuttonLIVINGROOM
+- script.rpy:3507  # scene fs livingroomnight
+- script.rpy:3508  # else:
+- script.rpy:3509  # hide screen backbuttonLIVINGROOM
+- script.rpy:3510  # scene fs livingroom
+- script.rpy:3511  # elif whereami == "playerRoom":
+- script.rpy:3512  # hide screen backbuttonROOM
+- script.rpy:3513  # if timeofday == "Night":
+- script.rpy:3514  # scene fs playerroomNight
+- script.rpy:3515  # else:
+- script.rpy:3516  # scene fs playerroomDay
+- script.rpy:3518  # if timeofday == "Night":
+- script.rpy:3520  # else:
+- script.rpy:3522  # jump returnwhereyouare
+- script.rpy:3524  # elif miaphase1interaction1 == 4:
+- script.rpy:3525  # hide screen phonecontacts
+- script.rpy:3526  # hide screen contacts
+- script.rpy:3529  # jump returnwhereyouare
+- script.rpy:3531  # elif miaphase1interaction3 == 5:
+- script.rpy:3532  # hide screen phonecontacts
+- script.rpy:3533  # hide screen contacts
+- script.rpy:3535  # jump returnwhereyouare
+- script.rpy:3838  # hide screen uppergui
+- script.rpy:3839  # if miaphase1interaction3 == 2 and whereami != "classroom3":
+- script.rpy:3840  # jump looking4miaphone
+- script.rpy:3842  # if miaphase1interaction3 == 3:
+- script.rpy:3843  # jump looking4miaphonepostconvo
+- script.rpy:3845  # if miaphase1interaction3 == 4 and whereami == "library" and foundphonevariable == 1:
+- script.rpy:3846  # jump foundmiaphoneconvo
+- script.rpy:3851  # if charlottephase2interaction1 == 0 and currentchapter > 1 and whereami == "cafe" and timeofday != "Night":
+- script.rpy:3852  # jump charlottephase2interaction1part1
+- script.rpy:3855  # if charlottephase1interaction1 == 0:
+- script.rpy:3856  # jump charlottephase1interaction1part1
+- script.rpy:3857  # elif charlottephase1interaction1 == 1 and whereami == "classroom3" and timeofday == "Morning":
+- script.rpy:3858  # jump charlottewonttalktome
+- script.rpy:3859  # elif charlottephase1interaction1 == 1 and whereami == "library" and timeofday == "Day":
+- script.rpy:3860  # jump charlottephase1interaction1part2
+- script.rpy:3861  # elif charlottephase1interaction1 == 2 and whereami == "classroom3" and timeofday == "Morning":
+- script.rpy:3862  # jump charlottewonttalktome
+- script.rpy:3863  # elif charlottephase1interaction1 == 2 and whereami == "library" and timeofday == "Day":
+- script.rpy:3864  # jump charlottephase1interaction1part3
+- script.rpy:3865  # elif charlottephase1interaction1 == 3 and whereami == "classroom3" and timeofday == "Morning":
+- script.rpy:3866  # hide screen backbuttonCLASSROOM
+- script.rpy:3867  # hide screen charlotte_school
+- script.rpy:3868  # jump charlottephase1interaction2part1A
+- script.rpy:3869  # elif charlottephase1interaction1 == 3 and whereami != "classroom3":
+- script.rpy:3870  # hide screen charlotte_school
+- script.rpy:3871  # hide screen backbuttonCLASSROOM
+- script.rpy:3873  # jump returnwhereyouare
+- script.rpy:3874  # elif charlottephase1interaction1 == 4 and whereami != "library":
+- script.rpy:3875  # hide screen charlotte_school
+- script.rpy:3876  # hide screen backbuttonCLASSROOM
+- script.rpy:3878  # jump returnwhereyouare
+- script.rpy:3879  # elif charlottephase1interaction1 == 4 and whereami == "library" and timeofday == "Day":
+- script.rpy:3880  # jump charlottephase1interaction2part1
+- script.rpy:3881  # elif charlottephase1interaction2 == 1:
+- script.rpy:3884  # jump returnwhereyouare
+- script.rpy:3885  # elif charlottephase1interaction2 == 2:
+- script.rpy:3887  # jump returnwhereyouare
+- variables.rpy:224  # $ hadcharlotteconvo = 0
+
+========================================================================================
+NOTES / LIMITATIONS
+========================================================================================
+- Screen-language `label` displayables are excluded from script-label analysis.
+- Dynamic `jump expression` / `call expression` targets are not resolved.
+- Dynamically constructed screen names are not resolved.
+- An 'unreferenced' label can still be perfectly valid if reached indirectly.
+- Compound control-flow analysis is intentionally conservative.
+- `call screen` is treated separately because it blocks until Return(), then resumes.
+- This script NEVER modifies your Ren'Py project.
