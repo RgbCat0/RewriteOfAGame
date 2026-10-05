@@ -4,7 +4,7 @@ init python:
         if destination in ("gotosunnyside", "overworldmap", "outsideoffice"):
             return None
         if headtosunnyside == 1:
-            return "I should head to Sunnyside to pick up Mia and Katie."
+            return "I should head to the office building in Sunnyside to pick up Mia and Katie."
         if headtooffice == 1:
             return "I should head to the office building in Sunnyside."
         if timeofday == "Night":

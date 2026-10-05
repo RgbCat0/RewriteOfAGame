@@ -1563,9 +1563,9 @@ label continuegamechapter2:
     mia "Katie don't yell!"
     mia "Sorry, so yeah can you pick us up? If it's not too much trouble."
     player "It's no trouble at all babe I'll be there in twenty minutes."
-    mia "Oh thank you so much!"
+    mia "Thank youuu!!! We're at the big office building next to the café."
     katie "Yaaayyy~"
-    mia "Katie!"
+    mia "Katie! What did i just tell you??"
     player "Welp. Looks like I'm heading out."
     player "I better head over to Sunnyside."
     scene fs blackblank

@@ -1,4 +1,4 @@
-# World navigation and character interaction routing.
+﻿# World navigation and character interaction routing.
 
 label start:
 
@@ -48,16 +48,6 @@ label playerRoom:
         call screen myRoom("playerroomNight.png", "playerroomNightHover.png")
 
 label playerlivingroom:
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
 
     hide screen tosunnyside
     hide screen locationname
@@ -222,9 +212,7 @@ label overworldmap:
 
     show screen locationname
 
-    if headtosunnyside == 1:
-        hide screen questboxpreview
-    if headtooffice == 1:
+    if headtosunnyside == 1 or headtooffice == 1:
         hide screen questboxpreview
 
     if currentchapter > 1:
@@ -299,10 +287,7 @@ label gotosunnyside:
     show screen uppergui
     show screen questboxpreview
 
-    if headtosunnyside == 1:
-        hide screen questboxpreview
-
-    if headtooffice == 1:
+    if headtosunnyside == 1 or headtooffice == 1:
         hide screen questboxpreview
 
     show screen locationname
@@ -375,10 +360,6 @@ label outsideoffice:
 
 
 label insidecafe:
-    if map_entry_block_reason("insidecafe") is not None:
-        player "[map_entry_block_reason('insidecafe')]"
-        jump gotosunnyside
-
     $ whereami = "cafe"
 
     hide screen uppergui
@@ -386,55 +367,36 @@ label insidecafe:
     hide screen locationname
     hide screen questboxpreview
 
-
-    if headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump gotosunnyside
-
     if avaphase2interaction2 == 1 and timeofday == "Day":
         jump avaphase2interaction2part2
 
     scene fs insidecafe
 
     show screen exit_cafe
-    if headtosunnyside != 1:
-        if timeofday == "Day" and sophiaphase2interaction1 > 0 and sophiaphase2interaction1 != 3:
+    if timeofday == "Day" and sophiaphase2interaction1 > 0 and sophiaphase2interaction1 != 3:
 
-            call screen sophia_atcafe
+        call screen sophia_atcafe
 
-        if timeofday == "Day" and sophiaphase2interaction1 == 3 and sophiaphase2interaction3 == 0:
-            jump sophiaphase2interaction3part1
+    if timeofday == "Day" and sophiaphase2interaction1 == 3 and sophiaphase2interaction3 == 0:
+        jump sophiaphase2interaction3part1
 
-        if timeofday == "Morning" and currentchapter > 1 and charlottephase2interaction1 == 0 and charlottephase1interaction3 >= 2:
+    if timeofday == "Morning" and currentchapter > 1 and charlottephase2interaction1 == 0 and charlottephase1interaction3 >= 2:
 
-            call screen charlotte_atcafe
-        elif timeofday == "Morning" and currentchapter > 1 and charlottephase2interaction2 == 3:
+        call screen charlotte_atcafe
+    elif timeofday == "Morning" and currentchapter > 1 and charlottephase2interaction2 == 3:
 
-            call screen charlotte_atcafe
+        call screen charlotte_atcafe
 
     call screen inside_cafe
 
 
 label insideclub:
-    if map_entry_block_reason("insideclub") is not None:
-        player "[map_entry_block_reason('insideclub')]"
-        jump gotosunnyside
 
     hide screen uppergui
     hide screen questboxpreview
     hide screen clubrestroomstall
-
-
     hide screen tonormalmap
     hide screen locationname
-
-    if headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump gotosunnyside
 
     if whereami != "club bathroom":
         play music "audio/clubBG.mp3"
@@ -491,11 +453,6 @@ label beach:
     hide screen uppergui
     hide screen questboxpreview
 
-    if headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump gotosunnyside
 
     if emilyphase2interaction2 == 1 and timeofday == "Night":
         jump emilyphase2interaction2part2
@@ -523,10 +480,6 @@ label beach:
 
 
 label outsidegym:
-    if map_entry_block_reason("outsidegym") is not None:
-        player "[map_entry_block_reason('outsidegym')]"
-        jump overworldmap
-
     $ whereami = "outsidegym"
     hide screen questboxpreview
     hide screen tosunnyside
@@ -543,22 +496,8 @@ label outsidegym:
     call screen outsidethegym
 
 label gym:
-    if map_entry_block_reason("gym") is not None:
-        player "[map_entry_block_reason('gym')]"
-        jump overworldmap
 
     hide screen backbuttonGYMOUTSIDE
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
 
     $ whereami = "gym"
     if timeofday == "Morning":
@@ -604,17 +543,6 @@ label library:
         scene fs overworldnight
         player "Library's closed at night."
         hide fs overworldnight
-        jump overworldmap
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
         jump overworldmap
 
     $ whereami = "library"
@@ -688,17 +616,6 @@ label gfhouse:
     hide screen mia_room
     stop music fadeout 5
     stop sound fadeout 5
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
 
     $ whereami = "gfhouse"
     hide screen charlottemia_room
@@ -781,8 +698,6 @@ label miahousehallway:
 
 
 label juliaroom:
-
-
     if juliachecker == 4:
         "There's no one inside"
         jump miatopsteps
@@ -864,18 +779,6 @@ label sophiahouse:
     hide screen uppergui
     stop music fadeout 5
 
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
-
     if sophiaphase2interaction1 == 0 and currentchapter == 2 and sophiaphase1interaction2 > 1:
         jump sophiaphase2interaction1part1
 
@@ -904,29 +807,14 @@ label sophiahouse:
     call screen outsidesophiahouse
 
 label apartmentlobbymenu:
-    if map_entry_block_reason("apartmentlobbymenu") is not None:
-        player "[map_entry_block_reason('apartmentlobbymenu')]"
-        jump gotosunnyside
-
     jump apartmentlobbyolivia
 
 
 label apartmentlobbyolivia:
-    if map_entry_block_reason("apartmentlobbyolivia") is not None:
-        player "[map_entry_block_reason('apartmentlobbyolivia')]"
-        jump gotosunnyside
-
     hide screen locationname
     hide screen uppergui
     hide screen tonormalmap
     hide screen questboxpreview
-
-
-    if headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump gotosunnyside
 
     if oliviaphase2interaction1 == 0 and emilyphase2interaction1 < 2:
         player "That's a pretty big apartment building. Wonder if I know anyone who lives in there."
@@ -988,17 +876,6 @@ label arcade:
     hide screen questboxpreview
     hide screen locationname
     hide screen tosunnyside
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
 
     $ whereami = "arcade"
     stop music fadeout 5
@@ -1092,17 +969,6 @@ label charlotteshouse:
     hide screen uppergui
     $ whereami = "charlotteshouse"
 
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
-
     if dayNumber == 24 and timeofday == "Night":
         jump chapter3event1
 
@@ -1139,10 +1005,6 @@ label charlotteshouse:
 
 
 label school:
-    if map_entry_block_reason("school") is not None:
-        player "[map_entry_block_reason('school')]"
-        jump overworldmap
-
     scene fs schoolhallwayextras
     hide screen questboxpreview
     hide screen locationname
@@ -1151,17 +1013,6 @@ label school:
         scene fs overworldnight
         player "Got no reason to go to the school at night."
         hide fs overworldnight
-        jump overworldmap
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
         jump overworldmap
 
     stop music fadeout 10
@@ -1299,10 +1150,6 @@ label classroom3:
     call screen classroom3
 
 label malllabel:
-    if map_entry_block_reason("malllabel") is not None:
-        player "[map_entry_block_reason('malllabel')]"
-        jump overworldmap
-
     hide screen uppergui
     hide screen questboxpreview
     hide screen locationname
@@ -1316,17 +1163,6 @@ label malllabel:
     hide screen store_watch
     hide screen store_Ashley
     hide screen store_camera
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
 
 
     if whereami != "mallstore":
@@ -1343,10 +1179,6 @@ label malllabel:
     call screen mall
 
 label mallstore:
-    if map_entry_block_reason("mallstore") is not None:
-        player "[map_entry_block_reason('mallstore')]"
-        jump overworldmap
-
     hide screen questboxpreview
     hide screen backbuttonMALL
     hide screen uppergui
@@ -1390,17 +1222,6 @@ label park:
     hide screen questboxpreview
     hide screen locationname
     hide screen tosunnyside
-
-    if headtosunnyside == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to Sunnyside to pick up Mia and Katie."
-        jump overworldmap
-    elif headtooffice == 1:
-        hide screen uppergui
-        hide screen tosunnyside
-        player "I should head to the office building in Sunnyside."
-        jump overworldmap
 
     $ whereami = "park"
     show screen uppergui
@@ -1761,7 +1582,7 @@ label passtime:
 
 label checkphone:
     if headtosunnyside == 1:
-        player "No time to call anyone I should head go pick up Mia and Katie"
+        player "No time to call anyone, I should head to the office building in Sunnyside to pick up Mia and Katie."
         jump overworldmap
     elif headtooffice == 1:
         hide screen uppergui
