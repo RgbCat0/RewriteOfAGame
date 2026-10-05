@@ -15,6 +15,50 @@ def body(path, label):
 
 
 class SceneRoutingTests(unittest.TestCase):
+    def test_calendar_selects_the_actual_day_and_caps_only_the_image_at_30(self):
+        text = body("game/script.rpy", "displaycalender")
+        expression = re.search(r"^    scene expression (.+)$", text, re.MULTILINE).group(1)
+        for day, image_day in ((1, 1), (29, 29), (30, 30), (31, 30), (32, 30), (100, 30)):
+            with self.subTest(day=day):
+                state = {"dayNumber": day}
+                self.assertEqual(eval(expression, state),
+                                 "calenderdays/calender%d.png" % image_day)
+                self.assertEqual(state["dayNumber"], day)
+        self.assertNotIn("image currentday", text)
+        self.assertNotRegex(text, r"(?m)^\s*\$ dayNumber\s*=")
+        self.assertIn('if timeofday == "Night":', text)
+
+    def test_ava_pivot_returns_and_hides_all_ava_buttons(self):
+        text = body("game/script.rpy", "avaPivot")
+        active = [line for line in text.splitlines()
+                  if line.strip() and not line.lstrip().startswith("#")]
+        self.assertEqual(active[-1], "    jump returnwhereyouare")
+        for screen in ("ava_atschool", "ava_atschoolhallway", "ava_atgym"):
+            self.assertLess(text.index("hide screen " + screen), text.index("player \""))
+
+    def test_no_jump_remains_to_the_eight_removed_or_undefined_routes(self):
+        targets = ("avaphase2whereshouldwemeetagain", "avaphase2interaction1part3",
+                   "avaphase1interaction2part2", "avaseemsfocused",
+                   "avaphase1interaction2part3", "avaphase2interaction1part2",
+                   "avaphase2whereshouldwemeetagain2", "miaphase2interaction3part1")
+        for path in (ROOT / "game").rglob("*.rpy"):
+            text = path.read_text(encoding="utf-8-sig")
+            for target in targets:
+                self.assertNotRegex(text, r"(?m)^\s*jump " + target + r"\s*$")
+
+    def test_mia_night_call_does_not_start_or_advance_the_morning_scene(self):
+        text = body("game/script.rpy", "miaPivot")
+        branch = text.split('            if miaphase2interaction2 == 5:', 1)[1].split(
+            '\n        else:', 1)[0]
+        self.assertIn('if currentchapter == 3 and miaphase3interaction1 == 1:', branch)
+        self.assertIn('player "I should visit Mia in her room in the morning."', branch)
+        self.assertTrue(branch.rstrip().endswith("jump returnwhereyouare"))
+        self.assertNotIn("$ ", branch)
+        self.assertNotIn("jump miaphase3interaction1part2", branch)
+        room = body("game/script.rpy", "gfroom1")
+        self.assertIn('if miaphase3interaction1 == 1 and timeofday == "Morning" and currentchapter == 3:', room)
+        self.assertIn("jump miaphase3interaction1part2", room)
+
     def test_mia_pivot_cannot_fall_through_into_olivia(self):
         lines = [line for line in body("game/script.rpy", "miaPivot").splitlines()
                  if line.strip() and not line.lstrip().startswith("#")]

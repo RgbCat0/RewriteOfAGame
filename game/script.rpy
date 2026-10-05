@@ -333,12 +333,7 @@ label displaycalender:
     if timeofday == "Night":
         player "Ugh I'm too tired to look at that right now."
         jump playerRoom
-    if dayNumber > 30:
-        image currentday = "calenderdays/calender30.png"
-    else:
-        image currentday = "calenderdays/calender" + "[dayNumber]" + ".png"
-
-    scene currentday
+    scene expression "calenderdays/calender%d.png" % min(dayNumber, 30)
     with Dissolve(1.0)
     window hide
     pause
@@ -2213,6 +2208,8 @@ label avaPivot:
 
     hide screen uppergui
     hide screen ava_atschool
+    hide screen ava_atschoolhallway
+    hide screen ava_atgym
 
     #location matters
     if whereami != "Park" and timeofday != "Night" and avaphase1interaction2 == 2:
@@ -2258,10 +2255,6 @@ label avaPivot:
         if timeofday == "Morning":
             if avaphase2interaction1 == 0:
                 jump avaphase2interaction1part1
-            elif avaphase2interaction1 == 1:
-                jump avaphase2whereshouldwemeetagain
-            elif avaphase2interaction1 == 2:
-                jump avaphase2interaction1part3
 
         elif timeofday == "Day":
 
@@ -2277,11 +2270,7 @@ label avaPivot:
             elif avaphase1interaction1 == 4:
                 jump avaphase1interaction2part1
 
-            if avaphase1interaction2 == 2: # unreachable look at start of label
-                jump avaphase1interaction2part2
-            elif avaphase1interaction2 == 4:
-                jump avaseemsfocused
-            elif avaphase1interaction1 == 6:
+            if avaphase1interaction1 == 6:
                 if avaphase1interaction2 == 3:
                     jump avaphase1interaction2part3C
 
@@ -2293,86 +2282,8 @@ label avaPivot:
         if whereami != "Park" and avaphase1interaction2 == 5:
             jump letsmeetatthepark
 
-        #location matters
-        if timeofday == "Night":
-            if avaphase1interaction2 == 3:
-                jump avaphase1interaction2part3
-
-
-    elif whereami == "classroom2":
-        if timeofday == "Day":
-            if avaphase2interaction1 == 1:
-                if currentchapter > 1:
-                    jump avaphase2interaction1part2
-            elif avaphase2interaction1 == 2:
-                if currentchapter > 1:
-                    jump avaphase2whereshouldwemeetagain2
-
-
-
-    #
-    # hide screen uppergui
-    # hide screen ava_atschool
-    #
-    # # Note: phase interaction numbers should be backwards to have the newest possible action happen first
-    #
-    #
-    # if whereami == "classroom2" and timeofday == "Day" and avaphase2interaction1 == 1 and currentchapter > 1:
-    #     jump avaphase2interaction1part2
-    # elif whereami == "classroom2" and timeofday == "Day" and avaphase2interaction1 == 2 and currentchapter > 1:
-    #     jump avaphase2whereshouldwemeetagain2
-    #
-    #
-    # if whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 0:
-    #     jump avaphase1interaction1part1
-    # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 1:
-    #     jump avaphase1interaction1part1postconvo
-    # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 2:
-    #     jump avayoushouldbuygympass
-    # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 3:
-    #     jump igotthepassava
-    # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 4:
-    #     jump avaatschoolinteraction1
-    # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 5 and avaphase1interaction2 == 1:
-    #     scene fs schoolhallway
-    #     player "Wait I'm meeting her at the park tonight right? I'll see her later."
-    #     jump returnwhereyouare
-    # elif whereami == "school" and timeofday == "Morning" and avaphase1interaction1 == 6 and avaphase1interaction2 == 3:
-    #     scene fs schoolhallway
-    #     jump avaphase1interaction2part3C
-    # elif whereami != "Park" and timeofday != "Night" and avaphase1interaction2 == 2:
-    #     scene fs schoolhallway
-    #     player "I'm meeting Ava at the park at night, I should leave her alone for now."
-    #     jump returnwhereyouare
-    #
-    # if whereami == "gym" and timeofday == "Morning" and avaphase2interaction1 == 0:
-    #     jump avaphase2interaction1part1
-    # elif whereami == "gym" and timeofday == "Morning" and avaphase2interaction1 == 1:
-    #     jump avaphase2whereshouldwemeetagain
-    # elif whereami == "gym" and timeofday == "Morning" and avaphase2interaction1 == 2:
-    #     jump avaphase2interaction1part3
-    # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction2 == 2:
-    #     jump avaphase1interaction2part2
-    # elif whereami == "park" and timeofday == "Night" and avaphase1interaction2 == 3:
-    #     jump avaphase1interaction2part3
-    # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction2 == 4:
-    #     jump avaseemsfocused
-    # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 1:
-    #     jump avaphase1interaction1part2
-    # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 2:
-    #     jump avayoushouldbuygympass
-    # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 3:
-    #     jump avaphase1interaction1part4
-    # elif whereami == "gym" and timeofday == "Day" and avaphase1interaction1 == 4:
-    #     jump avaphase1interaction2part1
-    #
-    #
-    #
-    #
-    #
-    # if whereami != "Park" and avaphase1interaction2 == 5:
-    #     jump letsmeetatthepark
-
+    player "{i}I have no reason to talk to her right now.{/i}"
+    jump returnwhereyouare
 
 
 label emilyPivot:
@@ -2984,7 +2895,11 @@ label miaPivot:
             if miaphase1interaction2 == 2:
                 jump miaphase1interaction2part3
             if miaphase2interaction2 == 5:
-                jump miaphase2interaction3part1
+                if currentchapter == 3 and miaphase3interaction1 == 1:
+                    player "I should visit Mia in her room in the morning."
+                else:
+                    player "{i}I have no reason to call her right now.{/i}"
+                jump returnwhereyouare
         else:
             if miaphase1interaction2 == 2:
                 player "I should text Mia to come over from my room tonight."

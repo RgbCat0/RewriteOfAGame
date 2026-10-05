@@ -122,6 +122,9 @@ builds/
 debug.log
 *.log
 
+# Local review notes, playtest checklists, and generated analysis reports
+/docs/
+
 # Our own temporary conversion folders, if created
 temp/
 tmp/
