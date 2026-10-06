@@ -1546,9 +1546,9 @@ label oliviaphase1interaction2part4:
         with Dissolve(1.0)
         $ oliviaphase1interaction3 = 2
         if currentchapter >= 2:
-            $ oliviaquestlog = "Meet Olivia at the arcade during Day in chapter 2."
+            $ oliviaquestlog = "Meet Olivia at the arcade during Day."
         else:
-            $ oliviaquestlog = "Continue exploring until the track meet on day 10. Meet Olivia at the arcade during Day in chapter 2."
+            $ oliviaquestlog = "Continue exploring until the track meet on day 10, then meet Olivia at the arcade during Day."
         jump passtime
 
 

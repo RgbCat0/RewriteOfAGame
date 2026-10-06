@@ -518,7 +518,7 @@ label gym:
         scene fs gymareaafternoon
 
 
-    if currentchapter == 2 and avaphase1interaction3 == 10 and timeofday == "Morning" and avaphase2interaction1 == 0:
+    if currentchapter >= 2 and avaphase1interaction3 == 10 and timeofday == "Morning" and avaphase2interaction1 == 0:
         show screen ava_atgym
 
     if timeofday == "Day" and avaphase1interaction1 == 1:
@@ -753,7 +753,7 @@ label gfroom1:
         if timeofday == "Day":
             show screen charlottemia_room
 
-    if miaphase2interaction1 == 1 and miaphase1interaction3 >= 5 and currentchapter == 2 and timeofday != "Night":
+    if miaphase2interaction1 == 1 and miaphase1interaction3 >= 5 and currentchapter >= 2 and timeofday != "Night":
         show screen mia_room
 
     scene fs gfroom
@@ -791,7 +791,7 @@ label sophiahouse:
     hide screen uppergui
     stop music fadeout 5
 
-    if sophiaphase2interaction1 == 0 and currentchapter == 2 and sophiaphase1interaction2 > 1:
+    if sophiaphase2interaction1 == 0 and currentchapter >= 2 and sophiaphase1interaction2 > 1:
         jump sophiaphase2interaction1part1
 
     if sophiaphase1interaction2 == 1:
@@ -920,7 +920,7 @@ label arcade:
             "You look around the arcade and don't see Olivia. So you go back outside."
             jump overworldmap
 
-        elif timeofday == "Day" and currentchapter == 2:
+        elif timeofday == "Day" and currentchapter >= 2:
             $ oliviaphase1interaction3 = 3
             jump oliviaphase2interaction1part1
 
@@ -987,13 +987,13 @@ label charlotteshouse:
     if charlottephase3interaction1 == 1 and timeofday != "Morning":
         jump charlottephase3interaction1part2
 
-    if charlottephase2interaction1 == 2 and currentchapter == 2 and timeofday == "Night":
+    if charlottephase2interaction1 == 2 and currentchapter >= 2 and timeofday == "Night":
         if handcuffcount != 1 and condomcount != 1 and cameracount != 1:
             jump charlottephase2interaction1part2
         else:
             player "I should come back with all the items Charlotte wanted."
             jump overworldmap
-    elif charlottephase2interaction1 == 2 and currentchapter == 2 and timeofday != "Night":
+    elif charlottephase2interaction1 == 2 and currentchapter >= 2 and timeofday != "Night":
         player "I should come back at night with all the things Charlotte wanted me to get."
         player "A camera, some condoms, and some...handcuffs?"
         jump overworldmap
@@ -1070,7 +1070,7 @@ label schoolhallway:
     if timeofday == "Morning":
         if currentchapter == 2 and avaphase1interaction2 == 10:
             show screen ava_atschoolhallway
-        if currentchapter == 2 and emilyphase1interaction2 >= 5 and (emilyphase2interaction1 >= 5 or emilyphase2interaction1 == 1) and emilyphase2interaction2 == 0:
+        if currentchapter >= 2 and emilyphase1interaction2 >= 5 and (emilyphase2interaction1 >= 5 or emilyphase2interaction1 == 1) and emilyphase2interaction2 == 0:
             show screen emily_atschool
 
     if timeofday == "Day" and emilyphase1interaction1 >=1 and emilyphase1interaction1 != 4 and emilyphase1interaction2 < 6 :
@@ -1090,7 +1090,7 @@ label classroom1:
     if sophiaphase1interaction2 != 2:
         if sophiaphase2interaction1 != 0:
             show screen sophia_atschool
-    if sophiaphase2interaction1 == 0 and currentchapter == 2 and sophiaphase1interaction2 > 1:
+    if sophiaphase2interaction1 == 0 and currentchapter >= 2 and sophiaphase1interaction2 > 1:
         hide screen sophia_atschool
     if sophiaphase2interaction3 >= 2:
         hide screen sophia_atschool
@@ -1553,9 +1553,6 @@ label howmuchmoneydoihave:
 
 label passtime:
 
-    if dayNumber == 24 and timeofday == "Night":
-        $ dayNumber += 1
-
     if timeofday == "Morning":
         scene fs playerroomMorn
         $ timeofday = "Day"
@@ -1564,6 +1561,7 @@ label passtime:
         $ timeofday = "Night"
     elif timeofday == "Night":
         scene fs playerroomNight
+        $ dayNumber += 1
         $ timeofday = "Morning"
         if dayName == "Monday":
             $ dayName = "Tuesday"
@@ -1584,6 +1582,11 @@ label passtime:
     scene fs blackblank
     with Dissolve(0.3)
     pause 0.3
+    call update_olivia_tournament_hint
+    if timeofday == "Morning" and currentchapter == 1 and dayNumber == 10:
+        jump phase1ending
+    elif timeofday == "Morning" and currentchapter == 2 and dayNumber == 20:
+        jump phase2ending
     jump overworldmap
 
 label checkphone:

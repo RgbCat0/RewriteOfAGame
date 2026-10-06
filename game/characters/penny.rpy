@@ -326,7 +326,7 @@ label pennysecondstream:
                 player "Damn, it'll have to be next time..."
                 $ pennyscene3 = 2
                 $ pennyscene4 = 1
-                $ pennyquestlog = "Watch Penny's next stream on your bedroom computer at Night. You can choose to donate $100."
+                $ pennyquestlog = "Watch Penny's next stream on your bedroom computer at Night. Bring $100 if you want to donate."
                 jump gotosleep
         "Don't Donate":
             player "I uh...don't feel like spending any money on her right now."
@@ -345,6 +345,10 @@ label pennythirdstream:
     player "Okay if I'm going to get her attention I'll need to donate a lot, and right now!"
     menu:
         "Donate $100":
+            if money < 100:
+                player "I don't have enough money to donate $100. I can come back another night."
+                jump gotosleep
+            $ money -= 100
             scene fs pennysecondstream1
             "Diiiing Diiiiing Diiiiiiiiiing!!"
             scene fs pennysecondstream7

@@ -2,7 +2,7 @@
 # file, define a label and jump to it from another file.
 
 label definevariables:
-    $ quest_hint_version = 2
+    $ quest_hint_version = 3
     $ miaSprite = 0
     $ avaSprite = 0
     $ sophiaSprite = 0

@@ -1329,7 +1329,7 @@ label emilyphase1interaction2part4:
         player "Also...if I'm looking to really take advantage of the situation maybe it'll be worth looking for some candy too...the strawberry kind."
         $ playerSprite = 0
         $ emilyphase1interaction2 = 6
-        $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2."
+        $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning."
         jump returnwhereyouare
     else:
         $ emilySprite = 1
@@ -1344,7 +1344,7 @@ label emilyphase1interaction2part4:
         hide fbemily current
         with Dissolve(0.7)
         $ emilyphase1interaction2 = 6
-        $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2."
+        $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning."
         jump returnwhereyouare
 
 

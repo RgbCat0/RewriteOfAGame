@@ -783,7 +783,7 @@ label sophiaphase1interaction2part2:
     pause
     $ sophiaphase1interaction2 = 2
     if currentchapter >= 2:
-        $ sophiaquestlog = "Visit Sophia at her house during Morning in chapter 2."
+        $ sophiaquestlog = "Visit Sophia's house during Morning."
     else:
         $ sophiaquestlog = "Continue exploring until the track meet on day 10. Sophia's next event starts in chapter 2."
 

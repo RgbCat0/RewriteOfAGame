@@ -1733,7 +1733,7 @@ label avachapter1rom:
     $ oliviaSprite = 0
     scene fs blackblank
     with Dissolve(1.0)
-    $ avaquestlog = "Visit Ava at the gym during Morning in chapter 2."
+    $ avaquestlog = "Visit Ava at the gym during Morning."
     $ endchapter1_trigger = "1 ava romantic"
     $ avaphase1interaction3 = 10
 
@@ -2068,7 +2068,7 @@ label avachapter1naughty:
     $ oliviaSprite = 0
     scene fs blackblank
     with Dissolve(1.0)
-    $ avaquestlog = "Visit Ava at the gym during Morning in chapter 2."
+    $ avaquestlog = "Visit Ava at the gym during Morning."
     $ endchapter1_trigger = "1 ava naughty"
     $ avaphase1interaction3 = 10
 

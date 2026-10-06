@@ -54,17 +54,17 @@ label skiptochapter2:
 
     $ sophiaphase1interaction1 = 5
     $ sophiaphase1interaction2 = 3
-    $ sophiaquestlog = "Visit Sophia at her house or in Classroom 1 during Morning in chapter 2."
+    $ sophiaquestlog = "Visit Sophia's house during Morning."
     $ sophiaquesticon = "gui/questboxSophia.png"
 
     $ oliviaphase1interaction1 = 4
     $ oliviaphase1interaction3 = 2
-    $ oliviaquestlog = "Meet Olivia at the arcade during Day in chapter 2."
+    $ oliviaquestlog = "Meet Olivia at the arcade during Day."
     $ oliviaquesticon = "gui/questboxOlivia.png"
 
     $ emilyphase1interaction2 = 6
     $ emilyphase1interaction1 = 5
-    $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2."
+    $ emilyquestlog = "After the track meet on day 10, meet Emily in the school hallway during Morning."
     $ contact_list.append("Emily")
     $ emilyquesticon = "gui/questboxEmily.png"
 
@@ -779,10 +779,10 @@ label phase1ending:
     $ miaSprite = 0
 
     if sophiaphase1interaction2 == 2:
-        $ sophiaquestlog = "Visit Sophia at her house or in Classroom 1 during Morning in chapter 2."
+        $ sophiaquestlog = "Visit Sophia's house during Morning."
 
     if oliviaphase1interaction3 == 2:
-        $ oliviaquestlog = "Meet Olivia at the arcade during Day in chapter 2."
+        $ oliviaquestlog = "Meet Olivia at the arcade during Day."
 
     "The girls yell their final 'good lucks' to Ava as she walks away before heading to the bleachers."
     "The wind was howling when as they sat down, twas a breezy day"

@@ -2612,7 +2612,7 @@ label charlottephase2interaction1part1NIGHT:
     player "Holy shit she's serious! Wonder why she wants the camera...to record us I guess? Kinda hot."
     player "Alright I'll work on getting all this done tomorrow!"
     $ charlottephase2interaction1 = 2
-    $ charlottequestlog = "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night in chapter 2."
+    $ charlottequestlog = "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night."
     jump gotosleep
 
 

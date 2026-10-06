@@ -9,7 +9,7 @@ define legacy_quest_hint_text = {
         "I agreed to meet up with Ava at the park at night.": "Meet Ava at the park at Night.",
         "That was pretty tiring but fun, I should go for another run with her!": "Meet Ava at the park again at Night.",
         "I was not expecting the night to end like that. I should talk to Ava again about it.": "Talk to Ava at school during Morning or at the gym during Day.",
-        "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again.": "Visit Ava at the gym during Morning in chapter 2.",
+        "Can't believe someone saw Ava and I in the locker room. I should see her at the gym again.": "Visit Ava at the gym during Morning.",
         "Well with the interview finished all we can do is wait": "Go to sleep at Night to hear Ava's interview results.",
         "The recruiter said Ava and I can try again": "Meet Ava at Cafe Seni in Sunnyside during Day to retry the interview.",
         "Ava can be really cute...plus...blowjob. I can still see her at the gym right?": "Meet Ava at the gym during Day.",
@@ -21,6 +21,7 @@ define legacy_quest_hint_text = {
         "I have a couple ideas for Ava's...reward. Can't wait for the track meet!": "Continue exploring until Ava's track meet on day 10.",
         "Our little workout was a fun time. Man Ava is in great shape..": "Return to your bedroom during Morning on a later day for Ava's message.",
         "Ava wanted me to stop by Cafe Seni this afternoon?": "Meet Ava at Cafe Seni in Sunnyside during Day.",
+        "Visit Ava at the gym during Morning in chapter 2.": "Visit Ava at the gym during Morning.",
     },
     "cassandraquestlog": {
         "No more content for Cassandra in this version (Ch2.5B)": "No more content for Cassandra in this version.",
@@ -36,7 +37,7 @@ define legacy_quest_hint_text = {
         "Charlotte is PISSED. I'm gonna need Mia's help with this one...": "Talk to Mia in Classroom 1 at school during Morning for help with Charlotte.",
         "Mia sure knows how to handle Charlotte, I gotta visit her house tonight.": "Visit Charlotte's house at Night.",
         "I've pretty much tamed Charlotte now, She's not gonna be a problem anymore.": "Go to sleep at Night for Charlotte's message.",
-        "Charlotte wants me to get a bunch of naughty things. Where can I buy stuff?": "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night in chapter 2.",
+        "Charlotte wants me to get a bunch of naughty things. Where can I buy stuff?": "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night.",
         "Now that she has her 'blackmail' I wonder what Charlotte will have me do?": "Get some sleep at Night, then return to your bedroom during Morning for Charlotte's message.",
         "Victoria was there to help but Charlotte sucked my dick voluntarily! This is getting serious...": "Go to sleep at Night again to continue Charlotte's story.",
         "Charlotte sure has changed from when I first met her. I'm not complaining though": "Wait two days after Charlotte's last visit, then go to sleep at Night to continue her story.",
@@ -48,6 +49,7 @@ define legacy_quest_hint_text = {
         "Think I should avoid Charlotte till after the track meet.": "Continue exploring until the track meet on day 10.",
         "Mia's invited me to the cafe with Charlotte this morning": "Join Mia and Charlotte at Cafe Seni during Morning.",
         "That was a nice brunch...okay I don't remember the food, the sex with Mia was great though.": "Get some rest. Charlotte's next event starts when you go to sleep at Night on a later day.",
+        "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night in chapter 2.": "Get a camera, condoms, and handcuffs from the mall store. Visit Charlotte's house at Night.",
     },
     "emilyquestlog": {
         "{size=-25}If I want to help Emily with the banner I can meet her in the hallway. If I WANT to do that.{size=-25}": "{size=-25}Meet Emily in the school hallway during Day to help with the banner.{/size}",
@@ -57,7 +59,7 @@ define legacy_quest_hint_text = {
         "I gotta get Emily to talk to me.": "Talk to Emily in the school hallway during Morning.",
         "After I get some paint I should call Emily from my place.": "Get paint from the mall store, then call Emily from home during Morning or Day.",
         "That was fucking hot! I knew Emily was a secret slut. I should talk to her again though at school.": "Talk to Emily in the school hallway during Morning or Day.",
-        "Is Emily becoming a friend? Or do I really just want to fuck her?": "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2.",
+        "Is Emily becoming a friend? Or do I really just want to fuck her?": "After the track meet on day 10, meet Emily in the school hallway during Morning.",
         "Well that was dramatic. I should talk to Emily about those three bullies.": "Talk to Emily in the school hallway during Morning about the bullies.",
         "I gotta get my hands on those files! Emily will jump my dick garanteed!": "Visit the apartment building in Sunnyside and buzz Stephanie to collect Emily's files.",
         "Man what am I getting myself into? Emily should be in the library...": "Give Emily the files at the library during Day or in the school hallway during Morning.",
@@ -69,6 +71,7 @@ define legacy_quest_hint_text = {
         "I fucked her again at the beach. Seems she really wants my cock.": "Return to your bedroom after day 21 for Emily's next event.",
         "I'll call Emily from my place tomorrow after I get some Candy from the store": "Get candy from the mall store, then call Emily from home during Morning or Day on a later day.",
         "No more solo content for Emily this version(ch2.5)": "No more solo content for Emily in this version.",
+        "After the track meet on day 10, meet Emily in the school hallway during Morning in chapter 2.": "After the track meet on day 10, meet Emily in the school hallway during Morning.",
     },
     "josyquestlog": {
         "Helping the girls was kind of nice, wonder if they'll need it again": "Continue Mia's story through dinner, then return to your living room during Day.",
@@ -133,8 +136,8 @@ define legacy_quest_hint_text = {
         "I should apologize to Olivia...": "Meet Olivia at the arcade during Day to apologize.",
         "I'm looking forward to playing Mortal Street Calibur with Olivia!": "Call Olivia from your bedroom or living room at Night to invite her over.",
         "I can't believe I lost to Olivia like that! I should invite her over again.": "Call Olivia from your bedroom or living room at Night to try again.",
-        "That was so hot! I should really talk to her about where to go from here though.": "Meet Olivia at the arcade during Day in chapter 2.",
-        "That was pretty hot, but I should focus on other things for now.": "Continue exploring until the track meet on day 10. Meet Olivia at the arcade during Day in chapter 2.",
+        "That was so hot! I should really talk to her about where to go from here though.": "Meet Olivia at the arcade during Day.",
+        "That was pretty hot, but I should focus on other things for now.": "Continue exploring until the track meet on day 10, then meet Olivia at the arcade during Day.",
         "Did Olivia say she wanted to suck my dick?? I should go to her place tonight.": "Visit the apartment building in Sunnyside at Night and buzz Olivia.",
         "Olivia gives one hell of a blowjob. This is getting pretty serious.": "Talk to Olivia in Classroom 2 at school during Morning.",
         "I wonder what I can get up to with Olivia at the beach trip?": "Continue exploring until the beach trip on day 20. Olivia's next event starts in chapter 3.",
@@ -143,6 +146,8 @@ define legacy_quest_hint_text = {
         "No more Olivia content in this version (ch2.5)": "No more content for Olivia in this version.",
         "I gotta get on my computer tonight to game with Olivia": "Use your bedroom computer at Night to practice with Olivia.",
         "I gotta wait for the tournament in 2 days!": "Wait two nights, then visit Olivia at the arcade at Night for the tournament.",
+        "Meet Olivia at the arcade during Day in chapter 2.": "Meet Olivia at the arcade during Day.",
+        "Continue exploring until the track meet on day 10. Meet Olivia at the arcade during Day in chapter 2.": "Continue exploring until the track meet on day 10, then meet Olivia at the arcade during Day.",
     },
     "pennyquestlog": {
         "Who does Penny think she is? Just cause she's short and cute and hot...": "Continue Olivia's story, then visit the arcade during Day to meet Penny.",
@@ -152,10 +157,11 @@ define legacy_quest_hint_text = {
         "I'm curious about Penny's stream..": "Watch Penny's stream on your bedroom computer at Night. Bring $25 if you want to donate.",
         "I'm not sure if I want to keep spending money on Penny's stream..": "Practice with Olivia on your bedroom computer at Night to unlock Penny's next stream.",
         "Penny seemed to really like it when I donated, I should watch her stream again": "Watch Penny's next stream on your bedroom computer at Night. Bring $50 if you want to donate.",
-        "Penny said she does private streams if you donate enough...": "Watch Penny's next stream on your bedroom computer at Night. You can choose to donate $100.",
+        "Penny said she does private streams if you donate enough...": "Watch Penny's next stream on your bedroom computer at Night. Bring $100 if you want to donate.",
         "Watching Penny whore herself out for internet money was really hot": "Win Olivia's tournament, then visit Penny at the arcade during Day.",
         "Penny wants me to come over tonight...": "Visit the apartment building in Sunnyside at Night and buzz Penny.",
         "No more content for Penny in this version (ch2.5B)": "No more content for Penny in this version.",
+        "Watch Penny's next stream on your bedroom computer at Night. You can choose to donate $100.": "Watch Penny's next stream on your bedroom computer at Night. Bring $100 if you want to donate.",
     },
     "ravenquestlog": {
         "One of Stephanie's Cronies. Goth.": "Continue Emily's story and collect her files to unlock Raven's favor.",
@@ -171,7 +177,7 @@ define legacy_quest_hint_text = {
         "It was a nice little moment in the park. I should get some sleep though.": "Go to sleep at Night to continue Sophia's story.",
         "I wonder what Sophia's up to now?": "Talk to Sophia in Classroom 1 at school during Morning.",
         "Sophia wants me to visit for lunch at her place.": "Visit Sophia's house during Day for lunch.",
-        "I feel bad about skipping out on lunch, I should see her again.": "Visit Sophia at her house or in Classroom 1 during Morning in chapter 2.",
+        "I feel bad about skipping out on lunch, I should see her again.": "Visit Sophia's house during Morning.",
         "I should focus on other things for now..": "Continue exploring until the track meet on day 10. Sophia's next event starts in chapter 2.",
         "It was crazy seeing Cass again. Sophia wanted to meet up at Café Seni in Sunnyside.": "Meet Sophia at Cafe Seni in Sunnyside during Day.",
         "Sophia said she understands but I'm not so sure she got the message...": "Go to sleep at Night again to continue Sophia's story.",
@@ -181,6 +187,8 @@ define legacy_quest_hint_text = {
         "I messed up. Rage fucking Sophia wasn't the plan...oh well.": "Continue exploring until the beach trip on day 20, then talk to Sophia at school during Morning in chapter 3.",
         "Was nice to just talk to everyone together. Sophia seemed a little down near the end though.": "Go to sleep at Night to continue Sophia's story.",
         "No more Sophia content for this version (ch2.5)": "No more content for Sophia in this version.",
+        "Visit Sophia at her house or in Classroom 1 during Morning in chapter 2.": "Visit Sophia's house during Morning.",
+        "Visit Sophia at her house during Morning in chapter 2.": "Visit Sophia's house during Morning.",
     },
     "stephaniequestlog": {
         "Seems like she's the leader of the group. Such a Mean Girl.": "Talk to Emily at school during Morning to learn more about Stephanie.",
@@ -223,7 +231,7 @@ label after_load:
 
         if avaphase1interaction2 == 4 and currentchapter == 1:
             $ avaquestlog = "Continue exploring until Ava's track meet on day 10."
-        elif currentchapter == 2 and avaphase1interaction3 == 10 and avaphase2interaction1 == 0:
+        elif currentchapter >= 2 and avaphase1interaction3 == 10 and avaphase2interaction1 == 0:
             $ avaquestlog = "Visit Ava at the gym during Morning."
         elif avaphase2interaction1 == 1:
             $ avaquestlog = "Return to your bedroom during Morning on a later day for Ava's message."
@@ -268,6 +276,16 @@ label after_load:
             $ pennyquestlog = "Watch Penny's next stream on your bedroom computer at Night. Bring $50 if you want to donate."
 
         $ quest_hint_version = 2
+
+    if quest_hint_version < 3:
+        # Earlier hint revisions described these scenes as chapter-2-only.
+        $ avaquestlog = legacy_quest_hint_text["avaquestlog"].get(avaquestlog, avaquestlog)
+        $ charlottequestlog = legacy_quest_hint_text["charlottequestlog"].get(charlottequestlog, charlottequestlog)
+        $ emilyquestlog = legacy_quest_hint_text["emilyquestlog"].get(emilyquestlog, emilyquestlog)
+        $ oliviaquestlog = legacy_quest_hint_text["oliviaquestlog"].get(oliviaquestlog, oliviaquestlog)
+        $ sophiaquestlog = legacy_quest_hint_text["sophiaquestlog"].get(sophiaquestlog, sophiaquestlog)
+        $ pennyquestlog = legacy_quest_hint_text["pennyquestlog"].get(pennyquestlog, pennyquestlog)
+        $ quest_hint_version = 3
         $ renpy.block_rollback()
 
     call update_olivia_tournament_hint

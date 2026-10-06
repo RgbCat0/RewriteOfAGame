@@ -54,7 +54,7 @@ class QuestHintTests(unittest.TestCase):
             s = self.scope(oliviaquestlog=text)
             run_label("after_load", s)
             self.assertEqual(s["oliviatournyday"], 30 - (2 - nights))
-            self.assertEqual(s["quest_hint_version"], 2)
+            self.assertEqual(s["quest_hint_version"], 3)
             self.assertEqual(s["oliviaphase2interaction2"], 2)
             anchor = s["oliviatournyday"]
             s["dayNumber"] += 1
@@ -103,7 +103,7 @@ class QuestHintTests(unittest.TestCase):
                     self.assertEqual(s[variable], new)
                     for key, value in before.items():
                         self.assertEqual(s[key], value)
-                    self.assertEqual(s["quest_hint_version"], 2)
+                    self.assertEqual(s["quest_hint_version"], 3)
                     run_label("after_load", s)
                     self.assertEqual(s[variable], new)
 
